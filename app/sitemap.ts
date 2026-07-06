@@ -1,25 +1,29 @@
 import { MetadataRoute } from "next";
 import { docArticles } from "./data/docArticles";
 
+export const dynamic = "force-static";
+
+const lastModified = new Date("2026-07-06");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: "https://drkushalkharel.com.np",
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
       priority: 1,
     },
 
     {
       url: "https://drkushalkharel.com.np/knowledge",
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
       priority: 0.9,
     },
 
     {
       url: "https://drkushalkharel.com.np/anxiety",
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.95,
     },
@@ -27,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({
     url: `https://drkushalkharel.com.np/knowledge/${article.slug}`,
-    lastModified: new Date(),
+    lastModified,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
