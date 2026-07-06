@@ -124,6 +124,10 @@ export default function Footer() {
               Nepalese Abroad
             </Link>
 
+            <Link href="/#google-reviews" className="block hover:text-white transition">
+              Google Reviews & Map
+            </Link>
+
           </div>
 
         </div>

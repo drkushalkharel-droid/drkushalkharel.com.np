@@ -11,6 +11,7 @@ import CitySeoSection from "./components/CitySeoSection";
 import ScreeningTeaser from "./components/ScreeningTeaser";
 import AbroadSeoSection from "./components/AbroadSeoSection";
 import Testimonials from "./components/Testimonials";
+import GoogleReviewsMap from "./components/GoogleReviewsMap";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
@@ -176,6 +177,7 @@ export default function Home() {
       <Services />
       <Conditions />
       <Testimonials />
+      <GoogleReviewsMap />
       <Footer />
     </>
   );
