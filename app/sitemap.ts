@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { cityGuides } from "./data/cities";
 import { docArticles } from "./data/docArticles";
 
 export const dynamic = "force-static";
@@ -36,5 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...articleRoutes];
+  const cityRoutes: MetadataRoute.Sitemap = cityGuides.map((guide) => ({
+    url: `https://drkushalkharel.com.np/cities/${guide.slug}`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.85,
+  }));
+
+  return [...staticRoutes, ...articleRoutes, ...cityRoutes];
 }

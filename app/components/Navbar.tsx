@@ -101,6 +101,13 @@ export default function Navbar() {
             </Link>
 
             <Link
+              href="/#cities"
+              className="font-medium text-gray-700 hover:text-blue-700 transition"
+            >
+              Cities
+            </Link>
+
+            <Link
               href="/#contact"
               className="font-medium text-gray-700 hover:text-blue-700 transition"
             >
