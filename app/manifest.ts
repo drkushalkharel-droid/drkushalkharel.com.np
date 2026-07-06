@@ -1,0 +1,20 @@
+import { MetadataRoute } from "next";
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: "Dr. Kushal Kharel",
+    short_name: "Dr Kushal",
+    description: "Consultant Psychiatrist in Kathmandu",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#ffffff",
+    theme_color: "#1E3A8A",
+    icons: [
+      {
+        src: "/favicon.ico",
+        sizes: "256x256",
+        type: "image/x-icon",
+      },
+    ],
+  };
+}
