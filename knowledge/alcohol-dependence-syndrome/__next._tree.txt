@@ -1,0 +1,2 @@
+:HL["/_next/static/chunks/3pkhznbqht55-.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"knowledge","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"alcohol-dependence-syndrome","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"Slloy4l7ssgj2MWEz1C7Y"}
