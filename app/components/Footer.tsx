@@ -116,6 +116,14 @@ export default function Footer() {
               Mental Health Articles
             </Link>
 
+            <Link href="/screening" className="block hover:text-white transition">
+              Mental Health Screening
+            </Link>
+
+            <Link href="/#nepalese-abroad" className="block hover:text-white transition">
+              Nepalese Abroad
+            </Link>
+
           </div>
 
         </div>

@@ -8,6 +8,8 @@ import Services from "./components/Services";
 import Conditions from "./components/Conditions";
 import SearchIntentSection from "./components/SearchIntentSection";
 import CitySeoSection from "./components/CitySeoSection";
+import ScreeningTeaser from "./components/ScreeningTeaser";
+import AbroadSeoSection from "./components/AbroadSeoSection";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 
@@ -30,6 +32,10 @@ export const metadata: Metadata = {
     "Depression Treatment Nepal",
     "Online Psychiatrist Nepal",
     "Addiction Psychiatrist Nepal",
+    "Mental Health Screening Nepal",
+    "Depression Screening Nepal",
+    "Anxiety Screening Nepal",
+    "Nepali Psychiatrist Abroad",
     "Best Psychiatrist in Chitwan",
     "Best Psychiatrist in Biratnagar",
     "Best Psychiatrist in Dhangadhi",
@@ -161,7 +167,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <SearchIntentSection />
+      <ScreeningTeaser />
       <CitySeoSection />
+      <AbroadSeoSection />
       <Statistics />
       <About />
       <Awards />

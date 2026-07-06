@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { abroadGuides } from "./data/abroad";
 import { cityGuides } from "./data/cities";
 import { docArticles } from "./data/docArticles";
 
@@ -28,6 +29,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.95,
     },
+
+    {
+      url: "https://drkushalkharel.com.np/screening",
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({
@@ -44,5 +52,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...staticRoutes, ...articleRoutes, ...cityRoutes];
+  const abroadRoutes: MetadataRoute.Sitemap = abroadGuides.map((guide) => ({
+    url: `https://drkushalkharel.com.np/nepalese-abroad/${guide.slug}`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.85,
+  }));
+
+  return [...staticRoutes, ...articleRoutes, ...cityRoutes, ...abroadRoutes];
 }

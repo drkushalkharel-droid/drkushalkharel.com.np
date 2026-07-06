@@ -56,7 +56,7 @@ export default function Navbar() {
 
           {/* MENU */}
 
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden xl:flex items-center gap-5">
 
             <Link
               href="/"
@@ -101,10 +101,24 @@ export default function Navbar() {
             </Link>
 
             <Link
+              href="/screening"
+              className="font-medium text-gray-700 hover:text-blue-700 transition"
+            >
+              Screening
+            </Link>
+
+            <Link
               href="/#cities"
               className="font-medium text-gray-700 hover:text-blue-700 transition"
             >
               Cities
+            </Link>
+
+            <Link
+              href="/#nepalese-abroad"
+              className="font-medium text-gray-700 hover:text-blue-700 transition"
+            >
+              Abroad
             </Link>
 
             <Link
@@ -118,7 +132,7 @@ export default function Navbar() {
 
           {/* SOCIAL ICONS - Hidden on mobile */}
 
-          <div className="hidden lg:flex items-center gap-3 px-4">
+          <div className="hidden 2xl:flex items-center gap-3 px-4">
             {socialLinks.map((social) => {
               const Icon = social.icon;
               return (
