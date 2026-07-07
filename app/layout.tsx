@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import ConversionDock from "./components/ConversionDock";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://drkushalkharel.com.np"),
@@ -190,6 +191,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-ZJ7RMBFRYL"
+/>
+
+<Script id="google-analytics">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZJ7RMBFRYL');
+  `}
+</Script>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="x-ua-compatible" content="IE=edge" />
