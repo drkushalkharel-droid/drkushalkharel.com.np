@@ -2,10 +2,10 @@ import { MetadataRoute } from "next";
 import { abroadGuides } from "./data/abroad";
 import { cityGuides } from "./data/cities";
 import { docArticles } from "./data/docArticles";
+import { siteUrl } from "./lib/seo";
 
 export const dynamic = "force-static";
 
-const siteUrl = "https://drkushalkharel.com.np";
 const lastModified = new Date("2026-07-07");
 
 export default function sitemap(): MetadataRoute.Sitemap {

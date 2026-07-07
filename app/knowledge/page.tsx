@@ -7,6 +7,7 @@ import {
   type ArticleLink,
 } from "../data/articles";
 import { docArticles } from "../data/docArticles";
+import { siteUrl } from "../lib/seo";
 
 export const metadata: Metadata = {
   title: "Mental Health Articles & Patient Guides",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     title: "Mental Health Articles & Patient Guides | Dr. Kushal Kharel",
     description:
       "Trusted psychiatric education for patients and families in Nepal.",
-    url: "https://drkushalkharel.com.np/knowledge",
+    url: `${siteUrl}/knowledge`,
     siteName: "Dr. Kushal Kharel",
     images: [{ url: "/images/doctor.png", width: 1200, height: 630 }],
     type: "website",
