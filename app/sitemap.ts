@@ -5,58 +5,59 @@ import { docArticles } from "./data/docArticles";
 
 export const dynamic = "force-static";
 
-const lastModified = new Date("2026-07-06");
+const siteUrl = "https://drkushalkharel.com.np";
+const lastModified = new Date("2026-07-07");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     {
-      url: "https://drkushalkharel.com.np",
+      url: siteUrl,
       lastModified,
       changeFrequency: "weekly",
       priority: 1,
     },
 
     {
-      url: "https://drkushalkharel.com.np/knowledge",
+      url: `${siteUrl}/knowledge`,
       lastModified,
       changeFrequency: "weekly",
       priority: 0.9,
     },
 
     {
-      url: "https://drkushalkharel.com.np/anxiety",
+      url: `${siteUrl}/anxiety`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.95,
     },
 
     {
-      url: "https://drkushalkharel.com.np/screening",
+      url: `${siteUrl}/screening`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.95,
+      priority: 0.9,
     },
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({
-    url: `https://drkushalkharel.com.np/knowledge/${article.slug}`,
+    url: `${siteUrl}/knowledge/${article.slug}`,
     lastModified,
     changeFrequency: "monthly",
-    priority: 0.8,
+    priority: 0.75,
   }));
 
   const cityRoutes: MetadataRoute.Sitemap = cityGuides.map((guide) => ({
-    url: `https://drkushalkharel.com.np/cities/${guide.slug}`,
+    url: `${siteUrl}/cities/${guide.slug}`,
     lastModified,
     changeFrequency: "monthly",
-    priority: 0.85,
+    priority: guide.slug === "kathmandu" ? 0.9 : 0.8,
   }));
 
   const abroadRoutes: MetadataRoute.Sitemap = abroadGuides.map((guide) => ({
-    url: `https://drkushalkharel.com.np/nepalese-abroad/${guide.slug}`,
+    url: `${siteUrl}/nepalese-abroad/${guide.slug}`,
     lastModified,
     changeFrequency: "monthly",
-    priority: 0.85,
+    priority: 0.75,
   }));
 
   return [...staticRoutes, ...articleRoutes, ...cityRoutes, ...abroadRoutes];

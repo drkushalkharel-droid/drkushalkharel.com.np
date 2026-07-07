@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import ConversionDock from "./components/ConversionDock";
 import "./globals.css";
-import Script from "next/script";
+
+const siteUrl = "https://drkushalkharel.com.np";
+const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-ZJ7RMBFRYL";
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const doctorImage = "/images/doctor.png";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://drkushalkharel.com.np"),
+  metadataBase: new URL(siteUrl),
 
   title: {
     default:
@@ -56,18 +59,20 @@ export const metadata: Metadata = {
   authors: [{ name: "Dr. Kushal Kharel" }],
 
   creator: "Dr. Kushal Kharel",
+  publisher: "Dr. Kushal Kharel",
+  category: "healthcare",
 
   openGraph: {
     title: "Dr. Kushal Kharel | Best Psychiatrist in Kathmandu, Nepal",
     description:
       "Evidence-based psychiatry, counselling, de-addiction care and telepsychiatry in Nepal. Call +977 9861800547",
-    url: "https://drkushalkharel.com.np",
+    url: siteUrl,
     siteName: "Dr. Kushal Kharel - Consultant Psychiatrist",
     images: [
       {
-        url: "https://drkushalkharel.com.np/images/doctor.png",
-        width: 1200,
-        height: 630,
+        url: doctorImage,
+        width: 1365,
+        height: 1909,
         alt: "Dr. Kushal Kharel - Consultant Psychiatrist in Kathmandu",
       },
     ],
@@ -80,8 +85,8 @@ export const metadata: Metadata = {
     title: "Dr. Kushal Kharel | Psychiatrist in Kathmandu, Nepal",
     description:
       "Expert psychiatric care, anxiety treatment, depression therapy, addiction counseling in Kathmandu",
-    images: ["https://drkushalkharel.com.np/images/doctor.png"],
-    creator: "@drkushalkharel",
+    images: [doctorImage],
+    creator: "@Drkushalpsych",
   },
 
   robots: {
@@ -97,26 +102,21 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://drkushalkharel.com.np",
+    canonical: siteUrl,
   },
 
-  verification: {
-    google: "your-google-site-verification-code",
-  },
+  ...(googleSiteVerification
+    ? {
+        verification: {
+          google: googleSiteVerification,
+        },
+      }
+    : {}),
 
-  appLinks: {
-    ios: {
-      url: "https://drkushalkharel.com.np",
-      app_store_id: "0",
-    },
-    android: {
-      package: "com.drkushalkharel",
-      app_name: "Dr. Kushal Kharel",
-    },
-    web: {
-      url: "https://drkushalkharel.com.np",
-      should_fallback: true,
-    },
+  manifest: "/manifest.webmanifest",
+
+  other: {
+    "format-detection": "telephone=yes",
   },
 };
 
@@ -125,16 +125,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Structured data for Organization
-  const organizationJsonLd = {
+  const medicalBusinessJsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "@id": "https://drkushalkharel.com.np",
+    "@id": `${siteUrl}#clinic`,
     name: "Dr. Kushal Kharel - Consultant Psychiatrist",
     alternateName: "Dr Kushal Kharel Psychiatry Clinic",
     description:
       "Consultant Psychiatrist providing evidence-based treatment for anxiety, depression, ADHD, OCD, bipolar disorder, and addiction",
-    url: "https://drkushalkharel.com.np",
+    url: siteUrl,
     telephone: "+9779861800547",
     email: "drkushalkharel@gmail.com",
     address: {
@@ -164,7 +163,7 @@ export default function RootLayout({
       "Addiction Treatment",
       "Online Consultation",
     ],
-    image: "https://drkushalkharel.com.np/images/doctor.png",
+    image: `${siteUrl}${doctorImage}`,
     priceRange: "$$",
     openingHoursSpecification: [
       {
@@ -188,49 +187,77 @@ export default function RootLayout({
     },
   };
 
+  const psychiatristJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "@id": `${siteUrl}#psychiatrist`,
+    name: "Dr. Kushal Kharel",
+    url: siteUrl,
+    image: `${siteUrl}${doctorImage}`,
+    telephone: "+9779861800547",
+    email: "drkushalkharel@gmail.com",
+    medicalSpecialty: "Psychiatry",
+    worksFor: {
+      "@id": `${siteUrl}#clinic`,
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Kalanki-14, Near Malpot Road",
+      addressLocality: "Kathmandu",
+      addressRegion: "Bagmati",
+      postalCode: "44600",
+      addressCountry: "NP",
+    },
+    areaServed: ["Kathmandu", "Nepal", "Online"],
+    knowsAbout: [
+      "Anxiety disorders",
+      "Depression",
+      "OCD",
+      "ADHD",
+      "Bipolar disorder",
+      "Schizophrenia",
+      "Addiction psychiatry",
+      "Telepsychiatry",
+    ],
+    sameAs: [
+      "https://facebook.com/cooshal.kharel",
+      "https://www.instagram.com/cusalnova",
+      "https://www.twitter.com/Drkushalpsych",
+      "https://www.tiktok.com/@drkushalkharel",
+      "https://www.threads.net/@cusalnova",
+    ],
+  };
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [medicalBusinessJsonLd, psychiatristJsonLd],
+  };
+
   return (
     <html lang="en">
       <head>
-        <Script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-ZJ7RMBFRYL"
-/>
-
-<Script id="google-analytics">
-  {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-ZJ7RMBFRYL');
-  `}
-</Script>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta httpEquiv="x-ua-compatible" content="IE=edge" />
-        <meta name="theme-color" content="#0f3a73" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="format-detection" content="telephone=yes" />
-        <link rel="canonical" href="https://drkushalkharel.com.np" />
-        <Script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-ZJ7RMBFRYL"
-  strategy="afterInteractive"
-/>
-
-<Script id="google-analytics" strategy="afterInteractive">
-  {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ZJ7RMBFRYL');
-  `}
-</Script>
-        
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+        />
+        <script
+          id="google-analytics"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${googleAnalyticsId}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
         />
       </head>
       <body>
