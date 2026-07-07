@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import ConversionDock from "./components/ConversionDock";
 import "./globals.css";
+import {
+  absoluteDoctorImage,
+  doctorImage,
+  jsonLdScript,
+  siteUrl,
+} from "./lib/seo";
 
-const siteUrl = "https://drkushalkharel.com.np";
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-ZJ7RMBFRYL";
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
-const doctorImage = "/images/doctor.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -163,7 +167,7 @@ export default function RootLayout({
       "Addiction Treatment",
       "Online Consultation",
     ],
-    image: `${siteUrl}${doctorImage}`,
+    image: absoluteDoctorImage,
     priceRange: "$$",
     openingHoursSpecification: [
       {
@@ -193,7 +197,7 @@ export default function RootLayout({
     "@id": `${siteUrl}#psychiatrist`,
     name: "Dr. Kushal Kharel",
     url: siteUrl,
-    image: `${siteUrl}${doctorImage}`,
+    image: absoluteDoctorImage,
     telephone: "+9779861800547",
     email: "drkushalkharel@gmail.com",
     medicalSpecialty: "Psychiatry",
@@ -255,9 +259,7 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
-          }}
+          dangerouslySetInnerHTML={jsonLdScript(jsonLd)}
         />
       </head>
       <body>

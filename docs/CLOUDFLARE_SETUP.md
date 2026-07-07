@@ -52,6 +52,17 @@ If you want automated deployments via GitHub Actions:
    - Go to repo **Settings** → **Secrets and variables** → **Actions**
    - Add `CLOUDFLARE_API_TOKEN`
    - Add `CLOUDFLARE_ACCOUNT_ID`
+   - Add `NEXT_PUBLIC_GA_MEASUREMENT_ID` with `G-ZJ7RMBFRYL`
+   - Add `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` with only the Search Console content token, not the full meta tag
+
+### Step 5: Verify Google Search Console
+
+1. Open Google Search Console and add `https://drkushalkharel.com.np/` as a URL-prefix property.
+2. Choose **HTML tag** verification.
+3. Copy the value inside `content="..."`.
+4. Save that value as the GitHub Actions secret `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`.
+5. Push to `main` so the site rebuilds and publishes the meta tag.
+6. Return to Search Console and click **Verify**.
 
 ## 📊 Your Site Features:
 

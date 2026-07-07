@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { docArticles } from "../../data/docArticles";
-
-const siteUrl = "https://drkushalkharel.com.np";
+import { breadcrumbJsonLd, jsonLdScript, siteUrl } from "../../lib/seo";
 
 function getArticle(slug: string) {
   return docArticles.find((article) => article.slug === slug);
@@ -95,11 +94,21 @@ export default async function KnowledgeArticlePage({
     },
   };
 
+  const breadcrumbs = breadcrumbJsonLd([
+    { name: "Home", url: siteUrl },
+    { name: "Knowledge", url: `${siteUrl}/knowledge` },
+    { name: article.title, url: `${siteUrl}/knowledge/${article.slug}` },
+  ]);
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={jsonLdScript(jsonLd)}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(breadcrumbs)}
       />
 
       <section className="bg-white">

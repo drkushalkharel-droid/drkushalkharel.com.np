@@ -13,6 +13,7 @@ import AbroadSeoSection from "./components/AbroadSeoSection";
 import Testimonials from "./components/Testimonials";
 import GoogleReviewsMap from "./components/GoogleReviewsMap";
 import Footer from "./components/Footer";
+import { absoluteDoctorImage, jsonLdScript, siteUrl } from "./lib/seo";
 
 export const metadata: Metadata = {
   title:
@@ -46,13 +47,12 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  // Structured data for Physician
   const physicianJsonLd = {
     "@context": "https://schema.org",
     "@type": "Physician",
     name: "Dr. Kushal Kharel",
-    url: "https://drkushalkharel.com.np",
-    image: "https://drkushalkharel.com.np/images/doctor.png",
+    url: siteUrl,
+    image: absoluteDoctorImage,
     telephone: "+9779861800547",
     email: "drkushalkharel@gmail.com",
     medicalSpecialty: "Psychiatry",
@@ -83,14 +83,13 @@ export default function Home() {
     ],
   };
 
-  // Structured data for Services
   const servicesJsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Dr. Kushal Kharel - Consultant Psychiatrist",
     description:
       "Comprehensive psychiatric care including anxiety, depression, OCD, ADHD, bipolar disorder, addiction treatment and telepsychiatry",
-    url: "https://drkushalkharel.com.np",
+    url: siteUrl,
     telephone: "+9779861800547",
     address: {
       "@type": "PostalAddress",
@@ -159,11 +158,11 @@ export default function Home() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianJsonLd) }}
+        dangerouslySetInnerHTML={jsonLdScript(physicianJsonLd)}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+        dangerouslySetInnerHTML={jsonLdScript(servicesJsonLd)}
       />
       <Navbar />
       <Hero />

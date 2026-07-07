@@ -3,8 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MessageCircle, Phone } from "lucide-react";
 import { abroadGuides, getAbroadGuide } from "../../data/abroad";
-
-const siteUrl = "https://drkushalkharel.com.np";
+import { breadcrumbJsonLd, jsonLdScript, siteUrl } from "../../lib/seo";
 
 export function generateStaticParams() {
   return abroadGuides.map((guide) => ({ slug: guide.slug }));
@@ -92,11 +91,21 @@ export default async function NepaleseAbroadPage({
     },
   };
 
+  const breadcrumbs = breadcrumbJsonLd([
+    { name: "Home", url: siteUrl },
+    { name: "Nepalese Abroad", url: `${siteUrl}/#nepalese-abroad` },
+    { name: guide.country, url: `${siteUrl}/nepalese-abroad/${guide.slug}` },
+  ]);
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={jsonLdScript(jsonLd)}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(breadcrumbs)}
       />
 
       <section className="bg-white">
