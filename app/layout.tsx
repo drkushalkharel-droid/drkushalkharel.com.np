@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import ConversionDock from "./components/ConversionDock";
 import "./globals.css";
 
@@ -197,6 +198,21 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=yes" />
         <link rel="canonical" href="https://drkushalkharel.com.np" />
+        <Script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-ZJ7RMBFRYL"
+  strategy="afterInteractive"
+/>
+
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZJ7RMBFRYL');
+  `}
+</Script>
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
