@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import AnxietyGuide from "./AnxietyGuide";
-import { breadcrumbJsonLd, jsonLdScript, siteUrl } from "../lib/seo";
 
-const pageUrl = `${siteUrl}/anxiety`;
+const pageUrl = "https://drkushalkharel.com.np/anxiety";
 const title = "Anxiety Treatment in Kathmandu | Symptoms, Causes & Help";
 const description =
   "A bilingual patient guide to anxiety disorders by Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu. Learn symptoms, causes, treatment options, CBT, medication and when to seek help.";
@@ -112,24 +111,15 @@ export default function AnxietyPage() {
     ],
   };
 
-  const breadcrumbs = breadcrumbJsonLd([
-    { name: "Home", url: siteUrl },
-    { name: "Anxiety Treatment", url: pageUrl },
-  ]);
-
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLdScript(articleJsonLd)}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLdScript(faqJsonLd)}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLdScript(breadcrumbs)}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <AnxietyGuide />
     </>

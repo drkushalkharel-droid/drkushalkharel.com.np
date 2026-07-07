@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ScreeningPlatform from "./ScreeningPlatform";
-import { breadcrumbJsonLd, jsonLdScript, siteUrl } from "../lib/seo";
 
 const title = "Mental Health Screening Nepal | Depression, Anxiety, Sleep";
 const description =
   "Free mental health screening tools for depression symptoms, anxiety severity and daytime sleepiness. Get a score, interpretation and contact Dr. Kushal Kharel for psychiatric consultation.";
-const pageUrl = `${siteUrl}/screening`;
 
 export const metadata: Metadata = {
   title,
@@ -26,16 +24,9 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    url: pageUrl,
+    url: "https://drkushalkharel.com.np/screening",
     siteName: "Dr. Kushal Kharel",
-    images: [
-      {
-        url: "/images/doctor.png",
-        width: 1365,
-        height: 1909,
-        alt: "Dr. Kushal Kharel - Consultant Psychiatrist in Kathmandu",
-      },
-    ],
+    images: [{ url: "/images/doctor.png", width: 1200, height: 630 }],
     type: "website",
   },
 };
@@ -46,7 +37,7 @@ export default function ScreeningPage() {
     "@type": "MedicalWebPage",
     name: title,
     description,
-    url: pageUrl,
+    url: "https://drkushalkharel.com.np/screening",
     inLanguage: "en",
     medicalAudience: ["Patient", "Caregiver"],
     about: ["Depression screening", "Anxiety screening", "Sleepiness screening"],
@@ -58,20 +49,11 @@ export default function ScreeningPage() {
     },
   };
 
-  const breadcrumbs = breadcrumbJsonLd([
-    { name: "Home", url: siteUrl },
-    { name: "Mental Health Screening", url: pageUrl },
-  ]);
-
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLdScript(jsonLd)}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLdScript(breadcrumbs)}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
       <section className="bg-white">

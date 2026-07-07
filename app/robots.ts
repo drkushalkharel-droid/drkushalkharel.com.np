@@ -1,5 +1,4 @@
 import { MetadataRoute } from "next";
-import { siteUrl } from "./lib/seo";
 
 export const dynamic = "force-static";
 
@@ -17,7 +16,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/_next/", "/404/", "/_not-found/"],
       },
     ],
-    sitemap: `${siteUrl}/sitemap.xml`,
-    host: siteUrl,
+    sitemap: "https://drkushalkharel.com.np/sitemap.xml",
+    host: "https://drkushalkharel.com.np",
   };
 }
