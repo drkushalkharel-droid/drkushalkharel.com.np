@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { abroadGuides } from "./data/abroad";
 import { cityGuides } from "./data/cities";
+import { conditions } from "./data/conditions";
 import { docArticles } from "./data/docArticles";
 
 export const dynamic = "force-static";
@@ -37,6 +38,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+
+    {
+      url: `${siteUrl}/conditions`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({
@@ -60,5 +68,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...staticRoutes, ...articleRoutes, ...cityRoutes, ...abroadRoutes];
+  const conditionRoutes: MetadataRoute.Sitemap = conditions.map((condition) => ({
+    url: `${siteUrl}/conditions/${condition.slug}`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...articleRoutes,
+    ...cityRoutes,
+    ...abroadRoutes,
+    ...conditionRoutes,
+  ];
 }

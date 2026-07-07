@@ -101,6 +101,13 @@ export default function Navbar() {
             </Link>
 
             <Link
+              href="/conditions"
+              className="font-medium text-gray-700 hover:text-blue-700 transition"
+            >
+              Conditions Library
+            </Link>
+
+            <Link
               href="/screening"
               className="font-medium text-gray-700 hover:text-blue-700 transition"
             >
