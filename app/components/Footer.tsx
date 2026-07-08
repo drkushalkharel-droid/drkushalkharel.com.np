@@ -127,7 +127,7 @@ export default function Footer() {
               Mental Health Screening
             </Link>
 
-            <Link href="/#nepalese-abroad" className="block hover:text-white transition">
+            <Link href="/nepalese-abroad" className="block hover:text-white transition">
               Nepalese Abroad
             </Link>
 
@@ -137,6 +137,22 @@ export default function Footer() {
 
             <Link href="/#faq" className="block hover:text-white transition">
               FAQ
+            </Link>
+
+            <Link href="/expatriates-in-nepal" className="block hover:text-white transition">
+              For Expatriates in Nepal
+            </Link>
+
+            <Link href="/english-speaking-psychiatrist" className="block hover:text-white transition">
+              English Speaking Psychiatrist
+            </Link>
+
+            <Link href="/tourists-in-nepal" className="block hover:text-white transition">
+              For Tourists in Nepal
+            </Link>
+
+            <Link href="/counselling-in-nepal" className="block hover:text-white transition">
+              Counselling Services
             </Link>
 
           </div>

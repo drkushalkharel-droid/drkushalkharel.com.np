@@ -59,6 +59,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+
+    {
+      url: `${siteUrl}/nepalese-abroad`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+
+    {
+      url: `${siteUrl}/expatriates-in-nepal`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+
+    {
+      url: `${siteUrl}/english-speaking-psychiatrist`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+
+    {
+      url: `${siteUrl}/tourists-in-nepal`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+
+    {
+      url: `${siteUrl}/counselling-in-nepal`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({

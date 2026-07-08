@@ -86,26 +86,42 @@ export default function AnxietyPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "Can anxiety disorders be treated?",
+        name: "Can anxiety be cured?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Anxiety disorders are highly treatable with psychoeducation, CBT-based therapy, lifestyle changes and medication when clinically appropriate.",
+          text: "Most people improve significantly with the right treatment. Some recover fully, while others learn to manage symptoms well and prevent relapse.",
         },
       },
       {
         "@type": "Question",
-        name: "When should I see a psychiatrist for anxiety?",
+        name: "Will I need medicine forever?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Seek professional help if anxiety is persistent, difficult to control, causes panic attacks, affects sleep, work, study or relationships, or leads to avoidance of normal activities.",
+          text: "Usually not. Duration depends on severity, recurrence and response. Medication decisions should be reviewed with a psychiatrist.",
         },
       },
       {
         "@type": "Question",
-        name: "Does anxiety treatment always require medicine?",
+        name: "Can I consult online?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Not always. Treatment depends on severity, duration, functional impairment and other health factors. Some people improve with therapy and lifestyle changes, while others benefit from medication.",
+          text: "Yes. Online consultation can be suitable for many anxiety concerns, especially follow-up, psychoeducation and treatment monitoring.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who treats anxiety in Kathmandu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dr. Kushal Kharel, a Consultant Psychiatrist in Kathmandu, treats anxiety disorders including generalized anxiety disorder, panic disorder, social anxiety and phobias, using evidence-based CBT and medication when appropriate, in person or online.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who is the best psychiatrist for anxiety in Kathmandu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "There is no single certified 'best' psychiatrist — look for a registered specialist with relevant experience. Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist in Kathmandu who treats anxiety disorders using evidence-based CBT and medication, in person or online.",
         },
       },
     ],

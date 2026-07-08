@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getConditionsByCategory } from "../data/conditions";
+import { conditions, getConditionsByCategory } from "../data/conditions";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -56,6 +56,44 @@ export default function ConditionsLibraryPage() {
             <Link href="/knowledge" className="rounded-lg border border-blue-700 px-6 py-3 font-semibold text-blue-700 transition hover:bg-blue-700 hover:text-white">
               Nepali Patient Guides
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-950">Conditions at a Glance</h2>
+          <p className="mt-4 max-w-3xl leading-8 text-slate-600">
+            A quick-reference summary of every condition in this library —
+            category, a key symptom and the primary treatment approach.
+          </p>
+          <div className="mt-8 overflow-x-auto rounded-lg border border-slate-200">
+            <table className="w-full min-w-[720px] text-left text-sm">
+              <thead className="bg-slate-100 text-slate-700">
+                <tr>
+                  <th className="px-4 py-3 font-bold">Condition</th>
+                  <th className="px-4 py-3 font-bold">Category</th>
+                  <th className="px-4 py-3 font-bold">Key Symptom</th>
+                  <th className="px-4 py-3 font-bold">Primary Treatment</th>
+                </tr>
+              </thead>
+              <tbody>
+                {conditions.map((condition) => (
+                  <tr key={condition.slug} className="border-t border-slate-200 odd:bg-white even:bg-slate-50">
+                    <td className="px-4 py-3 font-semibold">
+                      <Link href={`/conditions/${condition.slug}`} className="text-blue-700 hover:underline">
+                        {condition.title}
+                      </Link>
+                    </td>
+                    <td className="px-4 py-3 text-slate-600">{condition.category}</td>
+                    <td className="px-4 py-3 text-slate-600">{condition.symptoms[0]}</td>
+                    <td className="px-4 py-3 text-slate-600">
+                      {condition.psychotherapy[0]?.name ?? condition.medications[0]?.name ?? "Individualized"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

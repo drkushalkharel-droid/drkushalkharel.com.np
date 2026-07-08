@@ -22,6 +22,7 @@ const baseToc = [
   { id: "differential-diagnosis", label: "Differential Diagnosis" },
   { id: "investigations", label: "Investigations" },
   { id: "treatment", label: "Treatment" },
+  { id: "treatment-at-a-glance", label: "Treatment at a Glance" },
   { id: "medications", label: "Medications" },
   { id: "psychotherapy", label: "Psychotherapy" },
   { id: "lifestyle-advice", label: "Lifestyle Advice" },
@@ -73,6 +74,7 @@ export async function generateMetadata({
       `top psychiatrist in Kathmandu for ${condition.title}`,
       "Dr Kushal Kharel",
       "Psychiatrist Kathmandu",
+      ...(condition.extraKeywords ?? []),
     ],
     openGraph: {
       title,
@@ -324,6 +326,36 @@ export default async function ConditionPage({
 
           <Section id="treatment" title="Treatment">
             <p>{condition.treatmentOverview}</p>
+          </Section>
+
+          <Section id="treatment-at-a-glance" title="Treatment at a Glance">
+            <div className="overflow-x-auto rounded-lg border border-slate-200">
+              <table className="w-full min-w-[560px] text-left text-base">
+                <thead className="bg-slate-100 text-slate-700">
+                  <tr>
+                    <th className="px-4 py-3 font-bold">Type</th>
+                    <th className="px-4 py-3 font-bold">Approach</th>
+                    <th className="px-4 py-3 font-bold">Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {condition.medications.map((item) => (
+                    <tr key={`med-${item.name}`} className="border-t border-slate-200 odd:bg-white even:bg-slate-50">
+                      <td className="px-4 py-3 font-semibold text-blue-950">Medication</td>
+                      <td className="px-4 py-3">{item.name}</td>
+                      <td className="px-4 py-3 text-slate-600">{item.note}</td>
+                    </tr>
+                  ))}
+                  {condition.psychotherapy.map((item) => (
+                    <tr key={`psy-${item.name}`} className="border-t border-slate-200 odd:bg-white even:bg-slate-50">
+                      <td className="px-4 py-3 font-semibold text-blue-950">Psychotherapy</td>
+                      <td className="px-4 py-3">{item.name}</td>
+                      <td className="px-4 py-3 text-slate-600">{item.note}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </Section>
 
           <Section id="medications" title="Medications">

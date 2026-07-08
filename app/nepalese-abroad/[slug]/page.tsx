@@ -101,8 +101,8 @@ export default async function NepaleseAbroadPage({
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/#nepalese-abroad" className="font-semibold text-blue-700">
-            Back to Nepalese abroad guides
+          <Link href="/nepalese-abroad" className="font-semibold text-blue-700">
+            &larr; Back to Nepalese abroad guides
           </Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
             {guide.region}

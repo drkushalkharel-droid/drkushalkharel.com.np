@@ -2,6 +2,16 @@ import { HelpCircle } from "lucide-react";
 
 const faqs = [
   {
+    question: "Who is a psychiatrist in Nepal?",
+    answer:
+      "Dr. Kushal Kharel is a Consultant Psychiatrist based in Kathmandu, Nepal, registered with the Nepal Medical Council. He provides evidence-based assessment, diagnosis, medication management and psychotherapy for children, adolescents, adults and older adults, in person and online.",
+  },
+  {
+    question: "What does a psychiatrist do in Nepal?",
+    answer:
+      "A psychiatrist in Nepal is a medical doctor who diagnoses and treats mental health conditions such as anxiety, depression, OCD, bipolar disorder, schizophrenia, ADHD and addiction. Dr. Kushal Kharel provides assessment, diagnosis, medication management and psychotherapy, in person in Kathmandu or via online consultation.",
+  },
+  {
     question: "Who is Dr. Kushal Kharel?",
     answer:
       "Dr. Kushal Kharel is a Consultant Psychiatrist based in Kathmandu, Nepal, providing evidence-based assessment, medication management, psychotherapy and telepsychiatry for children, adolescents, adults and older adults.",
@@ -15,6 +25,11 @@ const faqs = [
     question: "What is Dr. Kushal Kharel's medical background and experience?",
     answer:
       "Dr. Kushal Kharel completed MD Psychiatry training at KIST Medical College Teaching Hospital (2023-2026) and previously worked as a Medical Officer at Kantipur Hospital (2020-2021), Patan Hospital (2021-2022) and Kathmandu ENT Hospital (2022-2023). He has run a psychiatric clinic in Kalanki, Kathmandu since 2020 and is a Nepal Medical Council registered psychiatrist.",
+  },
+  {
+    question: "How do I book a psychiatrist in Nepal?",
+    answer:
+      "Call +977 9861800547 or message on WhatsApp to book an appointment with Dr. Kushal Kharel in Kathmandu. In-person visits are available Monday to Friday, 10:00 AM to 6:00 PM, and Saturday, 10:00 AM to 4:00 PM; online consultation is available for patients anywhere in Nepal or abroad.",
   },
   {
     question: "How do I book an appointment with Dr. Kushal Kharel?",
@@ -32,6 +47,11 @@ const faqs = [
       "The clinic is located at Kalanki-14, Near Malpot Road, near Kalanki Bhatbhateni Supermarket, Kathmandu 44600, Nepal. Roadside parking is available near the clinic.",
   },
   {
+    question: "How do I find a psychiatrist near me in Kathmandu?",
+    answer:
+      "Dr. Kushal Kharel's clinic is at Kalanki-14, Near Malpot Road, Kathmandu, near Kalanki Bhatbhateni Supermarket, with roadside parking available. Online consultation is also available if you're elsewhere in Nepal or unable to visit in person.",
+  },
+  {
     question: "Can Nepalis living abroad book a consultation?",
     answer:
       "Yes. Dr. Kushal Kharel provides online psychiatric consultation for Nepalis living in the USA, UK, Australia, Canada, Qatar, Dubai, and other countries, for concerns such as homesickness, isolation, work stress and family separation.",
@@ -47,7 +67,7 @@ const faqs = [
       "Neuropsychiatry is the branch of psychiatry focused on mental health conditions that involve the brain's structure and function, such as dementia, delirium, and psychiatric symptoms arising from neurological conditions, bridging psychiatry and neurology.",
   },
   {
-    question: "When should I see a psychiatrist?",
+    question: "When should someone see a psychiatrist?",
     answer:
       "See a psychiatrist when emotional, behavioral, or cognitive symptoms — low mood, excessive worry, sleep problems, concentration difficulties, or unusual thoughts or perceptions — persist for more than a few weeks and affect your daily life, work, or relationships.",
   },

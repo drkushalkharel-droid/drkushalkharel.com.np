@@ -171,6 +171,63 @@ export default function About() {
 
             </div>
 
+            {/* Credentials table */}
+
+            <div className="mt-8 overflow-x-auto rounded-2xl border border-gray-200">
+              <table className="w-full min-w-[480px] text-left text-sm">
+                <caption className="sr-only">Dr. Kushal Kharel&apos;s credentials at a glance</caption>
+                <thead className="bg-gray-50 text-gray-700">
+                  <tr>
+                    <th className="px-5 py-3 font-bold">Credential</th>
+                    <th className="px-5 py-3 font-bold">Institution</th>
+                    <th className="px-5 py-3 font-bold">Year</th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-700">
+                  <tr className="border-t border-gray-200">
+                    <td className="px-5 py-3 font-semibold">Nepal Medical Council registration (No. 27199)</td>
+                    <td className="px-5 py-3">Nepal Medical Council</td>
+                    <td className="px-5 py-3">Active</td>
+                  </tr>
+                  <tr className="border-t border-gray-200 bg-gray-50">
+                    <td className="px-5 py-3 font-semibold">MD Psychiatry</td>
+                    <td className="px-5 py-3">KIST Medical College Teaching Hospital</td>
+                    <td className="px-5 py-3">2023-2026</td>
+                  </tr>
+                  <tr className="border-t border-gray-200">
+                    <td className="px-5 py-3 font-semibold">Lifetime Member</td>
+                    <td className="px-5 py-3">Nepal Medical Association</td>
+                    <td className="px-5 py-3">Active</td>
+                  </tr>
+                  <tr className="border-t border-gray-200 bg-gray-50">
+                    <td className="px-5 py-3 font-semibold">Lifetime Member</td>
+                    <td className="px-5 py-3">Psychiatrists&apos; Association of Nepal</td>
+                    <td className="px-5 py-3">Active</td>
+                  </tr>
+                  <tr className="border-t border-gray-200">
+                    <td className="px-5 py-3 font-semibold">Medical Officer</td>
+                    <td className="px-5 py-3">Kathmandu ENT Hospital</td>
+                    <td className="px-5 py-3">2022-2023</td>
+                  </tr>
+                  <tr className="border-t border-gray-200 bg-gray-50">
+                    <td className="px-5 py-3 font-semibold">Medical Officer</td>
+                    <td className="px-5 py-3">Patan Hospital</td>
+                    <td className="px-5 py-3">2021-2022</td>
+                  </tr>
+                  <tr className="border-t border-gray-200">
+                    <td className="px-5 py-3 font-semibold">Medical Officer</td>
+                    <td className="px-5 py-3">Kantipur Hospital</td>
+                    <td className="px-5 py-3">2020-2021</td>
+                  </tr>
+                  <tr className="border-t border-gray-200 bg-gray-50">
+                    <td className="px-5 py-3 font-semibold">Psychiatric clinic, Kalanki-14</td>
+                    <td className="px-5 py-3">Private practice</td>
+                    <td className="px-5 py-3">2020-Present</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
           </div>
 
         </div>

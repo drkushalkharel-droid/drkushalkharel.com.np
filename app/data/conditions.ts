@@ -60,6 +60,10 @@ export type Condition = {
   // left unset elsewhere rather than forcing a HowTo onto content that
   // isn't actually a set of ordered steps.
   howTo?: ConditionHowTo;
+  // Colloquial search phrases that don't match the clinical title
+  // (e.g. "depression" for Major Depressive Disorder), merged into
+  // this page's metadata keywords.
+  extraKeywords?: string[];
 };
 
 // Full list of categories this library is being built out to cover.
@@ -408,6 +412,11 @@ export const conditions: Condition[] = [
         answer:
           "Diagnosis is made through clinical interview establishing a pattern of recurrent, unexpected panic attacks followed by a month or more of worry about future attacks or significant behavior change, after ruling out medical causes.",
       },
+      {
+        question: "Where can I get panic disorder treatment in Kathmandu?",
+        answer:
+          "Dr. Kushal Kharel, a Consultant Psychiatrist in Kathmandu, provides panic disorder treatment using evidence-based CBT with interoceptive exposure and medication when needed, available in person or via online consultation.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -431,6 +440,7 @@ export const conditions: Condition[] = [
       "National Institute for Health and Care Excellence (NICE). Generalised anxiety disorder and panic disorder in adults: management.",
       "National Institute of Mental Health (NIMH). Panic Disorder: When Fear Overwhelms.",
     ],
+    extraKeywords: ["panic disorder treatment Kathmandu", "panic attack doctor Kathmandu"],
   },
   {
     slug: "panic-attacks",
@@ -1333,6 +1343,11 @@ export const conditions: Condition[] = [
         answer:
           "Not always — mild OCD can respond well to ERP alone. Medication is generally recommended for moderate-to-severe OCD or when therapy alone isn't sufficient, and SSRIs at higher doses are the typical first-line choice.",
       },
+      {
+        question: "Is there an OCD specialist in Nepal?",
+        answer:
+          "Yes. Dr. Kushal Kharel, a Consultant Psychiatrist in Kathmandu, treats obsessive-compulsive disorder using evidence-based Exposure and Response Prevention therapy and medication when appropriate, in person or via online consultation.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -1356,6 +1371,7 @@ export const conditions: Condition[] = [
       "National Institute for Health and Care Excellence (NICE). Obsessive-compulsive disorder and body dysmorphic disorder: treatment.",
       "International OCD Foundation.",
     ],
+    extraKeywords: ["OCD specialist Nepal", "OCD treatment Kathmandu"],
   },
   {
     slug: "body-dysmorphic-disorder",
@@ -2090,6 +2106,11 @@ export const conditions: Condition[] = [
         answer:
           "A psychiatric consultation typically includes a detailed history of your mood, sleep, appetite and functioning, screening for other conditions like bipolar disorder, a suicide risk assessment, and a discussion of therapy and/or medication options.",
       },
+      {
+        question: "Is there a depression specialist in Nepal?",
+        answer:
+          "Yes. Dr. Kushal Kharel is a Consultant Psychiatrist and depression specialist in Kathmandu, Nepal, providing evidence-based diagnosis and treatment for major depressive disorder, in person or via online consultation.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -2113,6 +2134,7 @@ export const conditions: Condition[] = [
       "National Institute for Health and Care Excellence (NICE). Depression in adults: treatment and management.",
       "World Health Organization. Depression fact sheet.",
     ],
+    extraKeywords: ["depression specialist Nepal", "depression treatment Kathmandu"],
   },
   {
     slug: "persistent-depressive-disorder",
@@ -2698,6 +2720,11 @@ export const conditions: Condition[] = [
         answer:
           "Bipolar I involves at least one full manic episode, which can be severe enough to require hospitalization. Bipolar II involves hypomania (a milder form) plus major depressive episodes, and never a full manic episode.",
       },
+      {
+        question: "Where can I get bipolar disorder treatment in Nepal?",
+        answer:
+          "Dr. Kushal Kharel, a Consultant Psychiatrist in Kathmandu, provides bipolar disorder treatment including mood-stabilizing medication and psychotherapy, with both in-person and online consultation available across Nepal.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -2720,6 +2747,7 @@ export const conditions: Condition[] = [
       "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
       "National Institute for Health and Care Excellence (NICE). Bipolar disorder: assessment and management.",
     ],
+    extraKeywords: ["bipolar disorder treatment Nepal", "bipolar specialist Kathmandu"],
   },
   {
     slug: "bipolar-ii-disorder",
@@ -3077,6 +3105,11 @@ export const conditions: Condition[] = [
         answer:
           "Most people with schizophrenia need long-term antipsychotic treatment to prevent relapse, since stopping medication significantly raises the risk of symptoms returning. Treatment duration is individualized with a psychiatrist based on episode history and response.",
       },
+      {
+        question: "Where can I get schizophrenia treatment in Nepal?",
+        answer:
+          "Dr. Kushal Kharel, a Consultant Psychiatrist in Kathmandu, provides schizophrenia treatment including antipsychotic medication management, psychosocial support and family psychoeducation, in person or through follow-up online consultation.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -3100,6 +3133,7 @@ export const conditions: Condition[] = [
       "National Institute for Health and Care Excellence (NICE). Psychosis and schizophrenia in adults: prevention and management.",
       "World Health Organization. Schizophrenia fact sheet.",
     ],
+    extraKeywords: ["schizophrenia treatment Nepal", "schizophrenia specialist Kathmandu"],
     howTo: {
       name: "How to Help a Family Member with Schizophrenia",
       description:
@@ -3917,6 +3951,11 @@ export const conditions: Condition[] = [
         answer:
           "ADHD is one of the most heritable psychiatric conditions, arising from dysregulation of dopamine and norepinephrine in brain circuits governing attention and impulse control, with genetics accounting for roughly 70-80% of risk.",
       },
+      {
+        question: "Is there an ADHD specialist in Nepal?",
+        answer:
+          "Yes. Dr. Kushal Kharel is a Consultant Psychiatrist in Nepal who assesses and treats ADHD in children, adolescents and adults, offering evidence-based medication management and behavioral strategies, in person in Kathmandu or online.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -3940,6 +3979,7 @@ export const conditions: Condition[] = [
       "American Academy of Pediatrics. ADHD Clinical Practice Guideline.",
       "National Institute for Health and Care Excellence (NICE). Attention deficit hyperactivity disorder: diagnosis and management.",
     ],
+    extraKeywords: ["ADHD specialist Nepal", "ADHD treatment Kathmandu"],
   },
   {
     slug: "autism-spectrum-disorder",
@@ -4047,6 +4087,11 @@ export const conditions: Condition[] = [
         answer:
           "It reflects the wide variation in how autism presents and the range of support needs — from individuals who live fully independently to those who require substantial, lifelong support — rather than a single, uniform presentation.",
       },
+      {
+        question: "Where can I get an autism assessment in Nepal?",
+        answer:
+          "Dr. Kushal Kharel, a Consultant Psychiatrist in Kathmandu, provides autism spectrum disorder assessment and diagnostic evaluation for children and adults, along with guidance on therapy and support services, in person or via online consultation.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -4070,6 +4115,7 @@ export const conditions: Condition[] = [
       "Centers for Disease Control and Prevention (CDC). Autism data and statistics.",
       "American Academy of Pediatrics. Autism guidelines.",
     ],
+    extraKeywords: ["autism assessment Nepal", "autism specialist Kathmandu"],
   },
   {
     slug: "intellectual-disability",
@@ -4855,6 +4901,11 @@ export const conditions: Condition[] = [
         answer:
           "Melatonin has only modest evidence for insomnia itself and is generally more useful for circadian timing issues (like jet lag or delayed sleep phase) than as a primary insomnia treatment.",
       },
+      {
+        question: "Is there a sleep specialist psychiatrist in Nepal?",
+        answer:
+          "Yes. Dr. Kushal Kharel, a Consultant Psychiatrist in Kathmandu, treats insomnia and other sleep-wake disorders using evidence-based approaches such as CBT-I and, when appropriate, medication, in person or via online consultation.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -4877,6 +4928,7 @@ export const conditions: Condition[] = [
       "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
       "American Academy of Sleep Medicine. Clinical Practice Guideline for CBT-I.",
     ],
+    extraKeywords: ["sleep specialist psychiatrist Nepal", "insomnia treatment Kathmandu"],
     howTo: {
       name: "How to Improve Sleep Hygiene",
       description:

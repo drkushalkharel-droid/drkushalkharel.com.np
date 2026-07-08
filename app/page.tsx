@@ -14,6 +14,7 @@ import AbroadSeoSection from "./components/AbroadSeoSection";
 import Testimonials from "./components/Testimonials";
 import GoogleReviewsMap from "./components/GoogleReviewsMap";
 import AppointmentGuide from "./components/AppointmentGuide";
+import CounsellingSeoSection from "./components/CounsellingSeoSection";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import { buildSpeakableSpec } from "./lib/schema";
@@ -31,7 +32,11 @@ export const metadata: Metadata = {
     "Top Psychiatrist in Nepal",
     "Best Psychiatrist in Kathmandu",
     "Top Psychiatrist in Kathmandu",
+    "Psychiatrist near me",
+    "Best Psychiatrist near me",
     "Psychiatrist near me Kathmandu",
+    "Psychiatrist Kathmandu",
+    "Psychiatrist Lalitpur",
     "Mental Health Doctor Nepal",
     "Anxiety Treatment Nepal",
     "Depression Treatment Nepal",
@@ -82,6 +87,7 @@ export default function Home() {
       <Experience />
       <Awards />
       <Services />
+      <CounsellingSeoSection />
       <Conditions />
       <AppointmentGuide />
       <Testimonials />

@@ -33,7 +33,9 @@ export async function generateMetadata({
     },
     keywords: [
       ...guide.searchTerms,
+      `psychiatrist ${guide.city}`,
       `psychiatrist near me ${guide.city}`,
+      `best psychiatrist near me`,
       `mental health care ${guide.city}`,
       `online psychiatrist ${guide.city}`,
       `Dr Kushal Kharel ${guide.city}`,
@@ -113,6 +115,31 @@ export default async function CityGuidePage({
     ],
   };
 
+  const cityFaqs = [
+    {
+      question: `Is there a psychiatrist near me in ${guide.city}?`,
+      answer: `Dr. Kushal Kharel's clinic is in Kalanki, Kathmandu, within reach for patients in ${guide.city}. Online consultation is also available if an in-person visit isn't practical.`,
+    },
+    {
+      question: `Who is the best psychiatrist in ${guide.city}?`,
+      answer: `There's no single certified "best" psychiatrist — look for a registered specialist with relevant experience. Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist serving patients from ${guide.city}, in person or online.`,
+    },
+    {
+      question: `Is online psychiatric consultation available for patients in ${guide.city}?`,
+      answer: `Yes. Patients in ${guide.city} can book an online consultation by phone or video call, suitable for follow-up and many initial assessments, or an in-person visit at the Kalanki clinic in Kathmandu.`,
+    },
+  ];
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: cityFaqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  };
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <script
@@ -122,6 +149,10 @@ export default async function CityGuidePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       <section className="bg-white">
@@ -281,6 +312,20 @@ export default async function CityGuidePage({
           </div>
         </section>
       )}
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-950">Frequently Asked Questions</h2>
+          <div className="mt-8 space-y-5">
+            {cityFaqs.map((faq) => (
+              <div key={faq.question} className="rounded-lg border border-slate-200 p-5">
+                <h3 className="font-bold text-blue-950">{faq.question}</h3>
+                <p className="mt-2 leading-7 text-slate-700">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

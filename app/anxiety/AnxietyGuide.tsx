@@ -271,6 +271,18 @@ export default function AnxietyGuide() {
                   ? "Yes. Online consultation can be suitable for many anxiety concerns, especially follow-up, psychoeducation and treatment monitoring."
                   : "मिल्छ। धेरै चिन्तासम्बन्धी समस्यामा अनलाइन परामर्श, follow-up, psychoeducation र उपचार अनुगमन उपयोगी हुन सक्छ।",
               ],
+              [
+                isEnglish ? "Who treats anxiety in Kathmandu?" : "काठमाडौंमा चिन्ता रोगको उपचार कसले गर्छ?",
+                isEnglish
+                  ? "Dr. Kushal Kharel, a Consultant Psychiatrist in Kathmandu, treats anxiety disorders including generalized anxiety disorder, panic disorder, social anxiety and phobias, using evidence-based CBT and medication when appropriate, in person or online."
+                  : "डा. कुशल खरेल, काठमाडौंका कन्सल्टेन्ट साइकाइट्रिस्टले सामान्यीकृत चिन्ता विकार, प्यानिक डिसअर्डर, सामाजिक चिन्ता र फोबियाजस्ता समस्याको प्रमाण-आधारित उपचार (CBT र आवश्यक परेमा औषधि) व्यक्तिगत रूपमा वा अनलाइनमार्फत प्रदान गर्नुहुन्छ।",
+              ],
+              [
+                isEnglish ? "Who is the best psychiatrist for anxiety in Kathmandu?" : "काठमाडौंमा चिन्ता रोगको लागि उत्तम मनोचिकित्सक को हो?",
+                isEnglish
+                  ? "There is no single certified 'best' psychiatrist — look for a registered specialist with relevant experience. Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist in Kathmandu who treats anxiety disorders using evidence-based CBT and medication, in person or online."
+                  : "कुनै एउटै प्रमाणित 'उत्तम' मनोचिकित्सक हुँदैन — दर्ता भएको र सान्दर्भिक अनुभव भएको विशेषज्ञ खोज्नुहोस्। डा. कुशल खरेल नेपाल मेडिकल काउन्सिलमा दर्ता भएका काठमाडौंका कन्सल्टेन्ट साइकाइट्रिस्ट हुन्, जसले प्रमाण-आधारित CBT र औषधिद्वारा चिन्ता रोगको उपचार व्यक्तिगत रूपमा वा अनलाइनमार्फत गर्नुहुन्छ।",
+              ],
             ].map(([question, answer]) => (
               <div key={question} className="rounded-lg bg-white p-6 shadow-sm">
                 <h3 className="text-xl font-bold text-blue-900">{question}</h3>

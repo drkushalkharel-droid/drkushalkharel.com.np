@@ -239,11 +239,26 @@ export default function RootLayout({
         "@type": "EducationalOccupationalCredential",
         credentialCategory: "license",
         name: "Nepal Medical Council Registered Psychiatrist",
+        identifier: "27199",
+        recognizedBy: {
+          "@type": "Organization",
+          name: "Nepal Medical Council",
+        },
       },
       {
         "@type": "EducationalOccupationalCredential",
         credentialCategory: "degree",
         name: "MD Psychiatry",
+      },
+    ],
+    memberOf: [
+      {
+        "@type": "Organization",
+        name: "Nepal Medical Association",
+      },
+      {
+        "@type": "Organization",
+        name: "Psychiatrists' Association of Nepal",
       },
     ],
     alumniOf: {
