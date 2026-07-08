@@ -60,6 +60,7 @@ export const conditionCategories: string[] = [
   "Neurocognitive Disorders",
   "Eating Disorders",
   "Somatic Symptom and Related Disorders",
+  "Psychiatric Emergencies",
 ];
 
 export const conditions: Condition[] = [
@@ -6121,6 +6122,460 @@ export const conditions: Condition[] = [
     references: [
       "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
       "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
+    ],
+  },
+  {
+    slug: "delirium",
+    title: "Delirium",
+    category: "Psychiatric Emergencies",
+    titleSuffix: "Causes, Warning Signs & Emergency Care",
+    shortDescription:
+      "An acute, fluctuating disturbance in attention and awareness developing over hours to days, usually caused by an underlying medical problem — a medical emergency requiring urgent evaluation.",
+    overview:
+      "Delirium is an acute, often frightening disturbance in attention, awareness, and cognition that develops over a short period — hours to days — and tends to fluctuate in severity throughout the day. Unlike dementia, which is a chronic, gradually progressive condition, delirium is typically caused by an underlying, often reversible medical problem — infection, medication effects, withdrawal, organ dysfunction — and constitutes a medical emergency requiring urgent evaluation to identify and treat the underlying cause.",
+    definition:
+      "Delirium is defined by a disturbance in attention and awareness developing over a short period, representing a change from baseline and tending to fluctuate in severity during the day, together with an additional disturbance in cognition (memory, disorientation, language, or perception). It is not better explained by another neurocognitive disorder and does not occur in the context of severely reduced arousal such as coma, and there must be evidence the disturbance is a direct physiological consequence of a medical condition, substance intoxication or withdrawal, medication, or multiple causes.",
+    causes:
+      "Common causes include infection (particularly urinary tract infections and pneumonia, especially in older adults), medication effects or interactions — particularly anticholinergic medications, opioids, benzodiazepines, and polypharmacy — substance intoxication or withdrawal (alcohol withdrawal delirium is a specific, dangerous cause), metabolic disturbances (electrolyte imbalance, dehydration, low blood sugar, organ failure), surgery and anesthesia, severe pain, sleep deprivation, uncorrected sensory impairment, and unfamiliar hospital environments.",
+    riskFactors: [
+      "Older age",
+      "Pre-existing dementia or cognitive impairment",
+      "Multiple medications (polypharmacy)",
+      "Severe or multiple medical illnesses, or recent surgery",
+      "Sensory impairment — uncorrected vision or hearing loss",
+      "Severe pain or sleep deprivation",
+      "Alcohol use disorder, given withdrawal risk",
+      "Dehydration or malnutrition",
+      "An unfamiliar or overstimulating environment, such as an ICU",
+    ],
+    brainMechanisms:
+      "Delirium reflects a global, acute dysfunction of brain networks involved in attention and arousal, thought to result from a combination of neurotransmitter imbalance — particularly reduced acetylcholine activity and excess dopamine — neuroinflammation triggered by the underlying medical illness, and disrupted connectivity between brain regions. Unlike the structural, progressive brain changes of dementia, the changes in delirium are generally considered functional and reversible once the underlying cause is treated, though recovery can take time, and delirium can sometimes accelerate underlying cognitive decline.",
+    symptoms: [
+      "Sudden onset of confusion and disorientation to time, place, or person",
+      "Reduced ability to focus, sustain, or shift attention",
+      "Fluctuating alertness — ranging from drowsy to agitated, sometimes within the same day",
+      "Disorganized thinking or rambling speech",
+      "Memory difficulties",
+      "Perceptual disturbances, including hallucinations in some cases",
+      "Disrupted sleep-wake cycle",
+      "Emotional lability — rapid, unpredictable mood shifts",
+      "Hypoactive subtype: withdrawal, reduced activity, sluggishness (often under-recognized and mistaken for depression or fatigue)",
+      "Hyperactive subtype: agitation, restlessness, combativeness",
+    ],
+    diagnosticCriteria: [
+      "Disturbance in attention and awareness developing acutely (hours to days) and fluctuating in severity",
+      "An additional disturbance in cognition",
+      "Not better explained by a pre-existing neurocognitive disorder",
+      "Not occurring in the context of severely reduced arousal or coma",
+      "Evidence the disturbance is caused by an underlying medical condition, substance, medication, or combination of causes",
+    ],
+    differentialDiagnosis: [
+      { name: "Dementia", note: "Chronic and gradually progressive, without the acute onset or fluctuating course of delirium, though the two frequently co-occur and pre-existing dementia is a major risk factor for delirium." },
+      { name: "Depression", note: "Hypoactive delirium can be mistaken for depression given withdrawal and reduced activity, but delirium involves attention and cognitive disturbance with fluctuation that depression does not." },
+      { name: "Primary psychotic disorders", note: "Hallucinations can occur in both, but delirium has an identifiable acute medical cause and fluctuating attention, unlike primary psychosis." },
+      { name: "Non-convulsive status epilepticus", note: "A seizure-related cause of acute confusion that can mimic delirium, sometimes requiring EEG to distinguish." },
+    ],
+    investigations: [
+      "Urgent, thorough medical workup to identify the underlying cause — physical examination and vital signs",
+      "Blood tests: infection markers, electrolytes, glucose, kidney/liver function, thyroid function",
+      "Urinalysis, oxygen saturation, and review of all medications for potential culprits",
+      "Further tests as clinically indicated: brain imaging, chest X-ray, or lumbar puncture",
+      "Validated screening tools such as the Confusion Assessment Method (CAM) to identify and track delirium at the bedside",
+    ],
+    treatmentOverview:
+      "Identifying and treating the underlying medical cause is the essential first priority — delirium is a symptom of an underlying problem, not a standalone psychiatric illness treated with psychiatric medication alone. Supportive, non-pharmacological measures — reorientation, ensuring glasses/hearing aids are available, minimizing unnecessary noise, maintaining a normal day-night light cycle, family presence — are central to management, and medication is used cautiously and only when necessary for safety.",
+    medications: [
+      { name: "Low-dose antipsychotics (e.g., haloperidol, risperidone, quetiapine)", note: "May be used cautiously and briefly for severe agitation or distressing hallucinations posing a safety risk, alongside treatment of the underlying cause." },
+      { name: "Benzodiazepines", note: "Generally avoided except specifically for alcohol or benzodiazepine withdrawal delirium, since they can worsen delirium from other causes." },
+      { name: "Medication review", note: "Anticholinergic medications and other known delirium-inducing drugs should be reviewed and minimized or stopped where possible." },
+    ],
+    psychotherapy: [
+      { name: "Reorientation strategies", note: "Calm, consistent reminders of time, place, and situation." },
+      { name: "Family involvement", note: "Familiar presence and objects support orientation and reduce distress." },
+      { name: "Psychoeducation for family", note: "Helps reduce fear and distress when a loved one seems suddenly, dramatically different." },
+    ],
+    lifestyleAdvice: [
+      "Maintain hydration and nutrition",
+      "Ensure sensory aids — glasses, hearing aids — are used",
+      "Promote normal sleep-wake cycles: natural light during the day, dark and quiet at night",
+      "Encourage early mobilization after surgery or illness where medically appropriate",
+      "Minimize unnecessary medications",
+      "Bring familiar objects and encourage family presence to support orientation",
+    ],
+    prognosis:
+      "Delirium is generally reversible once the underlying cause is identified and treated, though recovery can take days to weeks. In older adults or those with pre-existing cognitive impairment, full recovery to baseline is not always achieved, and delirium can be associated with accelerated cognitive decline. Delirium is associated with significantly increased risk of complications, longer hospital stays, and increased mortality if not promptly recognized and treated.",
+    prevention: [
+      "Proactive, multicomponent prevention protocols in hospital settings — reorientation, sleep protocols, early mobilization, addressing sensory impairment, minimizing unnecessary medications and restraints",
+      "Careful medication review in older adults to avoid high-risk drugs where possible",
+      "Prompt treatment of infections and other acute illnesses",
+    ],
+    familyGuidance:
+      "Understand delirium as a medical emergency signaling an underlying problem, not simply 'confusion of old age' or a sign of permanent decline. Provide calm reassurance and gentle reorientation rather than arguing or correcting harshly. Bring familiar objects, ensure glasses and hearing aids are available, and advocate for minimizing unnecessary tubes, restraints, or overnight disruptions in hospital. Seek urgent medical attention immediately for any sudden, significant change in alertness, attention, or confusion in a loved one, especially an older adult.",
+    faqs: [
+      {
+        question: "Is delirium the same as dementia?",
+        answer:
+          "No. Delirium has an acute onset and fluctuating course from an identifiable, often reversible cause, while dementia is a chronic, gradually progressive condition — though the two can occur together, especially in older adults.",
+      },
+      {
+        question: "Will my loved one fully recover from delirium?",
+        answer:
+          "Many people recover fully once the underlying cause is treated, though recovery can take days to weeks, and in older adults or those with pre-existing cognitive impairment, recovery to full baseline function is not always complete.",
+      },
+      {
+        question: "Why does confusion get worse at night (sundowning)?",
+        answer:
+          "Reduced light and sensory cues, disrupted sleep-wake cycles, and unfamiliar nighttime hospital environments can worsen disorientation in the evening — a pattern often seen in both delirium and dementia, sometimes called 'sundowning.'",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "Delirium is just a normal part of being sick or getting old.",
+        fact: "Delirium is a specific, urgent medical condition requiring prompt evaluation to find and treat an underlying cause — it is not a normal or expected consequence of illness or aging.",
+      },
+      {
+        myth: "Delirium and dementia are basically the same thing.",
+        fact: "Delirium has an acute onset and fluctuating course from an identifiable, often reversible cause, while dementia is a chronic, gradually progressive condition.",
+      },
+    ],
+    urgentCare:
+      "Any sudden change in a person's attention, alertness, or orientation is a medical emergency requiring immediate evaluation, since delirium can signal a serious, potentially life-threatening underlying illness such as severe infection, dangerously low oxygen or blood sugar, or a stroke. Do not assume confusion in an older adult is 'just aging' without medical assessment.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
+      "American Delirium Society.",
+      "National Institute for Health and Care Excellence (NICE). Delirium: prevention, diagnosis and management.",
+    ],
+  },
+  {
+    slug: "serotonin-syndrome",
+    title: "Serotonin Syndrome",
+    category: "Psychiatric Emergencies",
+    titleSuffix: "Causes, Warning Signs & Emergency Care",
+    shortDescription:
+      "A potentially life-threatening reaction to excess serotonin activity, usually from combining serotonergic medications — requires immediate recognition and treatment.",
+    overview:
+      "Serotonin Syndrome is a potentially life-threatening condition caused by excess serotonin activity in the nervous system, most commonly resulting from a combination of serotonergic medications — such as certain antidepressants — taken together, an overdose, or, less commonly, a single serotonergic agent in a sensitive individual. It requires prompt recognition and, in significant cases, emergency medical treatment.",
+    definition:
+      "Serotonin Syndrome is not a formal DSM-5 psychiatric diagnosis but an important medication-induced medical emergency relevant to psychiatric practice, since many psychiatric medications are serotonergic. It is diagnosed clinically, commonly using the Hunter Serotonin Toxicity Criteria, based on recent use of a serotonergic agent combined with characteristic clinical findings across neuromuscular, autonomic, and mental status domains.",
+    causes:
+      "Serotonin Syndrome results from combining two or more serotonergic medications (such as an SSRI with an MAOI, triptan, or tramadol), overdose of a single serotonergic medication, drug interactions that increase serotonin levels or reduce its metabolism, and, in rare cases, therapeutic doses in a particularly sensitive individual or following a recent dose increase.",
+    riskFactors: [
+      "Recent addition of a new serotonergic medication or dose increase",
+      "Use of multiple serotonergic medications simultaneously, including certain supplements or illicit substances such as MDMA",
+      "Intentional overdose",
+      "Drug interactions, particularly combining an SSRI/SNRI with an MAOI",
+      "Recent switch between antidepressant classes without an adequate washout period",
+    ],
+    brainMechanisms:
+      "Excess stimulation of serotonin receptors, particularly the 5-HT2A receptor, throughout the central and peripheral nervous system produces the characteristic triad of neuromuscular abnormalities (tremor, clonus, hyperreflexia, and in severe cases muscle rigidity), autonomic instability (rapid heart rate, high blood pressure, fever, sweating, diarrhea), and altered mental status (agitation, confusion). In severe cases, this can progress to dangerously high body temperature, seizures, and organ damage.",
+    symptoms: [
+      "Mild: tremor, restlessness, diarrhea, sweating, mild increase in heart rate",
+      "Moderate: agitation, muscle twitching (clonus), hyperreflexia, fever, dilated pupils",
+      "Severe (medical emergency): high fever, severe muscle rigidity, seizures, dangerously unstable heart rate or blood pressure, altered consciousness",
+    ],
+    diagnosticCriteria: [
+      "Clinical diagnosis based on recent serotonergic agent exposure combined with characteristic findings",
+      "Commonly assessed via the Hunter Criteria: spontaneous or inducible clonus, agitation, sweating, tremor, hyperreflexia, and temperature elevation, in the context of a serotonergic drug",
+      "No specific laboratory test confirms the diagnosis, making clinical recognition essential",
+    ],
+    differentialDiagnosis: [
+      { name: "Neuroleptic Malignant Syndrome", note: "Caused by antipsychotic/dopamine-blocking medications rather than serotonergic agents, typically develops more slowly over days, and features prominent uniform muscle rigidity rather than the clonus and hyperreflexia more typical of serotonin syndrome." },
+      { name: "Anticholinergic toxicity", note: "Can cause similar agitation and autonomic changes but typically with dry skin and mucous membranes rather than sweating, and without clonus." },
+      { name: "Malignant hyperthermia", note: "A rare, severe reaction to certain anesthesia drugs, distinguished by the specific anesthetic exposure history." },
+      { name: "Infection/sepsis", note: "Fever and altered mental status can overlap, requiring careful correlation with medication history." },
+    ],
+    investigations: [
+      "Careful medication history, including all prescription, over-the-counter, and recreational substances",
+      "Physical examination focusing on characteristic neuromuscular and autonomic signs (clonus, hyperreflexia, tremor, vital signs, temperature)",
+      "Blood tests to assess for complications: kidney function, muscle enzyme levels given rhabdomyolysis risk, electrolytes",
+      "ECG, given cardiac risk from autonomic instability",
+    ],
+    treatmentOverview:
+      "Immediately discontinuing all serotonergic agents is the essential first step. Mild cases may resolve with supportive care and monitoring alone. Moderate-to-severe cases require emergency medical treatment, including aggressive cooling for fever, benzodiazepines for agitation and muscle rigidity, and in severe cases, a specific serotonin antagonist medication, with intensive supportive care in a hospital setting.",
+    medications: [
+      { name: "Cyproheptadine", note: "A serotonin antagonist used specifically as an antidote in moderate-to-severe cases." },
+      { name: "Benzodiazepines", note: "Used to control agitation and reduce muscle rigidity, helping prevent complications." },
+      { name: "Stopping all causative serotonergic medications", note: "Essential first step, alongside supportive treatment for fever, blood pressure, and heart rate in a hospital setting." },
+    ],
+    psychotherapy: [
+      { name: "Not applicable to the acute medical emergency itself", note: "Once resolved, careful psychiatric medication review and psychoeducation about which medication combinations to avoid going forward is an important part of follow-up care." },
+    ],
+    lifestyleAdvice: [
+      "Always inform every prescribing doctor and pharmacist about all current medications and supplements to avoid dangerous combinations",
+      "Never combine or add new medications, including over-the-counter remedies or certain herbal supplements, without checking for interactions with existing psychiatric medications",
+      "Seek immediate medical attention if symptoms develop after starting or combining medications",
+    ],
+    prognosis:
+      "With prompt recognition and treatment, most cases of serotonin syndrome, including moderate cases, resolve within 24 to 72 hours of stopping the causative agent and providing appropriate supportive care. Severe, untreated cases can be life-threatening, underscoring the importance of prompt recognition and emergency treatment.",
+    prevention: [
+      "Careful medication reconciliation whenever starting a new medication, especially psychiatric medications",
+      "Avoiding known high-risk combinations, such as SSRIs/SNRIs with MAOIs, which requires an adequate washout period when switching",
+      "Clear communication between all prescribing providers",
+      "Patient education about early warning symptoms so treatment can be sought promptly",
+    ],
+    familyGuidance:
+      "Know the early warning signs — agitation, tremor, sweating, rapid heart rate — especially after a medication change, and seek prompt medical attention if these develop. Always inform all healthcare providers, including emergency department staff, about the person's full current medication list. Take confusion or high fever after a medication change seriously as a potential emergency.",
+    faqs: [
+      {
+        question: "Which medications commonly cause serotonin syndrome?",
+        answer:
+          "Most commonly, combinations involving SSRIs, SNRIs, MAOIs, tramadol, triptans (used for migraines), or certain supplements like St. John's Wort — the risk is highest when serotonergic agents are combined rather than used alone.",
+      },
+      {
+        question: "How is serotonin syndrome different from a normal side effect?",
+        answer:
+          "Serotonin syndrome involves a specific combination of neuromuscular, autonomic, and mental status changes — such as clonus, fever, and agitation together — rather than an isolated, milder side effect like nausea or mild drowsiness.",
+      },
+      {
+        question: "Can serotonin syndrome happen from just one medication?",
+        answer:
+          "It's uncommon but possible, particularly with an overdose or in a sensitive individual — most cases result from combining two or more serotonergic agents.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "Serotonin syndrome only happens with illegal drugs.",
+        fact: "It most commonly results from combinations of legitimately prescribed medications, particularly certain antidepressants combined with other serotonergic drugs.",
+      },
+      {
+        myth: "Any agitation on antidepressants means serotonin syndrome.",
+        fact: "Serotonin syndrome has a specific characteristic pattern — the diagnosis requires the combination of neuromuscular, autonomic, and mental status changes together, not simply feeling agitated.",
+      },
+    ],
+    urgentCare:
+      "Any combination of agitation, muscle twitching or rigidity, fever, rapid heart rate, and confusion following the start or combination of serotonergic medications is a medical emergency requiring immediate evaluation. Seek emergency care immediately rather than waiting to see if symptoms resolve on their own.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "Hunter Serotonin Toxicity Criteria.",
+      "U.S. Food and Drug Administration. Medication safety communications.",
+    ],
+  },
+  {
+    slug: "neuroleptic-malignant-syndrome",
+    title: "Neuroleptic Malignant Syndrome (NMS)",
+    category: "Psychiatric Emergencies",
+    titleSuffix: "Causes, Warning Signs & Emergency Care",
+    shortDescription:
+      "A rare but life-threatening reaction to antipsychotic medications, causing severe muscle rigidity, high fever, and autonomic instability — a medical emergency.",
+    overview:
+      "Neuroleptic Malignant Syndrome is a rare but life-threatening reaction to antipsychotic medications, or, less commonly, abrupt withdrawal of dopamine-enhancing medications used for Parkinson's disease, characterized by severe muscle rigidity, high fever, autonomic instability, and altered mental status. It is a psychiatric and medical emergency requiring immediate recognition and treatment.",
+    definition:
+      "NMS is not a formal DSM-5 diagnosis but a critical medication-induced emergency, diagnosed clinically based on recent exposure to a dopamine-blocking agent, typically an antipsychotic, combined with the characteristic clinical picture of severe muscle rigidity, high fever, autonomic instability, and altered consciousness, along with elevated creatine kinase, a muscle enzyme, on blood testing.",
+    causes:
+      "NMS results from use of antipsychotic medications, particularly with rapid dose increases, high doses, or use of multiple antipsychotics together — first-generation antipsychotics carry somewhat higher risk. Less commonly, abrupt discontinuation of dopamine agonist medications used for Parkinson's disease can trigger a similar syndrome.",
+    riskFactors: [
+      "Recent initiation or dose increase of an antipsychotic medication",
+      "Use of high-potency first-generation antipsychotics",
+      "Dehydration",
+      "Agitation or physical restraint at the time of medication administration",
+      "Prior episode of NMS",
+      "Concurrent use of lithium with antipsychotics",
+    ],
+    brainMechanisms:
+      "NMS is thought to result from sudden, significant blockade of dopamine receptors, particularly in the hypothalamus (affecting temperature regulation) and the nigrostriatal pathway (affecting movement control), producing the characteristic severe muscle rigidity and impaired heat dissipation. This dopamine blockade also affects the brain's autonomic regulation centers, contributing to the blood pressure and heart rate instability seen in the syndrome.",
+    symptoms: [
+      "Severe, generalized muscle rigidity, often described as 'lead-pipe' rigidity",
+      "High fever, often significantly elevated",
+      "Autonomic instability: rapid or irregular heart rate, high or fluctuating blood pressure, profuse sweating",
+      "Altered mental status ranging from confusion to coma",
+      "Elevated creatine kinase on blood testing, reflecting muscle breakdown",
+      "Typically developing over 1 to 3 days, more gradually than serotonin syndrome",
+    ],
+    diagnosticCriteria: [
+      "Recent dopamine-blocking agent exposure",
+      "Severe muscle rigidity",
+      "Hyperthermia",
+      "Autonomic instability and altered mental status",
+      "Supported by elevated creatine kinase and other laboratory findings, with other causes carefully excluded",
+    ],
+    differentialDiagnosis: [
+      { name: "Serotonin Syndrome", note: "Caused by serotonergic rather than dopamine-blocking agents, typically develops more rapidly over hours, and features clonus and hyperreflexia rather than the uniform lead-pipe rigidity of NMS." },
+      { name: "Malignant Catatonia", note: "Can closely resemble NMS clinically and sometimes occurs in the same patients, requiring careful clinical correlation with medication history." },
+      { name: "Malignant Hyperthermia", note: "Triggered specifically by certain anesthetic agents, distinguished by anesthesia exposure history." },
+      { name: "Central nervous system infection", note: "Meningitis or encephalitis can cause fever and altered mental status, requiring exclusion if the diagnosis is unclear." },
+    ],
+    investigations: [
+      "Urgent physical examination and vital sign monitoring",
+      "Blood tests including creatine kinase (typically significantly elevated), kidney function, electrolytes, and white blood cell count",
+      "Careful medication history focusing on recent antipsychotic use or dose changes",
+      "Exclusion of infectious or other causes as clinically indicated",
+    ],
+    treatmentOverview:
+      "Immediate discontinuation of the causative antipsychotic medication is essential. Supportive care in a hospital setting, often requiring intensive care, includes aggressive cooling, intravenous fluids, and monitoring for complications. Specific medications may be used in moderate-to-severe cases to help reduce rigidity and normalize dopamine activity, requiring coordinated psychiatric and emergency medicine care.",
+    medications: [
+      { name: "Dantrolene", note: "A muscle relaxant used in severe cases to reduce dangerous muscle rigidity and associated complications." },
+      { name: "Bromocriptine", note: "A dopamine agonist used to help counteract the dopamine blockade causing the syndrome." },
+      { name: "Benzodiazepines", note: "May help with agitation and reduce muscle tension." },
+    ],
+    psychotherapy: [
+      { name: "Not applicable to the acute medical emergency", note: "Once resolved, careful specialist reassessment of future antipsychotic treatment options, often involving a different medication class or very cautious, slow reintroduction under close monitoring, is an important part of follow-up care." },
+    ],
+    lifestyleAdvice: [
+      "Always inform prescribers of any prior episode of NMS before starting antipsychotic medication in the future",
+      "Stay well-hydrated, especially when starting or adjusting antipsychotic medications",
+      "Report any new muscle stiffness, fever, or significant changes promptly to a treating psychiatrist rather than waiting",
+    ],
+    prognosis:
+      "With prompt recognition and treatment, most people recover fully within 1 to 2 weeks, though NMS can be fatal if not promptly identified and treated, particularly from complications such as kidney failure, blood clots, or cardiac events. A history of NMS significantly informs future antipsychotic treatment decisions given some risk of recurrence.",
+    prevention: [
+      "Careful, gradual dose titration when starting or adjusting antipsychotic medications",
+      "Avoiding rapid dose increases or use of multiple antipsychotics simultaneously where possible",
+      "Ensuring adequate hydration",
+      "Particular caution and close monitoring in patients with a prior history of NMS",
+      "Prompt attention to early warning signs before they progress",
+    ],
+    familyGuidance:
+      "Know the early warning signs — new muscle stiffness, fever, confusion — especially after starting or changing an antipsychotic medication dose, and seek urgent medical attention if these develop rather than waiting. Always inform any new treating doctor about a prior history of NMS, since this significantly changes future medication decisions. Understand this as a rare but serious medication reaction requiring emergency care, not something to manage at home.",
+    faqs: [
+      {
+        question: "How common is neuroleptic malignant syndrome?",
+        answer:
+          "NMS is rare, affecting a small percentage of people who take antipsychotic medications, but its severity makes prompt recognition important despite its low frequency.",
+      },
+      {
+        question: "Can someone take antipsychotics again after having NMS?",
+        answer:
+          "This requires very careful specialist evaluation and caution, but it is not always absolutely contraindicated — the decision is made individually with a psychiatrist weighing risks and benefits.",
+      },
+      {
+        question: "How is NMS different from normal antipsychotic side effects?",
+        answer:
+          "NMS involves the specific combination of severe muscle rigidity, high fever, autonomic instability, and altered mental status together, which is distinct from more common, milder side effects like mild stiffness or sedation.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "Muscle stiffness on antipsychotics is always just a normal side effect.",
+        fact: "While mild stiffness can be a common, manageable side effect, sudden severe rigidity combined with fever and confusion is a medical emergency requiring immediate attention.",
+      },
+      {
+        myth: "Someone who has had NMS can never take an antipsychotic again.",
+        fact: "Future antipsychotic use requires very careful specialist evaluation and caution, but it is not always absolutely contraindicated.",
+      },
+    ],
+    urgentCare:
+      "Severe muscle rigidity combined with high fever, confusion, and autonomic instability (rapid heart rate, unstable blood pressure) following antipsychotic medication use is a medical emergency requiring immediate emergency department evaluation. Do not wait to see if symptoms improve on their own.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "U.S. Food and Drug Administration. Medication safety information.",
+      "American Psychiatric Association practice guidelines.",
+    ],
+  },
+  {
+    slug: "acute-agitation-behavioral-emergency",
+    title: "Acute Agitation and Behavioral Emergency",
+    category: "Psychiatric Emergencies",
+    titleSuffix: "Warning Signs, Causes & Getting Help",
+    shortDescription:
+      "Escalating restlessness, irritability, and unpredictable behavior that can pose a risk to safety — resulting from psychiatric, medical, or substance-related causes.",
+    overview:
+      "Acute agitation refers to a state of excessive motor and verbal activity, often accompanied by irritability, distress, and unpredictability, that can escalate to a behavioral emergency posing risk of harm to the person or others. It can result from a wide range of underlying causes — psychiatric illness, substance intoxication or withdrawal, an underlying medical condition including delirium, or a combination — and requires prompt, careful assessment to identify the cause and ensure safety.",
+    definition:
+      "Acute agitation is not a single DSM-5 diagnosis but a clinical presentation and behavioral emergency that can occur across many underlying psychiatric and medical conditions, characterized by escalating restlessness, irritability, and potentially aggressive or unpredictable behavior that poses a risk to the safety of the person or those around them, requiring urgent assessment and de-escalation.",
+    causes:
+      "Causes include underlying psychiatric conditions (acute psychosis, mania, severe anxiety or panic, agitated depression), substance intoxication (particularly stimulants or alcohol) or withdrawal (alcohol and benzodiazepine withdrawal are especially dangerous), an underlying medical cause such as delirium or pain, and situational factors such as overwhelming environmental stimulation or unmet needs, particularly in someone with dementia or intellectual disability.",
+    riskFactors: [
+      "Underlying psychotic or bipolar disorder",
+      "Substance use or withdrawal",
+      "Dementia or delirium",
+      "History of previous agitation or aggression episodes",
+      "Untreated pain or discomfort",
+      "Overstimulating or unfamiliar environments",
+      "Communication difficulties — including autism, intellectual disability, or aphasia after a stroke — that make it hard to express distress or needs verbally",
+    ],
+    brainMechanisms:
+      "Acute agitation reflects an overwhelmed state of the brain's stress and threat-response systems, whether driven by primary psychiatric illness, a substance's direct pharmacological effect, or an underlying medical or delirium process disrupting normal brain function broadly. Regardless of the specific cause, the common final pathway involves impaired capacity for the prefrontal cortex to regulate and calm more primitive threat-response systems, driving escalating, poorly controlled behavior.",
+    symptoms: [
+      "Restlessness, pacing, and inability to sit still",
+      "Raised voice, or pressured, rapid speech",
+      "Irritability and low frustration tolerance",
+      "Escalating verbal hostility or threats",
+      "In severe cases, physical aggression toward objects, self, or others",
+      "Difficulty being redirected or calmed with usual reassurance",
+      "Accompanying confusion, hallucinations, or disorientation depending on the underlying cause",
+    ],
+    diagnosticCriteria: [
+      "Not a formal diagnostic category itself",
+      "Assessment focuses on identifying the underlying cause — psychiatric, substance-related, medical/delirium, or situational — through history, examination, and collateral information where safely possible",
+      "Immediate safety for the person and those around them is assessed simultaneously",
+    ],
+    differentialDiagnosis: [
+      { name: "Delirium", note: "Agitation with fluctuating attention and cognitive disturbance, usually with an identifiable acute medical cause." },
+      { name: "Acute psychotic episode", note: "Agitation driven by hallucinations, delusions, or disorganized thinking." },
+      { name: "Manic episode", note: "Agitation with elevated mood, grandiosity, and decreased need for sleep." },
+      { name: "Substance intoxication or withdrawal", note: "Temporal relationship to substance use, with characteristic physical signs depending on the substance." },
+      { name: "Anxiety or panic", note: "Agitation driven by intense fear and physical panic symptoms, generally with preserved orientation and reality testing." },
+      { name: "Pain or an unmet physical need", note: "Particularly relevant in individuals with communication difficulties such as dementia, intellectual disability, or young children." },
+    ],
+    investigations: [
+      "Rapid but careful assessment prioritizing immediate safety",
+      "Vital signs and basic medical screening to identify or exclude an underlying medical cause, including delirium",
+      "Blood glucose and oxygen saturation checks",
+      "Substance use history and, where clinically relevant, toxicology screening",
+      "Collateral history from family or caregivers when the person cannot reliably provide it themselves",
+    ],
+    treatmentOverview:
+      "De-escalation techniques — calm, non-confrontational communication, reducing environmental stimulation, offering choices and a sense of control — are the first-line approach and should be attempted before medication in most situations. Addressing any underlying identifiable cause is essential, and medication is used when de-escalation alone is insufficient and there is significant risk to safety.",
+    medications: [
+      { name: "Antipsychotics (oral or short-acting injectable when necessary)", note: "Used for agitation associated with psychosis or mania." },
+      { name: "Benzodiazepines", note: "Particularly for agitation related to anxiety or alcohol withdrawal, or when a rapid calming effect is needed." },
+    ],
+    psychotherapy: [
+      { name: "De-escalation and calm communication techniques", note: "Central in the acute moment." },
+      { name: "Treatment of the underlying condition", note: "Psychiatric treatment, substance use treatment, or dementia care planning once the acute crisis has resolved." },
+      { name: "Family and caregiver training", note: "Recognizing early warning signs and de-escalation techniques to help prevent future escalation." },
+    ],
+    lifestyleAdvice: [
+      "Identify and reduce personal or environmental triggers where a pattern is recognized",
+      "Ensure consistent treatment of any underlying psychiatric or medical condition",
+      "Maintain structured routines, particularly for individuals with dementia or communication difficulties",
+      "Develop a personalized crisis or de-escalation plan with a treating clinician for those with a history of recurrent episodes",
+    ],
+    prognosis:
+      "Outcomes depend heavily on identifying and appropriately treating the underlying cause. Many episodes resolve well with prompt, appropriate assessment and de-escalation, while recurrent agitation, particularly without an identified or treated underlying cause, can significantly affect quality of life and caregiving relationships.",
+    prevention: [
+      "Consistent treatment adherence for any underlying psychiatric condition",
+      "Prompt treatment of pain or discomfort, particularly in individuals with communication difficulties",
+      "Environmental modifications to reduce overstimulation for those prone to agitation",
+      "Caregiver education in early warning sign recognition and de-escalation techniques",
+      "Addressing substance use proactively rather than only during a crisis",
+    ],
+    familyGuidance:
+      "Remain as calm as possible, since a calm presence can help de-escalate the situation, while an anxious or confrontational response tends to escalate it further. Avoid arguing, correcting, or physically restraining unless there is an immediate safety necessity. Reduce environmental stimulation where possible, and check for unmet needs (pain, hunger, needing the bathroom) as a possible underlying trigger, especially in someone with dementia or a communication difficulty. Know when a situation has moved beyond what can be safely managed at home and requires emergency services.",
+    faqs: [
+      {
+        question: "What should I do if a family member becomes suddenly agitated or aggressive?",
+        answer:
+          "Stay calm, reduce stimulation where possible, check for an unmet need like pain or hunger, avoid confrontation, and seek emergency help immediately if there is any risk of serious harm to the person or others.",
+      },
+      {
+        question: "Is agitation always a sign of a psychiatric emergency?",
+        answer:
+          "Not always — it can also stem from an underlying medical cause like delirium, pain, or an unmet need, particularly in people with dementia or communication difficulties, which is why prompt assessment matters.",
+      },
+      {
+        question: "How can I help calm someone without making things worse?",
+        answer:
+          "Speak calmly and slowly, reduce noise and stimulation, avoid arguing or physically restraining unless necessary for immediate safety, and offer simple choices to help the person feel more in control.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "Agitated behavior is always intentional or manipulative.",
+        fact: "Agitation frequently stems from genuine underlying distress, pain, confusion, or an unmet need, particularly in conditions like dementia, delirium, or communication difficulties, rather than deliberate manipulation.",
+      },
+      {
+        myth: "Physical restraint is the safest way to manage agitation.",
+        fact: "De-escalation and addressing the underlying cause are generally safer and more effective first-line approaches; physical restraint carries real risks and is reserved for situations of immediate, serious safety risk.",
+      },
+    ],
+    urgentCare:
+      "Any agitation with immediate risk of serious harm to the person or others requires urgent professional help — call emergency services or go to the nearest emergency department. Do not attempt to physically restrain someone yourself unless there is no other option to prevent immediate serious harm, and prioritize your own safety while seeking professional help.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "American Association for Emergency Psychiatry. BETA de-escalation guidelines.",
+      "National Institute for Health and Care Excellence (NICE). Violence and aggression: short-term management.",
     ],
   },
 ];
