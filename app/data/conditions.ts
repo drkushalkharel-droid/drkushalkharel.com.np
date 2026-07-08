@@ -187,6 +187,36 @@ export const conditions: Condition[] = [
         answer:
           "GAD itself is not physically dangerous, but chronic untreated anxiety increases risk of depression, sleep disorders, and stress-related physical health problems, so treatment is worthwhile even when symptoms feel 'manageable.'",
       },
+      {
+        question: "What are the symptoms of an anxiety disorder?",
+        answer:
+          "Common symptoms include excessive, hard-to-control worry, restlessness, fatigue, difficulty concentrating, irritability, muscle tension, and sleep disturbance, present on most days for six months or more and interfering with daily life.",
+      },
+      {
+        question: "What's the difference between anxiety and normal stress?",
+        answer:
+          "Normal stress is proportionate to a specific situation and resolves once it passes. An anxiety disorder involves excessive, persistent worry that's hard to control, spans multiple areas of life, and continues even without an active stressor.",
+      },
+      {
+        question: "Can anxiety cause physical symptoms?",
+        answer:
+          "Yes. Anxiety commonly causes physical symptoms — racing heart, muscle tension, headaches, stomach upset, dizziness, and sleep disturbance — because the body's stress-response system activates alongside the psychological worry.",
+      },
+      {
+        question: "Are anxiety medications addictive?",
+        answer:
+          "SSRIs and SNRIs, the first-line medications for anxiety, are not addictive. Benzodiazepines carry dependence risk and are generally used only short-term, so the medication choice matters for this concern.",
+      },
+      {
+        question: "What therapies work for anxiety disorders?",
+        answer:
+          "Cognitive Behavioral Therapy (CBT) has the strongest evidence for anxiety disorders, along with relaxation training, mindfulness-based approaches, and Acceptance and Commitment Therapy (ACT), often combined with medication for moderate-to-severe symptoms.",
+      },
+      {
+        question: "What happens during a psychiatric consultation for anxiety?",
+        answer:
+          "A psychiatric consultation for anxiety typically includes a detailed history of your symptoms, triggers, and impact on daily life, a review of physical health and medications, and a discussion of treatment options tailored to your situation.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -1021,6 +1051,36 @@ export const conditions: Condition[] = [
         answer:
           "Many people achieve full or near-full remission with ERP and/or medication. Others manage OCD as a long-term condition with periods of good control and occasional flare-ups during stress.",
       },
+      {
+        question: "What is OCD?",
+        answer:
+          "OCD (Obsessive-Compulsive Disorder) is a psychiatric condition involving intrusive, unwanted thoughts (obsessions) that cause anxiety, and repetitive behaviors or mental acts (compulsions) performed to reduce that anxiety, consuming significant time and causing distress.",
+      },
+      {
+        question: "Can OCD go away on its own without treatment?",
+        answer:
+          "OCD rarely resolves fully without treatment and tends to follow a chronic, waxing-and-waning course if untreated. Structured treatment — particularly Exposure and Response Prevention — produces substantially better and faster outcomes than waiting it out.",
+      },
+      {
+        question: "Is OCD hereditary?",
+        answer:
+          "Yes, OCD has a notable genetic component, with heritability estimated at 40-50%. Having a close relative with OCD increases risk, though environmental factors and individual brain chemistry also play a significant role.",
+      },
+      {
+        question: "What treatments work for OCD?",
+        answer:
+          "Exposure and Response Prevention (ERP), a specialized form of CBT, is the gold-standard treatment for OCD. SSRIs at higher-than-typical doses are the first-line medication, and combining ERP with an SSRI is often recommended for moderate-to-severe OCD.",
+      },
+      {
+        question: "How effective is CBT (ERP) for OCD?",
+        answer:
+          "Exposure and Response Prevention, the specific CBT approach used for OCD, is highly effective, producing significant symptom reduction in most patients who complete treatment, with many achieving lasting remission when combined with medication when needed.",
+      },
+      {
+        question: "Are medications necessary for OCD?",
+        answer:
+          "Not always — mild OCD can respond well to ERP alone. Medication is generally recommended for moderate-to-severe OCD or when therapy alone isn't sufficient, and SSRIs at higher doses are the typical first-line choice.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -1598,6 +1658,46 @@ export const conditions: Condition[] = [
         answer:
           "Yes. While stress and loss are common triggers, depression can also develop without any clear precipitating event, reflecting underlying biological vulnerability.",
       },
+      {
+        question: "What are the symptoms of depression?",
+        answer:
+          "Core symptoms include persistent low mood, loss of interest or pleasure in activities, changes in sleep and appetite, fatigue, poor concentration, feelings of worthlessness or guilt, and sometimes thoughts of death, lasting two weeks or more.",
+      },
+      {
+        question: "When should I seek help for depression?",
+        answer:
+          "Seek help when low mood, loss of interest, or other symptoms persist for two weeks or more and interfere with work, relationships, or daily functioning — or immediately if you have any thoughts of self-harm or suicide.",
+      },
+      {
+        question: "Can depression be treated without medication?",
+        answer:
+          "Yes, for mild-to-moderate depression, psychotherapy alone — particularly CBT or Interpersonal Therapy — is often effective. Moderate-to-severe depression generally responds best to a combination of therapy and medication.",
+      },
+      {
+        question: "How long does depression treatment take overall?",
+        answer:
+          "An initial course of treatment typically runs 6-12 months, though many people notice meaningful improvement within weeks. Given depression's high recurrence rate, longer-term maintenance treatment is often recommended, especially after multiple episodes.",
+      },
+      {
+        question: "Are antidepressants addictive?",
+        answer:
+          "No, antidepressants are not addictive in the way substances of abuse are. However, stopping them abruptly can cause discontinuation symptoms, which is why tapering off gradually under medical supervision is recommended.",
+      },
+      {
+        question: "Can depression return after recovery?",
+        answer:
+          "Yes. Depression has a significant recurrence risk — over 50% after a first episode, higher after subsequent episodes — which is why maintenance treatment and ongoing monitoring are often recommended even after full recovery.",
+      },
+      {
+        question: "What lifestyle changes help depression?",
+        answer:
+          "Regular exercise, a consistent sleep schedule, staying socially connected, limiting alcohol, and maintaining a structured daily routine all meaningfully support recovery, though moderate-to-severe depression usually also needs therapy and/or medication.",
+      },
+      {
+        question: "What happens during a psychiatric consultation for depression?",
+        answer:
+          "A psychiatric consultation typically includes a detailed history of your mood, sleep, appetite and functioning, screening for other conditions like bipolar disorder, a suicide risk assessment, and a discussion of therapy and/or medication options.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -2076,6 +2176,36 @@ export const conditions: Condition[] = [
         answer:
           "Yes. With consistent treatment, many people with Bipolar I Disorder maintain stable careers, relationships, and daily functioning for long periods between episodes.",
       },
+      {
+        question: "What are the symptoms of bipolar disorder?",
+        answer:
+          "Bipolar I involves at least one manic episode — elevated or irritable mood, decreased need for sleep, grandiosity, racing thoughts and risky behavior — usually alongside depressive episodes with low mood, fatigue and loss of interest.",
+      },
+      {
+        question: "How is bipolar disorder diagnosed?",
+        answer:
+          "Diagnosis is based on a detailed clinical interview and mood history, often with input from family since insight can be reduced during mania, plus screening tools like the Mood Disorder Questionnaire and tests to exclude other causes.",
+      },
+      {
+        question: "Can bipolar disorder be cured?",
+        answer:
+          "Bipolar disorder is a chronic condition without a permanent cure, but with consistent treatment — particularly mood stabilizers like lithium — most people achieve substantial symptom control and long periods of stability.",
+      },
+      {
+        question: "Are mood stabilizers a lifelong treatment?",
+        answer:
+          "For most people with Bipolar I Disorder, yes — long-term maintenance treatment significantly reduces relapse risk. Stopping medication, even after a long stable period, carries a high risk of a new episode.",
+      },
+      {
+        question: "What triggers mood episodes in bipolar disorder?",
+        answer:
+          "Common triggers include sleep deprivation, high stress, substance use, and stopping medication. Antidepressants used without a mood stabilizer can also trigger mania, which is why treatment is carefully individualized.",
+      },
+      {
+        question: "What's the difference between Bipolar I and Bipolar II?",
+        answer:
+          "Bipolar I involves at least one full manic episode, which can be severe enough to require hospitalization. Bipolar II involves hypomania (a milder form) plus major depressive episodes, and never a full manic episode.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -2419,6 +2549,41 @@ export const conditions: Condition[] = [
         question: "Is schizophrenia caused by bad parenting?",
         answer:
           "No. This outdated theory has been thoroughly discredited by modern research, which points to a complex interplay of genetic vulnerability and neurodevelopmental and environmental factors, not parenting style.",
+      },
+      {
+        question: "What are the symptoms of schizophrenia?",
+        answer:
+          "Symptoms include hallucinations, delusions, and disorganized speech (positive symptoms), alongside flat emotional expression, reduced motivation, and social withdrawal (negative symptoms), plus difficulties with attention, memory, and planning.",
+      },
+      {
+        question: "Can schizophrenia be treated successfully?",
+        answer:
+          "Yes. Antipsychotic medication combined with psychosocial support — CBT for psychosis, family therapy, social skills training — helps most people achieve significant symptom control, and early treatment substantially improves long-term outcomes.",
+      },
+      {
+        question: "Are antipsychotic medications safe?",
+        answer:
+          "Antipsychotics are generally safe and effective when properly prescribed and monitored, though they carry side effects, including metabolic risks (weight gain, blood sugar changes), which is why regular physical health monitoring is part of ongoing care.",
+      },
+      {
+        question: "Can patients with schizophrenia work and study?",
+        answer:
+          "Yes. Many people with schizophrenia, particularly with consistent treatment and support, maintain employment, complete education, and lead independent lives, though supported employment or education programs can help during recovery.",
+      },
+      {
+        question: "What support do families of people with schizophrenia need?",
+        answer:
+          "Families benefit from psychoeducation about the illness, training in low-criticism, supportive communication (reducing 'expressed emotion,' which lowers relapse risk), and their own support given the real demands of caregiving.",
+      },
+      {
+        question: "What causes schizophrenia?",
+        answer:
+          "Schizophrenia results from a combination of strong genetic vulnerability (around 80% heritability) and neurodevelopmental factors, including obstetric complications, prenatal infection, and heavy adolescent cannabis use, rather than any single cause.",
+      },
+      {
+        question: "Does schizophrenia require lifelong medication?",
+        answer:
+          "Most people with schizophrenia need long-term antipsychotic treatment to prevent relapse, since stopping medication significantly raises the risk of symptoms returning. Treatment duration is individualized with a psychiatrist based on episode history and response.",
       },
     ],
     mythsVsFacts: [
@@ -3198,6 +3363,36 @@ export const conditions: Condition[] = [
         question: "Are stimulant medications safe long-term?",
         answer:
           "When properly prescribed and monitored by a physician, stimulant medications are considered safe and effective for long-term ADHD management, and appropriately treated ADHD is actually associated with lower rates of later substance use disorder compared to untreated ADHD.",
+      },
+      {
+        question: "Can adults have ADHD?",
+        answer:
+          "Yes. ADHD frequently persists from childhood into adulthood, and it can also first be recognized in adulthood, particularly the inattentive presentation, which is often missed earlier in life because it's less disruptive than hyperactivity.",
+      },
+      {
+        question: "How is ADHD diagnosed?",
+        answer:
+          "Diagnosis involves a clinical interview, standardized rating scales completed by the individual (and parents/teachers for children), a review of symptom history back to childhood, and ruling out other explanations like anxiety, learning disorders, or sleep problems.",
+      },
+      {
+        question: "Can ADHD be mistaken for anxiety or depression?",
+        answer:
+          "Yes. Inattention, restlessness, and irritability can overlap across ADHD, anxiety, and depression, and the conditions frequently co-occur, which is why a thorough evaluation is needed to identify which conditions are actually present.",
+      },
+      {
+        question: "What treatments are available for ADHD?",
+        answer:
+          "Stimulant medications are first-line and highly effective for most patients. Non-stimulant medications are an alternative, and behavioral parent training, classroom strategies, and CBT for organizational skills support medication or serve as primary treatment in milder cases.",
+      },
+      {
+        question: "Is ADHD lifelong?",
+        answer:
+          "For most people diagnosed in childhood, some ADHD traits persist into adulthood, though hyperactivity often lessens while attention and organizational difficulties tend to continue. Treatment substantially improves functioning at any age.",
+      },
+      {
+        question: "What causes ADHD?",
+        answer:
+          "ADHD is one of the most heritable psychiatric conditions, arising from dysregulation of dopamine and norepinephrine in brain circuits governing attention and impulse control, with genetics accounting for roughly 70-80% of risk.",
       },
     ],
     mythsVsFacts: [

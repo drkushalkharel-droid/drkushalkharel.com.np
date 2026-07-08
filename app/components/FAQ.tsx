@@ -41,6 +41,41 @@ const faqs = [
     answer:
       "Yes. All psychiatric consultations, whether in-person or online, are confidential and handled with professional discretion in line with standard medical ethics.",
   },
+  {
+    question: "What is neuropsychiatry?",
+    answer:
+      "Neuropsychiatry is the branch of psychiatry focused on mental health conditions that involve the brain's structure and function, such as dementia, delirium, and psychiatric symptoms arising from neurological conditions, bridging psychiatry and neurology.",
+  },
+  {
+    question: "When should I see a psychiatrist?",
+    answer:
+      "See a psychiatrist when emotional, behavioral, or cognitive symptoms — low mood, excessive worry, sleep problems, concentration difficulties, or unusual thoughts or perceptions — persist for more than a few weeks and affect your daily life, work, or relationships.",
+  },
+  {
+    question: "Can mental illnesses be treated effectively?",
+    answer:
+      "Yes. Most psychiatric conditions, including depression, anxiety disorders, bipolar disorder, OCD, and schizophrenia, respond well to evidence-based treatment combining medication, psychotherapy, and lifestyle support, especially with early diagnosis and consistent treatment.",
+  },
+  {
+    question: "Are psychiatric medications safe?",
+    answer:
+      "When prescribed and monitored by a qualified psychiatrist, psychiatric medications are generally safe and effective. Like all medications, they carry potential side effects, which is why regular follow-up and open communication with your psychiatrist matter.",
+  },
+  {
+    question: "How do online psychiatric consultations work?",
+    answer:
+      "Online consultations take place by phone or video call after booking through a call or WhatsApp message. Dr. Kushal Kharel reviews your symptoms, history, and current medications, then discusses a diagnosis and treatment plan, the same as an in-person visit.",
+  },
+  {
+    question: "Can prescriptions be provided after an online consultation?",
+    answer:
+      "Yes, prescriptions can generally be provided following an online psychiatric consultation where clinically appropriate, in line with standard telepsychiatry practice, though some situations may still require an in-person follow-up.",
+  },
+  {
+    question: "Who should attend in-person instead of an online consultation?",
+    answer:
+      "Patients with severe symptoms, safety concerns, a first-time complex assessment, or situations requiring physical examination are generally advised to attend in-person rather than online, to allow a more thorough evaluation.",
+  },
 ];
 
 export default function FAQ() {
