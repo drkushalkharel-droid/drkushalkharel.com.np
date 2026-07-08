@@ -359,6 +359,36 @@ export const conditions: Condition[] = [
         answer:
           "Not necessarily. Many people successfully taper off medication after 6–12 months of stability, particularly once they've also completed CBT and learned durable coping skills.",
       },
+      {
+        question: "What triggers panic attacks in panic disorder?",
+        answer:
+          "Attacks in panic disorder are classically unexpected, arising without an obvious external trigger, though stress, sleep deprivation, caffeine, and heightened sensitivity to normal bodily sensations can increase vulnerability to an attack.",
+      },
+      {
+        question: "Can panic disorder be fully cured?",
+        answer:
+          "Many people achieve complete remission of panic attacks with CBT and/or medication, though some may experience occasional recurrence during high-stress periods, which learned coping skills typically manage effectively.",
+      },
+      {
+        question: "Is panic disorder hereditary?",
+        answer:
+          "Panic disorder has a genetic component — having a first-degree relative with panic disorder or another anxiety disorder increases risk, though environmental factors and life stress also play a significant role.",
+      },
+      {
+        question: "How is panic disorder different from generalized anxiety disorder?",
+        answer:
+          "Panic disorder involves sudden, discrete attacks of intense fear peaking within minutes, while generalized anxiety disorder involves persistent, diffuse worry across many areas of life without discrete attack episodes.",
+      },
+      {
+        question: "Can exercise help manage panic disorder?",
+        answer:
+          "Yes. Regular aerobic exercise reduces overall anxiety sensitivity and can lower panic attack frequency over time, though starting cautiously matters since exercise itself raises heart rate, a common trigger sensation.",
+      },
+      {
+        question: "How is panic disorder diagnosed?",
+        answer:
+          "Diagnosis is made through clinical interview establishing a pattern of recurrent, unexpected panic attacks followed by a month or more of worry about future attacks or significant behavior change, after ruling out medical causes.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -483,6 +513,41 @@ export const conditions: Condition[] = [
         answer:
           "Try slow, controlled breathing, remind yourself it will pass within minutes, and avoid fighting the sensations — accepting them, rather than panicking about the panic, often shortens the episode.",
       },
+      {
+        question: "Can panic attacks happen during sleep?",
+        answer:
+          "Yes — nocturnal panic attacks can wake a person from sleep with the same sudden surge of fear and physical symptoms as daytime attacks, and are treated the same way as other panic attacks.",
+      },
+      {
+        question: "Why do panic attacks feel like a heart attack?",
+        answer:
+          "Panic attacks and heart attacks share overlapping symptoms — chest pain, racing heart, shortness of breath — because both involve a surge of adrenaline; this overlap is why a first attack should always be medically evaluated.",
+      },
+      {
+        question: "Can children experience panic attacks?",
+        answer:
+          "Yes, though less commonly than adults. Panic attacks in children can present with more prominent physical complaints like stomachaches, and may be harder for a child to describe, making careful evaluation important.",
+      },
+      {
+        question: "Does hyperventilating cause a panic attack, or the other way around?",
+        answer:
+          "Both directions occur — hyperventilation can trigger the dizziness and tingling that intensify a panic attack, while an attack itself often causes rapid breathing, creating a self-reinforcing cycle that breathing retraining helps interrupt.",
+      },
+      {
+        question: "How common are panic attacks?",
+        answer:
+          "Panic attacks are common — up to a third of adults experience at least one in their lifetime, though only a smaller proportion go on to develop recurrent attacks that meet criteria for panic disorder.",
+      },
+      {
+        question: "Can too much caffeine trigger a panic attack?",
+        answer:
+          "Yes. Caffeine and other stimulants can provoke physical sensations — a racing heart, jitteriness — that closely mimic the early symptoms of a panic attack and can trigger a full attack in vulnerable individuals.",
+      },
+      {
+        question: "What's the best way to prevent panic attacks from becoming frequent?",
+        answer:
+          "Addressing underlying stress, limiting stimulants, prioritizing sleep, and staying engaged in normal activities after an isolated attack — rather than avoiding situations out of fear — all help prevent a recurring pattern.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -600,6 +665,41 @@ export const conditions: Condition[] = [
         answer:
           "Not necessarily. Many people have performance-specific anxiety (e.g., only public speaking) without broader social anxiety disorder; the diagnosis requires significant distress or impairment across situations or a clear, persistent pattern.",
       },
+      {
+        question: "At what age does social anxiety disorder usually begin?",
+        answer:
+          "Social anxiety disorder most commonly begins in early-to-mid adolescence, often around age 13, though it can also emerge in childhood or, less commonly, in adulthood following a significant negative social experience.",
+      },
+      {
+        question: "Can social anxiety be limited to specific situations, like public speaking?",
+        answer:
+          "Yes — this is called the 'performance-only' subtype, where fear is limited to speaking or performing in front of others, distinct from generalized social anxiety disorder, which affects a broad range of social situations.",
+      },
+      {
+        question: "Does drinking alcohol help manage social anxiety?",
+        answer:
+          "Alcohol may temporarily reduce social anxiety symptoms, but relying on it reinforces avoidance of learning to manage the anxiety directly, and regularly using alcohol to cope significantly increases the risk of alcohol use disorder.",
+      },
+      {
+        question: "Can medication alone treat social anxiety disorder effectively?",
+        answer:
+          "Medication can meaningfully reduce symptoms, but combining it with CBT — particularly structured exposure to feared social situations — generally produces more durable, longer-lasting improvement than medication alone.",
+      },
+      {
+        question: "How is social anxiety disorder diagnosed?",
+        answer:
+          "Diagnosis is based on a clinical interview establishing marked, persistent fear of social or performance situations driven by fear of negative judgment, present for six months or more and causing significant distress or impairment.",
+      },
+      {
+        question: "Can children be diagnosed with social anxiety disorder?",
+        answer:
+          "Yes. In children, the fear must occur in peer settings, not just with adults, and may present as crying, tantrums, freezing, or clinging rather than clearly articulated fear of judgment.",
+      },
+      {
+        question: "Is blushing or a shaky voice a sign of social anxiety disorder?",
+        answer:
+          "These physical symptoms are common during socially anxious moments, but a diagnosis requires the broader pattern of persistent fear, avoidance, and significant distress or impairment — not simply occasional blushing or nervousness.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -714,6 +814,41 @@ export const conditions: Condition[] = [
         answer:
           "Many people notice meaningful improvement within 8–12 weeks of structured exposure practice, though full re-engagement with previously avoided situations can take longer depending on severity.",
       },
+      {
+        question: "Can agoraphobia develop without ever having a panic attack?",
+        answer:
+          "Yes, though it most commonly follows Panic Disorder, agoraphobia can also develop from generalized anxiety about losing control or being unable to get help in public, without a preceding panic attack.",
+      },
+      {
+        question: "How common is agoraphobia?",
+        answer:
+          "Agoraphobia affects roughly 1-2% of adults at some point in their lives, making it one of the more common anxiety disorders, though it is frequently underrecognized because avoidance can develop gradually over years.",
+      },
+      {
+        question: "Can agoraphobia be treated without medication?",
+        answer:
+          "Yes. Graded exposure therapy alone is highly effective for many people with agoraphobia; medication is often added for additional support, particularly when Panic Disorder co-occurs, but is not always necessary.",
+      },
+      {
+        question: "What situations most commonly trigger agoraphobia?",
+        answer:
+          "Public transportation, crowded places, open spaces like parking lots or bridges, and enclosed spaces such as elevators or theaters are among the most commonly avoided situations, though the specific pattern varies between individuals.",
+      },
+      {
+        question: "How long does recovery from agoraphobia typically take?",
+        answer:
+          "With structured, consistent exposure therapy, many people see meaningful improvement within 3 months, though full recovery to comfortably re-entering all previously avoided situations can take longer depending on severity and duration.",
+      },
+      {
+        question: "Can agoraphobia return after successful treatment?",
+        answer:
+          "It can, particularly during periods of major stress, but people who have completed exposure-based treatment typically have the skills to recognize and address a recurrence quickly, before avoidance becomes re-established.",
+      },
+      {
+        question: "Does avoiding just one place, like a specific bridge, count as agoraphobia?",
+        answer:
+          "Not necessarily — agoraphobia requires fear across two or more situation categories (transport, open spaces, enclosed spaces, crowds, being alone outside). Avoiding a single specific place may instead be a specific phobia.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -821,6 +956,41 @@ export const conditions: Condition[] = [
         question: "Can a phobia develop suddenly in adulthood without an obvious trigger?",
         answer:
           "Yes, though many phobias begin in childhood or adolescence following a specific frightening event, some develop later in life, sometimes without a clearly identifiable trigger.",
+      },
+      {
+        question: "What are the most common specific phobias?",
+        answer:
+          "Animal phobias (spiders, snakes, dogs), heights, storms, water, flying, enclosed spaces, and blood-injection-injury phobias are among the most common, though a specific phobia can develop toward almost any object or situation.",
+      },
+      {
+        question: "Can a specific phobia go away on its own without treatment?",
+        answer:
+          "Some mild childhood fears resolve naturally with development, but established phobias causing significant distress or avoidance usually persist indefinitely without active treatment, since ongoing avoidance prevents the fear from naturally fading.",
+      },
+      {
+        question: "How many sessions does exposure therapy for a phobia usually take?",
+        answer:
+          "Many specific phobias respond well to just one to a few sessions of structured exposure therapy, particularly single-session protocols for animal or situational phobias, though more complex phobias may need a longer course.",
+      },
+      {
+        question: "Can a phobia develop after just one frightening experience?",
+        answer:
+          "Yes. A single traumatic experience — such as a dog bite or frightening turbulence during a flight — can be enough to establish a lasting phobia, particularly in someone with an anxiety-prone temperament.",
+      },
+      {
+        question: "Is fear of needles a real medical condition?",
+        answer:
+          "Yes. Blood-injection-injury phobia, which includes needle fear, is a recognized specific phobia subtype with a distinct physiological pattern that can cause fainting, and it responds well to specific exposure techniques like applied tension.",
+      },
+      {
+        question: "Can medication alone cure a specific phobia?",
+        answer:
+          "No. Medication can reduce anxiety for an occasional, unavoidable exposure, but exposure-based therapy — not medication — is the treatment that produces lasting resolution of a specific phobia.",
+      },
+      {
+        question: "Do specific phobias run in families?",
+        answer:
+          "There is a genetic component to anxiety-proneness generally, and blood-injection-injury phobia in particular shows a notably strong family pattern, but observational learning from a fearful parent also plays a significant role.",
       },
     ],
     mythsVsFacts: [
@@ -932,6 +1102,41 @@ export const conditions: Condition[] = [
         question: "Will my child grow out of it without treatment?",
         answer:
           "Some mild cases improve with time and normal developmental progress, but persistent or severe separation anxiety that affects school attendance or daily life usually needs active treatment rather than 'waiting it out.'",
+      },
+      {
+        question: "What's the difference between normal childhood clinginess and separation anxiety disorder?",
+        answer:
+          "Mild separation distress is a normal developmental stage, especially in toddlers. It becomes a disorder when it is excessive for the child's age, persists beyond expected developmental windows, and significantly disrupts school or family functioning.",
+      },
+      {
+        question: "Can separation anxiety disorder occur in a marriage or long-term relationship?",
+        answer:
+          "Yes. Adults with separation anxiety disorder may experience intense distress when a partner travels or is unreachable, along with persistent worry that something bad will happen to them when apart.",
+      },
+      {
+        question: "How is separation anxiety disorder treated in young children?",
+        answer:
+          "Treatment centers on Cognitive Behavioral Therapy adapted for children, combined with parent training to help caregivers respond consistently to separation distress and support gradual, planned practice of brief separations.",
+      },
+      {
+        question: "Can separation anxiety cause physical symptoms like stomachaches?",
+        answer:
+          "Yes. Headaches, stomachaches, and nausea are common physical symptoms when separation occurs or is anticipated, particularly in children, and can sometimes be mistaken for a purely medical issue rather than an anxiety-driven cause.",
+      },
+      {
+        question: "Does childhood separation anxiety increase the risk of other anxiety disorders later in life?",
+        answer:
+          "Yes. Untreated separation anxiety disorder in childhood is associated with an increased risk of developing other anxiety disorders, including panic disorder and agoraphobia, later in adolescence or adulthood.",
+      },
+      {
+        question: "Should I force my child to separate quickly to help them adjust?",
+        answer:
+          "No. Sudden, forced separation without preparation tends to increase distress and can worsen the fear. Gradual, planned practice with brief, confident goodbyes is more effective and less distressing than abrupt separation.",
+      },
+      {
+        question: "How is separation anxiety disorder diagnosed in adults?",
+        answer:
+          "Diagnosis requires developmentally excessive fear or anxiety about separation from an attachment figure, evidenced by three or more characteristic features, persisting six months or more, and causing significant distress or functional impairment.",
       },
     ],
     mythsVsFacts: [
