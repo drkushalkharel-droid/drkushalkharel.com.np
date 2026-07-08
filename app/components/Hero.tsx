@@ -37,7 +37,7 @@ export default function Hero() {
 
             </h2>
 
-            <p className="mt-8 text-lg leading-9 text-blue-100 max-w-2xl">
+            <p id="hero-quick-answer" className="mt-8 text-lg leading-9 text-blue-100 max-w-2xl">
 
               For people searching for a trusted, top-rated psychiatrist in
               Nepal or Kathmandu, Dr. Kharel provides confidential assessment,

@@ -2,10 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { conditions, getCondition } from "../../data/conditions";
+import {
+  buildHowToJsonLd,
+  buildMedicalConditionJsonLd,
+  buildQuickFacts,
+  buildSpeakableSpec,
+} from "../../lib/schema";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
-const toc = [
+const baseToc = [
   { id: "overview", label: "Overview" },
   { id: "definition", label: "Definition" },
   { id: "causes", label: "Causes" },
@@ -22,6 +28,11 @@ const toc = [
   { id: "prognosis", label: "Prognosis" },
   { id: "prevention", label: "Prevention" },
   { id: "family-guidance", label: "Family Guidance" },
+];
+
+const howToTocItem = { id: "how-to", label: "Step-by-Step Guide" };
+
+const endToc = [
   { id: "faqs", label: "FAQs" },
   { id: "myth-vs-fact", label: "Myth vs Fact" },
   { id: "urgent-care", label: "When to Seek Urgent Care" },
@@ -98,18 +109,20 @@ export default async function ConditionPage({
   const relatedConditions = conditions.filter(
     (item) => item.category === condition.category && item.slug !== condition.slug,
   );
+  const toc = condition.howTo
+    ? [...baseToc, howToTocItem, ...endToc]
+    : [...baseToc, ...endToc];
+  const quickFacts = buildQuickFacts(condition);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
+  const medicalConditionJsonLd = buildMedicalConditionJsonLd(condition, pageUrl);
+
+  const webPageJsonLd = {
     "@type": "MedicalWebPage",
     name: condition.title,
     description: condition.shortDescription,
     url: pageUrl,
     inLanguage: "en",
-    about: {
-      "@type": "MedicalCondition",
-      name: condition.title,
-    },
+    about: { "@id": `${pageUrl}#condition` },
     medicalAudience: ["Patient", "Caregiver", "MedicalAudience"],
     reviewedBy: {
       "@type": "Physician",
@@ -117,6 +130,8 @@ export default async function ConditionPage({
       medicalSpecialty: "Psychiatry",
       telephone: "+9779861800547",
     },
+    speakable: buildSpeakableSpec(["#cond-quick-answer"]),
+    relatedLink: relatedConditions.map((item) => `${siteUrl}/conditions/${item.slug}`),
   };
 
   const faqJsonLd = {
@@ -142,9 +157,27 @@ export default async function ConditionPage({
     ],
   };
 
+  const howToJsonLd = condition.howTo
+    ? buildHowToJsonLd({
+        id: `${pageUrl}#how-to`,
+        name: condition.howTo.name,
+        description: condition.howTo.description,
+        totalTime: condition.howTo.totalTime,
+        steps: condition.howTo.steps,
+      })
+    : null;
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [webPageJsonLd, medicalConditionJsonLd, ...(howToJsonLd ? [howToJsonLd] : [])],
+          }),
+        }}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -159,7 +192,7 @@ export default async function ConditionPage({
           <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
             {condition.title}
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+          <p id="cond-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
             {condition.shortDescription}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -202,6 +235,29 @@ export default async function ConditionPage({
             a professional psychiatric assessment. For a personal diagnosis or
             treatment plan, please consult Dr. Kushal Kharel or a qualified
             mental health professional directly.
+          </div>
+
+          <div className="rounded-lg border border-blue-200 bg-blue-50 p-6 md:p-8">
+            <h2 className="text-xl font-bold uppercase tracking-[2px] text-blue-800">Key Facts</h2>
+            <p className="mt-3 leading-7 text-slate-700">{quickFacts.extendedSummary}</p>
+            <div className="mt-5 grid gap-6 sm:grid-cols-2">
+              <div>
+                <h3 className="font-bold text-blue-950">Common symptoms</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">
+                  {quickFacts.keySymptoms.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-blue-950">Key risk factors</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">
+                  {quickFacts.keyRiskFactors.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
 
           <Section id="overview" title="Overview">
@@ -315,6 +371,22 @@ export default async function ConditionPage({
           <Section id="family-guidance" title="Family Guidance">
             <p>{condition.familyGuidance}</p>
           </Section>
+
+          {condition.howTo && (
+            <Section id="how-to" title={condition.howTo.name}>
+              <p>{condition.howTo.description}</p>
+              <ol className="mt-4 space-y-4">
+                {condition.howTo.steps.map((step, index) => (
+                  <li key={step.name} className="rounded-lg border border-slate-200 p-4">
+                    <p className="font-bold text-blue-950">
+                      Step {index + 1}: {step.name}
+                    </p>
+                    <p className="mt-1">{step.text}</p>
+                  </li>
+                ))}
+              </ol>
+            </Section>
+          )}
 
           <Section id="faqs" title="Frequently Asked Questions">
             <div className="space-y-5">

@@ -170,6 +170,18 @@ export default function RootLayout({
       "Addiction Treatment",
       "Online Consultation",
     ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Psychiatric Services",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Anxiety Disorder Treatment" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Depression Treatment" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "OCD Treatment" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "ADHD Management" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Addiction Treatment" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Online Telepsychiatry" } },
+      ],
+    },
     image: `${siteUrl}${doctorImage}`,
     priceRange: "$$",
     openingHoursSpecification: [

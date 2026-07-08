@@ -13,6 +13,20 @@ export type NamedNote = {
   note: string;
 };
 
+export type HowToStep = {
+  name: string;
+  text: string;
+};
+
+export type ConditionHowTo = {
+  name: string;
+  description: string;
+  // ISO 8601 duration (e.g. "PT10M"). Omit rather than guess when a step
+  // sequence has no genuine bounded completion time.
+  totalTime?: string;
+  steps: HowToStep[];
+};
+
 export type Condition = {
   slug: string;
   title: string;
@@ -41,6 +55,11 @@ export type Condition = {
   mythsVsFacts: MythFact[];
   urgentCare: string;
   references: string[];
+  // Optional step-by-step guide for pages where the content is genuinely
+  // procedural. Only populated where a real, sequential task exists —
+  // left unset elsewhere rather than forcing a HowTo onto content that
+  // isn't actually a set of ordered steps.
+  howTo?: ConditionHowTo;
 };
 
 // Full list of categories this library is being built out to cover.
@@ -565,6 +584,34 @@ export const conditions: Condition[] = [
       "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
       "National Institute of Mental Health (NIMH). Panic Disorder: When Fear Overwhelms.",
     ],
+    howTo: {
+      name: "How to Manage a Panic Attack in the Moment",
+      description:
+        "Practical steps to get through a panic attack while it's happening, based on evidence-based panic management technique.",
+      totalTime: "PT10M",
+      steps: [
+        {
+          name: "Recognize what's happening",
+          text: "Remind yourself this is a panic attack, not a heart attack or life-threatening emergency — it will peak within minutes and then pass.",
+        },
+        {
+          name: "Practice slow, controlled breathing",
+          text: "Inhale through your nose for about 4 counts, then exhale through your mouth for 6-8 counts. Slower exhales help calm the body's stress response.",
+        },
+        {
+          name: "Stay where you are if it's safe to do so",
+          text: "Leaving the situation can provide short-term relief but reinforces avoidance over time. Staying, if safe, helps the fear response naturally decrease.",
+        },
+        {
+          name: "Let the sensations happen without fighting them",
+          text: "Accepting the physical sensations, rather than panicking about the panic itself, often shortens how long the episode lasts.",
+        },
+        {
+          name: "Follow up afterward",
+          text: "Avoid using alcohol or sedatives to cope. If panic attacks become frequent or start restricting your daily activities, see a psychiatrist for evaluation.",
+        },
+      ],
+    },
   },
   {
     slug: "social-anxiety-disorder",
@@ -3053,6 +3100,37 @@ export const conditions: Condition[] = [
       "National Institute for Health and Care Excellence (NICE). Psychosis and schizophrenia in adults: prevention and management.",
       "World Health Organization. Schizophrenia fact sheet.",
     ],
+    howTo: {
+      name: "How to Help a Family Member with Schizophrenia",
+      description:
+        "Practical ways families can support a relative with schizophrenia and reduce relapse risk, based on family psychoeducation principles.",
+      steps: [
+        {
+          name: "Understand it as a chronic, manageable brain disorder",
+          text: "See schizophrenia as an ongoing medical condition requiring management, similar in some ways to a condition like diabetes, rather than a personal failing.",
+        },
+        {
+          name: "Practice calm, low-criticism communication",
+          text: "Reducing 'expressed emotion' — high criticism, hostility, or over-involvement — measurably lowers relapse risk compared to a highly critical family environment.",
+        },
+        {
+          name: "Support medication adherence without confrontation",
+          text: "Encourage consistent treatment gently and collaboratively rather than through pressure or arguments.",
+        },
+        {
+          name: "Respond carefully to delusional beliefs",
+          text: "Avoid directly arguing with delusional beliefs, while also not reinforcing them — acknowledge the person's distress without agreeing with the content.",
+        },
+        {
+          name: "Watch for early warning signs of relapse",
+          text: "Learn the person's individual early warning signs, and seek prompt follow-up care if they appear.",
+        },
+        {
+          name: "Seek your own support as a caregiver",
+          text: "Caring for a family member with schizophrenia is demanding. Build your own support network and take time for respite.",
+        },
+      ],
+    },
   },
   {
     slug: "schizoaffective-disorder",
@@ -4799,6 +4877,45 @@ export const conditions: Condition[] = [
       "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
       "American Academy of Sleep Medicine. Clinical Practice Guideline for CBT-I.",
     ],
+    howTo: {
+      name: "How to Improve Sleep Hygiene",
+      description:
+        "Daily habits that support the body's natural sleep drive and circadian rhythm, forming the foundation of insomnia treatment alongside CBT-I.",
+      steps: [
+        {
+          name: "Keep a consistent sleep-wake schedule",
+          text: "Go to bed and wake up at the same time every day, including on weekends, to stabilize your body's internal clock.",
+        },
+        {
+          name: "Cut caffeine in the afternoon and evening",
+          text: "Avoid caffeine, especially from mid-afternoon onward, since it can remain in the body for hours and interfere with sleep onset.",
+        },
+        {
+          name: "Limit alcohol",
+          text: "Alcohol may feel sedating initially but disrupts sleep architecture later in the night, leading to lighter, more fragmented sleep.",
+        },
+        {
+          name: "Avoid daytime naps if they worsen your nighttime sleep",
+          text: "If napping is reducing your natural sleep drive at night, skip it or limit it to a short nap earlier in the day.",
+        },
+        {
+          name: "Reserve the bedroom for sleep only",
+          text: "Avoid working or using screens in bed, so your brain associates the bedroom specifically with sleep rather than wakeful activity.",
+        },
+        {
+          name: "Get out of bed if you can't sleep after about 20 minutes",
+          text: "Lying awake and frustrated reinforces the bed as a place of wakefulness. Get up, do something calming in dim light, and return when sleepy.",
+        },
+        {
+          name: "Get daytime physical activity and natural light",
+          text: "Regular exercise and morning light exposure help reinforce a healthy circadian rhythm and strengthen nighttime sleep drive.",
+        },
+        {
+          name: "Wind down before bed",
+          text: "Keep a calming pre-sleep routine and avoid bright screens in the hour before bed, since blue light can delay the body's natural melatonin release.",
+        },
+      ],
+    },
   },
   {
     slug: "parasomnias",
@@ -6037,6 +6154,36 @@ export const conditions: Condition[] = [
         answer:
           "No — this is a harmful misconception. Many people who die by suicide communicated their intent beforehand in some way. Every statement about suicide should be taken seriously.",
       },
+      {
+        question: "Can suicidal thoughts go away completely with treatment?",
+        answer:
+          "Yes. Suicidal thoughts are a symptom of an underlying crisis or condition, not a permanent state, and with appropriate treatment — addressing both the immediate crisis and any underlying condition — most people see these thoughts resolve substantially or completely.",
+      },
+      {
+        question: "What is a safety plan and how does it help?",
+        answer:
+          "A safety plan is a brief, personalized document developed with a clinician that lists personal warning signs, coping strategies, people to contact, and steps to limit access to lethal means — having it written down makes it easier to use during a crisis.",
+      },
+      {
+        question: "Why is limiting access to lethal means during a crisis so important?",
+        answer:
+          "Suicidal crises are often intense but time-limited, and creating distance from lethal means during that window — even temporarily — gives the crisis time to pass and is one of the single most effective prevention strategies available.",
+      },
+      {
+        question: "What are the warning signs that someone may be at risk?",
+        answer:
+          "Talking about wanting to die, expressing hopelessness or feeling like a burden, withdrawing from others, giving away possessions, increased substance use, and a sudden calm after a period of depression are all signs that warrant a direct, caring conversation.",
+      },
+      {
+        question: "Can suicidal thoughts occur without depression?",
+        answer:
+          "Yes. While depression is a common driver, suicidal thoughts can also arise from other psychiatric conditions, an acute crisis or major loss, chronic pain, or overwhelming life stress, even without a diagnosable depressive episode.",
+      },
+      {
+        question: "How can I support someone after they've had a suicidal crisis or attempt?",
+        answer:
+          "Stay connected through consistent, caring follow-up contact — brief calls or messages checking in — since research shows this measurably reduces the risk of a repeat crisis. Help them engage with ongoing treatment and keep their safety plan accessible.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -6063,6 +6210,37 @@ export const conditions: Condition[] = [
       "Columbia-Suicide Severity Rating Scale (C-SSRS).",
       "Stanley, B., & Brown, G. K. Safety Planning Intervention.",
     ],
+    howTo: {
+      name: "How to Support Someone Having Suicidal Thoughts",
+      description:
+        "What to do if someone you care about tells you they are thinking about suicide, based on evidence-based crisis response guidance.",
+      steps: [
+        {
+          name: "Ask directly and calmly",
+          text: "Ask directly whether they are thinking about suicide. Research consistently shows this does not increase risk and is often experienced as a relief.",
+        },
+        {
+          name: "Listen without judgment",
+          text: "Take any disclosure seriously, no matter how it's phrased, and listen without arguing, minimizing, or reacting with shock.",
+        },
+        {
+          name: "Reduce access to lethal means",
+          text: "Remove or secure access to lethal means during the crisis, and avoid leaving the person alone while acute risk is present.",
+        },
+        {
+          name: "Connect them with professional care immediately",
+          text: "Help them reach a hospital emergency department, their psychiatrist, or a crisis service, and accompany them if possible.",
+        },
+        {
+          name: "Follow up after the crisis passes",
+          text: "Stay in consistent contact afterward, since risk can persist quietly even once things appear calmer.",
+        },
+        {
+          name: "Look after your own wellbeing",
+          text: "Supporting someone through a suicidal crisis is genuinely difficult. Seek your own support rather than carrying it alone.",
+        },
+      ],
+    },
   },
   {
     slug: "anorexia-nervosa",

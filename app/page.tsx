@@ -13,8 +13,10 @@ import ScreeningTeaser from "./components/ScreeningTeaser";
 import AbroadSeoSection from "./components/AbroadSeoSection";
 import Testimonials from "./components/Testimonials";
 import GoogleReviewsMap from "./components/GoogleReviewsMap";
+import AppointmentGuide from "./components/AppointmentGuide";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import { buildSpeakableSpec } from "./lib/schema";
 
 export const metadata: Metadata = {
   title:
@@ -47,125 +49,27 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function Home() {
-  // Structured data for Physician
-  const physicianJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Physician",
-    name: "Dr. Kushal Kharel",
-    url: "https://drkushalkharel.com.np",
-    image: "https://drkushalkharel.com.np/images/doctor.png",
-    telephone: "+9779861800547",
-    email: "drkushalkharel@gmail.com",
-    medicalSpecialty: "Psychiatry",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Kalanki-14, Near Malpot Road",
-      addressLocality: "Kathmandu",
-      addressCountry: "NP",
-    },
-    areaServed: ["Kathmandu", "Nepal", "Online"],
-    availableService: [
-      "Psychiatric Consultation",
-      "Anxiety Treatment",
-      "Depression Treatment",
-      "Addiction Treatment",
-      "Online Psychiatric Consultation",
-      "Psychotherapy",
-      "ADHD Treatment",
-      "Bipolar Disorder Treatment",
-      "OCD Treatment",
-      "Telepsychiatry",
-    ],
-    qualification: [
-      {
-        "@type": "EducationalOccupationalCredential",
-        name: "MD in Psychiatry",
-      },
-    ],
-  };
+const siteUrl = "https://drkushalkharel.com.np";
 
-  // Structured data for Services
-  const servicesJsonLd = {
+export default function Home() {
+  // The canonical MedicalBusiness/Physician entities (with @id) live in
+  // layout.tsx and apply site-wide. This page only adds a WebPage entity
+  // that references them, rather than redeclaring competing duplicates.
+  const webPageJsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Dr. Kushal Kharel - Consultant Psychiatrist",
-    description:
-      "Comprehensive psychiatric care including anxiety, depression, OCD, ADHD, bipolar disorder, addiction treatment and telepsychiatry",
-    url: "https://drkushalkharel.com.np",
-    telephone: "+9779861800547",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Kalanki-14, Near Malpot Road",
-      addressLocality: "Kathmandu",
-      addressCountry: "NP",
-    },
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Psychiatric Services",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Anxiety Disorder Treatment",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Depression Treatment",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "OCD Treatment",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "ADHD Management",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Addiction Treatment",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Online Telepsychiatry",
-          },
-        },
-      ],
-    },
-    sameAs: [
-      "https://facebook.com/cooshal.kharel",
-      "https://www.instagram.com/cusalnova",
-      "https://www.twitter.com/Drkushalpsych",
-      "https://www.tiktok.com/@drkushalkharel",
-      "https://www.threads.net/@cusalnova",
-    ],
+    "@type": "WebPage",
+    name: "Dr. Kushal Kharel | Psychiatrist in Kathmandu, Nepal",
+    url: siteUrl,
+    about: { "@id": `${siteUrl}#clinic` },
+    mainEntity: { "@id": `${siteUrl}#psychiatrist` },
+    speakable: buildSpeakableSpec(["#hero-quick-answer"]),
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
       />
       <Navbar />
       <Hero />
@@ -179,6 +83,7 @@ export default function Home() {
       <Awards />
       <Services />
       <Conditions />
+      <AppointmentGuide />
       <Testimonials />
       <GoogleReviewsMap />
       <FAQ />
