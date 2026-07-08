@@ -103,6 +103,10 @@ export default function Footer() {
               About
             </Link>
 
+            <Link href="/#experience" className="block hover:text-white transition">
+              Experience &amp; Training
+            </Link>
+
             <Link href="/#services" className="block hover:text-white transition">
               Services
             </Link>
@@ -274,15 +278,15 @@ export default function Footer() {
 
           <div className="flex gap-8 text-gray-400 text-sm mt-4 md:mt-0">
 
-            <Link href="/" className="hover:text-white">
+            <Link href="/privacy-policy" className="hover:text-white">
               Privacy Policy
             </Link>
 
-            <Link href="/" className="hover:text-white">
-              Terms & Conditions
+            <Link href="/medical-disclaimer" className="hover:text-white">
+              Medical Disclaimer
             </Link>
 
-            <Link href="/" className="hover:text-white">
+            <Link href="/sitemap.xml" className="hover:text-white">
               Sitemap
             </Link>
 

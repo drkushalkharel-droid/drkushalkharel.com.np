@@ -95,11 +95,25 @@ export default async function KnowledgeArticlePage({
     },
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Knowledge", item: `${siteUrl}/knowledge` },
+      { "@type": "ListItem", position: 3, name: article.title, item: `${siteUrl}/knowledge/${article.slug}` },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       <section className="bg-white">

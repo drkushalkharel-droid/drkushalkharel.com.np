@@ -12,6 +12,11 @@ const faqs = [
       "Dr. Kushal Kharel treats anxiety disorders, depression, OCD, bipolar disorder, schizophrenia and other psychotic disorders, ADHD, autism spectrum disorder, addiction and de-addiction, insomnia and sleep disorders, and geriatric psychiatric conditions including dementia.",
   },
   {
+    question: "What is Dr. Kushal Kharel's medical background and experience?",
+    answer:
+      "Dr. Kushal Kharel completed MD Psychiatry training at KIST Medical College Teaching Hospital (2023-2026) and previously worked as a Medical Officer at Kantipur Hospital (2020-2021), Patan Hospital (2021-2022) and Kathmandu ENT Hospital (2022-2023). He has run a psychiatric clinic in Kalanki, Kathmandu since 2020 and is a Nepal Medical Council registered psychiatrist.",
+  },
+  {
     question: "How do I book an appointment with Dr. Kushal Kharel?",
     answer:
       "Call +977 9861800547 or message on WhatsApp to book an in-person or online psychiatric consultation. The clinic is open Monday to Friday, 10:00 AM to 6:00 PM, and Saturday, 10:00 AM to 4:00 PM.",

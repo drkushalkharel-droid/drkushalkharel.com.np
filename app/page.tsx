@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Statistics from "./components/Statistics";
 import About from "./components/About";
+import Experience from "./components/Experience";
 import Awards from "./components/Awards";
 import Services from "./components/Services";
 import Conditions from "./components/Conditions";
@@ -174,6 +175,7 @@ export default function Home() {
       <AbroadSeoSection />
       <Statistics />
       <About />
+      <Experience />
       <Awards />
       <Services />
       <Conditions />

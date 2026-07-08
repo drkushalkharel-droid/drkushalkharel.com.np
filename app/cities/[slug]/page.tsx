@@ -103,11 +103,25 @@ export default async function CityGuidePage({
     areaServed: guide.city,
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Cities", item: `${siteUrl}/#cities` },
+      { "@type": "ListItem", position: 3, name: guide.city, item: `${siteUrl}/cities/${guide.slug}` },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       <section className="bg-white">

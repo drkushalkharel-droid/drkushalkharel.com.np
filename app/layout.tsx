@@ -221,10 +221,21 @@ export default function RootLayout({
       longitude: 85.2807309,
     },
     hasMap: "https://maps.app.goo.gl/2t5B2EqgDKYMRLE48",
-    hasCredential: {
-      "@type": "EducationalOccupationalCredential",
-      credentialCategory: "license",
-      name: "Nepal Medical Council Registered Psychiatrist",
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "license",
+        name: "Nepal Medical Council Registered Psychiatrist",
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "degree",
+        name: "MD Psychiatry",
+      },
+    ],
+    alumniOf: {
+      "@type": "MedicalOrganization",
+      name: "KIST Medical College Teaching Hospital",
     },
     areaServed: ["Kathmandu", "Nepal", "Online"],
     knowsAbout: [

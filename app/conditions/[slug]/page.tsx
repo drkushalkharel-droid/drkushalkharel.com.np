@@ -95,6 +95,9 @@ export default async function ConditionPage({
   }
 
   const pageUrl = `${siteUrl}/conditions/${condition.slug}`;
+  const relatedConditions = conditions.filter(
+    (item) => item.category === condition.category && item.slug !== condition.slug,
+  );
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -347,6 +350,25 @@ export default async function ConditionPage({
               ))}
             </ol>
           </Section>
+
+          {relatedConditions.length > 0 && (
+            <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+              <h2 className="text-3xl font-bold text-blue-950">
+                Related {condition.category}
+              </h2>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                {relatedConditions.map((item) => (
+                  <Link
+                    key={item.slug}
+                    href={`/conditions/${item.slug}`}
+                    className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50"
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           <section className="rounded-lg bg-blue-950 p-8 text-white">
             <h2 className="text-3xl font-bold">Need professional help?</h2>

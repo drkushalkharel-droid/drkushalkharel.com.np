@@ -156,6 +156,108 @@ export const cityGuides: CityGuide[] = [
     localContext:
       "Heat, work pressure, cross-border mobility, family stress and limited specialist access may make early mental health support especially important in Nepalgunj.",
   },
+  {
+    city: "Lalitpur",
+    slug: "lalitpur",
+    province: "Bagmati Province",
+    headline: "Psychiatrist in Lalitpur (Patan) for anxiety, depression and addiction care",
+    intro:
+      "Patients in Lalitpur (Patan) are close enough to Dr. Kushal Kharel's Kathmandu clinic in Kalanki for in-person psychiatric consultation, with online follow-up also available when appropriate.",
+    searchTerms: [
+      "best psychiatrist in Lalitpur",
+      "psychiatrist Patan",
+      "anxiety doctor Lalitpur",
+      "depression treatment Lalitpur",
+    ],
+    commonConcerns: sharedConcerns,
+    localContext:
+      "Dense urban living, academic and career pressure, traffic stress and family responsibilities are common contributors to anxiety, depression and burnout for residents of Lalitpur.",
+  },
+  {
+    city: "Bhaktapur",
+    slug: "bhaktapur",
+    province: "Bagmati Province",
+    headline: "Psychiatrist in Bhaktapur for confidential mental health care",
+    intro:
+      "Patients in Bhaktapur can reach Dr. Kushal Kharel's Kathmandu clinic in Kalanki for in-person psychiatric consultation, or use online consultation for follow-up and many initial assessments.",
+    searchTerms: [
+      "best psychiatrist in Bhaktapur",
+      "psychiatrist Bhaktapur",
+      "mental health doctor Bhaktapur",
+      "online psychiatrist Bhaktapur",
+    ],
+    commonConcerns: sharedConcerns,
+    localContext:
+      "Family and cultural expectations, work and study pressure, and limited local access to specialist psychiatric care can delay treatment for residents of Bhaktapur.",
+  },
+  {
+    city: "Butwal",
+    slug: "butwal",
+    province: "Lumbini Province",
+    headline: "Psychiatrist for Butwal patients through online consultation",
+    intro:
+      "Patients in Butwal and nearby areas of Lumbini Province can contact Dr. Kushal Kharel for psychiatric guidance and online consultation for anxiety, depression, addiction, sleep and family mental health concerns.",
+    searchTerms: [
+      "best psychiatrist in Butwal",
+      "psychiatrist Butwal",
+      "mental health doctor Butwal",
+      "online psychiatrist Butwal",
+    ],
+    commonConcerns: sharedConcerns,
+    localContext:
+      "Business and trade pressures, migration for work, family stress and limited local specialist access can make early psychiatric support especially valuable in Butwal.",
+  },
+  {
+    city: "Dharan",
+    slug: "dharan",
+    province: "Koshi Province",
+    headline: "Psychiatrist for Dharan and eastern Nepal mental health needs",
+    intro:
+      "For patients in Dharan looking for psychiatric advice, online consultation can help with assessment, treatment planning and follow-up for anxiety, depression, addiction and sleep concerns.",
+    searchTerms: [
+      "best psychiatrist in Dharan",
+      "psychiatrist Dharan",
+      "mental health doctor Dharan",
+      "online psychiatrist Dharan",
+    ],
+    commonConcerns: sharedConcerns,
+    localContext:
+      "Students, ex-army families, working adults and business owners in Dharan may face stress from education, employment, relocation and family caregiving.",
+  },
+  {
+    city: "Janakpur",
+    slug: "janakpur",
+    province: "Madhesh Province",
+    headline: "Psychiatrist for Janakpur and Madhesh Province mental health needs",
+    intro:
+      "Patients in Janakpur and nearby areas of Madhesh Province can contact Dr. Kushal Kharel for psychiatric guidance and online consultation for anxiety, depression, addiction, sleep and family mental health concerns.",
+    searchTerms: [
+      "best psychiatrist in Janakpur",
+      "psychiatrist Janakpur",
+      "mental health doctor Janakpur",
+      "online psychiatrist Janakpur",
+    ],
+    commonConcerns: sharedConcerns,
+    localContext:
+      "Family and marital stress, cross-border work migration, heat and limited local specialist access can affect mental health for people in Janakpur.",
+  },
+  {
+    city: "Hetauda",
+    slug: "hetauda",
+    province: "Bagmati Province",
+    headline: "Psychiatrist for Hetauda patients seeking confidential care",
+    intro:
+      "Patients in Hetauda can contact Dr. Kushal Kharel for psychiatric guidance and online consultation, with in-person consultation also accessible at the Kathmandu clinic when preferred.",
+    searchTerms: [
+      "best psychiatrist in Hetauda",
+      "psychiatrist Hetauda",
+      "anxiety doctor Hetauda",
+      "online psychiatrist Hetauda",
+    ],
+    commonConcerns: sharedConcerns,
+    localContext:
+      "Industrial work pressure, family responsibilities and limited local access to specialist psychiatric care are common concerns for residents of Hetauda.",
+  },
 ];
 
 export function getCityGuide(slug: string) {
