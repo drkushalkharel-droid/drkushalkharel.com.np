@@ -5,6 +5,7 @@ import "./globals.css";
 const siteUrl = "https://drkushalkharel.com.np";
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-ZJ7RMBFRYL";
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID ?? "ca-pub-7242413910722530";
 const doctorImage = "/images/doctor.png";
 
 export const metadata: Metadata = {
@@ -277,6 +278,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`}
+          crossOrigin="anonymous"
+        />
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
