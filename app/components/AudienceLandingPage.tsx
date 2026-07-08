@@ -142,6 +142,23 @@ export default function AudienceLandingPage({
         </div>
       </section>
 
+      <section className="bg-white">
+        <div className="mx-auto max-w-5xl px-6 pb-14 lg:px-8">
+          <h2 className="text-2xl font-bold text-slate-950">Related services</h2>
+          <div className="mt-5 grid gap-3 sm:grid-cols-3">
+            <Link href="/counselling-in-nepal" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+              Counselling &amp; psychiatric services
+            </Link>
+            <Link href="/conditions" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+              Conditions treated
+            </Link>
+            <Link href="/screening" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+              Mental health screening
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-blue-950 py-16 text-white">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
           <h2 className="text-3xl font-bold">Ready to book a consultation?</h2>

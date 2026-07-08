@@ -356,6 +356,15 @@ export default function CounsellingInNepalPage() {
             <Link href="/#about" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
               About Dr. Kushal Kharel
             </Link>
+            <Link href="/expatriates-in-nepal" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+              Counselling for expatriates in Nepal
+            </Link>
+            <Link href="/english-speaking-psychiatrist" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+              English-speaking counselling &amp; psychiatry
+            </Link>
+            <Link href="/tourists-in-nepal" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+              Support for tourists in Nepal
+            </Link>
           </div>
         </section>
 
