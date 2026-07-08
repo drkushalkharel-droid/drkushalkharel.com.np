@@ -2159,6 +2159,41 @@ export const conditions: Condition[] = [
         answer:
           "Because the low mood has been present for years, many people come to see it as simply who they are, rather than recognizing it as a treatable medical condition — this is a very common and understandable experience.",
       },
+      {
+        question: "How is persistent depressive disorder treated differently from major depressive disorder?",
+        answer:
+          "Treatment approaches overlap significantly, but because symptoms are chronic, a longer medication trial and specialized therapies like CBASP, developed specifically for chronic depression, are often used alongside standard CBT or IPT.",
+      },
+      {
+        question: "Can persistent depressive disorder be caused by a difficult childhood?",
+        answer:
+          "Childhood adversity, trauma, or chronic family stress are recognized risk factors that can contribute to an early-emerging depressive pattern, though genetic vulnerability and biological factors also play a significant role.",
+      },
+      {
+        question: "What is 'double depression'?",
+        answer:
+          "Double depression occurs when a full major depressive episode develops on top of the chronic low mood of persistent depressive disorder, intensifying symptoms temporarily before typically settling back to the chronic baseline.",
+      },
+      {
+        question: "How long does treatment take to work for chronic depression?",
+        answer:
+          "Because symptoms have often been present for years, response to treatment can take somewhat longer than in acute depression, sometimes requiring an extended medication trial of 8-12 weeks or more before full benefit is seen.",
+      },
+      {
+        question: "Can persistent depressive disorder go into full remission?",
+        answer:
+          "Yes. With sustained treatment combining medication and therapy such as CBASP, many people achieve substantial or full remission, even after years of chronic symptoms, though ongoing maintenance treatment is often recommended.",
+      },
+      {
+        question: "Is persistent depressive disorder more common than major depressive disorder?",
+        answer:
+          "No, it's less common than major depressive disorder, but because it lasts for years rather than resolving in months, it accounts for a disproportionately large share of the overall burden of chronic depressive illness.",
+      },
+      {
+        question: "What is CBASP therapy?",
+        answer:
+          "Cognitive Behavioral Analysis System of Psychotherapy is a therapy model developed specifically for chronic depression, focusing on recognizing the impact of one's behavior on relationships and building more effective interpersonal problem-solving skills.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -2282,6 +2317,36 @@ export const conditions: Condition[] = [
         answer:
           "Unwanted, distressing intrusive thoughts are common in postpartum depression and anxiety and are almost always the opposite of what a mother wants — they are a symptom to discuss openly with your psychiatrist, not a sign of intent to harm.",
       },
+      {
+        question: "How soon after delivery can postpartum depression start?",
+        answer:
+          "Symptoms can begin during pregnancy or emerge any time in the weeks to months after delivery, most commonly within the first few weeks, though clinical concern and screening commonly extend through the first year postpartum.",
+      },
+      {
+        question: "Can fathers or partners develop postpartum depression too?",
+        answer:
+          "Yes. Partners can experience a depressive episode related to the major life transition of new parenthood, sleep deprivation, and relationship stress, sometimes called paternal postpartum depression, and it also warrants evaluation and treatment.",
+      },
+      {
+        question: "Is postpartum depression the same as postpartum psychosis?",
+        answer:
+          "No. Postpartum psychosis is a rare, severe psychiatric emergency involving hallucinations, delusions, or disorganized behavior requiring immediate hospitalization, while postpartum depression, though serious, does not involve loss of touch with reality.",
+      },
+      {
+        question: "Can postpartum depression begin during pregnancy, not just after birth?",
+        answer:
+          "Yes. Clinically, postpartum depression includes episodes with onset during pregnancy as well as after delivery, which is why prenatal mood symptoms should also be taken seriously and screened for, not only postnatal symptoms.",
+      },
+      {
+        question: "Will postpartum depression affect my baby's development?",
+        answer:
+          "Untreated postpartum depression has been associated with effects on mother-infant bonding and child emotional and cognitive development, which is why prompt treatment benefits both mother and baby, and why most treated mothers bond well.",
+      },
+      {
+        question: "How is postpartum depression screened for at checkups?",
+        answer:
+          "Most postnatal checkups use the Edinburgh Postnatal Depression Scale, a brief, validated questionnaire completed by the mother, which helps identify symptoms early so treatment can begin before the condition becomes severe.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -2393,6 +2458,41 @@ export const conditions: Condition[] = [
         question: "Does seasonal affective disorder happen in summer too?",
         answer:
           "Yes, though it's much less common — summer-pattern SAD presents differently, with agitation, insomnia, reduced appetite, and increased anxiety, rather than the low-energy, oversleeping pattern typical of winter SAD.",
+      },
+      {
+        question: "Does seasonal affective disorder need to be treated every year?",
+        answer:
+          "Because the pattern is predictable and recurrent, most people benefit from starting treatment — light therapy or medication — proactively each year before the usual seasonal onset, rather than waiting for symptoms to develop first.",
+      },
+      {
+        question: "Can moving to a place with less sunlight cause SAD to develop?",
+        answer:
+          "Relocating to a higher latitude with shorter winter daylight hours can increase risk or worsen symptoms in someone already vulnerable, since reduced sunlight exposure is a central driver of the seasonal pattern.",
+      },
+      {
+        question: "Is vitamin D deficiency the cause of seasonal affective disorder?",
+        answer:
+          "Vitamin D deficiency is common in people with SAD and may contribute, but current evidence doesn't support vitamin D supplementation alone as an effective treatment — light therapy and, when needed, medication remain first-line.",
+      },
+      {
+        question: "Can antidepressants alone treat SAD without light therapy?",
+        answer:
+          "Yes, antidepressants such as bupropion or SSRIs can be effective alone, though many people benefit from combining medication with light therapy, particularly for more severe seasonal episodes.",
+      },
+      {
+        question: "How is seasonal affective disorder diagnosed?",
+        answer:
+          "Diagnosis requires a documented pattern of major depressive episodes beginning and remitting at consistent times of year for two or more consecutive years, with seasonal episodes substantially outnumbering any non-seasonal ones.",
+      },
+      {
+        question: "Does seasonal affective disorder affect children and teenagers?",
+        answer:
+          "Yes, though it's diagnosed less frequently in youth than adults, SAD can affect children and adolescents, sometimes presenting as irritability, school difficulties, or social withdrawal during darker months rather than classic low mood.",
+      },
+      {
+        question: "Can dawn-simulating alarm clocks help with SAD?",
+        answer:
+          "Dawn simulators, which gradually brighten light before waking, can help some people with mild symptoms or as an adjunct to standard light therapy, though a dedicated 10,000-lux light box remains the more established treatment.",
       },
     ],
     mythsVsFacts: [
