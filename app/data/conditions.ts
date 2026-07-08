@@ -1401,6 +1401,41 @@ export const conditions: Condition[] = [
         answer:
           "Shame and fear of being judged as vain often prevent people from disclosing their symptoms, and clinicians may not routinely ask about appearance-related preoccupation unless specifically screening for it.",
       },
+      {
+        question: "How is BDD diagnosed and different from normal appearance concerns?",
+        answer:
+          "Diagnosis requires preoccupation with a perceived flaw that others don't notice or consider minor, combined with repetitive behaviors like checking or reassurance-seeking, and significant distress or impairment — well beyond everyday self-consciousness.",
+      },
+      {
+        question: "Is BDD related to eating disorders?",
+        answer:
+          "BDD and eating disorders can co-occur, but they are distinct: BDD preoccupation can involve any body area, while an eating disorder diagnosis is used when concerns are limited specifically to body weight or fat.",
+      },
+      {
+        question: "Does BDD affect men as well as women?",
+        answer:
+          "Yes. BDD affects all genders roughly equally, though the specific focus can differ — muscle dysmorphia, a preoccupation with being insufficiently muscular, is a recognized BDD presentation more common in men.",
+      },
+      {
+        question: "What is muscle dysmorphia?",
+        answer:
+          "Muscle dysmorphia is a form of BDD involving persistent preoccupation with being insufficiently muscular or lean, often driving excessive weightlifting, restrictive eating, or anabolic steroid use, and is more common in men.",
+      },
+      {
+        question: "How long does BDD treatment take to work?",
+        answer:
+          "Improvement with SSRIs and specialized CBT is often gradual, with meaningful reduction in preoccupation typically emerging over 8-12 weeks, though full response, especially with medication, can take longer at adequate doses.",
+      },
+      {
+        question: "Can BDD occur alongside OCD?",
+        answer:
+          "Yes, the two frequently co-occur and share overlapping brain circuitry and treatment approaches, though BDD is specifically focused on perceived appearance flaws rather than the broader range of obsessions seen in OCD.",
+      },
+      {
+        question: "How common is body dysmorphic disorder?",
+        answer:
+          "BDD affects around 2% of the general population, making it more common than many people realize, though it is frequently underdiagnosed because of shame and reluctance to disclose appearance-related preoccupations.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -1510,6 +1545,41 @@ export const conditions: Condition[] = [
         question: "Does hoarding disorder get worse with age?",
         answer:
           "Often, yes — symptoms typically begin in adolescence but tend to gradually worsen over decades, frequently becoming most severe in older adulthood.",
+      },
+      {
+        question: "What's the difference between hoarding disorder and simply being a collector?",
+        answer:
+          "Organized collecting that doesn't impair living spaces or cause distress isn't Hoarding Disorder. The disorder involves clutter severe enough to compromise the safe, functional use of rooms, along with significant distress about discarding.",
+      },
+      {
+        question: "Can hoarding disorder be treated if the person doesn't think they have a problem?",
+        answer:
+          "Limited insight is common, so motivational interviewing is often used alongside specialized CBT to gradually build engagement and readiness for change, rather than requiring full insight before treatment can begin.",
+      },
+      {
+        question: "Is hoarding disorder related to OCD?",
+        answer:
+          "It was historically classified under OCD but is now recognized as a distinct condition, since saving behavior in hoarding often feels justified to the person, unlike the typically distressing, unwanted compulsions of classic OCD.",
+      },
+      {
+        question: "Can hoarding disorder be triggered by trauma or loss?",
+        answer:
+          "Yes, a significant loss, deprivation, or chaotic early environment can contribute to the emotional attachment to possessions seen in hoarding disorder, though genetic vulnerability and decision-making difficulties also play a major role.",
+      },
+      {
+        question: "Does hoarding disorder only affect elderly people?",
+        answer:
+          "No. Symptoms typically begin in adolescence, but the accumulation is gradual, so hoarding disorder often isn't recognized or doesn't reach severe levels until mid-to-late adulthood, when it becomes most visible.",
+      },
+      {
+        question: "What happens during specialized CBT for hoarding?",
+        answer:
+          "Treatment builds decision-making and categorization skills, practices graded sorting and discarding exercises — often in the person's own home — and addresses excessive acquisition, typically alongside motivational interviewing.",
+      },
+      {
+        question: "Can medication treat hoarding disorder?",
+        answer:
+          "Evidence for medication treating hoarding symptoms specifically is weaker than for OCD, but SSRIs can help significantly when co-occurring depression or anxiety is present alongside the hoarding behavior.",
       },
     ],
     mythsVsFacts: [
@@ -1623,6 +1693,41 @@ export const conditions: Condition[] = [
         answer:
           "This is 'automatic' pulling, which occurs outside conscious awareness, often during sedentary activities — Habit Reversal Training specifically includes awareness training to help notice these episodes earlier.",
       },
+      {
+        question: "What's the difference between automatic and focused hair pulling?",
+        answer:
+          "Automatic pulling happens largely outside conscious awareness during sedentary activities, while focused pulling is a deliberate response to an urge or tension that is relieved by pulling — many people experience a mix of both.",
+      },
+      {
+        question: "Can trichotillomania cause permanent hair loss?",
+        answer:
+          "In most cases, hair regrows once pulling from an area stops, but severe, prolonged pulling from the same follicles can occasionally cause permanent damage, which is part of why earlier treatment helps preserve regrowth potential.",
+      },
+      {
+        question: "Is trichotillomania related to OCD?",
+        answer:
+          "It's classified alongside OCD as an obsessive-compulsive-related condition and shares some genetic and brain-circuit overlap, but it also involves stronger habit-formation circuitry, giving it a more automatic quality than classic OCD compulsions.",
+      },
+      {
+        question: "Can children have trichotillomania?",
+        answer:
+          "Yes, it often begins in adolescence, though younger children can also develop hair-pulling behavior — mild, transient pulling in very young children sometimes resolves on its own, but persistent pulling warrants evaluation.",
+      },
+      {
+        question: "What is Habit Reversal Training?",
+        answer:
+          "Habit Reversal Training is a structured behavioral therapy combining awareness training to notice pulling urges, a competing response like fist clenching to replace pulling, and modifying situations that trigger the behavior.",
+      },
+      {
+        question: "Does stress make trichotillomania worse?",
+        answer:
+          "Yes, for many people, stress and anxiety increase pulling frequency, though automatic pulling during low-stimulation activities like reading can occur independently of stress levels.",
+      },
+      {
+        question: "Can trichotillomania affect eyebrows and eyelashes, not just scalp hair?",
+        answer:
+          "Yes. While scalp pulling is most common, trichotillomania frequently involves eyebrows, eyelashes, or other body hair, sometimes in combination, and the same Habit Reversal Training approach applies regardless of the site.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -1731,6 +1836,41 @@ export const conditions: Condition[] = [
         question: "Is skin picking related to anxiety?",
         answer:
           "Often, yes — picking frequently increases during periods of stress or anxiety and can provide temporary tension relief, though it can also occur automatically during boredom or sedentary activity, independent of anxiety.",
+      },
+      {
+        question: "What triggers skin-picking episodes?",
+        answer:
+          "Picking is often triggered by a real or perceived skin irregularity — a pimple, scab, or rough patch — as well as stress, anxiety, or boredom during sedentary activities, providing brief tension relief that reinforces the cycle.",
+      },
+      {
+        question: "Can excoriation disorder cause skin infections?",
+        answer:
+          "Yes. Repeated picking can break the skin barrier and introduce bacteria, leading to infection — signs like increasing redness, warmth, pus, or fever at a picking site need prompt medical attention.",
+      },
+      {
+        question: "Is excoriation disorder related to trichotillomania?",
+        answer:
+          "Yes, the two frequently co-occur in the same person or family and share similar underlying brain circuitry and treatment approaches, though excoriation disorder involves skin picking rather than hair pulling.",
+      },
+      {
+        question: "Does treating the underlying skin condition stop the picking?",
+        answer:
+          "Treating triggers like acne or eczema can help reduce initial irritation, but once picking has become a self-perpetuating habitual behavior, Habit Reversal Training is usually still needed to address the behavior itself.",
+      },
+      {
+        question: "What does Habit Reversal Training for skin picking involve?",
+        answer:
+          "It combines awareness training to notice picking urges and triggers, a competing response such as using a stress ball, and modifying high-risk situations, such as covering vulnerable skin during sedentary activities.",
+      },
+      {
+        question: "Can excoriation disorder be caused by stimulant drug use?",
+        answer:
+          "A distinct pattern of skin picking, sometimes called 'meth mites,' can occur with stimulant intoxication, particularly methamphetamine, and typically resolves once the substance use is treated, distinct from primary excoriation disorder.",
+      },
+      {
+        question: "Does excoriation disorder only affect the face?",
+        answer:
+          "No. While the face is a common site, picking frequently also involves the arms, hands, scalp, or other reachable areas, sometimes affecting multiple sites in the same person.",
       },
     ],
     mythsVsFacts: [
