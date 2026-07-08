@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MessageCircle, Phone } from "lucide-react";
+import { MapPin, MessageCircle, Phone } from "lucide-react";
 import { cityGuides, getCityGuide } from "../../data/cities";
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -86,9 +86,19 @@ export default async function CityGuidePage({
       telephone: "+9779861800547",
       address: {
         "@type": "PostalAddress",
+        streetAddress: guide.clinicLocation?.streetAddress,
         addressLocality: "Kathmandu",
+        postalCode: guide.clinicLocation?.postalCode,
         addressCountry: "NP",
       },
+      ...(guide.clinicLocation && {
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 27.6914922,
+          longitude: 85.2807309,
+        },
+        hasMap: guide.clinicLocation.directionsUrl,
+      }),
     },
     areaServed: guide.city,
   };
@@ -220,6 +230,43 @@ export default async function CityGuidePage({
           </div>
         </div>
       </section>
+
+      {guide.clinicLocation && (
+        <section className="bg-slate-50">
+          <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+            <h2 className="text-3xl font-bold text-slate-950">
+              Visiting the clinic in {guide.city}
+            </h2>
+            <div className="mt-8 grid gap-6 lg:grid-cols-2">
+              <address className="not-italic rounded-lg border border-slate-200 bg-white p-6 leading-8 text-slate-600 shadow-sm">
+                <p className="font-bold text-blue-950">Address</p>
+                <p>{guide.clinicLocation.streetAddress}</p>
+                <p>{guide.clinicLocation.landmark}</p>
+                <p>
+                  {guide.city} {guide.clinicLocation.postalCode}, Nepal
+                </p>
+                <p className="mt-4 font-bold text-blue-950">Parking</p>
+                <p>{guide.clinicLocation.parkingInfo}</p>
+              </address>
+              <a
+                href={guide.clinicLocation.directionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-start justify-center rounded-lg border border-blue-200 bg-blue-50 p-6 shadow-sm transition hover:border-blue-400"
+              >
+                <span className="inline-flex items-center gap-2 font-bold text-blue-900">
+                  <MapPin size={20} aria-hidden="true" />
+                  Get Directions on Google Maps
+                </span>
+                <span className="mt-2 text-sm text-blue-800">
+                  Opens Google Maps with turn-by-turn directions, hours and
+                  patient reviews.
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
     </main>
   );
 }

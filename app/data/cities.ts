@@ -12,6 +12,15 @@ export type CityGuide = {
   searchTerms: string[];
   commonConcerns: CityMentalHealthTopic[];
   localContext: string;
+  // Only populated for the city with an actual in-person clinic (Kathmandu).
+  // Leave undefined for online-consultation-only cities.
+  clinicLocation?: {
+    streetAddress: string;
+    landmark: string;
+    postalCode: string;
+    parkingInfo: string;
+    directionsUrl: string;
+  };
 };
 
 const sharedConcerns: CityMentalHealthTopic[] = [
@@ -54,6 +63,13 @@ export const cityGuides: CityGuide[] = [
     commonConcerns: sharedConcerns,
     localContext:
       "Busy urban life, migration for study or work, traffic stress, academic pressure and changing family support systems can all affect mental health in Kathmandu.",
+    clinicLocation: {
+      streetAddress: "Kalanki-14, Near Malpot Road",
+      landmark: "Near Kalanki Bhatbhateni Supermarket, Kalanki",
+      postalCode: "44600",
+      parkingInfo: "Roadside parking available near the clinic.",
+      directionsUrl: "https://maps.app.goo.gl/2t5B2EqgDKYMRLE48",
+    },
   },
   {
     city: "Chitwan",

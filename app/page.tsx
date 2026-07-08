@@ -12,6 +12,7 @@ import ScreeningTeaser from "./components/ScreeningTeaser";
 import AbroadSeoSection from "./components/AbroadSeoSection";
 import Testimonials from "./components/Testimonials";
 import GoogleReviewsMap from "./components/GoogleReviewsMap";
+import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
@@ -178,6 +179,7 @@ export default function Home() {
       <Conditions />
       <Testimonials />
       <GoogleReviewsMap />
+      <FAQ />
       <Footer />
     </>
   );

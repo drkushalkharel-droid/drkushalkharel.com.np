@@ -1,5 +1,8 @@
 import Link from "next/link";
+import { MapPin } from "lucide-react";
 import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaThreads } from "react-icons/fa6";
+
+const googleMapsUrl = "https://maps.app.goo.gl/2t5B2EqgDKYMRLE48";
 
 export default function Footer() {
   const socialLinks = [
@@ -128,6 +131,10 @@ export default function Footer() {
               Google Reviews & Map
             </Link>
 
+            <Link href="/#faq" className="block hover:text-white transition">
+              FAQ
+            </Link>
+
           </div>
 
         </div>
@@ -167,20 +174,28 @@ export default function Footer() {
 
           <div className="space-y-5 text-gray-400">
 
-            <div>
+            <address className="not-italic">
               <p className="font-semibold text-white">
                 📍 Clinic
               </p>
 
-              <p>
-                Kalanki-14, Kathmandu
+              <p>Kalanki-14, Near Malpot Road</p>
+              <p>Near Kalanki Bhatbhateni Supermarket</p>
+              <p>Kathmandu 44600, Bagmati, Nepal</p>
+              <p className="mt-2 text-sm text-gray-500">
+                Roadside parking available nearby
               </p>
 
-              <p>
-                Near Malpot Road
-              </p>
-
-            </div>
+              <a
+                href={googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-2 font-semibold text-blue-400 hover:text-white transition"
+              >
+                <MapPin size={16} aria-hidden="true" />
+                Get Directions
+              </a>
+            </address>
 
             <div>
               <p className="font-semibold text-white">
