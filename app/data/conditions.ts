@@ -4677,6 +4677,41 @@ export const conditions: Condition[] = [
         answer:
           "For most people with a diagnosed AUD, particularly moderate-to-severe cases, abstinence is generally recommended, though treatment goals are individualized and should be discussed with a treating clinician.",
       },
+      {
+        question: "What are the signs of alcohol use disorder?",
+        answer:
+          "Signs include drinking more or longer than intended, unsuccessful attempts to cut down, strong cravings, continuing to drink despite problems it causes, tolerance, and withdrawal symptoms when not drinking — two or more within a year suggest AUD.",
+      },
+      {
+        question: "How is alcohol use disorder treated?",
+        answer:
+          "Treatment typically combines medically supervised detoxification for significant dependence, medications like naltrexone or acamprosate to reduce cravings, and psychotherapy such as CBT or motivational interviewing, often alongside mutual-support groups.",
+      },
+      {
+        question: "What happens during alcohol withdrawal?",
+        answer:
+          "Alcohol withdrawal can cause tremor, sweating, anxiety, nausea, and in severe cases seizures or delirium tremens, a life-threatening complication — which is why medical supervision is recommended for anyone with significant, prolonged heavy drinking.",
+      },
+      {
+        question: "Is naltrexone effective for reducing drinking?",
+        answer:
+          "Yes. Naltrexone reduces cravings and the rewarding effects of alcohol, and has solid evidence for helping reduce heavy drinking days and supporting abstinence when combined with counseling.",
+      },
+      {
+        question: "How long does alcohol use disorder treatment take?",
+        answer:
+          "Initial detoxification, if needed, typically takes days to about a week, but AUD is generally treated as a chronic condition requiring ongoing psychosocial support and, often, medication for many months or longer to sustain recovery.",
+      },
+      {
+        question: "What should I do if a family member has a drinking problem?",
+        answer:
+          "Encourage them to seek professional evaluation, avoid enabling behaviors like covering up consequences, ensure home safety if withdrawal is attempted, and consider your own support through resources like Al-Anon.",
+      },
+      {
+        question: "Does everyone with alcohol use disorder need inpatient rehab?",
+        answer:
+          "No. Many people are treated successfully as outpatients with counseling, medication, and regular follow-up. Inpatient or medically supervised detox is generally reserved for moderate-to-severe dependence or a history of complicated withdrawal.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -4794,6 +4829,41 @@ export const conditions: Condition[] = [
         answer:
           "No — nicotine replacement provides controlled, lower-risk nicotine delivery without the thousands of additional harmful chemicals in tobacco smoke, and is a well-established, effective, safer aid to quitting.",
       },
+      {
+        question: "What are the symptoms of nicotine withdrawal?",
+        answer:
+          "Symptoms include irritability, anxiety, difficulty concentrating, increased appetite, restlessness, depressed mood, and strong cravings, typically peaking within the first few days and gradually easing over 2-4 weeks.",
+      },
+      {
+        question: "What is the most effective way to quit smoking?",
+        answer:
+          "Combining behavioral counseling with medication — nicotine replacement, varenicline, or bupropion — is more effective than either approach alone, and significantly improves long-term quit rates compared to trying to quit unassisted.",
+      },
+      {
+        question: "How long does nicotine withdrawal last?",
+        answer:
+          "Physical withdrawal symptoms typically peak within the first 3 days and substantially ease within 2-4 weeks, though cravings and urges to smoke in certain situations can persist for months.",
+      },
+      {
+        question: "Why is quitting smoking so hard?",
+        answer:
+          "Nicotine reaches the brain within seconds and strongly activates dopamine reward pathways, while repeated use increases the number of nicotine receptors, driving both intense reinforcement and uncomfortable withdrawal when use stops.",
+      },
+      {
+        question: "What happens to your body after you quit smoking?",
+        answer:
+          "Heart rate and blood pressure begin normalizing within hours, circulation and lung function improve within weeks to months, and cardiovascular and cancer risk decline substantially over the following years.",
+      },
+      {
+        question: "Can nicotine dependence affect mental health?",
+        answer:
+          "Yes. Nicotine withdrawal can worsen anxiety and low mood, and smoking rates are notably higher among people with depression, schizophrenia, and other psychiatric conditions, so cessation support often needs to address both together.",
+      },
+      {
+        question: "Are e-cigarettes an effective way to quit smoking?",
+        answer:
+          "Evidence is mixed — some smokers use vaping to reduce or quit cigarettes, but e-cigarettes are not an approved first-line cessation aid. Nicotine replacement therapy, varenicline, and bupropion have stronger evidence for long-term quitting.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -4907,6 +4977,41 @@ export const conditions: Condition[] = [
         question: "Is cannabis use disorder different depending on whether it's legal where I live?",
         answer:
           "Legal status affects availability and social context, but does not change the underlying neurobiological potential for dependence with regular, heavy use.",
+      },
+      {
+        question: "What are the symptoms of cannabis withdrawal?",
+        answer:
+          "Withdrawal symptoms include irritability, anxiety, sleep difficulty, decreased appetite, restlessness, and depressed mood, typically peaking within the first week and resolving over 1-2 weeks after stopping regular heavy use.",
+      },
+      {
+        question: "How is cannabis use disorder treated?",
+        answer:
+          "Motivational Enhancement Therapy and Cognitive Behavioral Therapy are the primary evidence-based treatments, since no medication is specifically approved for cannabis use disorder. Contingency management also shows benefit, especially combined with therapy.",
+      },
+      {
+        question: "Can cannabis use disorder affect memory and concentration?",
+        answer:
+          "Yes. Regular heavy cannabis use, particularly starting in adolescence, is associated with difficulties in memory, attention, and concentration, some of which improve with sustained abstinence, though effects can persist longer with earlier, heavier use.",
+      },
+      {
+        question: "Is cannabis more addictive today than in the past?",
+        answer:
+          "Modern cannabis products are often significantly higher in THC potency than in previous decades, which is associated with increased risk of dependence and psychiatric complications compared to lower-potency, occasional use.",
+      },
+      {
+        question: "Does occasional cannabis use cause a use disorder?",
+        answer:
+          "Occasional, non-impairing use doesn't meet diagnostic criteria for Cannabis Use Disorder, which requires a pattern of impaired control and significant distress or functional impairment, not simply the frequency of use alone.",
+      },
+      {
+        question: "Is cannabis use disorder more common in teenagers?",
+        answer:
+          "Yes. Starting cannabis use in adolescence, when the brain's reward and control circuits are still developing, is associated with a substantially higher risk of developing dependence than starting use as an adult.",
+      },
+      {
+        question: "Can stopping heavy cannabis use cause depression?",
+        answer:
+          "Low mood is a recognized withdrawal symptom that typically eases within 1-2 weeks. If low mood persists or worsens beyond the withdrawal period, it should be evaluated separately, as it may reflect an underlying mood disorder.",
       },
     ],
     mythsVsFacts: [
@@ -5028,6 +5133,41 @@ export const conditions: Condition[] = [
         answer:
           "Administer naloxone if available, call emergency services immediately, and stay with the person — opioid overdose is a medical emergency requiring immediate intervention.",
       },
+      {
+        question: "What are the symptoms of opioid withdrawal?",
+        answer:
+          "Symptoms include muscle aches, sweating, anxiety, insomnia, nausea, vomiting, diarrhea, dilated pupils, and goosebumps — intensely uncomfortable but generally not life-threatening the way severe alcohol withdrawal can be.",
+      },
+      {
+        question: "How does buprenorphine treatment work?",
+        answer:
+          "Buprenorphine is a partial opioid agonist that reduces cravings and withdrawal while having a ceiling effect that limits overdose risk, making it a cornerstone of evidence-based Medication for Opioid Use Disorder treatment.",
+      },
+      {
+        question: "What is naloxone and how does it work?",
+        answer:
+          "Naloxone is an opioid overdose reversal medication that rapidly blocks opioid receptors, restoring normal breathing within minutes. It should be available to anyone at risk of opioid overdose or their close contacts.",
+      },
+      {
+        question: "Can opioid use disorder start from a legitimate prescription?",
+        answer:
+          "Yes. Opioid Use Disorder frequently begins with a legitimate prescription for pain management that progresses to misuse, which is part of why cautious prescribing and prescription monitoring are important prevention strategies.",
+      },
+      {
+        question: "How long does opioid use disorder treatment take?",
+        answer:
+          "Medication for Opioid Use Disorder is typically a long-term treatment, often continued for a year or more, since it significantly reduces relapse and overdose risk compared to shorter-term or abstinence-only approaches.",
+      },
+      {
+        question: "Is opioid use disorder a sign of moral weakness?",
+        answer:
+          "No. Opioid Use Disorder is a chronic medical condition involving genuine changes to brain reward and stress circuits, not a character flaw. Effective, evidence-based treatments exist, and recovery is achievable with proper care.",
+      },
+      {
+        question: "Can opioid use disorder be treated without stopping work or daily life?",
+        answer:
+          "Yes, in most cases. Medication for Opioid Use Disorder, such as buprenorphine, is typically delivered on an outpatient basis, allowing many people to continue working and managing daily responsibilities while in treatment.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -5140,6 +5280,41 @@ export const conditions: Condition[] = [
         answer:
           "Research suggests heavy, compulsive social media use is associated with increased anxiety, depression, and loneliness in some individuals, though the relationship is complex and varies by person and platform.",
       },
+      {
+        question: "What are the signs of problematic internet use?",
+        answer:
+          "Signs include preoccupation with being online, loss of control over time spent, using the internet to escape negative moods, unsuccessful attempts to cut back, and continuing despite harm to relationships, sleep, or responsibilities.",
+      },
+      {
+        question: "How is problematic internet use treated?",
+        answer:
+          "Cognitive Behavioral Therapy adapted for problematic internet use is the main evidence-based approach, focusing on identifying triggers and building alternative coping strategies, since complete abstinence usually isn't realistic given the internet's role in daily life.",
+      },
+      {
+        question: "Can children develop internet addiction?",
+        answer:
+          "Yes, children and adolescents can develop problematic internet use patterns, often linked to co-occurring anxiety, ADHD, or social difficulties, making age-appropriate limits and parental involvement important preventive measures.",
+      },
+      {
+        question: "Does limiting screen time actually help?",
+        answer:
+          "Structured, agreed time limits can help, especially combined with addressing what underlying need — connection, escape, achievement — the internet use is meeting, rather than relying on restriction alone.",
+      },
+      {
+        question: "What's the difference between internet addiction and gaming disorder?",
+        answer:
+          "Gaming Disorder is a more formally defined condition specifically focused on gaming behavior, while problematic internet use covers a broader range of online activities, including social media, browsing, and shopping.",
+      },
+      {
+        question: "Is problematic internet use linked to depression?",
+        answer:
+          "Yes, the two frequently co-occur — internet use may be used to escape low mood, while excessive use can also worsen isolation and sleep disruption that feed depression, so both often need to be addressed together in treatment.",
+      },
+      {
+        question: "Does someone with internet addiction need to quit the internet completely?",
+        answer:
+          "No. Since the internet is central to work, education, and daily life, treatment focuses on restoring balanced, controlled use rather than complete abstinence, similar to how food-related behavioral issues are managed.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -5249,6 +5424,41 @@ export const conditions: Condition[] = [
         question: "Should I just take away my child's access to games?",
         answer:
           "Abrupt, punitive removal without addressing underlying needs (social connection, stress relief, co-occurring conditions) the gaming was meeting often leads to conflict and doesn't address the root issue — structured, collaborative approaches tend to be more effective.",
+      },
+      {
+        question: "What are the symptoms of gaming disorder?",
+        answer:
+          "Symptoms include impaired control over gaming, gaming taking priority over other interests and responsibilities, and continued or escalating gaming despite negative consequences to school, work, relationships, sleep, or physical health.",
+      },
+      {
+        question: "How is gaming disorder diagnosed?",
+        answer:
+          "Diagnosis requires a pattern of impaired control, increasing priority given to gaming, and continuation despite negative consequences, causing significant impairment, typically evident over 12 months, assessed through clinical interview and functional impact review.",
+      },
+      {
+        question: "How is gaming disorder treated?",
+        answer:
+          "Cognitive Behavioral Therapy adapted for gaming behavior is the primary treatment, focusing on identifying triggers and building structured alternatives, aiming for controlled, healthy engagement rather than complete abstinence, plus treating co-occurring ADHD, anxiety, or depression.",
+      },
+      {
+        question: "Can gaming disorder affect school or work performance?",
+        answer:
+          "Yes. Significant academic or occupational decline is one of the key functional impacts that distinguishes Gaming Disorder from enthusiastic but non-impairing gaming as a hobby.",
+      },
+      {
+        question: "Is gaming disorder more common in certain age groups?",
+        answer:
+          "Gaming Disorder is diagnosed more frequently in adolescent and young adult males, though it can affect any age group, particularly those with co-occurring ADHD, depression, anxiety, or social difficulties.",
+      },
+      {
+        question: "Does Gaming Disorder only apply to video games, or also mobile and online games?",
+        answer:
+          "The pattern of impaired control and functional impairment can apply to any platform — console, PC, mobile, or online multiplayer games — the diagnosis is based on the behavioral pattern, not the specific device or game type.",
+      },
+      {
+        question: "Can gaming disorder and internet addiction occur together?",
+        answer:
+          "Yes, since gaming is one common form of problematic internet use, the two frequently overlap, particularly with online multiplayer games, and treatment typically addresses the broader pattern of compulsive online engagement.",
       },
     ],
     mythsVsFacts: [
@@ -6422,6 +6632,41 @@ export const conditions: Condition[] = [
         answer:
           "Reduced light and sensory cues, disrupted sleep-wake cycles, and unfamiliar nighttime hospital environments can worsen disorientation in the evening — a pattern often seen in both delirium and dementia, sometimes called 'sundowning.'",
       },
+      {
+        question: "What causes delirium in hospitalized patients?",
+        answer:
+          "Common causes include infection, medication side effects or interactions, dehydration, electrolyte imbalance, surgery and anesthesia, severe pain, and sleep deprivation — often multiple factors combined in an already vulnerable, typically older, patient.",
+      },
+      {
+        question: "Can delirium be prevented?",
+        answer:
+          "Yes, to a significant degree. Multicomponent prevention protocols — reorientation, sleep protocols, early mobilization, sensory aid use, and minimizing unnecessary medications — meaningfully reduce delirium incidence, particularly in hospitalized older adults.",
+      },
+      {
+        question: "How long does delirium last?",
+        answer:
+          "Delirium often resolves within days once the underlying cause is treated, but recovery can take days to weeks, and in older adults or those with pre-existing cognitive impairment, full recovery to baseline is not always achieved.",
+      },
+      {
+        question: "Is delirium a medical emergency?",
+        answer:
+          "Yes. Any sudden change in attention, alertness, or orientation requires urgent medical evaluation, since delirium can signal a serious underlying illness such as infection, low oxygen, or a stroke.",
+      },
+      {
+        question: "What's the difference between hyperactive and hypoactive delirium?",
+        answer:
+          "Hyperactive delirium involves agitation and restlessness, while hypoactive delirium involves withdrawal and reduced activity — the hypoactive type is often under-recognized and mistaken for depression or fatigue rather than a medical emergency.",
+      },
+      {
+        question: "Can delirium cause lasting brain damage?",
+        answer:
+          "Most delirium resolves fully once the underlying cause is treated, but repeated or prolonged episodes, especially in older adults, are associated with an increased long-term risk of cognitive decline, making prompt treatment and prevention important.",
+      },
+      {
+        question: "Should someone with delirium be physically restrained for safety?",
+        answer:
+          "Restraints are avoided whenever possible, since they can worsen agitation and injury risk. Reorientation, a calm environment, family presence, and addressing the underlying cause are preferred first, with medication or restraint reserved for immediate safety risk.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -6526,6 +6771,41 @@ export const conditions: Condition[] = [
         question: "Can serotonin syndrome happen from just one medication?",
         answer:
           "It's uncommon but possible, particularly with an overdose or in a sensitive individual — most cases result from combining two or more serotonergic agents.",
+      },
+      {
+        question: "What are the first signs of serotonin syndrome?",
+        answer:
+          "Early signs include tremor, restlessness, sweating, diarrhea, and a mild increase in heart rate — mild symptoms that can progress to agitation, muscle twitching, and fever if the causative medication isn't stopped promptly.",
+      },
+      {
+        question: "How is serotonin syndrome treated?",
+        answer:
+          "Treatment starts with immediately stopping all serotonergic medications. Mild cases may need only supportive monitoring, while moderate-to-severe cases require emergency care, including cooling, benzodiazepines, and sometimes the antidote cyproheptadine.",
+      },
+      {
+        question: "Can serotonin syndrome be fatal?",
+        answer:
+          "Severe, untreated serotonin syndrome can be life-threatening due to dangerously high fever, seizures, and organ damage, which is why prompt recognition and emergency treatment are essential rather than waiting for symptoms to resolve on their own.",
+      },
+      {
+        question: "How soon after starting medication does serotonin syndrome occur?",
+        answer:
+          "Symptoms typically develop within hours of starting a new serotonergic medication, increasing a dose, or combining serotonergic drugs — much faster than Neuroleptic Malignant Syndrome, which usually develops over 1-3 days.",
+      },
+      {
+        question: "Can antidepressants alone cause serotonin syndrome?",
+        answer:
+          "A single antidepressant at a therapeutic dose rarely causes serotonin syndrome; it most often results from combining two or more serotonergic medications, such as an SSRI with an MAOI, triptan, or tramadol.",
+      },
+      {
+        question: "Is there a blood test that diagnoses serotonin syndrome?",
+        answer:
+          "No single test confirms it — diagnosis is clinical, based on recent serotonergic medication exposure combined with the characteristic pattern of neuromuscular, autonomic, and mental status changes, not a specific lab result.",
+      },
+      {
+        question: "Is serotonin syndrome the same as antidepressant discontinuation syndrome?",
+        answer:
+          "No. Serotonin syndrome results from too much serotonergic activity, usually from starting or combining medications, while discontinuation syndrome results from stopping a serotonergic medication too abruptly — they have different causes and different management.",
       },
     ],
     mythsVsFacts: [
@@ -6637,6 +6917,41 @@ export const conditions: Condition[] = [
         question: "How is NMS different from normal antipsychotic side effects?",
         answer:
           "NMS involves the specific combination of severe muscle rigidity, high fever, autonomic instability, and altered mental status together, which is distinct from more common, milder side effects like mild stiffness or sedation.",
+      },
+      {
+        question: "What are the first signs of NMS?",
+        answer:
+          "Early signs include new or worsening muscle stiffness, a rising temperature, and subtle confusion — recognizing these early, before they progress to severe rigidity and high fever, allows treatment to start sooner and safer.",
+      },
+      {
+        question: "How is NMS treated?",
+        answer:
+          "Treatment starts with immediately stopping the causative antipsychotic. Hospital-based supportive care, including cooling and IV fluids, is essential, and moderate-to-severe cases may need dantrolene or bromocriptine to reduce rigidity and normalize dopamine activity.",
+      },
+      {
+        question: "Can NMS be fatal?",
+        answer:
+          "Yes, if not promptly identified and treated, NMS can be fatal, particularly from complications such as kidney failure, blood clots, or cardiac events — which is why it requires immediate emergency evaluation.",
+      },
+      {
+        question: "How soon after starting an antipsychotic does NMS occur?",
+        answer:
+          "NMS typically develops over 1 to 3 days after starting or increasing the dose of an antipsychotic, developing more gradually than serotonin syndrome, which usually appears within hours.",
+      },
+      {
+        question: "What's the difference between NMS and serotonin syndrome?",
+        answer:
+          "NMS is caused by antipsychotics blocking dopamine and develops over days with uniform 'lead-pipe' rigidity, while serotonin syndrome is caused by excess serotonin, develops over hours, and features clonus and hyperreflexia rather than uniform rigidity.",
+      },
+      {
+        question: "Is NMS more likely with certain antipsychotics?",
+        answer:
+          "NMS can occur with any antipsychotic, but risk is higher with high-potency first-generation agents and with rapid dose increases or high doses, though it has also been reported with newer, second-generation antipsychotics.",
+      },
+      {
+        question: "Can NMS occur after months of stable antipsychotic use?",
+        answer:
+          "It's uncommon but possible, particularly after a dose increase, adding another dopamine-blocking medication, dehydration, or physical illness — most cases occur soon after starting or increasing a dose, but ongoing vigilance is still warranted.",
       },
     ],
     mythsVsFacts: [
@@ -6753,6 +7068,41 @@ export const conditions: Condition[] = [
         question: "How can I help calm someone without making things worse?",
         answer:
           "Speak calmly and slowly, reduce noise and stimulation, avoid arguing or physically restraining unless necessary for immediate safety, and offer simple choices to help the person feel more in control.",
+      },
+      {
+        question: "What causes sudden agitation in older adults?",
+        answer:
+          "Sudden agitation in older adults is often caused by delirium from an underlying infection, medication effect, pain, or dehydration, rather than a primary psychiatric condition — making urgent medical evaluation important, not just behavioral management.",
+      },
+      {
+        question: "When is agitation a medical emergency?",
+        answer:
+          "Agitation is a medical emergency when there is immediate risk of serious harm to the person or others, or when it's accompanied by confusion, fever, or other signs suggesting an underlying medical cause like delirium.",
+      },
+      {
+        question: "What medications are used for acute agitation?",
+        answer:
+          "Antipsychotics are used for agitation linked to psychosis or mania, while benzodiazepines are often used for anxiety-related agitation or alcohol withdrawal. The choice depends on the likely cause, and de-escalation is tried first whenever possible.",
+      },
+      {
+        question: "How can caregivers prevent agitation episodes?",
+        answer:
+          "Maintaining structured routines, treating pain or discomfort promptly, reducing environmental overstimulation, and ensuring consistent treatment of any underlying psychiatric or medical condition all help reduce the frequency of agitation episodes.",
+      },
+      {
+        question: "Is agitation common in dementia patients?",
+        answer:
+          "Yes, agitation is common in dementia, often triggered by unmet needs, overstimulation, confusion, or an unrecognized medical problem like infection or pain, rather than being an inevitable, untreatable part of the condition.",
+      },
+      {
+        question: "Should police be called for a psychiatric agitation emergency?",
+        answer:
+          "Emergency medical services are generally preferred when available, since agitation is often a medical or psychiatric symptom needing clinical assessment. Police involvement may still be necessary for immediate safety, but a coordinated medical response is preferable when possible.",
+      },
+      {
+        question: "Can agitation be a symptom of autism or intellectual disability?",
+        answer:
+          "Yes. Agitation in autism or intellectual disability is often a response to sensory overload, communication difficulty, unmet needs, or a change in routine, rather than a primary psychiatric emergency, and often responds well to environmental and communication adjustments.",
       },
     ],
     mythsVsFacts: [
