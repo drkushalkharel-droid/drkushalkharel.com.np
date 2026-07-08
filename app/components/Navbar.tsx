@@ -1,8 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { Phone } from "lucide-react";
+import { ChevronDown, Phone } from "lucide-react";
 import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaThreads } from "react-icons/fa6";
+
+const forYouLinks = [
+  { href: "/nepalese-abroad", label: "Nepalese Abroad" },
+  { href: "/expatriates-in-nepal", label: "For Expatriates in Nepal" },
+  { href: "/english-speaking-psychiatrist", label: "English Speaking Psychiatrist" },
+  { href: "/tourists-in-nepal", label: "For Tourists in Nepal" },
+  { href: "/counselling-in-nepal", label: "Counselling Services" },
+];
 
 export default function Navbar() {
   const socialLinks = [
@@ -121,12 +129,26 @@ export default function Navbar() {
               Cities
             </Link>
 
-            <Link
-              href="/#nepalese-abroad"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
-            >
-              Abroad
-            </Link>
+            <div className="group relative">
+              <button
+                type="button"
+                className="inline-flex items-center gap-1 font-medium text-gray-700 transition hover:text-blue-700"
+              >
+                For You
+                <ChevronDown size={16} aria-hidden="true" />
+              </button>
+              <div className="invisible absolute left-0 top-full z-50 w-64 rounded-lg border border-gray-100 bg-white py-2 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100">
+                {forYouLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block px-4 py-2.5 text-sm font-medium text-gray-700 transition hover:bg-blue-50 hover:text-blue-700"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
 
             <Link
               href="/#contact"
