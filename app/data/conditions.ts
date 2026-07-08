@@ -5691,6 +5691,438 @@ export const conditions: Condition[] = [
       "Academy for Eating Disorders.",
     ],
   },
+  {
+    slug: "somatic-symptom-disorder",
+    title: "Somatic Symptom Disorder",
+    category: "Somatic Symptom and Related Disorders",
+    shortDescription:
+      "One or more distressing physical symptoms accompanied by excessive thoughts, feelings, or behaviors about those symptoms — regardless of whether a medical cause is found.",
+    overview:
+      "Somatic Symptom Disorder involves one or more physical symptoms that are distressing or significantly disrupt daily life, accompanied by excessive thoughts, feelings, or behaviors related to those symptoms — such as persistent, high anxiety about their seriousness, or disproportionate time and energy devoted to health concerns. Importantly, the diagnosis does not require symptoms to be medically unexplained: a person can have a genuine medical condition alongside a disproportionate psychological response to it.",
+    definition:
+      "Somatic Symptom Disorder is defined by one or more somatic symptoms that are distressing or disrupt daily life, together with excessive thoughts, feelings, or behaviors related to the symptoms or associated health concerns — evidenced by disproportionate and persistent thoughts about their seriousness, persistently high health-related anxiety, or excessive time and energy devoted to symptoms or health concerns. Although any single symptom may not be continuously present, the symptomatic state itself is typically persistent, usually more than six months.",
+    causes:
+      "Somatic Symptom Disorder reflects a genetic vulnerability toward heightened bodily awareness and anxiety, often shaped by childhood experiences of illness — one's own or a family member's — that influence how bodily sensations are later interpreted. A tendency toward heightened interoceptive sensitivity (increased awareness of and attention to internal bodily sensations) is central, and co-occurring anxiety or depression can amplify the perceived intensity or threat of physical symptoms.",
+    riskFactors: [
+      "Family history of somatic symptom disorder or significant childhood illness exposure",
+      "Co-occurring anxiety or depressive disorders",
+      "History of trauma or significant adverse childhood experiences",
+      "Female sex",
+      "Chronic medical conditions, which can co-occur alongside a disproportionate psychological response",
+      "Personality traits involving heightened anxiety sensitivity",
+    ],
+    brainMechanisms:
+      "Heightened activity in brain regions involved in interoceptive processing and threat appraisal — including the insula and anterior cingulate cortex — is implicated, causing normal bodily sensations to be perceived as more intense, threatening, or significant than they objectively are. This reflects a genuine difference in how the brain processes and interprets bodily signals, not a conscious choice to exaggerate symptoms.",
+    symptoms: [
+      "One or more persistent physical symptoms — pain, fatigue, gastrointestinal complaints, or others — causing distress or functional impairment",
+      "Disproportionate and persistent worry about the seriousness of the symptoms",
+      "High health-related anxiety",
+      "Excessive time and energy spent on symptoms or health concerns — frequent doctor visits, extensive symptom research, repeated self-checking",
+      "Symptoms persisting for 6 months or more, even if the specific symptom varies over time",
+    ],
+    diagnosticCriteria: [
+      "One or more distressing or disruptive somatic symptoms",
+      "Excessive health-related thoughts, feelings, or behaviors, evidenced by 1+ of: disproportionate concern about seriousness, high health anxiety, or excessive time/energy devoted to symptoms",
+      "A persistently symptomatic state, typically over 6+ months",
+    ],
+    differentialDiagnosis: [
+      { name: "Illness Anxiety Disorder", note: "Health anxiety is present with minimal or no actual somatic symptoms — the worry itself, rather than the symptom burden, is the primary feature." },
+      { name: "Genuine, undiagnosed medical conditions", note: "Should always be appropriately investigated and ruled out or identified, since a real medical condition can coexist alongside a disproportionate psychological response." },
+      { name: "Panic Disorder", note: "Physical symptoms occur specifically during discrete panic episodes rather than as a persistent pattern." },
+      { name: "Factitious Disorder", note: "Symptoms are intentionally produced or feigned, unlike the genuine subjective distress in Somatic Symptom Disorder." },
+    ],
+    investigations: [
+      "Thorough medical history and physical examination to appropriately evaluate reported symptoms, while avoiding excessive, repeated testing that can reinforce health anxiety",
+      "Collaboration between psychiatry and the treating medical team",
+      "Screening for co-occurring anxiety or depression",
+      "Review of the pattern and history of healthcare-seeking behavior",
+    ],
+    treatmentOverview:
+      "A collaborative approach between psychiatry and primary or specialist medical care is important, ideally with a single, consistent point of medical contact to avoid fragmented or excessive testing. Psychotherapy, particularly CBT, is the primary evidence-based treatment, and medication may help with co-occurring anxiety or depression.",
+    medications: [
+      { name: "SSRIs/SNRIs", note: "May help reduce symptom-focused anxiety and treat co-occurring depression or anxiety, though no medication treats the core disorder directly." },
+    ],
+    psychotherapy: [
+      { name: "Cognitive Behavioral Therapy", note: "Addresses catastrophic thinking about symptoms and excessive health-related behaviors." },
+      { name: "Mindfulness-based approaches", note: "Can help reduce the intensity of focus on bodily sensations." },
+      { name: "Consultation-liaison psychiatry", note: "Working alongside the primary treating physician to provide consistent, coordinated care." },
+    ],
+    lifestyleAdvice: [
+      "Maintain regular contact with a single, trusted primary care physician rather than seeking multiple opinions repeatedly",
+      "Engage in regular physical activity as tolerated",
+      "Practice stress management and relaxation techniques",
+      "Limit excessive symptom-checking behaviors, such as repeated online searching",
+      "Maintain social and occupational engagement despite symptoms where possible",
+    ],
+    prognosis:
+      "With appropriate psychotherapy and a consistent, coordinated medical relationship, many people experience meaningful reduction in distress and improved functioning, even if some physical symptoms persist. The condition can become chronic without treatment, and is associated with significant healthcare utilization and functional impact if unaddressed.",
+    prevention: [
+      "Early, appropriate medical evaluation and reassurance for health concerns, avoiding both dismissal and excessive repeated testing",
+      "Addressing childhood illness-related anxiety and modeling healthy illness behavior within families",
+      "Early treatment of co-occurring anxiety or depression",
+    ],
+    familyGuidance:
+      "Take the person's distress seriously — the symptoms and worry are genuinely experienced, not fabricated or dismissively 'all in their head.' Avoid reinforcing excessive health-related behaviors, such as constant reassurance-seeking or repeated symptom-checking, while still providing appropriate support. Encourage engagement with a single, consistent healthcare provider rather than doctor-shopping, and support psychotherapy engagement as a genuine, evidence-based treatment.",
+    faqs: [
+      {
+        question: "Does somatic symptom disorder mean my physical symptoms aren't real?",
+        answer:
+          "No. The physical distress and symptoms are genuinely experienced. The disorder reflects how the brain processes and responds to bodily sensations, not fabrication.",
+      },
+      {
+        question: "Can I have a real medical condition and somatic symptom disorder at the same time?",
+        answer:
+          "Yes — the diagnosis does not require symptoms to be medically unexplained. A genuine medical condition can coexist alongside a disproportionate psychological response to it.",
+      },
+      {
+        question: "Why do I feel so anxious about my health even when tests come back normal?",
+        answer:
+          "This reflects heightened activity in the brain's interoceptive and threat-appraisal circuits, causing normal bodily sensations to be interpreted as more significant or threatening than they objectively are — a genuine processing difference, not a character flaw.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "Somatic symptom disorder means the person is faking their symptoms.",
+        fact: "The physical distress and symptoms are genuinely experienced; the disorder reflects how the brain processes and responds to bodily sensations, not intentional fabrication.",
+      },
+      {
+        myth: "If there's no test result, there's no explanation and nothing more can be done.",
+        fact: "Psychiatric treatment specifically targeting the excessive health-related thoughts and behaviors can meaningfully reduce distress and improve functioning, even when a specific physical cause isn't found.",
+      },
+    ],
+    urgentCare:
+      "Any new or changing physical symptom should still be appropriately medically evaluated rather than automatically attributed to the disorder, given the risk of missing a genuine new medical issue. Seek prompt evaluation for significant depression or suicidal ideation associated with chronic symptom burden and distress.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
+      "National Institute for Health and Care Excellence (NICE). Guidance on medically unexplained symptoms.",
+    ],
+  },
+  {
+    slug: "illness-anxiety-disorder",
+    title: "Illness Anxiety Disorder",
+    category: "Somatic Symptom and Related Disorders",
+    shortDescription:
+      "Preoccupation with having or acquiring a serious illness, with minimal or no actual physical symptoms — the anxiety itself, not the symptom burden, is the central feature.",
+    overview:
+      "Illness Anxiety Disorder involves a preoccupation with having or acquiring a serious, undiagnosed illness, in the absence of significant somatic symptoms, or with only mild symptoms — distinguishing it from Somatic Symptom Disorder, where the symptom burden itself is prominent. The anxiety itself, rather than the physical symptoms, is the central feature, and reassurance from medical evaluation typically provides only brief relief before the worry returns.",
+    definition:
+      "Illness Anxiety Disorder is defined by preoccupation with having or acquiring a serious illness, with somatic symptoms absent or only mild in intensity, a high level of anxiety about health that is easily triggered by health-related information, and excessive health-related behaviors (repeated self-checking, excessive research) or maladaptive avoidance (avoiding medical appointments). The preoccupation must be present for six months or more, though the specific illness feared may change, and is specified as care-seeking or care-avoidant type.",
+    causes:
+      "Illness Anxiety Disorder arises from genetic vulnerability toward anxiety, often combined with a history of significant personal or family illness experience, particularly a serious or frightening illness witnessed in childhood. Heightened interoceptive sensitivity and catastrophic misinterpretation of normal bodily sensations are central, alongside co-occurring anxiety disorders or OCD-spectrum traits. Excessive engagement with health information, including online searching (sometimes called 'cyberchondria'), can reinforce and escalate the anxiety.",
+    riskFactors: [
+      "Family history of anxiety disorders",
+      "Personal or family history of serious illness",
+      "Health anxiety or OCD traits",
+      "Exposure to significant illness or death of a close family member",
+      "Excessive engagement with health information online",
+      "Co-occurring anxiety or depressive disorders",
+    ],
+    brainMechanisms:
+      "Similar to Somatic Symptom Disorder, Illness Anxiety Disorder involves heightened activity in interoceptive and threat-appraisal brain circuits — the insula, anterior cingulate cortex, and amygdala — causing normal bodily sensations to be interpreted with catastrophic, illness-related meaning. It overlaps significantly with the cognitive-behavioral models underlying OCD, given the repetitive checking behaviors and difficulty tolerating uncertainty about health status.",
+    symptoms: [
+      "Persistent preoccupation with having or developing a serious illness",
+      "Minimal or no actual physical symptoms, or only mild ones",
+      "High health-related anxiety and being easily alarmed by health-related information",
+      "Excessive health-checking behaviors — repeated self-examination, researching symptoms online — in the care-seeking subtype",
+      "Avoidance of medical care, doctors, or hospitals out of fear, in the care-avoidant subtype",
+      "Reassurance from medical evaluation providing only brief, temporary relief before worry returns",
+    ],
+    diagnosticCriteria: [
+      "Preoccupation with having or acquiring a serious illness",
+      "Somatic symptoms absent or only mild",
+      "High health anxiety and being easily alarmed about health",
+      "Excessive health-related behaviors or maladaptive avoidance",
+      "Present for 6+ months, though the feared illness may change",
+      "Specified as care-seeking or care-avoidant type",
+    ],
+    differentialDiagnosis: [
+      { name: "Somatic Symptom Disorder", note: "Significant, distressing physical symptoms are central, unlike the minimal symptom burden in illness anxiety disorder." },
+      { name: "Specific Phobia of illness/medical situations", note: "Fear is circumscribed to a specific trigger, like blood or needles, rather than a broader preoccupation with an undiagnosed serious illness." },
+      { name: "OCD", note: "Illness-related intrusive thoughts and checking behaviors can overlap significantly, though illness anxiety disorder is specifically centered on health concerns." },
+      { name: "Generalized Anxiety Disorder", note: "Worry spans multiple life domains rather than being specifically health-focused." },
+    ],
+    investigations: [
+      "Thorough medical evaluation to appropriately address health concerns while avoiding excessive repeated testing",
+      "Clinical psychiatric interview assessing the specific pattern of health-related thoughts and behaviors",
+      "Screening for co-occurring anxiety disorders and OCD",
+      "Assessment of care-seeking vs. care-avoidant pattern, since the care-avoidant subtype carries its own risk of missing genuine medical issues",
+    ],
+    treatmentOverview:
+      "Cognitive Behavioral Therapy is the primary, well-evidenced treatment, addressing catastrophic health-related thinking and reducing both excessive checking and avoidance behaviors. SSRIs can help, particularly given the overlap with anxiety and OCD-spectrum mechanisms, and a coordinated relationship with a single primary care provider supports treatment.",
+    medications: [
+      { name: "SSRIs", note: "Can reduce health-related anxiety and preoccupation, particularly given mechanistic overlap with OCD and anxiety disorders." },
+    ],
+    psychotherapy: [
+      { name: "Cognitive Behavioral Therapy", note: "Addresses catastrophic interpretation of bodily sensations and reduces excessive checking or avoidance." },
+      { name: "Exposure and Response Prevention", note: "Adapted from OCD treatment, particularly for the care-seeking, checking-focused subtype." },
+      { name: "Mindfulness-based approaches", note: "Help build tolerance of uncertainty about health status." },
+    ],
+    lifestyleAdvice: [
+      "Limit repeated health-related internet searches",
+      "Reduce excessive body-checking behaviors",
+      "Maintain a single, consistent primary care relationship rather than seeking multiple opinions",
+      "Practice tolerance of uncertainty rather than seeking complete reassurance",
+      "Engage in regular physical activity and stress management",
+    ],
+    prognosis:
+      "With CBT and/or medication, many people achieve significant reduction in health-related anxiety and improved functioning. Without treatment, the condition tends to be chronic and can significantly affect quality of life and healthcare utilization patterns — either excessive use in the care-seeking type or dangerous avoidance in the care-avoidant type.",
+    prevention: [
+      "Addressing childhood exposure to frightening illness experiences with appropriate support",
+      "Limiting excessive health-information consumption",
+      "Early treatment of anxiety disorders or OCD traits that may predispose to illness anxiety disorder",
+      "Media literacy around health information online",
+    ],
+    familyGuidance:
+      "Avoid providing excessive reassurance repeatedly, which can inadvertently reinforce the anxiety cycle — a brief, calm response is more helpful than lengthy repeated reassurance. Support engagement with a single, consistent healthcare provider, and encourage professional psychiatric treatment specifically targeting the health anxiety pattern. For the care-avoidant subtype, gentle encouragement toward appropriate medical care when genuinely needed is also important.",
+    faqs: [
+      {
+        question: "Is illness anxiety disorder the same as hypochondria?",
+        answer:
+          "Illness Anxiety Disorder is the current clinical term, replacing much of what was previously called hypochondriasis, with more specific diagnostic criteria distinguishing it from Somatic Symptom Disorder.",
+      },
+      {
+        question: "Why doesn't a normal test result reassure me for long?",
+        answer:
+          "Reassurance-seeking tends to provide only brief relief because it doesn't address the underlying anxiety pattern — the worry typically returns and can even be reinforced by the cycle of checking and temporary relief.",
+      },
+      {
+        question: "Is it bad to avoid the doctor if I'm anxious about what they might find?",
+        answer:
+          "This care-avoidant pattern carries its own risk, since it can lead to missing a genuinely important new medical issue — treatment aims to reduce the underlying anxiety so appropriate care can be accessed when needed.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "People with illness anxiety disorder are just being dramatic.",
+        fact: "The anxiety and distress are genuinely experienced and significantly impairing, reflecting real differences in how bodily sensations and health information are processed.",
+      },
+      {
+        myth: "Getting more tests or reassurance will eventually fix the anxiety.",
+        fact: "Repeated testing and reassurance-seeking typically provide only brief relief and can reinforce the anxiety cycle over time; addressing the underlying pattern through therapy is more effective.",
+      },
+    ],
+    urgentCare:
+      "For the care-avoidant subtype specifically, any genuinely concerning new physical symptom still warrants appropriate medical evaluation despite the avoidance pattern. Seek prompt evaluation for significant depression or suicidal ideation associated with chronic health anxiety.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
+    ],
+  },
+  {
+    slug: "conversion-disorder",
+    title: "Conversion Disorder (Functional Neurological Symptom Disorder)",
+    category: "Somatic Symptom and Related Disorders",
+    shortDescription:
+      "Neurological symptoms — weakness, abnormal movements, non-epileptic seizures, or sensory changes — that are genuine and involuntary but incompatible with recognized neurological disease.",
+    overview:
+      "Conversion Disorder involves neurological symptoms — such as weakness, abnormal movements, non-epileptic seizures, or sensory disturbances — that are incompatible with recognized neurological or medical conditions upon careful examination, causing genuine distress and impairment. The symptoms are not intentionally produced; the condition reflects a genuine disturbance in how the nervous system functions, often, though not always, triggered or associated with psychological stress.",
+    definition:
+      "Conversion Disorder requires one or more symptoms of altered voluntary motor or sensory function, with clinical findings providing evidence of incompatibility between the symptom and recognized neurological or medical conditions — based on specific, well-established clinical examination signs, not merely the absence of a positive test. The symptom is not better explained by another medical or mental disorder and causes significant distress, impairment, or warrants medical evaluation. It is specified by symptom type (weakness/paralysis, abnormal movement, seizures/attacks, sensory loss, and others) and whether a psychological stressor is present.",
+    causes:
+      "Conversion Disorder is thought to involve a genuine disruption in the brain's processing and integration of voluntary movement or sensory signals, sometimes triggered by significant psychological stress, trauma, or a preceding physical injury or illness that the nervous system does not fully 'reset' from even after physical recovery. A history of trauma, particularly childhood trauma, is a recognized risk factor in a substantial proportion of cases, though the disorder can also arise without an identifiable psychological trigger.",
+    riskFactors: [
+      "History of trauma or significant psychological stress",
+      "Co-occurring anxiety, depression, or other psychiatric conditions",
+      "History of a preceding physical injury or illness affecting the same body area or function",
+      "Family history of functional neurological symptoms",
+      "Female sex",
+      "Co-occurring dissociative symptoms",
+    ],
+    brainMechanisms:
+      "Functional neuroimaging studies suggest disrupted connectivity between brain regions involved in the sense of agency and voluntary control (such as the supplementary motor area) and regions involved in emotion processing and self-monitoring, without identifiable structural damage. This reflects a genuine functional disturbance in how the brain generates and controls movement or processes sensory information, not a conscious choice or fabrication.",
+    symptoms: [
+      "Weakness or paralysis of a limb or body part",
+      "Abnormal movements (tremor, jerking) inconsistent with recognized movement disorder patterns",
+      "Episodes resembling seizures but without the characteristic EEG changes of epilepsy (functional/non-epileptic seizures)",
+      "Sensory disturbances (numbness, vision or hearing changes) not following expected anatomical patterns",
+      "Speech or swallowing difficulties",
+      "Specific clinical examination findings — such as inconsistency of the deficit with voluntary effort — support the diagnosis",
+    ],
+    diagnosticCriteria: [
+      "One or more symptoms of altered voluntary motor or sensory function",
+      "Clinical examination findings demonstrating incompatibility with recognized neurological disease",
+      "Not better explained by another condition",
+      "Causes distress or impairment",
+      "Specified by symptom type and presence of a psychological stressor",
+    ],
+    differentialDiagnosis: [
+      { name: "Genuine neurological disease", note: "Must be carefully and thoroughly excluded through appropriate neurological examination and testing — this diagnosis is made based on specific positive clinical findings, not simply the absence of a test abnormality." },
+      { name: "Factitious Disorder", note: "Symptoms are intentionally produced or feigned, unlike the genuine, involuntary nature of conversion disorder symptoms." },
+      { name: "Malingering", note: "Symptoms are intentionally produced for a specific external incentive, such as financial compensation, distinct from the genuine subjective experience in conversion disorder." },
+      { name: "Somatic Symptom Disorder", note: "Conversion disorder specifically involves neurological-type symptoms with characteristic clinical incompatibility findings, distinguishing it from the broader symptom pattern of somatic symptom disorder." },
+    ],
+    investigations: [
+      "Thorough neurological examination by a specialist, looking for specific, well-established positive clinical signs supporting a functional diagnosis",
+      "Appropriate neuroimaging and other testing to exclude structural or other neurological disease as clinically indicated",
+      "Video-EEG monitoring specifically for suspected functional/non-epileptic seizures",
+      "Psychiatric assessment for co-occurring conditions and any relevant psychological stressors",
+    ],
+    treatmentOverview:
+      "Clear, non-judgmental communication of the diagnosis by the neurologist and psychiatrist together is a critical first step, explaining the condition as real and treatable rather than dismissively suggesting nothing is wrong. Physiotherapy specifically adapted for functional motor symptoms, alongside psychotherapy, forms the core of treatment, and a coordinated neurology-psychiatry approach improves outcomes.",
+    medications: [
+      { name: "No medication treats the core conversion symptoms directly", note: "Medications may address co-occurring depression or anxiety; for functional/non-epileptic seizures, ruling out and appropriately managing any co-occurring genuine epilepsy is essential." },
+    ],
+    psychotherapy: [
+      { name: "Cognitive Behavioral Therapy adapted for functional neurological symptoms", note: "Addresses the psychological and behavioral factors maintaining symptoms." },
+      { name: "Specialized physiotherapy for functional motor symptoms", note: "Retrains normal movement patterns." },
+      { name: "Psychoeducation about the diagnosis", note: "A well-explained diagnosis is itself often therapeutic." },
+    ],
+    lifestyleAdvice: [
+      "Engage with a specialized, coordinated treatment program combining neurology, psychiatry, and physiotherapy where available",
+      "Pursue gradual, structured movement retraining rather than complete rest, which can worsen functional symptoms",
+      "Manage underlying stress and any identified psychological triggers",
+      "Maintain realistic expectations that recovery is often gradual",
+    ],
+    prognosis:
+      "Outcomes are highly variable: some people experience full recovery, particularly with early diagnosis, clear communication, and prompt engagement with specialized treatment. The condition can become chronic, particularly with delayed diagnosis, ongoing psychological stress, or extensive unnecessary medical investigation that can inadvertently reinforce symptoms or delay appropriate treatment.",
+    prevention: [
+      "Prompt, accurate diagnosis with clear communication to reduce prolonged, unnecessary investigation",
+      "Early treatment of underlying trauma, anxiety, or significant stress",
+      "Coordinated neurology-psychiatry care pathways to support early, effective intervention",
+    ],
+    familyGuidance:
+      "Understand conversion disorder as a genuine, involuntary condition — the person is not choosing or faking the symptoms, even though no structural disease is found on scans. Support engagement with the recommended treatment approach, often combining physiotherapy and psychotherapy, rather than continuing to seek repeated additional medical opinions beyond what's clinically indicated. Encourage a gradual return to normal activity as guided by the treatment team, and be patient given that recovery is often gradual.",
+    faqs: [
+      {
+        question: "Does conversion disorder mean the symptoms are 'fake' or 'all in my head'?",
+        answer:
+          "No. The symptoms are genuinely experienced and involuntary — they reflect a real functional disturbance in how the brain generates movement or processes sensation, not fabrication.",
+      },
+      {
+        question: "Why don't scans show anything wrong if my symptoms are real?",
+        answer:
+          "The disturbance is functional rather than structural — it affects how the brain processes and controls movement or sensation without causing visible structural damage on standard imaging.",
+      },
+      {
+        question: "Can functional neurological symptoms be cured?",
+        answer:
+          "Many people experience significant improvement or full recovery, particularly with early diagnosis and a coordinated treatment approach combining physiotherapy and psychotherapy.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "If tests are normal, the symptoms must be fake or imagined.",
+        fact: "Conversion disorder reflects a genuine functional disturbance in how the brain generates movement or processes sensation — the symptoms are real and involuntary, even without structural disease visible on scans.",
+      },
+      {
+        myth: "Conversion disorder only happens after severe trauma.",
+        fact: "While trauma or stress is a recognized trigger in many cases, the condition can also arise without an identifiable psychological trigger.",
+      },
+    ],
+    urgentCare:
+      "Any new neurological symptom should still be promptly and appropriately medically evaluated to exclude a genuine acute neurological emergency, such as stroke, before attributing it to a functional cause.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
+      "Functional Neurological Disorder Society (FND Society).",
+    ],
+  },
+  {
+    slug: "factitious-disorder",
+    title: "Factitious Disorder",
+    category: "Somatic Symptom and Related Disorders",
+    shortDescription:
+      "Intentional falsification or induction of illness or injury without an obvious external reward — either imposed on oneself, or, more seriously, imposed on a dependent such as a child.",
+    overview:
+      "Factitious Disorder involves the intentional falsification, exaggeration, or induction of physical or psychological symptoms or injury, associated with identified deception, in the absence of obvious external rewards such as financial gain or avoiding work — which would instead suggest malingering. It can be imposed on oneself, or, in a distinct and particularly serious form, imposed on another person, such as a child or dependent adult, which raises significant safety and child protection concerns.",
+    definition:
+      "Factitious Disorder Imposed on Self involves falsification of physical or psychological signs or symptoms, or induction of injury or disease, associated with identified deception, with the individual presenting themselves as ill, impaired, or injured, evident even without obvious external rewards. Factitious Disorder Imposed on Another involves the same pattern of falsification directed at another person — importantly, it is the perpetrator, not the victim, who receives this diagnosis.",
+    causes:
+      "The causes of Factitious Disorder are not fully understood. Proposed contributing factors include a history of childhood illness — one's own or witnessing a family member's — that shaped an association between being ill and receiving care or attention, and an underlying need to occupy the 'sick role' for psychological reasons unrelated to external material gain. In Factitious Disorder Imposed on Another, complex psychological dynamics in the perpetrator often involve a need for attention or sympathy through the identified role of caring for a sick dependent.",
+    riskFactors: [
+      "History of significant childhood illness or hospitalization",
+      "Family or personal history of healthcare-related work or exposure",
+      "Underlying personality difficulties",
+      "History of trauma or neglect",
+      "For Factitious Disorder Imposed on Another: caregiving responsibility for the victim, frequently a parent of a young child",
+    ],
+    brainMechanisms:
+      "Factitious Disorder is less well-characterized neurobiologically than most other conditions in this library. It is understood more through psychological and developmental models involving early attachment experiences and the meaning or reward associated with the 'sick role' or caregiving role, rather than through a clearly established distinct neurobiological pathway.",
+    symptoms: [
+      "Presenting fabricated, exaggerated, or self-induced physical or psychological symptoms",
+      "Inconsistencies in reported history or presentation that don't fit a coherent recognized illness pattern",
+      "Seeking care from multiple providers or facilities, sometimes to avoid detection",
+      "Reluctance to allow contact between different treating providers",
+      "Unusual familiarity with medical terminology or procedures",
+      "In Factitious Disorder Imposed on Another: fabricating or inducing illness in a dependent, who may undergo unnecessary and sometimes harmful medical procedures as a result",
+    ],
+    diagnosticCriteria: [
+      "Falsification of symptoms or induction of injury, with identified deception",
+      "Presenting self (or another person) as ill, impaired, or injured",
+      "Behavior evident without obvious external incentives",
+      "Not better explained by another mental disorder",
+      "Specified as imposed on self or imposed on another (with the perpetrator receiving the diagnosis in the latter case)",
+    ],
+    differentialDiagnosis: [
+      { name: "Malingering", note: "Intentional symptom production is driven by a clear external incentive — such as avoiding work or obtaining financial compensation — the key distinguishing feature from factitious disorder." },
+      { name: "Conversion Disorder / Somatic Symptom Disorder", note: "Symptoms are genuinely, involuntarily experienced rather than intentionally fabricated or induced." },
+      { name: "Genuine medical or psychiatric illness", note: "Must always be carefully considered and appropriately evaluated, given the risk of missing true co-occurring illness." },
+    ],
+    investigations: [
+      "Careful, often complex clinical assessment given the inherent challenge of the deceptive presentation",
+      "Review of medical records across multiple providers or facilities where possible",
+      "Collaboration between treating physicians and psychiatry",
+      "In suspected cases of Factitious Disorder Imposed on Another, involvement of child protection or adult protective services given the safety risk to the victim",
+    ],
+    treatmentOverview:
+      "Treatment is notably challenging given the inherent difficulty of engaging someone in a process that requires acknowledging deceptive behavior. A non-confrontational, supportive approach that avoids direct accusation while addressing underlying psychological needs is generally recommended. For Factitious Disorder Imposed on Another, the immediate priority is ensuring the safety of the victim, which may require protective services involvement, separate from any psychiatric treatment offered to the perpetrator.",
+    medications: [
+      { name: "No medication treats Factitious Disorder directly", note: "Medications may be used for any co-occurring genuine psychiatric conditions identified, where the person is willing to engage in treatment." },
+    ],
+    psychotherapy: [
+      { name: "Psychotherapy addressing underlying psychological needs", note: "Often challenging to sustain given low engagement and insight." },
+      { name: "Family therapy where relevant and safe to pursue", note: "Particularly once safety concerns for any dependents have been addressed." },
+      { name: "Case management coordinating across medical providers", note: "Reduces fragmented, excessive, or risky medical care-seeking." },
+    ],
+    lifestyleAdvice: [
+      "Engage in any offered psychotherapy for the underlying psychological needs",
+      "Work with a single, coordinated treatment team rather than multiple disconnected providers, where willing",
+      "Address any co-occurring genuine psychiatric conditions",
+    ],
+    prognosis:
+      "The prognosis is variable and often challenging given typically low engagement and insight. For Factitious Disorder Imposed on Another, immediate safety intervention for the victim is paramount and takes priority over the long-term treatment prognosis for the perpetrator, which is also often guarded. Some individuals, particularly with sustained, non-confrontational therapeutic engagement, do show improvement over time.",
+    prevention: [
+      "Not well established given the complexity and rarity of the condition",
+      "Coordinated medical records and communication between providers can help identify concerning patterns earlier",
+      "Appropriate professional training in recognizing warning signs, particularly for Factitious Disorder Imposed on Another given the serious safety implications",
+    ],
+    familyGuidance:
+      "For suspected Factitious Disorder Imposed on Another, the safety of the victim — often a child — is the immediate priority, requiring involvement of appropriate child protection or safeguarding services. A non-confrontational, professionally guided approach is generally recommended when addressing suspected factitious disorder in a family member, given the risk of the person becoming defensive or seeking care elsewhere if confronted directly. Support from professionals experienced in this specific, complex condition is important given how difficult and emotionally charged these situations are for families.",
+    faqs: [
+      {
+        question: "How is factitious disorder different from malingering?",
+        answer:
+          "Malingering involves a clear external incentive, such as financial compensation or avoiding legal consequences, while factitious disorder involves fabrication or induction of illness without such a clear external reward, driven by complex underlying psychological needs.",
+      },
+      {
+        question: "What happens if a parent is suspected of factitious disorder imposed on their child?",
+        answer:
+          "The immediate priority is the child's safety, which requires involvement of child protection services, alongside a coordinated medical and psychiatric assessment of the situation.",
+      },
+      {
+        question: "Can factitious disorder be treated?",
+        answer:
+          "Treatment is genuinely challenging given low engagement and insight, but a non-confrontational, professionally guided therapeutic approach can lead to improvement over time for some individuals.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "Factitious disorder is the same as malingering.",
+        fact: "Malingering involves clear external incentives like financial gain, while factitious disorder involves fabrication or induction of illness without such a clear external reward, driven by underlying psychological needs.",
+      },
+      {
+        myth: "This is just a rare, sensationalized condition from television.",
+        fact: "While genuinely uncommon, factitious disorder is a real, recognized psychiatric condition, and factitious disorder imposed on another is a serious child protection concern requiring appropriate professional intervention.",
+      },
+    ],
+    urgentCare:
+      "For suspected Factitious Disorder Imposed on Another, immediate safety concerns for the victim require urgent involvement of child protection or adult protective services and coordinated medical/psychiatric assessment. Any acute medical complications arising from self-induced injury or illness require prompt medical treatment in their own right.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
+    ],
+  },
 ];
 
 export function getCondition(slug: string) {
