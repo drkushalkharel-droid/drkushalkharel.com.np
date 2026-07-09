@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, Phone } from "lucide-react";
+import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaThreads } from "react-icons/fa6";
 
 const forYouLinks = [
@@ -12,7 +13,23 @@ const forYouLinks = [
   { href: "/counselling-in-nepal", label: "Counselling Services" },
 ];
 
+const mobileLinks = [
+  { href: "/", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#services", label: "Services" },
+  { href: "/#awards", label: "Awards" },
+  { href: "/#conditions", label: "Conditions" },
+  { href: "/knowledge", label: "Articles" },
+  { href: "/conditions", label: "Conditions Library" },
+  { href: "/screening", label: "Screening" },
+  { href: "/#cities", label: "Cities" },
+  ...forYouLinks,
+  { href: "/#contact", label: "Contact" },
+];
+
 export default function Navbar() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   const socialLinks = [
     {
       name: "Facebook",
@@ -201,9 +218,67 @@ export default function Navbar() {
               Call Now
             </a>
 
+            <button
+              type="button"
+              onClick={() => setMobileOpen((open) => !open)}
+              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileOpen}
+              className="inline-flex items-center justify-center rounded-xl p-2.5 text-gray-700 transition hover:bg-gray-100 xl:hidden"
+            >
+              {mobileOpen ? <X size={26} aria-hidden="true" /> : <Menu size={26} aria-hidden="true" />}
+            </button>
+
           </div>
 
         </div>
+
+        {/* MOBILE MENU */}
+
+        {mobileOpen && (
+          <nav className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-gray-100 py-4 xl:hidden">
+            <div className="flex flex-col gap-1">
+              {mobileLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="rounded-lg px-3 py-2.5 font-medium text-gray-700 transition hover:bg-blue-50 hover:text-blue-700"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+
+            <a
+              href="https://wa.me/9779861800547"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileOpen(false)}
+              className="mt-4 block rounded-xl border border-green-500 px-5 py-3 text-center font-semibold text-green-600 transition hover:bg-green-500 hover:text-white"
+            >
+              WhatsApp
+            </a>
+
+            <div className="mt-4 flex items-center justify-center gap-5 border-t border-gray-100 pt-4">
+              {socialLinks.map((social) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={social.name}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Follow on ${social.name}`}
+                    title={`Follow on ${social.name}`}
+                    className="text-gray-600 hover:text-blue-700 transition"
+                  >
+                    <Icon size={20} aria-hidden="true" />
+                  </a>
+                );
+              })}
+            </div>
+          </nav>
+        )}
 
       </div>
 
