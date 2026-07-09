@@ -151,7 +151,7 @@ export default function Hero() {
 
               <Image
                 src="/images/doctor.png"
-                alt="Dr Kushal Kharel"
+                alt="Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal"
                 fill
                 priority
                 className="object-cover"

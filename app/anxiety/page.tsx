@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: "/anxiety",
+    languages: {
+      en: "/anxiety",
+      ne: "/anxiety/np",
+    },
   },
   keywords: [
     "Best Psychiatrist in Nepal for Anxiety",
@@ -57,7 +61,7 @@ export default function AnxietyPage() {
     name: title,
     description,
     url: pageUrl,
-    inLanguage: ["en", "ne"],
+    inLanguage: "en",
     about: {
       "@type": "MedicalCondition",
       name: "Anxiety Disorders",
@@ -137,7 +141,7 @@ export default function AnxietyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <AnxietyGuide />
+      <AnxietyGuide lang="en" />
     </>
   );
 }

@@ -32,6 +32,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.95,
+      alternates: {
+        languages: {
+          en: `${siteUrl}/anxiety`,
+          ne: `${siteUrl}/anxiety/np`,
+        },
+      },
+    },
+
+    {
+      url: `${siteUrl}/anxiety/np`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+      alternates: {
+        languages: {
+          en: `${siteUrl}/anxiety`,
+          ne: `${siteUrl}/anxiety/np`,
+        },
+      },
     },
 
     {

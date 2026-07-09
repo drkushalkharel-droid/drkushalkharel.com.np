@@ -26,17 +26,18 @@ export async function generateMetadata({
   }
 
   const title = `${resource.title} (Free Download) | Dr. Kushal Kharel`;
+  const description = `Free downloadable PDF: ${resource.title}. ${resource.shortDescription}`;
 
   return {
     title,
-    description: resource.shortDescription,
+    description,
     alternates: {
       canonical: `/resources/${resource.slug}`,
     },
     keywords: [resource.title, resource.category, "Dr Kushal Kharel", "Psychiatrist Kathmandu"],
     openGraph: {
       title,
-      description: resource.shortDescription,
+      description,
       url: `${siteUrl}/resources/${resource.slug}`,
       siteName: "Dr. Kushal Kharel",
       images: [{ url: "/images/doctor.png", width: 1200, height: 630 }],

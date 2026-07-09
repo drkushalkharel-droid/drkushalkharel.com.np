@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 
 const facts = [
@@ -57,34 +54,31 @@ const treatments = [
   },
 ];
 
-export default function AnxietyGuide() {
-  const [language, setLanguage] = useState<"en" | "np">("en");
-  const isEnglish = language === "en";
+export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
+  const isEnglish = lang === "en";
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main lang={isEnglish ? "en" : "ne"} className="min-h-screen bg-slate-50 text-slate-900">
       <section className="bg-slate-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-16 pt-28 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:pb-20 lg:pt-32">
           <div>
             <div className="mb-8 inline-flex rounded-full border border-white/15 bg-white/10 p-1">
-              <button
-                type="button"
-                onClick={() => setLanguage("en")}
+              <Link
+                href="/anxiety"
                 className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
                   isEnglish ? "bg-white text-slate-950" : "text-white/80"
                 }`}
               >
                 English
-              </button>
-              <button
-                type="button"
-                onClick={() => setLanguage("np")}
+              </Link>
+              <Link
+                href="/anxiety/np"
                 className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
                   !isEnglish ? "bg-white text-slate-950" : "text-white/80"
                 }`}
               >
                 नेपाली
-              </button>
+              </Link>
             </div>
 
             <p className="text-sm font-semibold uppercase tracking-[3px] text-cyan-200">
