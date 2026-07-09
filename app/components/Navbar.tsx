@@ -5,7 +5,27 @@ import Link from "next/link";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaThreads } from "react-icons/fa6";
 
-const forYouLinks = [
+type NavLink = { href: string; label: string };
+
+const aboutLinks: NavLink[] = [
+  { href: "/#about", label: "About" },
+  { href: "/#services", label: "Services" },
+  { href: "/#experience", label: "Experience & Training" },
+  { href: "/#awards", label: "Awards & Certificates" },
+];
+
+const conditionsLinks: NavLink[] = [
+  { href: "/conditions", label: "Conditions Library (A-Z)" },
+  { href: "/knowledge", label: "Nepali Patient Articles" },
+];
+
+const toolsLinks: NavLink[] = [
+  { href: "/screening", label: "Mental Health Screening" },
+  { href: "/resources", label: "Patient Resources & Leaflets" },
+];
+
+const findCareLinks: NavLink[] = [
+  { href: "/#cities", label: "Cities We Serve" },
   { href: "/nepalese-abroad", label: "Nepalese Abroad" },
   { href: "/expatriates-in-nepal", label: "For Expatriates in Nepal" },
   { href: "/english-speaking-psychiatrist", label: "English Speaking Psychiatrist" },
@@ -13,20 +33,39 @@ const forYouLinks = [
   { href: "/counselling-in-nepal", label: "Counselling Services" },
 ];
 
-const mobileLinks = [
-  { href: "/", label: "Home" },
-  { href: "/#about", label: "About" },
-  { href: "/#services", label: "Services" },
-  { href: "/#awards", label: "Awards" },
-  { href: "/#conditions", label: "Conditions" },
-  { href: "/knowledge", label: "Articles" },
-  { href: "/conditions", label: "Conditions Library" },
-  { href: "/screening", label: "Screening" },
-  { href: "/resources", label: "Patient Resources" },
-  { href: "/#cities", label: "Cities" },
-  ...forYouLinks,
-  { href: "/#contact", label: "Contact" },
+const mobileGroups: { label: string; links: NavLink[] }[] = [
+  { label: "", links: [{ href: "/", label: "Home" }] },
+  { label: "About", links: aboutLinks },
+  { label: "Conditions", links: conditionsLinks },
+  { label: "Tools", links: toolsLinks },
+  { label: "Find Care", links: findCareLinks },
+  { label: "", links: [{ href: "/#contact", label: "Contact" }] },
 ];
+
+function NavDropdown({ label, links }: { label: string; links: NavLink[] }) {
+  return (
+    <div className="group relative">
+      <button
+        type="button"
+        className="inline-flex items-center gap-1 font-medium text-gray-700 transition hover:text-blue-700"
+      >
+        {label}
+        <ChevronDown size={16} aria-hidden="true" />
+      </button>
+      <div className="invisible absolute left-0 top-full z-50 w-64 rounded-lg border border-gray-100 bg-white py-2 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="block px-4 py-2.5 text-sm font-medium text-gray-700 transition hover:bg-blue-50 hover:text-blue-700"
+          >
+            {link.label}
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -82,7 +121,7 @@ export default function Navbar() {
 
           {/* MENU */}
 
-          <nav className="hidden xl:flex items-center gap-5">
+          <nav className="hidden xl:flex items-center gap-6">
 
             <Link
               href="/"
@@ -91,89 +130,10 @@ export default function Navbar() {
               Home
             </Link>
 
-            <Link
-              href="/#about"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
-            >
-              About
-            </Link>
-
-            <Link
-              href="/#services"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
-            >
-              Services
-            </Link>
-
-            <Link
-              href="/#awards"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
-            >
-              Awards
-            </Link>
-
-            <Link
-              href="/#conditions"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
-            >
-              Conditions
-            </Link>
-
-            <Link
-              href="/knowledge"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
-            >
-              Articles
-            </Link>
-
-            <Link
-              href="/conditions"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
-            >
-              Conditions Library
-            </Link>
-
-            <Link
-              href="/screening"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
-            >
-              Screening
-            </Link>
-
-            <Link
-              href="/resources"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
-            >
-              Resources
-            </Link>
-
-            <Link
-              href="/#cities"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
-            >
-              Cities
-            </Link>
-
-            <div className="group relative">
-              <button
-                type="button"
-                className="inline-flex items-center gap-1 font-medium text-gray-700 transition hover:text-blue-700"
-              >
-                For You
-                <ChevronDown size={16} aria-hidden="true" />
-              </button>
-              <div className="invisible absolute left-0 top-full z-50 w-64 rounded-lg border border-gray-100 bg-white py-2 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100">
-                {forYouLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block px-4 py-2.5 text-sm font-medium text-gray-700 transition hover:bg-blue-50 hover:text-blue-700"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
+            <NavDropdown label="About" links={aboutLinks} />
+            <NavDropdown label="Conditions" links={conditionsLinks} />
+            <NavDropdown label="Tools" links={toolsLinks} />
+            <NavDropdown label="Find Care" links={findCareLinks} />
 
             <Link
               href="/#contact"
@@ -245,15 +205,24 @@ export default function Navbar() {
         {mobileOpen && (
           <nav className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-gray-100 py-4 xl:hidden">
             <div className="flex flex-col gap-1">
-              {mobileLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="rounded-lg px-3 py-2.5 font-medium text-gray-700 transition hover:bg-blue-50 hover:text-blue-700"
-                >
-                  {link.label}
-                </Link>
+              {mobileGroups.map((group) => (
+                <div key={group.label || group.links[0].href} className="mb-2">
+                  {group.label && (
+                    <p className="mt-3 px-3 text-xs font-bold uppercase tracking-[2px] text-slate-400">
+                      {group.label}
+                    </p>
+                  )}
+                  {group.links.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="block rounded-lg px-3 py-2.5 font-medium text-gray-700 transition hover:bg-blue-50 hover:text-blue-700"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               ))}
             </div>
 
