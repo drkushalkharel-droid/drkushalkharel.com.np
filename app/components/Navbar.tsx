@@ -22,6 +22,7 @@ const mobileLinks = [
   { href: "/knowledge", label: "Articles" },
   { href: "/conditions", label: "Conditions Library" },
   { href: "/screening", label: "Screening" },
+  { href: "/resources", label: "Patient Resources" },
   { href: "/#cities", label: "Cities" },
   ...forYouLinks,
   { href: "/#contact", label: "Contact" },
@@ -137,6 +138,13 @@ export default function Navbar() {
               className="font-medium text-gray-700 hover:text-blue-700 transition"
             >
               Screening
+            </Link>
+
+            <Link
+              href="/resources"
+              className="font-medium text-gray-700 hover:text-blue-700 transition"
+            >
+              Resources
             </Link>
 
             <Link

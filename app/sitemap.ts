@@ -4,6 +4,7 @@ import { cityGuides } from "./data/cities";
 import { conditions } from "./data/conditions";
 import { docArticles } from "./data/docArticles";
 import { screeningTools } from "./data/screening";
+import { resources } from "./data/resources";
 
 export const dynamic = "force-static";
 
@@ -95,6 +96,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.85,
     },
+
+    {
+      url: `${siteUrl}/resources`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({
@@ -132,6 +140,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
+  const resourceRoutes: MetadataRoute.Sitemap = resources.map((resource) => ({
+    url: `${siteUrl}/resources/${resource.slug}`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.75,
+  }));
+
   return [
     ...staticRoutes,
     ...articleRoutes,
@@ -139,5 +154,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...abroadRoutes,
     ...conditionRoutes,
     ...screeningRoutes,
+    ...resourceRoutes,
   ];
 }

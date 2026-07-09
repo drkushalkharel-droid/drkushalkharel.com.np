@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { conditions, getCondition } from "../../data/conditions";
 import { screeningTools } from "../../data/screening";
+import { resources } from "../../data/resources";
 import {
   buildHowToJsonLd,
   buildMedicalConditionJsonLd,
@@ -117,6 +118,7 @@ export default async function ConditionPage({
     : [...baseToc, ...endToc];
   const quickFacts = buildQuickFacts(condition);
   const screeningTool = screeningTools.find((tool) => tool.relatedConditionSlug === condition.slug);
+  const relatedResources = resources.filter((resource) => resource.relatedConditionSlug === condition.slug);
 
   const medicalConditionJsonLd = buildMedicalConditionJsonLd(condition, pageUrl);
 
@@ -278,6 +280,23 @@ export default async function ConditionPage({
               >
                 Take the screening
               </Link>
+            </div>
+          )}
+
+          {relatedResources.length > 0 && (
+            <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+              <p className="font-bold text-blue-950">Downloadable resources</p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                {relatedResources.map((resource) => (
+                  <Link
+                    key={resource.slug}
+                    href={`/resources/${resource.slug}`}
+                    className="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-900 transition hover:border-blue-400 hover:bg-blue-100"
+                  >
+                    {resource.title}
+                  </Link>
+                ))}
+              </div>
             </div>
           )}
 

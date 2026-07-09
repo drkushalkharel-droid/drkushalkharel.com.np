@@ -155,6 +155,10 @@ export default function Footer() {
               Counselling Services
             </Link>
 
+            <Link href="/resources" className="block hover:text-white transition">
+              Patient Resources & Leaflets
+            </Link>
+
           </div>
 
         </div>
