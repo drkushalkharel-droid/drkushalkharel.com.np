@@ -32,8 +32,9 @@ export default function ScreeningPlatform() {
     0,
   );
   const interpretation = getInterpretation(activeTool, totalScore);
-  const hasSelfHarmSignal =
-    activeTool.id === "depression" && (currentScores.suicidal ?? 0) > 0;
+  const hasSelfHarmSignal = activeTool.items.some(
+    (item) => item.flagsSelfHarm && (currentScores[item.id] ?? 0) > 0,
+  );
 
   function updateScore(itemId: string, value: number) {
     setAnswers((current) => ({
@@ -182,9 +183,7 @@ export default function ScreeningPlatform() {
               Interpretation: {interpretation.label}
             </h3>
             <p className="mt-3 leading-8 text-blue-100">
-              {interpretation.guidance} Screening results are not a diagnosis.
-              A clinical interview is needed to understand causes, severity,
-              safety, medical factors and the best treatment plan.
+              {`${interpretation.guidance} Screening results are not a diagnosis. A clinical interview is needed to understand causes, severity, safety, medical factors and the best treatment plan.`}
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <a

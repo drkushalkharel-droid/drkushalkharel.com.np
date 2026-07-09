@@ -3,6 +3,7 @@ import { abroadGuides } from "./data/abroad";
 import { cityGuides } from "./data/cities";
 import { conditions } from "./data/conditions";
 import { docArticles } from "./data/docArticles";
+import { screeningTools } from "./data/screening";
 
 export const dynamic = "force-static";
 
@@ -124,11 +125,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const screeningRoutes: MetadataRoute.Sitemap = screeningTools.map((tool) => ({
+    url: `${siteUrl}/screening/${tool.id}`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.85,
+  }));
+
   return [
     ...staticRoutes,
     ...articleRoutes,
     ...cityRoutes,
     ...abroadRoutes,
     ...conditionRoutes,
+    ...screeningRoutes,
   ];
 }

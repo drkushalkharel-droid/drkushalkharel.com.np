@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { conditions, getCondition } from "../../data/conditions";
+import { screeningTools } from "../../data/screening";
 import {
   buildHowToJsonLd,
   buildMedicalConditionJsonLd,
@@ -115,6 +116,7 @@ export default async function ConditionPage({
     ? [...baseToc, howToTocItem, ...endToc]
     : [...baseToc, ...endToc];
   const quickFacts = buildQuickFacts(condition);
+  const screeningTool = screeningTools.find((tool) => tool.relatedConditionSlug === condition.slug);
 
   const medicalConditionJsonLd = buildMedicalConditionJsonLd(condition, pageUrl);
 
@@ -261,6 +263,23 @@ export default async function ConditionPage({
               </div>
             </div>
           </div>
+
+          {screeningTool && (
+            <div className="flex flex-col items-start gap-4 rounded-lg border border-green-200 bg-green-50 p-6 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="font-bold text-green-950">{screeningTool.searchQuestion}</p>
+                <p className="mt-1 text-green-900">
+                  Take a free, confidential self-rated screening for {condition.title.toLowerCase()}.
+                </p>
+              </div>
+              <Link
+                href={`/screening/${screeningTool.id}`}
+                className="shrink-0 rounded-lg bg-green-700 px-5 py-3 font-semibold text-white transition hover:bg-green-800"
+              >
+                Take the screening
+              </Link>
+            </div>
+          )}
 
           <Section id="overview" title="Overview">
             <p>{condition.overview}</p>
