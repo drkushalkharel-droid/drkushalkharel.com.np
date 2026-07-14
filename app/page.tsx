@@ -20,8 +20,7 @@ import Footer from "./components/Footer";
 import { buildSpeakableSpec } from "./lib/schema";
 
 export const metadata: Metadata = {
-  title:
-    "Psychiatrist in Nepal & Kathmandu | Anxiety, Depression, Addiction Care",
+  title: "Psychiatrist in Kathmandu, Nepal",
   description:
     "Call Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal for anxiety, depression, OCD, ADHD, bipolar disorder, schizophrenia, addiction, counselling and online consultation.",
   alternates: {

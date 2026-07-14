@@ -9,7 +9,9 @@ import { resources } from "./data/resources";
 export const dynamic = "force-static";
 
 const siteUrl = "https://drkushalkharel.com.np";
-const lastModified = new Date("2026-07-07");
+// Keep the sitemap current whenever content changes so crawlers can prioritize
+// newly published patient resources and guides.
+const lastModified = new Date("2026-07-14");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

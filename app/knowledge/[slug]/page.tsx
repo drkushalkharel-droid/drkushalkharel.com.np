@@ -154,10 +154,10 @@ export default async function KnowledgeArticlePage({
           <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
             <h2 className="font-bold text-slate-950">विषयसूची</h2>
             <nav className="mt-4 space-y-2">
-              {article.sections.map((section) => (
+              {article.sections.map((section, index) => (
                 <a
                   key={section.heading}
-                  href={`#${section.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+                  href={`#section-${index + 1}`}
                   className="block rounded-md px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700"
                 >
                   {section.heading}
@@ -174,10 +174,10 @@ export default async function KnowledgeArticlePage({
             मनोचिकित्सकसँग प्रत्यक्ष परामर्श गर्नुहोस्।
           </div>
 
-          {article.sections.map((section) => (
+          {article.sections.map((section, index) => (
             <section
               key={section.heading}
-              id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-")}
+              id={`section-${index + 1}`}
               className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8"
             >
               <h2 className="text-3xl font-bold text-blue-950">

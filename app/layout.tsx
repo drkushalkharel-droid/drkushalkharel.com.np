@@ -5,6 +5,7 @@ import "./globals.css";
 const siteUrl = "https://drkushalkharel.com.np";
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-ZJ7RMBFRYL";
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const bingSiteVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
 const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID ?? "ca-pub-7242413910722530";
 const doctorImage = "/images/doctor.png";
 
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "Dr. Kushal Kharel | Best Psychiatrist in Nepal & Kathmandu | Mental Health Care",
+      "Dr. Kushal Kharel | Psychiatrist in Kathmandu, Nepal",
     template: "%s | Dr. Kushal Kharel",
   },
 
@@ -59,6 +60,7 @@ export const metadata: Metadata = {
 
   authors: [{ name: "Dr. Kushal Kharel" }],
 
+  applicationName: "Dr. Kushal Kharel Psychiatry",
   creator: "Dr. Kushal Kharel",
   publisher: "Dr. Kushal Kharel",
   category: "healthcare",
@@ -106,10 +108,11 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
 
-  ...(googleSiteVerification
+  ...(googleSiteVerification || bingSiteVerification
     ? {
         verification: {
-          google: googleSiteVerification,
+          ...(googleSiteVerification ? { google: googleSiteVerification } : {}),
+          ...(bingSiteVerification ? { other: { "msvalidate.01": bingSiteVerification } } : {}),
         },
       }
     : {}),
@@ -285,9 +288,19 @@ export default function RootLayout({
     ],
   };
 
+  const websiteJsonLd = {
+    "@type": "WebSite",
+    "@id": `${siteUrl}#website`,
+    name: "Dr. Kushal Kharel Psychiatry",
+    alternateName: "Dr. Kushal Kharel",
+    url: siteUrl,
+    inLanguage: ["en", "ne"],
+    publisher: { "@id": `${siteUrl}#clinic` },
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@graph": [medicalBusinessJsonLd, psychiatristJsonLd],
+    "@graph": [medicalBusinessJsonLd, psychiatristJsonLd, websiteJsonLd],
   };
 
   return (
