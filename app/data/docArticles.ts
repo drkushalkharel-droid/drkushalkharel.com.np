@@ -7,13 +7,59 @@ export type DocArticle = {
   slug: string;
   title: string;
   category: string;
-  language: "Nepali";
+  language: "Nepali" | "Bilingual";
   sourceFile: string;
   description: string;
   sections: DocArticleSection[];
 };
 
 export const docArticles = [
+  {
+    "slug": "boost-mental-health",
+    "title": "How to Boost Mental Health: Practical Daily Habits | मानसिक स्वास्थ्य कसरी सुधार्ने",
+    "category": "Mental Wellness",
+    "language": "Bilingual",
+    "sourceFile": "website-original",
+    "description": "A practical English and Nepali guide by Dr. Kushal Kharel on improving mental health with sleep, movement, connection, stress management and timely professional support in Kathmandu, Nepal.",
+    "sections": [
+      {
+        "heading": "What does boosting mental health mean? | मानसिक स्वास्थ्य सुधार्नु भनेको के हो?",
+        "body": "Mental health is not about feeling happy every moment. It means having enough emotional balance, energy and support to cope with daily life, work, study, relationships and setbacks. Small, repeatable habits can protect wellbeing and can support treatment when someone is living with anxiety, depression or another mental-health condition.\n\nमानसिक स्वास्थ्य राम्रो हुनु भनेको सधैं खुसी रहनु मात्र होइन। दैनिक जीवन, काम, पढाइ, सम्बन्ध र तनावसँग सामना गर्न सक्ने भावनात्मक सन्तुलन, ऊर्जा र सहयोग हुनु हो। साना तर नियमित बानीले मानसिक स्वास्थ्य जोगाउन मद्दत गर्छन् र चिन्ता, डिप्रेसन वा अन्य मानसिक समस्या हुँदा उपचारसँगै उपयोगी हुन्छन्।"
+      },
+      {
+        "heading": "1. Protect your sleep | निद्रालाई प्राथमिकता दिनुहोस्",
+        "body": "Aim for a consistent sleep and wake time, including on most weekends. Reduce caffeine late in the day, keep screens away for the last hour before bed when possible, and create a quiet wind-down routine. Poor sleep can make low mood, irritability, anxiety and concentration problems feel stronger.\n\nहरेक दिन सम्भव भएसम्म एउटै समयमा सुत्ने र उठ्ने बानी बनाउनुहोस्। साँझपख चिया, कफी वा अन्य क्याफिन कम गर्नुहोस्, सुत्नुअघि एक घण्टा मोबाइल वा स्क्रिनबाट टाढा रहने प्रयास गर्नुहोस् र शान्त दिनचर्या बनाउनुहोस्। निद्रा बिग्रिँदा उदासी, चिडचिडापन, चिन्ता र ध्यान केन्द्रित गर्न गाह्रो हुने समस्या बढ्न सक्छ।"
+      },
+      {
+        "heading": "2. Move your body regularly | शरीरलाई नियमित चलायमान राख्नुहोस्",
+        "body": "Choose movement you can sustain: a brisk walk, cycling, yoga, dancing, stretching or a sport. Even short sessions are useful when done regularly. Start gently if you have been inactive, and speak with a clinician before major changes if you have a medical condition.\n\nतपाईंले निरन्तर गर्न सक्ने गतिविधि छान्नुहोस्: छिटो हिँड्ने, साइकल चलाउने, योग, नाच्ने, स्ट्रेचिङ वा खेलकुद। छोटो समयको व्यायाम पनि नियमित भयो भने उपयोगी हुन्छ। लामो समयदेखि निष्क्रिय हुनुहुन्छ भने बिस्तारै सुरु गर्नुहोस्; शारीरिक रोग छ भने ठूलो परिवर्तनअघि स्वास्थ्यकर्मीसँग सल्लाह लिनुहोस्।"
+      },
+      {
+        "heading": "3. Stay connected and ask for support | सम्बन्धमा जोडिनुहोस् र सहयोग माग्नुहोस्",
+        "body": "Talk honestly with a trusted friend, family member, colleague or community member. Connection does not require solving every problem; being heard can reduce isolation. If speaking feels difficult, begin with a simple message such as, “I have been stressed lately and could use someone to listen.”\n\nविश्वासिलो साथी, परिवारका सदस्य, सहकर्मी वा समुदायका व्यक्तिसँग खुलेर कुरा गर्नुहोस्। हरेक समस्या तुरुन्त समाधान गर्नुपर्छ भन्ने छैन; कसैले सुन्नु मात्रले पनि एक्लोपन घटाउन सक्छ। बोल्न गाह्रो लागेमा “मलाई पछिल्लो समय धेरै तनाव भएको छ, कसैले सुनीदिए हुन्थ्यो” जस्तो सानो सन्देशबाट सुरु गर्न सक्नुहुन्छ।"
+      },
+      {
+        "heading": "4. Make stress manageable | तनावलाई व्यवस्थित बनाउनुहोस्",
+        "body": "Break large tasks into the next small step, take brief pauses, and write down what is within your control today. Slow breathing, prayer or meditation, time outdoors, music and journaling can help some people settle their nervous system. Choose what is safe, practical and meaningful for you.\n\nठूला कामलाई सानो अर्को कदममा बाँड्नुहोस्, बीचबीचमा छोटो विश्राम लिनुहोस् र आज तपाईंको नियन्त्रणमा के छ भनेर लेख्नुहोस्। बिस्तारै सास फेर्ने अभ्यास, प्रार्थना वा ध्यान, बाहिर समय बिताउने, संगीत सुन्ने र डायरी लेख्ने बानीले कतिपयलाई मन शान्त पार्न मद्दत गर्छ। तपाईंका लागि सुरक्षित, व्यवहारिक र अर्थपूर्ण उपाय छान्नुहोस्।"
+      },
+      {
+        "heading": "5. Be careful with alcohol, tobacco and drugs | रक्सी, सुर्ती र लागूपदार्थमा सावधानी अपनाउनुहोस्",
+        "body": "Alcohol, cannabis and other substances may seem to provide short-term relief, but they can worsen sleep, anxiety, mood symptoms and decision-making. Nicotine and excess caffeine can also heighten physical symptoms of anxiety. Support is available if cutting down feels hard; needing help is not a personal failure.\n\nरक्सी, गाँजा वा अन्य लागूपदार्थले केही समय राहत दिएको जस्तो लाग्न सक्छ, तर निद्रा, चिन्ता, मुड र निर्णय गर्ने क्षमतामा नकारात्मक असर पर्न सक्छ। सुर्ती र धेरै क्याफिनले पनि चिन्ताका शारीरिक लक्षण बढाउन सक्छन्। कम गर्न गाह्रो भइरहेको छ भने सहयोग उपलब्ध छ; सहयोग चाहिनु व्यक्तिगत कमजोरी होइन।"
+      },
+      {
+        "heading": "When should you see a psychiatrist? | कहिले मनोचिकित्सकसँग भेट्ने?",
+        "body": "Please seek a professional assessment if sadness, worry, panic, anger, sleep problems, substance use or loss of interest lasts for two weeks or more, worsens, or affects work, study, relationships or self-care. A psychiatrist can assess possible causes and discuss therapy, lifestyle support and medication only when appropriate.\n\nउदासी, अत्यधिक चिन्ता, आत्तिने समस्या, रिस, निद्राको समस्या, लागूपदार्थको प्रयोग वा रुचि हराउने अवस्था दुई हप्ता वा बढी रह्यो, झन् बढ्दै गयो, वा काम, पढाइ, सम्बन्ध तथा आफ्नो हेरचाहमा असर गर्‍यो भने पेशेवर मूल्याङ्कन लिनुहोस्। मनोचिकित्सकले सम्भावित कारण बुझेर थेरापी, जीवनशैली सहयोग र आवश्यक परेमा मात्र औषधिबारे सल्लाह दिन सक्छन्।"
+      },
+      {
+        "heading": "Urgent safety support | आकस्मिक सुरक्षाका लागि सहयोग",
+        "body": "If you are thinking about harming yourself or someone else, feel unable to stay safe, or are experiencing severe confusion, seek urgent help now. Tell a trusted person, go to the nearest emergency department, or contact local emergency services. Do not stay alone with an immediate safety risk.\n\nआफूलाई वा अरूलाई हानि पुर्‍याउने सोच आइरहेको छ, आफू सुरक्षित रहन नसक्ने जस्तो लागिरहेको छ, वा गम्भीर अलमल भएको छ भने तुरुन्त सहयोग खोज्नुहोस्। विश्वासिलो व्यक्तिलाई भन्नुहोस्, नजिकको आकस्मिक सेवा भएको अस्पताल जानुहोस् वा स्थानीय आपतकालीन सेवामा सम्पर्क गर्नुहोस्। तत्काल जोखिममा एक्लै नबस्नुहोस्।"
+      },
+      {
+        "heading": "A realistic first step today | आजको व्यवहारिक पहिलो कदम",
+        "body": "Pick one action for today: take a 10-minute walk, drink water and eat a regular meal, message someone you trust, or set a bedtime reminder. Improvement is usually gradual. If you need personalised mental-health support in Kathmandu or through an online consultation in Nepal, Dr. Kushal Kharel can help you make a treatment plan.\n\nआजका लागि एउटा मात्र कदम छान्नुहोस्: १० मिनेट हिँड्नुहोस्, पानी पिउनुहोस् र नियमित खाना खानुहोस्, विश्वासिलो व्यक्तिलाई सन्देश पठाउनुहोस्, वा सुत्ने समयको सम्झना राख्नुहोस्। सुधार प्रायः बिस्तारै हुन्छ। काठमाडौंमा वा नेपालभित्र अनलाइन व्यक्तिगत मानसिक स्वास्थ्य सहयोग चाहिन्छ भने डा. कुशल खरेलसँग परामर्श गरेर उपचार योजना बनाउन सक्नुहुन्छ।"
+      }
+    ]
+  },
   {
     "slug": "adhd",
     "title": "Attention-Deficit/ Hyperactivity Disorder",

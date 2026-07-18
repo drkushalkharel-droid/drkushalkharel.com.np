@@ -25,7 +25,10 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = `${article.title} | Nepali Patient Guide`;
+  const isBilingual = article.language === "Bilingual";
+  const title = isBilingual
+    ? `${article.title} | Dr. Kushal Kharel`
+    : `${article.title} | Nepali Patient Guide`;
 
   return {
     title,
@@ -43,6 +46,15 @@ export async function generateMetadata({
       "Nepali mental health article",
       "Dr Kushal Kharel",
       "Psychiatrist Kathmandu",
+      ...(article.slug === "boost-mental-health"
+        ? [
+            "how to boost mental health",
+            "how to improve mental health",
+            "mental health tips Nepal",
+            "मानसिक स्वास्थ्य कसरी सुधार्ने",
+            "mental health doctor Kathmandu",
+          ]
+        : []),
     ],
     openGraph: {
       title,
@@ -57,7 +69,7 @@ export async function generateMetadata({
           alt: "Dr. Kushal Kharel - Consultant Psychiatrist",
         },
       ],
-      locale: "ne_NP",
+      locale: isBilingual ? "en_NP" : "ne_NP",
       type: "article",
     },
   };
@@ -81,7 +93,7 @@ export default async function KnowledgeArticlePage({
     name: article.title,
     description: article.description,
     url: `${siteUrl}/knowledge/${article.slug}`,
-    inLanguage: "ne",
+    inLanguage: article.language === "Bilingual" ? ["en", "ne"] : "ne",
     about: {
       "@type": "MedicalCondition",
       name: article.title,
@@ -122,7 +134,7 @@ export default async function KnowledgeArticlePage({
             Back to articles
           </Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
-            Nepali Patient Guide
+            {article.language === "Bilingual" ? "English & नेपाली Patient Guide" : "Nepali Patient Guide"}
           </p>
           <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
             {article.title}
@@ -169,9 +181,9 @@ export default async function KnowledgeArticlePage({
 
         <div className="space-y-6">
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-5 leading-7 text-amber-950">
-            यो जानकारी बिरामी र परिवारलाई रोगबारे बुझ्न सहयोग गर्ने उद्देश्यले
-            तयार गरिएको हो। व्यक्तिगत निदान वा औषधि निर्णयका लागि
-            मनोचिकित्सकसँग प्रत्यक्ष परामर्श गर्नुहोस्।
+            This guide supports general mental-health education and does not replace
+            a personal diagnosis or treatment plan. व्यक्तिगत निदान वा औषधि निर्णयका
+            लागि मनोचिकित्सकसँग प्रत्यक्ष परामर्श गर्नुहोस्।
           </div>
 
           {article.sections.map((section, index) => (

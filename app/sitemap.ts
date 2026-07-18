@@ -11,7 +11,7 @@ export const dynamic = "force-static";
 const siteUrl = "https://drkushalkharel.com.np";
 // Keep the sitemap current whenever content changes so crawlers can prioritize
 // newly published patient resources and guides.
-const lastModified = new Date("2026-07-14");
+const lastModified = new Date("2026-07-18");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
