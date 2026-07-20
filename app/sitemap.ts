@@ -30,6 +30,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     {
+      url: `${siteUrl}/best-psychiatrist-nepal`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+
+    {
+      url: `${siteUrl}/online-psychiatrist-nepal`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+
+    {
       url: `${siteUrl}/anxiety`,
       lastModified,
       changeFrequency: "monthly",
@@ -133,7 +147,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  const cityRoutes: MetadataRoute.Sitemap = cityGuides.map((guide) => ({
+  const cityRoutes: MetadataRoute.Sitemap = cityGuides.filter((guide) => guide.clinicLocation).map((guide) => ({
     url: `${siteUrl}/cities/${guide.slug}`,
     lastModified,
     changeFrequency: "monthly",

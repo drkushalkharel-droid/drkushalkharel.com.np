@@ -360,7 +360,7 @@ export const docArticles = [
       },
       {
         "heading": "Transmission",
-        "body": "[अङ्ग्रेजी पढेर आफ्नै शब्दमा नेपालीमा लेख्नुहोस् — अनुवाद नगर्नुहोस्]"
+        "body": "अनिद्रा सरुवा रोग होइन। यो एक व्यक्तिबाट अर्को व्यक्तिमा सर्दैन, तर परिवारमा निद्रासम्बन्धी समस्या, चिन्ता वा अन्य जोखिम कारक देखिन सक्छन्।"
       },
       {
         "heading": "Signs and Symptoms",
@@ -402,7 +402,7 @@ export const docArticles = [
       },
       {
         "heading": "Transmission",
-        "body": "[अङ्ग्रेजी पढेर आफ्नै शब्दमा नेपालीमा लेख्नुहोस् — अनुवाद नगर्नुहोस्]"
+        "body": "लिङ्ग डिस्फोरिया सरुवा रोग होइन। यो एक व्यक्तिबाट अर्को व्यक्तिमा सर्दैन; सम्मानजनक सहयोग र आवश्यक परे मानसिक स्वास्थ्य परामर्श उपयोगी हुन सक्छ।"
       },
       {
         "heading": "Signs and Symptoms",
@@ -410,7 +410,7 @@ export const docArticles = [
       },
       {
         "heading": "Types",
-        "body": "[अङ्ग्रेजी पढेर आफ्नै शब्दमा नेपालीमा लेख्नुहोस् — अनुवाद नगर्नुहोस्]"
+        "body": "एलिमिनेशन डिसअर्डर सरुवा रोग होइन। बारम्बार दिसा वा पिसाबको समस्या देखिएमा संक्रमण वा अन्य शारीरिक कारण छुट्याउन स्वास्थ्यकर्मीको मूल्याङ्कन आवश्यक हुन सक्छ।"
       },
       {
         "heading": "Risk Factors",
@@ -444,7 +444,7 @@ export const docArticles = [
       },
       {
         "heading": "Transmission",
-        "body": "[अङ्ग्रेजी पढेर आफ्नै शब्दमा नेपालीमा लेख्नुहोस् — अनुवाद नगर्नुहोस्]"
+        "body": "खाने विकार सरुवा रोग होइन। यो एक व्यक्तिबाट अर्को व्यक्तिमा सर्दैन, तर परिवार, सामाजिक दबाब, तनाव र मानसिक स्वास्थ्यका कारकहरूले जोखिममा प्रभाव पार्न सक्छन्।"
       },
       {
         "heading": "Signs and Symptoms",
@@ -486,7 +486,7 @@ export const docArticles = [
       },
       {
         "heading": "Transmission",
-        "body": "[अङ्ग्रेजी पढेर आफ्नै शब्दमा नेपालीमा लेख्नुहोस् — अनुवाद नगर्नुहोस्]"
+        "body": "PTSD सरुवा रोग होइन। आघातपूर्ण अनुभवपछि केही मानिसमा लक्षण देखिन सक्छन्, तर यो एक व्यक्तिबाट अर्को व्यक्तिमा सर्दैन।"
       },
       {
         "heading": "Signs and Symptoms",
@@ -570,7 +570,7 @@ export const docArticles = [
       },
       {
         "heading": "Transmission",
-        "body": "[अङ्ग्रेजी पढेर आफ्नै शब्दमा नेपालीमा लेख्नुहोस् — अनुवाद नगर्नुहोस्]"
+        "body": "रेस्टलेस लेग सिन्ड्रोम सरुवा रोग होइन। यो एक व्यक्तिबाट अर्को व्यक्तिमा सर्दैन, यद्यपि परिवारमा यस्तो समस्या हुने प्रवृत्ति केही मानिसमा देखिन सक्छ।"
       },
       {
         "heading": "Signs and Symptoms",
@@ -612,7 +612,7 @@ export const docArticles = [
       },
       {
         "heading": "Transmission",
-        "body": "[अङ्ग्रेजी पढेर आफ्नै शब्दमा नेपालीमा लेख्नुहोस् — अनुवाद नगर्नुहोस्]"
+        "body": "रेस्टलेस लेग सिन्ड्रोम सरुवा रोग होइन। यो एक व्यक्तिबाट अर्को व्यक्तिमा सर्दैन, यद्यपि परिवारमा यस्तो समस्या हुने प्रवृत्ति केही मानिसमा देखिन सक्छ।"
       },
       {
         "heading": "Signs and Symptoms",
@@ -735,6 +735,90 @@ export const docArticles = [
       {
         "heading": "सहयोग उपलब्ध छ",
         "body": "गणेश नेपालीको मृत्यु र यस्तै अघिल्ला घटनाहरूले देखाउने कुरा एउटै हो—आर्थिक संकट, प्रणालीगत बेवास्ता र मानसिक पीडा एकसाथ जोडिँदा मानिस असाध्यै असहाय महसुस गर्न सक्छ। यस्तो पीडालाई सुन्ने, बुझ्ने र समयमै सहयोग पुर्‍याउने संरचना बलियो बनाउनु नै दीर्घकालीन समाधान हो। सँगै, सञ्चारमाध्यम र सामाजिक सञ्जाल प्रयोगकर्ताको रूपमा हामी सबैले जिम्मेवारीपूर्वक रिपोर्ट गर्ने र साझा गर्ने बानी बसाउनु उत्तिकै जरुरी छ।\n\nयदि तपाईं वा तपाईंको नजिकको कोही मानसिक पीडा वा आत्महत्याको विचारबाट गुज्रिरहनुभएको छ भने, कृपया एक्लै नरहनुहोस्—सहयोग उपलब्ध छ।\n\nराष्ट्रिय आत्महत्या रोकथाम हेल्पलाइन: 1166 (नि:शुल्क, मानसिक अस्पताल, लगनखेल)\n\nTPO नेपाल: 1660-0102-005\n\nत्रिवि शिक्षण अस्पताल, महाराजगन्ज—आत्महत्या रोकथाम हेल्पलाइन: 9840021600\n\nतपाईंको जीवन बहुमूल्य छ, र यो पीडा सधैंभरि रहँदैन।"
+      }
+    ]
+  },
+  {
+    "slug": "anxiety-treatment-nepal",
+    "title": "Anxiety Treatment in Nepal: Symptoms, Panic Attacks & When to See a Psychiatrist | चिन्ता रोग उपचार",
+    "category": "Anxiety Treatment",
+    "language": "Bilingual",
+    "sourceFile": "website-seo-content",
+    "description": "Looking for anxiety treatment in Nepal? Learn common anxiety symptoms, panic attacks, treatment options, CBT, medication, online consultation and when to see a psychiatrist in Kathmandu.",
+    "sections": [
+      {
+        "heading": "I feel anxious all the time — is it anxiety disorder?",
+        "body": "Many people search for an anxiety doctor in Nepal after weeks of constant worry, poor sleep, a racing heart, overthinking or a feeling that something bad is about to happen. Anxiety is a normal alarm response, but it may be an anxiety disorder when worry is hard to control, lasts for much of the day, or begins to affect work, study, relationships, sleep or everyday decisions.\n\nAnxiety does not always feel like fear. Some people notice headaches, stomach discomfort, muscle tension, tiredness, irritability, difficulty concentrating or repeated reassurance-seeking. Others start avoiding travel, crowds, meetings, exams, social situations or places where they once had a panic attack. A psychiatric assessment can help identify whether symptoms fit generalised anxiety, panic disorder, social anxiety, OCD, trauma-related anxiety, depression or a physical health condition."
+      },
+      {
+        "heading": "Common anxiety symptoms patients search for",
+        "body": "Symptoms can vary, but common searches such as “why is my heart racing?”, “why can’t I stop overthinking?”, “panic attack treatment Nepal” and “anxiety and insomnia” often describe a similar pattern. Emotional symptoms can include excessive worry, dread, irritability, fear of losing control and difficulty relaxing. Physical symptoms can include palpitations, sweating, trembling, shortness of breath, nausea, dizziness, chest tightness and disturbed sleep.\n\nThese symptoms are real and distressing. They should not simply be dismissed as weakness. At the same time, chest pain, fainting, new severe breathlessness or symptoms that could be a medical emergency need urgent medical assessment rather than an assumption that they are “only anxiety.”"
+      },
+      {
+        "heading": "Panic attacks: what do they feel like?",
+        "body": "A panic attack is a sudden surge of intense fear or discomfort. It may peak within minutes and can include a pounding heart, shaking, sweating, breathlessness, choking sensations, chest discomfort, dizziness, tingling, nausea, fear of dying or fear of “going crazy.” The experience can feel dangerous even when it is not causing permanent harm.\n\nAfter a first attack, people may worry about another one and avoid situations they associate with panic. This fear-and-avoidance cycle is treatable. A clinician may first consider medical causes and then discuss education, breathing and grounding skills, cognitive behavioural therapy (CBT), gradual exposure and medication when clinically appropriate."
+      },
+      {
+        "heading": "How is anxiety treated in Nepal?",
+        "body": "There is no one treatment that is right for everyone. Treatment begins with understanding your symptoms, triggers, sleep, physical health, medicines, caffeine or substance use, stressors and the ways anxiety is affecting your life. For mild or situational anxiety, practical counselling, sleep support, reducing excess caffeine, routine changes and coping skills may be enough.\n\nFor persistent or more severe anxiety, CBT is one of the most useful psychological treatments. It helps people notice unhelpful thought patterns, reduce avoidance and practise new responses. Exposure-based therapy can be particularly helpful for phobias, panic and social anxiety. Medication may be considered when symptoms are moderate to severe, recurring, or not improving with therapy alone. A psychiatrist should explain likely benefits, possible side effects, alternatives and the follow-up plan before medication is started."
+      },
+      {
+        "heading": "Can anxiety be cured without medication?",
+        "body": "Some people recover or improve greatly with therapy, counselling, practical changes and time, without medication. Others benefit from a combination of therapy and medication. The useful question is not whether medication is “good” or “bad,” but what is most likely to help you function and recover safely at this point. Medication is never the only part of care, and it should be reviewed rather than continued automatically.\n\nDo not stop a prescribed psychiatric medicine suddenly without discussing it with the prescriber. If you are pregnant, planning pregnancy, breastfeeding, taking other medicines or having troublesome side effects, raise this at the appointment so treatment can be planned safely."
+      },
+      {
+        "heading": "When should I see a psychiatrist for anxiety?",
+        "body": "Book a consultation if anxiety has lasted two weeks or more, is worsening, causes panic attacks, disrupts sleep, leads to avoidance, affects work or study, or occurs alongside low mood, alcohol or drug use, OCD symptoms or thoughts of self-harm. You can also seek help earlier; you do not need to wait until symptoms become severe.\n\nIf you feel unable to stay safe, have thoughts of harming yourself or another person, are severely confused, or have urgent physical symptoms, seek immediate help from the nearest emergency department or local emergency services. Do not wait for an online appointment in an emergency."
+      },
+      {
+        "heading": "Online anxiety consultation in Nepal",
+        "body": "Online psychiatric consultation can be a practical option for many people in Nepal, especially for follow-up visits, medication review, psychoeducation and selected initial assessments. It may be useful if you live outside Kathmandu, have work or caregiving responsibilities, or find travel difficult. Choose a quiet, private place for the appointment and keep your current medicines and questions nearby.\n\nSome situations need in-person assessment instead, including immediate safety risks, severe confusion, serious withdrawal symptoms or urgent medical concerns. The clinic can help advise whether online or in-person consultation is the appropriate first step."
+      },
+      {
+        "heading": "चिन्ता रोगबारे छोटो जानकारी",
+        "body": "चिन्ता हुनु सामान्य हो, तर धेरै दिनसम्म अत्यधिक डर, धेरै सोचिरहने, मुटु ढुकढुक हुने, निद्रा नलाग्ने वा दैनिक काम गर्न गाह्रो हुने अवस्था भएमा पेशेवर सहयोग उपयोगी हुन्छ। CBT जस्तो थेरापी, परामर्श, निद्रा र दिनचर्यामा सुधार, तथा आवश्यक परेमा औषधिले धेरै मानिसलाई सुधार गर्न मद्दत गर्छ।\n\nआफूलाई हानि पुर्‍याउने सोच आइरहेको छ, सुरक्षित रहन नसक्ने जस्तो लागिरहेको छ वा गम्भीर शारीरिक समस्या छ भने अनलाइन भेटको प्रतीक्षा नगर्नुहोस्। नजिकको आकस्मिक सेवा भएको अस्पताल जानुहोस् वा विश्वासिलो व्यक्तिलाई तुरुन्त जानकारी दिनुहोस्।"
+      }
+    ]
+  },
+  {
+    "slug": "depression-treatment-nepal",
+    "title": "Depression Treatment in Nepal: Symptoms, Help & When to See a Psychiatrist | डिप्रेसन उपचार",
+    "category": "Depression Treatment",
+    "language": "Bilingual",
+    "sourceFile": "website-seo-content",
+    "description": "Looking for depression treatment in Nepal? Learn depression symptoms, how diagnosis is made, counselling, therapy, medication, online consultation and when to seek urgent help.",
+    "sections": [
+      {
+        "heading": "Is it depression or just stress?",
+        "body": "People looking for a depression doctor in Nepal often describe feeling empty, exhausted, unmotivated, tearful, irritable or disconnected from life. Stress and sadness are part of being human, especially after a loss, illness, relationship problem or financial difficulty. Depression may be present when low mood or loss of interest persists for at least two weeks and makes daily life, work, study, relationships or self-care significantly harder.\n\nDepression does not look the same in everyone. Some people feel sad; others mainly notice fatigue, body aches, poor concentration, anger, sleep changes, appetite changes or a loss of hope. Men, young people and older adults may describe depression differently. There is no need to prove that you are “depressed enough” before asking for an assessment."
+      },
+      {
+        "heading": "Common depression symptoms",
+        "body": "Possible symptoms include feeling low, numb or hopeless; losing interest or pleasure; low energy; difficulty thinking or making decisions; feeling worthless or guilty; moving or speaking more slowly; changes in sleep or appetite; withdrawing from other people; and thoughts that life is not worth living. Symptoms can be emotional, physical and behavioural.\n\nNot every low mood is major depressive disorder, and depression can occur alongside anxiety, grief, trauma, alcohol or drug use, chronic pain and physical health conditions. A psychiatrist may also check for bipolar disorder, because episodes of unusually high energy, reduced need for sleep, impulsive behaviour or elevated mood change which treatment approach is safest."
+      },
+      {
+        "heading": "How is depression diagnosed?",
+        "body": "There is no single blood test or brain scan that proves depression. Diagnosis is based on a careful clinical conversation about symptoms, their duration, daily functioning, medical history, current medicines, sleep, substance use, family history and safety. A doctor may recommend tests or a physical-health review if symptoms could be caused or worsened by another condition, such as thyroid problems, anaemia, nutritional deficiency or medication effects.\n\nAn assessment is not about labelling a person. It is about understanding what is happening, ruling out important causes and building a plan that fits the person’s life. You can bring a trusted family member or notes about symptoms if that makes the conversation easier."
+      },
+      {
+        "heading": "Depression treatment: counselling, therapy and medication",
+        "body": "Effective depression treatment is personalised. Counselling can offer support during a difficult period, while structured therapies such as CBT, behavioural activation and interpersonal therapy help people change patterns that maintain low mood and rebuild daily activity, connection and confidence. Treatment may also include support for sleep, nutrition, routine, exercise, grief, relationship stress or substance use.\n\nAntidepressant medication may be recommended when depression is moderate to severe, long-lasting, recurrent, or not improving enough with therapy alone. A psychiatrist should discuss the expected benefits, possible side effects, interactions, alternatives and when treatment will be reviewed. Medicines do not erase personality or solve every life problem; when used appropriately, they can reduce symptoms enough for a person to engage with recovery."
+      },
+      {
+        "heading": "How long does depression treatment take?",
+        "body": "Recovery is individual. Some people feel an early improvement in sleep, appetite or daily routine before mood improves. Therapy skills take practice, and medication may need time and review before its effect is clear. Follow-up appointments help monitor progress, side effects, safety and whether a different approach is needed.\n\nA temporary improvement does not mean care should stop suddenly. The plan should be reviewed with the clinician, particularly if symptoms have returned before or if there are major changes in stress, physical health, pregnancy plans or substance use. Small steps—getting out of bed, eating a regular meal, replying to one message or attending one appointment—can be meaningful parts of recovery."
+      },
+      {
+        "heading": "When depression needs urgent help",
+        "body": "Seek urgent help now if you are thinking about suicide or self-harm, have made a plan or attempt, feel unable to stay safe, are severely confused, or are not eating, drinking or caring for yourself. Tell a trusted person, go to the nearest emergency department or contact local emergency services. Do not stay alone with an immediate safety risk.\n\nIf you are worried about someone else, ask directly and calmly whether they are thinking of harming themselves, listen without judgement, remove immediate dangers only if it is safe to do so, and help them reach emergency or professional care. Asking about suicide does not put the idea into someone’s mind; it can open a path to support."
+      },
+      {
+        "heading": "Can I consult a psychiatrist online for depression?",
+        "body": "Online psychiatric consultation can be appropriate for many follow-ups, medication reviews, psychoeducation and selected initial assessments. It can make care more accessible for people outside Kathmandu or people who find travel difficult. Be in a private place, keep a list of medicines and previous reports nearby, and tell the clinician where you are during the appointment in case urgent local support is needed.\n\nOnline care is not a replacement for emergency support. Severe safety risk, overdose, severe withdrawal, psychosis or urgent medical symptoms need immediate in-person help. The clinic can advise whether an online or in-person appointment is right for your first consultation."
+      },
+      {
+        "heading": "डिप्रेसनबारे छोटो जानकारी",
+        "body": "डिप्रेसन कमजोरी वा इच्छाशक्तिको कमी होइन। दुई हप्ता वा बढी समयदेखि उदासी, रुचि हराउने, थकान, निद्रा वा भोकमा परिवर्तन, निराशा, एक्लोपन वा दैनिक काममा असर भइरहेको छ भने मनोचिकित्सक वा मानसिक स्वास्थ्यकर्मीसँग कुरा गर्नु उपयोगी हुन्छ। परामर्श, थेरापी, दिनचर्यामा सुधार र आवश्यक परेमा औषधिको संयोजनबाट धेरै मानिसमा सुधार हुन्छ।\n\nआफूलाई हानि पुर्‍याउने सोच, आत्महत्याको विचार वा आफू सुरक्षित रहन नसक्ने अवस्था भएमा तुरुन्त नजिकको अस्पतालको आकस्मिक सेवामा जानुहोस् वा विश्वासिलो व्यक्तिलाई साथमा राख्नुहोस्।"
       }
     ]
   }

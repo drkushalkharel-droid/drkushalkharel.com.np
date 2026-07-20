@@ -7,7 +7,12 @@ import { cityGuides, getCityGuide } from "../../data/cities";
 const siteUrl = "https://drkushalkharel.com.np";
 
 export function generateStaticParams() {
-  return cityGuides.map((guide) => ({ slug: guide.slug }));
+  // Only the city with an in-person clinic needs a dedicated local landing
+  // page. Patients elsewhere in Nepal are served through the nationwide
+  // online-consultation page, rather than near-identical city keyword pages.
+  return cityGuides
+    .filter((guide) => guide.clinicLocation)
+    .map((guide) => ({ slug: guide.slug }));
 }
 
 export async function generateMetadata({
@@ -22,7 +27,7 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = `Best Psychiatrist in ${guide.city} | Mental Health Help`;
+  const title = `Psychiatric Consultation in ${guide.city} | Dr. Kushal Kharel`;
   const description = `${guide.headline}. Learn common mental health problems in ${guide.city}, when to seek psychiatric help, and call Dr. Kushal Kharel at +9779861800547.`;
 
   return {
@@ -34,10 +39,7 @@ export async function generateMetadata({
     keywords: [
       ...guide.searchTerms,
       `psychiatrist ${guide.city}`,
-      `psychiatrist near me ${guide.city}`,
-      `best psychiatrist near me`,
       `mental health care ${guide.city}`,
-      `online psychiatrist ${guide.city}`,
       `Dr Kushal Kharel ${guide.city}`,
     ],
     openGraph: {
@@ -66,7 +68,7 @@ export default async function CityGuidePage({
   const { slug } = await params;
   const guide = getCityGuide(slug);
 
-  if (!guide) {
+  if (!guide || !guide.clinicLocation) {
     notFound();
   }
 
@@ -88,19 +90,17 @@ export default async function CityGuidePage({
       telephone: "+9779861800547",
       address: {
         "@type": "PostalAddress",
-        streetAddress: guide.clinicLocation?.streetAddress,
+        streetAddress: guide.clinicLocation.streetAddress,
         addressLocality: "Kathmandu",
-        postalCode: guide.clinicLocation?.postalCode,
+        postalCode: guide.clinicLocation.postalCode,
         addressCountry: "NP",
       },
-      ...(guide.clinicLocation && {
-        geo: {
-          "@type": "GeoCoordinates",
-          latitude: 27.6914922,
-          longitude: 85.2807309,
-        },
-        hasMap: guide.clinicLocation.directionsUrl,
-      }),
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 27.6914922,
+        longitude: 85.2807309,
+      },
+      hasMap: guide.clinicLocation.directionsUrl,
     },
     areaServed: guide.city,
   };
@@ -117,12 +117,8 @@ export default async function CityGuidePage({
 
   const cityFaqs = [
     {
-      question: `Is there a psychiatrist near me in ${guide.city}?`,
-      answer: `Dr. Kushal Kharel's clinic is in Kalanki, Kathmandu, within reach for patients in ${guide.city}. Online consultation is also available if an in-person visit isn't practical.`,
-    },
-    {
-      question: `Who is the best psychiatrist in ${guide.city}?`,
-      answer: `There's no single certified "best" psychiatrist — look for a registered specialist with relevant experience. Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist serving patients from ${guide.city}, in person or online.`,
+      question: `Where is Dr. Kushal Kharel's clinic in ${guide.city}?`,
+      answer: `Dr. Kushal Kharel provides in-person psychiatric consultation at the Kalanki clinic in Kathmandu. Online consultation is also available when clinically appropriate.`,
     },
     {
       question: `Is online psychiatric consultation available for patients in ${guide.city}?`,
@@ -164,8 +160,8 @@ export default async function CityGuidePage({
             {guide.province}
           </p>
           <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
-            Best psychiatrist in {guide.city}: mental health guidance and
-            consultation
+            Psychiatric consultation in {guide.city}: mental health guidance
+            and treatment planning
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
             {guide.intro}
@@ -276,8 +272,7 @@ export default async function CityGuidePage({
         </div>
       </section>
 
-      {guide.clinicLocation && (
-        <section className="bg-slate-50">
+      <section className="bg-slate-50">
           <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
             <h2 className="text-3xl font-bold text-slate-950">
               Visiting the clinic in {guide.city}
@@ -311,7 +306,6 @@ export default async function CityGuidePage({
             </div>
           </div>
         </section>
-      )}
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">

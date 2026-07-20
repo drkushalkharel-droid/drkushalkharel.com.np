@@ -25,6 +25,8 @@ const toolsLinks: NavLink[] = [
 ];
 
 const findCareLinks: NavLink[] = [
+  { href: "/best-psychiatrist-nepal", label: "Psychiatrist in Nepal" },
+  { href: "/online-psychiatrist-nepal", label: "Online Psychiatrist" },
   { href: "/#cities", label: "Cities We Serve" },
   { href: "/nepalese-abroad", label: "Nepalese Abroad" },
   { href: "/expatriates-in-nepal", label: "For Expatriates in Nepal" },

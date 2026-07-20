@@ -16,6 +16,22 @@ export const internalArticles: ArticleLink[] = [
     category: "Anxiety",
     language: "Bilingual",
   },
+  {
+    title: "Anxiety Treatment in Nepal: Symptoms, Panic Attacks & Help",
+    description:
+      "A practical guide to anxiety symptoms, panic attacks, CBT, medication and when to see a psychiatrist.",
+    href: "/knowledge/anxiety-treatment-nepal",
+    category: "Anxiety",
+    language: "Bilingual",
+  },
+  {
+    title: "Depression Treatment in Nepal: Symptoms, Help & Recovery",
+    description:
+      "A patient guide to depression symptoms, therapy, medication, online consultation and urgent warning signs.",
+    href: "/knowledge/depression-treatment-nepal",
+    category: "Depression",
+    language: "Bilingual",
+  },
 ];
 
 // Add Dr. Kharel's published web article URLs here as they become available.
@@ -23,14 +39,6 @@ export const internalArticles: ArticleLink[] = [
 export const publishedArticles: ArticleLink[] = [];
 
 export const plannedTopics: ArticleLink[] = [
-  {
-    title: "Depression Treatment in Nepal",
-    description:
-      "Symptoms of depression, warning signs, treatment options, therapy, medication and family support.",
-    href: "/knowledge#request-article",
-    category: "Depression",
-    language: "Bilingual",
-  },
   {
     title: "Panic Attack: What to Do During an Episode",
     description:

@@ -15,16 +15,15 @@ export default function CitySeoSection() {
             Mental health information for patients searching by city
           </h2>
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            People search for help in different ways: psychiatrist in
-            Kathmandu, anxiety doctor in Pokhara, depression treatment in
-            Biratnagar, online psychiatrist in Chitwan, and more. These city
-            guides explain common mental health concerns and how to contact Dr.
-            Kushal Kharel when professional support is needed.
+            The clinic is in Kalanki, Kathmandu. Patients elsewhere in Nepal
+            can use online psychiatric consultation when it is clinically
+            appropriate, without relying on misleading city-specific clinic
+            pages.
           </p>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {cityGuides.map((guide) => (
+          {cityGuides.filter((guide) => guide.clinicLocation).map((guide) => (
             <Link
               key={guide.slug}
               href={`/cities/${guide.slug}`}
@@ -44,6 +43,15 @@ export default function CitySeoSection() {
               </p>
             </Link>
           ))}
+        </div>
+
+        <div className="mt-6">
+          <Link
+            href="/online-psychiatrist-nepal"
+            className="inline-flex rounded-lg border border-blue-300 bg-white px-6 py-3 font-semibold text-blue-800 transition hover:bg-blue-50"
+          >
+            Online psychiatric consultation across Nepal
+          </Link>
         </div>
 
         <div className="mt-12 rounded-lg bg-blue-950 p-8 text-white">
