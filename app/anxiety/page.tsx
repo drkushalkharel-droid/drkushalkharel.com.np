@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import AnxietyGuide from "./AnxietyGuide";
+import PillarArticle from "../components/PillarArticle";
+import { getPillar } from "../data/pillars";
 
 const pageUrl = "https://drkushalkharel.com.np/anxiety";
 const title = "Anxiety Treatment in Kathmandu | Symptoms, Causes & Help";
@@ -141,7 +142,7 @@ export default function AnxietyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <AnxietyGuide lang="en" />
+      <PillarArticle pillar={getPillar("anxiety")!} />
     </>
   );
 }

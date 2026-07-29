@@ -5,6 +5,7 @@ import { conditions } from "./data/conditions";
 import { docArticles } from "./data/docArticles";
 import { screeningTools } from "./data/screening";
 import { resources } from "./data/resources";
+import { pillars } from "./data/pillars";
 
 export const dynamic = "force-static";
 
@@ -147,6 +148,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  const pillarRoutes: MetadataRoute.Sitemap = pillars
+    .filter((pillar) => pillar.slug !== "anxiety")
+    .map((pillar) => ({
+      url: `${siteUrl}/${pillar.slug}`,
+      lastModified: new Date("2026-07-29"),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    }));
+
   const cityRoutes: MetadataRoute.Sitemap = cityGuides.filter((guide) => guide.clinicLocation).map((guide) => ({
     url: `${siteUrl}/cities/${guide.slug}`,
     lastModified,
@@ -184,6 +194,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticRoutes,
+    ...pillarRoutes,
     ...articleRoutes,
     ...cityRoutes,
     ...abroadRoutes,
