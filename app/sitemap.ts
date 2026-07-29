@@ -43,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    { url: `${siteUrl}/psychiatrist-for-nepalis-abroad`, lastModified: new Date("2026-07-29"), changeFrequency: "monthly", priority: 0.9 },
 
     {
       url: `${siteUrl}/anxiety`,
