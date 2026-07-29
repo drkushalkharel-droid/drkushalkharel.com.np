@@ -140,6 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    { url: `${siteUrl}/community-mental-health-programs`, lastModified: new Date("2026-07-29"), changeFrequency: "monthly", priority: 0.8 },
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({
