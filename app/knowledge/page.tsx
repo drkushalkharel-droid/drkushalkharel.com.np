@@ -9,9 +9,9 @@ import {
 import { docArticles } from "../data/docArticles";
 
 export const metadata: Metadata = {
-  title: "Mental Health Articles & Patient Guides",
+  title: "Mental Health Articles & Patient Guides | Dr. Kushal Kharel",
   description:
-    "Mental health articles and patient guides by Dr. Kushal Kharel on anxiety, depression, addiction, sleep, child psychiatry and evidence-based psychiatric care in Nepal.",
+    "Mental health articles and patient guides by Dr. Kushal Kharel on anxiety, depression, addiction, sleep, teen mental health and evidence-based psychiatric care in Nepal.",
   keywords: [
     "Mental Health Articles Nepal",
     "Psychiatrist Articles Nepal",
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     "Top Psychiatrist in Kathmandu",
     "Nepali Mental Health Education",
     "Anxiety Depression Addiction Nepal",
+    "Mental Health Patient Guides",
+    "Online Psychiatrist Nepal",
   ],
   alternates: {
     canonical: "/knowledge",
@@ -29,8 +31,16 @@ export const metadata: Metadata = {
       "Trusted psychiatric education for patients and families in Nepal.",
     url: "https://drkushalkharel.com.np/knowledge",
     siteName: "Dr. Kushal Kharel",
-    images: [{ url: "/images/doctor.png", width: 1200, height: 630 }],
+    images: [{ url: "/images/doctor.png", width: 1200, height: 630, alt: "Dr. Kushal Kharel - Consultant Psychiatrist" }],
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mental Health Articles & Patient Guides | Dr. Kushal Kharel",
+    description:
+      "Practical patient guides from Dr. Kushal Kharel for anxiety, depression, burnout and mental health in Nepal.",
+    images: ["/images/doctor.png"],
+    creator: "@Drkushalpsych",
   },
 };
 

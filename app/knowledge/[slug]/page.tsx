@@ -97,6 +97,13 @@ export async function generateMetadata({
       locale: isBilingual ? "en_NP" : "ne_NP",
       type: "article",
     },
+    twitter: {
+      card: "summary_large_image",
+      title: seoTitle,
+      description: article.description,
+      images: ["/images/doctor.png"],
+      creator: "@Drkushalpsych",
+    },
   };
 }
 
@@ -112,25 +119,59 @@ export default async function KnowledgeArticlePage({
     notFound();
   }
 
+  const faqs = [
+    [
+      "When should I see a psychiatrist for this issue?",
+      "Seek a psychiatric assessment when symptoms persist, interfere with daily life, or involve safety concerns. Early review can make treatment more effective."
+    ],
+    [
+      "Is online consultation available?",
+      "Yes. Online consultation can be appropriate for selected follow-up appointments, medication reviews and psychoeducation, but urgent safety concerns should be managed in person."
+    ],
+    [
+      "Will I definitely need medication?",
+      "Not always. Treatment is individualised and may include therapy, lifestyle support or medication depending on the person’s symptoms and needs."
+    ],
+    [
+      "Can this condition be treated in Nepal?",
+      "Many people benefit from evidence-based psychiatric care in Nepal. Treatment options include therapy, medication and practical support tailored to local needs."
+    ],
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    name: article.title,
-    description: article.description,
-    url: `${siteUrl}/knowledge/${article.slug}`,
-    inLanguage: article.language === "Bilingual" ? ["en", "ne"] : "ne",
-    about: {
-      "@type": "MedicalCondition",
-      name: article.title,
-    },
-    medicalAudience: ["Patient", "Caregiver"],
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-    },
-    dateModified: lastReviewed,
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        name: article.title,
+        description: article.description,
+        url: `${siteUrl}/knowledge/${article.slug}`,
+        inLanguage: article.language === "Bilingual" ? ["en", "ne"] : "ne",
+        about: {
+          "@type": "MedicalCondition",
+          name: article.title,
+        },
+        medicalAudience: ["Patient", "Caregiver"],
+        reviewedBy: {
+          "@type": "Physician",
+          name: "Dr. Kushal Kharel",
+          medicalSpecialty: "Psychiatry",
+          telephone: "+9779861800547",
+        },
+        dateModified: lastReviewed,
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqs.map(([question, answer]) => ({
+          "@type": "Question",
+          name: question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: answer,
+          },
+        })),
+      },
+    ],
   };
 
   const breadcrumbJsonLd = {

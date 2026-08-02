@@ -990,5 +990,4 @@ export const docArticles = [
       { "heading": "When to seek help", "body": "If stress affects safety, relationships or leads to severe mood symptoms, consult a mental health professional. Support groups and family therapy can help." }
     ]
   }
-]
-satisfies DocArticle[];
+] as DocArticle[];
