@@ -141,6 +141,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     { url: `${siteUrl}/community-mental-health-programs`, lastModified: new Date("2026-07-29"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/home-visit-psychiatrist-nepal`, lastModified: new Date("2026-07-29"), changeFrequency: "monthly", priority: 0.85 },
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({
