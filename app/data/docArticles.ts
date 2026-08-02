@@ -821,5 +821,174 @@ export const docArticles = [
         "body": "डिप्रेसन कमजोरी वा इच्छाशक्तिको कमी होइन। दुई हप्ता वा बढी समयदेखि उदासी, रुचि हराउने, थकान, निद्रा वा भोकमा परिवर्तन, निराशा, एक्लोपन वा दैनिक काममा असर भइरहेको छ भने मनोचिकित्सक वा मानसिक स्वास्थ्यकर्मीसँग कुरा गर्नु उपयोगी हुन्छ। परामर्श, थेरापी, दिनचर्यामा सुधार र आवश्यक परेमा औषधिको संयोजनबाट धेरै मानिसमा सुधार हुन्छ।\n\nआफूलाई हानि पुर्‍याउने सोच, आत्महत्याको विचार वा आफू सुरक्षित रहन नसक्ने अवस्था भएमा तुरुन्त नजिकको अस्पतालको आकस्मिक सेवामा जानुहोस् वा विश्वासिलो व्यक्तिलाई साथमा राख्नुहोस्।"
       }
     ]
+  },
+  {
+    "slug": "coping-with-anxiety",
+    "title": "Coping with Anxiety: 12 Evidence-Based Strategies",
+    "category": "Anxiety",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "Practical, evidence-based techniques to manage anxiety symptoms today and build long-term resilience.",
+    "sections": [
+      { "heading": "Recognizing anxiety symptoms", "body": "Anxiety can show as racing thoughts, restlessness, tense muscles, heart palpitations, sleep problems or avoidance. Identifying patterns—triggers, time of day, or situations—helps target strategies." },
+      { "heading": "Immediate relief techniques", "body": "Grounding (5-4-3-2-1), slow diaphragmatic breathing (4-6 counts), progressive muscle relaxation and brief mindful observation can reduce acute symptoms within minutes." },
+      { "heading": "Daily habits to lower baseline anxiety", "body": "Regular sleep, moderate exercise, limiting caffeine and alcohol, structured routines and social connection reduce vulnerability to anxiety. Small consistent changes compound over weeks." },
+      { "heading": "Cognitive strategies and behavioural activation", "body": "Use CBT techniques: notice automatic negative thoughts, test them with evidence and plan small approach behaviours rather than avoidance. Behavioural activation restores mood and reduces anxiety over time." },
+      { "heading": "When to seek help", "body": "If anxiety severely limits daily life, causes panic attacks, or is accompanied by substance use or suicidal thoughts, seek professional assessment. Effective treatments include CBT, medication and combined approaches." }
+    ]
+  },
+  {
+    "slug": "managing-depression",
+    "title": "Understanding and Managing Depression: Practical Steps That Help",
+    "category": "Depression",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "Compassionate guidance on spotting depression and practical steps to find relief and support.",
+    "sections": [
+      { "heading": "What is depression?", "body": "Depression involves persistent low mood, loss of interest, changes in sleep or appetite, low energy and negative thinking. It is common and treatable with a combination of therapy, medication and lifestyle changes." },
+      { "heading": "Self-help and routine-based strategies", "body": "Set small achievable goals, reintroduce pleasurable activities, maintain sleep schedule, eat regularly and include gentle physical activity. Social contact even when difficult is protective." },
+      { "heading": "Therapy and medication overview", "body": "CBT, behavioural activation and interpersonal therapy have strong evidence. Antidepressant medication can help moderate-to-severe depression and is often combined with therapy." },
+      { "heading": "Supporting someone with depression", "body": "Listen without judgement, encourage small steps, help with appointments and safety planning. Avoid minimising feelings and take any suicidal talk seriously." },
+      { "heading": "Crisis and safety planning", "body": "If there is a plan or intent to self-harm, seek urgent in-person help or emergency services. Keep emergency contacts handy and remove immediate means of harm when possible." }
+    ]
+  },
+  {
+    "slug": "burnout-at-work",
+    "title": "Burnout at Work: How to Recognize It and Recover",
+    "category": "Workplace",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "How to spot workplace burnout early and proven steps to recover and prevent relapse.",
+    "sections": [
+      { "heading": "Burnout vs stress", "body": "Burnout is chronic workplace stress causing exhaustion, reduced efficacy and cynicism. Unlike short-term stress, it builds over months and affects motivation and performance." },
+      { "heading": "Recognising symptoms", "body": "Persistent fatigue, detachment from work, decreased productivity, sleep problems, irritability and physical complaints suggest burnout" },
+      { "heading": "Practical recovery steps", "body": "Set clearer boundaries, negotiate workload, schedule restorative time off, practise self-care, and seek peer or managerial support. Small structural changes at work matter more than willpower alone." },
+      { "heading": "Long-term prevention", "body": "Regular check-ins, manageable workload, meaningful tasks and social support protect against recurrence. Consider therapy for coping strategies and systemic solutions." }
+    ]
+  },
+  {
+    "slug": "sleep-and-mental-health",
+    "title": "Sleep and Mental Health: Improve Your Mood with Better Sleep",
+    "category": "Sleep",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "Discover how improving sleep can boost mood and practical steps to sleep better starting tonight.",
+    "sections": [
+      { "heading": "Why sleep matters for mental health", "body": "Poor sleep worsens mood, anxiety, concentration and emotional regulation. Sleep and mental health influence each other bidirectionally." },
+      { "heading": "Sleep hygiene basics", "body": "Regular sleep schedule, limiting screens before bed, a cool dark bedroom, avoiding late caffeine and a relaxing pre-sleep routine improve sleep quality." },
+      { "heading": "Techniques for insomnia", "body": "Stimulus control (bed for sleep only), sleep restriction therapy and cognitive strategies for worry at night are effective. Seek specialist help if insomnia is severe or chronic." },
+      { "heading": "When to seek clinical help", "body": "If sleep problems last months, cause daytime impairment, or there are symptoms like breathing pauses (possible sleep apnea), seek assessment from a clinician." }
+    ]
+  },
+  {
+    "slug": "mindfulness-for-beginners",
+    "title": "Mindfulness & Meditation for Beginners: A Simple Guide",
+    "category": "Wellness",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "Easy mindfulness practices to reduce stress and improve focus—no experience required.",
+    "sections": [
+      { "heading": "What is mindfulness?", "body": "Mindfulness means paying attention on purpose, in the present moment, and without judgement. It strengthens attention and emotional balance over time." },
+      { "heading": "Simple starter practices", "body": "Try a 3-minute breathing space, a 5-minute body scan, or mindful walking. Focus on sensations rather than striving for a blank mind." },
+      { "heading": "Overcoming common obstacles", "body": "If the mind wanders, gently bring it back. Start small and be consistent. Discomfort can arise—notice it rather than reacting immediately." },
+      { "heading": "Resources and next steps", "body": "Use guided apps or short local classes. A 7-day beginner plan with short daily practices builds a sustainable habit." }
+    ]
+  },
+  {
+    "slug": "teen-mental-health-parents",
+    "title": "Teen Mental Health: How Parents Can Help",
+    "category": "Parenting",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "Practical, compassionate guidance for parents supporting teen mental health and wellbeing.",
+    "sections": [
+      { "heading": "Common teen mental health issues", "body": "Anxiety, depression, self-harm, eating concerns and behavioural problems are common in adolescence. Early recognition helps timely support." },
+      { "heading": "How to talk with your teen", "body": "Use open questions, validate feelings, avoid blame and be patient. Offer help with practical problems and keep lines of communication open." },
+      { "heading": "Promoting healthy habits", "body": "Support regular sleep, balanced screen use, social connection, and safe physical activity. Help them access school support when needed." },
+      { "heading": "When to get professional help", "body": "If symptoms persist, affect school or safety, or there are signs of self-harm, involve a mental health professional early. Ask about family-inclusive approaches." }
+    ]
+  },
+  {
+    "slug": "social-media-mental-health",
+    "title": "Social Media and Mental Health: Protect Your Wellbeing",
+    "category": "Digital Wellbeing",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "How to use social media without it harming your mental health—practical tips and a 7-day detox plan.",
+    "sections": [
+      { "heading": "How social media affects mood", "body": "Comparisons, disrupted sleep and constant notifications can increase anxiety and low mood. But social platforms can also offer support and connection when used intentionally." },
+      { "heading": "Signs it may be harming you", "body": "Feeling drained after use, compulsive checking, worsened self-esteem or sleep problems suggest unhealthy patterns." },
+      { "heading": "Practical strategies", "body": "Curate your feed, set time limits, schedule phone-free periods, and use platforms for active connection rather than passive scrolling." },
+      { "heading": "A 7-day social media detox plan", "body": "Day 1: track use. Day 2–3: reduce notifications. Day 4–6: schedule two phone-free hours daily. Day 7: reflect and set sustainable rules." }
+    ]
+  },
+  {
+    "slug": "building-resilience",
+    "title": "Building Resilience: Habits That Make You More Mentally Strong",
+    "category": "Resilience",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "Evidence-based habits and a 30-day plan to strengthen resilience and bounce back from life’s challenges.",
+    "sections": [
+      { "heading": "What resilience is", "body": "Resilience is the ability to adapt to stress and recover from setbacks. It is built by relationships, routines and realistic thinking." },
+      { "heading": "Daily resilience habits", "body": "Consistent sleep, social support, meaningful activity, physical movement and manageable goal-setting create a strong base." },
+      { "heading": "Cognitive skills", "body": "Practice flexible thinking: label emotions, reframe setbacks as learning, and focus on controllable steps rather than catastrophising." },
+      { "heading": "30-day resilience challenge", "body": "Small daily actions—gratitude, movement, connection and manageable risks—over 30 days create measurable improvements in coping." }
+    ]
+  },
+  {
+    "slug": "panic-attacks-what-to-do",
+    "title": "Panic Attacks: What to Do When One Happens",
+    "category": "Anxiety",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "Clear, calming steps to manage a panic attack in the moment and reduce future risk.",
+    "sections": [
+      { "heading": "Understanding panic attacks", "body": "Panic attacks are intense surges of fear with physical symptoms like breathlessness, chest tightness and dizziness. They are frightening but usually harmless." },
+      { "heading": "Immediate grounding steps", "body": "Use 4-4-6 breathing, name five things you can see, drink water, and remind yourself the attack will pass. Slow breathing reduces the physical symptoms quickly." },
+      { "heading": "Short-term coping and prevention", "body": "Psychoeducation, gradual exposure to avoided situations and CBT techniques reduce panic frequency. Medication may help in severe or frequent panic disorder." },
+      { "heading": "How to help someone during an attack", "body": "Stay calm, reassure them, encourage slow breathing and avoid minimising their experience. Offer to stay with them until it subsides." }
+    ]
+  },
+  {
+    "slug": "therapy-types-explained",
+    "title": "Therapy Types Explained: CBT, DBT, EMDR, and More",
+    "category": "Therapy",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "A friendly guide to common therapy types, what they treat, and how to pick the right approach.",
+    "sections": [
+      { "heading": "Overview of common therapies", "body": "CBT focuses on thinking and behaviour patterns; DBT teaches emotion regulation and distress tolerance; EMDR supports trauma processing; ACT promotes values-based action; psychodynamic therapy explores relationships and history." },
+      { "heading": "What each therapy helps with", "body": "CBT: anxiety and depression; DBT: emotion dysregulation and self-harm; EMDR: trauma-related symptoms; ACT: chronic distress and avoidance; psychodynamic: longstanding relational patterns." },
+      { "heading": "Choosing a therapist", "body": "Consider training, experience with your problem, session format, cultural fit and practicalities. Ask about goals, techniques and expected course length in the first session." }
+    ]
+  },
+  {
+    "slug": "mental-health-stigma",
+    "title": "Mental Health Stigma: How to Recognize and Reduce It",
+    "category": "Public Health",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "Practical steps individuals and organisations can take to reduce mental health stigma and encourage help-seeking.",
+    "sections": [
+      { "heading": "How stigma shows up", "body": "Stigma appears as blame, secrecy, dismissal of symptoms, workplace discrimination and self-stigma. It reduces help-seeking and worsens outcomes." },
+      { "heading": "Language and actions that reduce stigma", "body": "Use person-first language, share recovery stories, normalise help-seeking and avoid moralising mental health." },
+      { "heading": "Organisational approaches", "body": "Workplace education, supportive policies, confidential pathways for help and visible leadership support reduce barriers to care." }
+    ]
+  },
+  {
+    "slug": "self-care-caregivers",
+    "title": "Self-Care for Caregivers: Preventing Compassion Fatigue",
+    "category": "Caregiving",
+    "language": "Bilingual",
+    "sourceFile": "generated",
+    "description": "Essential self-care strategies for caregivers to prevent burnout and maintain wellbeing.",
+    "sections": [
+      { "heading": "Why caregivers are at risk", "body": "Caregivers carry emotional and practical burdens that increase risk of exhaustion, sleep loss and mood problems—compassion fatigue reduces capacity to care for others." },
+      { "heading": "Recognising compassion fatigue", "body": "Watch for persistent tiredness, irritability, withdrawal, reduced empathy or increased mistakes in daily tasks." },
+      { "heading": "Self-care strategies", "body": "Prioritise sleep, ask for help, arrange respite, maintain small routines, and seek peer support. Setting boundaries protects both caregiver and care recipient." },
+      { "heading": "When to seek help", "body": "If stress affects safety, relationships or leads to severe mood symptoms, consult a mental health professional. Support groups and family therapy can help." }
+    ]
   }
-] satisfies DocArticle[];
+]
+satisfies DocArticle[];
