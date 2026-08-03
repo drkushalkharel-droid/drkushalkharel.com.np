@@ -33,7 +33,7 @@ export default function Awards() {
           <figure className="overflow-hidden rounded-lg border border-white/10 bg-white/5 shadow-2xl hover-lift">
             <div className="relative aspect-[4/3] bg-slate-800">
               <Image
-                src="/images/award.jpg"
+                src="/images/award-1600.jpg"
                 alt="Dr. Kushal Kharel receiving professional recognition"
                 fill
                 priority={false}
@@ -61,7 +61,7 @@ export default function Awards() {
           <figure className="overflow-hidden rounded-lg border border-white/10 bg-white/5 shadow-2xl hover-lift">
             <div className="relative aspect-[4/3] bg-slate-800">
               <Image
-                src="/images/speaker.jpg"
+                src="/images/speaker-1600.jpg"
                 alt="Dr. Kushal Kharel speaking at a professional program"
                 fill
                 priority={false}

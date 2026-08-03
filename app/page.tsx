@@ -51,6 +51,30 @@ export const metadata: Metadata = {
     "Best Psychiatrist in Pokhara",
     "Best Psychiatrist in Nepalgunj",
   ],
+  openGraph: {
+    title: "Dr. Kushal Kharel | Psychiatrist in Kathmandu, Nepal",
+    description:
+      "Consultant psychiatric care in Kathmandu and online for anxiety, depression, OCD, ADHD, addiction and more.",
+    url: "/",
+    siteName: "Dr. Kushal Kharel - Consultant Psychiatrist",
+    images: [
+      {
+        url: "/images/doctor.png",
+        width: 1365,
+        height: 1909,
+        alt: "Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal",
+      },
+    ],
+    locale: "en_NP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dr. Kushal Kharel | Psychiatrist in Kathmandu, Nepal",
+    description:
+      "Consultant psychiatric care in Kathmandu and online across Nepal.",
+    images: ["/images/doctor.png"],
+  },
 };
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -64,8 +88,14 @@ export default function Home() {
     "@type": "WebPage",
     name: "Dr. Kushal Kharel | Psychiatrist in Kathmandu, Nepal",
     url: siteUrl,
-    about: { "@id": `${siteUrl}#clinic` },
+    isPartOf: { "@id": `${siteUrl}#website` },
+    about: [
+      { "@id": `${siteUrl}#clinic` },
+      { "@id": `${siteUrl}#psychiatrist` },
+    ],
     mainEntity: { "@id": `${siteUrl}#psychiatrist` },
+    primaryImageOfPage: `${siteUrl}/images/doctor.png`,
+    inLanguage: "en-NP",
     speakable: buildSpeakableSpec(["#hero-quick-answer"]),
   };
 

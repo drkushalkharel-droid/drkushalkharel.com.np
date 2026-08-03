@@ -119,6 +119,10 @@ export default function Footer() {
               Contact
             </Link>
 
+            <Link href="/appointment" className="block hover:text-white transition">
+              Book an Appointment
+            </Link>
+
             <Link href="/knowledge" className="block hover:text-white transition">
               Mental Health Articles
             </Link>

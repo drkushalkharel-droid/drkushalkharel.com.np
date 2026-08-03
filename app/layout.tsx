@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import ConversionDock from "./components/ConversionDock";
+import ConversionTracking from "./components/ConversionTracking";
 import "./globals.css";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-ZJ7RMBFRYL";
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 const bingSiteVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
-const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID ?? "ca-pub-7242413910722530";
+const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID;
 const doctorImage = "/images/doctor.png";
 
 export const metadata: Metadata = {
@@ -131,7 +133,7 @@ export default function RootLayout({
 }>) {
   const medicalBusinessJsonLd = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
+    "@type": ["MedicalBusiness", "MedicalClinic"],
     "@id": `${siteUrl}#clinic`,
     name: "Dr. Kushal Kharel - Consultant Psychiatrist",
     alternateName: "Dr Kushal Kharel Psychiatry Clinic",
@@ -163,6 +165,7 @@ export default function RootLayout({
       "https://maps.app.goo.gl/2t5B2EqgDKYMRLE48",
     ],
     medicalSpecialty: "Psychiatry",
+    isAcceptingNewPatients: true,
     areaServed: ["Kathmandu", "Nepal"],
     availableService: [
       "Psychiatric Consultation",
@@ -215,11 +218,15 @@ export default function RootLayout({
     "@type": "Physician",
     "@id": `${siteUrl}#psychiatrist`,
     name: "Dr. Kushal Kharel",
+    jobTitle: "Consultant Psychiatrist",
+    description:
+      "Consultant Psychiatrist in Kathmandu, Nepal providing in-person and online psychiatric consultation.",
     url: siteUrl,
     image: `${siteUrl}${doctorImage}`,
     telephone: "+9779861800547",
     email: "drkushalkharel@gmail.com",
     medicalSpecialty: "Psychiatry",
+    mainEntityOfPage: siteUrl,
     worksFor: {
       "@id": `${siteUrl}#clinic`,
     },
@@ -269,6 +276,7 @@ export default function RootLayout({
       name: "KIST Medical College Teaching Hospital",
     },
     areaServed: ["Kathmandu", "Nepal", "Online"],
+    knowsLanguage: ["English", "Nepali"],
     knowsAbout: [
       "Anxiety disorders",
       "Depression",
@@ -307,28 +315,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`}
-          crossOrigin="anonymous"
-        />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
-        />
-        <script
-          id="google-analytics"
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${googleAnalyticsId}', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
-        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
@@ -338,6 +324,24 @@ export default function RootLayout({
       <body>
         {children}
         <ConversionDock />
+        <ConversionTracking />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${googleAnalyticsId}', { page_path: window.location.pathname });`}
+        </Script>
+        {adsenseClientId && (
+          <Script
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`}
+            strategy="lazyOnload"
+            crossOrigin="anonymous"
+          />
+        )}
       </body>
     </html>
   );
