@@ -6,6 +6,7 @@ import { docArticles } from "./data/docArticles";
 import { screeningTools } from "./data/screening";
 import { resources } from "./data/resources";
 import { pillars } from "./data/pillars";
+import { supportingArticles } from "./data/supportingArticles";
 
 export const dynamic = "force-static";
 
@@ -200,6 +201,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  const blogRoutes: MetadataRoute.Sitemap = supportingArticles.map((article) => ({
+    url: `${siteUrl}/blog/${article.slug}`,
+    lastModified: new Date("2026-08-03"),
+    changeFrequency: "monthly",
+    priority: 0.75,
+  }));
+
   return [
     ...staticRoutes,
     ...pillarRoutes,
@@ -209,5 +217,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...conditionRoutes,
     ...screeningRoutes,
     ...resourceRoutes,
+    ...blogRoutes,
   ];
 }
