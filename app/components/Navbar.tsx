@@ -41,7 +41,7 @@ const mobileGroups: { label: string; links: NavLink[] }[] = [
   { label: "Conditions", links: conditionsLinks },
   { label: "Tools", links: toolsLinks },
   { label: "Find Care", links: findCareLinks },
-  { label: "", links: [{ href: "/#contact", label: "Contact" }] },
+  { label: "", links: [{ href: "/appointment", label: "Book an appointment" }] },
 ];
 
 function NavDropdown({ label, links }: { label: string; links: NavLink[] }) {
@@ -138,10 +138,10 @@ export default function Navbar() {
             <NavDropdown label="Find Care" links={findCareLinks} />
 
             <Link
-              href="/#contact"
+              href="/appointment"
               className="font-medium text-gray-700 hover:text-blue-700 transition"
             >
-              Contact
+              Book appointment
             </Link>
 
           </nav>
@@ -171,14 +171,13 @@ export default function Navbar() {
 
           <div className="flex items-center gap-3">
 
-            <a
-              href="https://wa.me/9779861800547"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/appointment"
+              data-conversion="appointment"
               className="hidden md:inline-flex px-5 py-3 rounded-xl border border-green-500 text-green-600 font-semibold hover:bg-green-500 hover:text-white transition"
             >
-              WhatsApp
-            </a>
+              Book appointment
+            </Link>
 
             <a
               href="tel:+9779861800547"
