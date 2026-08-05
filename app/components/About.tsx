@@ -19,7 +19,6 @@ export default function About() {
                 alt="Dr. Kushal Kharel - Consultant Psychiatrist in Nepal"
                 width={700}
                 height={900}
-                priority
                 quality={85}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="w-full object-cover"

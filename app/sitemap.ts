@@ -23,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    {
+      url: `${siteUrl}/appointment`,
+      lastModified: new Date("2026-08-03"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
 
     {
       url: `${siteUrl}/knowledge`,
@@ -213,9 +219,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogRoutes: MetadataRoute.Sitemap = supportingArticles.map((article) => ({
     url: `${siteUrl}/blog/${article.slug}`,
-    lastModified,
+    lastModified: new Date("2026-08-05"),
     changeFrequency: "monthly",
-    priority: 0.7,
+    priority: 0.75,
   }));
 
   return [

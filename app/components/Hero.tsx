@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { CalendarCheck, MessageCircle, Phone, ShieldCheck, Stethoscope } from "lucide-react";
+import Link from "next/link";
+import { CalendarCheck, Phone, ShieldCheck, Stethoscope } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -50,22 +51,21 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-5 mt-10">
 
+              <Link
+                href="/appointment"
+                data-conversion="appointment"
+                className="inline-flex items-center gap-3 bg-white text-blue-900 px-8 py-4 rounded-xl font-bold shadow-2xl shadow-cyan-950/30 hover:scale-105 transition call-pulse"
+              >
+                <CalendarCheck size={22} aria-hidden="true" />
+                Book an Appointment
+              </Link>
+
               <a
                 href="tel:+9779861800547"
-                className="inline-flex items-center gap-3 bg-white text-blue-900 px-8 py-4 rounded-xl font-bold shadow-2xl shadow-cyan-950/30 hover:scale-105 transition call-pulse"
+                className="inline-flex items-center gap-3 border-2 border-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-blue-900 transition"
               >
                 <Phone size={22} aria-hidden="true" />
                 Call Now: +977 9861800547
-              </a>
-
-              <a
-                href="https://wa.me/9779861800547"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 border-2 border-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-900 transition"
-              >
-                <MessageCircle size={22} aria-hidden="true" />
-                WhatsApp
               </a>
 
             </div>
@@ -154,6 +154,7 @@ export default function Hero() {
                 alt="Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal"
                 fill
                 priority
+                sizes="(max-width: 1023px) 90vw, 430px"
                 className="object-cover"
               />
 
