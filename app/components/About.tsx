@@ -26,7 +26,7 @@ export default function About() {
 
             </div>
 
-            <div className="absolute -bottom-8 -right-8 bg-blue-700 text-white rounded-3xl px-8 py-6 shadow-xl">
+            <div className="absolute -bottom-8 -right-8 bg-sage-700 text-white rounded-3xl px-8 py-6 shadow-xl">
 
               <h3 className="text-3xl font-bold">
                 Consultant
@@ -44,7 +44,7 @@ export default function About() {
 
           <div>
 
-            <span className="text-blue-700 font-semibold uppercase tracking-[4px]">
+            <span className="text-sage-700 font-semibold uppercase tracking-[4px]">
               About Dr. Kushal Kharel
             </span>
 
@@ -79,14 +79,14 @@ export default function About() {
 
               <a
                 href="tel:+9779861800547"
-                className="bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-800 transition"
+                className="bg-sage-700 text-white px-8 py-4 rounded-xl font-semibold hover:bg-sage-800 transition"
               >
                 Book Appointment
               </a>
 
               <Link
                 href="/#services"
-                className="border-2 border-blue-700 text-blue-700 px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 hover:text-white transition"
+                className="border-2 border-sage-700 text-sage-700 px-8 py-4 rounded-xl font-semibold hover:bg-sage-700 hover:text-white transition"
               >
                 View Services
               </Link>
@@ -99,7 +99,7 @@ export default function About() {
 
               <div className="bg-gray-50 rounded-2xl p-6 shadow">
 
-                <h3 className="font-bold text-blue-700 text-xl">
+                <h3 className="font-bold text-sage-700 text-xl">
                   🧠 Evidence-Based Psychiatry
                 </h3>
 
@@ -112,7 +112,7 @@ export default function About() {
 
               <div className="bg-gray-50 rounded-2xl p-6 shadow">
 
-                <h3 className="font-bold text-blue-700 text-xl">
+                <h3 className="font-bold text-sage-700 text-xl">
                   ❤️ Personalized Care
                 </h3>
 
@@ -124,7 +124,7 @@ export default function About() {
 
               <div className="bg-gray-50 rounded-2xl p-6 shadow">
 
-                <h3 className="font-bold text-blue-700 text-xl">
+                <h3 className="font-bold text-sage-700 text-xl">
                   🌍 Online Consultation
                 </h3>
 
@@ -137,7 +137,7 @@ export default function About() {
 
               <div className="bg-gray-50 rounded-2xl p-6 shadow">
 
-                <h3 className="font-bold text-blue-700 text-xl">
+                <h3 className="font-bold text-sage-700 text-xl">
                   🔒 Confidential Care
                 </h3>
 
@@ -151,9 +151,9 @@ export default function About() {
 
             {/* Qualifications */}
 
-            <div className="mt-12 bg-blue-50 rounded-2xl p-8">
+            <div className="mt-12 bg-sage-50 rounded-2xl p-8">
 
-              <h3 className="text-2xl font-bold text-blue-900 mb-5">
+              <h3 className="text-2xl font-bold text-sage-900 mb-5">
                 Qualifications & Expertise
               </h3>
 

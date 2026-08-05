@@ -127,23 +127,23 @@ export default async function ScreeningToolPage({
   };
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main className="min-h-screen bg-stone-50 text-stone-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <section className="bg-white">
         <div className="mx-auto max-w-4xl px-6 pb-12 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/screening" className="font-semibold text-blue-700">
+          <Link href="/screening" className="font-semibold text-sage-700">
             &larr; All screening tools
           </Link>
-          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
+          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
             Free Self-Rated Screening
           </p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-5xl">
             {tool.searchQuestion}
           </h1>
-          <p id="tool-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+          <p id="tool-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             {`${tool.description} Answer each item honestly to get a score and general interpretation — this is for awareness only and doesn't replace a psychiatric assessment.`}
           </p>
           <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-5 leading-7 text-amber-950">
@@ -158,12 +158,12 @@ export default async function ScreeningToolPage({
 
       <section className="bg-white">
         <div className="mx-auto max-w-4xl px-6 py-14 lg:px-8">
-          <h2 className="text-3xl font-bold text-slate-950">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-stone-950">Frequently Asked Questions</h2>
           <div className="mt-8 space-y-5">
             {faqs.map((faq) => (
-              <div key={faq.question} className="rounded-lg border border-slate-200 p-5">
-                <h3 className="font-bold text-blue-950">{faq.question}</h3>
-                <p className="mt-2 leading-7 text-slate-700">{faq.answer}</p>
+              <div key={faq.question} className="rounded-lg border border-stone-200 p-5">
+                <h3 className="font-bold text-sage-950">{faq.question}</h3>
+                <p className="mt-2 leading-7 text-stone-700">{faq.answer}</p>
               </div>
             ))}
           </div>

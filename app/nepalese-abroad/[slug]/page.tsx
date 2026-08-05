@@ -93,7 +93,7 @@ export default async function NepaleseAbroadPage({
   };
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main className="min-h-screen bg-stone-50 text-stone-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -101,22 +101,22 @@ export default async function NepaleseAbroadPage({
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/nepalese-abroad" className="font-semibold text-blue-700">
+          <Link href="/nepalese-abroad" className="font-semibold text-sage-700">
             &larr; Back to Nepalese abroad guides
           </Link>
-          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
+          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
             {guide.region}
           </p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
             Nepali psychiatrist guidance for Nepalese in {guide.country}
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             {guide.intro}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="tel:+9779861800547"
-              className="inline-flex items-center gap-3 rounded-lg bg-blue-700 px-6 py-3 font-bold text-white transition hover:bg-blue-800"
+              className="inline-flex items-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800"
             >
               <Phone size={20} aria-hidden="true" />
               Call +977 9861800547
@@ -137,10 +137,10 @@ export default async function NepaleseAbroadPage({
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div>
-            <h2 className="text-3xl font-bold text-slate-950">
+            <h2 className="text-3xl font-bold text-stone-950">
               Common mental health concerns among Nepalese in {guide.country}
             </h2>
-            <p className="mt-4 leading-8 text-slate-600">
+            <p className="mt-4 leading-8 text-stone-600">
               Living abroad can bring opportunity and pressure at the same
               time. Mental health support is especially important when symptoms
               affect sleep, study, work, relationships, safety or substance use.
@@ -154,7 +154,7 @@ export default async function NepaleseAbroadPage({
             {guide.commonConcerns.map((concern) => (
               <div
                 key={concern}
-                className="rounded-lg border border-slate-200 bg-white p-5 font-semibold text-slate-800 shadow-sm"
+                className="rounded-lg border border-stone-200 bg-white p-5 font-semibold text-stone-800 shadow-sm"
               >
                 {concern}
               </div>
@@ -167,10 +167,10 @@ export default async function NepaleseAbroadPage({
         <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="lg:col-span-2">
-              <h2 className="text-3xl font-bold text-slate-950">
+              <h2 className="text-3xl font-bold text-stone-950">
                 How Nepalese in {guide.country} can contact Dr. Kushal Kharel
               </h2>
-              <p className="mt-4 leading-8 text-slate-600">
+              <p className="mt-4 leading-8 text-stone-600">
                 Call or message with your main concern, symptom duration,
                 current medicines, previous diagnosis, substance use, sleep
                 pattern, safety concerns and country of residence. Dr. Kushal
@@ -182,7 +182,7 @@ export default async function NepaleseAbroadPage({
                 {guide.searchTerms.map((term) => (
                   <span
                     key={term}
-                    className="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-900"
+                    className="rounded-full border border-sage-200 bg-sage-50 px-4 py-2 text-sm font-semibold text-sage-900"
                   >
                     {term}
                   </span>
@@ -190,15 +190,15 @@ export default async function NepaleseAbroadPage({
               </div>
             </div>
 
-            <div className="rounded-lg bg-blue-950 p-6 text-white">
+            <div className="rounded-lg bg-sage-950 p-6 text-white">
               <h3 className="text-2xl font-bold">Contact</h3>
-              <p className="mt-3 leading-7 text-blue-100">
+              <p className="mt-3 leading-7 text-sage-100">
                 Psychiatric guidance for patients in Nepal and Nepali people
                 living abroad.
               </p>
               <a
                 href="tel:+9779861800547"
-                className="mt-6 block rounded-lg bg-white px-5 py-3 text-center font-bold text-blue-950"
+                className="mt-6 block rounded-lg bg-white px-5 py-3 text-center font-bold text-sage-950"
               >
                 +977 9861800547
               </a>

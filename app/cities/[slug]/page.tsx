@@ -137,7 +137,7 @@ export default async function CityGuidePage({
   };
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main className="min-h-screen bg-stone-50 text-stone-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -153,23 +153,23 @@ export default async function CityGuidePage({
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/#cities" className="font-semibold text-blue-700">
+          <Link href="/#cities" className="font-semibold text-sage-700">
             Back to city guides
           </Link>
-          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
+          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
             {guide.province}
           </p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
             Psychiatric consultation in {guide.city}: mental health guidance
             and treatment planning
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             {guide.intro}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="tel:+9779861800547"
-              className="inline-flex items-center gap-3 rounded-lg bg-blue-700 px-6 py-3 font-bold text-white transition hover:bg-blue-800"
+              className="inline-flex items-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800"
             >
               <Phone size={20} aria-hidden="true" />
               Call +977 9861800547
@@ -190,10 +190,10 @@ export default async function CityGuidePage({
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <h2 className="text-3xl font-bold text-slate-950">
+            <h2 className="text-3xl font-bold text-stone-950">
               Common mental health concerns in {guide.city}
             </h2>
-            <p className="mt-4 leading-8 text-slate-600">
+            <p className="mt-4 leading-8 text-stone-600">
               {guide.localContext}
             </p>
             <div className="mt-8 rounded-lg border border-amber-200 bg-amber-50 p-5 leading-7 text-amber-950">
@@ -207,12 +207,12 @@ export default async function CityGuidePage({
             {guide.commonConcerns.map((concern) => (
               <article
                 key={concern.name}
-                className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm"
+                className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm"
               >
-                <h3 className="text-2xl font-bold text-blue-950">
+                <h3 className="text-2xl font-bold text-sage-950">
                   {concern.name}
                 </h3>
-                <p className="mt-3 leading-8 text-slate-600">
+                <p className="mt-3 leading-8 text-stone-600">
                   {concern.description}
                 </p>
               </article>
@@ -225,10 +225,10 @@ export default async function CityGuidePage({
         <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="lg:col-span-2">
-              <h2 className="text-3xl font-bold text-slate-950">
+              <h2 className="text-3xl font-bold text-stone-950">
                 How to contact Dr. Kushal Kharel from {guide.city}
               </h2>
-              <p className="mt-4 leading-8 text-slate-600">
+              <p className="mt-4 leading-8 text-stone-600">
                 Call or message to explain the main concern, symptom duration,
                 current medicines, substance use history, safety concerns and
                 preferred consultation option. Online consultation may be
@@ -239,7 +239,7 @@ export default async function CityGuidePage({
                 {guide.searchTerms.map((term) => (
                   <span
                     key={term}
-                    className="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-900"
+                    className="rounded-full border border-sage-200 bg-sage-50 px-4 py-2 text-sm font-semibold text-sage-900"
                   >
                     {term}
                   </span>
@@ -247,15 +247,15 @@ export default async function CityGuidePage({
               </div>
             </div>
 
-            <div className="rounded-lg bg-blue-950 p-6 text-white">
+            <div className="rounded-lg bg-sage-950 p-6 text-white">
               <h3 className="text-2xl font-bold">Contact</h3>
-              <p className="mt-3 leading-7 text-blue-100">
+              <p className="mt-3 leading-7 text-sage-100">
                 Psychiatric consultation for patients in Kathmandu and online
                 mental health support for people across Nepal.
               </p>
               <a
                 href="tel:+9779861800547"
-                className="mt-6 block rounded-lg bg-white px-5 py-3 text-center font-bold text-blue-950"
+                className="mt-6 block rounded-lg bg-white px-5 py-3 text-center font-bold text-sage-950"
               >
                 +977 9861800547
               </a>
@@ -272,33 +272,33 @@ export default async function CityGuidePage({
         </div>
       </section>
 
-      <section className="bg-slate-50">
+      <section className="bg-stone-50">
           <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
-            <h2 className="text-3xl font-bold text-slate-950">
+            <h2 className="text-3xl font-bold text-stone-950">
               Visiting the clinic in {guide.city}
             </h2>
             <div className="mt-8 grid gap-6 lg:grid-cols-2">
-              <address className="not-italic rounded-lg border border-slate-200 bg-white p-6 leading-8 text-slate-600 shadow-sm">
-                <p className="font-bold text-blue-950">Address</p>
+              <address className="not-italic rounded-lg border border-stone-200 bg-white p-6 leading-8 text-stone-600 shadow-sm">
+                <p className="font-bold text-sage-950">Address</p>
                 <p>{guide.clinicLocation.streetAddress}</p>
                 <p>{guide.clinicLocation.landmark}</p>
                 <p>
                   {guide.city} {guide.clinicLocation.postalCode}, Nepal
                 </p>
-                <p className="mt-4 font-bold text-blue-950">Parking</p>
+                <p className="mt-4 font-bold text-sage-950">Parking</p>
                 <p>{guide.clinicLocation.parkingInfo}</p>
               </address>
               <a
                 href={guide.clinicLocation.directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-start justify-center rounded-lg border border-blue-200 bg-blue-50 p-6 shadow-sm transition hover:border-blue-400"
+                className="flex flex-col items-start justify-center rounded-lg border border-sage-200 bg-sage-50 p-6 shadow-sm transition hover:border-sage-400"
               >
-                <span className="inline-flex items-center gap-2 font-bold text-blue-900">
+                <span className="inline-flex items-center gap-2 font-bold text-sage-900">
                   <MapPin size={20} aria-hidden="true" />
                   Get Directions on Google Maps
                 </span>
-                <span className="mt-2 text-sm text-blue-800">
+                <span className="mt-2 text-sm text-sage-800">
                   Opens Google Maps with turn-by-turn directions, hours and
                   patient reviews.
                 </span>
@@ -309,12 +309,12 @@ export default async function CityGuidePage({
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
-          <h2 className="text-3xl font-bold text-slate-950">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-stone-950">Frequently Asked Questions</h2>
           <div className="mt-8 space-y-5">
             {cityFaqs.map((faq) => (
-              <div key={faq.question} className="rounded-lg border border-slate-200 p-5">
-                <h3 className="font-bold text-blue-950">{faq.question}</h3>
-                <p className="mt-2 leading-7 text-slate-700">{faq.answer}</p>
+              <div key={faq.question} className="rounded-lg border border-stone-200 p-5">
+                <h3 className="font-bold text-sage-950">{faq.question}</h3>
+                <p className="mt-2 leading-7 text-stone-700">{faq.answer}</p>
               </div>
             ))}
           </div>

@@ -4,7 +4,7 @@ import { CalendarCheck, Phone, ShieldCheck, Stethoscope } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,#155e75,transparent_34%),linear-gradient(135deg,#020617_0%,#0f3a73_52%,#0369a1_100%)] text-white">
+    <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,var(--color-clay-600),transparent_34%),linear-gradient(135deg,var(--color-sage-950)_0%,var(--color-sage-800)_52%,var(--color-sage-600)_100%)] text-white">
 
       <div className="medical-grid absolute inset-0 opacity-30" aria-hidden="true" />
       <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white/10 to-transparent" aria-hidden="true" />
@@ -17,7 +17,7 @@ export default function Hero() {
 
           <div className="animate-fade-up">
 
-            <span className="inline-flex items-center gap-2 bg-cyan-400/15 border border-cyan-200/30 px-5 py-2 rounded-full text-sm font-semibold text-cyan-50">
+            <span className="inline-flex items-center gap-2 bg-clay-400/15 border border-clay-200/30 px-5 py-2 rounded-full text-sm font-semibold text-clay-50">
               <Stethoscope size={16} aria-hidden="true" />
               Consultant Psychiatrist in Kathmandu, Nepal
             </span>
@@ -28,7 +28,7 @@ export default function Hero() {
 
             </h1>
 
-            <h2 className="text-2xl lg:text-4xl mt-6 font-light text-blue-100">
+            <h2 className="text-2xl lg:text-4xl mt-6 font-light text-sage-100">
 
               Evidence-Based Psychiatry,
               <br />
@@ -38,7 +38,7 @@ export default function Hero() {
 
             </h2>
 
-            <p id="hero-quick-answer" className="mt-8 text-lg leading-9 text-blue-100 max-w-2xl">
+            <p id="hero-quick-answer" className="mt-8 text-lg leading-9 text-sage-100 max-w-2xl">
 
               Searching for the best psychiatrist near you in Kathmandu? Dr.
               Kharel sees patients in person at Kalanki and online across
@@ -55,7 +55,7 @@ export default function Hero() {
               <Link
                 href="/appointment"
                 data-conversion="appointment"
-                className="inline-flex items-center gap-3 bg-white text-blue-900 px-8 py-4 rounded-xl font-bold shadow-2xl shadow-cyan-950/30 hover:scale-105 transition call-pulse"
+                className="inline-flex items-center gap-3 bg-white text-sage-900 px-8 py-4 rounded-xl font-bold shadow-2xl shadow-clay-950/30 hover:scale-105 transition call-pulse"
               >
                 <CalendarCheck size={22} aria-hidden="true" />
                 Book an Appointment
@@ -63,7 +63,7 @@ export default function Hero() {
 
               <a
                 href="tel:+9779861800547"
-                className="inline-flex items-center gap-3 border-2 border-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-blue-900 transition"
+                className="inline-flex items-center gap-3 border-2 border-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sage-900 transition"
               >
                 <Phone size={22} aria-hidden="true" />
                 Call Now: +977 9861800547
@@ -71,7 +71,7 @@ export default function Hero() {
 
             </div>
 
-            <div className="mt-6 flex flex-wrap gap-3 text-sm font-medium text-blue-50">
+            <div className="mt-6 flex flex-wrap gap-3 text-sm font-medium text-sage-50">
               {["In-person in Kalanki, Kathmandu", "Online consultation", "Confidential care"].map((item) => (
                 <span
                   key={item}
@@ -93,7 +93,7 @@ export default function Hero() {
                   MD
                 </h3>
 
-                <p className="text-blue-100">
+                <p className="text-sage-100">
                   Psychiatry
                 </p>
 
@@ -105,7 +105,7 @@ export default function Hero() {
                   Online
                 </h3>
 
-                <p className="text-blue-100">
+                <p className="text-sage-100">
                   Consultation
                 </p>
 
@@ -117,7 +117,7 @@ export default function Hero() {
                   Evidence
                 </h3>
 
-                <p className="text-blue-100">
+                <p className="text-sage-100">
                   Based Care
                 </p>
 
@@ -129,7 +129,7 @@ export default function Hero() {
                   Confidential
                 </h3>
 
-                <p className="text-blue-100">
+                <p className="text-sage-100">
                   Ethical Practice
                 </p>
 
@@ -144,7 +144,7 @@ export default function Hero() {
           <div className="relative flex justify-center animate-fade-up animation-delay-150">
 
             <div className="absolute -left-3 top-14 hidden rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur lg:block float-card">
-              <p className="text-sm text-blue-100">Search intent</p>
+              <p className="text-sm text-sage-100">Search intent</p>
               <p className="mt-1 text-xl font-bold">Best Psychiatrist Near Me</p>
             </div>
 
@@ -166,11 +166,11 @@ export default function Hero() {
             <div className="absolute bottom-8 left-0 bg-white rounded-2xl shadow-xl p-6 text-gray-900 float-card animation-delay-300">
 
               <div className="flex items-center gap-3">
-                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-800">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-sage-100 text-sage-800">
                   <CalendarCheck size={24} aria-hidden="true" />
                 </span>
                 <div>
-                  <h3 className="text-2xl font-bold text-blue-900">
+                  <h3 className="text-2xl font-bold text-sage-900">
 
                     Call to Book
 

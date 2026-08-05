@@ -21,17 +21,17 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-slate-50 to-white">
+    <section className="py-24 bg-gradient-to-b from-stone-50 to-white">
 
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center">
 
-          <span className="uppercase tracking-[4px] text-blue-700 font-semibold">
+          <span className="uppercase tracking-[4px] text-sage-700 font-semibold">
             Patient Experience
           </span>
 
-          <h2 className="text-5xl font-bold text-slate-900 mt-4">
+          <h2 className="text-5xl font-bold text-stone-900 mt-4">
             Trusted Mental Health Care
           </h2>
 
@@ -56,7 +56,7 @@ export default function Testimonials() {
                 ⭐⭐⭐⭐⭐
               </div>
 
-              <h3 className="text-2xl font-bold text-blue-900">
+              <h3 className="text-2xl font-bold text-sage-900">
                 {item.title}
               </h3>
 
@@ -84,7 +84,7 @@ export default function Testimonials() {
             href="https://maps.app.goo.gl/6xPZkgtVphdXZAhK6"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-semibold transition"
+            className="inline-block bg-sage-700 hover:bg-sage-800 text-white px-8 py-4 rounded-xl font-semibold transition"
           >
             ⭐ View & Leave a Google Review
           </a>

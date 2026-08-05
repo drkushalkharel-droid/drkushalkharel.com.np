@@ -49,7 +49,7 @@ function NavDropdown({ label, links }: { label: string; links: NavLink[] }) {
     <div className="group relative">
       <button
         type="button"
-        className="inline-flex items-center gap-1 font-medium text-gray-700 transition hover:text-blue-700"
+        className="inline-flex items-center gap-1 font-medium text-gray-700 transition hover:text-sage-700"
       >
         {label}
         <ChevronDown size={16} aria-hidden="true" />
@@ -59,7 +59,7 @@ function NavDropdown({ label, links }: { label: string; links: NavLink[] }) {
           <Link
             key={link.href}
             href={link.href}
-            className="block px-4 py-2.5 text-sm font-medium text-gray-700 transition hover:bg-blue-50 hover:text-blue-700"
+            className="block px-4 py-2.5 text-sm font-medium text-gray-700 transition hover:bg-sage-50 hover:text-sage-700"
           >
             {link.label}
           </Link>
@@ -111,7 +111,7 @@ export default function Navbar() {
 
           <Link href="/" className="flex flex-col">
 
-            <span className="text-2xl font-extrabold text-blue-900">
+            <span className="text-2xl font-extrabold text-sage-900">
               Dr. Kushal Kharel
             </span>
 
@@ -127,7 +127,7 @@ export default function Navbar() {
 
             <Link
               href="/"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
+              className="font-medium text-gray-700 hover:text-sage-700 transition"
             >
               Home
             </Link>
@@ -139,7 +139,7 @@ export default function Navbar() {
 
             <Link
               href="/appointment"
-              className="font-medium text-gray-700 hover:text-blue-700 transition"
+              className="font-medium text-gray-700 hover:text-sage-700 transition"
             >
               Book appointment
             </Link>
@@ -159,7 +159,7 @@ export default function Navbar() {
                   rel="noopener noreferrer"
                   aria-label={`Follow on ${social.name}`}
                   title={`Follow on ${social.name}`}
-                  className="text-gray-600 hover:text-blue-700 transition"
+                  className="text-gray-600 hover:text-sage-700 transition"
                 >
                   <Icon size={20} aria-hidden="true" />
                 </a>
@@ -181,7 +181,7 @@ export default function Navbar() {
 
             <a
               href="tel:+9779861800547"
-              className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-xl font-semibold transition"
+              className="inline-flex items-center gap-2 bg-sage-700 hover:bg-sage-800 text-white px-6 py-3 rounded-xl font-semibold transition"
             >
               <Phone size={18} aria-hidden="true" />
               Call Now
@@ -209,7 +209,7 @@ export default function Navbar() {
               {mobileGroups.map((group) => (
                 <div key={group.label || group.links[0].href} className="mb-2">
                   {group.label && (
-                    <p className="mt-3 px-3 text-xs font-bold uppercase tracking-[2px] text-slate-400">
+                    <p className="mt-3 px-3 text-xs font-bold uppercase tracking-[2px] text-stone-400">
                       {group.label}
                     </p>
                   )}
@@ -218,7 +218,7 @@ export default function Navbar() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
-                      className="block rounded-lg px-3 py-2.5 font-medium text-gray-700 transition hover:bg-blue-50 hover:text-blue-700"
+                      className="block rounded-lg px-3 py-2.5 font-medium text-gray-700 transition hover:bg-sage-50 hover:text-sage-700"
                     >
                       {link.label}
                     </Link>
@@ -248,7 +248,7 @@ export default function Navbar() {
                     rel="noopener noreferrer"
                     aria-label={`Follow on ${social.name}`}
                     title={`Follow on ${social.name}`}
-                    className="text-gray-600 hover:text-blue-700 transition"
+                    className="text-gray-600 hover:text-sage-700 transition"
                   >
                     <Icon size={20} aria-hidden="true" />
                   </a>

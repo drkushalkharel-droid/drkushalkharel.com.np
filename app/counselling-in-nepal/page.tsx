@@ -213,23 +213,23 @@ export default function CounsellingInNepalPage() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main className="min-h-screen bg-stone-50 text-stone-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/" className="font-semibold text-blue-700">
+          <Link href="/" className="font-semibold text-sage-700">
             &larr; Back to home
           </Link>
-          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
+          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
             Counselling &amp; Psychiatric Care
           </p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
             Counselling and Psychiatric Services in Nepal
           </h1>
-          <p id="counselling-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+          <p id="counselling-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             Many people searching for a &ldquo;counselor,&rdquo; &ldquo;counselling doctor&rdquo; or
             &ldquo;stress counseling&rdquo; in Nepal are really looking for help with anxiety, depression
             or overwhelming stress — and aren&apos;t sure whether they need a counsellor, a psychologist
@@ -239,7 +239,7 @@ export default function CounsellingInNepalPage() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="tel:+9779861800547"
-              className="inline-flex items-center gap-3 rounded-lg bg-blue-700 px-6 py-3 font-bold text-white transition hover:bg-blue-800"
+              className="inline-flex items-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800"
             >
               <Phone size={20} aria-hidden="true" />
               Call +977 9861800547
@@ -255,10 +255,10 @@ export default function CounsellingInNepalPage() {
             </a>
           </div>
 
-          <div className="mt-10 rounded-lg border border-slate-200 bg-slate-50 p-5">
-            <p className="font-bold text-slate-950">Dr. Kushal Kharel, MD Psychiatry</p>
-            <p className="text-slate-600">Psychiatrist, KIST Medical College Teaching Hospital</p>
-            <p className="text-slate-600">Kathmandu, Nepal</p>
+          <div className="mt-10 rounded-lg border border-stone-200 bg-stone-50 p-5">
+            <p className="font-bold text-stone-950">Dr. Kushal Kharel, MD Psychiatry</p>
+            <p className="text-stone-600">Psychiatrist, KIST Medical College Teaching Hospital</p>
+            <p className="text-stone-600">Kathmandu, Nepal</p>
           </div>
         </div>
       </section>
@@ -279,18 +279,18 @@ export default function CounsellingInNepalPage() {
         <Section title="Who Provides Counselling?">
           <div className="grid gap-4 sm:grid-cols-2">
             {providers.map((provider) => (
-              <div key={provider.name} className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-                <p className="font-bold text-blue-950">{provider.name}</p>
-                <p className="mt-2 leading-7 text-slate-600">{provider.description}</p>
+              <div key={provider.name} className="rounded-lg border border-stone-200 bg-white p-5 shadow-sm">
+                <p className="font-bold text-sage-950">{provider.name}</p>
+                <p className="mt-2 leading-7 text-stone-600">{provider.description}</p>
               </div>
             ))}
           </div>
         </Section>
 
         <Section title="How Does Psychiatric Consultation Differ From Counselling?">
-          <div className="overflow-x-auto rounded-lg border border-slate-200">
+          <div className="overflow-x-auto rounded-lg border border-stone-200">
             <table className="w-full min-w-[720px] text-left text-base">
-              <thead className="bg-slate-100 text-slate-700">
+              <thead className="bg-stone-100 text-stone-700">
                 <tr>
                   <th className="px-4 py-3 font-bold"></th>
                   <th className="px-4 py-3 font-bold">Counselling</th>
@@ -300,11 +300,11 @@ export default function CounsellingInNepalPage() {
               </thead>
               <tbody>
                 {comparisonRows.map((row) => (
-                  <tr key={row.aspect} className="border-t border-slate-200 odd:bg-white even:bg-slate-50">
-                    <td className="px-4 py-3 font-bold text-blue-950">{row.aspect}</td>
-                    <td className="px-4 py-3 text-slate-600">{row.counselling}</td>
-                    <td className="px-4 py-3 text-slate-600">{row.psychotherapy}</td>
-                    <td className="px-4 py-3 text-slate-600">{row.psychiatric}</td>
+                  <tr key={row.aspect} className="border-t border-stone-200 odd:bg-white even:bg-stone-50">
+                    <td className="px-4 py-3 font-bold text-sage-950">{row.aspect}</td>
+                    <td className="px-4 py-3 text-stone-600">{row.counselling}</td>
+                    <td className="px-4 py-3 text-stone-600">{row.psychotherapy}</td>
+                    <td className="px-4 py-3 text-stone-600">{row.psychiatric}</td>
                   </tr>
                 ))}
               </tbody>
@@ -323,7 +323,7 @@ export default function CounsellingInNepalPage() {
         <Section title="Conditions Commonly Helped by Counselling">
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {helpfulFor.map((item) => (
-              <div key={item} className="rounded-lg border border-slate-200 bg-white p-4 font-semibold text-slate-800 shadow-sm">
+              <div key={item} className="rounded-lg border border-stone-200 bg-white p-4 font-semibold text-stone-800 shadow-sm">
                 {item}
               </div>
             ))}
@@ -333,49 +333,49 @@ export default function CounsellingInNepalPage() {
         <Section title="Frequently Asked Questions">
           <div className="space-y-5">
             {faqs.map((faq) => (
-              <div key={faq.question} className="rounded-lg border border-slate-200 p-5">
-                <h3 className="font-bold text-blue-950">{faq.question}</h3>
-                <p className="mt-2 leading-7 text-slate-700">{faq.answer}</p>
+              <div key={faq.question} className="rounded-lg border border-stone-200 p-5">
+                <h3 className="font-bold text-sage-950">{faq.question}</h3>
+                <p className="mt-2 leading-7 text-stone-700">{faq.answer}</p>
               </div>
             ))}
           </div>
         </Section>
 
-        <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <h2 className="text-2xl font-bold text-blue-950">Explore related pages</h2>
+        <section className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+          <h2 className="text-2xl font-bold text-sage-950">Explore related pages</h2>
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
-            <Link href="/conditions/major-depressive-disorder" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+            <Link href="/conditions/major-depressive-disorder" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               Depression treatment
             </Link>
-            <Link href="/anxiety" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+            <Link href="/anxiety" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               Anxiety treatment
             </Link>
-            <Link href="/#appointment-guide" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+            <Link href="/#appointment-guide" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               How online consultation works
             </Link>
-            <Link href="/#about" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+            <Link href="/#about" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               About Dr. Kushal Kharel
             </Link>
-            <Link href="/expatriates-in-nepal" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+            <Link href="/expatriates-in-nepal" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               Counselling for expatriates in Nepal
             </Link>
-            <Link href="/english-speaking-psychiatrist" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+            <Link href="/english-speaking-psychiatrist" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               English-speaking counselling &amp; psychiatry
             </Link>
-            <Link href="/tourists-in-nepal" className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50">
+            <Link href="/tourists-in-nepal" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               Support for tourists in Nepal
             </Link>
           </div>
         </section>
 
-        <section className="rounded-lg bg-blue-950 p-8 text-white">
+        <section className="rounded-lg bg-sage-950 p-8 text-white">
           <h2 className="text-3xl font-bold">Ready to book a session?</h2>
-          <p className="mt-4 max-w-3xl leading-8 text-blue-100">
+          <p className="mt-4 max-w-3xl leading-8 text-sage-100">
             In-person at the Kalanki clinic in Kathmandu, or online from
             anywhere in Nepal or abroad.
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
-            <a href="tel:+9779861800547" className="rounded-lg bg-white px-6 py-3 font-semibold text-blue-950">
+            <a href="tel:+9779861800547" className="rounded-lg bg-white px-6 py-3 font-semibold text-sage-950">
               +977 9861800547
             </a>
             <Link href="/#contact" className="rounded-lg border border-white/50 px-6 py-3 font-semibold text-white">
@@ -390,9 +390,9 @@ export default function CounsellingInNepalPage() {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-      <h2 className="text-3xl font-bold text-blue-950">{title}</h2>
-      <div className="mt-5 space-y-4 text-lg leading-9 text-slate-700">{children}</div>
+    <section className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+      <h2 className="text-3xl font-bold text-sage-950">{title}</h2>
+      <div className="mt-5 space-y-4 text-lg leading-9 text-stone-700">{children}</div>
     </section>
   );
 }

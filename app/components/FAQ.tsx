@@ -133,18 +133,18 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="bg-slate-50 py-24">
+    <section id="faq" className="bg-stone-50 py-24">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <div className="text-center">
-          <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
+          <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
             <HelpCircle size={16} aria-hidden="true" />
             Frequently Asked Questions
           </span>
-          <h2 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
+          <h2 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-5xl">
             Common questions about psychiatric care in Kathmandu
           </h2>
         </div>
@@ -153,10 +153,10 @@ export default function FAQ() {
           {faqs.map((faq) => (
             <article
               key={faq.question}
-              className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8"
+              className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8"
             >
-              <h3 className="text-xl font-bold text-blue-950">{faq.question}</h3>
-              <p className="mt-3 leading-8 text-slate-600">{faq.answer}</p>
+              <h3 className="text-xl font-bold text-sage-950">{faq.question}</h3>
+              <p className="mt-3 leading-8 text-stone-600">{faq.answer}</p>
             </article>
           ))}
         </div>

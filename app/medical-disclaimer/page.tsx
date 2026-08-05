@@ -29,7 +29,7 @@ export default function MedicalDisclaimerPage() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main className="min-h-screen bg-stone-50 text-stone-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
@@ -37,13 +37,13 @@ export default function MedicalDisclaimerPage() {
 
       <section className="bg-white">
         <div className="mx-auto max-w-3xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/" className="font-semibold text-blue-700">
+          <Link href="/" className="font-semibold text-sage-700">
             &larr; Back to home
           </Link>
-          <h1 className="mt-8 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
+          <h1 className="mt-8 text-4xl font-bold leading-tight text-stone-950 md:text-5xl">
             Medical Disclaimer
           </h1>
-          <p className="mt-4 text-slate-500">Last updated: July 2026</p>
+          <p className="mt-4 text-stone-500">Last updated: July 2026</p>
         </div>
       </section>
 
@@ -57,8 +57,8 @@ export default function MedicalDisclaimerPage() {
         </div>
 
         <section>
-          <h2 className="text-2xl font-bold text-blue-950">No Doctor-Patient Relationship</h2>
-          <p className="mt-3 leading-8 text-slate-600">
+          <h2 className="text-2xl font-bold text-sage-950">No Doctor-Patient Relationship</h2>
+          <p className="mt-3 leading-8 text-stone-600">
             Reading this website, including the condition library, patient
             guides, or using the self-screening tools, does not create a
             doctor-patient relationship with Dr. Kushal Kharel. A
@@ -68,8 +68,8 @@ export default function MedicalDisclaimerPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-blue-950">Screening Tools Are Not a Diagnosis</h2>
-          <p className="mt-3 leading-8 text-slate-600">
+          <h2 className="text-2xl font-bold text-sage-950">Screening Tools Are Not a Diagnosis</h2>
+          <p className="mt-3 leading-8 text-stone-600">
             The screening tools on this website provide a general symptom
             score and interpretation for awareness purposes only. They do
             not diagnose any mental health condition. A formal diagnosis
@@ -79,8 +79,8 @@ export default function MedicalDisclaimerPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-blue-950">Individual Circumstances Vary</h2>
-          <p className="mt-3 leading-8 text-slate-600">
+          <h2 className="text-2xl font-bold text-sage-950">Individual Circumstances Vary</h2>
+          <p className="mt-3 leading-8 text-stone-600">
             Information about causes, symptoms, treatment and medications on
             this website is general in nature. The right diagnosis and
             treatment plan for you depends on your specific history, symptoms
@@ -91,8 +91,8 @@ export default function MedicalDisclaimerPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-blue-950">Emergencies</h2>
-          <p className="mt-3 leading-8 text-slate-600">
+          <h2 className="text-2xl font-bold text-sage-950">Emergencies</h2>
+          <p className="mt-3 leading-8 text-stone-600">
             If you or someone you know is experiencing a psychiatric
             emergency — including thoughts of suicide or self-harm, severe
             confusion, or an inability to stay safe — go to the nearest
@@ -102,17 +102,17 @@ export default function MedicalDisclaimerPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-blue-950">Contact</h2>
-          <p className="mt-3 leading-8 text-slate-600">
+          <h2 className="text-2xl font-bold text-sage-950">Contact</h2>
+          <p className="mt-3 leading-8 text-stone-600">
             For a personal assessment, please contact Dr. Kushal Kharel
             directly at{" "}
-            <a href="tel:+9779861800547" className="font-semibold text-blue-700">
+            <a href="tel:+9779861800547" className="font-semibold text-sage-700">
               +977 9861800547
             </a>{" "}
             or{" "}
             <a
               href="mailto:drkushalkharel@gmail.com"
-              className="font-semibold text-blue-700"
+              className="font-semibold text-sage-700"
             >
               drkushalkharel@gmail.com
             </a>

@@ -85,7 +85,7 @@ export default function ScreeningPage() {
   });
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main className="min-h-screen bg-stone-50 text-stone-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -97,16 +97,16 @@ export default function ScreeningPage() {
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-12 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/" className="font-semibold text-blue-700">
+          <Link href="/" className="font-semibold text-sage-700">
             Back to home
           </Link>
-          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
+          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
             Screening Tools
           </p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
             13 free self-rated mental health screening tools
           </h1>
-          <p id="screening-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+          <p id="screening-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             Answer each item honestly to calculate a symptom score and receive
             general interpretation. These tools are for awareness and early
             guidance only. They do not replace diagnosis by a psychiatrist or
@@ -121,8 +121,8 @@ export default function ScreeningPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
-        <h2 className="text-3xl font-bold text-slate-950">Choose a screening tool</h2>
-        <p className="mt-4 max-w-3xl leading-8 text-slate-600">
+        <h2 className="text-3xl font-bold text-stone-950">Choose a screening tool</h2>
+        <p className="mt-4 max-w-3xl leading-8 text-stone-600">
           Each tool has its own dedicated page with a focused questionnaire.
         </p>
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -130,23 +130,23 @@ export default function ScreeningPage() {
             <Link
               key={tool.id}
               href={`/screening/${tool.id}`}
-              className="block rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-md"
+              className="block rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
             >
-              <p className="text-sm font-semibold uppercase tracking-[2px] text-blue-700">
+              <p className="text-sm font-semibold uppercase tracking-[2px] text-sage-700">
                 {tool.searchQuestion}
               </p>
-              <h3 className="mt-3 text-xl font-bold text-slate-950">{tool.title}</h3>
-              <p className="mt-3 leading-7 text-slate-600">{tool.description}</p>
-              <p className="mt-4 font-semibold text-blue-700">Take this screening &rarr;</p>
+              <h3 className="mt-3 text-xl font-bold text-stone-950">{tool.title}</h3>
+              <p className="mt-3 leading-7 text-stone-600">{tool.description}</p>
+              <p className="mt-4 font-semibold text-sage-700">Take this screening &rarr;</p>
             </Link>
           ))}
         </div>
       </section>
 
-      <section className="border-t border-slate-200 bg-white">
+      <section className="border-t border-stone-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 pt-14 lg:px-8">
-          <h2 className="text-3xl font-bold text-slate-950">Or try the combined interactive tool</h2>
-          <p className="mt-4 max-w-3xl leading-8 text-slate-600">
+          <h2 className="text-3xl font-bold text-stone-950">Or try the combined interactive tool</h2>
+          <p className="mt-4 max-w-3xl leading-8 text-stone-600">
             Switch between all screening tools in one place below.
           </p>
         </div>

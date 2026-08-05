@@ -46,20 +46,20 @@ export const metadata: Metadata = {
 
 function ArticleCard({ article }: { article: ArticleLink }) {
   const className =
-    "block h-full rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-md";
+    "block h-full rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md";
 
   const content = (
     <>
-      <div className="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[2px] text-blue-700">
+      <div className="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[2px] text-sage-700">
         <span>{article.category}</span>
         <span aria-hidden="true">/</span>
         <span>{article.language}</span>
       </div>
-      <h3 className="mt-4 text-2xl font-bold leading-snug text-slate-950">
+      <h3 className="mt-4 text-2xl font-bold leading-snug text-stone-950">
         {article.title}
       </h3>
-      <p className="mt-3 leading-7 text-slate-600">{article.description}</p>
-      <p className="mt-5 font-semibold text-blue-700">
+      <p className="mt-3 leading-7 text-stone-600">{article.description}</p>
+      <p className="mt-5 font-semibold text-sage-700">
         {article.isExternal ? "Read published article" : "Read guide"}
       </p>
     </>
@@ -91,23 +91,23 @@ export default function KnowledgePage() {
   const featuredArticles = [...internalArticles, ...publishedArticles];
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main className="min-h-screen bg-stone-50 text-stone-900">
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 pb-16 pt-28 lg:px-8 lg:pt-32">
-          <p className="text-sm font-semibold uppercase tracking-[3px] text-blue-700">
+          <p className="text-sm font-semibold uppercase tracking-[3px] text-sage-700">
             Mental Health Knowledge
           </p>
           <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
             Articles and patient guides for better mental health decisions
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             Practical, evidence-based mental health education from Dr. Kushal
             Kharel for patients, families and caregivers in Nepal.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="tel:+9779861800547"
-              className="rounded-lg bg-blue-700 px-6 py-3 font-semibold text-white transition hover:bg-blue-800"
+              className="rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white transition hover:bg-sage-800"
             >
               Book Appointment
             </a>
@@ -127,13 +127,13 @@ export default function KnowledgePage() {
         <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <div>
             <h2 className="text-3xl font-bold">Featured guides</h2>
-            <p className="mt-3 max-w-2xl leading-7 text-slate-600">
+            <p className="mt-3 max-w-2xl leading-7 text-stone-600">
               Start with the most useful patient education pages. These guides
               are designed to answer common search questions and guide patients
               toward appropriate care.
             </p>
           </div>
-          <Link href="/anxiety" className="font-semibold text-blue-700">
+          <Link href="/anxiety" className="font-semibold text-sage-700">
             View anxiety guide
           </Link>
         </div>
@@ -149,7 +149,7 @@ export default function KnowledgePage() {
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <div>
             <h2 className="text-3xl font-bold">Nepali patient articles</h2>
-            <p className="mt-3 max-w-3xl leading-7 text-slate-600">
+            <p className="mt-3 max-w-3xl leading-7 text-stone-600">
               These patient education articles were integrated from Dr. Kharel&apos;s
               existing Nepali medical writing and organized into searchable
               condition-specific pages.
@@ -164,10 +164,10 @@ export default function KnowledgePage() {
         </div>
       </section>
 
-      <section id="request-article" className="bg-slate-50">
+      <section id="request-article" className="bg-stone-50">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <h2 className="text-3xl font-bold">More topics to publish next</h2>
-          <p className="mt-3 max-w-3xl leading-7 text-slate-600">
+          <p className="mt-3 max-w-3xl leading-7 text-stone-600">
             A steady library of condition-specific articles helps people find
             the site through Google and gives patients clear next steps before
             they book.
