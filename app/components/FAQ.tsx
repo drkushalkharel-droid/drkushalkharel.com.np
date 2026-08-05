@@ -96,6 +96,21 @@ const faqs = [
     answer:
       "Patients with severe symptoms, safety concerns, a first-time complex assessment, or situations requiring physical examination are generally advised to attend in-person rather than online, to allow a more thorough evaluation.",
   },
+  {
+    question: "Is Dr. Kushal Kharel a psychiatrist or a general physician?",
+    answer:
+      "Dr. Kushal Kharel is a Consultant Psychiatrist, a medical doctor specialised in diagnosing and treating mental health conditions, not a general physician for physical illnesses, injuries or routine check-ups. If you need a general physician, this clinic can point you toward appropriate general medical care in Kathmandu instead.",
+  },
+  {
+    question: "Is this a 24-hour clinic or emergency service?",
+    answer:
+      "No. The clinic operates fixed hours: Monday to Friday, 10:00 AM to 6:00 PM, and Saturday, 10:00 AM to 4:00 PM. For a psychiatric or medical emergency outside these hours, including thoughts of self-harm, severe confusion or immediate safety risk, go to the nearest emergency department rather than waiting to call.",
+  },
+  {
+    question: "Is there a female psychiatrist or female counselor available?",
+    answer:
+      "Dr. Kushal Kharel, the psychiatrist at this clinic, is male. For patients who would feel more comfortable speaking with a woman, a qualified female counselor can be arranged as part of your care based on your preference, alongside Dr. Kharel's psychiatric assessment where relevant. Mention this when you book.",
+  },
 ];
 
 export default function FAQ() {

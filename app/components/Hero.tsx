@@ -40,10 +40,11 @@ export default function Hero() {
 
             <p id="hero-quick-answer" className="mt-8 text-lg leading-9 text-blue-100 max-w-2xl">
 
-              For people searching for a trusted, top-rated psychiatrist in
-              Nepal or Kathmandu, Dr. Kharel provides confidential assessment,
-              psychotherapy, medication management, addiction treatment and
-              secure online consultation.
+              Searching for the best psychiatrist near you in Kathmandu? Dr.
+              Kharel sees patients in person at Kalanki and online across
+              Nepal, offering confidential assessment, psychotherapy,
+              medication management, addiction treatment and secure online
+              consultation.
 
             </p>
 
@@ -71,7 +72,7 @@ export default function Hero() {
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3 text-sm font-medium text-blue-50">
-              {["In-person in Kathmandu", "Online consultation", "Confidential care"].map((item) => (
+              {["In-person in Kalanki, Kathmandu", "Online consultation", "Confidential care"].map((item) => (
                 <span
                   key={item}
                   className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2"
@@ -144,7 +145,7 @@ export default function Hero() {
 
             <div className="absolute -left-3 top-14 hidden rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur lg:block float-card">
               <p className="text-sm text-blue-100">Search intent</p>
-              <p className="mt-1 text-xl font-bold">Psychiatrist in Nepal</p>
+              <p className="mt-1 text-xl font-bold">Best Psychiatrist Near Me</p>
             </div>
 
             <div className="relative w-[430px] max-w-full h-[560px] rounded-[40px] overflow-hidden border-8 border-white/20 shadow-2xl image-shimmer">
