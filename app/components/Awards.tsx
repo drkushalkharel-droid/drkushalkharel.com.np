@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Award, FileBadge, Mic2, Phone } from "lucide-react";
+import { Award, ExternalLink, FileBadge, Mic2, Newspaper, Phone } from "lucide-react";
 
 const certificates = [
   "/certificates/cert1.JPG",
@@ -87,7 +87,31 @@ export default function Awards() {
           </figure>
         </div>
 
-        <div className="mt-16 rounded-lg border border-white/10 bg-white/5 p-6 md:p-8">
+        <div className="mt-6 rounded-lg border border-white/10 bg-white/5 p-6 md:p-8">
+          <div className="flex flex-col justify-between gap-5 md:flex-row md:items-center">
+            <div className="flex items-start gap-4">
+              <Newspaper size={28} className="mt-1 shrink-0 text-cyan-200" aria-hidden="true" />
+              <div>
+                <h3 className="text-xl font-bold text-white">In the Media</h3>
+                <p className="mt-2 leading-7 text-slate-300">
+                  Dr. Kushal Kharel is a contributing writer for Nagarik News, one of
+                  Nepal&apos;s leading national news outlets.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://nagariknews.nagariknetwork.com/author/dr.kushal-kharel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-white/20 px-5 py-3 font-bold text-white transition hover:border-cyan-200 hover:text-cyan-200"
+            >
+              View author profile
+              <ExternalLink size={18} aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-6 rounded-lg border border-white/10 bg-white/5 p-6 md:p-8">
           <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
             <div>
               <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[3px] text-cyan-200">

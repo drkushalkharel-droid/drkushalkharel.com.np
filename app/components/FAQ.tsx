@@ -2,6 +2,11 @@ import { HelpCircle } from "lucide-react";
 
 const faqs = [
   {
+    question: "Who is the best psychiatrist in Kathmandu?",
+    answer:
+      "There is no official ranking for 'best psychiatrist' — it's a search phrase, not a clinical credential. A reasonable way to choose is a Nepal Medical Council-registered psychiatrist with relevant experience and a communication style that fits you. Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) practicing in Kalanki, Kathmandu since 2020, offering in-person and online consultation for anxiety, depression, OCD, bipolar disorder, schizophrenia, ADHD and addiction.",
+  },
+  {
     question: "Who is a psychiatrist in Nepal?",
     answer:
       "Dr. Kushal Kharel is a Consultant Psychiatrist based in Kathmandu, Nepal, registered with the Nepal Medical Council. He provides evidence-based assessment, diagnosis, medication management and psychotherapy for children, adolescents, adults and older adults, in person and online.",
