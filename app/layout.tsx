@@ -135,8 +135,12 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": ["MedicalBusiness", "MedicalClinic"],
     "@id": `${siteUrl}#clinic`,
-    name: "Dr. Kushal Kharel - Consultant Psychiatrist",
-    alternateName: "Dr Kushal Kharel Psychiatry Clinic",
+    name: "Kathmandu Mental Health Clinic",
+    alternateName: [
+      "Dr. Kushal Kharel - Consultant Psychiatrist",
+      "Dr Kushal Kharel Psychiatry Clinic",
+      "Dr. Kushal Kharel — Center of Excellence in Neuropsychiatry and De-addiction",
+    ],
     description:
       "Consultant Psychiatrist providing evidence-based treatment for anxiety, depression, ADHD, OCD, bipolar disorder, and addiction",
     url: siteUrl,
@@ -293,6 +297,7 @@ export default function RootLayout({
       "https://www.twitter.com/Drkushalpsych",
       "https://www.tiktok.com/@drkushalkharel",
       "https://www.threads.net/@cusalnova",
+      "https://nagariknews.nagariknetwork.com/author/dr.kushal-kharel",
     ],
   };
 

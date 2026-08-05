@@ -79,7 +79,7 @@ export default function Conditions() {
 
         <div className="text-center mb-16">
 
-          <span className="text-blue-700 font-semibold uppercase tracking-[4px]">
+          <span className="text-sage-700 font-semibold uppercase tracking-[4px]">
             Conditions We Treat
           </span>
 
@@ -104,7 +104,7 @@ export default function Conditions() {
                   {condition.icon}
                 </div>
 
-                <h3 className="text-2xl font-bold text-blue-900">
+                <h3 className="text-2xl font-bold text-sage-900">
                   {condition.title}
                 </h3>
 
@@ -113,7 +113,7 @@ export default function Conditions() {
                 </p>
 
                 {condition.href && (
-                  <p className="mt-5 font-semibold text-blue-700">
+                  <p className="mt-5 font-semibold text-sage-700">
                     Read patient guide
                   </p>
                 )}
@@ -158,7 +158,7 @@ export default function Conditions() {
 
           <a
             href="tel:+9779861800547"
-            className="inline-block mt-8 bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-semibold transition"
+            className="inline-block mt-8 bg-sage-700 hover:bg-sage-800 text-white px-8 py-4 rounded-xl font-semibold transition"
           >
             Schedule a Consultation
           </a>

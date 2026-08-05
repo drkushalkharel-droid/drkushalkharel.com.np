@@ -134,6 +134,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
 
+    { url: `${siteUrl}/couple-relationship-counseling`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/child-adolescent-psychiatry`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/iq-psychological-testing`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/medical-fitness-certificate`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/female-counselor-kathmandu`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.75 },
+    { url: `${siteUrl}/cbt-therapist-kathmandu`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/erp-therapy-ocd`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
+
     {
       url: `${siteUrl}/counselling-in-nepal`,
       lastModified,
@@ -148,6 +156,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     { url: `${siteUrl}/community-mental-health-programs`, lastModified: new Date("2026-07-29"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/home-visit-psychiatrist-nepal`, lastModified: new Date("2026-07-29"), changeFrequency: "monthly", priority: 0.85 },
+
+    {
+      url: `${siteUrl}/blog`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({
@@ -203,7 +219,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogRoutes: MetadataRoute.Sitemap = supportingArticles.map((article) => ({
     url: `${siteUrl}/blog/${article.slug}`,
-    lastModified: new Date("2026-08-03"),
+    lastModified: new Date("2026-08-05"),
     changeFrequency: "monthly",
     priority: 0.75,
   }));

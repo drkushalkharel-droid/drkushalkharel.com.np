@@ -23,18 +23,18 @@ export default function Statistics() {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-white to-slate-50 py-24">
+    <section className="bg-gradient-to-b from-white to-stone-50 py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         {/* Heading */}
 
         <div className="text-center mb-16">
 
-          <span className="uppercase tracking-[4px] text-blue-700 font-semibold">
+          <span className="uppercase tracking-[4px] text-sage-700 font-semibold">
             Why Patients Trust Us
           </span>
 
-          <h2 className="text-5xl font-bold text-slate-900 mt-4">
+          <h2 className="text-5xl font-bold text-stone-900 mt-4">
             Professional Mental Healthcare
           </h2>
 
@@ -56,11 +56,11 @@ export default function Statistics() {
               className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 text-center"
             >
 
-              <h3 className="text-5xl font-extrabold text-blue-700">
+              <h3 className="text-5xl font-extrabold text-sage-700">
                 {item.number}
               </h3>
 
-              <h4 className="mt-5 text-xl font-bold text-slate-900">
+              <h4 className="mt-5 text-xl font-bold text-stone-900">
                 {item.title}
               </h4>
 

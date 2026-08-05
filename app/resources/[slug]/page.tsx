@@ -91,26 +91,26 @@ export default async function ResourceDetailPage({
   };
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900 print:bg-white">
+    <main className="min-h-screen bg-stone-50 text-stone-900 print:bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       <section className="bg-white print:hidden">
         <div className="mx-auto max-w-3xl px-6 pb-8 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/resources" className="font-semibold text-blue-700">
+          <Link href="/resources" className="font-semibold text-sage-700">
             &larr; All patient resources
           </Link>
-          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
+          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
             {resource.category}
           </p>
         </div>
       </section>
 
       <article className="mx-auto max-w-3xl px-6 py-10 lg:px-8 print:py-4">
-        <h1 className="text-3xl font-bold leading-tight text-slate-950 md:text-4xl">
+        <h1 className="text-3xl font-bold leading-tight text-stone-950 md:text-4xl">
           {resource.title}
         </h1>
-        <p id="resource-quick-answer" className="mt-4 leading-8 text-slate-600">
+        <p id="resource-quick-answer" className="mt-4 leading-8 text-stone-600">
           {resource.shortDescription}
         </p>
 
@@ -118,7 +118,7 @@ export default async function ResourceDetailPage({
           <a
             href={pdfUrl}
             download
-            className="inline-flex items-center gap-2 rounded-lg bg-blue-700 px-6 py-3 font-semibold text-white transition hover:bg-blue-800"
+            className="inline-flex items-center gap-2 rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white transition hover:bg-sage-800"
           >
             <Download size={20} aria-hidden="true" />
             Download PDF
@@ -126,13 +126,13 @@ export default async function ResourceDetailPage({
           <PrintButton />
         </div>
 
-        <div className="mt-10 space-y-8 border-t border-slate-200 pt-8 print:border-slate-300">
+        <div className="mt-10 space-y-8 border-t border-stone-200 pt-8 print:border-stone-300">
           {resource.sections.map((section) => (
             <div key={section.heading}>
-              <h2 className="text-xl font-bold text-blue-950">{section.heading}</h2>
-              {section.body && <p className="mt-3 leading-7 text-slate-700">{section.body}</p>}
+              <h2 className="text-xl font-bold text-sage-950">{section.heading}</h2>
+              {section.body && <p className="mt-3 leading-7 text-stone-700">{section.body}</p>}
               {section.bullets && (
-                <ul className="mt-3 list-disc space-y-2 pl-5 text-slate-700">
+                <ul className="mt-3 list-disc space-y-2 pl-5 text-stone-700">
                   {section.bullets.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
@@ -149,14 +149,14 @@ export default async function ResourceDetailPage({
           </div>
         )}
 
-        <div className="mt-10 rounded-lg border border-slate-200 bg-slate-100 p-5 text-sm leading-6 text-slate-600 print:border-slate-300">
+        <div className="mt-10 rounded-lg border border-stone-200 bg-stone-100 p-5 text-sm leading-6 text-stone-600 print:border-stone-300">
           <p>
             This material is for patient and family education only and does
             not replace individualized medical advice. For a personal
             diagnosis or treatment plan, consult Dr. Kushal Kharel or a
             qualified mental health professional.
           </p>
-          <p className="mt-2 font-semibold text-slate-800">
+          <p className="mt-2 font-semibold text-stone-800">
             Dr. Kushal Kharel, MD Psychiatry — Consultant Psychiatrist, Kathmandu, Nepal
           </p>
           <p>Phone: +977 9861800547 · drkushalkharel@gmail.com · drkushalkharel.com.np</p>
@@ -164,7 +164,7 @@ export default async function ResourceDetailPage({
 
         {condition && (
           <div className="mt-6 print:hidden">
-            <Link href={`/conditions/${condition.slug}`} className="font-semibold text-blue-700 hover:underline">
+            <Link href={`/conditions/${condition.slug}`} className="font-semibold text-sage-700 hover:underline">
               Learn more about {condition.title} &rarr;
             </Link>
           </div>

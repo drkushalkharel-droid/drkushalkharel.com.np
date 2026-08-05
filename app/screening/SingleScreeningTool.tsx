@@ -38,16 +38,16 @@ export default function SingleScreeningTool({ tool }: { tool: ScreeningTool }) {
 
   return (
     <section className="mx-auto max-w-4xl px-6 py-14 lg:px-8">
-      <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+      <div className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
         <div className="flex flex-col justify-between gap-5 md:flex-row md:items-start">
           <div>
-            <p className="text-sm leading-6 text-slate-500">{tool.sourceNote}</p>
+            <p className="text-sm leading-6 text-stone-500">{tool.sourceNote}</p>
           </div>
-          <div className="rounded-lg bg-blue-50 p-4 text-blue-950">
+          <div className="rounded-lg bg-sage-50 p-4 text-sage-950">
             <p className="text-sm font-semibold uppercase tracking-[2px]">Result</p>
             <p className="mt-1 text-3xl font-bold">
               {totalScore}
-              <span className="text-base text-blue-800">/{tool.maxScore}</span>
+              <span className="text-base text-sage-800">/{tool.maxScore}</span>
             </p>
           </div>
         </div>
@@ -71,14 +71,14 @@ export default function SingleScreeningTool({ tool }: { tool: ScreeningTool }) {
 
         <div className="mt-8 space-y-5">
           {tool.items.map((item, index) => (
-            <div key={item.id} className="rounded-lg border border-slate-200 bg-slate-50 p-5">
+            <div key={item.id} className="rounded-lg border border-stone-200 bg-stone-50 p-5">
               <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
                 <div className="max-w-2xl">
-                  <h3 className="text-lg font-bold text-slate-950">
+                  <h3 className="text-lg font-bold text-stone-950">
                     {index + 1}. {item.label}
                   </h3>
                   {item.helper && (
-                    <p className="mt-2 text-sm leading-6 text-slate-600">{item.helper}</p>
+                    <p className="mt-2 text-sm leading-6 text-stone-600">{item.helper}</p>
                   )}
                 </div>
                 <div className="grid min-w-[260px] grid-cols-2 gap-2 sm:grid-cols-4">
@@ -89,8 +89,8 @@ export default function SingleScreeningTool({ tool }: { tool: ScreeningTool }) {
                       onClick={() => updateScore(item.id, option.value)}
                       className={`rounded-lg border px-3 py-2 text-sm font-bold transition ${
                         scores[item.id] === option.value
-                          ? "border-blue-700 bg-blue-700 text-white"
-                          : "border-slate-300 bg-white text-slate-700 hover:border-blue-500"
+                          ? "border-sage-700 bg-sage-700 text-white"
+                          : "border-stone-300 bg-white text-stone-700 hover:border-sage-500"
                       }`}
                     >
                       {option.label}
@@ -105,21 +105,21 @@ export default function SingleScreeningTool({ tool }: { tool: ScreeningTool }) {
         <button
           type="button"
           onClick={reset}
-          className="mt-6 inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 px-4 py-3 font-bold text-slate-800 transition hover:border-blue-700 hover:text-blue-700"
+          className="mt-6 inline-flex items-center justify-center gap-2 rounded-lg border border-stone-300 px-4 py-3 font-bold text-stone-800 transition hover:border-sage-700 hover:text-sage-700"
         >
           <RotateCcw size={18} aria-hidden="true" />
           Reset
         </button>
 
-        <div className="mt-8 rounded-lg bg-blue-950 p-6 text-white">
+        <div className="mt-8 rounded-lg bg-sage-950 p-6 text-white">
           <h3 className="text-2xl font-bold">Interpretation: {interpretation.label}</h3>
-          <p className="mt-3 leading-8 text-blue-100">
+          <p className="mt-3 leading-8 text-sage-100">
             {`${interpretation.guidance} Screening results are not a diagnosis. A clinical interview is needed to understand causes, severity, safety, medical factors and the best treatment plan.`}
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <a
               href="tel:+9779861800547"
-              className="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-3 font-bold text-blue-950"
+              className="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-3 font-bold text-sage-950"
             >
               <Phone size={20} aria-hidden="true" />
               Call +977 9861800547
@@ -140,7 +140,7 @@ export default function SingleScreeningTool({ tool }: { tool: ScreeningTool }) {
           <div className="mt-6 text-center">
             <Link
               href={`/conditions/${tool.relatedConditionSlug}`}
-              className="font-semibold text-blue-700 hover:underline"
+              className="font-semibold text-sage-700 hover:underline"
             >
               Learn more about this condition &rarr;
             </Link>

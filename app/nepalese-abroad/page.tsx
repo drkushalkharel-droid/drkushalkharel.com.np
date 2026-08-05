@@ -126,7 +126,7 @@ export default function NepaleseAbroadHubPage() {
   });
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main className="min-h-screen bg-stone-50 text-stone-900">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
@@ -134,16 +134,16 @@ export default function NepaleseAbroadHubPage() {
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/" className="font-semibold text-blue-700">
+          <Link href="/" className="font-semibold text-sage-700">
             &larr; Back to home
           </Link>
-          <span className="mt-8 flex h-14 w-14 items-center justify-center rounded-full bg-blue-100 text-blue-800">
+          <span className="mt-8 flex h-14 w-14 items-center justify-center rounded-full bg-sage-100 text-sage-800">
             <Globe2 size={26} aria-hidden="true" />
           </span>
-          <h1 className="mt-6 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
+          <h1 className="mt-6 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
             Online psychiatric consultation for Nepalese living abroad
           </h1>
-          <p id="abroad-hub-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+          <p id="abroad-hub-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             Nepalese students, workers and families abroad can book a
             confidential online psychiatric consultation with Dr. Kushal
             Kharel, in Nepali or English, for anxiety, depression, addiction,
@@ -152,7 +152,7 @@ export default function NepaleseAbroadHubPage() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="tel:+9779861800547"
-              className="inline-flex items-center gap-3 rounded-lg bg-blue-700 px-6 py-3 font-bold text-white transition hover:bg-blue-800"
+              className="inline-flex items-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800"
             >
               <Phone size={20} aria-hidden="true" />
               Call +977 9861800547
@@ -170,8 +170,8 @@ export default function NepaleseAbroadHubPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
-        <h2 className="text-3xl font-bold text-slate-950">Find guidance for your country</h2>
-        <p className="mt-4 max-w-3xl leading-8 text-slate-600">
+        <h2 className="text-3xl font-bold text-stone-950">Find guidance for your country</h2>
+        <p className="mt-4 max-w-3xl leading-8 text-stone-600">
           Each guide below covers common mental health concerns for Nepalese
           in that country and how to get in touch.
         </p>
@@ -180,11 +180,11 @@ export default function NepaleseAbroadHubPage() {
             <Link
               key={guide.slug}
               href={`/nepalese-abroad/${guide.slug}`}
-              className="block rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-md"
+              className="block rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
             >
-              <p className="text-sm font-semibold uppercase tracking-[2px] text-blue-700">{guide.region}</p>
-              <h3 className="mt-4 text-2xl font-bold text-slate-950">{guide.country}</h3>
-              <p className="mt-3 leading-7 text-slate-600">{guide.headline}</p>
+              <p className="text-sm font-semibold uppercase tracking-[2px] text-sage-700">{guide.region}</p>
+              <h3 className="mt-4 text-2xl font-bold text-stone-950">{guide.country}</h3>
+              <p className="mt-3 leading-7 text-stone-600">{guide.headline}</p>
             </Link>
           ))}
         </div>
@@ -192,28 +192,28 @@ export default function NepaleseAbroadHubPage() {
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
-          <h2 className="text-3xl font-bold text-slate-950">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-stone-950">Frequently Asked Questions</h2>
           <div className="mt-8 space-y-5">
             {faqs.map((faq) => (
-              <div key={faq.question} className="rounded-lg border border-slate-200 p-5">
-                <h3 className="font-bold text-blue-950">{faq.question}</h3>
-                <p className="mt-2 leading-7 text-slate-700">{faq.answer}</p>
+              <div key={faq.question} className="rounded-lg border border-stone-200 p-5">
+                <h3 className="font-bold text-sage-950">{faq.question}</h3>
+                <p className="mt-2 leading-7 text-stone-700">{faq.answer}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-blue-950 py-16 text-white">
+      <section className="bg-sage-950 py-16 text-white">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
           <h2 className="text-3xl font-bold">Nepali patient outside Nepal?</h2>
-          <p className="mt-4 text-lg leading-8 text-blue-100">
+          <p className="mt-4 text-lg leading-8 text-sage-100">
             Call or message Dr. Kushal Kharel for guidance. Urgent safety
             issues should be handled through local emergency services first.
           </p>
           <a
             href="tel:+9779861800547"
-            className="mt-8 inline-block rounded-lg bg-white px-8 py-4 font-semibold text-blue-950"
+            className="mt-8 inline-block rounded-lg bg-white px-8 py-4 font-semibold text-sage-950"
           >
             Call +977 9861800547
           </a>

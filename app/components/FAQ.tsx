@@ -2,6 +2,11 @@ import { HelpCircle } from "lucide-react";
 
 const faqs = [
   {
+    question: "Who is the best psychiatrist in Kathmandu?",
+    answer:
+      "There is no official ranking for 'best psychiatrist' — it's a search phrase, not a clinical credential. A reasonable way to choose is a Nepal Medical Council-registered psychiatrist with relevant experience and a communication style that fits you. Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) practicing in Kalanki, Kathmandu since 2020, offering in-person and online consultation for anxiety, depression, OCD, bipolar disorder, schizophrenia, ADHD and addiction.",
+  },
+  {
     question: "Who is a psychiatrist in Nepal?",
     answer:
       "Dr. Kushal Kharel is a Consultant Psychiatrist based in Kathmandu, Nepal, registered with the Nepal Medical Council. He provides evidence-based assessment, diagnosis, medication management and psychotherapy for children, adolescents, adults and older adults, in person and online.",
@@ -96,6 +101,21 @@ const faqs = [
     answer:
       "Patients with severe symptoms, safety concerns, a first-time complex assessment, or situations requiring physical examination are generally advised to attend in-person rather than online, to allow a more thorough evaluation.",
   },
+  {
+    question: "Is Dr. Kushal Kharel a psychiatrist or a general physician?",
+    answer:
+      "Dr. Kushal Kharel is a Consultant Psychiatrist, a medical doctor specialised in diagnosing and treating mental health conditions, not a general physician for physical illnesses, injuries or routine check-ups. If you need a general physician, this clinic can point you toward appropriate general medical care in Kathmandu instead.",
+  },
+  {
+    question: "Is this a 24-hour clinic or emergency service?",
+    answer:
+      "No. The clinic operates fixed hours: Monday to Friday, 10:00 AM to 6:00 PM, and Saturday, 10:00 AM to 4:00 PM. For a psychiatric or medical emergency outside these hours, including thoughts of self-harm, severe confusion or immediate safety risk, go to the nearest emergency department rather than waiting to call.",
+  },
+  {
+    question: "Is there a female psychiatrist or female counselor available?",
+    answer:
+      "Dr. Kushal Kharel, the psychiatrist at this clinic, is male. For patients who would feel more comfortable speaking with a woman, a qualified female counselor can be arranged as part of your care based on your preference, alongside Dr. Kharel's psychiatric assessment where relevant. Mention this when you book.",
+  },
 ];
 
 export default function FAQ() {
@@ -113,18 +133,18 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="bg-slate-50 py-24">
+    <section id="faq" className="bg-stone-50 py-24">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <div className="text-center">
-          <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
+          <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
             <HelpCircle size={16} aria-hidden="true" />
             Frequently Asked Questions
           </span>
-          <h2 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
+          <h2 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-5xl">
             Common questions about psychiatric care in Kathmandu
           </h2>
         </div>
@@ -133,10 +153,10 @@ export default function FAQ() {
           {faqs.map((faq) => (
             <article
               key={faq.question}
-              className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8"
+              className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8"
             >
-              <h3 className="text-xl font-bold text-blue-950">{faq.question}</h3>
-              <p className="mt-3 leading-8 text-slate-600">{faq.answer}</p>
+              <h3 className="text-xl font-bold text-sage-950">{faq.question}</h3>
+              <p className="mt-3 leading-8 text-stone-600">{faq.answer}</p>
             </article>
           ))}
         </div>

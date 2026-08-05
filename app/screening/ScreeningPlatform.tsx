@@ -57,7 +57,7 @@ export default function ScreeningPlatform() {
     <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
       <div className="grid gap-8 lg:grid-cols-[320px_1fr]">
         <aside className="lg:sticky lg:top-24 lg:self-start">
-          <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+          <div className="rounded-lg border border-stone-200 bg-white p-4 shadow-sm">
             <div className="grid gap-2">
               {screeningTools.map((tool) => (
                 <button
@@ -66,8 +66,8 @@ export default function ScreeningPlatform() {
                   onClick={() => setActiveId(tool.id)}
                   className={`rounded-lg px-4 py-3 text-left font-bold transition ${
                     tool.id === activeTool.id
-                      ? "bg-blue-700 text-white"
-                      : "bg-slate-50 text-slate-800 hover:bg-blue-50"
+                      ? "bg-sage-700 text-white"
+                      : "bg-stone-50 text-stone-800 hover:bg-sage-50"
                   }`}
                 >
                   {tool.shortTitle}
@@ -75,18 +75,18 @@ export default function ScreeningPlatform() {
               ))}
             </div>
 
-            <div className="mt-5 rounded-lg bg-slate-50 p-4">
-              <p className="text-sm font-semibold uppercase tracking-[2px] text-slate-500">
+            <div className="mt-5 rounded-lg bg-stone-50 p-4">
+              <p className="text-sm font-semibold uppercase tracking-[2px] text-stone-500">
                 Current score
               </p>
-              <p className="mt-2 text-5xl font-bold text-blue-950">
+              <p className="mt-2 text-5xl font-bold text-sage-950">
                 {totalScore}
-                <span className="text-xl text-slate-500">/{activeTool.maxScore}</span>
+                <span className="text-xl text-stone-500">/{activeTool.maxScore}</span>
               </p>
-              <p className="mt-3 font-bold text-slate-950">
+              <p className="mt-3 font-bold text-stone-950">
                 {interpretation.label}
               </p>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
+              <p className="mt-2 text-sm leading-6 text-stone-600">
                 {interpretation.guidance}
               </p>
             </div>
@@ -94,7 +94,7 @@ export default function ScreeningPlatform() {
             <button
               type="button"
               onClick={resetTool}
-              className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-slate-300 px-4 py-3 font-bold text-slate-800 transition hover:border-blue-700 hover:text-blue-700"
+              className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-stone-300 px-4 py-3 font-bold text-stone-800 transition hover:border-sage-700 hover:text-sage-700"
             >
               <RotateCcw size={18} aria-hidden="true" />
               Reset this tool
@@ -102,20 +102,20 @@ export default function ScreeningPlatform() {
           </div>
         </aside>
 
-        <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+        <section className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
           <div className="flex flex-col justify-between gap-5 md:flex-row md:items-start">
             <div>
-              <h2 className="text-3xl font-bold text-slate-950">
+              <h2 className="text-3xl font-bold text-stone-950">
                 {activeTool.title}
               </h2>
-              <p className="mt-4 max-w-3xl leading-8 text-slate-600">
+              <p className="mt-4 max-w-3xl leading-8 text-stone-600">
                 {activeTool.description}
               </p>
-              <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-500">
+              <p className="mt-3 max-w-3xl text-sm leading-6 text-stone-500">
                 {activeTool.sourceNote}
               </p>
             </div>
-            <div className="rounded-lg bg-blue-50 p-4 text-blue-950">
+            <div className="rounded-lg bg-sage-50 p-4 text-sage-950">
               <p className="text-sm font-semibold uppercase tracking-[2px]">
                 Result
               </p>
@@ -144,15 +144,15 @@ export default function ScreeningPlatform() {
             {activeTool.items.map((item, index) => (
               <div
                 key={item.id}
-                className="rounded-lg border border-slate-200 bg-slate-50 p-5"
+                className="rounded-lg border border-stone-200 bg-stone-50 p-5"
               >
                 <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
                   <div className="max-w-2xl">
-                    <h3 className="text-lg font-bold text-slate-950">
+                    <h3 className="text-lg font-bold text-stone-950">
                       {index + 1}. {item.label}
                     </h3>
                     {item.helper && (
-                      <p className="mt-2 text-sm leading-6 text-slate-600">
+                      <p className="mt-2 text-sm leading-6 text-stone-600">
                         {item.helper}
                       </p>
                     )}
@@ -165,8 +165,8 @@ export default function ScreeningPlatform() {
                         onClick={() => updateScore(item.id, option.value)}
                         className={`rounded-lg border px-3 py-2 text-sm font-bold transition ${
                           currentScores[item.id] === option.value
-                            ? "border-blue-700 bg-blue-700 text-white"
-                            : "border-slate-300 bg-white text-slate-700 hover:border-blue-500"
+                            ? "border-sage-700 bg-sage-700 text-white"
+                            : "border-stone-300 bg-white text-stone-700 hover:border-sage-500"
                         }`}
                       >
                         {option.label}
@@ -178,17 +178,17 @@ export default function ScreeningPlatform() {
             ))}
           </div>
 
-          <div className="mt-8 rounded-lg bg-blue-950 p-6 text-white">
+          <div className="mt-8 rounded-lg bg-sage-950 p-6 text-white">
             <h3 className="text-2xl font-bold">
               Interpretation: {interpretation.label}
             </h3>
-            <p className="mt-3 leading-8 text-blue-100">
+            <p className="mt-3 leading-8 text-sage-100">
               {`${interpretation.guidance} Screening results are not a diagnosis. A clinical interview is needed to understand causes, severity, safety, medical factors and the best treatment plan.`}
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <a
                 href="tel:+9779861800547"
-                className="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-3 font-bold text-blue-950"
+                className="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-3 font-bold text-sage-950"
               >
                 <Phone size={20} aria-hidden="true" />
                 Call +977 9861800547

@@ -97,6 +97,13 @@ export async function generateMetadata({
       locale: isBilingual ? "en_NP" : "ne_NP",
       type: "article",
     },
+    twitter: {
+      card: "summary_large_image",
+      title: seoTitle,
+      description: article.description,
+      images: ["/images/doctor.png"],
+      creator: "@Drkushalpsych",
+    },
   };
 }
 
@@ -112,25 +119,59 @@ export default async function KnowledgeArticlePage({
     notFound();
   }
 
+  const faqs = [
+    [
+      "When should I see a psychiatrist for this issue?",
+      "Seek a psychiatric assessment when symptoms persist, interfere with daily life, or involve safety concerns. Early review can make treatment more effective."
+    ],
+    [
+      "Is online consultation available?",
+      "Yes. Online consultation can be appropriate for selected follow-up appointments, medication reviews and psychoeducation, but urgent safety concerns should be managed in person."
+    ],
+    [
+      "Will I definitely need medication?",
+      "Not always. Treatment is individualised and may include therapy, lifestyle support or medication depending on the person’s symptoms and needs."
+    ],
+    [
+      "Can this condition be treated in Nepal?",
+      "Many people benefit from evidence-based psychiatric care in Nepal. Treatment options include therapy, medication and practical support tailored to local needs."
+    ],
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    name: article.title,
-    description: article.description,
-    url: `${siteUrl}/knowledge/${article.slug}`,
-    inLanguage: article.language === "Bilingual" ? ["en", "ne"] : "ne",
-    about: {
-      "@type": "MedicalCondition",
-      name: article.title,
-    },
-    medicalAudience: ["Patient", "Caregiver"],
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-    },
-    dateModified: lastReviewed,
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        name: article.title,
+        description: article.description,
+        url: `${siteUrl}/knowledge/${article.slug}`,
+        inLanguage: article.language === "Bilingual" ? ["en", "ne"] : "ne",
+        about: {
+          "@type": "MedicalCondition",
+          name: article.title,
+        },
+        medicalAudience: ["Patient", "Caregiver"],
+        reviewedBy: {
+          "@type": "Physician",
+          name: "Dr. Kushal Kharel",
+          medicalSpecialty: "Psychiatry",
+          telephone: "+9779861800547",
+        },
+        dateModified: lastReviewed,
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqs.map(([question, answer]) => ({
+          "@type": "Question",
+          name: question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: answer,
+          },
+        })),
+      },
+    ],
   };
 
   const breadcrumbJsonLd = {
@@ -144,7 +185,7 @@ export default async function KnowledgeArticlePage({
   };
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main className="min-h-screen bg-stone-50 text-stone-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -156,22 +197,22 @@ export default async function KnowledgeArticlePage({
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-12 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/knowledge" className="font-semibold text-blue-700">
+          <Link href="/knowledge" className="font-semibold text-sage-700">
             Back to articles
           </Link>
-          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
+          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
             {article.language === "Bilingual" ? "English & नेपाली Patient Guide" : "Nepali Patient Guide"}
           </p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
             {article.title}
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             {article.description}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="tel:+9779861800547"
-              className="rounded-lg bg-blue-700 px-6 py-3 font-semibold text-white transition hover:bg-blue-800"
+              className="rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white transition hover:bg-sage-800"
             >
               Book Appointment
             </a>
@@ -189,14 +230,14 @@ export default async function KnowledgeArticlePage({
 
       <article className="mx-auto grid max-w-7xl gap-10 px-6 py-14 lg:grid-cols-[280px_1fr] lg:px-8">
         <aside className="lg:sticky lg:top-24 lg:self-start">
-          <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-            <h2 className="font-bold text-slate-950">विषयसूची</h2>
+          <div className="rounded-lg border border-stone-200 bg-white p-5 shadow-sm">
+            <h2 className="font-bold text-stone-950">विषयसूची</h2>
             <nav className="mt-4 space-y-2">
               {article.sections.map((section, index) => (
                 <a
                   key={section.heading}
                   href={`#section-${index + 1}`}
-                  className="block rounded-md px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700"
+                  className="block rounded-md px-3 py-2 text-sm font-semibold text-stone-600 transition hover:bg-sage-50 hover:text-sage-700"
                 >
                   {section.heading}
                 </a>
@@ -212,22 +253,22 @@ export default async function KnowledgeArticlePage({
             लागि मनोचिकित्सकसँग प्रत्यक्ष परामर्श गर्नुहोस्।
           </div>
 
-          <div className="rounded-lg border border-blue-200 bg-blue-50 p-5 text-sm leading-7 text-blue-950">
+          <div className="rounded-lg border border-sage-200 bg-sage-50 p-5 text-sm leading-7 text-sage-950">
             <p className="font-bold">Medically reviewed by Dr. Kushal Kharel, MD Psychiatry</p>
             <p className="mt-1">Consultant Psychiatrist · Nepal Medical Council registered · Last reviewed July 20, 2026</p>
-            <Link href="/medical-disclaimer" className="mt-2 inline-block font-semibold text-blue-800 underline">Read the medical information disclaimer</Link>
+            <Link href="/medical-disclaimer" className="mt-2 inline-block font-semibold text-sage-800 underline">Read the medical information disclaimer</Link>
           </div>
 
           {article.sections.map((section, index) => (
             <section
               key={section.heading}
               id={`section-${index + 1}`}
-              className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8"
+              className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8"
             >
-              <h2 className="text-3xl font-bold text-blue-950">
+              <h2 className="text-3xl font-bold text-sage-950">
                 {section.heading}
               </h2>
-              <div className="mt-5 space-y-4 text-lg leading-9 text-slate-700">
+              <div className="mt-5 space-y-4 text-lg leading-9 text-stone-700">
                 {section.body.split("\n").map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
@@ -235,9 +276,9 @@ export default async function KnowledgeArticlePage({
             </section>
           ))}
 
-          <section className="rounded-lg bg-blue-950 p-8 text-white">
+          <section className="rounded-lg bg-sage-950 p-8 text-white">
             <h2 className="text-3xl font-bold">Need professional help?</h2>
-            <p className="mt-4 max-w-3xl leading-8 text-blue-100">
+            <p className="mt-4 max-w-3xl leading-8 text-sage-100">
               If symptoms are affecting sleep, study, work, relationships,
               safety or daily functioning, a psychiatric assessment can help
               clarify the diagnosis and treatment plan.
@@ -245,7 +286,7 @@ export default async function KnowledgeArticlePage({
             <div className="mt-6 flex flex-wrap gap-4">
               <a
                 href="tel:+9779861800547"
-                className="rounded-lg bg-white px-6 py-3 font-semibold text-blue-950"
+                className="rounded-lg bg-white px-6 py-3 font-semibold text-sage-950"
               >
                 +977 9861800547
               </a>

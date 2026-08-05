@@ -10,7 +10,7 @@ export default function Footer() {
       name: "Facebook",
       icon: FaFacebook,
       url: "https://facebook.com/cooshal.kharel",
-      color: "hover:text-blue-600",
+      color: "hover:text-sage-600",
     },
     {
       name: "Instagram",
@@ -22,7 +22,7 @@ export default function Footer() {
       name: "Twitter",
       icon: FaTwitter,
       url: "https://www.twitter.com/Drkushalpsych",
-      color: "hover:text-blue-400",
+      color: "hover:text-sage-400",
     },
     {
       name: "TikTok",
@@ -39,7 +39,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="contact" className="bg-slate-950 text-white">
+    <footer id="contact" className="bg-stone-950 text-white">
 
       {/* Main Footer */}
 
@@ -53,7 +53,7 @@ export default function Footer() {
             Dr. Kushal Kharel
           </h2>
 
-          <p className="text-blue-400 mt-2 font-medium">
+          <p className="text-sage-400 mt-2 font-medium">
             Consultant Psychiatrist
           </p>
 
@@ -97,6 +97,10 @@ export default function Footer() {
 
             <Link href="/" className="block hover:text-white transition">
               Home
+            </Link>
+
+            <Link href="/best-psychiatrist-nepal" className="block hover:text-white transition">
+              Best Psychiatrist in Kathmandu
             </Link>
 
             <Link href="/#about" className="block hover:text-white transition">
@@ -159,8 +163,40 @@ export default function Footer() {
               Counselling Services
             </Link>
 
+            <Link href="/couple-relationship-counseling" className="block hover:text-white transition">
+              Couple &amp; Relationship Counseling
+            </Link>
+
+            <Link href="/child-adolescent-psychiatry" className="block hover:text-white transition">
+              Child &amp; Adolescent Psychiatry
+            </Link>
+
+            <Link href="/cbt-therapist-kathmandu" className="block hover:text-white transition">
+              CBT Therapy
+            </Link>
+
+            <Link href="/erp-therapy-ocd" className="block hover:text-white transition">
+              ERP Therapy for OCD
+            </Link>
+
+            <Link href="/iq-psychological-testing" className="block hover:text-white transition">
+              IQ &amp; Psychological Testing
+            </Link>
+
+            <Link href="/medical-fitness-certificate" className="block hover:text-white transition">
+              Medical &amp; Fitness Certificates
+            </Link>
+
+            <Link href="/female-counselor-kathmandu" className="block hover:text-white transition">
+              Female Counselor
+            </Link>
+
             <Link href="/resources" className="block hover:text-white transition">
               Patient Resources & Leaflets
+            </Link>
+
+            <Link href="/blog" className="block hover:text-white transition">
+              Blog
             </Link>
 
           </div>
@@ -218,7 +254,7 @@ export default function Footer() {
                 href={googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-flex items-center gap-2 font-semibold text-blue-400 hover:text-white transition"
+                className="mt-3 inline-flex items-center gap-2 font-semibold text-sage-400 hover:text-white transition"
               >
                 <MapPin size={16} aria-hidden="true" />
                 Get Directions

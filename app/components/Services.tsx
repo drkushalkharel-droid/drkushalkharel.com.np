@@ -59,7 +59,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-slate-50">
+    <section id="services" className="py-24 bg-stone-50">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
@@ -67,11 +67,11 @@ export default function Services() {
 
         <div className="text-center max-w-3xl mx-auto">
 
-          <span className="text-blue-700 uppercase tracking-[4px] font-semibold">
+          <span className="text-sage-700 uppercase tracking-[4px] font-semibold">
             Our Services
           </span>
 
-          <h2 className="text-5xl font-bold text-slate-900 mt-4">
+          <h2 className="text-5xl font-bold text-stone-900 mt-4">
             Comprehensive Psychiatric Services
           </h2>
 
@@ -94,13 +94,13 @@ export default function Services() {
               className="bg-white rounded-3xl p-8 shadow-lg transition-all duration-300 border border-gray-100 hover-lift"
             >
 
-              <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-4xl">
+              <div className="w-16 h-16 rounded-2xl bg-sage-100 flex items-center justify-center text-4xl">
 
                 {service.icon}
 
               </div>
 
-              <h3 className="mt-6 text-2xl font-bold text-blue-900">
+              <h3 className="mt-6 text-2xl font-bold text-sage-900">
 
                 {service.title}
 
@@ -120,7 +120,7 @@ export default function Services() {
 
         {/* Bottom CTA */}
 
-        <div className="mt-20 bg-gradient-to-r from-blue-900 to-blue-700 rounded-3xl p-12 text-center text-white">
+        <div className="mt-20 bg-gradient-to-r from-sage-900 to-sage-700 rounded-3xl p-12 text-center text-white">
 
           <h3 className="text-4xl font-bold">
 
@@ -128,7 +128,7 @@ export default function Services() {
 
           </h3>
 
-          <p className="mt-5 text-lg text-blue-100 max-w-3xl mx-auto">
+          <p className="mt-5 text-lg text-sage-100 max-w-3xl mx-auto">
 
             Whether you are experiencing anxiety, depression, stress,
             addiction or any other mental health concern, we are here to
@@ -140,7 +140,7 @@ export default function Services() {
 
             <a
               href="tel:+9779861800547"
-              className="inline-flex items-center gap-3 bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold hover:scale-105 transition call-pulse"
+              className="inline-flex items-center gap-3 bg-white text-sage-900 px-8 py-4 rounded-xl font-semibold hover:scale-105 transition call-pulse"
             >
               <Phone size={22} aria-hidden="true" />
               Call Now: +977 9861800547
@@ -150,7 +150,7 @@ export default function Services() {
               href="https://wa.me/9779861800547"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 border-2 border-white px-8 py-4 rounded-xl hover:bg-white hover:text-blue-900 transition"
+              className="inline-flex items-center gap-3 border-2 border-white px-8 py-4 rounded-xl hover:bg-white hover:text-sage-900 transition"
             >
               <MessageCircle size={22} aria-hidden="true" />
               WhatsApp Consultation

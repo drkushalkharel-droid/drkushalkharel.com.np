@@ -174,7 +174,7 @@ export default async function ConditionPage({
     : null;
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900">
+    <main className="min-h-screen bg-stone-50 text-stone-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -189,20 +189,20 @@ export default async function ConditionPage({
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-12 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/conditions" className="font-semibold text-blue-700">
+          <Link href="/conditions" className="font-semibold text-sage-700">
             &larr; Conditions Library
           </Link>
-          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-blue-700">
+          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
             {condition.category}
           </p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
             {condition.title}
           </h1>
-          <p id="cond-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+          <p id="cond-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             {condition.shortDescription}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a href="tel:+9779861800547" className="rounded-lg bg-blue-700 px-6 py-3 font-semibold text-white transition hover:bg-blue-800">
+            <a href="tel:+9779861800547" className="rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white transition hover:bg-sage-800">
               Book Appointment
             </a>
             <a
@@ -219,14 +219,14 @@ export default async function ConditionPage({
 
       <article className="mx-auto grid max-w-7xl gap-10 px-6 py-14 lg:grid-cols-[280px_1fr] lg:px-8">
         <aside className="lg:sticky lg:top-24 lg:self-start">
-          <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-            <h2 className="font-bold text-slate-950">On this page</h2>
+          <div className="rounded-lg border border-stone-200 bg-white p-5 shadow-sm">
+            <h2 className="font-bold text-stone-950">On this page</h2>
             <nav className="mt-4 max-h-[70vh] space-y-1 overflow-y-auto">
               {toc.map((item) => (
                 <a
                   key={item.id}
                   href={`#${item.id}`}
-                  className="block rounded-md px-3 py-1.5 text-sm font-semibold text-slate-600 transition hover:bg-blue-50 hover:text-blue-700"
+                  className="block rounded-md px-3 py-1.5 text-sm font-semibold text-stone-600 transition hover:bg-sage-50 hover:text-sage-700"
                 >
                   {item.label}
                 </a>
@@ -243,21 +243,21 @@ export default async function ConditionPage({
             mental health professional directly.
           </div>
 
-          <div className="rounded-lg border border-blue-200 bg-blue-50 p-6 md:p-8">
-            <h2 className="text-xl font-bold uppercase tracking-[2px] text-blue-800">Key Facts</h2>
-            <p className="mt-3 leading-7 text-slate-700">{quickFacts.extendedSummary}</p>
+          <div className="rounded-lg border border-sage-200 bg-sage-50 p-6 md:p-8">
+            <h2 className="text-xl font-bold uppercase tracking-[2px] text-sage-800">Key Facts</h2>
+            <p className="mt-3 leading-7 text-stone-700">{quickFacts.extendedSummary}</p>
             <div className="mt-5 grid gap-6 sm:grid-cols-2">
               <div>
-                <h3 className="font-bold text-blue-950">Common symptoms</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">
+                <h3 className="font-bold text-sage-950">Common symptoms</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-stone-700">
                   {quickFacts.keySymptoms.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-blue-950">Key risk factors</h3>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">
+                <h3 className="font-bold text-sage-950">Key risk factors</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-stone-700">
                   {quickFacts.keyRiskFactors.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
@@ -284,14 +284,14 @@ export default async function ConditionPage({
           )}
 
           {relatedResources.length > 0 && (
-            <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="font-bold text-blue-950">Downloadable resources</p>
+            <div className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm">
+              <p className="font-bold text-sage-950">Downloadable resources</p>
               <div className="mt-3 flex flex-wrap gap-3">
                 {relatedResources.map((resource) => (
                   <Link
                     key={resource.slug}
                     href={`/resources/${resource.slug}`}
-                    className="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-900 transition hover:border-blue-400 hover:bg-blue-100"
+                    className="rounded-full border border-sage-200 bg-sage-50 px-4 py-2 text-sm font-semibold text-sage-900 transition hover:border-sage-400 hover:bg-sage-100"
                   >
                     {resource.title}
                   </Link>
@@ -341,13 +341,13 @@ export default async function ConditionPage({
           </Section>
 
           <Section id="differential-diagnosis" title="Differential Diagnosis">
-            <p className="mb-4 text-base text-slate-500">
+            <p className="mb-4 text-base text-stone-500">
               Conditions a psychiatrist will consider and rule out before confirming this diagnosis:
             </p>
             <dl className="space-y-4">
               {condition.differentialDiagnosis.map((item) => (
                 <div key={item.name}>
-                  <dt className="font-bold text-blue-950">{item.name}</dt>
+                  <dt className="font-bold text-sage-950">{item.name}</dt>
                   <dd className="mt-1">{item.note}</dd>
                 </div>
               ))}
@@ -367,9 +367,9 @@ export default async function ConditionPage({
           </Section>
 
           <Section id="treatment-at-a-glance" title="Treatment at a Glance">
-            <div className="overflow-x-auto rounded-lg border border-slate-200">
+            <div className="overflow-x-auto rounded-lg border border-stone-200">
               <table className="w-full min-w-[560px] text-left text-base">
-                <thead className="bg-slate-100 text-slate-700">
+                <thead className="bg-stone-100 text-stone-700">
                   <tr>
                     <th className="px-4 py-3 font-bold">Type</th>
                     <th className="px-4 py-3 font-bold">Approach</th>
@@ -378,17 +378,17 @@ export default async function ConditionPage({
                 </thead>
                 <tbody>
                   {condition.medications.map((item) => (
-                    <tr key={`med-${item.name}`} className="border-t border-slate-200 odd:bg-white even:bg-slate-50">
-                      <td className="px-4 py-3 font-semibold text-blue-950">Medication</td>
+                    <tr key={`med-${item.name}`} className="border-t border-stone-200 odd:bg-white even:bg-stone-50">
+                      <td className="px-4 py-3 font-semibold text-sage-950">Medication</td>
                       <td className="px-4 py-3">{item.name}</td>
-                      <td className="px-4 py-3 text-slate-600">{item.note}</td>
+                      <td className="px-4 py-3 text-stone-600">{item.note}</td>
                     </tr>
                   ))}
                   {condition.psychotherapy.map((item) => (
-                    <tr key={`psy-${item.name}`} className="border-t border-slate-200 odd:bg-white even:bg-slate-50">
-                      <td className="px-4 py-3 font-semibold text-blue-950">Psychotherapy</td>
+                    <tr key={`psy-${item.name}`} className="border-t border-stone-200 odd:bg-white even:bg-stone-50">
+                      <td className="px-4 py-3 font-semibold text-sage-950">Psychotherapy</td>
                       <td className="px-4 py-3">{item.name}</td>
-                      <td className="px-4 py-3 text-slate-600">{item.note}</td>
+                      <td className="px-4 py-3 text-stone-600">{item.note}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -400,7 +400,7 @@ export default async function ConditionPage({
             <dl className="space-y-4">
               {condition.medications.map((item) => (
                 <div key={item.name}>
-                  <dt className="font-bold text-blue-950">{item.name}</dt>
+                  <dt className="font-bold text-sage-950">{item.name}</dt>
                   <dd className="mt-1">{item.note}</dd>
                 </div>
               ))}
@@ -411,7 +411,7 @@ export default async function ConditionPage({
             <dl className="space-y-4">
               {condition.psychotherapy.map((item) => (
                 <div key={item.name}>
-                  <dt className="font-bold text-blue-950">{item.name}</dt>
+                  <dt className="font-bold text-sage-950">{item.name}</dt>
                   <dd className="mt-1">{item.note}</dd>
                 </div>
               ))}
@@ -447,8 +447,8 @@ export default async function ConditionPage({
               <p>{condition.howTo.description}</p>
               <ol className="mt-4 space-y-4">
                 {condition.howTo.steps.map((step, index) => (
-                  <li key={step.name} className="rounded-lg border border-slate-200 p-4">
-                    <p className="font-bold text-blue-950">
+                  <li key={step.name} className="rounded-lg border border-stone-200 p-4">
+                    <p className="font-bold text-sage-950">
                       Step {index + 1}: {step.name}
                     </p>
                     <p className="mt-1">{step.text}</p>
@@ -462,7 +462,7 @@ export default async function ConditionPage({
             <div className="space-y-5">
               {condition.faqs.map((faq) => (
                 <div key={faq.question}>
-                  <h3 className="font-bold text-blue-950">{faq.question}</h3>
+                  <h3 className="font-bold text-sage-950">{faq.question}</h3>
                   <p className="mt-1">{faq.answer}</p>
                 </div>
               ))}
@@ -472,7 +472,7 @@ export default async function ConditionPage({
           <Section id="myth-vs-fact" title="Myth vs Fact">
             <div className="space-y-4">
               {condition.mythsVsFacts.map((item) => (
-                <div key={item.myth} className="rounded-lg border border-slate-200 p-4">
+                <div key={item.myth} className="rounded-lg border border-stone-200 p-4">
                   <p><span className="font-bold text-red-700">Myth: </span>{item.myth}</p>
                   <p className="mt-2"><span className="font-bold text-green-700">Fact: </span>{item.fact}</p>
                 </div>
@@ -494,8 +494,8 @@ export default async function ConditionPage({
           </Section>
 
           {relatedConditions.length > 0 && (
-            <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-3xl font-bold text-blue-950">
+            <section className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+              <h2 className="text-3xl font-bold text-sage-950">
                 Related {condition.category}
               </h2>
               <div className="mt-5 grid gap-3 sm:grid-cols-2">
@@ -503,7 +503,7 @@ export default async function ConditionPage({
                   <Link
                     key={item.slug}
                     href={`/conditions/${item.slug}`}
-                    className="rounded-lg border border-slate-200 p-4 font-semibold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50"
+                    className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50"
                   >
                     {item.title}
                   </Link>
@@ -512,15 +512,15 @@ export default async function ConditionPage({
             </section>
           )}
 
-          <section className="rounded-lg bg-blue-950 p-8 text-white">
+          <section className="rounded-lg bg-sage-950 p-8 text-white">
             <h2 className="text-3xl font-bold">Need professional help?</h2>
-            <p className="mt-4 max-w-3xl leading-8 text-blue-100">
+            <p className="mt-4 max-w-3xl leading-8 text-sage-100">
               If these symptoms are affecting your sleep, work, relationships or
               daily functioning, a psychiatric assessment can help clarify the
               diagnosis and treatment plan.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <a href="tel:+9779861800547" className="rounded-lg bg-white px-6 py-3 font-semibold text-blue-950">
+              <a href="tel:+9779861800547" className="rounded-lg bg-white px-6 py-3 font-semibold text-sage-950">
                 +977 9861800547
               </a>
               <Link href="/conditions" className="rounded-lg border border-white/50 px-6 py-3 font-semibold text-white">
@@ -544,9 +544,9 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <section id={id} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-      <h2 className="text-3xl font-bold text-blue-950">{title}</h2>
-      <div className="mt-5 space-y-4 text-lg leading-9 text-slate-700">{children}</div>
+    <section id={id} className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+      <h2 className="text-3xl font-bold text-sage-950">{title}</h2>
+      <div className="mt-5 space-y-4 text-lg leading-9 text-stone-700">{children}</div>
     </section>
   );
 }

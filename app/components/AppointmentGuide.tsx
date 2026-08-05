@@ -93,10 +93,10 @@ export default function AppointmentGuide() {
       />
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-[4px] text-blue-700">
+          <span className="text-sm font-semibold uppercase tracking-[4px] text-sage-700">
             Booking a Consultation
           </span>
-          <h2 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
+          <h2 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-5xl">
             How to book and prepare for your visit
           </h2>
         </div>
@@ -105,19 +105,19 @@ export default function AppointmentGuide() {
           {guides.map((guide) => {
             const Icon = guide.icon;
             return (
-              <div key={guide.id} className="rounded-lg border border-slate-200 p-6 shadow-sm md:p-8">
-                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-800">
+              <div key={guide.id} className="rounded-lg border border-stone-200 p-6 shadow-sm md:p-8">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-sage-100 text-sage-800">
                   <Icon size={22} aria-hidden="true" />
                 </span>
-                <h3 className="mt-4 text-2xl font-bold text-blue-950">{guide.name}</h3>
-                <p className="mt-2 leading-7 text-slate-600">{guide.description}</p>
+                <h3 className="mt-4 text-2xl font-bold text-sage-950">{guide.name}</h3>
+                <p className="mt-2 leading-7 text-stone-600">{guide.description}</p>
                 <ol className="mt-5 space-y-4">
                   {guide.steps.map((step, index) => (
-                    <li key={step.name} className="rounded-lg bg-slate-50 p-4">
-                      <p className="font-bold text-slate-900">
+                    <li key={step.name} className="rounded-lg bg-stone-50 p-4">
+                      <p className="font-bold text-stone-900">
                         Step {index + 1}: {step.name}
                       </p>
-                      <p className="mt-1 text-slate-600">{step.text}</p>
+                      <p className="mt-1 text-stone-600">{step.text}</p>
                     </li>
                   ))}
                 </ol>

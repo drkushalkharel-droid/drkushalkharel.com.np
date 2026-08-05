@@ -58,15 +58,15 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
   const isEnglish = lang === "en";
 
   return (
-    <main lang={isEnglish ? "en" : "ne"} className="min-h-screen bg-slate-50 text-slate-900">
-      <section className="bg-slate-950 text-white">
+    <main lang={isEnglish ? "en" : "ne"} className="min-h-screen bg-stone-50 text-stone-900">
+      <section className="bg-stone-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-16 pt-28 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:pb-20 lg:pt-32">
           <div>
             <div className="mb-8 inline-flex rounded-full border border-white/15 bg-white/10 p-1">
               <Link
                 href="/anxiety"
                 className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
-                  isEnglish ? "bg-white text-slate-950" : "text-white/80"
+                  isEnglish ? "bg-white text-stone-950" : "text-white/80"
                 }`}
               >
                 English
@@ -74,14 +74,14 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
               <Link
                 href="/anxiety/np"
                 className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
-                  !isEnglish ? "bg-white text-slate-950" : "text-white/80"
+                  !isEnglish ? "bg-white text-stone-950" : "text-white/80"
                 }`}
               >
                 नेपाली
               </Link>
             </div>
 
-            <p className="text-sm font-semibold uppercase tracking-[3px] text-cyan-200">
+            <p className="text-sm font-semibold uppercase tracking-[3px] text-clay-200">
               {isEnglish ? "Patient Guide" : "बिरामीका लागि जानकारी"}
             </p>
             <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
@@ -89,7 +89,7 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
                 ? "Anxiety Disorders: Symptoms, Treatment and Recovery"
                 : "चिन्ता विकार: लक्षण, उपचार र सुधार"}
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-200">
               {isEnglish
                 ? "Anxiety is treatable. This guide explains when normal worry becomes a disorder, what symptoms to watch for, and how professional psychiatric care can help you recover."
                 : "चिन्ता उपचार गर्न सकिने समस्या हो। यो लेखले सामान्य चिन्ता कहिले विकार बन्छ, कुन लक्षणमा ध्यान दिने र विशेषज्ञ उपचारले कसरी मद्दत गर्छ भन्ने सरल रूपमा बुझाउँछ।"}
@@ -98,7 +98,7 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
             <div className="mt-9 flex flex-wrap gap-4">
               <a
                 href="tel:+9779861800547"
-                className="rounded-lg bg-white px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-100"
+                className="rounded-lg bg-white px-6 py-3 font-semibold text-stone-950 transition hover:bg-clay-100"
               >
                 {isEnglish ? "Book Appointment" : "भेटघाट बुक गर्नुहोस्"}
               </a>
@@ -106,7 +106,7 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
                 href="https://wa.me/9779861800547"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg border border-white/50 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-950"
+                className="rounded-lg border border-white/50 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-stone-950"
               >
                 WhatsApp
               </a>
@@ -128,13 +128,13 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
         </div>
       </section>
 
-      <nav className="border-b border-slate-200 bg-white">
+      <nav className="border-b border-stone-200 bg-white">
         <div className="mx-auto flex max-w-7xl gap-3 overflow-x-auto px-6 py-4 lg:px-8">
           {sections.map((section) => (
             <a
               key={section.id}
               href={`#${section.id}`}
-              className="whitespace-nowrap rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-blue-700 hover:text-blue-700"
+              className="whitespace-nowrap rounded-full border border-stone-200 px-4 py-2 text-sm font-semibold text-stone-700 transition hover:border-sage-700 hover:text-sage-700"
             >
               {isEnglish ? section.en : section.np}
             </a>
@@ -161,8 +161,8 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
           <h2 className="text-3xl font-bold">{isEnglish ? "Common symptoms" : "सामान्य लक्षणहरू"}</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {symptoms.map(([en, np]) => (
-              <div key={en} className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-                <p className="font-semibold text-slate-800">{isEnglish ? en : np}</p>
+              <div key={en} className="rounded-lg border border-stone-200 bg-white p-5 shadow-sm">
+                <p className="font-semibold text-stone-800">{isEnglish ? en : np}</p>
               </div>
             ))}
           </div>
@@ -178,8 +178,8 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
               ["Phobias", "विशेष वस्तु, ठाउँ वा अवस्थाप्रति अत्यधिक डर"],
             ].map(([title, desc]) => (
               <div key={title}>
-                <h3 className="text-xl font-bold text-blue-900">{title}</h3>
-                <p className="mt-2 leading-7 text-slate-600">{desc}</p>
+                <h3 className="text-xl font-bold text-sage-900">{title}</h3>
+                <p className="mt-2 leading-7 text-stone-600">{desc}</p>
               </div>
             ))}
           </div>
@@ -189,15 +189,15 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
           <h2 className="text-3xl font-bold">{isEnglish ? "Treatment options" : "उपचारका विकल्प"}</h2>
           <div className="mt-6 grid gap-5">
             {treatments.map((item) => (
-              <div key={item.en} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-                <h3 className="text-2xl font-bold text-blue-900">{isEnglish ? item.en : item.np}</h3>
-                <p className="mt-3 leading-8 text-slate-600">{isEnglish ? item.descEn : item.descNp}</p>
+              <div key={item.en} className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm">
+                <h3 className="text-2xl font-bold text-sage-900">{isEnglish ? item.en : item.np}</h3>
+                <p className="mt-3 leading-8 text-stone-600">{isEnglish ? item.descEn : item.descNp}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section id="self-care" className="mt-14 rounded-lg bg-blue-950 p-8 text-white">
+        <section id="self-care" className="mt-14 rounded-lg bg-sage-950 p-8 text-white">
           <h2 className="text-3xl font-bold">{isEnglish ? "What you can start today" : "आजदेखि गर्न सकिने कुरा"}</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {(isEnglish
@@ -224,20 +224,20 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
           </div>
         </section>
 
-        <section id="help" className="mt-14 rounded-lg border border-cyan-200 bg-cyan-50 p-8">
-          <h2 className="text-3xl font-bold text-slate-950">
+        <section id="help" className="mt-14 rounded-lg border border-clay-200 bg-clay-50 p-8">
+          <h2 className="text-3xl font-bold text-stone-950">
             {isEnglish ? "When to seek professional help" : "कहिले विशेषज्ञ सहयोग लिने?"}
           </h2>
-          <p className="mt-4 leading-8 text-slate-700">
+          <p className="mt-4 leading-8 text-stone-700">
             {isEnglish
               ? "Please consult a psychiatrist if anxiety lasts for weeks, causes panic attacks, affects sleep or appetite, leads to avoidance, affects study or work, or appears with sadness, hopelessness, substance use or thoughts of self-harm."
               : "चिन्ता हप्तौँसम्म रहिरहेमा, panic attack भएमा, निद्रा वा खानामा असर परेमा, काम वा पढाइ बिग्रिएमा, टार्ने बानी बढेमा, उदासी, निराशा, पदार्थ प्रयोग वा आफैंलाई हानी गर्ने सोच आएमा मनोचिकित्सकसँग परामर्श लिनुहोस्।"}
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
-            <a href="tel:+9779861800547" className="rounded-lg bg-blue-700 px-6 py-3 font-semibold text-white">
+            <a href="tel:+9779861800547" className="rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white">
               +977 9861800547
             </a>
-            <Link href="/#services" className="rounded-lg border border-blue-700 px-6 py-3 font-semibold text-blue-800">
+            <Link href="/#services" className="rounded-lg border border-sage-700 px-6 py-3 font-semibold text-sage-800">
               {isEnglish ? "View services" : "सेवाहरू हेर्नुहोस्"}
             </Link>
           </div>
@@ -279,8 +279,8 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
               ],
             ].map(([question, answer]) => (
               <div key={question} className="rounded-lg bg-white p-6 shadow-sm">
-                <h3 className="text-xl font-bold text-blue-900">{question}</h3>
-                <p className="mt-3 leading-8 text-slate-600">{answer}</p>
+                <h3 className="text-xl font-bold text-sage-900">{question}</h3>
+                <p className="mt-3 leading-8 text-stone-600">{answer}</p>
               </div>
             ))}
           </div>
