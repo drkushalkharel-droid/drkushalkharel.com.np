@@ -5,9 +5,9 @@ import { buildSpeakableSpec } from "../lib/schema";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/best-psychiatrist-nepal`;
-const title = "Best Psychiatrist in Nepal | Anxiety, Depression & OCD Treatment";
+const title = "Best Psychiatrist in Kathmandu, Nepal | Top-Rated Psychiatric Care";
 const description =
-  "Looking for the best psychiatrist in Nepal? Learn about psychiatric treatment for anxiety, depression, OCD, schizophrenia, bipolar disorder, counselling, and online consultations.";
+  "Looking for the best or top psychiatrist in Kathmandu, Nepal? Dr. Kushal Kharel offers evidence-based treatment for anxiety, depression, OCD, schizophrenia, bipolar disorder, counselling, and online consultations.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -119,7 +119,7 @@ export default function BestPsychiatristNepalPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
-      { "@type": "ListItem", position: 2, name: "Psychiatrist in Nepal", item: pageUrl },
+      { "@type": "ListItem", position: 2, name: "Best Psychiatrist in Kathmandu", item: pageUrl },
     ],
   };
 
@@ -133,9 +133,9 @@ export default function BestPsychiatristNepalPage() {
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
           <Link href="/" className="font-semibold text-blue-700">&larr; Back to home</Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-blue-700">Psychiatric care in Kathmandu &amp; online</p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">Best Psychiatrist in Nepal for Anxiety, Depression, OCD &amp; Schizophrenia</h1>
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-6xl">Best Psychiatrist in Kathmandu, Nepal for Anxiety, Depression, OCD &amp; Schizophrenia</h1>
           <p id="psychiatrist-nepal-answer" className="mt-6 max-w-4xl text-lg leading-8 text-slate-600">
-            Searching for the best psychiatrist in Nepal often means looking for clear answers, respectful care and a practical next step. There is no single doctor who is right for every person. The most helpful choice is a qualified, registered psychiatrist who listens carefully, explains options clearly and creates a treatment plan around your symptoms, health, circumstances and goals. Dr. Kushal Kharel is a Consultant Psychiatrist in Kathmandu providing psychiatric assessment, counselling, psychotherapy, medication management, addiction care and online consultation.
+            Searching for the best or top psychiatrist in Kathmandu often means looking for clear answers, respectful care and a practical next step. There is no single doctor who is right for every person. The most helpful choice is a qualified, registered psychiatrist who listens carefully, explains options clearly and creates a treatment plan around your symptoms, health, circumstances and goals. Dr. Kushal Kharel is a Consultant Psychiatrist based in Kalanki, Kathmandu, providing psychiatric assessment, counselling, psychotherapy, medication management, addiction care and online consultation across Nepal.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a href="tel:+9779861800547" className="inline-flex items-center gap-3 rounded-lg bg-blue-700 px-6 py-3 font-bold text-white transition hover:bg-blue-800"><Phone size={20} aria-hidden="true" />Call +977 9861800547</a>

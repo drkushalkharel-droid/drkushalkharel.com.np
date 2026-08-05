@@ -1,8 +1,9 @@
 import { BrainCircuit, MapPin, Phone, Search, ShieldCheck, Video } from "lucide-react";
 
 const searchTerms = [
-  "Best psychiatrist in Nepal",
+  "Best psychiatrist in Kathmandu",
   "Top psychiatrist in Kathmandu",
+  "Best psychiatrist in Nepal",
   "Anxiety doctor in Nepal",
   "Depression treatment Kathmandu",
   "Online psychiatrist Nepal",
@@ -37,13 +38,14 @@ export default function SearchIntentSection() {
             Find Psychiatric Care
           </span>
           <h2 className="mt-5 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
-            Searching for the best psychiatrist in Nepal?
+            Searching for the best or top psychiatrist in Kathmandu?
           </h2>
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            If you are comparing psychiatrists in Nepal or Kathmandu, focus on
-            specialist training, careful diagnosis, evidence-based treatment,
-            confidentiality and clear follow-up. Dr. Kushal Kharel provides
-            psychiatric care for children, adolescents, adults and older adults.
+            If you are comparing psychiatrists in Kathmandu or elsewhere in
+            Nepal, focus on specialist training, careful diagnosis,
+            evidence-based treatment, confidentiality and clear follow-up.
+            Dr. Kushal Kharel provides psychiatric care in Kalanki, Kathmandu
+            for children, adolescents, adults and older adults.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">

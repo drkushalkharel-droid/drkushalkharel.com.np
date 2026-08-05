@@ -99,6 +99,10 @@ export default function Footer() {
               Home
             </Link>
 
+            <Link href="/best-psychiatrist-nepal" className="block hover:text-white transition">
+              Best Psychiatrist in Kathmandu
+            </Link>
+
             <Link href="/#about" className="block hover:text-white transition">
               About
             </Link>
