@@ -86,6 +86,7 @@ export const conditionCategories: string[] = [
   "Eating Disorders",
   "Somatic Symptom and Related Disorders",
   "Sexual Dysfunctions",
+  "Headache Disorders",
   "Psychiatric Emergencies",
 ];
 
@@ -8495,6 +8496,162 @@ export const conditions: Condition[] = [
       "International Society for the Study of Trauma and Dissociation (ISSTD). Guidelines for treating dissociative symptoms.",
     ],
     extraKeywords: ["depersonalization treatment Nepal", "derealization disorder Kathmandu", "feeling unreal treatment"],
+  },
+  {
+    slug: "migraine-and-headache-disorders",
+    title: "Migraine & Tension-Type Headache",
+    category: "Headache Disorders",
+    titleSuffix: "Causes, Triggers, Stress Links & Treatment",
+    shortDescription:
+      "Recurrent migraine and tension-type headache, with a focus on the strong bidirectional link to stress, anxiety and depression, and the psychiatric treatments — including several medications also used for mood and anxiety — that reduce frequency and severity.",
+    overview:
+      "Migraine and tension-type headache are primarily neurological conditions, and their initial diagnosis and work-up belong with a neurologist or general physician, especially when headaches are new, changing in pattern, or accompanied by any warning sign. At the same time, headache disorders and psychiatric conditions overlap heavily: chronic stress, anxiety and depression are among the strongest known triggers and aggravating factors for both migraine and tension-type headache, the relationship runs in both directions (frequent headache also increases the risk of developing anxiety and depression over time), sleep disruption and muscle tension link the two closely, and several of the best-evidenced preventive medications for migraine — including certain tricyclic antidepressants and anticonvulsants — are medications a psychiatrist prescribes and monitors routinely. This page focuses on that overlap: recognizing when headache has a significant stress or psychiatric component, what a psychiatrist can and cannot appropriately manage, and evidence-based psychological and lifestyle approaches that reduce headache frequency and severity, alongside close coordination with neurology or general medicine for the physical work-up and any headache with warning features.",
+    definition:
+      "Migraine is a primary headache disorder typically presenting as recurrent moderate-to-severe, often one-sided, throbbing headache attacks lasting 4–72 hours if untreated, commonly accompanied by nausea, vomiting, and sensitivity to light and sound, sometimes preceded by an aura of visual or sensory disturbance. Tension-type headache is typically a bilateral, pressing or tightening, mild-to-moderate headache without the nausea, light/sound sensitivity or functional disability seen in migraine, though it can still be frequent and disabling when chronic (occurring 15 or more days a month). Both are diagnosed clinically, based on headache pattern and the exclusion of secondary causes, rather than by a single test.",
+    causes:
+      "Migraine involves genetic vulnerability interacting with changes in brainstem and trigeminovascular pathway activity, with well-recognized triggers including stress (both during a stressful period and, characteristically, in the let-down period right after it), irregular sleep, skipped meals, dehydration, hormonal changes, certain foods or alcohol, and sensory stimuli such as bright light or strong smells. Tension-type headache is strongly linked to muscular tension in the head, neck and shoulders, psychological stress, poor posture, and disrupted sleep. In both conditions, anxiety and depression can lower the threshold for an attack, and frequent pain itself becomes a chronic stressor that worsens mood — a cycle that benefits from being addressed on both fronts at once rather than treating either the headache or the mood symptoms in isolation.",
+    riskFactors: [
+      "Family history of migraine",
+      "Female sex (migraine is roughly two to three times more common in women, particularly related to hormonal fluctuation)",
+      "Anxiety disorders, depression, and high chronic stress",
+      "Irregular sleep patterns, sleep deprivation, or poor sleep quality",
+      "Skipped meals, dehydration, and excess caffeine or caffeine withdrawal",
+      "Overuse of acute pain medication, which can itself cause medication-overuse headache",
+      "Poor posture, neck tension, and prolonged screen use for tension-type headache",
+      "Hormonal changes, including the menstrual cycle, pregnancy, and menopause",
+    ],
+    brainMechanisms:
+      "Migraine involves episodic dysfunction of brainstem pathways that normally regulate sensory processing, with activation of the trigeminovascular system leading to the release of inflammatory neuropeptides (including CGRP) around blood vessels in the meninges, producing the throbbing pain and associated sensory sensitivity. Central sensitization — where pain-processing neurons become progressively more reactive — helps explain why frequent attacks tend to become more frequent and treatment-resistant over time, and why prompt, adequate treatment of individual attacks matters. Tension-type headache is thought to involve a combination of peripheral muscular tenderness and, in chronic cases, similar central sensitization of pain pathways. The same serotonergic and noradrenergic systems implicated in mood and anxiety regulation are also involved in the brain's pain-modulating pathways, which is part of why antidepressant medications can reduce headache frequency independent of any effect on mood.",
+    symptoms: [
+      "Migraine: moderate-to-severe, often one-sided, throbbing headache lasting hours to a few days",
+      "Nausea, vomiting, or loss of appetite during a migraine attack",
+      "Sensitivity to light (photophobia) and sound (phonophobia) during a migraine attack",
+      "An aura — visual disturbances (zigzag lines, flashing lights, blind spots) or sensory/speech changes — in some people, usually before the headache",
+      "Migraine worsened by routine physical activity",
+      "Tension-type headache: bilateral, pressing or tightening, mild-to-moderate pain without significant nausea or light/sound sensitivity",
+      "Neck and shoulder muscle tenderness, often alongside tension-type headache",
+      "Headaches that become more frequent during periods of high stress, poor sleep, or low mood",
+    ],
+    diagnosticCriteria: [
+      "Migraine (International Classification of Headache Disorders, ICHD-3): at least 5 attacks lasting 4–72 hours, with at least 2 of (unilateral location, pulsating quality, moderate-to-severe intensity, aggravation by routine physical activity), plus at least 1 of (nausea/vomiting, photophobia and phonophobia)",
+      "Tension-type headache (ICHD-3): at least 10 episodes with at least 2 of (bilateral location, pressing/tightening quality, mild-to-moderate intensity, not aggravated by routine physical activity), and no significant nausea, with no more than one of photophobia or phonophobia present",
+      "Chronic migraine or chronic tension-type headache: headache on 15 or more days per month for more than 3 months, with migrainous or tension-type features respectively on at least some of those days",
+      "Diagnosis requires a headache pattern that is not better explained by another disorder, and no history or examination findings suggesting a secondary cause",
+    ],
+    differentialDiagnosis: [
+      { name: "Medication-overuse headache", note: "Frequent use of acute pain relief (including simple analgesics, triptans, or combination painkillers) can itself perpetuate near-daily headache; identifying and addressing overuse is essential before other treatment can work." },
+      { name: "Cluster headache and other trigeminal autonomic cephalalgias", note: "Severe, strictly one-sided pain with prominent eye tearing, redness or nasal symptoms and a pattern of short, clustered attacks — a distinct diagnosis needing specific treatment." },
+      { name: "Secondary headache (raised intracranial pressure, vascular event, infection, giant cell arteritis)", note: "Sudden ('thunderclap') onset, new headache after age 50, headache with fever/neck stiffness, new neurological signs, or a changed pattern requires urgent medical evaluation to exclude a dangerous secondary cause." },
+      { name: "Cervicogenic headache", note: "Headache referred from neck joint or muscle pathology, often with restricted neck movement — may overlap with or mimic tension-type headache." },
+      { name: "Depression and anxiety presenting with headache", note: "Headache can be a prominent somatic symptom of an underlying mood or anxiety disorder; the headache and the mood symptoms are then treated as one connected clinical picture rather than two separate problems." },
+    ],
+    investigations: [
+      "Detailed headache history is the primary basis for diagnosis: onset, frequency, duration, location, quality, triggers, associated symptoms and response to previous treatment",
+      "A headache diary tracking frequency, severity, triggers, medication use and menstrual correlation, kept for several weeks, meaningfully improves diagnosis and treatment planning",
+      "Neurological examination to check for any findings suggesting a secondary cause",
+      "Neuroimaging (MRI or CT) is not routinely needed for typical migraine or tension-type headache, but is indicated for red-flag features — sudden severe onset, new headache after age 50, abnormal neurological findings, headache with fever or neck stiffness, or a significant change in headache pattern — and should be arranged through a neurologist or physician",
+      "Screening for anxiety, depression and sleep disturbance, given how commonly these coexist with and aggravate frequent headache",
+    ],
+    treatmentOverview:
+      "Effective headache management is usually multimodal and often shared between a neurologist or physician and a psychiatrist. Acute attack treatment (analgesics, anti-nausea medication, or migraine-specific medications such as triptans) and any needed physical work-up are generally directed by a neurologist or physician. A psychiatrist's role focuses on: preventive medications that overlap with psychiatric prescribing (particularly when migraine and depression or anxiety coexist), stress-reduction and behavioral approaches with strong evidence for reducing headache frequency, treating any coexisting mood or anxiety disorder, and helping identify and reduce medication-overuse patterns. Treatment is individualized to headache frequency, severity, disability, coexisting conditions and personal preference, and is coordinated between specialties rather than managed by psychiatry alone.",
+    medications: [
+      { name: "Amitriptyline (tricyclic antidepressant)", note: "One of the best-evidenced preventive medications for both migraine and chronic tension-type headache, typically used at lower doses than for depression; a psychiatrist is well placed to prescribe and monitor this." },
+      { name: "Topiramate or sodium valproate (anticonvulsants)", note: "Evidence-based migraine-preventive options, also used in psychiatric practice as mood stabilizers; require individualized assessment of tolerability and, for valproate, are avoided in pregnancy." },
+      { name: "Propranolol (beta-blocker)", note: "A first-line migraine preventive that is also sometimes used for physical symptoms of anxiety, making it a useful option when the two coexist — prescribing requires review of cardiac and respiratory history." },
+      { name: "SSRIs or SNRIs", note: "Not primary headache-preventive agents, but appropriate when significant coexisting depression or anxiety is driving or worsening headache frequency." },
+      { name: "Acute treatments (simple analgesics, triptans, anti-nausea medication)", note: "Directed by a neurologist or physician; a psychiatrist's role is to help monitor for medication-overuse patterns rather than to initiate these." },
+    ],
+    psychotherapy: [
+      { name: "Cognitive Behavioral Therapy (CBT) for chronic pain and headache", note: "Structured CBT reduces headache frequency and disability by addressing stress reactivity, unhelpful pain-related thoughts, and behavioral patterns that maintain the cycle." },
+      { name: "Relaxation training and biofeedback", note: "Progressive muscle relaxation and biofeedback (training conscious control over muscle tension or physiological arousal) have solid evidence for reducing both migraine and tension-type headache frequency." },
+      { name: "Stress-management counseling", note: "Given how strongly stress and the post-stress 'let-down' period trigger migraine, structured stress-management work is a core, evidence-based part of prevention, not an optional add-on." },
+      { name: "Treatment of coexisting anxiety or depression", note: "When present, treating the coexisting mood or anxiety disorder directly often reduces headache frequency and severity as well." },
+    ],
+    lifestyleAdvice: [
+      "Keep a consistent sleep schedule — both too little and irregular sleep are common migraine triggers",
+      "Eat regular meals and stay well hydrated; do not skip meals",
+      "Keep caffeine intake consistent day to day rather than fluctuating, since both excess intake and withdrawal can trigger headache",
+      "Track personal triggers with a headache diary rather than assuming generic triggers apply",
+      "Build in regular, moderate physical activity and short breaks from screens to reduce neck and shoulder tension",
+      "Practice a daily relaxation or stress-reduction technique, not only during a headache",
+      "Limit the frequency of acute pain medication use and discuss any near-daily use with a clinician promptly",
+      "Attend to posture and workstation setup if tension-type headache is linked to prolonged desk or screen work",
+    ],
+    prognosis:
+      "Most people with migraine or tension-type headache see a meaningful reduction in frequency and severity with appropriate acute and preventive treatment, behavioral strategies, and attention to triggers. Headache disorders often fluctuate with life stress, sleep and hormonal changes, so periods of increased frequency do not mean treatment has failed. Untreated frequent headache, particularly with medication overuse, can progress to a chronic daily pattern that is harder to treat, which is why early, coordinated care matters.",
+    prevention: [
+      "Identifying and moderating personal triggers through a headache diary",
+      "Maintaining regular sleep, meals and hydration",
+      "Addressing chronic stress and coexisting anxiety or depression proactively rather than only during a bad headache period",
+      "Avoiding frequent use of acute pain medication to prevent medication-overuse headache",
+      "Starting preventive medication or structured behavioral treatment when headaches are frequent enough to affect daily functioning, rather than waiting for a crisis point",
+    ],
+    familyGuidance:
+      "Family members can help by taking headache pain seriously rather than dismissing it as minor or 'just stress,' since frequent migraine can be genuinely disabling. Supporting a predictable sleep and meal routine, reducing pressure during a known high-stress period, and encouraging use of a headache diary are practical, low-cost ways to help. If headache and mood symptoms are both present, encouraging treatment for both together — rather than treating them as separate, competing problems — generally leads to better outcomes.",
+    faqs: [
+      {
+        question: "Is migraine a psychiatric condition?",
+        answer:
+          "No. Migraine is a neurological condition and its core diagnosis and physical work-up belong with a neurologist or physician. A psychiatrist's role is addressing the strong overlap with stress, anxiety and depression, and prescribing certain preventive medications that are also used in psychiatric practice.",
+      },
+      {
+        question: "Can stress really trigger a migraine?",
+        answer:
+          "Yes. Stress is one of the most commonly reported migraine triggers, and attacks often occur not only during a stressful period but in the 'let-down' period right afterward, which is why structured stress-management is an evidence-based part of prevention.",
+      },
+      {
+        question: "Why would a psychiatrist prescribe medication for headache?",
+        answer:
+          "Several of the best-evidenced preventive medications for migraine and chronic tension-type headache — including amitriptyline, topiramate and propranolol — are medications psychiatrists prescribe routinely for mood and anxiety conditions, so a psychiatrist is often well placed to manage this overlap, especially when depression or anxiety coexist.",
+      },
+      {
+        question: "When should I see a neurologist instead of, or in addition to, a psychiatrist?",
+        answer:
+          "See a neurologist or seek urgent medical care for any new, sudden ('thunderclap'), or rapidly worsening headache, headache with fever or neck stiffness, new weakness, vision or speech changes, or a new headache pattern after age 50 — these need physical evaluation and should not be assumed to be stress-related.",
+      },
+      {
+        question: "Can headache cause anxiety or depression, not just the other way around?",
+        answer:
+          "Yes, the relationship runs both ways — living with frequent, unpredictable headache pain is itself a significant stressor and is linked to a higher risk of developing anxiety and depression over time, which is why addressing both together tends to work better than treating either alone.",
+      },
+      {
+        question: "Is it safe to take painkillers every day for frequent headaches?",
+        answer:
+          "No — frequent use of acute pain medication (including simple analgesics and migraine-specific drugs) can itself cause medication-overuse headache, creating a cycle of near-daily pain. If you are using pain medication more than a couple of days a week, this should be discussed with a clinician.",
+      },
+      {
+        question: "Do relaxation techniques and therapy actually help migraine, or only medication?",
+        answer:
+          "Relaxation training, biofeedback and CBT for headache have solid evidence for reducing migraine and tension-type headache frequency and are considered part of first-line preventive care, not just a supplement to medication.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "Migraine is just a bad headache and not a real medical condition.",
+        fact: "Migraine is a well-defined neurological disorder with a distinct biological basis, recognized diagnostic criteria, and evidence-based treatment — it is not simply a severe version of an ordinary headache.",
+      },
+      {
+        myth: "If stress triggers your migraines, it means the problem is 'all in your head' psychologically rather than physical.",
+        fact: "Stress is a genuine physiological trigger that activates real neurological pain pathways; a stress-linked trigger does not make the headache any less physical or 'real.'",
+      },
+      {
+        myth: "You should just push through and take more painkillers when headaches get more frequent.",
+        fact: "Increasing use of acute pain medication for frequent headache can itself cause medication-overuse headache, worsening the underlying pattern rather than fixing it — frequent headache needs a preventive plan, not just more acute treatment.",
+      },
+      {
+        myth: "Antidepressant or anti-seizure medication prescribed for migraine means the doctor thinks it's 'a mental problem.'",
+        fact: "These medications affect the same pain-modulating brain pathways involved in headache and are prescribed for their proven headache-preventive effect, independent of whether depression or anxiety is present at all.",
+      },
+    ],
+    urgentCare:
+      "Seek urgent medical care for a sudden, severe ('thunderclap') headache unlike any before, headache with fever, neck stiffness or rash, headache with new weakness, numbness, confusion, vision loss or difficulty speaking, headache following a head injury, or a new headache pattern after age 50 — these require prompt neurological or emergency evaluation and should not be assumed to be migraine, tension-type headache, or stress-related.",
+    references: [
+      "International Headache Society. International Classification of Headache Disorders, 3rd Edition (ICHD-3).",
+      "National Institute for Health and Care Excellence (NICE). Headaches in over 16s: diagnosis and management.",
+      "American Academy of Neurology / American Headache Society. Guidelines for migraine prevention.",
+      "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
+    ],
+    extraKeywords: ["migraine treatment Nepal", "headache treatment Kathmandu", "chronic headache psychiatrist", "tension headache treatment Nepal"],
   },
 ];
 
