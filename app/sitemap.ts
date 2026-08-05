@@ -6,6 +6,7 @@ import { docArticles } from "./data/docArticles";
 import { screeningTools } from "./data/screening";
 import { resources } from "./data/resources";
 import { pillars } from "./data/pillars";
+import { supportingArticles } from "./data/supportingArticles";
 
 export const dynamic = "force-static";
 
@@ -127,6 +128,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
 
+    { url: `${siteUrl}/couple-relationship-counseling`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/child-adolescent-psychiatry`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/iq-psychological-testing`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/medical-fitness-certificate`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/female-counselor-kathmandu`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.75 },
+    { url: `${siteUrl}/cbt-therapist-kathmandu`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/erp-therapy-ocd`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
+
     {
       url: `${siteUrl}/counselling-in-nepal`,
       lastModified,
@@ -142,6 +151,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${siteUrl}/community-mental-health-programs`, lastModified: new Date("2026-07-29"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/home-visit-psychiatrist-nepal`, lastModified: new Date("2026-07-29"), changeFrequency: "monthly", priority: 0.85 },
+
+    {
+      url: `${siteUrl}/blog`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({
@@ -195,6 +211,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  const blogRoutes: MetadataRoute.Sitemap = supportingArticles.map((article) => ({
+    url: `${siteUrl}/blog/${article.slug}`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticRoutes,
     ...pillarRoutes,
@@ -204,5 +227,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...conditionRoutes,
     ...screeningRoutes,
     ...resourceRoutes,
+    ...blogRoutes,
   ];
 }

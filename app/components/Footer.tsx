@@ -155,8 +155,40 @@ export default function Footer() {
               Counselling Services
             </Link>
 
+            <Link href="/couple-relationship-counseling" className="block hover:text-white transition">
+              Couple &amp; Relationship Counseling
+            </Link>
+
+            <Link href="/child-adolescent-psychiatry" className="block hover:text-white transition">
+              Child &amp; Adolescent Psychiatry
+            </Link>
+
+            <Link href="/cbt-therapist-kathmandu" className="block hover:text-white transition">
+              CBT Therapy
+            </Link>
+
+            <Link href="/erp-therapy-ocd" className="block hover:text-white transition">
+              ERP Therapy for OCD
+            </Link>
+
+            <Link href="/iq-psychological-testing" className="block hover:text-white transition">
+              IQ &amp; Psychological Testing
+            </Link>
+
+            <Link href="/medical-fitness-certificate" className="block hover:text-white transition">
+              Medical &amp; Fitness Certificates
+            </Link>
+
+            <Link href="/female-counselor-kathmandu" className="block hover:text-white transition">
+              Female Counselor
+            </Link>
+
             <Link href="/resources" className="block hover:text-white transition">
               Patient Resources & Leaflets
+            </Link>
+
+            <Link href="/blog" className="block hover:text-white transition">
+              Blog
             </Link>
 
           </div>

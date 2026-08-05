@@ -76,13 +76,16 @@ export const conditionCategories: string[] = [
   "Bipolar and Related Disorders",
   "Psychotic Disorders",
   "Trauma and Stressor-Related Disorders",
+  "Dissociative Disorders",
   "Neurodevelopmental Disorders",
   "Personality Disorders",
+  "Disruptive, Impulse-Control, and Conduct Disorders",
   "Sleep-Wake Disorders",
   "Substance Use and Addictive Disorders",
   "Neurocognitive Disorders",
   "Eating Disorders",
   "Somatic Symptom and Related Disorders",
+  "Sexual Dysfunctions",
   "Psychiatric Emergencies",
 ];
 
@@ -5500,6 +5503,7 @@ export const conditions: Condition[] = [
       "World Health Organization Framework Convention on Tobacco Control.",
       "U.S. Surgeon General reports on smoking cessation.",
     ],
+    extraKeywords: ["smoking cessation Nepal", "quit smoking treatment Kathmandu", "how to quit smoking"],
   },
   {
     slug: "cannabis-use-disorder",
@@ -6860,6 +6864,16 @@ export const conditions: Condition[] = [
         answer:
           "This reflects heightened activity in the brain's interoceptive and threat-appraisal circuits, causing normal bodily sensations to be interpreted as more significant or threatening than they objectively are — a genuine processing difference, not a character flaw.",
       },
+      {
+        question: "What's the difference between somatic symptom disorder and just being health-conscious?",
+        answer:
+          "Being attentive to your health and noticing symptoms is normal. Somatic symptom disorder involves a level of preoccupation, health-related anxiety, or symptom-focused behavior that is disproportionate and persistent enough to significantly disrupt daily life, relationships, or work — not simply paying reasonable attention to your body.",
+      },
+      {
+        question: "Can therapy help even if my physical symptoms don't go away completely?",
+        answer:
+          "Yes. CBT targets the excessive worry, health-related behaviors, and disproportionate distress around symptoms, which can meaningfully improve quality of life and functioning even when some physical symptoms persist or have an ongoing medical cause.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -6870,6 +6884,14 @@ export const conditions: Condition[] = [
         myth: "If there's no test result, there's no explanation and nothing more can be done.",
         fact: "Psychiatric treatment specifically targeting the excessive health-related thoughts and behaviors can meaningfully reduce distress and improve functioning, even when a specific physical cause isn't found.",
       },
+      {
+        myth: "Somatic symptom disorder is rare and only affects a small number of people.",
+        fact: "It is actually one of the more common conditions encountered in general medical settings, particularly among people with frequent, persistent, or hard-to-manage physical complaints.",
+      },
+      {
+        myth: "Being referred to a psychiatrist means your doctor thinks your symptoms are 'not real' or 'just in your head.'",
+        fact: "Referral to psychiatry reflects an evidence-based, collaborative approach to a condition involving genuine physical distress and a disproportionate psychological response — not a dismissal of your symptoms.",
+      },
     ],
     urgentCare:
       "Any new or changing physical symptom should still be appropriately medically evaluated rather than automatically attributed to the disorder, given the risk of missing a genuine new medical issue. Seek prompt evaluation for significant depression or suicidal ideation associated with chronic symptom burden and distress.",
@@ -6878,6 +6900,7 @@ export const conditions: Condition[] = [
       "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
       "National Institute for Health and Care Excellence (NICE). Guidance on medically unexplained symptoms.",
     ],
+    extraKeywords: ["somatoform disorder treatment Nepal", "somatic symptom disorder Kathmandu"],
   },
   {
     slug: "illness-anxiety-disorder",
@@ -7797,6 +7820,681 @@ export const conditions: Condition[] = [
       "American Association for Emergency Psychiatry. BETA de-escalation guidelines.",
       "National Institute for Health and Care Excellence (NICE). Violence and aggression: short-term management.",
     ],
+  },
+  {
+    slug: "erectile-dysfunction",
+    title: "Erectile Dysfunction (ED)",
+    category: "Sexual Dysfunctions",
+    shortDescription:
+      "Persistent difficulty achieving or maintaining an erection sufficient for satisfactory sexual activity, arising from psychological factors, medication side effects, or underlying physical illness.",
+    overview:
+      "Erectile Dysfunction (ED) is the persistent or recurrent inability to achieve or maintain an erection sufficient for satisfactory sexual performance, causing personal distress. It is extremely common and has both psychological and physical roots that frequently overlap in the same person. From a psychiatric perspective, performance anxiety, depression, chronic stress, and relationship difficulties are major contributors, and ED is also a well-recognized side effect of several psychiatric medications, particularly SSRIs and some antipsychotics, as well as of alcohol and other substance use. At the same time, ED is often an early warning sign of vascular disease, diabetes, or low testosterone, so a careful medical work-up matters as much as addressing the psychological side. A psychiatrist's role is to assess and treat the psychological and medication-related contributors and to coordinate with, or refer to, urology or endocrinology whenever an organic cause is suspected — ED is rarely managed by a single specialty in isolation.",
+    definition:
+      "ED is characterized by at least one of: marked difficulty obtaining an erection, marked difficulty maintaining an erection until completion of sexual activity, or a marked decrease in erectile rigidity, occurring on almost all or all occasions of sexual activity for a minimum of approximately six months, and causing clinically significant distress. Erectile difficulty that is fully explained by a non-sexual mental disorder, severe relationship distress, another significant stressor, a substance or medication, or another medical condition is coded and managed according to that cause rather than as a primary sexual disorder, though the practical management approach still needs to address it directly.",
+    causes:
+      "ED usually arises from a combination of factors rather than one single cause. Psychological contributors include performance anxiety (worry about sexual adequacy that itself interferes with the physiological arousal response), depression, chronic stress, and relationship conflict or poor communication with a partner. Medication-related causes are common in psychiatric practice — SSRIs, some antipsychotics, and certain antihypertensives can all impair erectile function. Physical causes include diabetes, atherosclerosis and other cardiovascular disease, low testosterone or other endocrine problems, neurological conditions, pelvic surgery or injury, and lifestyle factors such as smoking, heavy alcohol use, obesity, and a sedentary lifestyle. Many men experience an overlap — for example, an initial physical or medication-related episode that then triggers performance anxiety, which independently maintains the problem even after the original cause is addressed.",
+    riskFactors: [
+      "Diabetes mellitus and cardiovascular disease, including hypertension and high cholesterol",
+      "Obesity, physical inactivity, and smoking",
+      "Heavy or regular alcohol use, and other substance use",
+      "Depression, anxiety disorders, or high chronic stress",
+      "Relationship conflict or poor communication with a partner",
+      "Certain medications, including SSRIs, some antipsychotics, and some antihypertensives",
+      "Low testosterone or other hormonal or endocrine disorders",
+      "Pelvic or prostate surgery, radiation therapy, or pelvic nerve injury",
+      "Increasing age, though ED is not an inevitable part of aging",
+    ],
+    brainMechanisms:
+      "Erection depends on a coordinated interplay between psychological arousal (processed through brain regions including the hypothalamus and limbic system) and the parasympathetic nervous system, which triggers nitric-oxide-mediated relaxation of penile blood vessels to allow blood flow in. Anxiety and stress activate the sympathetic ('fight-or-flight') nervous system, which directly opposes this relaxation response — this is the physiological basis of performance anxiety, where worry about erectile failure itself makes erection physically harder to achieve, creating a self-reinforcing cycle. SSRIs and some antipsychotics affect serotonin and dopamine pathways involved in sexual arousal and can directly impair erectile function and libido, independent of any psychological factor.",
+    symptoms: [
+      "Difficulty achieving an erection sufficient for penetration",
+      "Difficulty maintaining an erection through to completion of sexual activity",
+      "Reduced erectile rigidity compared to previous function",
+      "Anticipatory anxiety or dread before sexual activity",
+      "Avoidance of sexual intimacy or initiating sex less often",
+      "Reduced sexual confidence and self-esteem",
+      "Erections present during masturbation or on waking but not with a partner, suggesting a significant psychological component",
+      "Strain or conflict in the relationship related to the difficulty",
+    ],
+    diagnosticCriteria: [
+      "Marked difficulty obtaining an erection, maintaining an erection until completion of activity, or a marked decrease in erectile rigidity",
+      "Present on almost all or all (approximately 75–100%) occasions of sexual activity",
+      "Present for a minimum of approximately six months (shorter duration may still warrant assessment and support)",
+      "Causes clinically significant distress",
+      "Not better explained by a non-sexual mental disorder, severe relationship distress, another stressor, the effects of a substance or medication, or another medical condition — though these causes still require identification and treatment",
+    ],
+    differentialDiagnosis: [
+      { name: "Diabetes mellitus or cardiovascular disease", note: "A leading physical cause; ED can be an early warning sign of underlying vascular disease and warrants cardiovascular risk assessment." },
+      { name: "Hypogonadism or other endocrine disorders", note: "Low testosterone or thyroid dysfunction can present with reduced erectile function and low libido; blood tests help identify this." },
+      { name: "Medication-induced sexual dysfunction", note: "SSRIs, antipsychotics, and some antihypertensives are common culprits; onset closely following a medication change is a useful clue." },
+      { name: "Depression", note: "Reduced libido and erectile difficulty are common features of depression itself, separate from any medication effect." },
+      { name: "Performance anxiety or situational ED", note: "Erectile difficulty limited to specific partners or situations, with normal erections during masturbation or on waking, points to a psychological rather than organic cause." },
+      { name: "Peyronie's disease or other structural penile abnormality", note: "Curvature, pain, or a palpable plaque warrants urological assessment." },
+      { name: "Alcohol or substance use", note: "Both acute intoxication and chronic heavy use can impair erectile function." },
+    ],
+    investigations: [
+      "Detailed history covering onset, whether the difficulty is situational or generalized, and presence of nocturnal or morning erections",
+      "Physical examination, including cardiovascular and genital examination",
+      "Blood tests: fasting glucose or HbA1c, lipid profile, testosterone, and thyroid function",
+      "Cardiovascular risk assessment, given the established link between ED and vascular disease",
+      "Careful review of current medications, alcohol use, and other substances",
+      "Assessment of mood, anxiety, stress, and relationship factors",
+      "Referral to urology for further evaluation (such as penile Doppler ultrasound) when an organic cause is suspected or initial treatment is not effective",
+    ],
+    treatmentOverview:
+      "Treatment is tailored to the mix of contributing factors identified. Where performance anxiety, depression, chronic stress, or relationship difficulty are significant contributors, psychosexual counselling and CBT, together with treatment of any underlying depression or anxiety disorder, are often highly effective. Where a psychiatric medication appears to be contributing, the medication is reviewed together with the prescribing doctor — this may mean adjusting the dose or switching to an alternative with a lower sexual side-effect profile, but a psychiatric medication should never be stopped abruptly or without medical supervision, since doing so can risk relapse of the underlying condition. Where an organic cause such as diabetes, cardiovascular disease, or low testosterone is suspected, coordinated referral to urology or endocrinology is arranged, since a psychiatrist alone does not manage every case of ED. Lifestyle factors — smoking, alcohol, weight, exercise, and sleep — are addressed alongside the psychological and medical work. PDE5 inhibitors (such as sildenafil or tadalafil) are a well-established, widely used medical treatment for ED, factually prescribed by a treating physician after appropriate cardiovascular and medical assessment; this is a medical decision made case by case rather than a universal recommendation.",
+    medications: [
+      { name: "Review and adjustment of causative psychiatric medication", note: "Done collaboratively with the prescribing doctor — options include dose adjustment, timing changes, or switching to an agent with a lower sexual side-effect profile. Never stop a psychiatric medication abruptly or without medical supervision." },
+      { name: "PDE5 inhibitors (e.g., sildenafil, tadalafil)", note: "A recognized, effective medical treatment for ED, prescribed after cardiovascular and medical assessment to confirm they are safe for the individual, particularly regarding heart disease and interacting medications such as nitrates." },
+      { name: "Testosterone replacement", note: "Considered by an endocrinologist only where blood testing confirms clinically low testosterone." },
+      { name: "Management of underlying diabetes, hypertension, or cholesterol", note: "Treating the underlying vascular or metabolic condition, coordinated with the relevant physician, often improves erectile function over time." },
+    ],
+    psychotherapy: [
+      { name: "Cognitive Behavioral Therapy (CBT)", note: "Addresses performance anxiety, catastrophic thinking about sexual 'failure,' and the anxiety-avoidance cycle that maintains ED." },
+      { name: "Psychosexual counselling", note: "Structured techniques such as sensate focus (graded, pressure-free physical intimacy exercises) reduce performance pressure and rebuild confidence." },
+      { name: "Couples therapy", note: "Helps address relationship conflict, communication difficulties, or a partner's misunderstanding of the problem, all of which can worsen ED." },
+      { name: "Treatment of underlying depression or anxiety disorder", note: "Since low mood and anxiety are themselves common, independent contributors to erectile difficulty." },
+    ],
+    lifestyleAdvice: [
+      "Stop smoking, which significantly impairs the blood vessel function needed for erections",
+      "Limit alcohol intake, since both acute intoxication and regular heavy use worsen erectile function",
+      "Engage in regular aerobic exercise, which improves cardiovascular health and erectile function",
+      "Work toward a healthy weight, since obesity is strongly linked to ED",
+      "Prioritize consistent, adequate sleep",
+      "Manage chronic stress through structured relaxation or stress-reduction practices",
+      "Communicate openly with your partner rather than avoiding the topic, which tends to increase pressure and anxiety",
+      "Avoid unregulated 'herbal' or online ED products, which can be unsafe or interact with other medications",
+    ],
+    prognosis:
+      "The outlook for ED is generally good with appropriate treatment. Psychologically driven ED often responds well to counselling and CBT, sometimes within weeks. ED linked to an organic cause improves as the underlying condition (diabetes, cardiovascular disease, low testosterone) is medically managed, often alongside psychological support to rebuild confidence. Medication-induced ED frequently improves once the medication is adjusted under medical guidance. Because ED often involves overlapping psychological and physical contributors, addressing both together generally gives the best outcome.",
+    prevention: [
+      "Managing cardiovascular risk factors — blood pressure, cholesterol, blood sugar — proactively",
+      "Avoiding smoking and limiting alcohol intake",
+      "Maintaining regular physical activity and a healthy weight",
+      "Addressing depression, anxiety, or chronic stress early rather than letting it become entrenched",
+      "Discussing sexual side effects openly with your doctor when starting a new psychiatric medication, so it can be anticipated and managed proactively",
+    ],
+    familyGuidance:
+      "Partners play an important role in recovery. Avoid framing ED as a reflection of attraction or commitment — it very often has a physical, medication-related, or anxiety-driven cause that has nothing to do with the relationship itself. Reduce pressure around sexual performance, since anxiety about 'succeeding' tends to worsen the problem. Open, non-blaming conversation about the difficulty, and willingness to participate in couples counselling or sensate focus exercises if recommended, meaningfully improves outcomes. Encourage the person to seek assessment rather than avoiding the topic out of embarrassment, since ED can also be an early signal of a treatable underlying medical condition.",
+    faqs: [
+      {
+        question: "Is erectile dysfunction always a psychological problem?",
+        answer:
+          "No. ED often involves a mix of psychological and physical factors, and it can also be an early sign of diabetes, cardiovascular disease, or low testosterone. A proper assessment is needed to identify which factors are contributing in a given individual.",
+      },
+      {
+        question: "Can antidepressants cause erectile dysfunction?",
+        answer:
+          "Yes. SSRIs and some other psychiatric medications are a well-recognized cause of sexual side effects, including ED. This can usually be managed by reviewing the dose or switching medications with your prescribing doctor — never by stopping the medication on your own.",
+      },
+      {
+        question: "Should I stop my antidepressant if it's causing erectile dysfunction?",
+        answer:
+          "Do not stop or change a psychiatric medication without medical supervision. Stopping abruptly can risk relapse of the underlying condition. Instead, discuss the side effect with your prescriber, who can consider dose adjustment or an alternative medication.",
+      },
+      {
+        question: "Can erectile dysfunction be a sign of a serious health problem?",
+        answer:
+          "Yes. Because the blood vessels involved in erections are small and sensitive to damage, ED can be an early warning sign of cardiovascular disease or diabetes, sometimes appearing before other symptoms — which is why medical evaluation matters, not just psychological treatment.",
+      },
+      {
+        question: "Does a psychiatrist treat erectile dysfunction, or should I see a urologist?",
+        answer:
+          "It depends on the likely cause. A psychiatrist assesses and treats psychological contributors (performance anxiety, depression, relationship stress) and medication-related causes, and coordinates with or refers to urology or endocrinology when an organic cause is suspected. Many cases benefit from both perspectives working together.",
+      },
+      {
+        question: "Can performance anxiety alone cause erectile dysfunction?",
+        answer:
+          "Yes. Anxiety activates the body's stress response, which directly opposes the physical process needed for an erection. This can create a self-reinforcing cycle where fear of erectile failure itself makes failure more likely, even without any underlying physical cause.",
+      },
+      {
+        question: "Are PDE5 inhibitors like sildenafil safe?",
+        answer:
+          "PDE5 inhibitors are a well-established, widely used medical treatment for ED, but they aren't right for everyone — they can interact dangerously with nitrate medications and need caution in certain heart conditions. They should only be used after appropriate medical assessment and prescription.",
+      },
+      {
+        question: "Can lifestyle changes improve erectile dysfunction?",
+        answer:
+          "Yes, meaningfully. Quitting smoking, limiting alcohol, regular exercise, weight management, and better sleep all improve erectile function, particularly when a physical or vascular contributor is present, and support other treatments even when it isn't.",
+      },
+      {
+        question: "Is erectile dysfunction common?",
+        answer:
+          "Yes, ED is very common and becomes more frequent with age, though it is not an inevitable part of aging. Occasional erectile difficulty, especially under stress or fatigue, is normal and not itself a disorder.",
+      },
+      {
+        question: "How is erectile dysfunction diagnosed?",
+        answer:
+          "Diagnosis involves a detailed history (including whether difficulty occurs in all situations or only some), physical examination, blood tests to check for diabetes, cholesterol, and testosterone, a medication review, and assessment of mood, anxiety, and relationship factors.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "Erectile dysfunction only happens to older men.",
+        fact: "ED becomes more common with age but affects men of all ages, often related to anxiety, stress, medication side effects, or lifestyle factors rather than age alone.",
+      },
+      {
+        myth: "ED means a man is no longer attracted to his partner.",
+        fact: "ED very often reflects anxiety, medication side effects, stress, or a physical health condition — not a lack of attraction or commitment.",
+      },
+      {
+        myth: "Nothing can be done about erectile dysfunction caused by medication.",
+        fact: "Medication-related ED can usually be managed by reviewing the dose, timing, or type of medication with the prescribing doctor, without having to stop treatment for the underlying condition.",
+      },
+      {
+        myth: "Talking to a doctor about ED is embarrassing and unnecessary.",
+        fact: "ED is a common, treatable condition, and it can also be an early sign of a medical issue like diabetes or heart disease, so assessment is genuinely worthwhile rather than something to avoid out of embarrassment.",
+      },
+    ],
+    urgentCare:
+      "Sudden erectile dysfunction accompanied by chest pain, breathlessness, or other cardiac symptoms warrants urgent medical evaluation, since ED can be linked to underlying cardiovascular disease. An erection lasting more than four hours (priapism), whether spontaneous or following use of an ED medication, is a urological emergency requiring immediate medical attention to prevent permanent damage.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
+      "European Association of Urology (EAU). Guidelines on Sexual and Reproductive Health.",
+      "American Urological Association (AUA). Erectile Dysfunction Clinical Guideline.",
+    ],
+    extraKeywords: ["erectile dysfunction treatment Kathmandu", "ED treatment Nepal", "psychological erectile dysfunction"],
+  },
+  {
+    slug: "premature-ejaculation",
+    title: "Premature Ejaculation (PE)",
+    category: "Sexual Dysfunctions",
+    shortDescription:
+      "Ejaculation that consistently happens sooner than a man wishes during partnered sexual activity, causing distress — strongly linked to performance anxiety and often very responsive to treatment.",
+    overview:
+      "Premature Ejaculation (PE) is a pattern of ejaculation occurring sooner than a man wishes during partnered sexual activity, causing personal distress or relationship difficulty. It is one of the most common male sexual concerns, and while it can have physical contributors, it is very strongly linked to performance anxiety and, in some men, an underlying generalized anxiety disorder — worry about ejaculating too quickly can itself heighten arousal and hasten ejaculation, creating a self-perpetuating cycle. PE is highly responsive to a combination of behavioral techniques, psychosexual counselling, and, where appropriate, medical treatment, and addressing it usually also means looking at the couple's communication and any broader anxiety the person is carrying.",
+    definition:
+      "PE (lifelong type) is defined as a persistent or recurrent pattern of ejaculation occurring during partnered sexual activity within approximately one minute following vaginal penetration and before the person wishes it, present since first sexual experiences, occurring on almost all or all (approximately 75–100%) occasions of sexual activity, present for a minimum of approximately six months, and causing clinically significant distress. An acquired form, in which a previously normal ejaculatory pattern becomes premature, is also recognized and often points more strongly toward a new anxiety, relationship, or medical trigger.",
+    causes:
+      "Lifelong PE is thought to have a biological component involving heightened penile sensitivity and serotonin receptor sensitivity affecting the ejaculatory reflex threshold. Acquired PE more often reflects new performance anxiety, a new relationship, generalized anxiety or stress, relationship difficulty, or occasionally a physical cause such as prostatitis or thyroid dysfunction. In both types, anxiety about the problem itself — anticipating early ejaculation before or during sex — commonly becomes a maintaining factor independent of the original cause, since heightened anxious arousal lowers the ejaculatory threshold further.",
+    riskFactors: [
+      "Performance anxiety or generalized anxiety disorder",
+      "New or early-stage relationships, where anxiety about a new partner is common",
+      "Erectile dysfunction, which can itself create a rush to ejaculate before losing an erection",
+      "Relationship stress or communication difficulty",
+      "History of PE since first sexual experiences (lifelong subtype)",
+      "Certain medical conditions such as prostatitis or thyroid dysfunction (acquired subtype)",
+      "Infrequent sexual activity, which can heighten sensitivity and reduce ejaculatory control",
+    ],
+    brainMechanisms:
+      "Ejaculation is coordinated by a spinal reflex under the modulating control of the brain, particularly serotonin pathways — higher serotonin activity generally raises the ejaculatory threshold (delays ejaculation), while lower activity lowers it. This is why serotonergic medications, including SSRIs, characteristically delay ejaculation as a side effect, and why this mechanism has been adapted therapeutically for PE. Anxiety further lowers the ejaculatory threshold through heightened sympathetic nervous system arousal, which is the physiological basis for why performance anxiety so directly worsens PE, and why anxiety reduction is a core part of effective treatment.",
+    symptoms: [
+      "Ejaculation consistently occurring sooner than desired during partnered sex",
+      "A sense of little or no control over the timing of ejaculation",
+      "Marked distress, frustration, or embarrassment about the pattern",
+      "Anticipatory anxiety before sexual activity",
+      "Avoidance of sexual intimacy or initiating sex less often",
+      "Strain or conflict within the relationship related to the difficulty",
+      "In acquired PE, a noticeable change from a previously satisfactory ejaculatory pattern",
+    ],
+    diagnosticCriteria: [
+      "A persistent or recurrent pattern of ejaculation occurring within approximately one minute of vaginal penetration and before the person wishes it (lifelong type); a marked decrease in latency, often to under three minutes, in the acquired type",
+      "Present on almost all or all (approximately 75–100%) occasions of partnered sexual activity",
+      "Present for a minimum of approximately six months",
+      "Causes clinically significant distress",
+      "Not better explained by a non-sexual mental disorder, severe relationship distress, another significant stressor, a substance/medication, or another medical condition — though these still require identification and appropriate treatment",
+    ],
+    differentialDiagnosis: [
+      { name: "Erectile Dysfunction", note: "Some men rush toward ejaculation out of fear of losing an erection; treating the ED directly often improves the ejaculatory pattern too." },
+      { name: "Generalized Anxiety Disorder or performance anxiety", note: "High baseline anxiety, or anxiety specific to sexual performance, is a major and very treatable contributor, particularly in acquired PE." },
+      { name: "Prostatitis or other urological/medical conditions", note: "Should be considered, particularly in acquired PE with pain or other urinary symptoms, and warrants urological assessment." },
+      { name: "Relationship distress", note: "PE occurring only within a specific troubled relationship points toward relational rather than primary sexual dysfunction." },
+      { name: "Normal variation in ejaculatory latency", note: "Occasional early ejaculation, especially after a period of abstinence or with a new partner, is common and not itself a disorder unless it is persistent and distressing." },
+    ],
+    investigations: [
+      "Detailed sexual history, including onset (lifelong vs. acquired), estimated ejaculatory latency, and the situations in which it occurs",
+      "Assessment for co-occurring erectile dysfunction",
+      "Screening for generalized anxiety, performance anxiety, and relationship distress",
+      "Physical examination and, where clinically indicated, assessment for prostatitis or thyroid dysfunction",
+      "Partner's perspective and relationship context, where available and appropriate",
+    ],
+    treatmentOverview:
+      "PE is very treatable, usually through a combination of behavioral techniques and psychosexual counselling, with medical options available for men who need additional help. Behavioral techniques — the stop-start technique and the squeeze technique — retrain ejaculatory control through structured practice and are often taught within CBT-based psychosexual counselling that also addresses performance anxiety directly. Where PE occurs alongside generalized anxiety disorder or significant relationship distress, treating the underlying anxiety or working with the couple together substantially improves outcomes. Topical anesthetic agents and certain pharmacological options exist and can help in individual cases, but these require individualized medical assessment and are prescribed on a case-by-case basis rather than as a universal first step.",
+    medications: [
+      { name: "Topical anesthetic creams or sprays", note: "Reduce penile sensitivity to help delay ejaculation; used under guidance since excessive numbing can also reduce sensation for both partners." },
+      { name: "SSRIs or other serotonergic agents", note: "Delayed ejaculation is a well-recognized side effect of serotonergic medications, which has been adapted therapeutically for PE in some cases; whether and which agent is appropriate is an individualized medical decision made with a prescribing doctor." },
+      { name: "Treatment of an identified underlying medical cause", note: "Such as prostatitis, in coordination with urology, for the acquired subtype." },
+    ],
+    psychotherapy: [
+      { name: "Stop-start technique", note: "The person or partner pauses sexual stimulation just before the point of feeling ejaculation is inevitable, allowing arousal to subside before resuming, gradually building tolerance and control." },
+      { name: "Squeeze technique", note: "Firm pressure is applied to the tip of the penis just before ejaculation to reduce arousal, another structured behavioral method for building control." },
+      { name: "Cognitive Behavioral Therapy (CBT)", note: "Addresses performance anxiety, unhelpful beliefs about sexual 'adequacy,' and the anxiety-arousal cycle that shortens ejaculatory latency." },
+      { name: "Couples-based psychosexual counselling", note: "Involves the partner directly in behavioral exercises and improves communication, which reduces the pressure that often maintains PE." },
+    ],
+    lifestyleAdvice: [
+      "Practice the stop-start or squeeze technique regularly, including during masturbation, to build familiarity with the sensations preceding ejaculation",
+      "Reduce performance pressure by shifting focus away from timed 'success' and toward shared intimacy and pleasure",
+      "Communicate openly with your partner about the difficulty rather than avoiding sex or the topic",
+      "Manage general anxiety and stress through regular relaxation practice, since baseline anxiety lowers ejaculatory control",
+      "Limit alcohol before sexual activity, which can paradoxically worsen control for some men",
+      "Allow adequate time and reduce rushing during sexual activity",
+    ],
+    prognosis:
+      "The outlook for PE is very good. Most men achieve meaningful improvement in ejaculatory control with behavioral techniques and psychosexual counselling within a matter of weeks to a few months, and outcomes are further improved when co-occurring anxiety or relationship distress is addressed directly. For men who need additional support, medical options provide a further, effective layer of treatment. Occasional recurrence during periods of high stress or with a new partner is common and responds well to returning to learned techniques.",
+    prevention: [
+      "Addressing generalized anxiety or performance anxiety early rather than letting it become entrenched",
+      "Open communication with a partner about sexual concerns rather than silence or avoidance",
+      "Building familiarity with arousal sensations through unhurried, low-pressure sexual experiences",
+      "Managing overall stress and anxiety through regular healthy coping strategies",
+    ],
+    familyGuidance:
+      "A partner's response matters a great deal — patience, reassurance, and a willingness to participate in behavioral techniques together substantially improve outcomes, while criticism or visible frustration tends to increase performance anxiety and worsen the pattern. Framing PE as a common, treatable difficulty rather than a personal failing helps reduce the shame that often delays men from seeking help. Couples counselling can be genuinely useful where PE has created ongoing tension or avoidance in the relationship.",
+    faqs: [
+      {
+        question: "Is premature ejaculation a sign of a psychological problem?",
+        answer:
+          "Not necessarily a disorder on its own, but it is strongly linked to performance anxiety and, in some men, generalized anxiety disorder. Addressing anxiety directly often improves ejaculatory control significantly.",
+      },
+      {
+        question: "What is the stop-start technique?",
+        answer:
+          "It's a behavioral method where sexual stimulation is paused just before the point of feeling ejaculation is inevitable, allowing arousal to subside before resuming — practiced repeatedly, it builds greater control over time.",
+      },
+      {
+        question: "Can premature ejaculation be treated without medication?",
+        answer:
+          "Yes. Behavioral techniques (stop-start, squeeze technique) combined with psychosexual counselling and CBT for performance anxiety are effective first-line treatments for many men, without needing medication.",
+      },
+      {
+        question: "Is there a medication for premature ejaculation?",
+        answer:
+          "Topical anesthetics and certain serotonergic medications can help delay ejaculation in some men, but whether medication is appropriate, and which one, is an individualized medical decision made after proper assessment.",
+      },
+      {
+        question: "Does premature ejaculation get worse with anxiety?",
+        answer:
+          "Yes. Anxiety heightens the body's arousal response and lowers the ejaculatory threshold, so worrying about ejaculating too quickly can itself make it happen sooner — a cycle that treatment specifically aims to break.",
+      },
+      {
+        question: "Should my partner be involved in treatment?",
+        answer:
+          "Involving a partner, when appropriate and comfortable for both people, generally improves outcomes — many of the most effective behavioral techniques are practiced together, and reduced pressure from a supportive partner meaningfully helps.",
+      },
+      {
+        question: "How common is premature ejaculation?",
+        answer:
+          "It's one of the most common male sexual concerns, affecting a significant proportion of men at some point. Occasional early ejaculation, particularly after a period of abstinence, is normal and not itself a disorder.",
+      },
+      {
+        question: "Can premature ejaculation be cured completely?",
+        answer:
+          "Many men achieve lasting, significant improvement in ejaculatory control with treatment, particularly when both behavioral techniques and any underlying anxiety are addressed together. Occasional recurrence during stress is common and responds well to returning to learned techniques.",
+      },
+      {
+        question: "Is premature ejaculation different from erectile dysfunction?",
+        answer:
+          "Yes, though they can co-occur. PE involves ejaculating sooner than desired, while ED involves difficulty achieving or maintaining an erection. Some men rush toward ejaculation specifically out of fear of losing an erection, so both should be assessed together.",
+      },
+      {
+        question: "When should I see a doctor about premature ejaculation?",
+        answer:
+          "It's worth seeking assessment if the pattern is persistent, distressing, or affecting your relationship — effective treatments exist, and an assessment can also identify whether an underlying anxiety disorder or medical cause is contributing.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "Premature ejaculation means something is fundamentally wrong with a man.",
+        fact: "PE is a common, well-understood, and highly treatable condition, strongly linked to performance anxiety and ejaculatory reflex sensitivity — not a reflection of a man's worth or masculinity.",
+      },
+      {
+        myth: "Only medication can fix premature ejaculation.",
+        fact: "Behavioral techniques like the stop-start and squeeze methods, combined with psychosexual counselling for performance anxiety, are effective first-line treatments and work well without medication for many men.",
+      },
+      {
+        myth: "Talking about it will just make a partner think less of you.",
+        fact: "Open communication about PE, and involving a partner in treatment, generally improves both the outcome and the relationship — silence and avoidance tend to increase pressure and worsen the pattern instead.",
+      },
+      {
+        myth: "Premature ejaculation always requires seeing a urologist, not a psychiatrist.",
+        fact: "Because performance anxiety and generalized anxiety are such strong contributors, psychiatric assessment and psychosexual counselling are often the most effective starting point, with urology involved when a physical cause is suspected.",
+      },
+    ],
+    urgentCare:
+      "Premature ejaculation itself is not a medical emergency. Seek prompt medical evaluation if it is accompanied by pain, blood in semen, urinary symptoms, or occurs alongside a sudden, unexplained change in sexual function, since these can indicate an underlying medical condition needing direct evaluation.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
+      "European Association of Urology (EAU). Guidelines on Sexual and Reproductive Health.",
+      "International Society for Sexual Medicine (ISSM). Premature Ejaculation Guidelines.",
+    ],
+    extraKeywords: ["premature ejaculation treatment Nepal", "premature ejaculation psychiatrist Kathmandu"],
+  },
+  {
+    slug: "intermittent-explosive-disorder",
+    title: "Anger Management & Intermittent Explosive Disorder (IED)",
+    category: "Disruptive, Impulse-Control, and Conduct Disorders",
+    shortDescription:
+      "Recurrent, out-of-proportion outbursts of anger or aggression reflecting a failure to control aggressive impulses — and, more broadly, structured counseling support for anger that is damaging relationships, work, or wellbeing.",
+    overview:
+      "Anger itself is a normal, healthy emotion, and most people who struggle with it do not meet full criteria for a psychiatric diagnosis — they simply need structured support to understand their triggers and respond differently. Intermittent Explosive Disorder (IED) describes a more specific and severe pattern: recurrent behavioral outbursts representing a failure to control aggressive impulses, grossly out of proportion to whatever provoked them, and not premeditated. Between episodes, the person often feels regret, embarrassment, or genuine confusion about their own reaction. This page covers both ends of that spectrum — the formal diagnosis of IED, and the broader, very common presenting complaint of anger that is damaging relationships, work, or physical and mental health, which structured anger-management counseling addresses directly and effectively regardless of whether full IED criteria are met.",
+    definition:
+      "IED is defined by recurrent behavioral outbursts representing a failure to control aggressive impulses, manifested as either frequent, lower-intensity outbursts (verbal aggression or non-destructive physical aggression occurring twice weekly on average for three months) or less frequent, higher-intensity outbursts (three episodes involving damage to property or physical injury within a twelve-month period). The degree of aggressiveness expressed is grossly out of proportion to the provocation or precipitating stressor, the outbursts are not premeditated and are not committed to achieve a tangible objective, and they cause significant distress, impairment, or financial or legal consequences. The person must be at least six years old, and the pattern must not be better explained by another mental disorder or attributable to a substance or medical condition.",
+    causes:
+      "IED and significant anger difficulties typically arise from a combination of biological vulnerability toward impulsive aggression, early learning environments (including exposure to harsh discipline, family violence, or inconsistent parenting during childhood), and current stressors that lower the threshold for an outburst — poor sleep, alcohol or substance use, high life stress, and chronic irritability from an underlying mood, trauma, or attention condition. Anger is very often a secondary symptom rather than a standalone problem: it commonly presents alongside depression (as irritability rather than sadness), PTSD (as hyperarousal and a lowered threshold for perceived threat), ADHD (as low frustration tolerance and impulsivity), substance use (both intoxication and withdrawal), and bipolar disorder (during manic or mixed episodes). Identifying whether anger is primary or secondary to one of these conditions is central to effective treatment.",
+    riskFactors: [
+      "Childhood exposure to family violence, harsh discipline, or inconsistent parenting",
+      "History of trauma, including childhood abuse or neglect",
+      "Underlying ADHD, particularly the impulsivity and low frustration tolerance it involves",
+      "Depression, where irritability rather than sadness can be the dominant presenting symptom",
+      "PTSD, where hyperarousal and a lowered threshold for perceived threat drive reactive anger",
+      "Alcohol or substance use, both during intoxication and withdrawal",
+      "Bipolar disorder, particularly during manic or mixed episodes",
+      "Chronic sleep deprivation and high, sustained life stress",
+      "Male sex and younger age, which are associated with higher rates of IED specifically",
+    ],
+    brainMechanisms:
+      "Aggressive outbursts are understood to reflect an imbalance between the brain's threat- and emotion-generating circuits (particularly the amygdala) and the prefrontal cortex's capacity to regulate and inhibit that response before it translates into action. In IED specifically, research points to reduced connectivity and regulatory control between these regions, alongside altered serotonin signaling, which is part of why serotonergic medications and skills that strengthen 'top-down' regulation (as taught in CBT-based anger management) are both effective. Poor sleep, alcohol, and chronic stress all further reduce the prefrontal cortex's ability to regulate the amygdala's response, which is why these factors so reliably worsen anger control.",
+    symptoms: [
+      "Recurrent outbursts of anger, verbal aggression, or physical aggression toward people, animals, or property",
+      "Reactions that are clearly out of proportion to what triggered them",
+      "A sense of tension or arousal building before the outburst, sometimes followed by a feeling of relief during it",
+      "Outbursts that are sudden and impulsive rather than planned",
+      "Regret, embarrassment, or genuine confusion about the reaction afterward",
+      "Difficulty identifying early warning signs or triggers before an outburst occurs",
+      "Strain in relationships, work, or legal difficulties as a result of the pattern",
+      "Irritability or a short fuse even between more significant outbursts",
+    ],
+    diagnosticCriteria: [
+      "Recurrent behavioral outbursts representing a failure to control aggressive impulses, as either frequent low-intensity outbursts (verbal or non-destructive physical aggression, twice weekly on average for 3 months) or infrequent high-intensity outbursts (3 episodes involving damage or injury within 12 months)",
+      "The degree of aggressiveness is grossly out of proportion to the provocation or stressor",
+      "The outbursts are not premeditated and are not committed to achieve a tangible objective (e.g., money, power, intimidation)",
+      "The outbursts cause marked distress, impair functioning, or result in financial or legal consequences",
+      "Chronological age of at least 6 years",
+      "Not better accounted for by another mental disorder and not attributable to a substance or another medical condition",
+    ],
+    differentialDiagnosis: [
+      { name: "Depression", note: "Irritability and a short temper can be the dominant presenting feature of depression, especially in men and adolescents, rather than the low mood people expect." },
+      { name: "PTSD", note: "Anger and aggressive outbursts commonly arise from trauma-related hyperarousal and a lowered threshold for perceived threat, alongside other PTSD symptoms." },
+      { name: "ADHD", note: "Impulsivity and low frustration tolerance can produce frequent, reactive outbursts distinguishable from IED mainly by the broader pattern of inattention and impulsivity across settings." },
+      { name: "Bipolar disorder", note: "Irritability and aggression can be prominent during manic or mixed episodes, distinguished by accompanying elevated mood, decreased need for sleep, and grandiosity." },
+      { name: "Substance intoxication or withdrawal", note: "Alcohol in particular is strongly associated with disinhibited aggression; a clear temporal link to use points toward a substance-related cause." },
+      { name: "Antisocial or Borderline Personality Disorder", note: "Anger is part of a broader, pervasive pattern of interpersonal difficulty or instability, rather than the more episodic pattern of IED." },
+      { name: "Oppositional Defiant Disorder or Conduct Disorder (in children/adolescents)", note: "Involves a broader pattern of defiance, rule-breaking, or aggression rather than IED's more discrete, impulsive outbursts." },
+    ],
+    investigations: [
+      "Detailed clinical interview covering the frequency, triggers, and pattern of outbursts, ideally with collateral information from family where possible",
+      "Screening for depression, PTSD, ADHD, bipolar disorder, and substance use, since anger is frequently secondary to one of these",
+      "Review of alcohol and substance use, including any temporal link between use and outbursts",
+      "Assessment of sleep quality and current life stressors",
+      "Physical and neurological screening where a medical or neurological contributor (such as a head injury history) is suspected",
+    ],
+    treatmentOverview:
+      "Structured, CBT-based anger management counseling is a core, actively offered part of treatment, whether or not someone meets full criteria for IED. It focuses on identifying personal triggers and early warning signs (the physical and cognitive cues that precede an outburst), building a toolkit of relaxation and de-escalation skills to use in the moment, restructuring the hostile or catastrophic thinking patterns that fuel anger, and practicing alternative responses through structured exercises between sessions. Where anger is identified as secondary to depression, PTSD, ADHD, substance use, or bipolar disorder, treating that underlying condition is central and often produces the most durable improvement in anger itself. Family or couples sessions are incorporated when the anger has significantly affected close relationships, both to repair trust and to involve family members constructively in the person's de-escalation plan. Medication has a role for IED itself and for underlying conditions driving the anger.",
+    medications: [
+      { name: "SSRIs", note: "Have evidence for reducing impulsive aggression in IED, alongside their role in treating co-occurring depression or anxiety." },
+      { name: "Mood stabilizers (e.g., valproate, lithium)", note: "Considered particularly where anger is linked to bipolar disorder or where impulsive aggression is prominent and severe." },
+      { name: "Treatment of the underlying condition", note: "Appropriate medication for ADHD, PTSD, depression, or bipolar disorder when anger is identified as secondary to one of these, which often improves the anger substantially." },
+    ],
+    psychotherapy: [
+      { name: "CBT-based anger management counseling", note: "The primary, actively offered treatment — structured sessions build trigger and early-warning-sign awareness, relaxation and de-escalation skills, and cognitive restructuring of hostile or catastrophic interpretations of others' behavior." },
+      { name: "Relaxation and physiological self-regulation training", note: "Breathing techniques, progressive muscle relaxation, and 'time-out' strategies practiced regularly, not only in the heat of the moment, so they're available when needed." },
+      { name: "Family or couples counseling", note: "Repairs relationship strain caused by outbursts and involves family members constructively in recognizing early warning signs and supporting de-escalation." },
+      { name: "Treatment of the underlying primary condition", note: "Therapy targeted at depression, PTSD, ADHD, or substance use when anger is secondary to one of these." },
+    ],
+    lifestyleAdvice: [
+      "Identify your personal early warning signs (tightening jaw, racing thoughts, heat in the face) so you can intervene before an outburst",
+      "Practice a daily relaxation technique, not just during moments of anger, so the skill is genuinely available when needed",
+      "Prioritize consistent, adequate sleep, since sleep deprivation substantially lowers frustration tolerance",
+      "Limit or avoid alcohol, which reduces inhibition and increases the likelihood of an outburst",
+      "Build in regular physical activity as a healthy outlet for tension and stress",
+      "Use a planned 'time-out' — stepping away from a triggering situation briefly and safely — rather than staying in an escalating interaction",
+      "Keep a simple anger log (trigger, intensity, response) to build awareness of your own pattern over time",
+    ],
+    prognosis:
+      "Anger difficulties, including IED, respond well to structured treatment. Most people who engage consistently with CBT-based anger management counseling see a meaningful reduction in the frequency and intensity of outbursts within weeks to a few months, along with improved relationships and reduced legal or occupational risk. Where anger is secondary to another condition, treating that condition directly often produces substantial improvement in anger as well. Without treatment, the pattern tends to persist and can escalate, with real consequences for relationships, employment, and legal standing.",
+    prevention: [
+      "Early identification and treatment of childhood emotional regulation difficulties",
+      "Addressing depression, PTSD, ADHD, or substance use early, since untreated anger is often secondary to one of these",
+      "Building healthy stress-management and communication skills proactively, not only after a crisis",
+      "Reducing alcohol and substance use, which reliably worsens impulse control",
+      "Family environments that model calm conflict resolution rather than harsh discipline or unpredictable outbursts",
+    ],
+    familyGuidance:
+      "It helps to distinguish the person from the outburst — most people with significant anger difficulties feel genuine regret afterward and are not choosing to lose control. Avoid escalating a confrontation once you notice early warning signs; a calm, non-provoking response, or agreeing in advance on a 'time-out' signal, is more effective than arguing back. Support consistent engagement with anger-management counseling and treatment of any underlying condition, and consider joining family or couples sessions if the relationship has been significantly affected. If there is ever a risk of harm to you or others during an outburst, prioritize your own safety and seek help rather than trying to manage the situation alone.",
+    faqs: [
+      {
+        question: "Do I need to meet full criteria for IED to get anger management help?",
+        answer:
+          "No. Anger management counseling is offered for anyone whose anger is causing problems in relationships, work, or wellbeing, regardless of whether they meet full diagnostic criteria for Intermittent Explosive Disorder.",
+      },
+      {
+        question: "Is IED the same as just having a bad temper?",
+        answer:
+          "No. IED involves a specific, recurrent pattern of outbursts that are clearly out of proportion to the trigger, not premeditated, and cause real distress or consequences — a general 'short fuse' that doesn't reach this frequency or severity would not meet the diagnosis, though it can still benefit from anger management support.",
+      },
+      {
+        question: "Can depression cause anger instead of sadness?",
+        answer:
+          "Yes. Irritability and a short temper are common presentations of depression, particularly in men and adolescents, sometimes more prominent than the low mood people typically associate with depression.",
+      },
+      {
+        question: "Is anger management therapy actually effective?",
+        answer:
+          "Yes. CBT-based anger management, which builds trigger awareness, relaxation skills, and cognitive restructuring, has good evidence for reducing the frequency and intensity of anger outbursts, particularly with consistent engagement over several sessions.",
+      },
+      {
+        question: "Can alcohol make anger problems worse?",
+        answer:
+          "Yes. Alcohol reduces inhibition and impairs the brain's capacity to regulate aggressive impulses, making outbursts more likely and often more severe — reducing or eliminating alcohol use is frequently an important part of treatment.",
+      },
+      {
+        question: "Should someone with anger problems avoid all conflict?",
+        answer:
+          "No — the goal isn't to eliminate anger or avoid all conflict, since anger is a normal emotion. The goal is learning to recognize triggers early and respond in a controlled, proportionate way rather than through an impulsive outburst.",
+      },
+      {
+        question: "Can children or teenagers be diagnosed with IED?",
+        answer:
+          "Yes, IED can be diagnosed from age 6 onward, though in children and adolescents, anger and aggression are also carefully assessed against ADHD, ODD, conduct disorder, and underlying trauma, since these are common and each need a different treatment approach.",
+      },
+      {
+        question: "Is medication needed for anger problems?",
+        answer:
+          "Not always. Many people improve substantially with CBT-based anger management counseling alone. Medication (such as an SSRI or mood stabilizer) is considered for more severe IED, or when anger is secondary to an underlying condition like depression, PTSD, or bipolar disorder that itself needs pharmacological treatment.",
+      },
+      {
+        question: "What triggers anger outbursts in IED?",
+        answer:
+          "Triggers are often minor, everyday frustrations, and the hallmark of IED is that the reaction is grossly out of proportion to the actual trigger — the outburst reflects a difficulty regulating the aggressive impulse itself, more than the severity of the provocation.",
+      },
+      {
+        question: "How long does anger management counseling take to work?",
+        answer:
+          "Many people notice improved awareness of their triggers within the first few sessions, with meaningful reduction in outburst frequency and intensity typically developing over several weeks to a few months of consistent practice.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "People with anger problems are just choosing to be violent or difficult.",
+        fact: "Significant anger difficulties, including IED, reflect a genuine difficulty regulating aggressive impulses, often layered on top of trauma, depression, ADHD, or other conditions — most people feel real regret afterward rather than having wanted the outburst to happen.",
+      },
+      {
+        myth: "Anger management is only for people who have been violent.",
+        fact: "Anger management counseling helps anyone whose anger is causing distress or damaging relationships and work, including people whose difficulty is mainly verbal outbursts, irritability, or internal frustration rather than physical aggression.",
+      },
+      {
+        myth: "You just have to 'let it out' when you're angry, or it will build up.",
+        fact: "Venting anger through outbursts tends to reinforce the pattern rather than resolve it. Effective anger management instead teaches recognizing triggers early and responding with regulated, proportionate skills.",
+      },
+      {
+        myth: "Anger issues can't really be treated — it's just someone's personality.",
+        fact: "Anger difficulties, including IED, respond well to structured CBT-based counseling, with most people seeing meaningful improvement in outburst frequency and severity within weeks to months of consistent engagement.",
+      },
+    ],
+    urgentCare:
+      "Seek immediate help if there is any risk of serious harm to yourself, a family member, or another person during an outburst — this may mean calling emergency services or removing yourself and others from the situation. Seek urgent psychiatric assessment if anger is accompanied by thoughts of harming yourself or someone else, or if outbursts are escalating in frequency or severity despite attempts to manage them.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
+      "National Institute for Health and Care Excellence (NICE). Antisocial behaviour and conduct disorders in children and young people.",
+    ],
+    extraKeywords: ["anger management counseling Nepal", "anger management therapy Kathmandu", "anger issues treatment"],
+  },
+  {
+    slug: "depersonalization-derealization-disorder",
+    title: "Depersonalization-Derealization Disorder",
+    category: "Dissociative Disorders",
+    shortDescription:
+      "Persistent or recurring episodes of feeling detached from your own thoughts, body, or surroundings, as though observing yourself from outside or living in a dream — frightening but not a sign of 'going crazy,' and genuinely treatable.",
+    overview:
+      "Depersonalization-Derealization Disorder involves persistent or recurrent episodes of depersonalization (feeling detached from, or like an outside observer of, your own thoughts, feelings, body, or actions), derealization (feeling that your surroundings are unreal, dreamlike, foggy, or visually distorted), or both. Throughout these episodes, reality testing stays intact — the person knows, even while it's happening, that the experience is a feeling rather than an actual change in reality. This is a crucial and reassuring distinguishing feature from psychosis. The experience is often deeply unsettling, and many people fear they are 'going crazy,' developing a serious brain condition, or losing touch with reality permanently — none of which is what is actually happening. With the right assessment and treatment, this condition responds well, and understanding what is happening physiologically is itself often a meaningful first step toward feeling less afraid of the symptoms.",
+    definition:
+      "The disorder is defined by persistent or recurrent episodes of depersonalization, derealization, or both. During these episodes, reality testing remains intact — insight is preserved throughout. The symptoms cause clinically significant distress or impairment in social, occupational, or other important areas of functioning, are not attributable to the physiological effects of a substance or another medical condition (such as a seizure disorder), and are not better explained by another mental disorder such as schizophrenia, panic disorder, major depressive disorder, PTSD, or another dissociative disorder.",
+    causes:
+      "The disorder often develops in the context of severe stress, trauma (including childhood emotional abuse or neglect), panic attacks, or significant sleep deprivation, and can also emerge without an identifiable trigger. It is understood as a protective, if unwanted, response of the brain's stress and threat systems — a kind of psychological 'circuit breaker' that creates emotional distance from overwhelming experience. Substances, particularly cannabis, hallucinogens, and, in some people, high doses of caffeine or certain other substances, can trigger depersonalization/derealization episodes, and these substance-induced states are common and important to identify separately, since they are managed by addressing the substance use itself.",
+    riskFactors: [
+      "History of significant trauma, particularly childhood emotional abuse or neglect",
+      "Co-occurring anxiety disorders, especially panic disorder",
+      "Co-occurring depression",
+      "High levels of chronic stress",
+      "Cannabis or hallucinogen use, which can trigger episodes even in people without an ongoing disorder",
+      "Significant sleep deprivation",
+      "A tendency toward high anxiety sensitivity or a strongly introspective, self-monitoring cognitive style",
+    ],
+    brainMechanisms:
+      "Depersonalization and derealization are thought to arise from a kind of protective 'dampening' of the brain's normal emotional processing, involving reduced activity in the amygdala and limbic emotional circuits alongside increased activity in the prefrontal cortex regions responsible for cognitive control and self-monitoring. This altered balance is thought to blunt the felt intensity of emotional and sensory experience, producing the characteristic sense of detachment, while explicitly leaving intact the cognitive systems responsible for reality testing — which is exactly why insight remains preserved even during an episode. This is a genuine, measurable shift in brain function, not a sign of psychosis or a 'break' from reality.",
+    symptoms: [
+      "Feeling detached from your own thoughts, feelings, body, or actions, as though observing yourself from outside or watching a movie of your own life",
+      "A sense of being emotionally numb or that your own voice or movements don't feel like they belong to you",
+      "Surroundings feeling unreal, dreamlike, foggy, lifeless, or visually distorted (derealization)",
+      "A sense of altered distance, size, or clarity of objects and people around you",
+      "Time feeling distorted — too fast, too slow, or somehow disconnected",
+      "Preserved awareness throughout that this is a subjective feeling, not an actual change in reality",
+      "Significant distress, anxiety, or fear about the experience itself, including fear of 'going crazy' or of permanent brain damage",
+      "Episodes that can last minutes, hours, or in some cases persist almost continuously",
+    ],
+    diagnosticCriteria: [
+      "Persistent or recurrent episodes of depersonalization, derealization, or both",
+      "During these episodes, reality testing remains intact",
+      "The symptoms cause clinically significant distress or impairment in functioning",
+      "Not attributable to the physiological effects of a substance or another medical condition",
+      "Not better explained by another mental disorder, such as schizophrenia, panic disorder, major depressive disorder, PTSD, or another dissociative disorder",
+    ],
+    differentialDiagnosis: [
+      { name: "Panic Disorder", note: "Depersonalization/derealization frequently occurs during panic attacks; the separate diagnosis applies when these experiences are persistent or recurrent independent of, or beyond, discrete panic episodes." },
+      { name: "PTSD", note: "Dissociative symptoms, including depersonalization and derealization, are a recognized specifier within PTSD and should be assessed alongside trauma history and other PTSD symptoms." },
+      { name: "Psychotic disorders", note: "A key distinguishing feature is that reality testing remains fully intact in depersonalization-derealization disorder — the person knows the experience is a feeling, not an actual change in reality, unlike in psychosis." },
+      { name: "Substance intoxication or withdrawal", note: "Cannabis and hallucinogens in particular can produce depersonalization/derealization; a clear temporal link to use points toward a substance-induced cause rather than the primary disorder." },
+      { name: "Seizure disorders, particularly temporal lobe epilepsy", note: "Can produce brief episodes of altered perception or unreality; these tend to be much briefer, stereotyped, and may include other seizure features — neurological evaluation is warranted if this is suspected." },
+      { name: "Migraine", note: "Some people experience depersonalization or derealization-like sensations as part of migraine aura; the relationship to headache and other migraine features helps distinguish this." },
+      { name: "Major Depressive Disorder", note: "Emotional numbing in depression can resemble depersonalization, though depersonalization-derealization disorder involves the more specific sense of detachment or unreality described above." },
+    ],
+    investigations: [
+      "Detailed clinical psychiatric interview, including onset, triggers, duration, and frequency of episodes",
+      "Screening for trauma history, anxiety disorders (particularly panic disorder), depression, and PTSD",
+      "Careful review of substance use, including cannabis and hallucinogens",
+      "Neurological assessment, including consideration of EEG, when seizure activity is a realistic differential based on the history",
+      "Use of a validated tool such as the Cambridge Depersonalization Scale to assess severity where helpful",
+    ],
+    treatmentOverview:
+      "The first, genuinely therapeutic step is often simply a clear, validating explanation of what depersonalization and derealization are and are not — many people feel considerable relief just from understanding that this is a recognized, treatable condition and not a sign of psychosis or permanent damage. Psychotherapy, particularly CBT adapted for dissociative symptoms, is the primary evidence-based treatment, focusing on reducing the fear and catastrophic interpretation of the symptoms (which paradoxically tends to worsen and prolong them), alongside grounding techniques to reduce episode intensity in the moment. Where the condition is secondary to an underlying anxiety disorder, depression, or trauma, treating that underlying condition is central to recovery.",
+    medications: [
+      { name: "No medication is specifically approved for the core disorder", note: "Medication is not the primary treatment, but SSRIs or other agents may help when there is significant co-occurring anxiety, depression, or PTSD." },
+      { name: "Lamotrigine", note: "Has some evidence as an add-on treatment in persistent cases, used under specialist psychiatric guidance." },
+    ],
+    psychotherapy: [
+      { name: "Cognitive Behavioral Therapy (CBT) adapted for dissociative symptoms", note: "Addresses catastrophic fears about the symptoms ('I'm going crazy,' 'my brain is damaged') and reduces the anxious hypervigilance to the sensations that tends to prolong them." },
+      { name: "Grounding techniques", note: "Practical, in-the-moment strategies — engaging the senses (naming what you see, hear, and touch) — to reduce the intensity of an episode and reconnect with the present." },
+      { name: "Trauma-focused therapy", note: "Where a trauma history is a significant contributor, therapies such as trauma-focused CBT or EMDR address the underlying trauma directly." },
+      { name: "Treatment of underlying anxiety or depression", note: "Since depersonalization-derealization disorder very often occurs alongside, or secondary to, panic disorder, generalized anxiety, or depression." },
+    ],
+    lifestyleAdvice: [
+      "Learn and practice grounding techniques regularly, not only during an episode, so they're readily available when needed",
+      "Prioritize consistent, adequate sleep, since sleep deprivation reliably worsens episodes",
+      "Avoid cannabis and other recreational substances known to trigger or worsen symptoms",
+      "Manage overall anxiety and stress through regular relaxation practice",
+      "Reduce excessive self-monitoring or repeatedly checking whether the feeling has gone, which tends to prolong focus on the symptom",
+      "Stay engaged in normal daily activities and routines rather than withdrawing because of the symptoms",
+    ],
+    prognosis:
+      "The outlook is generally good with appropriate treatment. Many people experience significant reduction in the frequency and intensity of episodes, and a considerable proportion achieve full remission, particularly when any underlying anxiety, depression, or trauma is treated alongside the dissociative symptoms themselves. Understanding and reducing fear of the symptoms is itself part of what improves them, since anxiety about the experience is a major factor that prolongs and intensifies it.",
+    prevention: [
+      "Early treatment of anxiety disorders, depression, or trauma-related symptoms before secondary dissociative symptoms become entrenched",
+      "Avoiding cannabis and hallucinogens, particularly in anyone who has previously experienced depersonalization or derealization",
+      "Maintaining consistent sleep and stress management as ongoing protective factors",
+      "Prompt, accurate psychoeducation after a first episode to reduce the anxious hypervigilance that can otherwise prolong and worsen the pattern",
+    ],
+    familyGuidance:
+      "Understand that what the person is describing is a real, recognized, and treatable experience — not psychosis, and not something they are imagining or exaggerating. Reassure them calmly that this does not mean they are 'going crazy' or that something catastrophic is happening to their brain, since fear about the symptom itself tends to make it worse. Support engagement with therapy and grounding techniques, encourage continued participation in normal daily activities rather than withdrawal, and be patient, since improvement is often gradual.",
+    faqs: [
+      {
+        question: "Does depersonalization mean I'm developing psychosis or schizophrenia?",
+        answer:
+          "No. A key feature of depersonalization-derealization disorder is that reality testing stays fully intact throughout — you know the experience is a feeling, not an actual change in reality. This is fundamentally different from psychosis, where that awareness is lost.",
+      },
+      {
+        question: "Am I going crazy or losing my mind?",
+        answer:
+          "No. Depersonalization and derealization are frightening but well-recognized, understood experiences, thought to reflect the brain's stress-response system 'dampening' emotional intensity. They do not mean you are losing touch with reality permanently or developing a severe mental illness.",
+      },
+      {
+        question: "Is this permanent brain damage?",
+        answer:
+          "No. Depersonalization-derealization disorder involves a functional shift in how the brain processes emotional and sensory information, not structural damage, and it is genuinely treatable — many people see significant improvement or full remission with appropriate treatment.",
+      },
+      {
+        question: "Why do I feel like I'm in a dream or watching myself from outside?",
+        answer:
+          "This reflects altered activity in brain circuits that generate the normal, automatic sense of emotional immediacy and ownership over your thoughts and body — a genuine, measurable shift in brain function that produces the characteristic sense of detachment or unreality.",
+      },
+      {
+        question: "Can anxiety or panic attacks cause this?",
+        answer:
+          "Yes. Depersonalization and derealization very commonly occur during panic attacks and periods of high anxiety, and treating the underlying anxiety or panic disorder often significantly reduces these episodes.",
+      },
+      {
+        question: "Can marijuana or other drugs trigger depersonalization?",
+        answer:
+          "Yes. Cannabis and hallucinogens are well-recognized triggers for depersonalization and derealization, even in people who don't go on to develop the persistent disorder. Avoiding these substances is an important part of both prevention and treatment.",
+      },
+      {
+        question: "How long do depersonalization episodes usually last?",
+        answer:
+          "This varies considerably — episodes can last minutes, hours, or in some people persist almost continuously over a longer period. Treatment focuses on reducing both the frequency and intensity of episodes and the distress they cause.",
+      },
+      {
+        question: "Will grounding techniques actually help during an episode?",
+        answer:
+          "Yes, for many people. Deliberately engaging your senses — naming what you can see, hear, and physically feel — helps reconnect attention with the present moment and can meaningfully reduce the intensity of an episode while it's happening.",
+      },
+      {
+        question: "Can depersonalization-derealization disorder be fully treated?",
+        answer:
+          "Yes. Many people achieve significant, lasting improvement with CBT adapted for dissociative symptoms, grounding techniques, and treatment of any underlying anxiety, depression, or trauma, with a considerable proportion reaching full remission.",
+      },
+      {
+        question: "Should I get a brain scan or EEG for this?",
+        answer:
+          "Not routinely, but your doctor may recommend neurological evaluation, including EEG, if your history suggests a seizure disorder or another medical cause needs to be excluded — this is a normal, careful part of a thorough assessment, not a sign that something is necessarily medically wrong.",
+      },
+    ],
+    mythsVsFacts: [
+      {
+        myth: "Feeling detached from yourself or your surroundings means you're psychotic.",
+        fact: "In depersonalization-derealization disorder, reality testing remains fully intact — you know the experience is a feeling, not an actual change in reality. This is fundamentally different from psychosis.",
+      },
+      {
+        myth: "This is a sign of serious, permanent brain damage.",
+        fact: "The condition reflects a functional shift in brain activity, not structural damage, and responds well to treatment, with many people achieving significant improvement or full remission.",
+      },
+      {
+        myth: "There's nothing that can be done about it — you just have to wait it out.",
+        fact: "CBT adapted for dissociative symptoms, grounding techniques, and treatment of underlying anxiety, depression, or trauma are effective, evidence-based treatments that meaningfully reduce both frequency and distress.",
+      },
+      {
+        myth: "Only people with severe trauma experience depersonalization or derealization.",
+        fact: "While trauma is a recognized risk factor, the condition can also arise from panic attacks, high stress, sleep deprivation, or substance use, and sometimes without any single identifiable trigger.",
+      },
+    ],
+    urgentCare:
+      "Seek prompt medical evaluation if episodes are accompanied by other neurological symptoms — such as loss of consciousness, convulsions, or focal weakness — since these warrant assessment for a seizure disorder or another medical cause rather than being assumed to be dissociative. Seek urgent psychiatric evaluation if the distress associated with these symptoms is accompanied by thoughts of self-harm or suicide, or if the symptoms are markedly worsening or becoming continuous.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
+      "International Society for the Study of Trauma and Dissociation (ISSTD). Guidelines for treating dissociative symptoms.",
+    ],
+    extraKeywords: ["depersonalization treatment Nepal", "derealization disorder Kathmandu", "feeling unreal treatment"],
   },
 ];
 
