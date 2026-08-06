@@ -196,6 +196,12 @@ export default function RootLayout({
     },
     image: `${siteUrl}${doctorImage}`,
     priceRange: "$$",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      bestRating: "5",
+      reviewCount: "70",
+    },
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -291,11 +297,18 @@ export default function RootLayout({
     sameAs: [
       "https://facebook.com/cooshal.kharel",
       "https://www.instagram.com/cusalnova",
+      "https://www.youtube.com/@dr.kushalkharelpsychiatrist",
       "https://www.twitter.com/Drkushalpsych",
       "https://www.tiktok.com/@drkushalkharel",
       "https://www.threads.net/@cusalnova",
       "https://nagariknews.nagariknetwork.com/author/dr.kushal-kharel",
     ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      bestRating: "5",
+      reviewCount: "70",
+    },
   };
 
   const websiteJsonLd = {
