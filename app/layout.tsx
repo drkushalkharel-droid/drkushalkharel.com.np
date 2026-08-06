@@ -163,6 +163,7 @@ export default function RootLayout({
     sameAs: [
       "https://facebook.com/cooshal.kharel",
       "https://www.instagram.com/cusalnova",
+      "https://www.youtube.com/@dr.kushalkharelpsychiatrist",
       "https://www.twitter.com/Drkushalpsych",
       "https://www.tiktok.com/@drkushalkharel",
       "https://www.threads.net/@cusalnova",
@@ -269,10 +270,6 @@ export default function RootLayout({
       {
         "@type": "Organization",
         name: "Nepal Medical Association",
-      },
-      {
-        "@type": "Organization",
-        name: "Psychiatrists' Association of Nepal",
       },
     ],
     alumniOf: {

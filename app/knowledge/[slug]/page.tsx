@@ -36,6 +36,7 @@ export async function generateMetadata({
       : article.slug === "depression-treatment-nepal"
         ? "Depression Treatment in Nepal | Symptoms, Therapy & Help"
         : title;
+  const keywordTitle = article.title.split(" | ")[0];
 
   return {
     title: { absolute: seoTitle },
@@ -44,12 +45,12 @@ export async function generateMetadata({
       canonical: `/knowledge/${article.slug}`,
     },
     keywords: [
-      article.title,
-      `${article.title} Nepal`,
-      `${article.title} treatment Nepal`,
-      `${article.title} doctor Nepal`,
-      `best psychiatrist in Nepal for ${article.title}`,
-      `top psychiatrist in Kathmandu for ${article.title}`,
+      keywordTitle,
+      `${keywordTitle} Nepal`,
+      `${keywordTitle} treatment Nepal`,
+      `${keywordTitle} doctor Nepal`,
+      `best psychiatrist in Nepal for ${keywordTitle}`,
+      `top psychiatrist in Kathmandu for ${keywordTitle}`,
       "Nepali mental health article",
       "Dr Kushal Kharel",
       "Psychiatrist Kathmandu",
@@ -78,6 +79,18 @@ export async function generateMetadata({
             "psychiatrist for depression Kathmandu",
             "depression counselling Nepal",
             "online depression consultation Nepal",
+          ]
+        : []),
+      ...(article.category === "Suicide Prevention"
+        ? [
+            "suicide prevention Nepal",
+            "आत्महत्या रोकथाम",
+            "suicide helpline Nepal",
+            "suicide warning signs Nepal",
+            "how to help someone suicidal Nepal",
+            "mental health crisis Nepal",
+            "1166 helpline Nepal",
+            "psychiatrist for suicidal thoughts Kathmandu",
           ]
         : []),
     ],

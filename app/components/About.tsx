@@ -199,11 +199,6 @@ export default function About() {
                     <td className="px-5 py-3">Active</td>
                   </tr>
                   <tr className="border-t border-gray-200 bg-gray-50">
-                    <td className="px-5 py-3 font-semibold">Lifetime Member</td>
-                    <td className="px-5 py-3">Psychiatrists&apos; Association of Nepal</td>
-                    <td className="px-5 py-3">Active</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
                     <td className="px-5 py-3 font-semibold">Medical Officer</td>
                     <td className="px-5 py-3">Kathmandu ENT Hospital</td>
                     <td className="px-5 py-3">2022-2023</td>
