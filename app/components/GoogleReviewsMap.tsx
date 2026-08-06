@@ -1,15 +1,10 @@
-"use client";
-
-import { useState } from "react";
-import { ExternalLink, MapPin, MessageCircle, Phone, Star } from "lucide-react";
+import { ExternalLink, MessageCircle, Phone, Star } from "lucide-react";
 
 const googleMapsUrl = "https://maps.app.goo.gl/2t5B2EqgDKYMRLE48";
 const embedUrl =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8350629732777!2d85.2807309!3d27.691492200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb193a5fc66e35%3A0x4e7103ea23778ac9!2sDr.%20Kushal%20kharel%20Psychiatrist!5e0!3m2!1sen!2snp!4v1786011632050!5m2!1sen!2snp";
 
 export default function GoogleReviewsMap() {
-  const [showMap, setShowMap] = useState(false);
-
   return (
     <section id="google-reviews" className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -29,7 +24,7 @@ export default function GoogleReviewsMap() {
               leave your own review after consultation.
             </p>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <div className="mt-8">
               <a
                 href={googleMapsUrl}
                 target="_blank"
@@ -39,16 +34,6 @@ export default function GoogleReviewsMap() {
                 <ExternalLink size={20} aria-hidden="true" />
                 Read All Google Reviews
               </a>
-              <button
-                type="button"
-                onClick={() => setShowMap((current) => !current)}
-                className="inline-flex items-center justify-center gap-3 rounded-lg border border-stone-300 px-6 py-3 font-bold text-stone-800 transition hover:border-sage-700 hover:text-sage-700"
-                aria-expanded={showMap}
-                aria-controls="google-map-panel"
-              >
-                <MapPin size={20} aria-hidden="true" />
-                {showMap ? "Hide Google Map" : "Show Google Map"}
-              </button>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-4">
@@ -85,19 +70,17 @@ export default function GoogleReviewsMap() {
               ))}
             </div>
 
-            {showMap && (
-              <div id="google-map-panel" className="mt-6 overflow-hidden rounded-lg border border-stone-200 bg-white">
-                <iframe
-                  src={embedUrl}
-                  title="Google Map for Dr. Kushal Kharel"
-                  className="h-[360px] w-full"
-                  style={{ border: 0 }}
-                  loading="lazy"
-                  allowFullScreen
-                  referrerPolicy="strict-origin-when-cross-origin"
-                />
-              </div>
-            )}
+            <div className="mt-6 overflow-hidden rounded-lg border border-stone-200 bg-white">
+              <iframe
+                src={embedUrl}
+                title="Google Map for Dr. Kushal Kharel"
+                className="h-90 w-full"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+            </div>
           </div>
         </div>
       </div>
