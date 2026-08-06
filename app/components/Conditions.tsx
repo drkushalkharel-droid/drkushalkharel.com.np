@@ -5,7 +5,8 @@ export default function Conditions() {
     {
       icon: "😊",
       title: "Depression",
-      desc: "Persistent sadness, loss of interest, fatigue and low mood."
+      desc: "Persistent sadness, loss of interest, fatigue and low mood.",
+      href: "/knowledge/depression-treatment-nepal",
     },
     {
       icon: "😰",
@@ -16,7 +17,8 @@ export default function Conditions() {
     {
       icon: "🔄",
       title: "Obsessive-Compulsive Disorder (OCD)",
-      desc: "Obsessions, compulsions and repetitive intrusive thoughts."
+      desc: "Obsessions, compulsions and repetitive intrusive thoughts.",
+      href: "/knowledge/obsessive-compulsive-disorder",
     },
     {
       icon: "⚖️",
@@ -57,7 +59,8 @@ export default function Conditions() {
     {
       icon: "😖",
       title: "Stress & Burnout",
-      desc: "Stress management, adjustment disorders and emotional wellbeing."
+      desc: "Stress management, adjustment disorders and emotional wellbeing.",
+      href: "/knowledge/adjustment-disorder",
     },
     {
       icon: "🧓",
@@ -66,9 +69,16 @@ export default function Conditions() {
       href: "/knowledge/dementia",
     },
     {
+      icon: "⚡",
+      title: "PTSD & Trauma",
+      desc: "Post-traumatic stress, flashbacks and trauma-focused therapy.",
+      href: "/conditions/ptsd",
+    },
+    {
       icon: "👨‍👩‍👧",
       title: "Child & Adolescent Psychiatry",
-      desc: "Behavioral, emotional and developmental mental health conditions."
+      desc: "Behavioral, emotional and developmental mental health conditions.",
+      href: "/child-adolescent-psychiatry",
     }
   ];
 

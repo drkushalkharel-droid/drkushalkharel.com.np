@@ -49,7 +49,7 @@ export default function Footer() {
 
       {/* Main Footer */}
 
-      <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-5 md:grid-cols-2 gap-12">
+      <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-4 md:grid-cols-2 gap-12">
 
         {/* Clinic */}
 
@@ -105,10 +105,6 @@ export default function Footer() {
               Home
             </Link>
 
-            <Link href="/best-psychiatrist-nepal" className="block hover:text-white transition">
-              Best Psychiatrist in Kathmandu
-            </Link>
-
             <Link href="/#about" className="block hover:text-white transition">
               About
             </Link>
@@ -125,24 +121,8 @@ export default function Footer() {
               Awards & Certificates
             </Link>
 
-            <Link href="/#contact" className="block hover:text-white transition">
-              Contact
-            </Link>
-
             <Link href="/appointment" className="block hover:text-white transition">
               Book an Appointment
-            </Link>
-
-            <Link href="/knowledge" className="block hover:text-white transition">
-              Mental Health Articles
-            </Link>
-
-            <Link href="/screening" className="block hover:text-white transition">
-              Mental Health Screening
-            </Link>
-
-            <Link href="/nepalese-abroad" className="block hover:text-white transition">
-              Nepalese Abroad
             </Link>
 
             <Link href="/#google-reviews" className="block hover:text-white transition">
@@ -153,16 +133,30 @@ export default function Footer() {
               FAQ
             </Link>
 
-            <Link href="/expatriates-in-nepal" className="block hover:text-white transition">
-              For Expatriates in Nepal
+            <Link href="/#contact" className="block hover:text-white transition">
+              Contact
             </Link>
 
-            <Link href="/english-speaking-psychiatrist" className="block hover:text-white transition">
-              English Speaking Psychiatrist
+          </div>
+
+        </div>
+
+        {/* Services */}
+
+        <div>
+
+          <h3 className="text-xl font-semibold mb-6">
+            Our Services
+          </h3>
+
+          <div className="space-y-4 text-gray-400">
+
+            <Link href="/online-psychiatrist-nepal" className="block hover:text-white transition">
+              Online Psychiatrist Consultation
             </Link>
 
-            <Link href="/tourists-in-nepal" className="block hover:text-white transition">
-              For Tourists in Nepal
+            <Link href="/home-visit-psychiatrist-nepal" className="block hover:text-white transition">
+              Home Visit Psychiatrist
             </Link>
 
             <Link href="/counselling-in-nepal" className="block hover:text-white transition">
@@ -197,16 +191,80 @@ export default function Footer() {
               Female Counselor
             </Link>
 
-            <Link href="/psychology-internship-nepal" className="block hover:text-white transition">
-              Student Internship
+          </div>
+
+        </div>
+
+        {/* Resources & Articles */}
+
+        <div>
+
+          <h3 className="text-xl font-semibold mb-6">
+            Resources &amp; Articles
+          </h3>
+
+          <div className="space-y-4 text-gray-400">
+
+            <Link href="/knowledge" className="block hover:text-white transition">
+              Mental Health Articles
+            </Link>
+
+            <Link href="/blog" className="block hover:text-white transition">
+              Blog
+            </Link>
+
+            <Link href="/screening" className="block hover:text-white transition">
+              Mental Health Screening
             </Link>
 
             <Link href="/resources" className="block hover:text-white transition">
               Patient Resources & Leaflets
             </Link>
 
-            <Link href="/blog" className="block hover:text-white transition">
-              Blog
+            <Link href="/best-psychiatrist-nepal" className="block hover:text-white transition">
+              Best Psychiatrist in Kathmandu
+            </Link>
+
+            <Link href="/community-mental-health-programs" className="block hover:text-white transition">
+              Community Mental Health Programs
+            </Link>
+
+            <Link href="/psychology-internship-nepal" className="block hover:text-white transition">
+              Student Internship
+            </Link>
+
+          </div>
+
+        </div>
+
+        {/* International & Diaspora */}
+
+        <div>
+
+          <h3 className="text-xl font-semibold mb-6">
+            For International Patients
+          </h3>
+
+          <div className="space-y-4 text-gray-400">
+
+            <Link href="/nepalese-abroad" className="block hover:text-white transition">
+              Nepalese Abroad
+            </Link>
+
+            <Link href="/psychiatrist-for-nepalis-abroad" className="block hover:text-white transition">
+              Psychiatrist for Nepalis Abroad
+            </Link>
+
+            <Link href="/expatriates-in-nepal" className="block hover:text-white transition">
+              For Expatriates in Nepal
+            </Link>
+
+            <Link href="/english-speaking-psychiatrist" className="block hover:text-white transition">
+              English Speaking Psychiatrist
+            </Link>
+
+            <Link href="/tourists-in-nepal" className="block hover:text-white transition">
+              For Tourists in Nepal
             </Link>
 
           </div>
@@ -223,16 +281,33 @@ export default function Footer() {
 
           <div className="space-y-3 text-gray-400">
 
-            <p>Depression</p>
+            <Link href="/conditions/major-depressive-disorder" className="block hover:text-white transition">
+              Depression
+            </Link>
             <Link href="/anxiety" className="block hover:text-white transition">
               Anxiety Disorders
             </Link>
-            <p>OCD</p>
-            <p>Bipolar Disorder</p>
-            <p>Schizophrenia</p>
-            <p>ADHD</p>
-            <p>Autism Spectrum Disorder</p>
-            <p>Addiction Treatment</p>
+            <Link href="/conditions/ocd" className="block hover:text-white transition">
+              OCD
+            </Link>
+            <Link href="/conditions/bipolar-i-disorder" className="block hover:text-white transition">
+              Bipolar Disorder
+            </Link>
+            <Link href="/conditions/schizophrenia" className="block hover:text-white transition">
+              Schizophrenia
+            </Link>
+            <Link href="/conditions/adhd" className="block hover:text-white transition">
+              ADHD
+            </Link>
+            <Link href="/conditions/autism-spectrum-disorder" className="block hover:text-white transition">
+              Autism Spectrum Disorder
+            </Link>
+            <Link href="/knowledge/substance-use-disorder" className="block hover:text-white transition">
+              Addiction Treatment
+            </Link>
+            <Link href="/conditions/suicide-prevention" className="block hover:text-white transition">
+              Suicide Prevention &amp; Crisis Support
+            </Link>
 
           </div>
 
