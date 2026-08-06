@@ -141,6 +141,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/female-counselor-kathmandu`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.75 },
     { url: `${siteUrl}/cbt-therapist-kathmandu`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/erp-therapy-ocd`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/psychology-internship-nepal`, lastModified: new Date("2026-08-06"), changeFrequency: "monthly", priority: 0.6 },
 
     {
       url: `${siteUrl}/counselling-in-nepal`,
