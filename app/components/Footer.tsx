@@ -191,6 +191,10 @@ export default function Footer() {
               Female Counselor
             </Link>
 
+            <Link href="/psychology-internship-nepal" className="block hover:text-white transition">
+              Student Internship
+            </Link>
+
             <Link href="/resources" className="block hover:text-white transition">
               Patient Resources & Leaflets
             </Link>
