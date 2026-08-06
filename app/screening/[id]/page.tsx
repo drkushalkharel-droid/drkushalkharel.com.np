@@ -167,6 +167,23 @@ export default async function ScreeningToolPage({
               </div>
             ))}
           </div>
+
+          {condition && (
+            <div className="mt-10 flex flex-col items-start gap-4 rounded-lg border border-sage-200 bg-sage-50 p-6 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="font-bold text-sage-950">Want to understand {condition.title.toLowerCase()} in more depth?</p>
+                <p className="mt-1 text-sage-900">
+                  Causes, diagnosis, treatment options and what to expect from care.
+                </p>
+              </div>
+              <Link
+                href={`/conditions/${condition.slug}`}
+                className="shrink-0 rounded-lg bg-sage-700 px-5 py-3 font-semibold text-white transition hover:bg-sage-800"
+              >
+                Read the full guide
+              </Link>
+            </div>
+          )}
         </div>
       </section>
     </main>
