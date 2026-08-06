@@ -5,7 +5,7 @@ import { ExternalLink, MapPin, MessageCircle, Phone, Star } from "lucide-react";
 
 const googleMapsUrl = "https://maps.app.goo.gl/2t5B2EqgDKYMRLE48";
 const embedUrl =
-  "https://www.google.com/maps?q=Dr.%20Kushal%20Kharel%20Consultant%20Psychiatrist%20Kalanki%20Kathmandu&output=embed";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8350629732777!2d85.2807309!3d27.691492200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb193a5fc66e35%3A0x4e7103ea23778ac9!2sDr.%20Kushal%20kharel%20Psychiatrist!5e0!3m2!1sen!2snp!4v1786011632050!5m2!1sen!2snp";
 
 export default function GoogleReviewsMap() {
   const [showMap, setShowMap] = useState(false);
@@ -91,8 +91,10 @@ export default function GoogleReviewsMap() {
                   src={embedUrl}
                   title="Google Map for Dr. Kushal Kharel"
                   className="h-[360px] w-full"
+                  style={{ border: 0 }}
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                  referrerPolicy="strict-origin-when-cross-origin"
                 />
               </div>
             )}

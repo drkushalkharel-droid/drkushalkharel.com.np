@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
-import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaThreads } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaThreads, FaYoutube } from "react-icons/fa6";
 
 const googleMapsUrl = "https://maps.app.goo.gl/2t5B2EqgDKYMRLE48";
 
@@ -17,6 +17,12 @@ export default function Footer() {
       icon: FaInstagram,
       url: "https://www.instagram.com/cusalnova",
       color: "hover:text-pink-600",
+    },
+    {
+      name: "YouTube",
+      icon: FaYoutube,
+      url: "https://www.youtube.com/@dr.kushalkharelpsychiatrist",
+      color: "hover:text-red-600",
     },
     {
       name: "Twitter",

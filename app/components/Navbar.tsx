@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
-import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaThreads } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaThreads, FaYoutube } from "react-icons/fa6";
 
 type NavLink = { href: string; label: string };
 
@@ -82,6 +82,11 @@ export default function Navbar() {
       name: "Instagram",
       icon: FaInstagram,
       url: "https://www.instagram.com/cusalnova",
+    },
+    {
+      name: "YouTube",
+      icon: FaYoutube,
+      url: "https://www.youtube.com/@dr.kushalkharelpsychiatrist",
     },
     {
       name: "Twitter",
