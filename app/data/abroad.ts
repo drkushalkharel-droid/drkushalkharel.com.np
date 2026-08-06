@@ -310,6 +310,31 @@ export const abroadGuides: AbroadGuide[] = [
     practicalNote:
       "Belgium is usually around three to four hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the Belgian afternoon or early evening without unreasonable hours for either side. A Nepal-written prescription cannot be assumed to be valid at a Belgian pharmacy, so medication questions are discussed openly, including whether registering with a local huisarts or médecin généraliste for prescribing is the better long-term step. Speaking with a psychiatrist in Nepali or English first can also help clarify what to say later in a French or Dutch-language appointment if one becomes necessary, particularly for anyone unsure which regional health service applies to their address. Professional guidance is especially important if symptoms persist, affect work or study, or involve thoughts of self-harm or substance use, and any safety emergency should go to local emergency services rather than wait for an online appointment.",
   },
+  {
+    country: "Germany",
+    slug: "germany",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Germany",
+    intro:
+      "Germany has become one of the fastest-growing destinations for Nepalese in recent years, drawn by tuition-free or low-cost public universities for Master's study in engineering, computer science and business, with growing student communities in Berlin, Munich, Stuttgart, Frankfurt and Hamburg, alongside a newer and rapidly expanding group arriving through Ausbildung (vocational training) pathways in nursing and elderly care. Many find that a course taught in English does little to prepare them for the largely German-language bureaucracy of an Anmeldung (address registration), a residence permit appointment at the Ausländerbehörde, or a routine visit to a Hausarzt, and the gap between fluent classroom English and everyday German can feel isolating in its own right. Statutory health insurance is mandatory for every resident, and, as in much of Europe, the system generally expects a referral from a general practitioner before a specialist appointment, which surprises many who expect to book a psychiatrist directly as they would at home. Long, dark winters in northern and central Germany, combined with academic pressure to justify a costly move abroad, financial strain from Ausbildung trainee wages that are modest by German standards, and distance from family during festivals, all add up quietly over time.",
+    commonConcerns: [
+      "Anxiety and stress navigating German-language bureaucracy for Anmeldung, residence permits and health insurance",
+      "Isolation from a language gap between English-taught coursework and everyday German-language life",
+      "Depression and low mood during long, dark winters, especially in northern and central Germany",
+      "Financial strain and burnout among Ausbildung nursing and care trainees on modest trainee wages",
+      "Academic pressure and homesickness balancing a demanding Master's programme with distance from family",
+      "Difficulty accessing a psychiatrist directly due to the German Hausarzt referral system",
+      "Loneliness during festivals such as Dashain and Tihar, spent far from a still-growing Nepali community",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Germany",
+      "Nepalese mental health Germany",
+      "online psychiatrist for Nepali in Germany",
+      "Nepali student mental health Berlin Munich",
+    ],
+    practicalNote:
+      "Germany is usually around three to four hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the German afternoon or early evening for either side. A Nepal-written prescription cannot be assumed to be valid at a German pharmacy (Apotheke), so medication questions are discussed openly, including whether registering with a local Hausarzt for prescribing and referral into the German system is the right next step. Many universities also offer a free Studierendenwerk psychosocial counselling service that can provide short-term support in English while this is arranged, and Ausbildung trainees can typically raise a health concern with their training provider without it affecting their residence status. If there is a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or going to the nearest hospital emergency department is safer than waiting for a scheduled online appointment.",
+  },
 ];
 
 export function getAbroadGuide(slug: string) {

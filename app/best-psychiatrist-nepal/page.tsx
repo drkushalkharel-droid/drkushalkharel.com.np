@@ -5,9 +5,9 @@ import { buildSpeakableSpec } from "../lib/schema";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/best-psychiatrist-nepal`;
-const title = "Best Psychiatrist in Kathmandu, Nepal | Top-Rated Psychiatric Care";
+const title = "Best Psychiatrist in Kathmandu, Nepal | Book Today";
 const description =
-  "Looking for the best or top psychiatrist in Kathmandu, Nepal? Dr. Kushal Kharel offers evidence-based treatment for anxiety, depression, OCD, schizophrenia, bipolar disorder, counselling, and online consultations.";
+  "Looking for the best psychiatrist in Kathmandu? Dr. Kushal Kharel, MD, treats anxiety, depression, OCD & more with evidence-based care. Book today.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
