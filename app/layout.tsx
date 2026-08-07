@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Consultant Psychiatrist in Kathmandu, Nepal providing evidence-based treatment for anxiety, depression, OCD, bipolar disorder, schizophrenia, ADHD, addiction, counselling, psychotherapy and online psychiatric consultation.",
+    "Dr. Kushal Kharel is a Consultant Psychiatrist in Kalanki, Kathmandu specializing in Neuropsychiatry & Addiction Medicine. NMC-licensed, offering evidence-based in-person and online psychiatric care for anxiety, depression, mood and psychotic disorders, and addiction.",
 
   keywords: [
     "Best Psychiatrist in Nepal",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dr. Kushal Kharel | Best Psychiatrist in Kathmandu, Nepal",
     description:
-      "Evidence-based psychiatry, counselling, de-addiction care and telepsychiatry in Nepal. Call +977 9861800547",
+      "Consultant Psychiatrist in Kalanki, Kathmandu specializing in Neuropsychiatry & Addiction Medicine. NMC-licensed, offering in-person and online psychiatric consultation. Call +977 9861800547",
     url: siteUrl,
     siteName: "Dr. Kushal Kharel - Consultant Psychiatrist",
     images: [
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dr. Kushal Kharel | Psychiatrist in Kathmandu, Nepal",
     description:
-      "Expert psychiatric care, anxiety treatment, depression therapy, addiction counseling in Kathmandu",
+      "Consultant Psychiatrist in Kalanki, Kathmandu specializing in Neuropsychiatry & Addiction Medicine. NMC-licensed, in-person and online consultation.",
     images: [doctorImage],
     creator: "@Drkushalpsych",
   },
@@ -142,7 +142,7 @@ export default function RootLayout({
       "Dr. Kushal Kharel — Center of Excellence in Neuropsychiatry and De-addiction",
     ],
     description:
-      "Consultant Psychiatrist providing evidence-based treatment for anxiety, depression, ADHD, OCD, bipolar disorder, and addiction",
+      "Dr. Kushal Kharel is a Consultant Psychiatrist based in Kalanki, Kathmandu, specializing in Neuropsychiatry & Addiction Medicine. He provides evidence-based psychiatric assessment, diagnosis, and treatment for children, adolescents, adults, and older adults, including care for anxiety disorders, depression, mood disorders, psychotic disorders, and substance addiction. In addition to in-person consultations at the Kalanki clinic, Dr. Kharel offers telepsychiatry and online psychiatric consultation for patients across Nepal and Nepalese communities abroad. As an NMC-licensed Specialist Psychiatrist, he is committed to confidential, compassionate, and evidence-based mental health care.",
     url: siteUrl,
     telephone: "+9779861800547",
     email: "drkushalkharel@gmail.com",
@@ -231,7 +231,7 @@ export default function RootLayout({
     name: "Dr. Kushal Kharel",
     jobTitle: "Consultant Psychiatrist",
     description:
-      "Consultant Psychiatrist in Kathmandu, Nepal providing in-person and online psychiatric consultation.",
+      "Dr. Kushal Kharel is a Consultant Psychiatrist based in Kalanki, Kathmandu, specializing in Neuropsychiatry & Addiction Medicine. He provides evidence-based psychiatric assessment, diagnosis, and treatment for children, adolescents, adults, and older adults, including care for anxiety disorders, depression, mood disorders, psychotic disorders, and substance addiction. In addition to in-person consultations at the Kalanki clinic, Dr. Kharel offers telepsychiatry and online psychiatric consultation for patients across Nepal and Nepalese communities abroad. As an NMC-licensed Specialist Psychiatrist, he is committed to confidential, compassionate, and evidence-based mental health care.",
     url: siteUrl,
     image: `${siteUrl}${doctorImage}`,
     telephone: "+9779861800547",
