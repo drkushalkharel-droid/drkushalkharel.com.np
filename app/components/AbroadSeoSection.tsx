@@ -1,64 +1,33 @@
 import Link from "next/link";
-import { Globe2, Phone } from "lucide-react";
-import { abroadGuides } from "../data/abroad";
+import { Globe2 } from "lucide-react";
 
 export default function AbroadSeoSection() {
   return (
-    <section id="nepalese-abroad" className="bg-white py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="max-w-3xl">
-          <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
-            <Globe2 size={16} aria-hidden="true" />
-            Nepalese Abroad
-          </span>
-          <h2 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-5xl">
-            Mental health guidance for Nepali people living abroad
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-stone-600">
-            Nepalese students, workers and families abroad may face loneliness,
-            visa pressure, academic or work stress, sleep problems, depression,
-            anxiety and substance use concerns. These guides help people find
-            culturally familiar psychiatric guidance and contact Dr. Kushal
-            Kharel when support is needed.
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {abroadGuides.map((guide) => (
-            <Link
-              key={guide.slug}
-              href={`/nepalese-abroad/${guide.slug}`}
-              className="block rounded-lg border border-stone-200 bg-stone-50 p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
-            >
-              <p className="text-sm font-semibold uppercase tracking-[2px] text-sage-700">
-                {guide.region}
+    <section id="nepalese-abroad" className="bg-white py-20">
+      <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        <div className="flex flex-col items-start gap-6 rounded-lg border border-stone-200 bg-stone-50 p-8 shadow-sm md:flex-row md:items-center md:justify-between">
+          <div className="flex items-start gap-4">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sage-100 text-sage-800">
+              <Globe2 size={22} aria-hidden="true" />
+            </span>
+            <div>
+              <h2 className="text-2xl font-bold text-stone-950">
+                A Nepali living abroad and looking for support?
+              </h2>
+              <p className="mt-2 max-w-2xl leading-7 text-stone-600">
+                Country-specific guidance for Nepali students, workers and
+                families abroad dealing with loneliness, visa pressure, work
+                stress or mental health concerns, with online consultation
+                available from Dr. Kushal Kharel.
               </p>
-              <h3 className="mt-4 text-2xl font-bold text-stone-950">
-                {guide.country}
-              </h3>
-              <p className="mt-3 leading-7 text-stone-600">
-                {guide.headline}
-              </p>
-            </Link>
-          ))}
-        </div>
-
-        <div className="mt-12 rounded-lg bg-stone-950 p-8 text-white">
-          <h3 className="text-3xl font-bold">
-            Nepali patient outside Nepal?
-          </h3>
-          <p className="mt-4 max-w-3xl leading-8 text-stone-300">
-            Call or message Dr. Kushal Kharel for guidance. Emergency and
-            legal prescribing rules differ by country, so urgent safety issues
-            should be handled through local emergency services first.
-          </p>
-          <a
-            href="tel:+9779861800547"
-            className="mt-6 inline-flex items-center gap-3 rounded-lg bg-white px-6 py-3 font-bold text-stone-950 transition hover:bg-sage-50"
+            </div>
+          </div>
+          <Link
+            href="/nepalese-abroad"
+            className="shrink-0 rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white transition hover:bg-sage-800"
           >
-            <Phone size={20} aria-hidden="true" />
-            Call +977 9861800547
-          </a>
+            Find your country
+          </Link>
         </div>
       </div>
     </section>
