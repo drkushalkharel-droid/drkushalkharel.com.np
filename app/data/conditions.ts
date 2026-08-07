@@ -449,6 +449,11 @@ export const conditions: Condition[] = [
       "National Institute of Mental Health (NIMH). Panic Disorder: When Fear Overwhelms.",
     ],
     extraKeywords: ["panic disorder treatment Kathmandu", "panic attack doctor Kathmandu"],
+    diagram: {
+      src: "/images/diagrams/panic-attack-cycle.webp",
+      alt: "Diagram of the panic attack cycle: bodily sensation, catastrophic thought, more anxiety, and more bodily sensation looping back",
+      caption: "The panic attack cycle: a bodily sensation triggers a catastrophic thought, which produces more anxiety and more sensation — the cycle CBT interrupts.",
+    },
   },
   {
     slug: "panic-attacks",
@@ -2148,6 +2153,11 @@ export const conditions: Condition[] = [
       "World Health Organization. Depression fact sheet.",
     ],
     extraKeywords: ["depression specialist Nepal", "depression treatment Kathmandu"],
+    diagram: {
+      src: "/images/diagrams/depression-spiral.webp",
+      alt: "Diagram of the depression spiral: low mood, withdrawal from activity, less pleasure and reward, and lower mood looping back",
+      caption: "The depression spiral (behavioral activation cycle): low mood leads to withdrawal and less reward, which lowers mood further — small, meaningful actions break the cycle.",
+    },
   },
   {
     slug: "persistent-depressive-disorder",
@@ -4003,6 +4013,11 @@ export const conditions: Condition[] = [
       "National Institute for Health and Care Excellence (NICE). Attention deficit hyperactivity disorder: diagnosis and management.",
     ],
     extraKeywords: ["ADHD specialist Nepal", "ADHD treatment Kathmandu"],
+    diagram: {
+      src: "/images/diagrams/adhd-executive-function.webp",
+      alt: "Diagram of the five ADHD executive function domains: attention, impulse control, working memory, emotional regulation, and time management and organization",
+      caption: "ADHD affects five distinct executive function domains, each with its own struggles and impact — not just “difficulty paying attention.”",
+    },
   },
   {
     slug: "autism-spectrum-disorder",
@@ -8794,6 +8809,11 @@ export const conditions: Condition[] = [
       "Lancet Commission on Dementia Prevention, Intervention, and Care.",
     ],
     extraKeywords: ["dementia treatment Nepal", "memory loss psychiatrist Kathmandu", "Alzheimer's disease Nepal", "dementia assessment Kathmandu"],
+    diagram: {
+      src: "/images/diagrams/aging-mci-dementia-spectrum.webp",
+      alt: "Diagram comparing normal aging, mild cognitive impairment and dementia across memory, daily functioning, insight and progression risk",
+      caption: "Normal aging, MCI and dementia sit on a continuum — this compares memory, daily functioning, insight and progression risk across all three.",
+    },
   },
   {
     slug: "mild-cognitive-impairment",
@@ -8900,6 +8920,11 @@ export const conditions: Condition[] = [
       "Alzheimer's Association. Mild cognitive impairment clinical guidance.",
     ],
     extraKeywords: ["mild cognitive impairment Nepal", "early memory loss psychiatrist Kathmandu", "MCI treatment Nepal"],
+    diagram: {
+      src: "/images/diagrams/aging-mci-dementia-spectrum.webp",
+      alt: "Diagram comparing normal aging, mild cognitive impairment and dementia across memory, daily functioning, insight and progression risk",
+      caption: "MCI sits between normal aging and dementia — this compares memory, daily functioning, insight and progression risk across all three.",
+    },
   },
   {
     slug: "postpartum-psychosis",
@@ -9116,6 +9141,11 @@ export const conditions: Condition[] = [
       "International Association for Premenstrual Disorders (IAPMD) clinical resources.",
     ],
     extraKeywords: ["PMDD treatment Nepal", "premenstrual dysphoric disorder Kathmandu", "severe PMS psychiatrist Nepal"],
+    diagram: {
+      src: "/images/diagrams/pmdd-symptom-timing.webp",
+      alt: "Diagram of PMDD symptom timing across the menstrual cycle, showing symptoms clustering and peaking in the luteal phase before resolving after menses starts",
+      caption: "PMDD symptoms follow a specific pattern: they appear after ovulation, peak in the days before your period, and resolve within days of menses starting.",
+    },
   },
   {
     slug: "gambling-disorder",

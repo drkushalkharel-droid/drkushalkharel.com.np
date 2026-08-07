@@ -773,6 +773,11 @@ export const audiencePages: AudiencePage[] = [
       "De-addiction center Kathmandu",
       "Alcohol rehab referral Nepal",
     ],
+    diagram: {
+      src: "/images/diagrams/addiction-craving-cycle.webp",
+      alt: "Diagram of the addiction craving and reward cycle: use, dopamine spike, tolerance, withdrawal, and craving looping back to use",
+      caption: "The addiction craving/reward cycle — use, dopamine spike, tolerance, withdrawal and craving reinforce each other, which is why treatment and support are needed to break it.",
+    },
     faqs: [
       {
         question: "What is the best addiction treatment available in Kathmandu?",
