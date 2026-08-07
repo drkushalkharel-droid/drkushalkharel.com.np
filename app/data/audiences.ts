@@ -721,6 +721,82 @@ export const audiencePages: AudiencePage[] = [
       },
     ],
   },
+  {
+    slug: "addiction-treatment-kathmandu",
+    title: "Best Addiction Treatment in Kathmandu, Nepal",
+    headline: "Best addiction treatment and alcohol counselling in Kathmandu",
+    shortDescription:
+      "Evidence-based addiction psychiatry and counselling in Kathmandu for alcohol, nicotine, cannabis, gambling and internet/gaming use, with medication, therapy, family support and rehab referral when needed.",
+    intro:
+      "There is no official ranking for \"best addiction treatment\" in Kathmandu — it's a search phrase people use when comparing options, not a clinical credential. A reasonable way to judge addiction care is a Nepal Medical Council-registered psychiatrist with genuine addiction psychiatry experience, an approach that combines medical treatment with counselling rather than one alone, and a plan that includes the family, not just the individual. Dr. Kushal Kharel is a Consultant Psychiatrist (MD Psychiatry, registration #27199) practicing in Kalanki, Kathmandu, providing assessment, withdrawal management guidance, medication where appropriate, structured counselling, and referral to residential rehabilitation when a higher level of care is needed — for alcohol, nicotine, cannabis, opioid, gambling and internet or gaming use.",
+    whoThisIsFor: [
+      "Anyone concerned about their own drinking or alcohol use, or looking for alcohol counselling",
+      "Family members worried about a loved one's alcohol or substance use",
+      "People wanting to quit nicotine, gutkha or other tobacco products",
+      "People concerned about cannabis or other substance use",
+      "People whose gambling has become difficult to control",
+      "People whose internet, gaming or mobile use is affecting daily life",
+      "Patients who have tried to cut down or stop before without lasting success",
+      "Families needing referral to residential rehabilitation for more severe dependence",
+    ],
+    commonConcerns: [
+      "Alcohol use that has become difficult to control or cut down",
+      "Withdrawal symptoms when trying to stop drinking or using a substance",
+      "Nicotine, gutkha and tobacco dependence",
+      "Cannabis, opioid or other substance use",
+      "Problem gambling and its financial and family impact",
+      "Internet, gaming or mobile overuse affecting work, study or relationships",
+      "Relapse after a previous attempt to quit",
+      "Family conflict, denial or enabling around a loved one's substance use",
+    ],
+    practicalNote:
+      "The first step is usually an assessment to understand the pattern of use, any withdrawal risk, and what level of care fits — outpatient counselling and medication management, or referral to residential rehabilitation for more severe dependence. Family involvement is welcomed and often genuinely improves outcomes. Sessions are available in person at the Kalanki clinic in Kathmandu or online, and can be booked by phone or WhatsApp.",
+    searchTerms: [
+      "Best addiction treatment in Kathmandu",
+      "Best counselling for alcohol use in Kathmandu",
+      "Alcohol de-addiction Kathmandu",
+      "Addiction psychiatrist Nepal",
+      "De-addiction center Kathmandu",
+      "Alcohol rehab referral Nepal",
+    ],
+    faqs: [
+      {
+        question: "What is the best addiction treatment available in Kathmandu?",
+        answer:
+          "The most reliable approach combines a proper psychiatric assessment, medical management of withdrawal risk where relevant, structured counselling, and family involvement, rather than any single method alone. Dr. Kushal Kharel provides this combined approach in Kathmandu, and refers to residential rehabilitation when a higher level of care is needed.",
+      },
+      {
+        question: "Is there good counselling for alcohol use in Kathmandu?",
+        answer:
+          "Yes. Dr. Kushal Kharel provides alcohol counselling alongside medical assessment at his Kalanki clinic, covering the pattern of drinking, withdrawal risk, triggers, relapse-prevention planning and, where useful, family sessions — available in person or online.",
+      },
+      {
+        question: "Do I need to go to a rehabilitation center, or can outpatient treatment work?",
+        answer:
+          "This depends on severity. Many people are treated effectively as outpatients with counselling and medication where needed. More severe dependence, significant withdrawal risk, or repeated relapse may need residential rehabilitation, which is discussed and referred on when appropriate.",
+      },
+      {
+        question: "Is medication used to treat alcohol or substance use?",
+        answer:
+          "Medication can help manage withdrawal safely and reduce cravings for some substances, used alongside counselling rather than instead of it. Whether medication is appropriate is decided individually after assessment.",
+      },
+      {
+        question: "Can family members be involved in addiction treatment?",
+        answer:
+          "Yes, and this is encouraged. Family involvement in understanding the treatment plan, reducing enabling patterns, and supporting recovery meaningfully improves outcomes, with the patient's consent.",
+      },
+      {
+        question: "Is addiction treatment confidential?",
+        answer:
+          "Yes. Addiction assessment and treatment, whether in person or online, are confidential and handled with the same professional discretion given to any patient.",
+      },
+      {
+        question: "Do you treat gambling and internet or gaming addiction, not just substance use?",
+        answer:
+          "Yes. Gambling disorder and problematic internet or gaming use are treated using the same evidence-based, non-judgemental approach as substance addictions, since they share similar underlying patterns of loss of control.",
+      },
+    ],
+  },
 ];
 
 export function getAudiencePage(slug: string) {
