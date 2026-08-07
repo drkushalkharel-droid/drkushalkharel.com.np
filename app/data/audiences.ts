@@ -816,6 +816,131 @@ export const audiencePages: AudiencePage[] = [
       },
     ],
   },
+  {
+    slug: "psychiatrist-fee-nepal",
+    title: "Psychiatrist Consultation Fees in Kathmandu, Nepal",
+    headline: "What does a psychiatrist consultation cost in Kathmandu?",
+    shortDescription:
+      "How psychiatric consultation fees generally work in Kathmandu, Nepal — what affects cost, the difference between an initial assessment and follow-up, and how to get current pricing from Dr. Kushal Kharel's clinic.",
+    intro:
+      "Cost is a genuine, practical concern when deciding whether to see a psychiatrist, and it's reasonable to want clarity before booking. Fees are not published as a single fixed number on this page because they depend on the type of consultation — an initial assessment is more thorough than a follow-up, and in-person, online, testing, and certificate-related visits are priced differently — so the most accurate, current figure comes directly from the clinic rather than a number that could be outdated by the time you read it. Call or WhatsApp +977 9861800547 and the clinic will tell you the current fee for your specific situation before you book, with no obligation.",
+    whoThisIsFor: [
+      "Anyone comparing psychiatrists in Kathmandu and wanting to understand cost before booking",
+      "Patients unsure whether an initial visit costs more than a follow-up",
+      "Patients deciding between in-person and online consultation",
+      "Patients wondering whether medication costs are included in the consultation fee",
+      "Families budgeting for a child or adolescent's ongoing psychiatric care",
+      "Patients who need a fee estimate before requesting reimbursement or insurance documentation",
+    ],
+    commonConcerns: [
+      "Initial assessment vs. follow-up consultation pricing",
+      "In-person vs. online consultation cost differences",
+      "Medication costs, which are separate from the consultation fee and paid at the pharmacy",
+      "Additional cost for psychological testing (IQ, personality, neuropsychological)",
+      "Cost of medical certificates and fitness-to-work documentation",
+      "Whether payment plans or reduced-cost options exist for those who need them",
+    ],
+    practicalNote:
+      "The most reliable way to get an accurate fee is to call or message the clinic directly, since it depends on the specific service — a first psychiatric assessment, a medication follow-up, therapy, testing, or certificate issuance are priced differently, and prices are confirmed before you book so there are no surprises. If cost is a genuine barrier, mention this when you call; the clinic can discuss what's realistic.",
+    searchTerms: [
+      "Psychiatrist fee Nepal",
+      "Psychiatrist consultation cost Kathmandu",
+      "Psychiatrist fee in Kathmandu",
+      "How much does a psychiatrist cost in Nepal",
+      "Affordable psychiatrist Kathmandu",
+    ],
+    faqs: [
+      {
+        question: "How much does a psychiatrist consultation cost in Kathmandu?",
+        answer:
+          "It depends on the type of visit — a first assessment, a follow-up, online consultation, therapy, or testing are priced differently. Call or WhatsApp +977 9861800547 for the current fee for your specific situation before booking.",
+      },
+      {
+        question: "Is the first visit more expensive than follow-up visits?",
+        answer:
+          "Generally, an initial assessment takes longer and is more thorough than a routine follow-up, which is common practice and usually reflected in how visits are priced. Ask the clinic for exact current figures for both when you call.",
+      },
+      {
+        question: "Are medications included in the consultation fee?",
+        answer:
+          "No. The consultation fee covers the psychiatric assessment and consultation itself; any prescribed medications are purchased separately at a pharmacy and are not included in the clinic's fee.",
+      },
+      {
+        question: "Does online consultation cost less than an in-person visit?",
+        answer:
+          "This varies by clinic and situation; ask when you call or message, since online and in-person visits can be priced the same or differently depending on the type of consultation.",
+      },
+      {
+        question: "Can I get a fee estimate before booking?",
+        answer:
+          "Yes. Call or WhatsApp the clinic and describe your situation (first visit or follow-up, in-person or online) and you'll be given a current fee estimate before you commit to booking.",
+      },
+      {
+        question: "What if I can't afford the standard consultation fee?",
+        answer:
+          "Mention this when you contact the clinic. It's worth asking directly rather than avoiding care altogether, and Dr. Kharel's community mental-health work includes free and low-cost outreach programmes in some settings.",
+      },
+    ],
+  },
+  {
+    slug: "psychiatric-hospital-vs-clinic-kathmandu",
+    title: "Psychiatric Hospital vs. Clinic in Kathmandu: What's the Difference?",
+    headline: "Psychiatric hospital or psychiatric clinic — which do you need?",
+    shortDescription:
+      "The difference between a psychiatric hospital and a psychiatric clinic in Kathmandu, when each is appropriate, and how to know whether you need emergency hospital care or an outpatient consultation.",
+    intro:
+      "\"Psychiatric hospital\" and \"psychiatric clinic\" get used interchangeably in everyday conversation, but they serve different purposes, and knowing the difference can save time in an urgent situation. A psychiatric hospital provides inpatient admission, 24-hour monitoring, and emergency psychiatric care for situations involving serious safety risk, severe psychosis, or medically complex withdrawal. A psychiatric clinic, like Dr. Kushal Kharel's practice in Kalanki, Kathmandu, provides outpatient assessment, diagnosis, medication management, and psychotherapy for the great majority of mental health concerns that don't require hospital admission.",
+    whoThisIsFor: [
+      "Anyone unsure whether their situation needs a hospital or an outpatient clinic",
+      "Families trying to find urgent psychiatric care for a loved one",
+      "Patients being discharged from hospital who need ongoing outpatient follow-up",
+      "People searching for a psychiatric hospital in Kathmandu who may actually need outpatient care",
+      "Patients who want in-person or online outpatient consultation without hospital admission",
+    ],
+    commonConcerns: [
+      "Not knowing whether a situation is a psychiatric emergency requiring hospital care",
+      "Confusing an outpatient clinic with an inpatient hospital when searching for help",
+      "Needing follow-up care after a hospital discharge",
+      "Wanting ongoing medication management and therapy without hospital admission",
+      "Uncertainty about where to go for a first psychiatric assessment",
+    ],
+    practicalNote:
+      "If there is an immediate risk of self-harm or harm to others, severe confusion, an overdose, dangerous withdrawal symptoms, or an inability to stay safe, go to the nearest hospital emergency department immediately rather than booking an outpatient appointment. For the great majority of concerns — persistent low mood, anxiety, sleep problems, ADHD, OCD, addiction follow-up, and routine medication management — an outpatient psychiatric clinic is the appropriate and usually faster starting point. Dr. Kushal Kharel's clinic in Kalanki, Kathmandu provides outpatient consultation in person or online, and can help coordinate hospital referral when a higher level of care is genuinely needed.",
+    searchTerms: [
+      "Psychiatric hospital Kathmandu",
+      "Psychiatric hospital vs clinic Nepal",
+      "Mental hospital Kathmandu",
+      "Psychiatric clinic near me Kathmandu",
+      "Outpatient psychiatric care Nepal",
+    ],
+    faqs: [
+      {
+        question: "What's the difference between a psychiatric hospital and a psychiatric clinic?",
+        answer:
+          "A psychiatric hospital provides inpatient admission and 24-hour monitoring for emergencies, severe psychosis, or complex withdrawal. A psychiatric clinic provides outpatient assessment, diagnosis, medication management, and therapy — appropriate for the majority of mental health concerns that don't need admission.",
+      },
+      {
+        question: "How do I know if I need hospital care instead of an outpatient consultation?",
+        answer:
+          "If there is immediate risk of self-harm or harm to others, severe confusion, an overdose, dangerous withdrawal, or inability to stay safe, go to the nearest hospital emergency department immediately. Most other concerns — mood, anxiety, sleep, addiction follow-up — are appropriately managed on an outpatient basis.",
+      },
+      {
+        question: "Can an outpatient clinic help after I'm discharged from hospital?",
+        answer:
+          "Yes. Outpatient follow-up after a hospital admission — for ongoing medication management, therapy, and monitoring — is a common and important part of continued recovery, and Dr. Kushal Kharel's clinic provides this kind of follow-up care.",
+      },
+      {
+        question: "Is Dr. Kushal Kharel's clinic a hospital?",
+        answer:
+          "No. It is an outpatient psychiatric clinic in Kalanki, Kathmandu, offering in-person and online consultation. For situations needing inpatient admission or emergency care, the clinic can help coordinate referral to an appropriate hospital.",
+      },
+      {
+        question: "Can I get a referral to a psychiatric hospital if needed?",
+        answer:
+          "Yes. If an assessment indicates a higher level of care is needed, the clinic will discuss this directly and help coordinate appropriate hospital referral rather than continuing outpatient care alone.",
+      },
+    ],
+  },
 ];
 
 export function getAudiencePage(slug: string) {

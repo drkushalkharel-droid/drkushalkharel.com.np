@@ -143,6 +143,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/erp-therapy-ocd`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/addiction-treatment-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/psychology-internship-nepal`, lastModified: new Date("2026-08-06"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${siteUrl}/psychiatrist-fee-nepal`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/psychiatric-hospital-vs-clinic-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.75 },
 
     {
       url: `${siteUrl}/counselling-in-nepal`,

@@ -1363,6 +1363,36 @@ export const supportingArticles: SupportingArticle[] = [
       { question: "Should I mention snoring to my psychiatrist even if I'm there for anxiety or depression?", answer: "Yes — sleep-breathing symptoms are directly relevant to mood and anxiety assessment, and mentioning them can lead to a referral that meaningfully changes and improves the overall treatment plan." },
     ],
   },
+  {
+    slug: "ptsd-treatment-nepal",
+    category: "Trauma, Crisis & Safety",
+    relatedScreeningId: "ptsd",
+    title: "PTSD Treatment in Kathmandu, Nepal",
+    description: "PTSD treatment in Kathmandu: symptoms, flashbacks, trauma-focused therapy (including EMDR and trauma-focused CBT), and medication options in Nepal.",
+    keywords: ["PTSD treatment Nepal", "PTSD treatment Kathmandu", "Trauma therapy Nepal", "Flashbacks treatment", "EMDR Nepal"],
+    h1: "PTSD Treatment in Kathmandu, Nepal",
+    overview:
+      "Post-traumatic stress disorder (PTSD) can develop after a person experiences or witnesses a genuinely life-threatening or deeply distressing event — a serious accident, natural disaster, assault, combat exposure, or the sudden loss of someone close. Not everyone who lives through trauma develops PTSD, but for those who do, the symptoms are not a sign of weakness or an inability to cope; they reflect a nervous system still reacting to danger that has already passed. PTSD is a well-recognised, treatable psychiatric condition in Nepal, and trauma-focused treatment — not just time — is what reliably helps most people recover.",
+    symptoms:
+      "Core features include intrusive memories or flashbacks that make the event feel like it is happening again, nightmares related to the trauma, and intense distress or physical reactions (racing heart, sweating) when reminded of it. Many people also avoid places, people, conversations or thoughts connected to the trauma, notice persistent negative beliefs about themselves or the world (\"I am not safe anywhere,\" \"I cannot trust anyone\"), and experience hypervigilance — feeling constantly on edge, an exaggerated startle response, irritability, and disrupted sleep and concentration. Symptoms typically persist for more than a month and clearly disrupt daily functioning, work, or relationships.",
+    causes:
+      "PTSD can follow any event experienced as genuinely life-threatening or overwhelming — road traffic accidents, natural disasters such as earthquakes, physical or sexual assault, combat or conflict exposure, witnessing violence, or the sudden traumatic death of someone close. Risk is higher with more severe, prolonged, or repeated trauma, a lack of social support afterward, a prior history of trauma or other psychiatric conditions, and ongoing life stress during recovery. PTSD is not caused by personal weakness; it reflects the brain's threat-response system remaining highly reactive after a genuine threat, a biological process rather than a character flaw.",
+    assessment:
+      "A psychiatric assessment for PTSD covers the nature of the traumatic event to the extent the person is comfortable sharing, the specific pattern of intrusive, avoidance, negative-mood, and hyperarousal symptoms, how long they have lasted, and their impact on daily life. Assessment also screens for common co-occurring conditions — depression, other anxiety disorders, and alcohol or substance use, which sometimes develop as an attempt to cope — since these affect the overall treatment plan. The clinician moves at a pace the patient is comfortable with; a full account of the trauma is not required before treatment can begin.",
+    treatment:
+      "Trauma-focused psychotherapy is the first-line, best-evidenced treatment for PTSD, including trauma-focused CBT and EMDR (Eye Movement Desensitization and Reprocessing), both of which help the brain process traumatic memories so they no longer trigger the same intensity of distress. These approaches are structured, paced collaboratively, and never involve reliving trauma without support or preparation. Medication, typically an SSRI, may be considered after individual assessment, particularly when symptoms are severe, alongside or while awaiting therapy. Grounding and stabilisation techniques are often taught early to help manage flashbacks and hyperarousal day-to-day.",
+    local:
+      "PTSD is a relevant and often under-recognised condition in Nepal given the country's history of natural disasters, including the 2015 earthquake, alongside road accidents and other trauma exposures. Dr. Kushal Kharel's clinic in Kalanki, Kathmandu provides trauma-focused assessment and treatment in person or online, moving at a pace that respects each patient's readiness to discuss what happened.",
+    related: ["/conditions/ptsd", "/blog/earthquake-disaster-trauma-nepal", "/blog/childhood-trauma-healing-nepal"],
+    faqs: [
+      { question: "Is PTSD only caused by combat or war?", answer: "No. While combat is a well-known cause, PTSD can follow any genuinely life-threatening or deeply distressing event, including accidents, natural disasters, assault, or the sudden traumatic loss of someone close." },
+      { question: "Does everyone who experiences trauma develop PTSD?", answer: "No. Most people who experience a traumatic event do not go on to develop PTSD, though many have some short-term stress reactions. PTSD is diagnosed when specific symptoms persist beyond about a month and significantly disrupt daily life." },
+      { question: "What is EMDR and does it actually work for PTSD?", answer: "EMDR (Eye Movement Desensitization and Reprocessing) is a structured, evidence-based trauma therapy that helps the brain reprocess traumatic memories using guided bilateral stimulation (commonly eye movements). It has strong research support as an effective first-line PTSD treatment, alongside trauma-focused CBT." },
+      { question: "Will I have to describe the traumatic event in detail right away?", answer: "No. Assessment and early treatment move at a pace the patient is comfortable with, and a full detailed account is not required before support can begin. Trauma-focused therapy techniques are introduced gradually and with preparation, never forced." },
+      { question: "Can PTSD develop months or years after the event?", answer: "Yes. While symptoms often begin within the first few months, delayed-onset PTSD, where symptoms emerge six months or more after the trauma, is a recognised presentation." },
+      { question: "Is medication necessary to treat PTSD?", answer: "Not always. Trauma-focused psychotherapy such as EMDR or trauma-focused CBT is the first-line treatment and can be effective alone. Medication, typically an SSRI, is one option considered individually, often for more severe symptoms or alongside therapy." },
+    ],
+  },
 ];
 
 export function getSupportingArticle(slug: string) { return supportingArticles.find((article) => article.slug === slug); }
