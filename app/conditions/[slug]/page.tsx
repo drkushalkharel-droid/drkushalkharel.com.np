@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { conditions, getCondition } from "../../data/conditions";
 import { screeningTools } from "../../data/screening";
 import { resources } from "../../data/resources";
+import { supportingArticles } from "../../data/supportingArticles";
 import {
   buildHowToJsonLd,
   buildMedicalConditionJsonLd,
@@ -119,6 +120,9 @@ export default async function ConditionPage({
   const quickFacts = buildQuickFacts(condition);
   const screeningTool = screeningTools.find((tool) => tool.relatedConditionSlug === condition.slug);
   const relatedResources = resources.filter((resource) => resource.relatedConditionSlug === condition.slug);
+  const relatedArticles = supportingArticles.filter((article) =>
+    article.related.includes(`/conditions/${condition.slug}`),
+  );
 
   const medicalConditionJsonLd = buildMedicalConditionJsonLd(condition, pageUrl);
 
@@ -492,6 +496,23 @@ export default async function ConditionPage({
               ))}
             </ol>
           </Section>
+
+          {relatedArticles.length > 0 && (
+            <section className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+              <h2 className="text-3xl font-bold text-sage-950">From the Blog</h2>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                {relatedArticles.map((article) => (
+                  <Link
+                    key={article.slug}
+                    href={`/blog/${article.slug}`}
+                    className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50"
+                  >
+                    {article.title}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           {relatedConditions.length > 0 && (
             <section className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
