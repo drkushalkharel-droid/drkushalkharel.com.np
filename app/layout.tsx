@@ -205,7 +205,7 @@ export default function RootLayout({
       "@type": "AggregateRating",
       ratingValue: "5",
       bestRating: "5",
-      reviewCount: "70",
+      reviewCount: "81",
     },
     openingHoursSpecification: [
       {
@@ -314,7 +314,7 @@ export default function RootLayout({
       "@type": "AggregateRating",
       ratingValue: "5",
       bestRating: "5",
-      reviewCount: "70",
+      reviewCount: "81",
     },
   };
 
