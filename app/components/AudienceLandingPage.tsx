@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Phone, type LucideIcon } from "lucide-react";
 import type { AudiencePage } from "../data/audiences";
@@ -95,6 +96,23 @@ export default function AudienceLandingPage({
           </div>
         </div>
       </section>
+
+      {page.diagram && (
+        <section className="bg-white">
+          <div className="mx-auto max-w-4xl px-6 py-14 lg:px-8">
+            <div className="overflow-hidden rounded-lg border border-stone-200 shadow-sm">
+              <Image
+                src={page.diagram.src}
+                alt={page.diagram.alt}
+                width={1408}
+                height={768}
+                className="w-full"
+              />
+            </div>
+            <p className="mt-3 text-center text-sm text-stone-500">{page.diagram.caption}</p>
+          </div>
+        </section>
+      )}
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { conditions, getCondition } from "../../data/conditions";
@@ -306,6 +307,22 @@ export default async function ConditionPage({
 
           <Section id="overview" title="Overview">
             <p>{condition.overview}</p>
+            {condition.diagram && (
+              <figure className="mt-6">
+                <div className="overflow-hidden rounded-lg border border-stone-200">
+                  <Image
+                    src={condition.diagram.src}
+                    alt={condition.diagram.alt}
+                    width={1408}
+                    height={768}
+                    className="w-full"
+                  />
+                </div>
+                <figcaption className="mt-3 text-center text-sm text-stone-500">
+                  {condition.diagram.caption}
+                </figcaption>
+              </figure>
+            )}
           </Section>
 
           <Section id="definition" title="Definition">

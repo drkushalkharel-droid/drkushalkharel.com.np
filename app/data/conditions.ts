@@ -64,6 +64,10 @@ export type Condition = {
   // (e.g. "depression" for Major Depressive Disorder), merged into
   // this page's metadata keywords.
   extraKeywords?: string[];
+  // Optional explanatory diagram shown after the overview section. Only
+  // set where a genuine, informative diagram exists — not generic
+  // decoration.
+  diagram?: { src: string; alt: string; caption: string };
 };
 
 // Full list of categories this library is being built out to cover.
@@ -1376,6 +1380,11 @@ export const conditions: Condition[] = [
       "International OCD Foundation.",
     ],
     extraKeywords: ["OCD specialist Nepal", "OCD treatment Kathmandu"],
+    diagram: {
+      src: "/images/diagrams/erp-exposure-ladder.webp",
+      alt: "ERP exposure ladder showing five graded steps from least to most anxiety-provoking triggers",
+      caption: "An ERP exposure ladder: OCD triggers are faced in small, agreed steps, from least to most anxiety-provoking.",
+    },
   },
   {
     slug: "body-dysmorphic-disorder",
@@ -2752,6 +2761,11 @@ export const conditions: Condition[] = [
       "National Institute for Health and Care Excellence (NICE). Bipolar disorder: assessment and management.",
     ],
     extraKeywords: ["bipolar disorder treatment Nepal", "bipolar specialist Kathmandu"],
+    diagram: {
+      src: "/images/diagrams/bipolar-mood-cycle.webp",
+      alt: "Diagram of the bipolar mood cycle showing mania, hypomania, euthymia and depressive episodes over time",
+      caption: "Mood severity in bipolar disorder over time, from manic and hypomanic episodes through stable euthymia to depressive episodes.",
+    },
   },
   {
     slug: "bipolar-ii-disorder",
@@ -2864,6 +2878,11 @@ export const conditions: Condition[] = [
       "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
       "National Institute for Health and Care Excellence (NICE). Bipolar disorder: assessment and management.",
     ],
+    diagram: {
+      src: "/images/diagrams/bipolar-mood-cycle.webp",
+      alt: "Diagram of the bipolar mood cycle showing mania, hypomania, euthymia and depressive episodes over time",
+      caption: "Mood severity in bipolar disorder over time, from hypomanic episodes through stable euthymia to depressive episodes.",
+    },
   },
   {
     slug: "cyclothymic-disorder",
@@ -4971,6 +4990,11 @@ export const conditions: Condition[] = [
           text: "Keep a calming pre-sleep routine and avoid bright screens in the hour before bed, since blue light can delay the body's natural melatonin release.",
         },
       ],
+    },
+    diagram: {
+      src: "/images/diagrams/circadian-sleep-cycle.webp",
+      alt: "Diagram of the circadian rhythm and sleep cycle showing alertness and melatonin balance across a 24-hour day and REM/light/deep sleep stages across the night",
+      caption: "The 24-hour circadian rhythm and nightly sleep-stage cycle that insomnia and poor sleep hygiene disrupt.",
     },
   },
   {

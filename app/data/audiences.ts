@@ -9,6 +9,10 @@ export type AudiencePage = {
   practicalNote: string;
   searchTerms: string[];
   faqs: { question: string; answer: string }[];
+  // Optional explanatory diagram shown between the intro and "Who this is for"
+  // sections. Only set where a genuine, informative diagram exists — not
+  // used as generic decoration.
+  diagram?: { src: string; alt: string; caption: string };
 };
 
 export const audiencePages: AudiencePage[] = [
@@ -607,6 +611,11 @@ export const audiencePages: AudiencePage[] = [
       "CBT for anxiety Kathmandu",
       "CBT for depression Nepal",
     ],
+    diagram: {
+      src: "/images/diagrams/cbt-thought-cycle.webp",
+      alt: "Diagram of the CBT thought cycle showing thoughts, feelings and behaviors reinforcing one another in a loop",
+      caption: "The CBT thought cycle: thoughts, feelings and behaviors reinforce each other, which is why CBT works on all three.",
+    },
     faqs: [
       {
         question: "What is CBT and how does it work?",
@@ -683,6 +692,11 @@ export const audiencePages: AudiencePage[] = [
       "ERP for OCD Nepal",
       "OCD therapist Kathmandu",
     ],
+    diagram: {
+      src: "/images/diagrams/erp-exposure-ladder.webp",
+      alt: "ERP exposure ladder showing five graded steps from least to most anxiety-provoking triggers",
+      caption: "An ERP exposure ladder: triggers are faced in small, agreed steps, from least to most anxiety-provoking.",
+    },
     faqs: [
       {
         question: "What is ERP and how is it different from regular CBT?",

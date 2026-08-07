@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { CalendarCheck, Clock3, MapPin, MessageCircle, Phone, ShieldCheck, Video } from "lucide-react";
 
@@ -36,6 +37,19 @@ export default function AppointmentPage() {
           </div>
           <p className="mt-5 text-sm text-sage-200">Please do not share sensitive personal or medical details in a first message.</p>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 pt-14 lg:px-8">
+        <div className="overflow-hidden rounded-lg border border-stone-200 shadow-sm">
+          <Image
+            src="/images/diagrams/treatment-pathway.webp"
+            alt="Diagram of the treatment pathway: contact, assessment, diagnosis, treatment plan, and follow-up"
+            width={1408}
+            height={768}
+            className="w-full"
+          />
+        </div>
+        <p className="mt-3 text-center text-sm text-stone-500">How a consultation typically proceeds, from first contact through to ongoing follow-up.</p>
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-7 px-6 py-14 lg:grid-cols-3 lg:px-8">
