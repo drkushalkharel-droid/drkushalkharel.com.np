@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ChevronDown } from "lucide-react";
 
 export default function Conditions() {
   const conditions = [
@@ -105,7 +106,13 @@ export default function Conditions() {
 
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <details className="group">
+          <summary className="mx-auto flex w-fit cursor-pointer list-none items-center gap-2 rounded-lg border border-sage-200 bg-sage-50 px-6 py-3 font-semibold text-sage-800 transition hover:border-sage-400 hover:bg-sage-100">
+            View conditions we treat
+            <ChevronDown size={18} className="transition group-open:rotate-180" aria-hidden="true" />
+          </summary>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
 
           {conditions.map((condition, index) => {
             const content = (
@@ -153,6 +160,7 @@ export default function Conditions() {
           })}
 
         </div>
+        </details>
 
         <div className="text-center mt-16">
 

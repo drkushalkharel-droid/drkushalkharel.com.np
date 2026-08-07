@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Award, ExternalLink, FileBadge, Mic2, Newspaper, Phone } from "lucide-react";
+import { Award, ChevronDown, ExternalLink, FileBadge, Mic2, Newspaper, Phone } from "lucide-react";
 
 const certificates = [
   "/certificates/cert1.JPG",
@@ -131,26 +131,33 @@ export default function Awards() {
             </a>
           </div>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {certificates.map((certificate, index) => (
-              <div
-                key={certificate}
-                className="group overflow-hidden rounded-lg border border-white/10 bg-stone-800 shadow-lg"
-              >
-                <div className="relative aspect-[1.42/1]">
-                  <Image
-                    src={certificate}
-                    alt={`Professional certificate ${index + 1} of Dr. Kushal Kharel`}
-                    fill
-                    quality={85}
-                    loading="lazy"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition duration-300 group-hover:scale-105"
-                  />
+          <details className="group mt-8">
+            <summary className="flex w-fit cursor-pointer list-none items-center gap-2 rounded-lg border border-white/20 px-6 py-3 font-semibold text-white transition hover:border-clay-200 hover:text-clay-200">
+              View certificates
+              <ChevronDown size={18} className="transition group-open:rotate-180" aria-hidden="true" />
+            </summary>
+
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {certificates.map((certificate, index) => (
+                <div
+                  key={certificate}
+                  className="group/cert overflow-hidden rounded-lg border border-white/10 bg-stone-800 shadow-lg"
+                >
+                  <div className="relative aspect-[1.42/1]">
+                    <Image
+                      src={certificate}
+                      alt={`Professional certificate ${index + 1} of Dr. Kushal Kharel`}
+                      fill
+                      quality={85}
+                      loading="lazy"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition duration-300 group-hover/cert:scale-105"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </details>
         </div>
       </div>
     </section>
