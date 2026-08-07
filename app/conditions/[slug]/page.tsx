@@ -514,6 +514,23 @@ export default async function ConditionPage({
             </section>
           )}
 
+          {condition.category === "Substance Use and Addictive Disorders" && (
+            <section className="rounded-lg border border-sage-200 bg-sage-50 p-6 shadow-sm md:p-8">
+              <h2 className="text-2xl font-bold text-sage-950">Looking for a combined addiction treatment overview?</h2>
+              <p className="mt-3 leading-7 text-stone-700">
+                For a broader look at addiction assessment, counselling, medication and rehab
+                referral in Kathmandu, covering alcohol, nicotine, cannabis, gambling and
+                internet or gaming use together, see the addiction treatment overview page.
+              </p>
+              <Link
+                href="/addiction-treatment-kathmandu"
+                className="mt-5 inline-block rounded-lg bg-sage-700 px-5 py-3 font-semibold text-white transition hover:bg-sage-800"
+              >
+                Addiction treatment in Kathmandu
+              </Link>
+            </section>
+          )}
+
           {relatedConditions.length > 0 && (
             <section className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
               <h2 className="text-3xl font-bold text-sage-950">
