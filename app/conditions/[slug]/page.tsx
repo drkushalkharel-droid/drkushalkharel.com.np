@@ -305,7 +305,7 @@ export default async function ConditionPage({
             </div>
           )}
 
-          <Section id="overview" title="Overview">
+          <Section id="overview" title={`What is ${condition.title}?`}>
             <p>{condition.overview}</p>
             {condition.diagram && (
               <figure className="mt-6">
@@ -329,11 +329,11 @@ export default async function ConditionPage({
             <p>{condition.definition}</p>
           </Section>
 
-          <Section id="causes" title="Causes">
+          <Section id="causes" title={`What causes ${condition.title}?`}>
             <p>{condition.causes}</p>
           </Section>
 
-          <Section id="risk-factors" title="Risk Factors">
+          <Section id="risk-factors" title={`What are the risk factors for ${condition.title}?`}>
             <ul className="list-disc space-y-2 pl-5">
               {condition.riskFactors.map((item) => (
                 <li key={item}>{item}</li>
@@ -341,11 +341,11 @@ export default async function ConditionPage({
             </ul>
           </Section>
 
-          <Section id="brain-mechanisms" title="Brain Mechanisms">
+          <Section id="brain-mechanisms" title={`What happens in the brain with ${condition.title}?`}>
             <p>{condition.brainMechanisms}</p>
           </Section>
 
-          <Section id="symptoms" title="Symptoms">
+          <Section id="symptoms" title={`What are the symptoms of ${condition.title}?`}>
             <ul className="list-disc space-y-2 pl-5">
               {condition.symptoms.map((item) => (
                 <li key={item}>{item}</li>
@@ -353,7 +353,7 @@ export default async function ConditionPage({
             </ul>
           </Section>
 
-          <Section id="diagnostic-criteria" title="Diagnostic Criteria (Patient-Friendly)">
+          <Section id="diagnostic-criteria" title={`How is ${condition.title} diagnosed?`}>
             <ul className="list-disc space-y-2 pl-5">
               {condition.diagnosticCriteria.map((item) => (
                 <li key={item}>{item}</li>
@@ -375,7 +375,7 @@ export default async function ConditionPage({
             </dl>
           </Section>
 
-          <Section id="investigations" title="Investigations">
+          <Section id="investigations" title={`What tests are used to assess ${condition.title}?`}>
             <ul className="list-disc space-y-2 pl-5">
               {condition.investigations.map((item) => (
                 <li key={item}>{item}</li>
@@ -383,7 +383,7 @@ export default async function ConditionPage({
             </ul>
           </Section>
 
-          <Section id="treatment" title="Treatment">
+          <Section id="treatment" title={`How is ${condition.title} treated?`}>
             <p>{condition.treatmentOverview}</p>
           </Section>
 
@@ -417,7 +417,7 @@ export default async function ConditionPage({
             </div>
           </Section>
 
-          <Section id="medications" title="Medications">
+          <Section id="medications" title={`What medications are used for ${condition.title}?`}>
             <dl className="space-y-4">
               {condition.medications.map((item) => (
                 <div key={item.name}>
@@ -428,7 +428,7 @@ export default async function ConditionPage({
             </dl>
           </Section>
 
-          <Section id="psychotherapy" title="Psychotherapy">
+          <Section id="psychotherapy" title={`What therapy helps with ${condition.title}?`}>
             <dl className="space-y-4">
               {condition.psychotherapy.map((item) => (
                 <div key={item.name}>
@@ -439,7 +439,7 @@ export default async function ConditionPage({
             </dl>
           </Section>
 
-          <Section id="lifestyle-advice" title="Lifestyle Advice">
+          <Section id="lifestyle-advice" title={`What lifestyle changes help with ${condition.title}?`}>
             <ul className="list-disc space-y-2 pl-5">
               {condition.lifestyleAdvice.map((item) => (
                 <li key={item}>{item}</li>
@@ -447,11 +447,11 @@ export default async function ConditionPage({
             </ul>
           </Section>
 
-          <Section id="prognosis" title="Prognosis">
+          <Section id="prognosis" title={`What is the long-term outlook for ${condition.title}?`}>
             <p>{condition.prognosis}</p>
           </Section>
 
-          <Section id="prevention" title="Prevention">
+          <Section id="prevention" title={`Can ${condition.title} be prevented?`}>
             <ul className="list-disc space-y-2 pl-5">
               {condition.prevention.map((item) => (
                 <li key={item}>{item}</li>
@@ -459,7 +459,7 @@ export default async function ConditionPage({
             </ul>
           </Section>
 
-          <Section id="family-guidance" title="Family Guidance">
+          <Section id="family-guidance" title={`How can family help someone with ${condition.title}?`}>
             <p>{condition.familyGuidance}</p>
           </Section>
 
@@ -502,7 +502,7 @@ export default async function ConditionPage({
           </Section>
 
           <section id="urgent-care" className="rounded-lg border border-red-200 bg-red-50 p-6 leading-7 text-red-950 shadow-sm md:p-8">
-            <h2 className="text-3xl font-bold text-red-900">When to Seek Urgent Care</h2>
+            <h2 className="text-3xl font-bold text-red-900">When should you seek urgent care for {condition.title}?</h2>
             <p className="mt-5">{condition.urgentCare}</p>
           </section>
 
