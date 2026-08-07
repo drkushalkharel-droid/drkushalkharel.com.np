@@ -58,6 +58,9 @@ export const metadata: Metadata = {
     "Dr Kushal Kharel",
     "Neuropsychiatry Nepal",
     "Psychotherapy Nepal",
+    "Corporate Mental Health Screening Nepal",
+    "Workplace Stress Management Nepal",
+    "Employee Wellness Program Nepal",
   ],
 
   authors: [{ name: "Dr. Kushal Kharel" }],
@@ -181,6 +184,7 @@ export default function RootLayout({
       "Bipolar Disorder Treatment",
       "Addiction Treatment",
       "Online Consultation",
+      "Corporate Mental Health Screening",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -192,6 +196,7 @@ export default function RootLayout({
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "ADHD Management" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Addiction Treatment" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Online Telepsychiatry" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Corporate Mental Health Screening & Stress Management Workshops" } },
       ],
     },
     image: `${siteUrl}${doctorImage}`,
@@ -293,6 +298,8 @@ export default function RootLayout({
       "Schizophrenia",
       "Addiction psychiatry",
       "Telepsychiatry",
+      "Corporate mental health screening",
+      "Workplace stress management",
     ],
     sameAs: [
       "https://facebook.com/cooshal.kharel",

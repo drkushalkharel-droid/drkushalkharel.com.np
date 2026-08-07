@@ -56,6 +56,12 @@ export default function Services() {
       description:
         "Every treatment plan is tailored to the patient's symptoms, lifestyle, family circumstances and recovery goals.",
     },
+    {
+      icon: "🏢",
+      title: "Corporate Mental Health Screening",
+      description:
+        "On-site mental health screening and stress management workshops for schools, offices, banks and corporate organizations to support employee and student wellbeing.",
+    },
   ];
 
   return (
