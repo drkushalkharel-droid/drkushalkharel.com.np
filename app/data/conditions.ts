@@ -8653,6 +8653,876 @@ export const conditions: Condition[] = [
     ],
     extraKeywords: ["migraine treatment Nepal", "headache treatment Kathmandu", "chronic headache psychiatrist", "tension headache treatment Nepal"],
   },
+  {
+    slug: "major-neurocognitive-disorder-dementia",
+    title: "Major Neurocognitive Disorder (Dementia)",
+    category: "Neurocognitive Disorders",
+    titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
+    shortDescription:
+      "A progressive decline in memory, thinking and daily functioning severe enough to affect independence — causes, warning signs, diagnosis, and how medication, structured routines and family support are used to manage symptoms and plan ahead.",
+    overview:
+      "Major neurocognitive disorder, commonly known as dementia, is a decline in one or more cognitive abilities — most often memory, but also language, attention, planning or visuospatial skills — significant enough to interfere with independence in daily activities such as managing money, medications or household tasks. It is not a single disease but a clinical syndrome with several possible underlying causes, the most common being Alzheimer's disease, followed by vascular, Lewy body and frontotemporal causes, and mixed presentations combining more than one. Dementia is not a normal part of ageing, and while it is more common in older adults, forgetfulness alone is not the same as dementia — a proper assessment distinguishes normal age-related change, mild cognitive impairment, and dementia, because the treatment, prognosis and family planning differ substantially between them. Families in Nepal frequently delay assessment, attributing early changes to normal old age or assuming nothing can be done, when in fact earlier diagnosis allows more treatable causes to be identified, medication to be started when appropriate, and practical safety and legal planning to happen while the person can still take part in decisions.",
+    definition:
+      "Major neurocognitive disorder is defined by evidence of significant cognitive decline from a previous level of performance in one or more cognitive domains, based on both the person's or a reliable informant's concern and objective assessment, where the deficits are severe enough to interfere with independence in everyday activities. This distinguishes it from mild neurocognitive disorder (mild cognitive impairment), where decline is present but independence is largely preserved, and from normal ageing, where occasional forgetfulness does not affect daily functioning.",
+    causes:
+      "Alzheimer's disease, the most common cause, involves progressive accumulation of amyloid plaques and tau tangles leading to neuronal loss, typically starting in memory-related structures before spreading. Vascular dementia results from cumulative damage from strokes or chronic small-vessel disease, often producing a stepwise rather than smoothly progressive decline, and shares risk factors with cardiovascular disease. Lewy body dementia involves abnormal protein deposits linked to fluctuating cognition, visual hallucinations and parkinsonism. Frontotemporal dementia, which can begin at a younger age, primarily affects personality, behaviour or language before memory. A minority of cases have a reversible or partly reversible contributing cause — including thyroid disease, vitamin B12 deficiency, depression mimicking dementia (sometimes called pseudodementia), medication side effects, or normal-pressure hydrocephalus — which is exactly why a proper medical work-up matters before assuming a diagnosis is fixed and untreatable.",
+    riskFactors: [
+      "Increasing age, the single strongest risk factor",
+      "Family history of dementia, particularly early-onset cases",
+      "Cardiovascular risk factors: hypertension, diabetes, high cholesterol, obesity and smoking",
+      "Low levels of formal education and limited cognitive or social engagement across life",
+      "History of stroke or significant head injury",
+      "Untreated hearing loss, which is an increasingly recognised modifiable risk factor",
+      "Chronic heavy alcohol use",
+      "Social isolation and untreated depression in later life",
+    ],
+    brainMechanisms:
+      "In Alzheimer's disease, extracellular amyloid-beta plaques and intracellular tau neurofibrillary tangles disrupt neuronal communication and eventually cause cell death, with early involvement of the hippocampus and entorhinal cortex explaining the prominent early memory impairment, before spreading to other cortical regions. Cholinergic neurons, important for memory and attention, are disproportionately affected early on, which is the rationale for cholinesterase inhibitor medications. In vascular dementia, cumulative ischaemic injury disrupts white-matter connections between brain regions, often producing more prominent slowing of processing speed and executive dysfunction than pure memory loss. Regardless of the underlying cause, progressive neuronal loss reduces the brain's cognitive reserve, and factors that support brain health across life — cardiovascular fitness, cognitive engagement, and treatment of hearing loss and depression — are thought to build reserve that can delay the clinical onset of symptoms even when underlying pathology is present.",
+    symptoms: [
+      "Progressive memory loss that disrupts daily life, particularly for recent events",
+      "Difficulty planning, organising or solving problems, such as managing bills or medications",
+      "Getting confused about time, dates or familiar places",
+      "Difficulty finding the right words or following conversations",
+      "Misplacing items and being unable to retrace steps to find them",
+      "Withdrawal from work, social activities or hobbies previously enjoyed",
+      "Changes in mood, personality or judgment, including new suspiciousness or apathy",
+      "Difficulty recognising familiar faces or navigating familiar routes in later stages",
+      "Repeating questions or stories without awareness of having asked or told them already",
+    ],
+    diagnosticCriteria: [
+      "Evidence of significant cognitive decline from a previous level in one or more domains (learning and memory, language, executive function, complex attention, perceptual-motor, or social cognition)",
+      "The cognitive deficits interfere with independence in everyday activities (at minimum requiring assistance with complex tasks such as finances or medication management)",
+      "The deficits do not occur exclusively during an episode of delirium",
+      "The deficits are not better explained by another mental disorder such as major depressive disorder or schizophrenia",
+      "Decline is confirmed by both a concerned informant history and standardised cognitive testing wherever possible, rather than by memory complaints alone",
+    ],
+    differentialDiagnosis: [
+      { name: "Mild neurocognitive disorder (MCI)", note: "Cognitive decline is present but independence in daily activities is largely preserved; an important distinction because MCI carries a different prognosis and monitoring plan." },
+      { name: "Delirium", note: "An acute, fluctuating disturbance of attention and consciousness, often with a clear medical trigger such as infection; must always be excluded or treated before a dementia diagnosis is confirmed, since delirium can be superimposed on existing dementia." },
+      { name: "Depression (pseudodementia)", note: "Depression in older adults can present with prominent memory and concentration complaints that improve substantially with treatment of the mood disorder, unlike true neurodegenerative decline." },
+      { name: "Normal age-related cognitive change", note: "Occasional forgetfulness (misplacing keys, momentarily forgetting a name) without functional impact is a normal part of ageing, not dementia." },
+      { name: "Reversible medical causes", note: "Hypothyroidism, vitamin B12 deficiency, medication side effects and normal-pressure hydrocephalus can all produce dementia-like pictures that partly or fully improve with treatment of the underlying cause." },
+    ],
+    investigations: [
+      "Detailed history from both the patient and a close informant, since insight is often reduced",
+      "Standardised cognitive screening (such as the MMSE or MoCA) and, where available, fuller neuropsychological testing",
+      "Physical and neurological examination",
+      "Blood tests to exclude reversible contributors: thyroid function, vitamin B12, folate, and metabolic and liver function panels",
+      "Brain imaging (CT or MRI) to assess for stroke, tumour, hydrocephalus or patterns suggestive of a specific dementia subtype",
+      "Assessment for depression, delirium and medication effects as contributing or confounding factors",
+      "Functional assessment of activities of daily living to establish severity and care needs",
+    ],
+    treatmentOverview:
+      "Treatment begins with identifying and addressing any reversible contributors, then focuses on slowing symptom progression where medication is appropriate, managing behavioural and psychological symptoms, and — just as importantly — structured support for the person and family to maintain safety, dignity and quality of life. There is currently no cure for the neurodegenerative dementias, so treatment goals are realistically framed around function, comfort and safety rather than reversal, and this framing is discussed openly and compassionately with the family from the outset. A care plan typically combines medication where indicated, structured daily routines, environmental adaptations for safety, and family psychoeducation, with periodic review as needs change over time.",
+    medications: [
+      { name: "Cholinesterase inhibitors (donepezil, rivastigmine, galantamine)", note: "First-line for mild-to-moderate Alzheimer's disease and often used in Lewy body and Parkinson's disease dementia; can modestly slow symptom progression, with gastrointestinal side effects being the most common limiting factor." },
+      { name: "Memantine", note: "Used for moderate-to-severe Alzheimer's disease, sometimes combined with a cholinesterase inhibitor; works through a different mechanism (NMDA receptor modulation) and is generally well tolerated." },
+      { name: "Cautious, targeted use of antidepressants or low-dose antipsychotics", note: "Considered only for specific, distressing behavioural or psychological symptoms (such as significant agitation, depression or psychosis) after non-drug approaches, given the higher sensitivity to side effects and safety considerations in this population — always individualised and reviewed regularly by a psychiatrist." },
+    ],
+    psychotherapy: [
+      { name: "Cognitive stimulation therapy", note: "Structured group or individual activities designed to actively engage thinking, memory and language, with evidence for modest cognitive and quality-of-life benefit in mild-to-moderate dementia." },
+      { name: "Behavioural strategies for distressing symptoms", note: "Identifying specific triggers for agitation, wandering or resistance to care, and adjusting routines, communication style or environment accordingly, is usually more effective and safer than medication alone." },
+      { name: "Family and carer support and psychoeducation", note: "Structured education and emotional support for family caregivers, who carry most of the day-to-day burden in Nepal, meaningfully improves both caregiver wellbeing and the quality of care the person with dementia receives." },
+    ],
+    lifestyleAdvice: [
+      "Keep a consistent daily routine, since predictability reduces confusion and distress",
+      "Maintain physical activity appropriate to ability, which supports both cognitive and cardiovascular health",
+      "Ensure good sleep, hydration and nutrition, and review medications that can worsen confusion",
+      "Simplify the home environment: reduce clutter, ensure good lighting, and add safety measures such as stove and door safeguards where needed",
+      "Encourage social contact and meaningful, achievable activities rather than withdrawal",
+      "Use memory aids — calendars, labelled rooms, written routines — while independence allows",
+      "Treat hearing and vision problems promptly, since uncorrected sensory loss worsens confusion and social withdrawal",
+      "Address caregiver wellbeing directly; caregiver burnout is common and affects the quality of care provided",
+    ],
+    prognosis:
+      "The course depends on the underlying cause: Alzheimer's disease and most neurodegenerative dementias progress gradually over years, vascular dementia can progress in a stepwise pattern linked to further vascular events, and dementias with a reversible or partly reversible contributor (such as thyroid disease or B12 deficiency) may improve significantly once that cause is treated. Earlier diagnosis allows medication to be started when it is likely to help most, gives the person a chance to participate in decisions about future care and legal or financial planning while capacity allows, and gives the family time to plan and access support rather than reacting in crisis. While cognitive decline in the neurodegenerative dementias cannot currently be reversed, quality of life, safety and family coping can be meaningfully improved with a structured, ongoing care plan.",
+    prevention: [
+      "Manage cardiovascular risk factors — blood pressure, blood sugar, cholesterol and weight — across mid-life",
+      "Stay physically active and cognitively and socially engaged throughout adulthood",
+      "Treat hearing loss and vision problems promptly rather than assuming they are an inevitable part of ageing",
+      "Avoid heavy or prolonged alcohol use and smoking",
+      "Treat depression and get adequate, good-quality sleep",
+      "Protect against head injury where possible",
+      "Seek assessment early for any noticeable, persistent change in memory or thinking rather than waiting",
+    ],
+    familyGuidance:
+      "Families are central to dementia care in Nepal, and their involvement from the point of diagnosis makes a real difference. It helps to learn about the specific type of dementia diagnosed, since the expected course and best strategies differ between causes. Communication techniques matter: keeping instructions simple, allowing extra time, avoiding arguing about false beliefs or confused statements, and instead gently redirecting, tend to reduce distress for everyone. Safety planning — for wandering, medication management, cooking and driving — should be addressed proactively rather than after an incident. Legal and financial planning, including power of attorney arrangements, is best discussed while the person can still participate meaningfully in the decision. Caregiver burnout is common and is not a sign of failure; arranging respite, sharing responsibilities among family members, and seeking the caregiver's own medical and emotional support are a legitimate and necessary part of the overall care plan.",
+    faqs: [
+      { question: "Is dementia just a normal part of getting old?", answer: "No. Some slowing of processing speed and occasional forgetfulness is a normal part of ageing, but dementia involves a decline severe enough to interfere with independence in daily activities, and it always warrants assessment rather than being assumed to be normal ageing." },
+      { question: "Can dementia be cured?", answer: "Most causes of dementia, including Alzheimer's disease, cannot currently be reversed, though a minority of cases have a treatable or partly reversible contributor such as thyroid disease or vitamin B12 deficiency, which is one reason a full medical work-up matters. Treatment focuses on slowing progression where possible and maximising function, safety and quality of life." },
+      { question: "Is memory loss always dementia?", answer: "No. Depression, anxiety, poor sleep, certain medications, thyroid problems and vitamin deficiencies can all cause memory and concentration difficulties that resemble dementia but improve with appropriate treatment, which is why proper assessment is important before assuming the worst." },
+      { question: "At what point should we see a doctor about a family member's memory?", answer: "As soon as memory or thinking changes are noticeably affecting daily functioning, such as managing money, medications, or familiar tasks, or when family members are consistently more concerned than the person seems to be. Earlier assessment gives more options, not fewer." },
+      { question: "Do medications for dementia stop the disease from getting worse?", answer: "Available medications such as cholinesterase inhibitors and memantine can modestly slow symptom progression and support function for a period in many patients, but they do not stop or reverse the underlying disease process. Expectations are best discussed individually with the prescribing psychiatrist." },
+      { question: "How do we handle a parent who insists nothing is wrong?", answer: "Reduced insight is a common feature of dementia itself, not simple denial. Framing an assessment around a general health check-up, involving a trusted family member or friend, and avoiding direct confrontation about specific memory lapses often helps someone agree to be seen." },
+    ],
+    mythsVsFacts: [
+      { myth: "Dementia only affects memory.", fact: "Dementia can affect language, planning, judgment, personality, mood and visuospatial skills, sometimes before memory is prominently affected, particularly in frontotemporal and Lewy body dementia." },
+      { myth: "Nothing can be done once someone is diagnosed with dementia.", fact: "While the underlying disease usually cannot be reversed, medication, structured routines, safety planning and family support meaningfully improve function, safety and quality of life throughout the illness." },
+      { myth: "Dementia only happens to very old people.", fact: "While risk rises sharply with age, younger-onset dementia, including frontotemporal dementia, can begin in a person's 40s or 50s and is often missed or misattributed to stress at first." },
+      { myth: "Talking openly about the diagnosis will upset the person unnecessarily.", fact: "Where cognition allows, involving the person in an age- and stage-appropriate conversation about their diagnosis and preferences supports dignity and better care planning, rather than causing more harm than the silence itself." },
+    ],
+    urgentCare:
+      "Seek urgent medical assessment for any sudden change in alertness, confusion or behaviour, since this can indicate delirium from an underlying infection or medical problem requiring prompt treatment rather than being assumed to be dementia progression. Seek immediate help for wandering with inability to find the way home, a fall with injury, or any safety incident involving stoves, medications or unsupervised exit from the home, and seek urgent psychiatric assessment for severe agitation, aggression, or psychotic symptoms causing significant distress or risk.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "World Health Organization. Dementia fact sheet and ICD-11.",
+      "National Institute for Health and Care Excellence (NICE). Dementia: assessment, management and support.",
+      "Lancet Commission on Dementia Prevention, Intervention, and Care.",
+    ],
+    extraKeywords: ["dementia treatment Nepal", "memory loss psychiatrist Kathmandu", "Alzheimer's disease Nepal", "dementia assessment Kathmandu"],
+  },
+  {
+    slug: "mild-cognitive-impairment",
+    title: "Mild Cognitive Impairment (MCI)",
+    category: "Neurocognitive Disorders",
+    titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
+    shortDescription:
+      "A noticeable decline in memory or thinking that is greater than expected for age but does not yet significantly affect independence — what raises or lowers the risk of progression to dementia, and how it is monitored and managed.",
+    overview:
+      "Mild cognitive impairment (MCI) sits between normal age-related cognitive change and dementia: there is a measurable decline in memory or another cognitive domain, noticeable to the person or people around them, but independence in daily activities is largely preserved, distinguishing it from major neurocognitive disorder. MCI matters clinically because it identifies a group of people who need monitoring and risk-factor management, since some — though not all — will progress to dementia over time, while others remain stable or even improve, particularly when a treatable contributing cause such as depression, poor sleep or a medication side effect is identified and addressed. A diagnosis of MCI is not a diagnosis of dementia, and framing it that way to patients and families, while still taking it seriously, is an important part of good care.",
+    definition:
+      "Mild neurocognitive disorder is defined as modest cognitive decline from a previous level of performance in one or more cognitive domains, based on concern from the individual, a knowledgeable informant, or the clinician, along with objective evidence of impairment, where the deficits do not interfere with the capacity for independence in everyday activities, though greater effort, compensatory strategies or accommodation may be required.",
+    causes:
+      "MCI can be an early stage of an underlying neurodegenerative process, most often Alzheimer's disease pathology, in which case it may progress to dementia over subsequent years. It can also result from vascular risk factors, depression, chronic sleep deprivation, certain medications, thyroid dysfunction, vitamin B12 deficiency, or excessive alcohol use — causes that are often at least partly modifiable or reversible. Distinguishing between a likely neurodegenerative and a likely reversible or vascular cause, through history, examination and targeted investigation, shapes both the monitoring plan and realistic expectations for the person and family.",
+    riskFactors: [
+      "Increasing age",
+      "Family history of dementia",
+      "Cardiovascular risk factors: hypertension, diabetes, high cholesterol",
+      "Low cognitive and social engagement",
+      "Untreated depression or chronic high stress",
+      "Poor sleep quality or untreated sleep apnoea",
+      "Carrying certain genetic risk factors, where known and tested",
+    ],
+    brainMechanisms:
+      "In cases progressing toward Alzheimer's disease, MCI is thought to reflect early accumulation of amyloid and tau pathology, initially affecting medial temporal lobe structures involved in memory formation, before compensatory brain networks are overwhelmed and clinical impairment becomes more pronounced and independence is affected. In vascular-related MCI, small-vessel disease disrupts white-matter connections important for processing speed and executive function. Cognitive reserve — built through education, ongoing mental stimulation, and cardiovascular health — is thought to explain why people with similar amounts of underlying brain change can show quite different levels of clinical impairment, and why lifestyle measures remain relevant even after a diagnosis of MCI.",
+    symptoms: [
+      "Noticeably more forgetful than before, such as misplacing items more often or repeating questions",
+      "Difficulty following complex conversations, instructions or plots of a story",
+      "Taking longer to complete familiar tasks, or needing more effort to concentrate",
+      "Occasional lapses in judgment, though generally intact insight",
+      "Mild word-finding difficulty",
+      "The person and/or family notice a change, but daily independence — managing money, medications, cooking — is largely preserved",
+    ],
+    diagnosticCriteria: [
+      "Evidence of modest cognitive decline from a previous level in one or more cognitive domains, based on concern from the individual, an informant, or the clinician",
+      "Objective evidence of modest impairment on cognitive testing, typically in a range below expectation for age and education but above the threshold for major impairment",
+      "The cognitive deficits do not interfere with capacity for independence in everyday activities, though more effort or compensatory strategies may be needed",
+      "The deficits do not occur exclusively in the context of delirium",
+      "The deficits are not better explained by another mental disorder, such as depression",
+    ],
+    differentialDiagnosis: [
+      { name: "Major neurocognitive disorder (dementia)", note: "The key distinguishing feature is preserved independence in daily activities in MCI, versus significant functional impairment in dementia." },
+      { name: "Normal age-related cognitive change", note: "Occasional, non-progressive forgetfulness without objective decline on testing and without informant concern is more consistent with normal ageing than MCI." },
+      { name: "Depression", note: "Depression in older adults commonly presents with concentration and memory complaints and can be difficult to distinguish from early cognitive decline without careful assessment and, sometimes, a treatment trial." },
+      { name: "Delirium and medication effects", note: "Both should be actively excluded, since they can produce a similar clinical picture that resolves once the underlying cause is treated." },
+    ],
+    investigations: [
+      "Detailed history from the person and an informant, including onset and progression",
+      "Formal cognitive testing (such as MoCA), ideally with a baseline for future comparison",
+      "Assessment of mood, sleep and medication use",
+      "Blood tests: thyroid function, vitamin B12, folate, and metabolic screening",
+      "Brain imaging where the presentation, age of onset or examination findings suggest a specific structural or vascular cause",
+      "Functional assessment confirming preserved independence in daily activities",
+    ],
+    treatmentOverview:
+      "There is no medication currently approved specifically to treat MCI itself, so management centres on identifying and treating any contributing or reversible causes, addressing cardiovascular and lifestyle risk factors that influence progression risk, and establishing a monitoring plan with periodic reassessment, typically every six to twelve months or sooner if symptoms change. This is also an opportunity to have proactive conversations with the person and family about future planning while cognition and decision-making capacity remain largely intact, which is far preferable to having those conversations later under pressure.",
+    medications: [
+      { name: "No condition-specific medication is currently approved for MCI", note: "Cholinesterase inhibitors are not routinely recommended for MCI itself; any medication decisions are individualised to a specific comorbid condition (such as depression) rather than applied generically." },
+      { name: "Treatment of identified contributing conditions", note: "Where depression, sleep apnoea, thyroid disease or vitamin deficiency is contributing, treating that condition directly can improve or stabilise cognitive symptoms." },
+    ],
+    psychotherapy: [
+      { name: "Cognitive rehabilitation strategies", note: "Structured use of memory aids, routines and compensatory strategies can support day-to-day function and confidence." },
+      { name: "Treatment of comorbid anxiety or depression", note: "Addressing mood symptoms directly, which are common alongside MCI and can themselves worsen cognitive performance, often brings real functional improvement." },
+    ],
+    lifestyleAdvice: [
+      "Stay physically active; regular aerobic exercise has some of the best evidence for supporting cognitive health",
+      "Keep socially and mentally engaged through meaningful activities, learning and relationships",
+      "Manage blood pressure, blood sugar and cholesterol proactively",
+      "Prioritise consistent, good-quality sleep and address suspected sleep apnoea",
+      "Limit alcohol and avoid smoking",
+      "Use memory aids and routines early, rather than waiting until they feel strictly necessary",
+      "Treat hearing and vision problems promptly",
+    ],
+    prognosis:
+      "Outcomes in MCI vary: a proportion of people progress to dementia over the following years, particularly when an underlying neurodegenerative process is present, but a meaningful proportion remain stable, and some improve, especially when a treatable contributor such as depression, sleep apnoea or a vitamin deficiency is identified and treated. Regular follow-up allows progression to be identified early if it occurs, and gives the best opportunity to address modifiable risk factors that may slow decline.",
+    prevention: [
+      "Manage cardiovascular risk factors across adulthood",
+      "Stay physically, socially and cognitively active",
+      "Treat depression, sleep problems and hearing loss promptly",
+      "Limit alcohol intake and avoid smoking",
+      "Seek assessment early for any persistent, noticeable change in memory or thinking",
+    ],
+    familyGuidance:
+      "An MCI diagnosis is a reasonable prompt for planning, not a reason for alarm. Families can support the person by helping establish routines and memory aids without taking over tasks the person can still manage independently, since maintaining engagement in daily activities is itself protective. Encouraging regular follow-up, supporting a heart-healthy and socially active lifestyle, and having early, unpressured conversations about future wishes and planning are some of the most useful things a family can do at this stage.",
+    faqs: [
+      { question: "Does MCI always progress to dementia?", answer: "No. While MCI does increase the risk of later dementia compared with the general population, a meaningful proportion of people with MCI remain stable over time, and some improve, particularly if a treatable contributing cause is found and addressed." },
+      { question: "Is there a test that can predict who will progress to dementia?", answer: "Specialised tests exist in research and some specialist settings, but there is no single routine test that reliably predicts an individual's outcome. Regular clinical monitoring over time remains the most practical approach for most patients." },
+      { question: "Should someone with MCI stop working or driving?", answer: "Not automatically. By definition, independence in daily activities is preserved in MCI, so decisions about work or driving are individualised based on the specific cognitive domains affected and a practical assessment of safety, not made from the diagnosis label alone." },
+      { question: "Can lifestyle changes really make a difference at this stage?", answer: "Yes. Physical activity, cardiovascular risk management, social and cognitive engagement, and treating sleep and mood problems are among the most evidence-supported ways to support cognitive health once MCI is identified." },
+      { question: "How often should follow-up happen after an MCI diagnosis?", answer: "This is individualised, but roughly every six to twelve months is a common starting point, with earlier review if new symptoms or concerns arise." },
+      { question: "Is MCI a normal part of ageing?", answer: "No — MCI represents a decline greater than expected for a person's age and education, confirmed by testing, and it warrants assessment and monitoring rather than being dismissed as ordinary ageing." },
+    ],
+    mythsVsFacts: [
+      { myth: "A diagnosis of MCI means dementia is inevitable.", fact: "MCI increases risk but does not guarantee progression; many people remain stable for years, and some improve, particularly when a reversible contributor is identified." },
+      { myth: "Nothing can be done for MCI, so there's no point getting assessed.", fact: "Assessment can identify treatable contributors such as depression, sleep apnoea or vitamin deficiency, and establishes a monitoring plan and an opportunity for proactive lifestyle and future planning." },
+      { myth: "Brain-training games and supplements are proven to prevent progression.", fact: "Physical exercise, cardiovascular risk management and social engagement have considerably stronger evidence than commercial brain-training programmes or supplements for cognitive health." },
+      { myth: "If someone can still work and manage their household, cognitive complaints aren't worth mentioning to a doctor.", fact: "Preserved independence is exactly what defines MCI rather than dementia, and it is precisely the stage at which assessment and monitoring are most useful." },
+    ],
+    urgentCare:
+      "MCI itself is not an emergency, but seek prompt medical assessment for any sudden or rapidly progressive change in cognition or alertness, which can indicate delirium or another acute medical problem rather than typical MCI, and seek psychiatric assessment if low mood, hopelessness or thoughts of self-harm accompany the cognitive symptoms.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "National Institute for Health and Care Excellence (NICE). Dementia: assessment, management and support (covers MCI pathway).",
+      "Alzheimer's Association. Mild cognitive impairment clinical guidance.",
+    ],
+    extraKeywords: ["mild cognitive impairment Nepal", "early memory loss psychiatrist Kathmandu", "MCI treatment Nepal"],
+  },
+  {
+    slug: "postpartum-psychosis",
+    title: "Postpartum Psychosis",
+    category: "Psychiatric Emergencies",
+    titleSuffix: "A Postnatal Psychiatric Emergency — Symptoms & Treatment",
+    shortDescription:
+      "A rare but severe psychiatric emergency that can develop within days to weeks of childbirth, with rapid-onset confusion, mood swings, delusions or hallucinations — why it requires urgent treatment, and how it differs from the more common postpartum depression.",
+    overview:
+      "Postpartum psychosis is a rare, severe psychiatric emergency that typically develops within the first two to four weeks after childbirth, sometimes within days, presenting with a rapid onset of confusion, extreme mood swings, disorganised behaviour, and delusions or hallucinations, often centred on the baby. It is distinct from — and far less common but considerably more dangerous than — postpartum depression and the very common, mild and self-limiting 'baby blues.' Because symptoms can escalate within hours and carry a genuine risk of harm to the mother or infant, postpartum psychosis is always a psychiatric emergency requiring urgent inpatient assessment, not a condition to be managed by watching and waiting at home. With prompt treatment, most women make a full recovery, and family awareness of the early warning signs is one of the most important factors in getting help quickly.",
+    definition:
+      "Postpartum psychosis is not a standalone DSM-5 diagnosis but a clinical presentation, most often representing a manic or mixed episode of bipolar disorder, or occasionally a brief psychotic episode, triggered in the postpartum period and specified with a peripartum onset — within four weeks of delivery. It is characterised by an acute onset of psychotic symptoms (delusions, hallucinations or severely disorganised thinking or behaviour) together with mood disturbance, marked confusion, and significant fluctuation in presentation over hours to days.",
+    causes:
+      "The dramatic hormonal shifts following delivery — particularly the rapid fall in oestrogen and progesterone — interact with an underlying biological vulnerability, most strongly a personal or family history of bipolar disorder, to trigger an acute episode. Severe sleep deprivation in the days after birth is a significant contributing and aggravating factor. A first psychotic or manic episode can occur even without any prior psychiatric history, though the strongest predictor is a personal or family history of bipolar disorder or a previous episode of postpartum psychosis, which carries a substantially elevated risk of recurrence in future pregnancies.",
+    riskFactors: [
+      "Personal history of bipolar disorder — by far the strongest risk factor",
+      "Family history of bipolar disorder or postpartum psychosis",
+      "A previous episode of postpartum psychosis (high recurrence risk in subsequent pregnancies)",
+      "First pregnancy",
+      "Severe sleep deprivation around and after delivery",
+      "Discontinuation of mood-stabilising medication during pregnancy without psychiatric guidance",
+      "Complicated or traumatic delivery",
+    ],
+    brainMechanisms:
+      "Postpartum psychosis is understood as an extreme sensitivity, in a biologically vulnerable brain, to the abrupt postpartum drop in reproductive hormones, which interact with the same neurotransmitter and circadian systems implicated in bipolar disorder. Severe sleep deprivation independently disrupts circadian regulation and can itself trigger manic or psychotic symptoms in a vulnerable individual, which is part of why protecting sleep is both a treatment and, where a high-risk pregnancy is identified in advance, a preventive strategy.",
+    symptoms: [
+      "Rapid onset of confusion or disorientation within days to a few weeks of delivery",
+      "Extreme mood swings — elation, irritability or severe depression, sometimes alternating",
+      "Delusions, often centred on the baby (such as believing the baby is unwell, in danger, or not really theirs)",
+      "Hallucinations, commonly auditory (hearing voices, sometimes instructing harmful action)",
+      "Severe insomnia or a marked reduction in the need for sleep",
+      "Disorganised, uncharacteristic or erratic behaviour",
+      "Paranoia or suspiciousness toward family members or care providers",
+      "Rapidly fluctuating presentation — appearing relatively well at times and acutely unwell shortly after",
+    ],
+    diagnosticCriteria: [
+      "Onset of psychotic symptoms (delusions, hallucinations, or grossly disorganised thinking or behaviour) within four weeks of delivery (peripartum onset)",
+      "Frequently accompanied by prominent mood symptoms — mania, depression, or rapidly mixed states",
+      "Marked confusion or fluctuating level of awareness is common and should raise urgency, not be dismissed as ordinary postpartum exhaustion",
+      "Symptoms represent a clear, acute change from the woman's usual functioning",
+      "Underlying medical causes (infection, eclampsia, thyroid storm, substance-related states) must be excluded as part of urgent assessment",
+    ],
+    differentialDiagnosis: [
+      { name: "Postpartum depression", note: "Postpartum depression is far more common, develops more gradually, and does not typically involve psychosis, though severe cases can rarely include psychotic features and need the same urgency." },
+      { name: "Baby blues", note: "A very common, mild, self-limiting mood fluctuation in the first one to two weeks after delivery, without psychosis, confusion or safety risk, resolving on its own without treatment." },
+      { name: "Delirium (from infection, eclampsia, thyroid crisis or other medical causes)", note: "Postpartum medical complications can cause an acute confusional state that mimics psychosis; urgent medical evaluation is essential to exclude this before attributing symptoms purely to a psychiatric cause." },
+      { name: "Substance-induced psychosis", note: "Substance use in the postpartum period can produce a similar acute presentation and should be specifically asked about." },
+    ],
+    investigations: [
+      "Urgent joint medical and psychiatric assessment, given the range of possible causes and the safety risk",
+      "Physical examination and vital signs, given the risk of postpartum medical complications",
+      "Blood tests including infection markers, thyroid function, and metabolic panel",
+      "Screening for eclampsia/pre-eclampsia if within the relevant postpartum window",
+      "Assessment of suicide risk and, critically, risk to the infant",
+      "Collateral history from family, since insight is often severely impaired",
+    ],
+    treatmentOverview:
+      "Postpartum psychosis requires urgent, usually inpatient, psychiatric treatment, typically involving antipsychotic medication, a mood stabiliser or lithium depending on the clinical picture, and close monitoring of both mother and infant safety; electroconvulsive therapy (ECT) is a rapid and effective option in severe or treatment-resistant cases. Protecting sleep, ensuring a safe environment, and involving family in a structured way are essential alongside medication. Because symptoms can escalate very quickly and carry real risk, treatment should never be delayed for a trial of watchful waiting at home once psychotic symptoms are suspected.",
+    medications: [
+      { name: "Antipsychotic medication", note: "Used to treat psychotic symptoms directly, chosen with consideration of breastfeeding where relevant, in discussion between psychiatrist and family." },
+      { name: "Mood stabilisers or lithium", note: "Used particularly where an underlying bipolar presentation is identified, with careful monitoring given the physiological changes of the postpartum period." },
+      { name: "Electroconvulsive therapy (ECT)", note: "A rapid, effective, and well-established treatment option in severe, treatment-resistant, or particularly dangerous presentations." },
+    ],
+    psychotherapy: [
+      { name: "Structured family involvement and psychoeducation", note: "Family support with infant care and household responsibilities during acute treatment and recovery is central, alongside education about the condition to reduce fear and stigma." },
+      { name: "Longer-term individual or couples therapy after stabilisation", note: "Once the acute episode has resolved, therapy can support processing the experience, adjusting to motherhood, and planning for any future pregnancies." },
+    ],
+    lifestyleAdvice: [
+      "Prioritise protected, uninterrupted sleep during recovery, with family sharing night-time infant care",
+      "Maintain close follow-up with psychiatry well beyond initial stabilisation",
+      "Build a clear, written safety and support plan involving trusted family members",
+      "Discuss preconception planning for any future pregnancy with a psychiatrist given the high recurrence risk",
+      "Avoid alcohol and non-prescribed substances during recovery",
+      "Gradual, supported return to daily activities rather than an abrupt resumption of full responsibilities",
+    ],
+    prognosis:
+      "With prompt treatment, the great majority of women recover fully from an episode of postpartum psychosis, often within weeks to a few months, though recovery timelines vary. The risk of recurrence in a future pregnancy is substantially elevated — roughly a large minority to around half in some studies — which makes proactive psychiatric planning before and during any subsequent pregnancy an important part of long-term care, alongside monitoring for an underlying bipolar disorder that may need ongoing management beyond the postpartum period.",
+    prevention: [
+      "Identify high-risk women (personal or family history of bipolar disorder or previous postpartum psychosis) during pregnancy for proactive psychiatric planning",
+      "Discuss a specific postpartum monitoring and, where appropriate, preventive medication plan with a psychiatrist before delivery in high-risk cases",
+      "Protect postpartum sleep as much as possible through shared night-time care",
+      "Ensure family and birth attendants know the early warning signs and have a clear plan for urgent review if they appear",
+      "Maintain continuity of psychiatric care through pregnancy and the postpartum period for women with a known bipolar or psychotic disorder",
+    ],
+    familyGuidance:
+      "Family recognition of the early warning signs — confusion, marked mood swings, unusual beliefs about the baby, severe insomnia, or erratic behaviour in the first weeks after delivery — is often what gets a woman to urgent care in time, since her own insight is frequently impaired during the episode. This is a medical emergency, not something to manage at home or attribute to normal new-parent stress or the baby blues; urgent assessment should be sought the same day symptoms are noticed. During treatment and recovery, practical support with infant care, household tasks and protected sleep for the mother make a real difference, and reducing stigma within the family — understanding this as a treatable medical emergency rather than a personal or moral failing — supports both recovery and the woman's willingness to seek help early with any future pregnancy.",
+    faqs: [
+      { question: "How is postpartum psychosis different from the baby blues or postpartum depression?", answer: "The baby blues are very common, mild and resolve within about two weeks without treatment. Postpartum depression is more common, develops gradually, and does not usually involve psychosis. Postpartum psychosis is rare, has a rapid, dramatic onset with confusion and delusions or hallucinations, and is always a medical emergency." },
+      { question: "How soon after delivery can postpartum psychosis start?", answer: "Most commonly within the first two to four weeks after delivery, sometimes within just a few days, and occasionally slightly later. Any dramatic mental state change in the early postpartum weeks warrants urgent assessment." },
+      { question: "Does a woman with postpartum psychosis pose a danger to her baby?", answer: "There is a real, recognised risk related to delusional beliefs or severe confusion, which is exactly why urgent, usually inpatient, treatment with close monitoring is standard care rather than home management — this is about safety and treatment, not blame." },
+      { question: "Will this happen again with a future pregnancy?", answer: "The risk of recurrence in a subsequent pregnancy is significantly elevated compared with the general population, which is why proactive psychiatric planning before and during any future pregnancy is strongly recommended for women with a prior episode." },
+      { question: "Can a woman fully recover from postpartum psychosis?", answer: "Yes. With prompt treatment, most women recover fully. Ongoing psychiatric follow-up is important both to support full recovery and to monitor for an underlying bipolar disorder that some women are subsequently diagnosed with." },
+      { question: "Is postpartum psychosis caused by something the mother did wrong?", answer: "No. It is a biologically driven psychiatric emergency related to hormonal shifts, sleep deprivation and underlying vulnerability, most strongly to bipolar disorder — it is not caused by parenting choices, weakness, or lack of love for the baby." },
+    ],
+    mythsVsFacts: [
+      { myth: "Postpartum psychosis is just a severe form of the baby blues.", fact: "It is a distinct and much more serious psychiatric emergency involving psychosis and marked confusion, unrelated in severity to the very common and self-limiting baby blues." },
+      { myth: "If a new mother seems fine some hours and unwell at other times, it can't be that serious.", fact: "Rapid fluctuation between apparent wellness and acute symptoms is a hallmark of postpartum psychosis and should increase, not decrease, the urgency of assessment." },
+      { myth: "This only happens to women with an obvious prior psychiatric history.", fact: "While a personal or family history of bipolar disorder is the strongest risk factor, a first episode can occur in women with no previous psychiatric diagnosis." },
+      { myth: "It's safer to wait and see if symptoms settle on their own before seeking help.", fact: "Because symptoms can escalate within hours and carry real safety risk, postpartum psychosis should always prompt same-day urgent psychiatric assessment rather than a period of watching and waiting." },
+    ],
+    urgentCare:
+      "Postpartum psychosis is always a psychiatric emergency. Seek immediate emergency assessment for any new confusion, dramatic mood swings, unusual beliefs about the baby, hallucinations, severe insomnia, or erratic behaviour appearing within weeks of delivery — do not wait to see if it passes. If there is any concern about immediate safety to the mother or infant, seek emergency medical attention right away rather than arranging a routine outpatient appointment.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR) — peripartum onset specifier.",
+      "Royal College of Psychiatrists. Postpartum psychosis patient information.",
+      "National Institute for Health and Care Excellence (NICE). Antenatal and postnatal mental health: clinical management.",
+      "Action on Postpartum Psychosis (APP) clinical resources.",
+    ],
+    extraKeywords: ["postpartum psychosis Nepal", "postnatal psychosis treatment Kathmandu", "psychiatric emergency after childbirth Nepal"],
+  },
+  {
+    slug: "premenstrual-dysphoric-disorder",
+    title: "Premenstrual Dysphoric Disorder (PMDD)",
+    category: "Depressive Disorders",
+    titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
+    shortDescription:
+      "A severe, cyclical mood disorder tied to the menstrual cycle — how it differs from ordinary PMS, why it is under-recognised, and the tracking-based diagnosis and treatment approaches that bring real relief.",
+    overview:
+      "Premenstrual dysphoric disorder (PMDD) is a severe, cyclical mood disorder in which significant depression, irritability, anxiety or mood swings appear in the week or so before menstruation and improve within a few days of its onset, following a pattern that repeats most cycles. It is far more disabling than ordinary premenstrual syndrome (PMS): where PMS involves mild physical and emotional discomfort that most women manage without difficulty, PMDD causes symptoms severe enough to significantly disrupt work, relationships and daily functioning, and is associated with a meaningfully elevated risk of suicidal thinking during the symptomatic window. PMDD is frequently under-recognised, in Nepal and elsewhere, because symptoms are dismissed as 'just PMS' or attributed to a difficult personality, when in fact it is a diagnosable psychiatric condition with a specific, evidence-based treatment approach, and confirming the cyclical pattern through symptom tracking is central to getting an accurate diagnosis.",
+    definition:
+      "PMDD is diagnosed when at least five of eleven specified symptoms — including marked affective lability, irritability, depressed mood, anxiety, and physical symptoms such as breast tenderness or bloating — are present in the final week before menses in most menstrual cycles over the preceding year, begin to improve within a few days after menses starts, and are minimal or absent in the week after menses, with at least one core mood symptom (marked lability, irritability, depressed mood, or anxiety) required, and the symptoms causing clinically significant distress or functional impairment.",
+    causes:
+      "PMDD is understood as an abnormal sensitivity of the brain to normal cyclical hormonal fluctuations — particularly the fall in oestrogen and progesterone in the luteal phase — rather than an abnormality of hormone levels themselves, which are typically normal on testing. This heightened sensitivity affects neurotransmitter systems, particularly serotonin, which explains both the mood symptoms and the effectiveness of serotonergic medication. Genetic vulnerability, a personal history of depression or anxiety, and high stress can all increase the likelihood or severity of PMDD.",
+    riskFactors: [
+      "Personal history of depression, anxiety, or postpartum depression",
+      "Family history of PMDD or mood disorders",
+      "History of trauma or high chronic stress",
+      "Sensitivity to hormonal changes at other times, such as during pregnancy or perimenopause",
+      "Smoking",
+      "Underlying, less severe premenstrual syndrome that intensifies over time",
+    ],
+    brainMechanisms:
+      "In women with PMDD, the normal luteal-phase decline in oestrogen and progesterone — and specifically the neurosteroid allopregnanolone, a progesterone metabolite that acts on GABA receptors — appears to trigger an abnormal response in mood-regulating brain circuits, rather than reflecting any abnormal hormone level itself. Serotonergic pathways are strongly implicated, since serotonergic antidepressants are effective even when dosed only during the luteal phase, faster-acting than their typical onset in standard depression treatment — a distinctive pharmacological feature that supports the theory of an acute neurosteroid-triggered mechanism rather than a slower monoamine-depletion process.",
+    symptoms: [
+      "Marked mood swings (suddenly feeling sad, tearful, or sensitive to rejection)",
+      "Marked irritability, anger, or increased conflict with others",
+      "Depressed mood, hopelessness, or self-critical thoughts",
+      "Marked anxiety, tension, or feeling on edge",
+      "Decreased interest in usual activities",
+      "Difficulty concentrating",
+      "Fatigue or low energy",
+      "Change in appetite, food cravings, or overeating",
+      "Sleep disturbance — sleeping too much or too little",
+      "A sense of being overwhelmed or out of control",
+      "Physical symptoms: breast tenderness, bloating, joint or muscle pain, weight gain sensation",
+    ],
+    diagnosticCriteria: [
+      "At least 5 of 11 specified symptoms present in the final week before menses, with at least one being marked affective lability, irritability, depressed mood, or anxiety",
+      "Symptoms begin to improve within a few days after the onset of menses and become minimal or absent in the week post-menses",
+      "The pattern is confirmed by prospective daily symptom ratings over at least two menstrual cycles, not by retrospective recall alone",
+      "Symptoms are associated with clinically significant distress or interference with work, school, social activities or relationships",
+      "The disturbance is not merely an exacerbation of another disorder, such as major depressive disorder, though PMDD can co-occur with other conditions",
+    ],
+    differentialDiagnosis: [
+      { name: "Premenstrual syndrome (PMS)", note: "PMS involves milder physical and emotional symptoms that do not cause the marked functional impairment or the required core mood symptoms seen in PMDD." },
+      { name: "Major depressive disorder or an anxiety disorder", note: "These involve persistent symptoms not tied to a specific cyclical pattern; a mood disorder that is present throughout the cycle, not just the luteal phase, points away from PMDD, though the two can coexist and PMDD can premenstrually worsen an underlying condition." },
+      { name: "Perimenopause", note: "Perimenopausal mood symptoms can also fluctuate but are tied to the broader hormonal transition of perimenopause rather than a consistent monthly premenstrual pattern." },
+      { name: "Thyroid dysfunction", note: "Can cause mood and energy symptoms that may be mistaken for a cyclical pattern; thyroid function should be checked if symptoms don't clearly follow the classic premenstrual timing." },
+    ],
+    investigations: [
+      "Prospective daily symptom tracking across at least two menstrual cycles using a structured symptom diary — the central diagnostic tool",
+      "Clinical interview covering psychiatric history, current mood symptoms across the whole cycle, and functional impact",
+      "Screening for comorbid depression, anxiety and trauma history",
+      "Basic evaluation to exclude thyroid or other medical contributors when the pattern is unclear",
+    ],
+    treatmentOverview:
+      "First-line treatment for PMDD is an SSRI antidepressant, which can be taken either continuously or, distinctively, only during the luteal phase (the two weeks before menses), often working faster than in standard depression treatment. Hormonal approaches, including certain combined oral contraceptives, are an alternative or additional option for some women. Lifestyle measures, structured symptom tracking to anticipate and plan around difficult days, and psychological support for the relationship and functional strain PMDD can cause are useful complements to medical treatment. Because symptoms are cyclical, treatment plans are often adjusted around the individual's own confirmed pattern rather than following a fixed daily regimen used for other depressive disorders.",
+    medications: [
+      { name: "SSRIs (e.g. sertraline, fluoxetine, escitalopram)", note: "First-line treatment, effective when taken either continuously or only during the luteal phase for many women — a dosing flexibility distinctive to PMDD compared with standard depression treatment." },
+      { name: "Combined hormonal contraceptives", note: "Certain formulations, particularly continuous or extended-cycle regimens, can reduce PMDD symptoms for some women by minimising hormonal fluctuation, though response varies and some women feel worse on hormonal contraception." },
+      { name: "GnRH agonists (specialist use)", note: "Reserved for severe, treatment-resistant cases under specialist supervision, given their significant side-effect profile and typical use as an add-back regimen." },
+    ],
+    psychotherapy: [
+      { name: "Cognitive behavioural therapy (CBT)", note: "Helps build coping strategies for the luteal-phase symptomatic window and address the impact on relationships, work and self-esteem, with evidence for meaningful symptom reduction." },
+      { name: "Psychoeducation and cycle-based planning", note: "Using confirmed symptom-tracking data to anticipate difficult days and plan workload, communication and self-care accordingly reduces both symptom impact and the sense of unpredictability many women describe." },
+    ],
+    lifestyleAdvice: [
+      "Keep a consistent daily symptom diary across cycles — this is both diagnostic and useful for anticipating difficult days",
+      "Prioritise regular sleep, moderate exercise and consistent meals, particularly in the luteal phase",
+      "Reduce caffeine, alcohol and added salt in the days before menses, which some women find eases physical symptoms",
+      "Plan lower-demand scheduling where possible around known symptomatic days",
+      "Build a support plan with close family or a partner, since many women describe real relationship strain during symptomatic days",
+      "Practice stress-reduction techniques such as regular exercise, mindfulness or breathing exercises",
+    ],
+    prognosis:
+      "PMDD responds well to treatment for most women, whether through SSRIs, hormonal approaches, or a combination with psychological support, with many experiencing substantial symptom relief. Because the underlying cyclical trigger persists until menopause, PMDD tends to be a long-term, cycle-linked condition requiring an ongoing management plan rather than a one-time treatment, though symptoms typically resolve after menopause. Untreated PMDD is associated with a meaningfully elevated risk of suicidal thinking during symptomatic days, which makes accurate diagnosis and treatment particularly important, not merely a quality-of-life issue.",
+    prevention: [
+      "Track symptoms early if a cyclical pattern is suspected, rather than waiting years for a diagnosis",
+      "Maintain consistent sleep, exercise and stress-management habits, which reduce symptom severity for many women",
+      "Seek treatment for underlying depression or anxiety, which can amplify premenstrual symptoms",
+      "Build a proactive plan for luteal-phase workload and self-care once the pattern is confirmed",
+    ],
+    familyGuidance:
+      "PMDD is a real, biologically driven psychiatric condition, not a matter of a woman being 'too sensitive' or intentionally difficult, and it is important that partners and family understand this rather than adding blame or dismissal to an already distressing cyclical pattern. Support can include understanding the symptom-tracking process, being flexible around confirmed difficult days, and encouraging treatment rather than expecting the person to simply manage it alone each month. Because PMDD carries a real elevated risk of suicidal thinking during symptomatic days, family awareness of warning signs and encouragement to seek psychiatric care is genuinely protective, not an overreaction.",
+    faqs: [
+      { question: "How is PMDD different from regular PMS?", answer: "PMS involves mild-to-moderate physical and emotional symptoms most women manage without major disruption. PMDD involves severe mood symptoms — significant depression, irritability, anxiety or mood swings — that meaningfully impair work, relationships or daily functioning, along with a required core mood symptom and a confirmed cyclical pattern." },
+      { question: "How is PMDD actually diagnosed?", answer: "Diagnosis relies on prospective daily symptom tracking across at least two menstrual cycles to confirm the specific luteal-phase pattern, rather than on a single conversation or blood test, since hormone levels themselves are typically normal in PMDD." },
+      { question: "Do I need a blood test to diagnose PMDD?", answer: "No routine blood test diagnoses PMDD, since hormone levels are usually normal; the diagnosis rests on the pattern of symptoms confirmed through tracking. Blood tests may be used to exclude other contributing conditions like thyroid dysfunction." },
+      { question: "Does birth control help or worsen PMDD?", answer: "It varies by individual — some women improve significantly on certain hormonal contraceptive regimens, particularly continuous or extended-cycle options, while others find their mood symptoms worsen on hormonal contraception, so this is an individualised decision made with a clinician." },
+      { question: "Will PMDD go away on its own?", answer: "PMDD does not typically resolve without treatment while regular menstrual cycles continue, though it does resolve after menopause once ovulation stops. Effective treatments are available in the meantime and most women see substantial improvement." },
+      { question: "Is it normal to have thoughts of self-harm only before my period?", answer: "This pattern, while distressing, is a recognised feature of severe PMDD and should be taken seriously and discussed directly with a psychiatrist — it is a treatable symptom of the condition, not something to manage silently each month." },
+    ],
+    mythsVsFacts: [
+      { myth: "PMDD is just severe PMS, so it doesn't need real psychiatric treatment.", fact: "PMDD is a distinct, diagnosable psychiatric condition with its own DSM-5 criteria and evidence-based treatment, and it is associated with a meaningfully elevated risk of suicidal thinking, unlike ordinary PMS." },
+      { myth: "PMDD means a woman's hormone levels are abnormal.", fact: "Hormone levels in PMDD are typically normal; the condition reflects an abnormal brain sensitivity to normal cyclical hormonal changes, not a hormonal imbalance detectable on standard blood tests." },
+      { myth: "Antidepressants for PMDD have to be taken every day, all month, to work.", fact: "A distinctive feature of PMDD treatment is that SSRIs can be effective when taken only during the luteal phase (roughly the two weeks before menses) for many women, working faster than in typical depression treatment." },
+      { myth: "If it only happens before your period, it isn't a 'real' mental health condition.", fact: "The cyclical, predictable timing is exactly what defines PMDD diagnostically, and its severity and suicide-risk profile make it a genuine and significant psychiatric condition deserving proper treatment." },
+    ],
+    urgentCare:
+      "Seek urgent psychiatric assessment for any suicidal thoughts, plans, or intent occurring during the premenstrual window, even if they resolve after menses begins, since this pattern still represents a significant and treatable risk that deserves proper evaluation rather than being dismissed because it is 'only' present part of the month.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "American College of Obstetricians and Gynecologists (ACOG). Premenstrual syndrome and premenstrual dysphoric disorder clinical guidance.",
+      "International Association for Premenstrual Disorders (IAPMD) clinical resources.",
+    ],
+    extraKeywords: ["PMDD treatment Nepal", "premenstrual dysphoric disorder Kathmandu", "severe PMS psychiatrist Nepal"],
+  },
+  {
+    slug: "gambling-disorder",
+    title: "Gambling Disorder",
+    category: "Substance Use and Addictive Disorders",
+    titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
+    shortDescription:
+      "A behavioural addiction involving persistent, problematic gambling that continues despite serious financial, relationship and personal harm — recognised warning signs, and why it shares treatment approaches with substance addictions.",
+    overview:
+      "Gambling disorder is a behavioural addiction — the first non-substance addiction formally recognised in the same diagnostic category as substance use disorders — involving persistent, recurrent gambling that causes significant distress or impairment, continuing despite mounting financial, relationship, occupational or legal problems. It shares much of its underlying brain circuitry, pattern of loss of control, and treatment approach with substance addictions, even though no substance is involved. In Nepal, easier access to online betting and card-game apps alongside traditional card and card-room gambling has made this an increasingly common and increasingly hidden problem, often concealed from family for a long time because of shame and the significant risk of financial harm to the household, which frequently delays people from seeking help until debt or family conflict has already become severe.",
+    definition:
+      "Gambling disorder is defined as persistent and recurrent problematic gambling behaviour leading to clinically significant impairment or distress, indicated by four or more of nine specified features occurring within a 12-month period — including needing to gamble with increasing amounts of money to achieve the desired excitement, restlessness or irritability when attempting to cut down, repeated unsuccessful efforts to control or stop gambling, and continuing to gamble despite it having caused serious relationship, financial or occupational problems.",
+    causes:
+      "Gambling disorder develops through the same reward-pathway mechanisms implicated in substance addiction: intermittent, unpredictable rewards during gambling produce strong dopamine release, and the brain's reward circuitry adapts over repeated exposure in ways that drive craving and diminish the ability to resist urges. Psychological factors — including chasing losses in an attempt to recover money already lost, cognitive distortions about odds and 'due' wins, and using gambling to escape stress, boredom or difficult emotions — reinforce the pattern. Easy access (online platforms available at any hour, card rooms, informal betting networks) substantially increases risk, as does a family history of addiction of any kind.",
+    riskFactors: [
+      "Family history of gambling disorder or other addictions",
+      "Early exposure to gambling, including informal family or social gambling in adolescence",
+      "Impulsivity and difficulty with delayed gratification",
+      "Co-occurring depression, anxiety, or ADHD",
+      "Easy, frequent access to online betting or gambling apps",
+      "High financial stress or a desire to solve financial problems through gambling",
+      "Concurrent alcohol or substance use, which lowers inhibition and impairs judgment during gambling",
+    ],
+    brainMechanisms:
+      "Gambling engages the same mesolimbic dopamine reward pathway activated by substances of abuse, and near-miss outcomes — a hallmark of many gambling games — activate reward circuitry almost as strongly as an actual win, reinforcing continued play even during losing streaks. Repeated engagement produces tolerance-like adaptation, requiring larger bets for the same emotional payoff, alongside blunted prefrontal cortex regulation of impulse control, which explains the loss of control and continued gambling despite clear negative consequences that characterise the disorder, much as with substance addictions.",
+    symptoms: [
+      "Preoccupation with gambling — reliving past experiences, planning the next gambling episode, or thinking about ways to get money to gamble",
+      "Needing to gamble with increasing amounts of money to achieve the desired excitement",
+      "Repeated unsuccessful efforts to control, cut down or stop gambling",
+      "Restlessness or irritability when attempting to cut down or stop",
+      "Gambling as a way to escape problems or relieve a dysphoric mood",
+      "Chasing losses — returning to gamble again after losing money to try to win it back",
+      "Lying to family members or others to conceal the extent of gambling",
+      "Jeopardising or losing a significant relationship, job, or educational opportunity because of gambling",
+      "Relying on others to provide money to relieve a financial situation caused by gambling",
+    ],
+    diagnosticCriteria: [
+      "Persistent and recurrent problematic gambling behaviour causing clinically significant impairment or distress",
+      "At least 4 of 9 specified features present within a 12-month period (including preoccupation, tolerance-like need for larger amounts, unsuccessful control efforts, irritability when cutting down, gambling to escape problems, chasing losses, lying to conceal gambling, jeopardising relationships/work, relying on others for money)",
+      "The gambling behaviour is not better explained by a manic episode",
+      "Severity is specified as mild, moderate, or severe based on the number of criteria met",
+    ],
+    differentialDiagnosis: [
+      { name: "Manic or hypomanic episode (bipolar disorder)", note: "Excessive gambling can occur during mania as part of broader impulsive, high-risk behaviour; the pattern typically resolves as the mood episode is treated, unlike a standalone gambling disorder." },
+      { name: "Substance use disorder", note: "Frequently co-occurs with gambling disorder and shares underlying reward-pathway mechanisms; both should be screened for together." },
+      { name: "Social or recreational gambling", note: "Occasional, budgeted gambling without loss of control, escalating amounts, or negative life consequences does not meet criteria for a disorder." },
+      { name: "Obsessive-compulsive disorder", note: "OCD-related repetitive behaviours are driven by anxiety-reduction rather than reward-seeking and are not typically linked to financial risk-taking in the way gambling disorder is." },
+    ],
+    investigations: [
+      "Detailed history of gambling patterns, amounts, frequency, and financial impact",
+      "Screening tools such as the Problem Gambling Severity Index or similar structured questionnaires",
+      "Assessment for co-occurring depression, anxiety, ADHD and substance use",
+      "Assessment of suicide risk, given the elevated risk associated with severe financial and relationship consequences",
+      "Collateral history from family where possible, given the common pattern of concealment",
+    ],
+    treatmentOverview:
+      "Cognitive behavioural therapy is the best-established treatment, addressing the cognitive distortions that sustain gambling (such as beliefs about being 'due' a win), building alternative coping strategies, and structuring practical relapse-prevention plans, often combined with financial counselling and structured limits on access to money and gambling platforms. Motivational approaches are useful given the shame and ambivalence that frequently delay treatment-seeking. Medication is not first-line for gambling disorder itself but may be used to treat a co-occurring condition such as depression or ADHD that is contributing to the pattern.",
+    medications: [
+      { name: "No medication is specifically approved for gambling disorder", note: "Treatment of a co-occurring condition — depression, anxiety, ADHD or a substance use disorder — is pursued where relevant, since treating these can meaningfully reduce gambling behaviour as well." },
+      { name: "Naltrexone (off-label, specialist use)", note: "Some evidence supports its use, particularly for individuals with strong urge-driven gambling or a co-occurring alcohol use disorder, used under specialist psychiatric guidance." },
+    ],
+    psychotherapy: [
+      { name: "Cognitive behavioural therapy (CBT)", note: "Best-evidenced treatment; addresses distorted beliefs about odds and control, and builds structured strategies to interrupt the gambling cycle." },
+      { name: "Motivational interviewing", note: "Helps address ambivalence about stopping, particularly useful early in treatment given the shame and denial that often accompany gambling disorder." },
+      { name: "Family therapy and financial counselling", note: "Addresses the relationship and financial damage directly, and helps rebuild trust and structure around household finances during recovery." },
+    ],
+    lifestyleAdvice: [
+      "Use formal self-exclusion tools on gambling apps and platforms where available",
+      "Hand financial control, at least temporarily, to a trusted family member during early recovery",
+      "Identify and plan around specific triggers — stress, boredom, certain social settings, or financial anxiety",
+      "Build alternative activities that provide a comparable sense of engagement or excitement",
+      "Avoid alcohol use during high-risk periods, since it further reduces impulse control",
+      "Engage with peer support (such as Gamblers Anonymous-style groups where available) for ongoing accountability",
+    ],
+    prognosis:
+      "With treatment, many people achieve significant reduction or cessation of problematic gambling, though relapse is common and best planned for as part of an ongoing recovery process rather than viewed as failure. Early treatment, before severe debt or relationship breakdown occurs, is associated with better outcomes, which is why overcoming the shame that commonly delays help-seeking matters so much. Financial and relationship repair often takes considerably longer than the core behavioural change and benefits from dedicated support.",
+    prevention: [
+      "Set firm personal limits on time and money before gambling, if gambling recreationally at all",
+      "Avoid using gambling as a coping strategy for stress, boredom or emotional distress",
+      "Be cautious with easy-access online betting apps, which remove many of the natural friction points that limit gambling in person",
+      "Seek early support for any noticing of chasing losses, lying about gambling, or borrowing money to gamble",
+      "Address co-occurring depression, anxiety or substance use, which increase vulnerability",
+    ],
+    familyGuidance:
+      "Family members often discover gambling disorder only after significant debt or a serious breach of trust has already occurred, given how commonly it is concealed. It helps to approach the person without shame or blame, since guilt tends to entrench secrecy rather than support honesty, while still setting firm, practical boundaries around household finances during treatment. Family-based financial safeguards — shared account oversight, involvement of a trusted third party for major financial decisions — are a legitimate and often necessary part of early recovery, not a punishment. Because problem gambling carries a genuine elevated suicide risk tied to financial desperation and shame, family awareness of warning signs and encouragement toward treatment is protective and should be taken seriously.",
+    faqs: [
+      { question: "How is gambling disorder different from just enjoying gambling occasionally?", answer: "Occasional, budgeted gambling without escalating amounts, loss of control, or negative consequences to finances, relationships or work is not a disorder. Gambling disorder involves a persistent pattern that continues despite serious harm, alongside features like chasing losses and lying to conceal the extent of gambling." },
+      { question: "Can gambling disorder be treated without medication?", answer: "Yes. Cognitive behavioural therapy is the best-established treatment and is often effective on its own; medication is generally reserved for treating a co-occurring condition such as depression or ADHD, rather than the gambling itself." },
+      { question: "Why does someone keep gambling even after losing a lot of money?", answer: "This is a hallmark feature called 'chasing losses' — an attempt to win back what has been lost that is driven by the same reward-pathway mechanisms seen in substance addiction, not a simple lack of willpower or common sense." },
+      { question: "Is online betting more addictive than traditional gambling?", answer: "Online platforms remove many natural barriers — travel, opening hours, visible cash — that otherwise limit gambling, and their constant availability and rapid betting cycles are associated with faster escalation to problematic patterns for vulnerable individuals." },
+      { question: "Should family take over someone's finances if they have a gambling problem?", answer: "Temporary, agreed financial oversight by a trusted family member is a commonly recommended practical safeguard during early treatment, ideally set up collaboratively with the person rather than imposed unilaterally where possible, and discussed as part of the treatment plan." },
+      { question: "Can someone recover fully from gambling disorder?", answer: "Yes, many people achieve lasting recovery with treatment, though like other addictions it is best approached as an ongoing process with attention to relapse prevention rather than a single fix, particularly in the first year." },
+    ],
+    mythsVsFacts: [
+      { myth: "Gambling disorder is a financial problem, not a mental health condition.", fact: "It is a recognised behavioural addiction with a specific pattern of loss of control and continued use despite harm, sharing brain mechanisms and treatment approaches with substance use disorders — the financial harm is a consequence, not the core problem." },
+      { myth: "Someone with a gambling problem just needs more willpower or discipline.", fact: "Gambling disorder involves genuine changes in reward-pathway brain function that impair the ability to stop despite a real desire to do so, which is why structured treatment, not willpower alone, is the effective approach." },
+      { myth: "Only people who gamble large amounts of money have a problem.", fact: "The amount of money is less important diagnostically than the pattern — loss of control, chasing losses, lying about it, and continuing despite harm — since these patterns can occur at various financial scales." },
+      { myth: "Once the debt is paid off, the problem is solved.", fact: "Paying off debt addresses a consequence, not the underlying addictive pattern; without treatment addressing the gambling behaviour itself, relapse and renewed debt are common." },
+    ],
+    urgentCare:
+      "Seek urgent psychiatric assessment if gambling-related financial desperation is accompanied by thoughts of self-harm or suicide, which is a recognised and serious risk in severe gambling disorder and should always be treated as an emergency rather than only a financial crisis.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11) — gambling disorder.",
+      "National Council on Problem Gambling / International Center for Responsible Gaming clinical resources.",
+    ],
+    extraKeywords: ["gambling addiction treatment Nepal", "problem gambling psychiatrist Kathmandu", "online betting addiction Nepal"],
+  },
+  {
+    slug: "oppositional-defiant-disorder",
+    title: "Oppositional Defiant Disorder (ODD)",
+    category: "Disruptive, Impulse-Control, and Conduct Disorders",
+    titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
+    shortDescription:
+      "A persistent pattern of angry, defiant and argumentative behaviour toward authority figures in children and teenagers — how it differs from normal developmental defiance, and the family-focused approaches that work best.",
+    overview:
+      "Oppositional defiant disorder (ODD) is a persistent pattern of angry or irritable mood, argumentative or defiant behaviour, and vindictiveness toward parents, teachers or other authority figures, lasting at least six months and clearly beyond what is developmentally typical for the child's age. Some degree of testing limits and pushing back against authority is a completely normal part of child development, particularly in toddlers and early adolescents, which is exactly why ODD requires a pattern that is more frequent, more intense and more persistent than typical for the child's developmental stage, and that causes real difficulty at home, school or with peers, rather than simply being a strong-willed or independent-minded child. Early, structured, family-focused intervention has good evidence for improving both the child's behaviour and the family relationships strained by it, and is generally more effective than approaches focused on the child alone.",
+    definition:
+      "ODD is defined by a pattern of angry/irritable mood, argumentative/defiant behaviour, or vindictiveness lasting at least six months, evidenced by at least four symptoms from specified categories, exhibited during interaction with at least one individual who is not a sibling, and severe enough to be associated with distress in the individual or others, or to negatively impact functioning at school, home or with peers.",
+    causes:
+      "ODD arises from an interaction between a child's temperament — often including high emotional reactivity and difficulty with frustration tolerance from an early age — and environmental factors, including inconsistent or harsh discipline, family conflict, parental mental health difficulties, and, in some cases, undiagnosed ADHD or a learning difficulty that leads to chronic frustration at school. A coercive cycle often develops and maintains the pattern: a child's defiant behaviour leads to an inconsistent or overly reactive parental response, which the child learns can end an unwanted demand, reinforcing the defiant behaviour over time — understanding this cycle is central to effective family-based treatment.",
+    riskFactors: [
+      "Difficult temperament or high emotional reactivity from early childhood",
+      "Inconsistent, harsh, or overly punitive discipline",
+      "Family conflict, parental mental health difficulties, or high household stress",
+      "Co-occurring ADHD, learning difficulties, or communication difficulties",
+      "Exposure to family violence or significant early adversity",
+      "Family history of ADHD, mood disorders, or disruptive behaviour disorders",
+    ],
+    brainMechanisms:
+      "ODD is associated with differences in the brain regions involved in emotional regulation and response to frustration, particularly the prefrontal cortex's capacity to modulate reactions from the amygdala and other emotion-generating structures, which helps explain the disproportionate anger and difficulty calming down seen in the disorder. When ODD co-occurs with ADHD, which it frequently does, additional difficulties with impulse control and self-regulation compound the pattern, which is part of why assessing for and treating co-occurring ADHD is an important part of a complete treatment plan.",
+    symptoms: [
+      "Frequently loses temper",
+      "Is often touchy or easily annoyed",
+      "Is often angry and resentful",
+      "Often argues with adults or authority figures",
+      "Often actively defies or refuses to comply with requests or rules",
+      "Often deliberately annoys others",
+      "Often blames others for their own mistakes or misbehaviour",
+      "Has been spiteful or vindictive at least twice within the past six months",
+    ],
+    diagnosticCriteria: [
+      "A pattern of angry/irritable mood, argumentative/defiant behaviour, or vindictiveness lasting at least 6 months",
+      "At least 4 symptoms present from the specified categories (angry/irritable mood, argumentative/defiant behaviour, vindictiveness)",
+      "Behaviours occur during interaction with at least one individual who is not a sibling",
+      "The frequency and intensity of behaviours are outside the normal range for the child's age, developmental level, gender and culture",
+      "The disturbance causes distress or negatively impacts functioning at school, home or in social settings",
+      "Behaviours are not better explained by another disorder, and criteria for conduct disorder are not met",
+    ],
+    differentialDiagnosis: [
+      { name: "Normal developmental defiance", note: "Occasional limit-testing, especially in toddlers and early adolescents, is developmentally typical and does not by itself meet criteria for ODD, which requires a pattern outside the normal range in frequency, intensity and persistence." },
+      { name: "Conduct disorder", note: "Involves more serious violations of others' basic rights or societal norms — aggression toward people or animals, destruction of property, theft, or serious rule violations — beyond the argumentative/defiant pattern of ODD; ODD can sometimes progress to conduct disorder if untreated." },
+      { name: "ADHD", note: "Impulsivity and difficulty following instructions in ADHD can resemble defiance, but ADHD is primarily driven by attention and impulse-control difficulties rather than deliberate opposition; the two conditions frequently co-occur and both should be assessed for." },
+      { name: "Mood or anxiety disorder", note: "Irritability can be a prominent feature of depression or anxiety in children; a broader mood assessment helps clarify whether irritability is primarily oppositional or reflects an underlying mood disorder." },
+    ],
+    investigations: [
+      "Detailed developmental, family and behavioural history from parents/caregivers and, where appropriate, teachers",
+      "Standardised behaviour rating scales completed by parents and teachers",
+      "Assessment for co-occurring ADHD, learning difficulties, and mood or anxiety symptoms",
+      "Observation of parent-child interaction where possible, since this informs the family-based treatment plan",
+      "Screening for family stressors, discipline approaches, and exposure to conflict or adversity",
+    ],
+    treatmentOverview:
+      "Family-focused behavioural interventions are the first-line and best-evidenced treatment for ODD, particularly parent management training, which teaches caregivers structured, consistent techniques for reinforcing positive behaviour, setting clear limits, and responding to defiance in ways that interrupt the coercive cycle rather than escalating it. Individual therapy for the child, focused on emotional regulation and problem-solving skills, is often used alongside family work. Medication is not a first-line treatment for ODD itself but may be considered for a significant co-occurring condition, such as ADHD, once that is properly assessed.",
+    medications: [
+      { name: "No medication is specifically approved for ODD itself", note: "Medication decisions are guided by any co-occurring condition — most commonly ADHD — which, when treated, often meaningfully improves oppositional behaviour as well." },
+      { name: "Stimulant or non-stimulant ADHD medication (where ADHD co-occurs)", note: "Treating a genuinely co-occurring ADHD can reduce the frustration and impulsivity that fuel oppositional behaviour, considered after careful individual assessment by a psychiatrist." },
+    ],
+    psychotherapy: [
+      { name: "Parent management training / behavioural parent training", note: "The best-evidenced treatment for ODD; teaches caregivers consistent, structured strategies for reinforcing wanted behaviour and responding effectively to defiance, directly interrupting the coercive parent-child cycle." },
+      { name: "Individual child therapy (problem-solving and emotional regulation skills)", note: "Helps the child build frustration tolerance, communication skills, and alternatives to angry or defiant responses, usually most effective alongside, not instead of, family-based work." },
+      { name: "School collaboration", note: "Consistent behavioural strategies between home and school meaningfully improve outcomes, particularly when the child struggles similarly across both settings." },
+    ],
+    lifestyleAdvice: [
+      "Use clear, consistent, predictable rules and consequences at home",
+      "Catch and reinforce positive behaviour deliberately, not just respond to negative behaviour",
+      "Avoid power struggles where possible; offer limited, acceptable choices instead of rigid commands",
+      "Maintain consistent routines for sleep, meals and screen time",
+      "Model calm responses to frustration, since children learn regulation partly by observation",
+      "Coordinate consistently between both parents/caregivers and, where relevant, school staff",
+    ],
+    prognosis:
+      "With early, consistent, family-focused intervention, many children with ODD show significant improvement in behaviour and family functioning. Left untreated, particularly in the presence of significant family conflict or co-occurring ADHD, a minority of children progress to more serious conduct problems, which is why early treatment matters. Family consistency and follow-through with behavioural strategies are among the strongest predictors of good outcomes, more so than any single specific technique.",
+    prevention: [
+      "Establish consistent, predictable discipline and routines from early childhood",
+      "Address parental stress, conflict, or mental health difficulties, which strongly influence the home environment",
+      "Identify and treat ADHD or learning difficulties early, since chronic frustration in these areas can fuel oppositional behaviour",
+      "Build in regular positive, low-conflict time between parent and child, not only correction of behaviour",
+      "Seek assessment early rather than waiting for behaviour to become severe, since earlier intervention is more effective",
+    ],
+    familyGuidance:
+      "Parenting a child with ODD is genuinely exhausting, and it is common for parents to feel blamed, judged or like they have failed, which is neither accurate nor helpful. Structured parent management training works specifically because it gives caregivers concrete, learnable tools rather than asking them to simply try harder with the same approaches that haven't worked. Consistency between caregivers, and between home and school, matters more than any single technique, and progress is often gradual rather than immediate, which can be discouraging without the right expectations set in advance. Seeking support for parental stress and, where relevant, couple conflict is not a distraction from treating the child — it is often a necessary part of it, since a calmer, more consistent home environment directly supports the child's improvement.",
+    faqs: [
+      { question: "Is my child just going through a normal defiant phase, or is this ODD?", answer: "Some testing of limits is normal at every age, especially in toddlers and early adolescents. ODD involves a pattern that is clearly more frequent, intense and persistent than typical for the child's age, lasting at least six months, and causing real difficulty at home, school or with peers — a professional assessment can help clarify where a specific child's behaviour falls." },
+      { question: "Is ODD the same as conduct disorder?", answer: "No. ODD involves argumentative, defiant and irritable behaviour, while conduct disorder involves more serious violations such as aggression toward people or animals, property destruction, theft or serious rule-breaking. Untreated ODD can sometimes progress toward conduct disorder, which is one reason early treatment matters." },
+      { question: "Can ODD be treated without medication?", answer: "Yes — family-focused behavioural treatment, particularly parent management training, is the first-line, best-evidenced treatment for ODD itself. Medication is considered only for a significant co-occurring condition such as ADHD, not for ODD directly." },
+      { question: "Is ODD caused by bad parenting?", answer: "No single cause explains ODD; it develops from an interaction between a child's temperament and environmental factors, and while parenting approaches are part of an effective treatment plan, having a child with ODD is not evidence of parental failure." },
+      { question: "Will my child grow out of ODD?", answer: "Outcomes vary. With early, consistent treatment many children improve substantially. Without treatment, some children continue to struggle or, in a minority of cases, develop more serious behavioural problems, which is why assessment and intervention are recommended rather than waiting to see." },
+      { question: "How is ADHD related to ODD?", answer: "ODD and ADHD frequently co-occur, and untreated ADHD-related impulsivity and frustration can fuel oppositional behaviour. A full assessment usually screens for both, since treating a co-occurring ADHD can meaningfully improve oppositional symptoms as well." },
+    ],
+    mythsVsFacts: [
+      { myth: "ODD means a child is simply badly behaved or spoiled.", fact: "ODD is a recognised clinical pattern involving specific, persistent difficulty with emotional and behavioural regulation, not a reflection of the child's character or a simple parenting failure." },
+      { myth: "Stricter punishment is the best way to deal with ODD.", fact: "Harsh or inconsistent punishment tends to reinforce the coercive cycle that maintains ODD; structured, consistent behavioural strategies taught through parent management training are considerably more effective." },
+      { myth: "ODD always progresses to more serious conduct problems.", fact: "Most children with ODD do not go on to develop conduct disorder, particularly with early, consistent intervention; progression is a risk in a minority of untreated or high-adversity cases, not an inevitable outcome." },
+      { myth: "Only the child needs treatment for ODD.", fact: "Family-focused approaches, particularly parent management training, are the best-evidenced treatment, since the child's behaviour and the family's response to it are closely interconnected." },
+    ],
+    urgentCare:
+      "Seek urgent assessment if a child's anger involves significant aggression toward people or animals, serious property destruction, or any safety risk to the child or others, since these go beyond typical ODD and need prompt evaluation for conduct disorder or another contributing condition.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "National Institute for Health and Care Excellence (NICE). Antisocial behaviour and conduct disorders in children and young people.",
+      "American Academy of Child and Adolescent Psychiatry (AACAP) practice parameters.",
+    ],
+    extraKeywords: ["oppositional defiant disorder Nepal", "defiant child psychiatrist Kathmandu", "child behaviour problems Nepal"],
+  },
+  {
+    slug: "conduct-disorder",
+    title: "Conduct Disorder",
+    category: "Disruptive, Impulse-Control, and Conduct Disorders",
+    titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
+    shortDescription:
+      "A repetitive pattern of behaviour in children and adolescents that seriously violates the rights of others or age-appropriate social norms — aggression, destruction, deceit or serious rule-breaking — and the structured, family-involved treatment that improves outcomes.",
+    overview:
+      "Conduct disorder involves a repetitive, persistent pattern of behaviour in which the basic rights of others or major age-appropriate societal norms or rules are violated, spanning categories such as aggression to people or animals, destruction of property, deceitfulness or theft, and serious rule violations. It is more serious than oppositional defiant disorder, with which it is sometimes confused, and requires prompt, structured assessment and treatment given both the impact on others and the significant long-term risks — including school failure, legal involvement, and substance use — associated with an untreated pattern, particularly when onset is in childhood rather than adolescence. Family involvement, early intervention, and identifying and treating co-occurring conditions such as ADHD or trauma give the best chance of changing the trajectory.",
+    definition:
+      "Conduct disorder is defined as a repetitive and persistent pattern of behaviour violating the basic rights of others or major age-appropriate societal norms, evidenced by at least three of fifteen specified criteria across four categories — aggression to people and animals, destruction of property, deceitfulness or theft, and serious rule violations — occurring in the past 12 months, with at least one criterion present in the past 6 months, and causing clinically significant impairment in social, academic or occupational functioning.",
+    causes:
+      "Conduct disorder arises from a combination of individual factors — including difficult temperament, impulsivity, and in some cases reduced sensitivity to punishment or others' distress — and environmental factors, including harsh, inconsistent or abusive parenting, exposure to violence, chronic family conflict, poverty-related stress, and association with antisocial peers. Childhood-onset conduct disorder (before age 10) is associated with a stronger biological/temperamental contribution and a higher risk of persisting into adulthood, while adolescent-onset conduct disorder is more strongly associated with peer influence and tends to have a better long-term prognosis. Undiagnosed ADHD, learning difficulties, trauma, and untreated depression can all present with or worsen conduct problems and should always be assessed for.",
+    riskFactors: [
+      "Harsh, inconsistent, or abusive parenting, and exposure to family violence",
+      "Family history of antisocial behaviour, substance use, or conduct disorder",
+      "Co-occurring ADHD, especially when untreated",
+      "Childhood trauma or significant early adversity",
+      "Association with antisocial or delinquent peers, particularly for adolescent-onset presentations",
+      "Poverty-related chronic stress and community violence exposure",
+      "Low frustration tolerance and reduced sensitivity to punishment or others' distress",
+    ],
+    brainMechanisms:
+      "Conduct disorder, particularly presentations with limited prosocial emotions (reduced empathy, guilt or remorse), is associated with reduced amygdala responsiveness to others' distress and altered function in prefrontal regions involved in impulse control and moral reasoning, which together are thought to reduce the normal emotional brakes on harmful behaviour. Chronic early exposure to violence or severe stress can additionally alter stress-response systems in ways that lower the threshold for aggressive reactions. These are understood as risk-modifying brain differences that interact with environment and treatment, not a fixed or unchangeable trait, which is an important message for families given how often conduct disorder is met with hopelessness.",
+    symptoms: [
+      "Bullies, threatens or intimidates others",
+      "Initiates physical fights",
+      "Has used a weapon that can cause serious physical harm",
+      "Has been physically cruel to people or animals",
+      "Has stolen while confronting a victim, or engaged in forced sexual activity",
+      "Has deliberately engaged in fire-setting with intent to cause damage",
+      "Has deliberately destroyed others' property",
+      "Has broken into someone else's house, building, or car",
+      "Often lies to obtain goods or favours, or to avoid obligations",
+      "Has stolen items of nontrivial value without confronting a victim",
+      "Often stays out at night despite parental prohibition, beginning before age 13",
+      "Has run away from home overnight at least twice, or once for a lengthy period",
+      "Is often truant from school, beginning before age 13",
+    ],
+    diagnosticCriteria: [
+      "A repetitive and persistent pattern of behaviour violating the basic rights of others or major age-appropriate societal norms",
+      "At least 3 of 15 specified criteria present in the past 12 months, with at least 1 present in the past 6 months",
+      "The disturbance causes clinically significant impairment in social, academic or occupational functioning",
+      "If the individual is 18 or older, criteria for antisocial personality disorder are not met",
+      "Specified as childhood-onset (before age 10) or adolescent-onset, and with or without limited prosocial emotions (reduced empathy, guilt or remorse)",
+    ],
+    differentialDiagnosis: [
+      { name: "Oppositional defiant disorder (ODD)", note: "ODD involves argumentative, defiant and irritable behaviour but not the serious rights violations — aggression to people/animals, property destruction, theft, serious rule-breaking — that define conduct disorder." },
+      { name: "ADHD", note: "Impulsivity in ADHD can lead to rule-breaking or conflict, but is not driven by the same pattern of intentional rights violation; the two conditions frequently co-occur and both should be assessed and treated." },
+      { name: "Adjustment disorder", note: "Behavioural problems that arise clearly in response to an identifiable stressor and are proportionate to it may better fit adjustment disorder than the more persistent, pervasive pattern of conduct disorder." },
+      { name: "Antisocial personality disorder", note: "Only diagnosed from age 18, and requires evidence of conduct disorder before age 15; conduct disorder is the childhood/adolescent precursor category, not used once ASPD criteria are met in an adult." },
+    ],
+    investigations: [
+      "Comprehensive developmental, family, and behavioural history from multiple informants (parents, school, where appropriate the young person themselves)",
+      "Standardised behaviour rating scales and structured clinical interview",
+      "Assessment for co-occurring ADHD, learning difficulties, depression, anxiety and trauma history",
+      "Screening for substance use, particularly in adolescents",
+      "Assessment of family functioning, discipline patterns, and any history of abuse or exposure to violence",
+      "Risk assessment regarding safety to self and others",
+    ],
+    treatmentOverview:
+      "Multimodal, family-involved treatment is most effective, combining structured parent-management and family therapy approaches, individual skills-based therapy for the young person (problem-solving, anger management, social skills), school-based support, and treatment of any co-occurring condition such as ADHD, depression or trauma. Multisystemic therapy and similar intensive, family- and community-based models have strong evidence for more severe presentations. Medication is not a treatment for conduct disorder itself but can meaningfully help when a co-occurring condition, particularly ADHD, is identified and treated. Earlier intervention, before entrenched patterns and legal involvement develop, is associated with meaningfully better outcomes.",
+    medications: [
+      { name: "No medication is specifically approved for conduct disorder itself", note: "Treatment of a genuinely co-occurring condition — most often ADHD, but also depression, anxiety or trauma-related symptoms — is pursued individually, since this can meaningfully reduce associated behavioural difficulties." },
+      { name: "Stimulant or non-stimulant ADHD medication (where ADHD co-occurs)", note: "Can reduce impulsivity that contributes to conduct problems, considered after careful individual psychiatric assessment." },
+      { name: "Short-term, targeted use of other medication for severe aggression (specialist use)", note: "Occasionally considered in severe, high-risk cases under close specialist supervision, always alongside, never instead of, structured behavioural and family treatment." },
+    ],
+    psychotherapy: [
+      { name: "Parent management training and family therapy", note: "Builds consistent structure, monitoring and communication at home; among the most evidence-supported approaches, particularly for younger children." },
+      { name: "Multisystemic therapy (MST) or similar intensive models", note: "Addresses the young person's behaviour across family, school, peer and community systems simultaneously; strong evidence for more severe or entrenched presentations, particularly in adolescents." },
+      { name: "Individual skills-based therapy (problem-solving, anger management, social skills training)", note: "Builds the young person's own capacity to manage frustration, resolve conflict and consider consequences, usually most effective combined with family-based work rather than alone." },
+    ],
+    lifestyleAdvice: [
+      "Maintain consistent, structured routines and clear, enforceable expectations at home",
+      "Increase positive parental monitoring and involvement, including knowing the young person's friends and activities",
+      "Reduce exposure to antisocial peer influence where possible, and support positive peer and community activities",
+      "Coordinate closely and consistently between home and school",
+      "Address any substance use directly and promptly",
+      "Build in regular, low-conflict positive time between parent and young person, not solely disciplinary interaction",
+    ],
+    prognosis:
+      "Outcomes vary considerably: adolescent-onset conduct disorder, particularly without limited prosocial emotions, often improves significantly by adulthood, especially with treatment, while childhood-onset conduct disorder carries a higher risk of persisting difficulties, including risk of antisocial personality disorder in adulthood if untreated. Early, sustained, family-involved intervention meaningfully improves outcomes at every level of severity, and identifying and treating co-occurring ADHD, trauma or mood difficulties is an important, sometimes decisive, part of changing the trajectory.",
+    prevention: [
+      "Support consistent, warm but structured parenting from early childhood",
+      "Identify and treat ADHD, learning difficulties, or trauma-related symptoms early",
+      "Reduce children's exposure to family violence and chronic conflict where possible",
+      "Support positive school engagement and prosocial peer relationships",
+      "Seek assessment and intervention at the first signs of a persistent pattern, rather than waiting for legal or school-disciplinary involvement",
+    ],
+    familyGuidance:
+      "A conduct disorder diagnosis is understandably frightening for families, but it is important to know that structured, sustained, family-involved treatment meaningfully changes outcomes, particularly the earlier it starts. Families benefit from consistent expectations and consequences applied calmly rather than punitively, active monitoring and involvement in the young person's life, and close coordination with school. It is also important for families to look after their own wellbeing and, where relevant, address their own mental health or relationship difficulties, since a calmer, more consistent home environment is one of the most powerful supports for a young person's recovery. Avoiding shame and hopelessness — while still taking the behaviour and its impact on others seriously — supports both engagement in treatment and the young person's own motivation to change.",
+    faqs: [
+      { question: "Is conduct disorder the same as being a 'bad kid'?", answer: "No. Conduct disorder is a recognised clinical condition arising from an interaction of temperament and environment, with specific, effective, evidence-based treatments — framing it as a fixed character flaw is both inaccurate and unhelpful for engaging the young person and family in treatment." },
+      { question: "How is conduct disorder different from ODD?", answer: "ODD involves argumentative, defiant and irritable behaviour, while conduct disorder involves more serious violations of others' rights — aggression, property destruction, theft or serious rule-breaking. Conduct disorder is the more severe diagnosis, and ODD can sometimes, though not always, precede it." },
+      { question: "Does conduct disorder mean my child will become a criminal as an adult?", answer: "No — this is not inevitable. Outcomes vary considerably, particularly by age of onset and treatment; adolescent-onset presentations without limited prosocial emotions often improve substantially by adulthood, especially with early, sustained, family-involved treatment." },
+      { question: "What is the single most effective treatment for conduct disorder?", answer: "There is no single fix; the strongest evidence supports comprehensive, family-involved approaches — parent management training, family therapy, and for more severe presentations, intensive multisystemic models — combined with treatment of any co-occurring condition such as ADHD." },
+      { question: "Can medication fix conduct disorder?", answer: "No medication is approved to treat conduct disorder itself. Medication is used only to treat a genuinely co-occurring condition, such as ADHD, and always alongside, not instead of, structured behavioural and family treatment." },
+      { question: "Should I involve the school in treatment?", answer: "Yes — consistent expectations and communication between home and school meaningfully improve outcomes, and schools can often provide additional behavioural support and monitoring as part of a coordinated plan." },
+    ],
+    mythsVsFacts: [
+      { myth: "Children with conduct disorder don't feel guilt or empathy at all.", fact: "Reduced empathy and guilt (the 'limited prosocial emotions' specifier) applies to only a subset of cases and represents one severity marker, not a universal feature of conduct disorder." },
+      { myth: "Conduct disorder can't really be treated, only managed with discipline or the legal system.", fact: "Structured, evidence-based treatment — particularly family-involved and multisystemic approaches — meaningfully changes behaviour and long-term trajectory, especially when started early." },
+      { myth: "Conduct disorder is caused entirely by bad parenting.", fact: "It arises from an interaction of temperament, family environment, peer influence and, sometimes, untreated co-occurring conditions like ADHD or trauma — while family approaches are a key part of treatment, blame is neither accurate nor useful." },
+      { myth: "There's no point treating conduct disorder in adolescence — it's too late by then.", fact: "While earlier intervention generally has stronger outcomes, structured treatment in adolescence, including intensive family- and community-based models, still meaningfully improves outcomes and is worth pursuing at any age." },
+    ],
+    urgentCare:
+      "Seek urgent assessment for any serious violence toward people or animals, use of a weapon, fire-setting, or any behaviour posing an immediate safety risk to the young person or others, and seek emergency help immediately if there is any concern about imminent danger.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "National Institute for Health and Care Excellence (NICE). Antisocial behaviour and conduct disorders in children and young people.",
+      "American Academy of Child and Adolescent Psychiatry (AACAP) practice parameters on conduct disorder.",
+    ],
+    extraKeywords: ["conduct disorder Nepal", "child behaviour disorder psychiatrist Kathmandu", "teenage aggression treatment Nepal"],
+  },
+  {
+    slug: "obsessive-compulsive-personality-disorder",
+    title: "Obsessive-Compulsive Personality Disorder (OCPD)",
+    category: "Personality Disorders",
+    titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
+    shortDescription:
+      "A lifelong pattern of preoccupation with orderliness, perfectionism and control that interferes with flexibility and relationships — how it differs from OCD despite the similar name, and the therapy approaches that help.",
+    overview:
+      "Obsessive-compulsive personality disorder (OCPD) is a pervasive, lifelong pattern of preoccupation with orderliness, perfectionism, and mental and interpersonal control, at the expense of flexibility, openness and efficiency. Despite the similar name, OCPD is a distinct condition from obsessive-compulsive disorder (OCD) — OCPD involves rigid personality traits the person often experiences as reasonable or even a point of pride (ego-syntonic), rather than the unwanted, distressing intrusive thoughts and compulsions of OCD, which the person typically recognises as excessive and wants to be free of. People with OCPD often function very well by conventional external measures — reliable, hard-working, detail-oriented — which is part of why the condition frequently goes unrecognised despite causing real strain in relationships, rigidity that limits flexibility at work, and, for many, chronic dissatisfaction or difficulty relaxing and enjoying life.",
+    definition:
+      "OCPD is defined as a pervasive pattern of preoccupation with orderliness, perfectionism, and mental and interpersonal control, beginning by early adulthood and present in a variety of contexts, indicated by at least four of eight specified features, including preoccupation with details/rules/lists to the extent the point of an activity is lost, perfectionism that interferes with task completion, excessive devotion to work at the expense of leisure and relationships, and rigidity and stubbornness.",
+    causes:
+      "OCPD is thought to arise from an interaction between an inherited temperament oriented toward high conscientiousness and low flexibility, and environmental factors such as being raised in a highly critical, achievement-focused, or rigidly rule-bound family environment where love or approval felt conditional on performance or correctness. Over time, rigid control and perfectionistic standards can become an entrenched way of managing an underlying discomfort with uncertainty, imperfection or loss of control, which is why treatment often focuses on building tolerance for these experiences directly, rather than only addressing the surface behaviours.",
+    riskFactors: [
+      "Family history of OCPD or related traits",
+      "A highly critical, perfectionistic, or achievement-focused upbringing",
+      "Childhood environments where approval felt conditional on performance or correctness",
+      "High baseline conscientiousness combined with low openness/flexibility as an underlying temperament",
+      "High-pressure academic or professional environments that reinforce rigid perfectionism over time",
+    ],
+    brainMechanisms:
+      "OCPD is understood less in terms of the specific circuitry implicated in OCD and more as an extreme, rigid expression of the personality trait dimension of conscientiousness combined with low openness to experience, alongside heightened intolerance of uncertainty, which drives the need for control, order and rule-following as a way of managing underlying anxiety about unpredictability or failure. Unlike OCD, current evidence does not point to the same degree of specific frontostriatal circuit involvement, which is consistent with OCPD's clinical profile as an ingrained personality pattern rather than an anxiety disorder built around intrusive, unwanted thoughts.",
+    symptoms: [
+      "Preoccupation with details, rules, lists, order or schedules to the extent the main point of an activity is lost",
+      "Perfectionism that interferes with completing tasks (a project is never quite good enough to submit or finish)",
+      "Excessive devotion to work and productivity at the expense of leisure activities and relationships",
+      "Overconscientiousness, scrupulousness and inflexibility about matters of morality, ethics or values",
+      "Difficulty discarding worn-out or worthless objects, even without sentimental value",
+      "Reluctance to delegate tasks or work with others unless they submit to exactly the person's way of doing things",
+      "A miserly spending style toward both self and others, viewing money as something to be hoarded for future catastrophe",
+      "Rigidity and stubbornness, with difficulty adapting when plans or circumstances change",
+    ],
+    diagnosticCriteria: [
+      "A pervasive pattern of preoccupation with orderliness, perfectionism, and mental and interpersonal control, at the expense of flexibility, openness and efficiency",
+      "Beginning by early adulthood and present in a variety of contexts",
+      "At least 4 of 8 specified features present (preoccupation with details, perfectionism interfering with completion, excessive devotion to work, overconscientiousness about morals/ethics, inability to discard worthless objects, reluctance to delegate, miserliness, rigidity/stubbornness)",
+      "The pattern is not better explained by OCD or another mental disorder",
+    ],
+    differentialDiagnosis: [
+      { name: "Obsessive-compulsive disorder (OCD)", note: "OCD involves distressing, unwanted (ego-dystonic) intrusive thoughts and compulsions the person wants to resist; OCPD involves rigid personality traits the person typically experiences as reasonable or even correct (ego-syntonic). The two can co-occur but are distinct conditions requiring different treatment emphasis." },
+      { name: "High conscientiousness as a normal personality trait", note: "Being organised, hard-working and detail-oriented is a normal, often adaptive trait; OCPD is diagnosed only when the pattern is rigid and extreme enough to cause real functional or relational impairment." },
+      { name: "Narcissistic personality disorder", note: "Both can involve high standards and difficulty with imperfection, but NPD centres on grandiosity and need for admiration, while OCPD centres on rules, order and control rather than self-image." },
+      { name: "Eating disorders", note: "Perfectionistic and rigid traits are common in eating disorders and can overlap with OCPD features; a careful history distinguishes whether rigidity is primarily focused on food/body image or is a broader lifelong personality pattern." },
+    ],
+    investigations: [
+      "Detailed developmental and personal history establishing a lifelong, pervasive pattern rather than a situational or recent change",
+      "Clinical interview covering work, relationships, and flexibility across different life domains",
+      "Structured personality assessment where available",
+      "Screening for co-occurring OCD, anxiety, depression, and eating disorders",
+      "Collateral history from family or partners, since insight into the pattern's impact on others is often limited",
+    ],
+    treatmentOverview:
+      "Psychotherapy is the primary treatment for OCPD, focused on building flexibility, tolerance of imperfection and uncertainty, and awareness of the pattern's impact on relationships and quality of life, since the traits themselves are often experienced by the person as reasonable rather than as a problem to be fixed. Treatment tends to be most effective when the person seeks it because of a specific consequence they recognise — relationship strain, burnout, or persistent dissatisfaction — rather than being pushed into it, given the ego-syntonic nature of the traits. There is no medication for OCPD itself, though medication may treat a co-occurring condition such as depression, anxiety or OCD.",
+    medications: [
+      { name: "No medication is specifically approved for OCPD itself", note: "Medication is used only for a genuinely co-occurring condition, such as depression, an anxiety disorder, or comorbid OCD, following individual psychiatric assessment." },
+    ],
+    psychotherapy: [
+      { name: "Cognitive behavioural therapy (CBT)", note: "Targets rigid beliefs about perfection, control and rules, and builds behavioural flexibility through structured practice with imperfection and delegation." },
+      { name: "Schema therapy", note: "Addresses the deeper beliefs, often rooted in a demanding or conditional-approval upbringing, that drive the need for control and perfection, useful for more entrenched, longstanding patterns." },
+      { name: "Couples or family therapy", note: "Addresses the specific relational strain OCPD traits often cause — rigidity, difficulty relaxing together, or conflict over control and standards — directly and practically." },
+    ],
+    lifestyleAdvice: [
+      "Deliberately practise leaving small tasks 'good enough' rather than perfect, as a structured exercise",
+      "Schedule genuine leisure and relationship time as a non-negotiable priority, not an optional extra after work is finished",
+      "Practise delegating tasks without immediately redoing them to a personal standard",
+      "Build tolerance for minor disorder or unfinished plans through graded practice",
+      "Notice and name perfectionistic or controlling thoughts as they arise, rather than automatically acting on them",
+      "Seek feedback from trusted people on how rigidity or control affects them, and stay open to it even when uncomfortable",
+    ],
+    prognosis:
+      "OCPD traits are generally stable over time without treatment, since they are deeply ingrained and often experienced as reasonable or even valuable by the person. With sustained therapy, however, many people achieve meaningful improvement in flexibility, relationship satisfaction and quality of life, particularly when motivated by a specific recognised cost of the pattern. Because insight and motivation are central to treatment engagement, progress is often more gradual than with some other conditions, and is best measured over months, not weeks.",
+    prevention: [
+      "Encourage balance between achievement and rest, and between structure and flexibility, from childhood",
+      "Avoid conditioning approval or love strictly on performance or correctness in child-rearing",
+      "Support children in tolerating and normalising mistakes as part of learning, rather than treating errors as failures",
+      "Model flexibility and self-compassion in response to imperfection or unexpected change",
+    ],
+    familyGuidance:
+      "Living or working closely with someone with OCPD can be genuinely frustrating, since their standards, need for control, and difficulty relaxing often affect those around them directly, even though the person themselves may not see it as a problem. It helps for family members to give specific, concrete feedback about impact rather than general criticism, and to recognise that change, when it happens, tends to be gradual and motivated more by the person's own recognition of a cost than by external pressure. Couples or family therapy can create a structured, less confrontational space to address these dynamics directly. It is also worth recognising the genuine strengths that often accompany OCPD traits — reliability, high standards, thoroughness — while still supporting movement toward more flexibility and balance.",
+    faqs: [
+      { question: "Is OCPD the same as OCD?", answer: "No, despite the similar name. OCD involves distressing, unwanted intrusive thoughts and compulsions the person wants to resist. OCPD involves a lifelong personality pattern of perfectionism, order and control that the person often views as reasonable or correct rather than as a problem. They can co-occur but need different treatment approaches." },
+      { question: "Is being a perfectionist the same as having OCPD?", answer: "No. Many people have perfectionistic tendencies without meeting criteria for a personality disorder. OCPD is diagnosed only when the pattern is pervasive, longstanding, and causes real interference with completing tasks, relationships or flexibility across multiple areas of life." },
+      { question: "Why would someone with OCPD seek treatment if they don't see their traits as a problem?", answer: "People with OCPD often seek help because of a specific consequence — a relationship at risk, burnout, chronic dissatisfaction, or a partner/family member urging it — rather than viewing the underlying traits themselves as the problem, and treatment often starts from that specific, recognised cost." },
+      { question: "Can OCPD traits actually be helpful at work?", answer: "In moderation, conscientiousness, attention to detail and high standards can be genuinely valuable professionally. OCPD becomes a clinical concern when the rigidity is severe enough to interfere with completing tasks, working with others, or maintaining any balance with rest and relationships." },
+      { question: "Does OCPD respond to therapy even though the person doesn't feel distressed by it?", answer: "Yes, though engagement can take longer to build since the traits are often experienced as reasonable. Therapy tends to be most effective once the person connects the pattern to a specific outcome they do want to change, such as relationship strain or persistent dissatisfaction." },
+      { question: "Is medication used to treat OCPD?", answer: "No medication is approved for OCPD itself. Medication is only used to treat a separate, genuinely co-occurring condition, such as depression, anxiety, or comorbid OCD." },
+    ],
+    mythsVsFacts: [
+      { myth: "OCPD and OCD are basically the same condition with different names.", fact: "They are distinct conditions — OCD involves distressing, unwanted intrusive thoughts and compulsions, while OCPD is a personality pattern of perfectionism and control that the person often experiences as reasonable rather than distressing." },
+      { myth: "Someone with OCPD just needs to relax more.", fact: "The pattern is a deeply ingrained personality style, not a simple habit; meaningful change usually requires structured therapy addressing the underlying beliefs about control, imperfection and uncertainty, not just an instruction to relax." },
+      { myth: "High standards and hard work always mean someone has OCPD.", fact: "Conscientiousness and high standards are common, often adaptive traits; OCPD is diagnosed only when the pattern is rigid and pervasive enough to genuinely interfere with completing tasks, relationships or life balance." },
+      { myth: "People with OCPD know their behaviour bothers others and just don't care.", fact: "Many people with OCPD have limited insight into how their standards and need for control affect others, rather than knowingly disregarding it, which is why specific, concrete feedback — not blame — tends to be more useful." },
+    ],
+    urgentCare:
+      "OCPD itself is not an emergency, but seek psychiatric assessment if perfectionism or control difficulties are accompanied by significant depression, severe anxiety, or any thoughts of self-harm, since these warrant direct evaluation and treatment in their own right.",
+    references: [
+      "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th Edition, Text Revision (DSM-5-TR).",
+      "National Institute for Health and Care Excellence (NICE). Personality disorders: recognition and management guidance.",
+      "American Psychological Association clinical resources on personality disorders.",
+    ],
+    extraKeywords: ["OCPD treatment Nepal", "perfectionism personality disorder Kathmandu", "obsessive compulsive personality Nepal"],
+  },
 ];
 
 export function getCondition(slug: string) {
