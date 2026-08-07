@@ -821,27 +821,27 @@ export const audiencePages: AudiencePage[] = [
     title: "Psychiatrist Consultation Fees in Kathmandu, Nepal",
     headline: "What does a psychiatrist consultation cost in Kathmandu?",
     shortDescription:
-      "How psychiatric consultation fees generally work in Kathmandu, Nepal — what affects cost, the difference between an initial assessment and follow-up, and how to get current pricing from Dr. Kushal Kharel's clinic.",
+      "Dr. Kushal Kharel's psychiatric consultation fees in Kathmandu: NPR 800–1,500 for an initial assessment, one free follow-up within a week, and NPR 800 for repeat consultations after that.",
     intro:
-      "Cost is a genuine, practical concern when deciding whether to see a psychiatrist, and it's reasonable to want clarity before booking. Fees are not published as a single fixed number on this page because they depend on the type of consultation — an initial assessment is more thorough than a follow-up, and in-person, online, testing, and certificate-related visits are priced differently — so the most accurate, current figure comes directly from the clinic rather than a number that could be outdated by the time you read it. Call or WhatsApp +977 9861800547 and the clinic will tell you the current fee for your specific situation before you book, with no obligation.",
+      "An initial psychiatric consultation with Dr. Kushal Kharel costs NPR 800–1,500, depending on the complexity and length of the assessment. If you return for a follow-up within one week of your initial visit, that first follow-up is free. After that free follow-up (or once the one-week window has passed), a repeat consultation costs NPR 800. Medication is charged separately at the pharmacy and is not included in the consultation fee. Call or WhatsApp +977 9861800547 to confirm the current fee for your specific situation before booking.",
     whoThisIsFor: [
       "Anyone comparing psychiatrists in Kathmandu and wanting to understand cost before booking",
       "Patients unsure whether an initial visit costs more than a follow-up",
-      "Patients deciding between in-person and online consultation",
+      "Patients wanting to know if a quick follow-up after their first visit is free",
       "Patients wondering whether medication costs are included in the consultation fee",
       "Families budgeting for a child or adolescent's ongoing psychiatric care",
       "Patients who need a fee estimate before requesting reimbursement or insurance documentation",
     ],
     commonConcerns: [
-      "Initial assessment vs. follow-up consultation pricing",
-      "In-person vs. online consultation cost differences",
+      "Initial assessment cost (NPR 800–1,500)",
+      "Whether a follow-up soon after the first visit is free (yes, within one week, once)",
+      "Repeat consultation cost after the free follow-up window (NPR 800)",
       "Medication costs, which are separate from the consultation fee and paid at the pharmacy",
-      "Additional cost for psychological testing (IQ, personality, neuropsychological)",
       "Cost of medical certificates and fitness-to-work documentation",
-      "Whether payment plans or reduced-cost options exist for those who need them",
+      "Whether reduced-cost options exist for those who need them",
     ],
     practicalNote:
-      "The most reliable way to get an accurate fee is to call or message the clinic directly, since it depends on the specific service — a first psychiatric assessment, a medication follow-up, therapy, testing, or certificate issuance are priced differently, and prices are confirmed before you book so there are no surprises. If cost is a genuine barrier, mention this when you call; the clinic can discuss what's realistic.",
+      "In practice: the initial assessment is NPR 800–1,500 depending on complexity; if you come back within a week for a quick follow-up, that visit is free, once; after that, repeat consultations are NPR 800 each. Exact pricing for testing, certificates, or unusual situations is confirmed directly with the clinic before booking. If cost is a genuine barrier, mention this when you call — it's worth asking rather than avoiding care altogether.",
     searchTerms: [
       "Psychiatrist fee Nepal",
       "Psychiatrist consultation cost Kathmandu",
@@ -853,12 +853,17 @@ export const audiencePages: AudiencePage[] = [
       {
         question: "How much does a psychiatrist consultation cost in Kathmandu?",
         answer:
-          "It depends on the type of visit — a first assessment, a follow-up, online consultation, therapy, or testing are priced differently. Call or WhatsApp +977 9861800547 for the current fee for your specific situation before booking.",
+          "An initial consultation with Dr. Kushal Kharel costs NPR 800–1,500, depending on the complexity and length of the assessment. Repeat consultations after that are NPR 800.",
       },
       {
         question: "Is the first visit more expensive than follow-up visits?",
         answer:
-          "Generally, an initial assessment takes longer and is more thorough than a routine follow-up, which is common practice and usually reflected in how visits are priced. Ask the clinic for exact current figures for both when you call.",
+          "The initial assessment (NPR 800–1,500) is more thorough than a routine follow-up and is priced accordingly. Once you've had your initial visit, repeat consultations cost NPR 800.",
+      },
+      {
+        question: "Is a follow-up visit ever free?",
+        answer:
+          "Yes. If you return within one week of your initial consultation, that follow-up is free, once. After that free visit, or once the one-week window has passed, the standard repeat consultation fee of NPR 800 applies.",
       },
       {
         question: "Are medications included in the consultation fee?",
@@ -866,14 +871,9 @@ export const audiencePages: AudiencePage[] = [
           "No. The consultation fee covers the psychiatric assessment and consultation itself; any prescribed medications are purchased separately at a pharmacy and are not included in the clinic's fee.",
       },
       {
-        question: "Does online consultation cost less than an in-person visit?",
-        answer:
-          "This varies by clinic and situation; ask when you call or message, since online and in-person visits can be priced the same or differently depending on the type of consultation.",
-      },
-      {
         question: "Can I get a fee estimate before booking?",
         answer:
-          "Yes. Call or WhatsApp the clinic and describe your situation (first visit or follow-up, in-person or online) and you'll be given a current fee estimate before you commit to booking.",
+          "Yes. Call or WhatsApp +977 9861800547 and describe your situation (first visit or follow-up) and you'll be given a current fee estimate before you commit to booking.",
       },
       {
         question: "What if I can't afford the standard consultation fee?",
