@@ -5,9 +5,9 @@ import { buildSpeakableSpec } from "../lib/schema";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/best-psychiatrist-nepal`;
-const title = "Best Psychiatrist in Kathmandu, Nepal | Book Today";
+const title = "Best & Top Psychiatrist in Kathmandu, Nepal | Book Today";
 const description =
-  "Looking for the best psychiatrist in Kathmandu? Dr. Kushal Kharel, MD, treats anxiety, depression, OCD & more with evidence-based care. Book today.";
+  "Looking for the best or top psychiatrist in Kathmandu for your mental health? Dr. Kushal Kharel, MD, treats anxiety, depression, OCD & more with evidence-based care. Book today.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "Best Psychiatrist in Nepal",
     "Top Psychiatrist in Nepal",
     "Best Psychiatrist in Kathmandu",
+    "Top Psychiatrist in Kathmandu",
+    "Top Psychiatrist Doctor in Nepal",
+    "Psychiatrist Doctor in Kathmandu",
     "Best Psychiatrist Near Me",
     "Psychiatrist Near Me Kathmandu",
     "Psychiatrist Kalanki",
@@ -26,6 +29,8 @@ export const metadata: Metadata = {
     "OCD Specialist Nepal",
     "Schizophrenia Treatment Nepal",
     "Mental Health Doctor Nepal",
+    "Mental Health in Kathmandu",
+    "Mental Health in Nepal",
     "Psychiatrist for Anxiety",
     "Psychiatrist for Depression",
     "Psychiatric Consultation Nepal",
@@ -53,6 +58,16 @@ const faqs = [
     question: "Who is the best psychiatrist in Kathmandu specifically?",
     answer:
       "Within Kathmandu, useful things to check are Nepal Medical Council registration, postgraduate psychiatric training, experience with your specific concern, and whether the clinic offers the format (in-person or online) that suits you. Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (registration #27199) with an MD in Psychiatry, based in Kalanki, Kathmandu since 2020, seeing patients in person and online.",
+  },
+  {
+    question: "Who is the top psychiatrist in Nepal or Kathmandu?",
+    answer:
+      "\"Top psychiatrist\" isn't an official title or ranking — there is no governing body in Nepal that ranks psychiatrists against each other. It's worth being cautious of any provider who claims to literally be \"the top\" without qualifying it. A more useful approach is comparing registration, training and experience across a few options, including Dr. Kushal Kharel, a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) in Kalanki, Kathmandu, and choosing based on fit for your specific concern.",
+  },
+  {
+    question: "Where can I get help for mental health in Kathmandu or Nepal?",
+    answer:
+      "Options include a psychiatrist (a medical doctor who can diagnose and prescribe medication when needed), a clinical psychologist or counsellor (for structured therapy or supportive counselling), or, for emergencies, the nearest hospital. Dr. Kushal Kharel's clinic in Kalanki, Kathmandu provides psychiatric assessment, counselling and online consultation across Nepal for anxiety, depression, OCD, bipolar disorder, addiction and other mental-health concerns.",
   },
   {
     question: "When should I see a psychiatrist?",
@@ -124,7 +139,7 @@ export default function BestPsychiatristNepalPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
-      { "@type": "ListItem", position: 2, name: "Best Psychiatrist in Kathmandu", item: pageUrl },
+      { "@type": "ListItem", position: 2, name: "Best & Top Psychiatrist in Kathmandu", item: pageUrl },
     ],
   };
 
@@ -138,9 +153,9 @@ export default function BestPsychiatristNepalPage() {
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
           <Link href="/" className="font-semibold text-sage-700">&larr; Back to home</Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">Psychiatric care in Kathmandu &amp; online</p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">Best Psychiatrist in Kathmandu, Nepal for Anxiety, Depression, OCD &amp; Schizophrenia</h1>
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">Best &amp; Top Psychiatrist in Kathmandu, Nepal for Anxiety, Depression, OCD &amp; Schizophrenia</h1>
           <p id="psychiatrist-nepal-answer" className="mt-6 max-w-4xl text-lg leading-8 text-stone-600">
-            Searching for the best or top psychiatrist in Kathmandu often means looking for clear answers, respectful care and a practical next step. There is no single doctor who is right for every person. The most helpful choice is a qualified, registered psychiatrist who listens carefully, explains options clearly and creates a treatment plan around your symptoms, health, circumstances and goals. Dr. Kushal Kharel is a Consultant Psychiatrist based in Kalanki, Kathmandu, providing psychiatric assessment, counselling, psychotherapy, medication management, addiction care and online consultation across Nepal.
+            Searching for the best or top psychiatrist — or psychiatrist doctor — in Kathmandu or Nepal often means looking for clear answers, respectful care and a practical next step for your mental health. There is no official ranking and no single doctor who is right for every person. The most helpful choice is a qualified, registered psychiatrist who listens carefully, explains options clearly and creates a treatment plan around your symptoms, health, circumstances and goals. Dr. Kushal Kharel is a Consultant Psychiatrist based in Kalanki, Kathmandu, providing psychiatric assessment, counselling, psychotherapy, medication management, addiction care and online consultation across Nepal.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a href="tel:+9779861800547" className="inline-flex items-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800"><Phone size={20} aria-hidden="true" />Call +977 9861800547</a>
