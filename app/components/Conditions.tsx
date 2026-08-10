@@ -77,8 +77,8 @@ export default function Conditions() {
     },
     {
       icon: "👨‍👩‍👧",
-      title: "Child & Adolescent Psychiatry",
-      desc: "Behavioral, emotional and developmental mental health conditions.",
+      title: "Child & Adolescent Mental Health",
+      desc: "Behavioral, emotional and developmental mental health conditions, assessed as part of general psychiatric practice.",
       href: "/child-adolescent-psychiatry",
     }
   ];

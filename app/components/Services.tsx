@@ -10,9 +10,9 @@ export default function Services() {
     },
     {
       icon: "👨‍👩‍👧",
-      title: "Child & Adolescent Psychiatry",
+      title: "Child & Adolescent Mental Health",
       description:
-        "Evaluation and treatment of ADHD, autism spectrum disorder, behavioural difficulties, emotional problems and developmental concerns.",
+        "General psychiatric evaluation and treatment of ADHD, autism spectrum disorder, behavioural difficulties, emotional problems and developmental concerns.",
     },
     {
       icon: "💊",

@@ -282,12 +282,12 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "child-adolescent-psychiatry",
-    title: "Child and Adolescent Psychiatrist in Kathmandu, Nepal",
-    headline: "Child and adolescent psychiatry in Kathmandu, Nepal",
+    title: "Child & Adolescent Mental Health Care in Kathmandu, Nepal",
+    headline: "Psychiatric care for children and adolescents in Kathmandu, Nepal",
     shortDescription:
-      "Assessment and treatment for children and adolescents with ADHD, autism spectrum concerns, learning difficulties, anxiety, depression, behavioral problems and the effects of childhood trauma, in Kathmandu or online.",
+      "General psychiatric assessment for children and adolescents with ADHD, autism spectrum concerns, learning difficulties, anxiety, depression, behavioral problems and the effects of childhood trauma, in Kathmandu or online.",
     intro:
-      "Children and adolescents can experience the same range of mental health conditions as adults, but assessment and treatment need to be developmentally appropriate and involve parents or caregivers throughout. Dr. Kushal Kharel provides child and adolescent psychiatric assessment and treatment in Kathmandu, covering conditions such as ADHD, autism spectrum concerns, learning difficulties, anxiety and depression, behavioral problems, and support for children affected by trauma or adverse childhood experiences. Detailed guides on ADHD, autism spectrum disorder and specific learning disorder are available elsewhere on this site for parents wanting to read more about a specific condition.",
+      "Children and adolescents can experience the same range of mental health conditions as adults, but assessment and treatment need to be developmentally appropriate and involve parents or caregivers throughout. Dr. Kushal Kharel is a Consultant Psychiatrist who assesses and treats children and adolescents as part of general psychiatric practice — this is general psychiatric care for younger patients, not a distinct child and adolescent psychiatry subspecialty, and more complex or severe presentations may be referred to a specialist when that's a better fit. Within general practice, this covers conditions such as ADHD, autism spectrum concerns, learning difficulties, anxiety and depression, behavioral problems, and support for children affected by trauma or adverse childhood experiences. Detailed guides on ADHD, autism spectrum disorder and specific learning disorder are available elsewhere on this site for parents wanting to read more about a specific condition.",
     whoThisIsFor: [
       "Parents concerned about a child's attention, hyperactivity or impulsivity",
       "Parents noticing possible autism spectrum traits in a young child",
