@@ -116,6 +116,41 @@ const faqs = [
     answer:
       "Dr. Kushal Kharel, the psychiatrist at this clinic, is male. For patients who would feel more comfortable speaking with a woman, a qualified female counselor can be arranged as part of your care based on your preference, alongside Dr. Kharel's psychiatric assessment where relevant. Mention this when you book.",
   },
+  {
+    question: "Do you offer teleconsultation services?",
+    answer:
+      "Yes. Teleconsultation (online consultation by phone or video call) is available for patients across Nepal and Nepalis living abroad, suitable for follow-up appointments and many initial assessments. Urgent or complex situations may still need in-person or emergency evaluation.",
+  },
+  {
+    question: "What can I expect during my first appointment?",
+    answer:
+      "A first appointment is a structured conversation, not a test to pass or fail. Dr. Kharel asks about your main difficulties, when they started, how they affect daily life, previous treatment, physical health, current medicines, sleep and family history. You'll leave with a shared plan — which may include education, therapy, medication, a referral, or a follow-up appointment.",
+  },
+  {
+    question: "Do I have to take lifelong medication if started on psychotropics?",
+    answer:
+      "Not necessarily. This depends entirely on the condition, its severity, and how you respond to treatment. Many people take medication for a defined period alongside therapy and later taper off under medical supervision, while others with longer-term or recurring conditions benefit from continuing treatment for longer. This is reviewed periodically with you, not decided once and left unchanged.",
+  },
+  {
+    question: "How long are appointments?",
+    answer:
+      "An initial assessment takes longer than a routine follow-up, since it involves a fuller history. Exact timing varies by complexity — ask when you call or message to book if you need to plan your day around it.",
+  },
+  {
+    question: "Is medication needed in all the cases?",
+    answer:
+      "No. Treatment is individualized. Some people benefit mainly from psychotherapy, counselling, sleep and routine changes, or family support. Medication is considered when its likely benefits outweigh its risks for your specific situation, and this is discussed together rather than assumed.",
+  },
+  {
+    question: "Do you provide psychotherapy/counseling sessions?",
+    answer:
+      "Yes. Dr. Kharel provides supportive counselling and structured psychotherapy approaches such as CBT alongside medical assessment and medication management when appropriate, and can refer to a clinical psychologist for specialised therapy when that's a better fit.",
+  },
+  {
+    question: "Is it true that psychiatric medications have a lot of side effects?",
+    answer:
+      "Like all medications, psychiatric medications can have side effects, but this is often overstated as a blanket rule. Most people tolerate modern psychiatric medications reasonably well, side effects are discussed before starting, and the choice, dose and monitoring are individualized specifically to minimize them while still treating the underlying condition effectively.",
+  },
 ];
 
 export default function FAQ() {

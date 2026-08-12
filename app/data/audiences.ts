@@ -941,6 +941,199 @@ export const audiencePages: AudiencePage[] = [
       },
     ],
   },
+  {
+    slug: "relationship-counselling-kathmandu",
+    title: "Relationship Counselling in Kathmandu, Nepal",
+    headline: "Relationship counselling in Kathmandu: what it is, and when to use it",
+    shortDescription:
+      "What relationship counselling (RC) actually is, premarital counselling before marriage, how to find a counsellor who's a good fit, and when relationship issues call for individual psychiatric care instead.",
+    intro:
+      "Relationship counselling is structured support — usually with both partners together, sometimes individually — for working through communication breakdown, conflict, trust issues or a major transition like marriage or parenthood, with a trained counsellor or psychiatrist facilitating rather than taking sides. It's different from individual therapy, which focuses on one person's own diagnosis or treatment. Dr. Kushal Kharel provides relationship and premarital counselling in Kalanki, Kathmandu, in person or online, and can also address an individual mental-health condition — depression, anxiety, or substance use — affecting the relationship when that's part of the picture.",
+    whoThisIsFor: [
+      "Couples with frequent conflict, communication breakdown or growing distance",
+      "Couples preparing for marriage who want premarital counselling",
+      "Partners rebuilding trust after a breach of trust",
+      "Couples navigating a major transition — marriage, new parenthood, migration",
+      "Anyone unsure how to find a relationship counsellor who's actually a good fit",
+      "Couples where one partner's mental health or substance use is affecting the relationship",
+    ],
+    commonConcerns: [
+      "What relationship counselling actually involves, versus individual therapy",
+      "What premarital counselling covers before a wedding",
+      "How to find a counsellor who's a genuine fit for your situation",
+      "Whether online relationship counselling actually works",
+      "Communication breakdown and repeated arguments",
+      "Impact of a partner's depression, anxiety or substance use on the relationship",
+    ],
+    practicalNote:
+      "Sessions can include both partners together or individually as needed, in person at the Kalanki clinic or online. There's no fixed number of sessions — some couples benefit from a few focused on one issue, others engage in longer-term work, reviewed as you go. Book by phone or WhatsApp.",
+    searchTerms: [
+      "Relationship counselling Kathmandu",
+      "Relationship counselling Nepal",
+      "Premarital counselling Kathmandu",
+      "How to find a relationship counsellor Nepal",
+      "Online relationship counselling Nepal",
+    ],
+    faqs: [
+      {
+        question: "What is relationship counselling (RC)?",
+        answer:
+          "Relationship counselling is structured support for a relationship — most often a couple, sometimes family members — focused on communication, conflict and trust, facilitated by a trained counsellor or psychiatrist. It's different from individual therapy, which centres on one person's own diagnosis or treatment, though the two can run alongside each other.",
+      },
+      {
+        question: "What does premarital counselling cover?",
+        answer:
+          "Premarital counselling gives couples a structured space to discuss expectations before marriage — communication style, finances, family and in-law dynamics, roles and responsibilities, values, and conflict resolution — surfacing potential friction points while they're still easy to talk through, rather than after they've become entrenched.",
+      },
+      {
+        question: "How do I find the best relationship counsellor?",
+        answer:
+          "There's no official ranking of relationship counsellors. Look for genuine relevant qualifications and experience, a style you and your partner both feel comfortable with, and — if a mental health condition is part of what's affecting the relationship — someone who can address that clinically too, not only the relationship dynamic. A first session is a reasonable way to judge fit before committing further.",
+      },
+      {
+        question: "Is online relationship counselling actually effective?",
+        answer:
+          "Yes, for many couples, particularly for ongoing sessions once the initial dynamic is understood, and it works well for long-distance or migration-separated couples who can't attend in person together. Some situations — significant conflict, safety concerns — are better started in person.",
+      },
+      {
+        question: "Do both partners have to attend every session?",
+        answer:
+          "Not necessarily. Joint sessions are central to relationship counselling, but individual sessions with each partner are sometimes included to address concerns more openly, always with transparency about how that information is used.",
+      },
+      {
+        question: "What if one partner has a mental health condition affecting the relationship?",
+        answer:
+          "This is common and can be addressed on both fronts at once — the relationship dynamic through counselling, and the underlying condition (depression, anxiety, substance use) through individual psychiatric assessment and treatment, coordinated together rather than treated as separate problems.",
+      },
+    ],
+  },
+  {
+    slug: "stress-anger-management-kathmandu",
+    title: "Stress and Anger Management in Kathmandu, Nepal",
+    headline: "Stress and anger management in Kathmandu, Nepal",
+    shortDescription:
+      "Structured support for chronic stress, burnout and difficulty managing anger or irritability in Kathmandu — practical skills, and when it's worth a psychiatric assessment rather than coping alone.",
+    intro:
+      "Stress is a normal response to pressure, but when it becomes constant, it shows up as irritability, poor sleep, headaches, low motivation and difficulty concentrating — and for some people, that pressure comes out as anger that feels hard to control. Dr. Kushal Kharel provides stress and anger management support in Kalanki, Kathmandu, in person or online, ranging from practical counselling for everyday pressure to full psychiatric assessment when stress or anger is severe, persistent, or tied to an underlying condition like depression, anxiety or intermittent explosive disorder.",
+    whoThisIsFor: [
+      "People with chronic work, family or academic stress affecting daily life",
+      "People experiencing burnout — exhaustion, cynicism, reduced ability to function",
+      "People struggling with anger or irritability that feels hard to control",
+      "Families concerned about a member's angry outbursts affecting relationships",
+      "People whose stress shows up physically — headaches, poor sleep, muscle tension",
+      "Anyone wanting practical coping skills before stress escalates further",
+    ],
+    commonConcerns: [
+      "Chronic stress and burnout from work, family or academic pressure",
+      "Anger or irritability that feels disproportionate or hard to control",
+      "Physical symptoms of stress — headaches, poor sleep, muscle tension, fatigue",
+      "Impact of anger outbursts on relationships or work",
+      "Distinguishing everyday stress from an underlying anxiety or mood disorder",
+      "Building practical, sustainable coping strategies rather than quick fixes",
+    ],
+    practicalNote:
+      "Not every case of stress or anger needs a psychiatric label — many people benefit from counselling focused on triggers, communication and coping skills. A fuller psychiatric assessment is useful when stress or anger is severe, persistent, affecting safety, or possibly linked to depression, anxiety or another condition. Available in person at the Kalanki clinic or online; book by phone or WhatsApp.",
+    searchTerms: [
+      "Stress management Kathmandu",
+      "Anger management Kathmandu",
+      "Anger management Nepal",
+      "Burnout treatment Kathmandu",
+      "Stress counselling Nepal",
+    ],
+    faqs: [
+      {
+        question: "When does stress need professional help rather than just coping alone?",
+        answer:
+          "Consider an assessment when stress is accompanied by persistent low mood, anxiety, heavy alcohol or substance use, significant sleep disturbance, thoughts of self-harm, or an inability to function at work or in relationships — not just difficult days, but a pattern that isn't easing.",
+      },
+      {
+        question: "Is anger management therapy or medical treatment?",
+        answer:
+          "It can be either, depending on the underlying picture. Many people benefit from counselling focused on triggers, communication and de-escalation skills alone. When anger is tied to an underlying condition such as depression, anxiety or intermittent explosive disorder, psychiatric assessment and treatment address that directly.",
+      },
+      {
+        question: "Can stress cause physical symptoms like headaches or stomach problems?",
+        answer:
+          "Yes. Chronic stress commonly produces physical symptoms — headaches, muscle tension, stomach discomfort, fatigue — through its effect on the body's stress-response system, alongside the more expected emotional symptoms like irritability and poor concentration.",
+      },
+      {
+        question: "What's the difference between normal anger and a problem that needs treatment?",
+        answer:
+          "Occasional frustration is normal. It becomes worth addressing when anger is frequent, disproportionate to the situation, damages relationships or work, or is followed by regret you can't seem to act on differently next time — a pattern rather than an isolated bad day.",
+      },
+      {
+        question: "Is burnout the same as depression?",
+        answer:
+          "They overlap but aren't identical. Burnout is specifically tied to chronic, unmanaged workplace or role-related stress and often improves with changes to that specific situation alongside support; depression is a broader mood disorder that can occur with or without a burnout trigger. Assessment helps clarify which — or both — is present.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-control-your-mind-nepal",
+    title: "How to Control Your Mind: Practical Techniques in Nepal",
+    headline: "How to control your mind: practical techniques that actually work",
+    shortDescription:
+      "Realistic, evidence-based techniques for managing intrusive thoughts, racing thoughts, overthinking and difficult emotions — and when persistent difficulty controlling your thoughts is worth a psychiatric assessment.",
+    intro:
+      "\"How to control your mind\" is one of the most common ways people search for help with racing thoughts, overthinking, intrusive thoughts, or difficulty managing emotions — and the honest starting point is that you can't fully control which thoughts show up, but you can change how you respond to them, which is where real, lasting relief comes from. Techniques like grounding, structured worry time, and cognitive behavioural approaches are genuinely effective and teachable. When overthinking, intrusive thoughts or emotional overwhelm are persistent and disrupting daily life, that's usually a sign worth a proper assessment rather than continuing to manage it alone.",
+    whoThisIsFor: [
+      "People experiencing racing thoughts or constant overthinking",
+      "People with unwanted, intrusive thoughts that feel hard to switch off",
+      "People wanting practical techniques for managing anxiety or stress in the moment",
+      "People whose mind feels 'out of control' during stressful periods",
+      "People who've tried self-help techniques without lasting relief",
+      "Anyone wondering whether their difficulty controlling their thoughts points to an underlying condition",
+    ],
+    commonConcerns: [
+      "Racing thoughts, especially at night or during stress",
+      "Overthinking and difficulty switching off worry",
+      "Intrusive, unwanted thoughts that feel distressing or shameful",
+      "Difficulty concentrating because the mind keeps wandering to worries",
+      "Emotional overwhelm that feels hard to regulate in the moment",
+      "Wanting practical, teachable techniques rather than vague advice",
+    ],
+    practicalNote:
+      "Techniques like grounding (bringing attention back to the present through the senses), scheduled 'worry time' (containing worry to a set period rather than letting it run all day), and cognitive restructuring (examining and challenging unhelpful thought patterns) are taught and practised collaboratively, not just handed over as a leaflet. When these alone aren't enough — because an underlying condition like GAD, OCD or depression is driving the pattern — that's assessed and treated directly. Available in person at the Kalanki clinic in Kathmandu or online; book by phone or WhatsApp.",
+    searchTerms: [
+      "How to control your mind Nepal",
+      "How to control overthinking Kathmandu",
+      "How to stop racing thoughts Nepal",
+      "Mind control techniques Nepal",
+      "How to control intrusive thoughts",
+    ],
+    faqs: [
+      {
+        question: "Is it actually possible to fully control your thoughts?",
+        answer:
+          "Not entirely, and that's an important starting point — everyone has unwanted or unhelpful thoughts sometimes, and trying to forcibly suppress them often backfires and makes them more persistent. What genuinely works is changing your relationship to the thoughts (not fighting them) and building skills that reduce how much they drive your emotions and behaviour.",
+      },
+      {
+        question: "What's a technique I can try right now for racing thoughts?",
+        answer:
+          "Grounding techniques — such as naming five things you can see, four you can hear, three you can touch — bring attention back to the present moment and can interrupt a spiral of racing thoughts within a few minutes. This is a short-term tool, most useful alongside, not instead of, addressing what's driving the pattern.",
+      },
+      {
+        question: "Does constant overthinking mean I have an anxiety disorder?",
+        answer:
+          "Not necessarily — everyone overthinks sometimes, especially under stress. It's worth an assessment when overthinking is persistent (most days for six months or more), hard to control, and accompanied by physical symptoms like restlessness or poor sleep, since that pattern is consistent with generalized anxiety disorder.",
+      },
+      {
+        question: "Are intrusive thoughts a sign of something seriously wrong with me?",
+        answer:
+          "No. Intrusive thoughts — unwanted, sometimes disturbing thoughts that pop up uninvited — are extremely common and experienced by most people at some point. They become a clinical concern when they're frequent, highly distressing, and drive compulsive behaviours to neutralise them, which is a pattern associated with OCD and treatable.",
+      },
+      {
+        question: "Can breathing exercises really help control my mind?",
+        answer:
+          "Yes, slow, deliberate breathing (particularly a longer out-breath than in-breath) genuinely activates the body's calming nervous-system response and can reduce the physical intensity of anxious or angry thoughts in the moment. It works best as one tool within a broader approach, not a standalone fix for a persistent pattern.",
+      },
+      {
+        question: "When should I stop trying to manage this myself and see someone?",
+        answer:
+          "When self-help techniques bring only brief relief, the pattern keeps returning, or it's affecting your sleep, work, relationships or sense of safety, a psychiatric assessment can identify whether an underlying condition is driving it and offer more effective, lasting treatment than technique alone.",
+      },
+    ],
+  },
 ];
 
 export function getAudiencePage(slug: string) {

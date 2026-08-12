@@ -145,6 +145,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/psychology-internship-nepal`, lastModified: new Date("2026-08-06"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${siteUrl}/psychiatrist-fee-nepal`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/psychiatric-hospital-vs-clinic-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.75 },
+    { url: `${siteUrl}/relationship-counselling-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/stress-anger-management-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/how-to-control-your-mind-nepal`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.75 },
 
     {
       url: `${siteUrl}/counselling-in-nepal`,
