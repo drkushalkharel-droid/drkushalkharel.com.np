@@ -1134,6 +1134,71 @@ export const audiencePages: AudiencePage[] = [
       },
     ],
   },
+  {
+    slug: "psychiatry-clinic-kathmandu",
+    title: "Psychiatry Clinic in Kathmandu, Nepal",
+    headline: "Dr. Kushal Kharel's psychiatry clinic in Kalanki, Kathmandu",
+    shortDescription:
+      "Location, hours, what to expect on your first visit, and how to reach Dr. Kushal Kharel's outpatient psychiatry clinic in Kalanki, Kathmandu, in person or online.",
+    intro:
+      "Dr. Kushal Kharel's psychiatry clinic is an outpatient practice in Kalanki, Kathmandu — near Malpot Road and Kalanki Bhatbhateni Supermarket — offering psychiatric assessment, diagnosis, medication management and psychotherapy for children, adolescents, adults and older adults. It is a clinic, not a hospital: there's no inpatient admission or 24-hour emergency service, so it suits scheduled assessment and ongoing care rather than emergencies. Online consultation is available for patients elsewhere in Nepal or abroad who can't visit in person.",
+    whoThisIsFor: [
+      "Anyone looking for a psychiatry clinic they can visit in person in Kathmandu",
+      "Patients wanting to know exactly where the clinic is and how to get there",
+      "First-time patients wanting to know what a visit actually involves",
+      "Patients deciding between an in-person visit and online consultation",
+      "Patients needing to know clinic hours before planning a visit",
+    ],
+    commonConcerns: [
+      "Exact clinic location and how to find it",
+      "Parking and accessibility near the clinic",
+      "Clinic hours and days open",
+      "What happens during a first in-person visit",
+      "Whether this is a hospital or an outpatient clinic",
+      "Choosing between an in-person visit and online consultation",
+    ],
+    practicalNote:
+      "The clinic is at Kalanki-14, Near Malpot Road, near Kalanki Bhatbhateni Supermarket, Kathmandu 44600, with roadside parking available nearby. Hours are Monday–Friday 10:00 AM–6:00 PM and Saturday 10:00 AM–4:00 PM, closed Sunday. Call or WhatsApp +977 9861800547 to book; for a psychiatric or medical emergency, go to the nearest hospital emergency department rather than waiting for a clinic appointment.",
+    searchTerms: [
+      "Psychiatry clinic in Kathmandu",
+      "Psychiatric clinic Kathmandu",
+      "Psychiatrist clinic Kalanki",
+      "Mental health clinic Kathmandu",
+      "Psychiatry clinic near me Kathmandu",
+    ],
+    faqs: [
+      {
+        question: "Where exactly is the psychiatry clinic located?",
+        answer:
+          "Kalanki-14, Near Malpot Road, near Kalanki Bhatbhateni Supermarket, Kathmandu 44600, Nepal. Roadside parking is available nearby.",
+      },
+      {
+        question: "What are the clinic's opening hours?",
+        answer:
+          "Monday to Friday, 10:00 AM to 6:00 PM, and Saturday, 10:00 AM to 4:00 PM. The clinic is closed on Sunday and is not a 24-hour or emergency service.",
+      },
+      {
+        question: "Is this a hospital or an outpatient clinic?",
+        answer:
+          "It's an outpatient psychiatry clinic — assessment, diagnosis, medication management and psychotherapy by appointment, with no inpatient admission or emergency department. For a psychiatric emergency, go to the nearest hospital instead.",
+      },
+      {
+        question: "What happens during a first visit to the clinic?",
+        answer:
+          "A structured conversation about your main difficulties, when they started, how they affect daily life, previous treatment, physical health, current medicines, sleep and family history, ending with a shared plan for what comes next.",
+      },
+      {
+        question: "Can I visit without booking an appointment first?",
+        answer:
+          "Calling or messaging ahead is strongly recommended so a suitable time can be arranged and any preparation discussed, rather than arriving without notice.",
+      },
+      {
+        question: "Is online consultation available instead of visiting the clinic?",
+        answer:
+          "Yes, for patients elsewhere in Nepal or abroad, or anyone who prefers it for follow-up visits. Some situations — a first complex assessment, safety concerns, or anything needing physical examination — are better suited to an in-person visit.",
+      },
+    ],
+  },
 ];
 
 export function getAudiencePage(slug: string) {

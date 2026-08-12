@@ -148,6 +148,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/relationship-counselling-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/stress-anger-management-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/how-to-control-your-mind-nepal`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.75 },
+    { url: `${siteUrl}/psychiatry-clinic-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.85 },
 
     {
       url: `${siteUrl}/counselling-in-nepal`,

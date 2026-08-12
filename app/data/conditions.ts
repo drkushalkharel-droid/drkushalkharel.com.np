@@ -8663,6 +8663,11 @@ export const conditions: Condition[] = [
         answer:
           "Relaxation training, biofeedback and CBT for headache have solid evidence for reducing migraine and tension-type headache frequency and are considered part of first-line preventive care, not just a supplement to medication.",
       },
+      {
+        question: "Who is the best neurologist in Kathmandu for migraine?",
+        answer:
+          "Dr. Kushal Kharel is a psychiatrist, not a neurologist, and doesn't claim to be one — for the initial diagnosis and physical work-up of migraine or headache, a neurologist is the right first point of contact, particularly for new, severe or unusual headache patterns. Where stress, anxiety or depression are clearly tangled up with frequent migraine or tension-type headache, or where an accurate psychiatric assessment would help alongside neurological care, that overlap is where a psychiatrist's involvement genuinely adds value — often working alongside, not instead of, a neurologist.",
+      },
     ],
     mythsVsFacts: [
       {
@@ -8690,7 +8695,7 @@ export const conditions: Condition[] = [
       "American Academy of Neurology / American Headache Society. Guidelines for migraine prevention.",
       "World Health Organization. International Classification of Diseases, 11th Revision (ICD-11).",
     ],
-    extraKeywords: ["migraine treatment Nepal", "headache treatment Kathmandu", "chronic headache psychiatrist", "tension headache treatment Nepal"],
+    extraKeywords: ["migraine treatment Nepal", "headache treatment Kathmandu", "chronic headache psychiatrist", "tension headache treatment Nepal", "neurologist Kathmandu for migraine", "best neurologist in Kathmandu"],
   },
   {
     slug: "major-neurocognitive-disorder-dementia",
