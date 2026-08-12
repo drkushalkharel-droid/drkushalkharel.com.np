@@ -142,13 +142,6 @@ export default function Navbar() {
             <NavDropdown label="Tools" links={toolsLinks} />
             <NavDropdown label="Find Care" links={findCareLinks} />
 
-            <Link
-              href="/appointment"
-              className="font-medium text-gray-700 hover:text-sage-700 transition"
-            >
-              Book appointment
-            </Link>
-
           </nav>
 
           {/* SOCIAL ICONS - Hidden on mobile */}
@@ -186,7 +179,7 @@ export default function Navbar() {
 
             <a
               href="tel:+9779861800547"
-              className="inline-flex items-center gap-2 bg-sage-700 hover:bg-sage-800 text-white px-6 py-3 rounded-xl font-semibold transition"
+              className="hidden md:inline-flex items-center gap-2 bg-sage-700 hover:bg-sage-800 text-white px-6 py-3 rounded-xl font-semibold transition"
             >
               <Phone size={18} aria-hidden="true" />
               Call Now
