@@ -335,6 +335,56 @@ export const abroadGuides: AbroadGuide[] = [
     practicalNote:
       "Germany is usually around three to four hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the German afternoon or early evening for either side. A Nepal-written prescription cannot be assumed to be valid at a German pharmacy (Apotheke), so medication questions are discussed openly, including whether registering with a local Hausarzt for prescribing and referral into the German system is the right next step. Many universities also offer a free Studierendenwerk psychosocial counselling service that can provide short-term support in English while this is arranged, and Ausbildung trainees can typically raise a health concern with their training provider without it affecting their residence status. If there is a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or going to the nearest hospital emergency department is safer than waiting for a scheduled online appointment.",
   },
+  {
+    country: "Saudi Arabia",
+    slug: "saudi-arabia",
+    region: "Middle East",
+    headline: "Mental health support for Nepalese in Saudi Arabia",
+    intro:
+      "Saudi Arabia has been one of the largest single destinations for Nepali labour migration for decades, with hundreds of thousands of Nepalis working in construction, security, hospitality, retail and domestic work across cities like Riyadh, Jeddah and Dammam, almost all on employer-sponsored (kafala-linked) work visas. Contracts of two years are common, sometimes without a home visit in between, and long shifts in extreme summer heat are frequently combined with shared labour-camp accommodation offering little privacy for a phone call, let alone a video appointment. The steady weight of remittance responsibility, distance from spouse and children for years at a stretch, and a workplace culture where raising a mental health concern can feel risky to job security all build up quietly. Domestic workers, largely women, face an additional layer of isolation, often living within an employer's household with very limited free time and little contact with other Nepalis. Many describe not having language to name what they're feeling as anything other than 'homesickness,' when what has developed over months is a genuine depressive or anxiety disorder that deserves proper treatment, not just endurance.",
+    commonConcerns: [
+      "Stress and anxiety tied to employer-sponsored (kafala) visa status and contract renewal",
+      "Depression and hopelessness from prolonged separation from spouse and children across multi-year contracts",
+      "Isolation for domestic workers living within an employer's household with very limited free time",
+      "Exhaustion and sleep disruption from long shifts and extreme summer heat",
+      "Financial pressure from ongoing remittance responsibility to family in Nepal",
+      "Reluctance to seek help due to stigma and fear it could affect job security or standing with a sponsor",
+      "Alcohol or substance use as a limited, sometimes risky, outlet for stress relief",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Saudi Arabia",
+      "Nepalese mental health Saudi Arabia",
+      "online psychiatrist for Nepali in Saudi Arabia",
+      "Nepali migrant worker mental health Saudi",
+    ],
+    practicalNote:
+      "Saudi Arabia is usually around two to three hours behind Kathmandu, so video consultations can generally be scheduled around work shifts without an unreasonable time difference, with finding a private moment away from shared accommodation often the bigger practical challenge than the time zone itself. A Nepal-issued prescription cannot be assumed to be recognised at a Saudi pharmacy, so medication needs are discussed honestly, including when local clinic care is the safer option. Consultations are confidential and never shared with an employer or sponsor. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy or a trusted community welfare contact should not wait for a scheduled appointment.",
+  },
+  {
+    country: "Malaysia",
+    slug: "malaysia",
+    region: "Southeast Asia",
+    headline: "Mental health support for Nepalese in Malaysia",
+    intro:
+      "Malaysia has historically been one of the top destinations for Nepali labour migration, with large numbers working in manufacturing, plantations, security and services across Kuala Lumpur, Penang and industrial areas like Shah Alam and Klang, typically on employer-sponsored work permits arranged through recruitment agencies. Factory dormitory housing shared among many workers, long shift patterns including night shifts, and recruitment debt — money borrowed in Nepal to pay agency and processing fees before ever earning a wage — are common sources of sustained financial and emotional pressure from the very start of the contract. Passport retention by employers, though restricted by law, still occurs in practice for some workers and can add a real sense of being trapped on top of ordinary homesickness. Distance from family, limited days off, and a workplace culture where health complaints, including mental health, can be met with suspicion rather than support, all discourage people from raising a concern until it has become severe. Malaysia's own tropical climate and unfamiliar food can add a quieter layer of adjustment difficulty that's easy to dismiss as trivial but adds up over months.",
+    commonConcerns: [
+      "Financial pressure and anxiety from recruitment debt taken on before departure from Nepal",
+      "Stress tied to employer-sponsored work permit status and, for some, passport retention",
+      "Sleep disruption from long or rotating shift work, including night shifts, in factory or plantation settings",
+      "Depression and low mood linked to prolonged separation from family and limited days off",
+      "Isolation in shared dormitory housing with little privacy or personal space",
+      "Reluctance to raise health concerns due to workplace stigma or fear it could affect employment",
+      "Alcohol use as a coping response to isolation and physically demanding work",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Malaysia",
+      "Nepalese mental health Malaysia",
+      "online psychiatrist for Nepali in Malaysia",
+      "Nepali migrant worker mental health Malaysia",
+    ],
+    practicalNote:
+      "Malaysia is usually around two hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal typically lines up with a Malaysian night-time slot after work. A Nepal-issued prescription cannot be assumed to be recognised at a Malaysian pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace record. If a passport has been retained by an employer, this is a separate legal and welfare matter best raised with the Nepali embassy or a labour welfare organisation alongside any mental health support. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+  },
 ];
 
 export function getAbroadGuide(slug: string) {
