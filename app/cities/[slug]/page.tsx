@@ -7,11 +7,13 @@ import { cityGuides, getCityGuide } from "../../data/cities";
 const siteUrl = "https://drkushalkharel.com.np";
 
 export function generateStaticParams() {
-  // Only the city with an in-person clinic needs a dedicated local landing
-  // page. Patients elsewhere in Nepal are served through the nationwide
-  // online-consultation page, rather than near-identical city keyword pages.
+  // Only the city with an in-person clinic, plus a short, deliberate allowlist
+  // of cities explicitly marked `published` (online-consultation-only, never
+  // implying local presence), get a dedicated landing page. Everything else in
+  // cities.ts stays unpublished rather than becoming a near-identical
+  // city-keyword page.
   return cityGuides
-    .filter((guide) => guide.clinicLocation)
+    .filter((guide) => guide.clinicLocation || guide.published)
     .map((guide) => ({ slug: guide.slug }));
 }
 
@@ -68,7 +70,7 @@ export default async function CityGuidePage({
   const { slug } = await params;
   const guide = getCityGuide(slug);
 
-  if (!guide || !guide.clinicLocation) {
+  if (!guide || !(guide.clinicLocation || guide.published)) {
     notFound();
   }
 
@@ -90,9 +92,9 @@ export default async function CityGuidePage({
       telephone: "+9779861800547",
       address: {
         "@type": "PostalAddress",
-        streetAddress: guide.clinicLocation.streetAddress,
+        streetAddress: "Kalanki-14, Near Malpot Road, Near Kalanki Bhatbhateni Supermarket",
         addressLocality: "Kathmandu",
-        postalCode: guide.clinicLocation.postalCode,
+        postalCode: "44600",
         addressCountry: "NP",
       },
       geo: {
@@ -100,7 +102,7 @@ export default async function CityGuidePage({
         latitude: 27.6914922,
         longitude: 85.2807309,
       },
-      hasMap: guide.clinicLocation.directionsUrl,
+      hasMap: guide.clinicLocation?.directionsUrl ?? "https://maps.app.goo.gl/2t5B2EqgDKYMRLE48",
     },
     areaServed: guide.city,
   };
@@ -272,7 +274,8 @@ export default async function CityGuidePage({
         </div>
       </section>
 
-      <section className="bg-stone-50">
+      {guide.clinicLocation ? (
+        <section className="bg-stone-50">
           <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
             <h2 className="text-3xl font-bold text-stone-950">
               Visiting the clinic in {guide.city}
@@ -306,6 +309,39 @@ export default async function CityGuidePage({
             </div>
           </div>
         </section>
+      ) : (
+        <section className="bg-stone-50">
+          <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+            <h2 className="text-3xl font-bold text-stone-950">
+              No physical clinic in {guide.city} — online consultation available
+            </h2>
+            <div className="mt-8 grid gap-6 lg:grid-cols-2">
+              <p className="rounded-lg border border-stone-200 bg-white p-6 leading-8 text-stone-600 shadow-sm">
+                Dr. Kushal Kharel does not currently have a physical clinic in{" "}
+                {guide.city}. Patients here are supported through phone or
+                video online consultation, which is suitable for follow-up
+                and many initial assessments. The nearest in-person option is
+                the Kalanki clinic in Kathmandu.
+              </p>
+              <a
+                href="https://maps.app.goo.gl/2t5B2EqgDKYMRLE48"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-start justify-center rounded-lg border border-sage-200 bg-sage-50 p-6 shadow-sm transition hover:border-sage-400"
+              >
+                <span className="inline-flex items-center gap-2 font-bold text-sage-900">
+                  <MapPin size={20} aria-hidden="true" />
+                  Get directions to the Kathmandu clinic
+                </span>
+                <span className="mt-2 text-sm text-sage-800">
+                  Kalanki-14, Near Malpot Road, Near Kalanki Bhatbhateni
+                  Supermarket, Kathmandu.
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">

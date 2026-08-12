@@ -151,6 +151,26 @@ const faqs = [
     answer:
       "Like all medications, psychiatric medications can have side effects, but this is often overstated as a blanket rule. Most people tolerate modern psychiatric medications reasonably well, side effects are discussed before starting, and the choice, dose and monitoring are individualized specifically to minimize them while still treating the underlying condition effectively.",
   },
+  {
+    question: "Is Dr. Kushal Kharel a highly rated or recommended psychiatrist?",
+    answer:
+      "There is no official 'top' or 'highly recommended' ranking body for psychiatrists in Nepal, so treat that phrase as a search term rather than a credential. What can be checked is public, verifiable information: Dr. Kushal Kharel's Google Business Profile currently shows a 5.0 rating from 81 reviews, alongside his Nepal Medical Council registration (#27199) and MD Psychiatry qualification.",
+  },
+  {
+    question: "Does Dr. Kushal Kharel explain medication and diagnosis clearly?",
+    answer:
+      "Yes. Consultations are structured to explain what a diagnosis means, why a particular medication or therapy is being suggested, what the alternatives are, what side effects to watch for, and when the plan will be reviewed, so you can take part in the decision rather than just receiving instructions.",
+  },
+  {
+    question: "Will my appointment feel rushed?",
+    answer:
+      "Appointments are structured as a full conversation about your main concern, history and goals rather than a quick prescription-only visit. First assessments in particular take the time needed to understand the full picture before agreeing on a plan together.",
+  },
+  {
+    question: "Is the clinic a judgment-free or safe space to talk about difficult issues?",
+    answer:
+      "Yes. Psychiatric consultations are confidential and non-judgmental by professional standard, whether the concern is addiction, relationship difficulty, sexual health, a parenting worry or anything else that feels hard to say out loud. You do not need to have the 'right words' prepared before booking.",
+  },
 ];
 
 export default function FAQ() {

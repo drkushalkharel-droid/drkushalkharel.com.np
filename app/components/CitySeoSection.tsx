@@ -15,15 +15,15 @@ export default function CitySeoSection() {
             Mental health information for patients searching by city
           </h2>
           <p className="mt-6 text-lg leading-8 text-stone-600">
-            The clinic is in Kalanki, Kathmandu. Patients elsewhere in Nepal
-            can use online psychiatric consultation when it is clinically
+            The clinic is in Kalanki, Kathmandu. Patients in other cities can
+            use online psychiatric consultation when it is clinically
             appropriate, without relying on misleading city-specific clinic
-            pages.
+            pages that imply a local physical presence.
           </p>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {cityGuides.filter((guide) => guide.clinicLocation).map((guide) => (
+          {cityGuides.filter((guide) => guide.clinicLocation || guide.published).map((guide) => (
             <Link
               key={guide.slug}
               href={`/cities/${guide.slug}`}

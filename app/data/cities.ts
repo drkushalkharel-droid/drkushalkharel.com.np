@@ -21,6 +21,12 @@ export type CityGuide = {
     parkingInfo: string;
     directionsUrl: string;
   };
+  // Set true to publish a dedicated page for a city with no physical clinic,
+  // as long as the page is explicit that consultation there is online-only —
+  // never used to imply local presence. Keep this deliberately short: most
+  // cities in this file stay unpublished rather than becoming near-identical
+  // keyword pages.
+  published?: boolean;
 };
 
 const sharedConcerns: CityMentalHealthTopic[] = [
@@ -87,6 +93,7 @@ export const cityGuides: CityGuide[] = [
     commonConcerns: sharedConcerns,
     localContext:
       "Students, working adults, business owners and families in Chitwan may face stress from education, employment, caregiving, alcohol use and chronic health concerns.",
+    published: true,
   },
   {
     city: "Biratnagar",
@@ -138,6 +145,7 @@ export const cityGuides: CityGuide[] = [
     commonConcerns: sharedConcerns,
     localContext:
       "Tourism work, education, migration, family expectations and substance use can contribute to anxiety, depression, sleep difficulties and stress in Pokhara.",
+    published: true,
   },
   {
     city: "Nepalgunj",

@@ -193,7 +193,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     }));
 
-  const cityRoutes: MetadataRoute.Sitemap = cityGuides.filter((guide) => guide.clinicLocation).map((guide) => ({
+  const cityRoutes: MetadataRoute.Sitemap = cityGuides.filter((guide) => guide.clinicLocation || guide.published).map((guide) => ({
     url: `${siteUrl}/cities/${guide.slug}`,
     lastModified,
     changeFrequency: "monthly",

@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     "Psychiatric Consultation Nepal",
     "Online Psychiatrist Nepal",
     "Neuropsychiatrist Nepal",
+    "Highly Recommended Psychiatrist Nepal",
+    "Top Rated Psychiatrist Kathmandu",
+    "Compassionate Psychiatrist Kathmandu",
   ],
   openGraph: {
     title,
@@ -260,6 +263,17 @@ export default function BestPsychiatristNepalPage() {
           <p>Online consultation can make psychiatric care more accessible for people outside Kathmandu, people with mobility or caregiving responsibilities, Nepalis living abroad and those who find travel difficult. It can be useful for many follow-ups, therapy-informed conversations, medication reviews, education and selected initial assessments. A quiet, private place and a stable phone or internet connection make the session more useful.</p>
           <p>Before an online visit, write down your main concerns, medicines and doses, previous reports, questions and a contact person to reach in an emergency if appropriate. Be honest about where you are physically located during the appointment, because this affects emergency planning. Online care is not suitable for every situation: severe confusion, imminent self-harm risk, violent behaviour, serious withdrawal and urgent medical symptoms need local in-person or emergency help.</p>
           <p>To request an appointment, call <a className="font-semibold text-sage-700 underline" href="tel:+9779861800547">+977 9861800547</a> or send a WhatsApp message. The clinic can advise whether in-person or online consultation is the better starting point.</p>
+        </Section>
+
+        <Section title="Patient Experience and Care Approach">
+          <p>There is no official "highly recommended" or "top-rated" ranking body for psychiatrists in Nepal, so treat those as search phrases rather than credentials — but what can be checked is public, verifiable information. Dr. Kushal Kharel's Google Business Profile currently shows a 5.0 rating from 81 reviews, alongside his Nepal Medical Council registration and MD Psychiatry qualification.</p>
+          <p>In practice, that translates to a few concrete commitments: diagnosis and medication options are explained in plain language, not just prescribed; appointments are structured to cover your full concern rather than being rushed through; the space is confidential and non-judgmental regardless of what you need to discuss; and WhatsApp messages are answered directly for booking and follow-up questions rather than routed through a call center.</p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Fact title="Clear communication" text="What a diagnosis means, why a treatment is suggested, and what to expect are explained in plain language before you leave the consultation." />
+            <Fact title="Unhurried assessment" text="A first visit is a full conversation about your history and goals, not a quick prescription-only appointment." />
+            <Fact title="Judgment-free space" text="Addiction, relationship difficulties, sexual health and other sensitive topics are discussed with the same professional confidentiality as any other concern." />
+            <Fact title="Responsive contact" text="Call or WhatsApp +977 9861800547 directly for booking, questions between visits, or to check whether online consultation suits your situation." />
+          </div>
         </Section>
 
         <Section title="Frequently Asked Questions"><div className="space-y-5">{faqs.map((faq) => <div key={faq.question} className="rounded-lg border border-stone-200 p-5"><h3 className="font-bold text-sage-950">{faq.question}</h3><p className="mt-2 leading-7 text-stone-700">{faq.answer}</p></div>)}</div></Section>

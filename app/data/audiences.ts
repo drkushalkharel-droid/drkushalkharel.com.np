@@ -772,6 +772,8 @@ export const audiencePages: AudiencePage[] = [
       "Addiction psychiatrist Nepal",
       "De-addiction center Kathmandu",
       "Alcohol rehab referral Nepal",
+      "Addiction treatment doctor Kathmandu",
+      "Addiction recovery specialist Nepal",
     ],
     diagram: {
       src: "/images/diagrams/addiction-craving-cycle.webp",
@@ -1039,6 +1041,8 @@ export const audiencePages: AudiencePage[] = [
       "Anger management Nepal",
       "Burnout treatment Kathmandu",
       "Stress counselling Nepal",
+      "Work stress counselling Kathmandu",
+      "Burnout recovery Kathmandu",
     ],
     faqs: [
       {
