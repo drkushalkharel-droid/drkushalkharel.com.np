@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CalendarCheck, Phone, ShieldCheck, Star, Stethoscope } from "lucide-react";
+import { CalendarCheck, Phone, ShieldCheck, Stethoscope } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -155,31 +155,6 @@ export default function Hero() {
                 sizes="(max-width: 1023px) 90vw, 430px"
                 className="object-cover"
               />
-
-            </div>
-
-            {/* Floating Card */}
-
-            <div className="absolute bottom-8 left-0 bg-white rounded-2xl shadow-xl p-6 text-gray-900 float-card animation-delay-300">
-
-              <div className="flex items-center gap-3">
-                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-amber-100 text-amber-600">
-                  <Star size={24} fill="currentColor" aria-hidden="true" />
-                </span>
-                <div>
-                  <h3 className="text-2xl font-bold text-sage-900">
-
-                    5.0 Rating
-
-                  </h3>
-
-                  <p className="mt-1">
-
-                    From 81 Google Reviews
-
-                  </p>
-                </div>
-              </div>
 
             </div>
 

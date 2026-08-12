@@ -78,9 +78,8 @@ export default function About() {
               Consultations focus on explaining diagnosis and medication
               options in plain language, taking the time needed rather than
               rushing through appointments, and providing a judgment-free
-              space for whatever you need to discuss. Dr. Kharel is rated 5.0
-              from 81 reviews on Google Business Profile, and messages sent
-              directly by WhatsApp are answered personally.
+              space for whatever you need to discuss. Messages sent directly
+              by WhatsApp are answered personally.
             </p>
 
             {/* Buttons */}
