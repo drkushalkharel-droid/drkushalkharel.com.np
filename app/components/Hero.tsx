@@ -15,7 +15,7 @@ export default function Hero() {
 
           {/* LEFT */}
 
-          <div className="animate-fade-up">
+          <div className="min-w-0 animate-fade-up">
 
             <span className="inline-flex items-center gap-2 bg-clay-400/15 border border-clay-200/30 px-5 py-2 rounded-full text-sm font-semibold text-clay-50">
               <Stethoscope size={16} aria-hidden="true" />
@@ -141,14 +141,14 @@ export default function Hero() {
 
           {/* RIGHT */}
 
-          <div className="relative flex justify-center animate-fade-up animation-delay-150">
+          <div className="relative min-w-0 flex justify-center animate-fade-up animation-delay-150">
 
-            <div className="absolute -left-3 top-14 hidden rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur lg:block float-card">
+            <div className="absolute -left-3 top-14 z-20 hidden rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur lg:block float-card">
               <p className="text-sm text-sage-100">Search intent</p>
               <p className="mt-1 text-xl font-bold">Best Psychiatrist Near Me</p>
             </div>
 
-            <div className="relative w-[430px] max-w-full h-[560px] rounded-[40px] overflow-hidden border-8 border-white/20 shadow-2xl image-shimmer">
+            <div className="relative w-full max-w-[430px] h-[420px] sm:h-[560px] rounded-[40px] overflow-hidden border-8 border-white/20 shadow-2xl image-shimmer">
 
               <Image
                 src="/images/doctor.png"

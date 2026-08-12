@@ -10,7 +10,7 @@ export default function About() {
 
           {/* LEFT IMAGE */}
 
-          <div className="relative">
+          <div className="relative w-full min-w-0">
 
             <div className="rounded-3xl overflow-hidden shadow-2xl">
 
@@ -42,7 +42,7 @@ export default function About() {
 
           {/* RIGHT CONTENT */}
 
-          <div>
+          <div className="min-w-0">
 
             <span className="text-sage-700 font-semibold uppercase tracking-[4px]">
               About Dr. Kushal Kharel
@@ -72,6 +72,15 @@ export default function About() {
               NMC-licensed Specialist Psychiatrist, he is committed to
               confidential, compassionate and evidence-based mental health
               care. Book an appointment online or call to schedule a visit.
+            </p>
+
+            <p className="mt-6 text-lg text-gray-600 leading-9">
+              Consultations focus on explaining diagnosis and medication
+              options in plain language, taking the time needed rather than
+              rushing through appointments, and providing a judgment-free
+              space for whatever you need to discuss. Dr. Kharel is rated 5.0
+              from 81 reviews on Google Business Profile, and messages sent
+              directly by WhatsApp are answered personally.
             </p>
 
             {/* Buttons */}

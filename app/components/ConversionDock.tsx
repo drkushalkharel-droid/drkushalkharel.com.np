@@ -3,16 +3,16 @@ import { MessageCircle, Phone } from "lucide-react";
 export default function ConversionDock() {
   return (
     <>
-      <div className="fixed bottom-5 right-5 z-[60] hidden flex-col gap-3 md:flex">
+      <div className="fixed bottom-5 right-5 z-[60] hidden flex-col items-end gap-3 md:flex">
         <a
           href="tel:+9779861800547"
           aria-label="Call Dr. Kushal Kharel"
-          className="group flex items-center gap-3 rounded-full bg-sage-700 px-5 py-4 font-bold text-white shadow-2xl shadow-sage-900/25 transition hover:-translate-y-1 hover:bg-sage-800"
+          className="group flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-sage-700 font-bold text-white shadow-2xl shadow-sage-900/25 transition-all hover:w-auto hover:gap-3 hover:px-5"
         >
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/15 call-pulse">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15 call-pulse">
             <Phone size={20} aria-hidden="true" />
           </span>
-          <span>
+          <span className="hidden whitespace-nowrap group-hover:inline">
             <span className="block text-xs uppercase tracking-[2px] text-sage-100">
               Call for appointment
             </span>
@@ -25,10 +25,10 @@ export default function ConversionDock() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp Dr. Kushal Kharel"
-          className="flex items-center justify-center gap-2 rounded-full border border-green-500 bg-white px-5 py-3 font-bold text-green-700 shadow-xl transition hover:-translate-y-1 hover:bg-green-600 hover:text-white"
+          className="group flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-green-500 bg-white font-bold text-green-700 shadow-xl transition-all hover:w-auto hover:gap-2 hover:px-5 hover:bg-green-600 hover:text-white"
         >
-          <MessageCircle size={20} aria-hidden="true" />
-          WhatsApp
+          <MessageCircle size={20} className="shrink-0" aria-hidden="true" />
+          <span className="hidden whitespace-nowrap group-hover:inline">WhatsApp</span>
         </a>
       </div>
 
