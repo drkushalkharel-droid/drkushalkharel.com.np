@@ -7,6 +7,7 @@ import { screeningTools } from "./data/screening";
 import { resources } from "./data/resources";
 import { pillars } from "./data/pillars";
 import { supportingArticles } from "./data/supportingArticles";
+import { medications } from "./data/medications";
 
 export const dynamic = "force-static";
 
@@ -149,6 +150,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/stress-anger-management-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/how-to-control-your-mind-nepal`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.75 },
     { url: `${siteUrl}/psychiatry-clinic-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/medications`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.75 },
+    { url: `${siteUrl}/about`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.7 },
 
     {
       url: `${siteUrl}/counselling-in-nepal`,
@@ -232,6 +235,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  const medicationRoutes: MetadataRoute.Sitemap = medications.map((med) => ({
+    url: `${siteUrl}/medications/${med.slug}`,
+    lastModified: new Date("2026-08-07"),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticRoutes,
     ...pillarRoutes,
@@ -242,5 +252,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...screeningRoutes,
     ...resourceRoutes,
     ...blogRoutes,
+    ...medicationRoutes,
   ];
 }

@@ -105,7 +105,7 @@ export default function Footer() {
               Home
             </Link>
 
-            <Link href="/#about" className="block hover:text-white transition">
+            <Link href="/about" className="block hover:text-white transition">
               About
             </Link>
 
@@ -215,6 +215,10 @@ export default function Footer() {
 
             <Link href="/screening" className="block hover:text-white transition">
               Mental Health Screening
+            </Link>
+
+            <Link href="/medications" className="block hover:text-white transition">
+              Medication Information
             </Link>
 
             <Link href="/resources" className="block hover:text-white transition">
