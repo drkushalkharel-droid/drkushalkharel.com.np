@@ -27,7 +27,22 @@ const faqs = [
 
 export default function PillarArticle({ pillar }: { pillar: Pillar }) {
   const url = `${siteUrl}/${pillar.slug}`;
-  const sections = [["Symptoms", pillar.symptoms], ["Causes", pillar.causes], ["Risk factors", pillar.risks], ["Diagnosis", pillar.diagnosis], ["Differential diagnosis", pillar.differential], ["Investigations", pillar.investigations], ["Evidence-based treatment", pillar.treatment], ["Medication overview", pillar.medication], ["Therapy: CBT, DBT and beyond", pillar.therapy], ["Family interventions", pillar.family], ["Lifestyle support", pillar.lifestyle], ["Relapse prevention", pillar.relapse], ["Your patient journey", pillar.journey]];
+  const conditionVerb = pillar.condition === "anxiety disorders" || pillar.condition === "schizophrenia and psychosis" ? "are" : "is";
+  const sections = [
+    [`What are the symptoms of ${pillar.condition}?`, pillar.symptoms],
+    [`What causes ${pillar.condition}?`, pillar.causes],
+    [`What are the risk factors for ${pillar.condition}?`, pillar.risks],
+    [`How ${conditionVerb} ${pillar.condition} diagnosed?`, pillar.diagnosis],
+    ["Could it be something else?", pillar.differential],
+    ["What tests or investigations are needed?", pillar.investigations],
+    [`How ${conditionVerb} ${pillar.condition} treated?`, pillar.treatment],
+    ["Is medication needed, and what are the options?", pillar.medication],
+    ["What therapy works, including CBT and DBT?", pillar.therapy],
+    ["How can family help?", pillar.family],
+    ["What lifestyle changes can help?", pillar.lifestyle],
+    ["How can relapse be prevented?", pillar.relapse],
+    ["What does the treatment journey look like?", pillar.journey],
+  ];
   const graph = [
     { "@type": "MedicalWebPage", name: pillar.title, url, description: pillar.meta, about: { "@type": "MedicalCondition", name: pillar.condition }, medicalAudience: ["Patient", "Caregiver"] },
     { "@type": "Physician", name: "Dr. Kushal Kharel", honorificSuffix: "MD Psychiatry", medicalSpecialty: "Psychiatry", address: { "@type": "PostalAddress", addressLocality: "Kathmandu", addressCountry: "NP" } },

@@ -10,6 +10,26 @@ function getArticle(slug: string) {
   return docArticles.find((article) => article.slug === slug);
 }
 
+// Generic clinical labels rewritten to how patients actually phrase these
+// questions when searching. Only rewrites known generic headings — bespoke,
+// already-specific headings (including the many written directly in Nepali)
+// are left exactly as authored.
+const genericHeadingQuestions: Record<string, string> = {
+  "Clinical Definition": "What is it?",
+  "Signs and Symptoms": "What are the signs and symptoms?",
+  "Symptoms": "What are the symptoms?",
+  "Causes": "What causes it?",
+  "Risk Factors": "What are the risk factors?",
+  "Transmission": "Is it inherited or contagious?",
+  "Diagnosis": "How is it diagnosed?",
+  "Types": "What are the types?",
+  "Treatment": "How is it treated?",
+};
+
+function displayHeading(heading: string) {
+  return genericHeadingQuestions[heading] ?? heading;
+}
+
 export function generateStaticParams() {
   return docArticles.map((article) => ({ slug: article.slug }));
 }
@@ -254,7 +274,7 @@ export default async function KnowledgeArticlePage({
                   href={`#section-${index + 1}`}
                   className="block rounded-md px-3 py-2 text-sm font-semibold text-stone-600 transition hover:bg-sage-50 hover:text-sage-700"
                 >
-                  {section.heading}
+                  {displayHeading(section.heading)}
                 </a>
               ))}
             </nav>
@@ -286,7 +306,7 @@ export default async function KnowledgeArticlePage({
               className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8"
             >
               <h2 className="text-3xl font-bold text-sage-950">
-                {section.heading}
+                {displayHeading(section.heading)}
               </h2>
               <div className="mt-5 space-y-4 text-lg leading-9 text-stone-700">
                 {section.body.split("\n").map((paragraph) => (
