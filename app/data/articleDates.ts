@@ -51,6 +51,7 @@ export const articleDates: Record<string, { published: string; modified: string 
   "menopause-mental-health-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "mental-health-medical-students-nepal": { published: "2026-07-29", modified: "2026-07-29" },
   "mental-health-nepali-migrant-workers": { published: "2026-08-05", modified: "2026-08-06" },
+  "monsoon-season-mental-health-nepal": { published: "2026-08-14", modified: "2026-08-14" },
   "mental-health-nepali-students-abroad": { published: "2026-08-06", modified: "2026-08-06" },
   "mental-health-screening-tools-explained": { published: "2026-07-29", modified: "2026-07-29" },
   "mobile-overuse-technology-addiction-nepal": { published: "2026-08-05", modified: "2026-08-05" },

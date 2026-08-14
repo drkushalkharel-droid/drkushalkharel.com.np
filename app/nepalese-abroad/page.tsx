@@ -188,6 +188,21 @@ export default function NepaleseAbroadHubPage() {
             </Link>
           ))}
         </div>
+
+        <div className="mt-10 rounded-lg border border-sage-200 bg-sage-50 p-6 sm:flex sm:items-center sm:justify-between">
+          <div>
+            <h3 className="text-xl font-bold text-stone-950">Recently moved back to Nepal?</h3>
+            <p className="mt-2 max-w-2xl leading-7 text-stone-600">
+              Readjusting after years abroad — reverse culture shock, family pressure, or uncertainty about what's next — is its own kind of difficult. See dedicated guidance for returnees.
+            </p>
+          </div>
+          <Link
+            href="/returning-to-nepal-after-abroad"
+            className="mt-4 inline-flex shrink-0 rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white transition hover:bg-sage-800 sm:mt-0"
+          >
+            Read the guide
+          </Link>
+        </div>
       </section>
 
       <section className="bg-white">

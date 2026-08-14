@@ -385,6 +385,131 @@ export const abroadGuides: AbroadGuide[] = [
     practicalNote:
       "Malaysia is usually around two hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal typically lines up with a Malaysian night-time slot after work. A Nepal-issued prescription cannot be assumed to be recognised at a Malaysian pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace record. If a passport has been retained by an employer, this is a separate legal and welfare matter best raised with the Nepali embassy or a labour welfare organisation alongside any mental health support. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
   },
+  {
+    country: "Kuwait",
+    slug: "kuwait",
+    region: "Middle East",
+    headline: "Mental health support for Nepalese in Kuwait",
+    intro:
+      "Kuwait has long been one of the largest destinations for Nepali labour migration, with an especially large number of Nepali women working as live-in domestic helpers and housemaids inside private households, alongside men in construction, security and service roles, almost all on employer-sponsored (kafala-linked) work visas. Live-in domestic work brings a particular kind of isolation: little or no day off, no coworkers to talk to, and daily life entirely inside a single household under an employer's supervision, which can make even recognising a mental health problem difficult when there is no one nearby to notice a change. Passport retention by employers, though restricted by law, still happens in practice for some domestic workers and can add a real sense of being trapped. Contracts of two years without a home visit remain common, and the combination of remittance pressure, distance from children being raised by relatives back home, and fear that raising a complaint could mean losing the job entirely keeps many enduring symptoms silently for months before reaching out.",
+    commonConcerns: [
+      "Isolation and lack of free time for live-in domestic workers with little or no day off",
+      "Stress and anxiety tied to employer-sponsored (kafala) visa status and, for some, passport retention",
+      "Depression and hopelessness from prolonged separation from children being raised by relatives in Nepal",
+      "Fear that raising a health concern could put the job or standing with a sponsor at risk",
+      "Financial pressure from ongoing remittance responsibility to family in Nepal",
+      "Exhaustion and sleep disruption from long hours with little defined rest time",
+      "Difficulty finding a private moment or place to make a confidential phone call",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Kuwait",
+      "Nepalese mental health Kuwait",
+      "online psychiatrist for Nepali in Kuwait",
+      "Nepali domestic worker mental health Kuwait",
+    ],
+    practicalNote:
+      "Kuwait is usually around two to three hours behind Kathmandu, so video consultations can generally be arranged without an unreasonable time difference, though finding a private moment away from an employer's household is often the harder practical challenge, particularly for live-in domestic workers. A Nepal-issued prescription cannot be assumed to be recognised at a Kuwaiti pharmacy, so medication needs are discussed honestly, including when local clinic care is the safer option. Consultations are confidential and never shared with an employer or sponsor. If a passport has been retained or there are safety concerns beyond a mental health symptom, this is a separate welfare matter best raised with the Nepali embassy or a labour welfare organisation alongside any mental health support. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+  },
+  {
+    country: "Romania",
+    slug: "romania",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Romania",
+    intro:
+      "Romania has become the largest and fastest-growing destination in Europe for Nepali workers in just a few years, drawing large numbers into manufacturing, construction, warehouse logistics and hospitality roles around Bucharest and other industrial towns, as Gulf recruitment has grown more uncertain. For many, Romania is the first EU country they have lived or worked in, and the appeal of eventual EU labour mobility sits alongside the reality of a workplace culture, language and climate that few arrive fully prepared for. Winters are far colder than almost anywhere most workers have experienced, and a Romanian-language-dominant workplace and healthcare system can make even simple daily tasks feel effortful in the first months. Because the Nepali community here is newer and smaller than in the Gulf or in longer-established European destinations, there are fewer countrymen nearby to share the adjustment with, and recruitment debt taken on in Nepal to secure the job adds financial pressure from the very start of the contract.",
+    commonConcerns: [
+      "Adjustment stress from being in a newer, smaller Nepali community with fewer countrymen nearby",
+      "Financial pressure and anxiety from recruitment debt taken on before departure from Nepal",
+      "Depression and low mood during Romanian winters that are far colder than most workers have experienced",
+      "Language barrier making daily tasks and healthcare access feel effortful",
+      "Sleep disruption and fatigue from factory or warehouse shift work",
+      "Isolation and homesickness with limited access to Nepali food, festivals or community events",
+      "Uncertainty and stress around contract renewal and the path to longer-term EU work status",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Romania",
+      "Nepalese mental health Romania",
+      "online psychiatrist for Nepali in Romania",
+      "Nepali migrant worker mental health Romania",
+    ],
+    practicalNote:
+      "Romania is usually around three to four hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the Romanian afternoon or early evening, which tends to work well around most shift patterns. A Nepal-issued prescription cannot be assumed to be recognised at a Romanian pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+  },
+  {
+    country: "Cyprus",
+    slug: "cyprus",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Cyprus",
+    intro:
+      "Cyprus has quickly become one of the largest destinations in Europe for Nepali workers, with a notably high share of women recruited into domestic work, hospitality, agriculture and care roles across Nicosia, Limassol and other towns. As an EU member state, Cyprus offers a different legal footing than Gulf employment, but many still arrive on contracts tied closely to a single employer, and live-in domestic or care roles can bring the same kind of isolation found in other countries — long hours inside someone else's household, limited free time, and few opportunities to meet other Nepalis. The island's Mediterranean climate is a welcome change from the Gulf for some, but distance from family, recruitment costs paid before departure, and the emotional labour of adjusting to a new language and employer relationship remain real sources of strain, particularly for women managing both the pressure of the job and expectations from family back home about sending money and staying safe.",
+    commonConcerns: [
+      "Isolation for women in live-in domestic, care or hospitality roles with limited free time",
+      "Financial pressure from recruitment costs paid before departure from Nepal",
+      "Stress tied to a work contract closely bound to a single employer",
+      "Depression and low mood linked to distance from family and limited community nearby",
+      "Anxiety around navigating a new language and employer relationship",
+      "Sleep disruption and fatigue from long or irregular working hours",
+      "Pressure and worry around meeting family expectations for remittances while managing a demanding job",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Cyprus",
+      "Nepalese mental health Cyprus",
+      "online psychiatrist for Nepali in Cyprus",
+      "Nepali migrant worker mental health Cyprus",
+    ],
+    practicalNote:
+      "Cyprus is usually around three to four hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the Cypriot afternoon or early evening. A Nepal-issued prescription cannot be assumed to be recognised at a Cypriot pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+  },
+  {
+    country: "Israel",
+    slug: "israel",
+    region: "Middle East",
+    headline: "Mental health support for Nepalese in Israel",
+    intro:
+      "A structured government-to-government agreement between Nepal and Israel now sends Nepali caregivers, most of them women, to work in geriatric homes and long-term care centres across Israel, a role that is emotionally demanding in ways quite different from factory or domestic work elsewhere. Caregivers spend their days closely supporting elderly residents, often through serious illness, cognitive decline and death, in a language and culture that takes real time to learn, and the emotional weight of that work, known as compassion fatigue in the caregiving field, is a genuine and under-discussed occupational risk. Unlike some Gulf or Southeast Asian labour routes, this programme is more formally structured, which can mean fewer risks around passport retention or recruitment debt, but it does not remove the difficulty of the work itself, the distance from one's own family while caring intensively for someone else's elderly relative, or the disorientation of adjusting to Hebrew and a healthcare system built very differently from home.",
+    commonConcerns: [
+      "Compassion fatigue and emotional exhaustion from caregiving work involving serious illness, decline and death",
+      "Depression and grief reactions after the death of a resident cared for closely over time",
+      "Isolation and language barrier while adjusting to Hebrew and daily life in an unfamiliar system",
+      "Guilt and distress from caring intensively for someone else's elderly relative while distant from one's own family",
+      "Sleep disruption and burnout from demanding, emotionally intensive caregiving schedules",
+      "Anxiety around contract terms, workplace expectations and adjusting to a new care culture",
+      "Reluctance to name emotional strain as anything more than tiredness, delaying proper treatment",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Israel",
+      "Nepalese mental health Israel",
+      "online psychiatrist for Nepali in Israel",
+      "Nepali caregiver mental health Israel",
+    ],
+    practicalNote:
+      "Israel is usually around three hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the Israeli afternoon or early evening. A Nepal-issued prescription cannot be assumed to be recognised at an Israeli pharmacy, so medication needs are discussed honestly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace or agency record. Compassion fatigue and grief after a resident's death are genuine, treatable conditions, not a sign of being unsuited to caregiving work. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+  },
+  {
+    country: "Portugal",
+    slug: "portugal",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Portugal",
+    intro:
+      "Portugal has grown quickly as a newer European destination for Nepalis, drawn by agricultural, hospitality and service-sector work around Lisbon, Porto and smaller towns, with EU residency prospects that many hope will eventually open the door to work or study elsewhere in Europe. As a still-developing community, the Nepali diaspora here is smaller and more scattered than in the Gulf or longer-established European hubs, and Portuguese-language bureaucracy for residence permits, tax registration (NIF) and healthcare enrolment can be genuinely difficult to navigate without local support. Seasonal agricultural work in particular can mean irregular hours, remote rural placements far from any Nepali community, and housing arranged directly by an employer with little personal choice involved. The gap between the hope that brought many to Portugal, a stable EU foothold, and the slower, more uncertain reality of early years there, including modest wages relative to the cost of settling in, can be a quiet but persistent source of low mood.",
+    commonConcerns: [
+      "Isolation from a small, scattered and still-developing Nepali community",
+      "Anxiety navigating Portuguese-language bureaucracy for residence permits, tax registration and healthcare",
+      "Depression and low mood from the gap between expectations before arrival and the slower reality of early settlement",
+      "Isolation for seasonal agricultural workers placed in remote rural areas with little community nearby",
+      "Financial strain from modest wages relative to the cost of settling into a new country",
+      "Sleep disruption and fatigue from irregular seasonal or hospitality shift work",
+      "Uncertainty and stress around residence permit renewal and the pathway to longer-term EU status",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Portugal",
+      "Nepalese mental health Portugal",
+      "online psychiatrist for Nepali in Portugal",
+      "Nepali migrant worker mental health Portugal",
+    ],
+    practicalNote:
+      "Portugal is usually around five to six hours behind Kathmandu, the largest gap of any country covered here, so a Nepal late-evening or night video consultation slot generally lines up best with the Portuguese afternoon or early evening. A Nepal-issued prescription cannot be assumed to be recognised at a Portuguese pharmacy, so medication needs are discussed openly, including when registering with a local clinic for prescribing is the more realistic path. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+  },
 ];
 
 export function getAbroadGuide(slug: string) {

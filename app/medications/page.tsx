@@ -70,6 +70,32 @@ export default function MedicationsIndexPage() {
             </Link>
           ))}
         </div>
+
+        <div className="mt-6 grid gap-6 sm:grid-cols-2">
+          <Link
+            href="/psychiatric-medication-side-effects"
+            className="block rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+          >
+            <p className="mt-0 text-sm font-semibold uppercase tracking-[2px] text-sage-700">Patient FAQ</p>
+            <h2 className="mt-2 text-2xl font-bold text-stone-950">Common Side Effects of Psychiatric Medications</h2>
+            <p className="mt-3 leading-7 text-stone-600">
+              Sertraline, escitalopram, fluoxetine, amitriptyline, olanzapine, clonazepam, lorazepam and propranolol — explained one by one.
+            </p>
+            <p className="mt-5 font-semibold text-sage-700">Read the FAQ</p>
+          </Link>
+
+          <Link
+            href="/medication-review-second-opinion-nepal"
+            className="block rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+          >
+            <p className="mt-0 text-sm font-semibold uppercase tracking-[2px] text-sage-700">Second Opinion</p>
+            <h2 className="mt-2 text-2xl font-bold text-stone-950">Medication Review &amp; Second Opinion</h2>
+            <p className="mt-3 leading-7 text-stone-600">
+              Already taking psychiatric medication and want an independent review? See who this is for and what to bring.
+            </p>
+            <p className="mt-5 font-semibold text-sage-700">Learn more</p>
+          </Link>
+        </div>
       </section>
     </main>
   );

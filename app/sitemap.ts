@@ -152,6 +152,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/psychiatry-clinic-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/medications`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.75 },
     { url: `${siteUrl}/about`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteUrl}/medication-review-second-opinion-nepal`, lastModified: new Date("2026-08-14"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/psychiatric-medication-side-effects`, lastModified: new Date("2026-08-14"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/returning-to-nepal-after-abroad`, lastModified: new Date("2026-08-14"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/corporate-mental-health-partner-nepal`, lastModified: new Date("2026-08-14"), changeFrequency: "monthly", priority: 0.7 },
 
     {
       url: `${siteUrl}/counselling-in-nepal`,

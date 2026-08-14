@@ -1203,6 +1203,279 @@ export const audiencePages: AudiencePage[] = [
       },
     ],
   },
+  {
+    slug: "medication-review-second-opinion-nepal",
+    title: "Medication Review & Second Opinion in Nepal",
+    headline: "A second opinion on medication you're already taking",
+    shortDescription:
+      "Already on psychiatric medication and want an independent review? Dr. Kushal Kharel offers medication review and second-opinion consultations in Kathmandu and online across Nepal.",
+    intro:
+      "If you're already taking psychiatric medication — started by another doctor in Nepal, a physician abroad, or a previous prescriber — and want an independent review, Dr. Kushal Kharel offers medication review and second-opinion consultations. This isn't about automatically changing what's working; it's a fresh, structured look at your diagnosis, current medications, doses and response, so you and your doctor can decide together whether to continue, adjust or taper anything.",
+    whoThisIsFor: [
+      "Patients already on psychiatric medication who want an independent review",
+      "People whose medication was started abroad or by a non-specialist and want specialist confirmation",
+      "Patients unsure if their current dose or combination is still appropriate",
+      "People experiencing side effects who want a second opinion before changing anything themselves",
+      "Patients relocating to or from Kathmandu who need continuity of psychiatric care",
+      "Family members seeking a second opinion on a relative's treatment plan, with the patient's consent",
+    ],
+    commonConcerns: [
+      "Whether current medication and dose are still appropriate",
+      "Bothersome side effects that haven't been addressed",
+      "Long-term use of benzodiazepines or other sedatives",
+      "Medication started without a clear diagnosis being explained",
+      "Multiple medications prescribed together (polypharmacy)",
+      "Wanting to reduce or safely stop a medication",
+    ],
+    practicalNote:
+      "Bring (or send in advance) your current prescriptions, past reports and a note of when each medication was started and any doses that have changed. A medication review usually takes longer than a routine follow-up, since it involves going through your full history rather than a quick check-in. Never stop or change a psychiatric medication on your own before this review — some medications, particularly benzodiazepines and antidepressants taken regularly, need to be adjusted gradually under medical supervision to avoid withdrawal or relapse.",
+    searchTerms: [
+      "Second opinion psychiatrist Nepal",
+      "Medication review Kathmandu",
+      "Change psychiatrist Nepal",
+      "Review psychiatric medication Nepal",
+      "Psychiatric medication second opinion Kathmandu",
+    ],
+    faqs: [
+      {
+        question: "Can I get a second opinion on medication another doctor prescribed?",
+        answer:
+          "Yes. A second-opinion consultation reviews your diagnosis, current medications and response so far, and gives an independent view on whether the current plan still fits, without requiring you to have already decided to switch doctors.",
+      },
+      {
+        question: "Will Dr. Kharel automatically change my medication?",
+        answer:
+          "No. Many patients are already on a reasonable treatment plan, and a second opinion may simply confirm that. Changes are only suggested when there's a clear clinical reason — such as inadequate response, troublesome side effects, an outdated diagnosis, or a safer alternative — and are discussed with you rather than made unilaterally.",
+      },
+      {
+        question: "What should I bring to a medication review appointment?",
+        answer:
+          "Current prescriptions or medication packaging, any past psychiatric reports or discharge summaries, a rough timeline of when each medication started and any dose changes, and a list of side effects or concerns you want to raise.",
+      },
+      {
+        question: "Is it safe to stop my psychiatric medication on my own before this review?",
+        answer:
+          "No. Stopping antidepressants, antipsychotics, mood stabilizers or especially benzodiazepines abruptly can cause withdrawal symptoms, rebound symptoms or relapse. Continue your current medication as prescribed and raise your concerns at the review rather than stopping beforehand.",
+      },
+      {
+        question: "Can medication started abroad be reviewed and continued in Nepal?",
+        answer:
+          "Yes. Many patients return to Nepal or move to Kathmandu already taking medication started by a doctor abroad. These can be reviewed, confirmed or adjusted, and prescriptions can be continued locally where the medication is available and clinically appropriate.",
+      },
+      {
+        question: "How is a medication review different from a first psychiatric consultation?",
+        answer:
+          "A first consultation usually starts from scratch with a full diagnostic assessment. A medication review starts from your existing diagnosis and treatment history and focuses specifically on whether the current medication plan is working well, though a fresh diagnostic assessment can still be part of it if needed.",
+      },
+    ],
+  },
+  {
+    slug: "psychiatric-medication-side-effects",
+    title: "Common Side Effects of Psychiatric Medications (FAQ)",
+    headline: "Common side effects of psychiatric medications, explained",
+    shortDescription:
+      "Plain-language FAQ on common side effects of sertraline, escitalopram, fluoxetine, amitriptyline, olanzapine, clonazepam, lorazepam and propranolol.",
+    intro:
+      "Side effects vary from person to person, and most people tolerate these medications reasonably well, but knowing what's common and what needs urgent attention helps you use them safely. This is general education about widely prescribed medications, not personal medical advice — your own experience should always be discussed with the doctor who prescribed it, and no psychiatric medication should be stopped or changed on your own.",
+    whoThisIsFor: [
+      "Patients starting one of these medications who want to know what to expect",
+      "Patients already taking one of these medications who've noticed a new symptom",
+      "Family members supporting someone on psychiatric medication",
+      "Patients weighing treatment options with their psychiatrist",
+    ],
+    commonConcerns: [
+      "Sertraline side effects",
+      "Escitalopram side effects",
+      "Fluoxetine side effects",
+      "Amitriptyline side effects",
+      "Olanzapine side effects",
+      "Clonazepam side effects",
+      "Lorazepam side effects",
+      "Propranolol side effects",
+    ],
+    practicalNote:
+      "Contact your prescriber promptly for severe, worsening or allergic-type reactions (such as rash, swelling, severe dizziness, fainting or chest pain), rather than waiting for a routine follow-up. Don't stop antidepressants, antipsychotics, benzodiazepines or propranolol abruptly on your own — several of these need a gradual taper to avoid withdrawal or rebound symptoms, and this page is not a substitute for that conversation with your own doctor.",
+    searchTerms: [
+      "Sertraline side effects Nepal",
+      "Escitalopram side effects",
+      "Fluoxetine side effects",
+      "Olanzapine side effects",
+      "Clonazepam side effects",
+      "Psychiatric medication side effects Nepal",
+    ],
+    faqs: [
+      {
+        question: "What are the common side effects of sertraline?",
+        answer:
+          "Nausea or stomach upset (especially in the first one to two weeks), diarrhea, headache, sleep changes (insomnia or drowsiness), sexual side effects such as reduced libido or delayed orgasm, dry mouth, sweating, and initial jitteriness. Most of these ease within a few weeks as the body adjusts; anything severe or persistent should be discussed with your prescriber.",
+      },
+      {
+        question: "What are the common side effects of escitalopram?",
+        answer:
+          "A similar profile to other SSRIs: nausea, headache, sleep changes, sexual side effects, dry mouth, sweating and occasionally mild weight change. Escitalopram is generally well tolerated with fewer drug interactions than some other antidepressants, but individual response varies.",
+      },
+      {
+        question: "What are the common side effects of fluoxetine?",
+        answer:
+          "Nausea, reduced appetite, headache, sexual side effects, and — compared with some other SSRIs — a somewhat more 'activating' effect that can cause initial restlessness, agitation or insomnia in some people. Its long half-life means missed doses cause milder effects, but it also stays in the body longer after stopping.",
+      },
+      {
+        question: "What are the common side effects of amitriptyline?",
+        answer:
+          "Anticholinergic effects such as dry mouth, constipation, blurred vision and difficulty urinating; drowsiness (often why it's taken at night); weight gain; and dizziness on standing up. At higher doses it can affect heart rhythm, so it's used cautiously, especially in older adults or anyone with a heart condition, and is more dangerous in overdose than SSRIs, so quantities prescribed at a time are managed carefully.",
+      },
+      {
+        question: "What are the common side effects of olanzapine?",
+        answer:
+          "Significant weight gain and increased appetite, sedation, and metabolic effects such as raised blood sugar and cholesterol, which need periodic monitoring with blood tests and weight checks. Movement-related side effects are less common than with older antipsychotics but can still occur.",
+      },
+      {
+        question: "What are the common side effects of clonazepam?",
+        answer:
+          "Drowsiness, dizziness, unsteadiness and fall risk (particularly in older adults), and memory or concentration difficulties. Regular use carries a real risk of tolerance and dependence, which is why it's typically prescribed short-term or reviewed regularly. Stopping abruptly after regular use can cause withdrawal, including seizures in significant dependence — any reduction should be gradual and medically supervised.",
+      },
+      {
+        question: "What are the common side effects of lorazepam?",
+        answer:
+          "Similar to clonazepam: sedation, dizziness, unsteadiness and memory effects, with a real risk of dependence if used regularly over time. It acts for a shorter duration than clonazepam, so it's sometimes used for more short-term or acute anxiety. The same warning applies — never stop regular use abruptly without medical guidance.",
+      },
+      {
+        question: "What are the common side effects of propranolol?",
+        answer:
+          "A slowed heart rate, low blood pressure or dizziness, fatigue, cold hands and feet, and occasionally sleep disturbance or vivid dreams. It can worsen asthma or other breathing problems, so it's used cautiously or avoided in people with those conditions. In psychiatry it's often used off-label for the physical symptoms of anxiety (such as tremor or a racing heart) rather than as a primary psychiatric medication, and shouldn't be stopped abruptly if taken regularly, since sudden withdrawal can cause rebound increases in heart rate and blood pressure.",
+      },
+    ],
+  },
+  {
+    slug: "returning-to-nepal-after-abroad",
+    title: "Mental Health Support for Nepalis Returning from Abroad",
+    headline: "Readjusting to life in Nepal after years abroad",
+    shortDescription:
+      "Support for reverse culture shock, reintegration stress and family pressure after returning to Nepal from a labour contract, degree or long stay abroad.",
+    intro:
+      "Coming home after years in the Gulf, Malaysia, Korea, Japan, Europe or the West is often expected to feel like relief, but for many it brings its own quiet strain: feeling like a stranger in your own country, struggling to fit back into family roles built around your absence, or facing pressure to show that the years away were 'worth it.' Dr. Kushal Kharel provides psychiatric support in Kathmandu, in person or online, for the specific stress of readjusting to life in Nepal after an extended period abroad — whether that means processing difficult working conditions that were endured quietly, adjusting to a slower or less structured routine, or simply feeling unexpectedly low despite finally being home.",
+    whoThisIsFor: [
+      "Migrant workers returning after multi-year labour contracts in the Gulf, Malaysia or elsewhere",
+      "Students returning to Nepal after completing a degree abroad",
+      "Anyone struggling to reintegrate into family and social life after years away",
+      "Returnees experiencing reverse culture shock or feeling disconnected from life in Nepal",
+      "Family members who've noticed a change in a returning relative's mood or behaviour",
+      "Anyone uncertain about career or life direction after coming home",
+    ],
+    commonConcerns: [
+      "Reverse culture shock and feeling like a stranger in one's own country",
+      "Low mood or emptiness once the structure and purpose of life abroad ends",
+      "Family and social pressure to show the years away 'paid off'",
+      "Disappointment or financial stress if savings or plans didn't go as hoped",
+      "Carryover stress, anxiety or trauma from difficult working conditions abroad",
+      "Difficulty readjusting to family roles and expectations after years of independence",
+      "Uncertainty about work, purpose or next steps after returning",
+    ],
+    practicalNote:
+      "An in-person consultation at the Kalanki clinic in Kathmandu can be useful for a first, fuller conversation, with online follow-up available for anyone based outside the valley. Readjustment difficulty is not a sign of ingratitude or weakness, and it's common enough to deserve a proper conversation rather than being dismissed as something that will simply pass with time. If low mood, anxiety or distress from time abroad is severe, persistent or includes thoughts of self-harm, seek an assessment promptly rather than waiting.",
+    searchTerms: [
+      "Reverse culture shock Nepal",
+      "Returning to Nepal after working abroad mental health",
+      "Readjustment after working abroad Nepal",
+      "Returnee mental health Nepal",
+    ],
+    faqs: [
+      {
+        question: "Is reverse culture shock after returning to Nepal a real thing?",
+        answer:
+          "Yes. After adapting to a different routine, pace of life and level of independence abroad, readjusting to family expectations, bureaucracy and daily life in Nepal can genuinely feel disorienting, even though you're back in a familiar country. This is a recognised pattern, not a personal failing.",
+      },
+      {
+        question: "How long does it usually take to readjust after years abroad?",
+        answer:
+          "It varies widely and depends on how long you were away, what you experienced, and your circumstances after returning. For some it eases within months; for others, ongoing low mood, anxiety or difficulty functioning deserves a proper assessment rather than waiting indefinitely for it to resolve on its own.",
+      },
+      {
+        question: "Can difficult working conditions abroad still affect me after I've returned?",
+        answer:
+          "Yes. Stress, anxiety or trauma symptoms from a difficult job, unsafe conditions, or prolonged isolation abroad don't necessarily end the moment you land back in Nepal, and can surface more clearly once the pressure of daily survival abroad is gone. This is treatable, and worth discussing rather than carrying alone.",
+      },
+      {
+        question: "What if my family doesn't understand why I feel low after finally being home?",
+        answer:
+          "This is common. Family members often expect relief and celebration, which can make it harder to admit that returning feels complicated. A confidential consultation gives you space to talk about this honestly, without needing family to understand it first.",
+      },
+      {
+        question: "Is it normal to feel uncertain about work or direction after returning to Nepal?",
+        answer:
+          "Yes, particularly if your original plans, savings goals or job prospects didn't unfold as expected. This uncertainty is a common and legitimate source of stress, and is addressed alongside any mood or anxiety symptoms as part of a fuller assessment.",
+      },
+      {
+        question: "Is online consultation available for returnees living outside Kathmandu?",
+        answer:
+          "Yes. Online consultation is available for anyone in Nepal, useful for ongoing support after an initial assessment, while an in-person visit to the Kalanki clinic can be arranged for those able to travel to Kathmandu.",
+      },
+    ],
+  },
+  {
+    slug: "corporate-mental-health-partner-nepal",
+    title: "Corporate & Workplace Mental Health Partner in Nepal",
+    headline: "A confidential psychiatric referral partner for workplace mental health",
+    shortDescription:
+      "For HR teams and company leadership in Nepal wanting a confidential referral option for employee mental health, workplace stress and burnout support.",
+    intro:
+      "Companies increasingly want a straightforward, confidential way to point employees toward professional mental health support rather than leaving struggling staff to manage alone. Dr. Kushal Kharel, a Consultant Psychiatrist in Kalanki, Kathmandu, is available as a referral point for organisations wanting to offer employees confidential access to psychiatric assessment and treatment, in person or online, for work-related stress, burnout, anxiety, depression and other concerns affecting wellbeing and performance. This is not a fixed package with predetermined terms — HR teams or leadership are welcome to get in touch directly to discuss what a referral arrangement could look like for your organisation.",
+    whoThisIsFor: [
+      "HR teams and company leadership wanting a confidential referral option for employee mental health",
+      "Employees experiencing work-related stress, burnout or a mental health concern who want support outside their workplace",
+      "Organisations building or improving workplace wellness support",
+      "Managers unsure how to support a team member who seems to be struggling",
+      "Companies with remote or distributed teams needing accessible online psychiatric consultation",
+    ],
+    commonConcerns: [
+      "Employee confidentiality and what is or isn't shared with the employer",
+      "Work-related stress, burnout and anxiety affecting performance",
+      "How a referral pathway from HR to psychiatric consultation would work in practice",
+      "Supporting an employee without a diagnosis affecting their standing at work",
+      "Providing accessible online consultation for employees outside Kathmandu or working remotely",
+      "Guidance for managers on recognising when a team member needs professional support",
+    ],
+    practicalNote:
+      "Individual consultations remain confidential to the standard expected of any psychiatric care: session content is not shared with an employer without the employee's consent, except in the narrow circumstances required by law or immediate safety. Companies or HR teams interested in a referral arrangement, workplace talk, or a point of contact for employee mental health can call or message directly to discuss what would work for your organisation, rather than a one-size-fits-all package.",
+    searchTerms: [
+      "Workplace mental health Nepal",
+      "Corporate mental health partner Kathmandu",
+      "Employee mental health referral Nepal",
+      "EAP psychiatrist Nepal",
+    ],
+    faqs: [
+      {
+        question: "Can our company refer employees for psychiatric consultation?",
+        answer:
+          "Yes. Companies and HR teams can get in touch to discuss a referral arrangement, and employees can also be pointed to book directly, in person in Kathmandu or online, using the same confidential process as any other patient.",
+      },
+      {
+        question: "Will anything discussed in a session be shared with the employer?",
+        answer:
+          "No, not without the employee's consent. Standard professional psychiatric confidentiality applies, with the same narrow safety-related exceptions that apply to any patient. An employer would not receive details of diagnosis or treatment.",
+      },
+      {
+        question: "Is there a specific corporate package or pricing?",
+        answer:
+          "There's no fixed package advertised here — organisations interested in a referral arrangement, ongoing partnership, or a workplace talk are welcome to call or message directly to discuss what would suit your company and team size.",
+      },
+      {
+        question: "How should a manager raise a concern about a struggling employee?",
+        answer:
+          "Managers are generally best placed to express care and point the employee toward available support (such as this referral option) rather than attempting to assess or diagnose the issue themselves. The decision to seek an assessment remains the employee's own.",
+      },
+      {
+        question: "Can employees based outside Kathmandu or working remotely access this?",
+        answer:
+          "Yes. Online consultation is available for employees anywhere in Nepal, useful for both initial assessment where appropriate and ongoing follow-up, alongside in-person visits at the Kalanki clinic for those who prefer or need it.",
+      },
+      {
+        question: "Does this replace our company's existing insurance or benefits coverage?",
+        answer:
+          "No. This is a referral and consultation option, not an insurance product. Any existing health insurance or benefits coverage your company provides operates separately, and employees should check their own policy for what it covers.",
+      },
+    ],
+  },
 ];
 
 export function getAudiencePage(slug: string) {
