@@ -90,7 +90,7 @@ export default function AppointmentPage() {
           <h2 className="text-2xl font-bold text-sage-950">Clinic details</h2>
           <div className="mt-6 space-y-5 text-stone-700">
             <p className="flex gap-3"><MapPin className="mt-1 shrink-0 text-sage-700" size={20} aria-hidden="true" /><span>Kalanki-14, near Malpot Road and Kalanki Bhatbhateni Supermarket, Kathmandu</span></p>
-            <p className="flex gap-3"><Clock3 className="mt-1 shrink-0 text-sage-700" size={20} aria-hidden="true" /><span>Monday–Friday: 10:00–18:00<br />Saturday: 10:00–16:00</span></p>
+            <p className="flex gap-3"><Clock3 className="mt-1 shrink-0 text-sage-700" size={20} aria-hidden="true" /><span>Sunday–Friday: 8:00 AM–10:00 PM<br />Saturday: 10:00 AM–4:00 PM</span></p>
           </div>
           <Link href="/online-psychiatrist-nepal" className="mt-8 inline-block font-semibold text-sage-700 underline">Learn about online consultation</Link>
           <Link href="/psychiatrist-fee-nepal" className="mt-3 block font-semibold text-sage-700 underline">Consultation fees</Link>

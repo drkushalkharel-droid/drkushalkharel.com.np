@@ -1162,7 +1162,7 @@ export const audiencePages: AudiencePage[] = [
       "Choosing between an in-person visit and online consultation",
     ],
     practicalNote:
-      "The clinic is at Kalanki-14, Near Malpot Road, near Kalanki Bhatbhateni Supermarket, Kathmandu 44600, with roadside parking available nearby. Hours are Monday–Friday 10:00 AM–6:00 PM and Saturday 10:00 AM–4:00 PM, closed Sunday. Call or WhatsApp +977 9861800547 to book; for a psychiatric or medical emergency, go to the nearest hospital emergency department rather than waiting for a clinic appointment.",
+      "The clinic is at Kalanki-14, Near Malpot Road, near Kalanki Bhatbhateni Supermarket, Kathmandu 44600, with roadside parking available nearby. Hours are Sunday–Friday 8:00 AM–10:00 PM and Saturday 10:00 AM–4:00 PM. Call or WhatsApp +977 9861800547 to book; for a psychiatric or medical emergency, go to the nearest hospital emergency department rather than waiting for a clinic appointment.",
     searchTerms: [
       "Psychiatry clinic in Kathmandu",
       "Psychiatric clinic Kathmandu",
@@ -1179,7 +1179,7 @@ export const audiencePages: AudiencePage[] = [
       {
         question: "What are the clinic's opening hours?",
         answer:
-          "Monday to Friday, 10:00 AM to 6:00 PM, and Saturday, 10:00 AM to 4:00 PM. The clinic is closed on Sunday and is not a 24-hour or emergency service.",
+          "Sunday to Friday, 8:00 AM to 10:00 PM, and Saturday, 10:00 AM to 4:00 PM. The clinic is not a 24-hour or emergency service.",
       },
       {
         question: "Is this a hospital or an outpatient clinic?",

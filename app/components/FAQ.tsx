@@ -34,12 +34,12 @@ const faqs = [
   {
     question: "How do I book a psychiatrist in Nepal?",
     answer:
-      "Call +977 9861800547 or message on WhatsApp to book an appointment with Dr. Kushal Kharel in Kathmandu. In-person visits are available Monday to Friday, 10:00 AM to 6:00 PM, and Saturday, 10:00 AM to 4:00 PM; online consultation is available for patients anywhere in Nepal or abroad.",
+      "Call +977 9861800547 or message on WhatsApp to book an appointment with Dr. Kushal Kharel in Kathmandu. In-person visits are available Sunday to Friday, 8:00 AM to 10:00 PM, and Saturday, 10:00 AM to 4:00 PM; online consultation is available for patients anywhere in Nepal or abroad.",
   },
   {
     question: "How do I book an appointment with Dr. Kushal Kharel?",
     answer:
-      "Call +977 9861800547 or message on WhatsApp to book an in-person or online psychiatric consultation. The clinic is open Monday to Friday, 10:00 AM to 6:00 PM, and Saturday, 10:00 AM to 4:00 PM.",
+      "Call +977 9861800547 or message on WhatsApp to book an in-person or online psychiatric consultation. The clinic is open Sunday to Friday, 8:00 AM to 10:00 PM, and Saturday, 10:00 AM to 4:00 PM.",
   },
   {
     question: "Does Dr. Kushal Kharel offer online psychiatric consultation?",
@@ -109,7 +109,7 @@ const faqs = [
   {
     question: "Is this a 24-hour clinic or emergency service?",
     answer:
-      "No. The clinic operates fixed hours: Monday to Friday, 10:00 AM to 6:00 PM, and Saturday, 10:00 AM to 4:00 PM. For a psychiatric or medical emergency outside these hours, including thoughts of self-harm, severe confusion or immediate safety risk, go to the nearest emergency department rather than waiting to call.",
+      "No. The clinic operates fixed hours: Sunday to Friday, 8:00 AM to 10:00 PM, and Saturday, 10:00 AM to 4:00 PM. For a psychiatric or medical emergency outside these hours, including thoughts of self-harm, severe confusion or immediate safety risk, go to the nearest emergency department rather than waiting to call.",
   },
   {
     question: "Is there a female psychiatrist or female counselor available?",
