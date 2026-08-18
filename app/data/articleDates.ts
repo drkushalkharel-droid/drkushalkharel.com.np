@@ -95,4 +95,10 @@ export const articleDates: Record<string, { published: string; modified: string 
   "stress-management-therapy-counseling-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "suicide-warning-signs-how-to-help-nepal": { published: "2026-08-05", modified: "2026-08-06" },
   "workaholism-overwork-burnout-nepal": { published: "2026-08-06", modified: "2026-08-06" },
+  "borderline-personality-disorder-nepal": { published: "2026-08-18", modified: "2026-08-18" },
+  "erectile-dysfunction-treatment-nepal": { published: "2026-08-18", modified: "2026-08-18" },
+  "narcissistic-personality-disorder-nepal": { published: "2026-08-18", modified: "2026-08-18" },
+  "opioid-heroin-brown-sugar-addiction-treatment-nepal": { published: "2026-08-18", modified: "2026-08-18" },
+  "separation-anxiety-school-refusal-children-nepal": { published: "2026-08-18", modified: "2026-08-18" },
+  "specific-learning-disorder-dyslexia-children-nepal": { published: "2026-08-18", modified: "2026-08-18" },
 };

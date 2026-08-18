@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Globe2, Phone } from "lucide-react";
+import { Globe2, Mail, MessageCircle, Phone } from "lucide-react";
 import { abroadGuides } from "../data/abroad";
 import { buildHowToJsonLd } from "../lib/schema";
 
@@ -51,7 +51,7 @@ const faqs = [
   {
     question: "What if I have an urgent mental health crisis while abroad?",
     answer:
-      "Contact local emergency services or the nearest hospital immediately for any urgent safety risk. Online consultation is for ongoing psychiatric care, not a substitute for local emergency response.",
+      "Contact local emergency services or the nearest hospital immediately for any urgent safety risk. For an urgent but non-emergency concern, such as a sudden relapse or a medication question, the Abroad Patient Help Desk above can be reached by call, WhatsApp or email. Online consultation is for ongoing psychiatric care, not a substitute for local emergency response.",
   },
   {
     question: "Is the consultation conducted in Nepali or English?",
@@ -165,6 +165,54 @@ export default function NepaleseAbroadHubPage() {
             >
               WhatsApp
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-amber-200 bg-amber-50">
+        <div className="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+          <div className="flex flex-col gap-6 rounded-lg border border-amber-300 bg-white p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between lg:p-8">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[3px] text-amber-700">
+                Abroad Patient Help Desk
+              </p>
+              <h2 className="mt-3 text-2xl font-bold text-stone-950 md:text-3xl">
+                Need help urgently while abroad?
+              </h2>
+              <p className="mt-3 max-w-2xl leading-7 text-stone-600">
+                For an urgent psychiatric concern from abroad — a sudden
+                relapse, a medication question, or a family member in
+                distress — call, WhatsApp or email Dr. Kushal Kharel directly
+                and mention your country and time zone. For any immediate
+                danger to life, contact local emergency services first; this
+                help desk is for urgent guidance, not emergency response.
+              </p>
+            </div>
+            <div className="flex shrink-0 flex-col gap-3 sm:w-64">
+              <a
+                href="tel:+9779861800547"
+                className="inline-flex items-center justify-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800"
+              >
+                <Phone size={20} aria-hidden="true" />
+                Call +977 9861800547
+              </a>
+              <a
+                href="https://wa.me/9779861800547"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 rounded-lg border border-green-600 px-6 py-3 font-bold text-green-700 transition hover:bg-green-600 hover:text-white"
+              >
+                <MessageCircle size={20} aria-hidden="true" />
+                WhatsApp
+              </a>
+              <a
+                href="mailto:drkushalkharel@gmail.com"
+                className="inline-flex items-center justify-center gap-3 rounded-lg border border-stone-300 px-6 py-3 font-semibold text-stone-700 transition hover:bg-stone-100"
+              >
+                <Mail size={20} aria-hidden="true" />
+                Email
+              </a>
+            </div>
           </div>
         </div>
       </section>

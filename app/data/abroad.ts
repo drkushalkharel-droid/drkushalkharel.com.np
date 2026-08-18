@@ -510,6 +510,206 @@ export const abroadGuides: AbroadGuide[] = [
     practicalNote:
       "Portugal is usually around five to six hours behind Kathmandu, the largest gap of any country covered here, so a Nepal late-evening or night video consultation slot generally lines up best with the Portuguese afternoon or early evening. A Nepal-issued prescription cannot be assumed to be recognised at a Portuguese pharmacy, so medication needs are discussed openly, including when registering with a local clinic for prescribing is the more realistic path. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
   },
+  {
+    country: "Oman",
+    slug: "oman",
+    region: "Middle East",
+    headline: "Mental health support for Nepalese in Oman",
+    intro:
+      "Oman has quietly become one of the steadier Gulf destinations for Nepali labour migration, with large numbers working in construction, security, hospitality, retail and domestic work across Muscat, Sohar, Salalah and Sur, almost all on employer-sponsored work visas. Contracts of two years are common, often without a home visit in between, and long shifts through Oman's intense summer heat are frequently combined with shared labour accommodation that leaves little privacy for a phone call, let alone a video appointment. The steady pressure of sending remittances home, distance from spouse and children for years at a stretch, and a workplace culture where raising a health concern, especially a mental health concern, can feel risky to job security all build up quietly over a contract. Domestic workers, most of them women living within an employer's household, face an additional layer of isolation with very limited free time and little contact with other Nepalis. Many describe not having language for what they're feeling beyond 'homesickness,' when months of accumulated strain have in fact become a genuine depressive or anxiety disorder that deserves proper treatment rather than quiet endurance.",
+    commonConcerns: [
+      "Stress and anxiety tied to employer-sponsored visa status and contract renewal",
+      "Depression and hopelessness from prolonged separation from spouse and children across multi-year contracts",
+      "Isolation for domestic workers living within an employer's household with very limited free time",
+      "Exhaustion and sleep disruption from long shifts and extreme summer heat",
+      "Financial pressure from ongoing remittance responsibility to family in Nepal",
+      "Reluctance to seek help due to stigma and fear it could affect job security or standing with a sponsor",
+      "Alcohol or substance use as a limited, sometimes risky, outlet for stress relief",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Oman",
+      "Nepalese mental health Oman",
+      "online psychiatrist for Nepali in Oman",
+      "Nepali migrant worker mental health Oman",
+    ],
+    practicalNote:
+      "Oman is usually around one hour and forty-five minutes behind Kathmandu, so video consultations can generally be scheduled around work shifts without an unreasonable time difference, with finding a private moment away from shared accommodation often the bigger practical challenge. A Nepal-issued prescription cannot be assumed to be recognised at an Omani pharmacy, so medication needs are discussed honestly, including when local clinic care is the safer option. Consultations are confidential and never shared with an employer or sponsor. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy or a trusted community welfare contact should not wait for a scheduled appointment.",
+  },
+  {
+    country: "Bahrain",
+    slug: "bahrain",
+    region: "Middle East",
+    headline: "Mental health support for Nepalese in Bahrain",
+    intro:
+      "Bahrain is a smaller Gulf nation but hosts a significant Nepali workforce relative to its size, in construction, hospitality, retail, security and services concentrated mostly around Manama and Muharraq, most on employer-sponsored work visas arranged through recruitment agencies. As one of the more service- and finance-oriented Gulf economies, Bahrain draws a slightly wider mix of Nepalis than purely construction-heavy neighbours, from hotel and restaurant staff to security guards and a smaller number of skilled and semi-skilled professionals, though the underlying pressures of recruitment debt, distance from family and a workplace culture where health concerns are rarely raised openly are much the same as elsewhere in the Gulf. Shared worker accommodation with limited privacy, long shifts, and the steady responsibility of remittances back to Nepal build up quietly over a contract, and Bahrain's small size means the Nepali community, while close-knit, is also small enough that some worry about privacy and being recognised if they seek support locally.",
+    commonConcerns: [
+      "Stress and anxiety tied to employer-sponsored visa status and contract renewal",
+      "Financial pressure and anxiety from recruitment debt taken on before departure from Nepal",
+      "Isolation from living in shared worker accommodation with little personal privacy",
+      "Depression and low mood linked to prolonged separation from family in Nepal",
+      "Sleep disruption and fatigue from long or irregular shift work in hospitality, retail or construction",
+      "Reluctance to seek help locally due to Bahrain's small, close-knit Nepali community and privacy concerns",
+      "Alcohol or substance use as a coping response to isolation and workplace stress",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Bahrain",
+      "Nepalese mental health Bahrain",
+      "online psychiatrist for Nepali in Bahrain",
+      "Nepali migrant worker mental health Bahrain",
+    ],
+    practicalNote:
+      "Bahrain is usually around two hours and forty-five minutes behind Kathmandu, so video consultations can generally be scheduled around work shifts with a moderate time difference to plan around. A Nepal-issued prescription cannot be assumed to be recognised at a Bahraini pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace or sponsor record, which can matter especially given how small and closely connected the local Nepali community is. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+  },
+  {
+    country: "Singapore",
+    slug: "singapore",
+    region: "Southeast Asia",
+    headline: "Mental health support for Nepalese in Singapore",
+    intro:
+      "Singapore's Nepali community sits across two quite different worlds: a large group of Work Permit holders in construction, marine and shipyard work and security services, many housed in large purpose-built dormitories, and a smaller but growing group of professionals on Employment Passes in finance, technology and other skilled sectors, often drawn by Singapore's reputation as a stable, well-run hub in the region. For Work Permit holders, long shifts, strict dormitory living arrangements, and recruitment costs paid before departure from Nepal create sustained financial and emotional pressure, while limited free time and distance from family in Nepal add to the strain, even though Singapore's regulated labour system generally protects against the passport retention and outright exploitation sometimes seen elsewhere. For Employment Pass professionals, the pressure looks different: a demanding, highly competitive work culture, a minimum salary threshold tied directly to visa renewal, and the isolation of building a career and social life from scratch in one of the world's most expensive cities. Both groups can feel that admitting to struggling with mental health risks looking weak in a system that prizes performance and self-reliance.",
+    commonConcerns: [
+      "Stress tied to Work Permit renewal, salary thresholds for Employment Pass holders, and overall visa security",
+      "Exhaustion and sleep disruption from long shifts in construction, marine or shipyard work",
+      "Financial pressure and anxiety from recruitment costs taken on before departure from Nepal",
+      "Isolation in large dormitory housing with little personal privacy for Work Permit holders",
+      "Career and performance pressure, isolation and burnout for Employment Pass professionals building a life from scratch",
+      "Depression and low mood linked to prolonged separation from family and the high cost of living",
+      "Reluctance to seek help due to stigma and fear it could affect employment or professional standing",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Singapore",
+      "Nepalese mental health Singapore",
+      "online psychiatrist for Nepali in Singapore",
+      "Nepali migrant worker mental health Singapore",
+    ],
+    practicalNote:
+      "Singapore is usually around two hours and fifteen minutes ahead of Kathmandu, so a Nepal-evening video consultation slot generally lines up with a Singapore night-time slot after work, without an unreasonable time difference on either side. A Nepal-issued prescription cannot be assumed to be recognised at a Singapore pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option for ongoing prescribing. Consultations are confidential and kept separate from any workplace, dormitory or employer record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+  },
+  {
+    country: "New Zealand",
+    slug: "new-zealand",
+    region: "Oceania",
+    headline: "Mental health support for Nepalese in New Zealand",
+    intro:
+      "New Zealand has drawn a steadily growing number of Nepalis on student visas to Auckland, Wellington, Christchurch and Hamilton, many hoping a diploma or degree will lead to a post-study work visa and, eventually, residence. The cap on permitted work hours during study, high tuition and living costs relative to a smaller local job market than Australia's, and the long-running uncertainty of successive changes to post-study work and residence pathway rules all create sustained background stress, and a policy change can arrive with little warning after years of a family's financial planning around it. Many students take on physically demanding part-time work in hospitality, retail, aged care or orchards to cover fees and rent, often sharing a house with several other international students with little privacy for a difficult phone call home. Being roughly six to seven hours ahead of Kathmandu still allows for reasonably timed calls with family, but New Zealand's small size and geographic isolation from the rest of the world can itself add to a sense of distance beyond what the clock suggests, especially for those in smaller cities with only a handful of other Nepalis nearby.",
+    commonConcerns: [
+      "Anxiety and stress tied to student visa conditions, work-hour limits and shifting post-study work or residence pathway rules",
+      "Financial pressure from tuition, rent and living costs relative to a smaller local job market",
+      "Depression, low motivation and burnout from combining full-time study with physically demanding part-time work",
+      "Isolation in smaller cities and towns with very few other Nepalis nearby",
+      "Homesickness and a heightened sense of distance from family due to New Zealand's geographic remoteness",
+      "Sleep disturbance and fatigue from irregular hospitality, retail or aged-care shift work",
+      "Alcohol use linked to social pressure or coping with isolation in shared student housing",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist New Zealand",
+      "Nepalese mental health New Zealand",
+      "online psychiatrist for Nepali in New Zealand",
+      "Nepali student mental health New Zealand",
+    ],
+    practicalNote:
+      "New Zealand is usually around six to seven hours ahead of Kathmandu depending on daylight saving, so a Nepal-morning video consultation slot generally lines up with a New Zealand afternoon or evening on the same day. A prescription written in Nepal cannot be assumed to be valid or fillable at a New Zealand pharmacy, so medication questions are discussed honestly, including whether registering with a local GP or student health service is the more appropriate route for ongoing prescribing. Many institutions also offer a free student wellbeing or counselling service that can provide interim support between appointments. For urgent risk, suicidal thoughts, or a mental health crisis, calling 111 or presenting to a local emergency department is safer than waiting for a scheduled online appointment.",
+  },
+  {
+    country: "Ireland",
+    slug: "ireland",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Ireland",
+    intro:
+      "Ireland has become one of Europe's fastest-growing destinations for Nepali students in just a few years, drawn largely by a generous two-year post-study stay-back visa attached to a master's degree, with most settling in Dublin and smaller numbers in Cork, Galway and Limerick. What many don't fully appreciate before arriving is Dublin's acute accommodation crisis: rents that can consume most of a part-time income, long commutes from shared houses far outside the city, and a genuinely difficult search for any room at all in the first weeks, which can turn what should be an exciting new chapter into a stressful scramble before classes have even begun. The permitted part-time work-hour cap during term, competition for the limited part-time and graduate jobs available, and pressure to convert the stay-back period into a long-term visa or job offer before it expires all add to sustained anxiety. As in the UK, Ireland's grey, short winter days can worsen low mood, and a still-young, fast-expanding Nepali community means fewer long-settled families or community organisations to lean on compared with more established diaspora hubs.",
+    commonConcerns: [
+      "Anxiety and stress from Dublin's accommodation shortage and high rents relative to part-time income",
+      "Pressure to convert the two-year post-study stay-back visa into a long-term job or immigration pathway before it expires",
+      "Financial strain from tuition, high rent and a competitive part-time and graduate job market",
+      "Isolation from being part of a still-young, fast-growing Nepali community with fewer established support networks",
+      "Seasonal low mood and fatigue during grey, short-daylight Irish winters",
+      "Depression, low motivation and sleep disturbance tied to study, work or job-search pressure",
+      "Homesickness and missing family milestones and festivals from across the world",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Ireland",
+      "Nepalese mental health Ireland",
+      "online psychiatrist for Nepali in Ireland",
+      "Nepali student mental health Dublin",
+    ],
+    practicalNote:
+      "Ireland is usually around five to six hours behind Kathmandu depending on daylight saving, so a Nepal late-evening video consultation slot generally lines up with an Irish afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at an Irish pharmacy, so medication needs are discussed openly, including whether registering with a local GP for prescribing and referral into the Irish system, often through the HSE, is the right next step. University student health and counselling services can also offer interim support while this is arranged. For urgent risk, suicidal thoughts or a mental health crisis, calling 112 or 999 or attending a local emergency department is safer than waiting for a scheduled online appointment.",
+  },
+  {
+    country: "Hong Kong",
+    slug: "hong-kong",
+    region: "Asia",
+    headline: "Mental health support for Nepalese in Hong Kong",
+    intro:
+      "Hong Kong is home to one of the oldest and most established Nepali communities outside South Asia, rooted in generations of Gurkha military service with the British Army and the right of abode this created for many families, concentrated in areas such as Yuen Long, Tsuen Wan and Jordan. Alongside these long-settled, often multi-generational families are newer arrivals working in hospitality, retail, construction and domestic or care work. For Hong Kong-born younger Nepalis, tension between Cantonese-medium schooling and mainstream society and a Nepali-speaking home life can create a genuine sense of caught-between-two-worlds identity strain, while newer arrivals face the same Cantonese-language barrier in reverse when trying to access local healthcare or navigate daily life. Hong Kong's famously high cost of living and cramped housing, even for long-settled families, adds ongoing financial pressure, and elderly Gurkha veterans and their spouses can carry their own under-discussed burden of past service-related trauma alongside the ordinary difficulties of ageing far from ancestral villages in Nepal.",
+    commonConcerns: [
+      "Identity and belonging strain for Hong Kong-raised younger Nepalis caught between Cantonese-medium schooling and Nepali home life",
+      "Language barrier for newer arrivals trying to access local healthcare or navigate daily bureaucracy in Cantonese",
+      "Financial pressure from Hong Kong's high cost of living and limited, expensive housing",
+      "Depression and low mood linked to isolation among domestic or care workers with limited free time",
+      "Unaddressed trauma or emotional strain among elderly Gurkha veterans and their spouses",
+      "Intergenerational tension between long-settled families and Hong Kong-raised children",
+      "Anxiety tied to work permit or visa status for newer arrivals in service, retail or construction roles",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Hong Kong",
+      "Nepalese mental health Hong Kong",
+      "online psychiatrist for Nepali in Hong Kong",
+      "Gurkha family mental health Hong Kong",
+    ],
+    practicalNote:
+      "Hong Kong is usually around two hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal generally lines up with a Hong Kong night-time slot after work or school. A Nepal-issued prescription cannot be assumed to be recognised at a Hong Kong pharmacy, so medication needs are discussed openly, including whether registering with a local general practitioner or public clinic for prescribing is the right next step. Consultations can be conducted in Nepali, which can be a genuine relief for elderly Gurkha veterans, spouses or newer arrivals who find explaining symptoms in English or Cantonese difficult. For a medical emergency, safety concern or thoughts of self-harm, calling 999 or attending the nearest hospital accident and emergency department should not wait for a scheduled online appointment.",
+  },
+  {
+    country: "Poland",
+    slug: "poland",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Poland",
+    intro:
+      "Poland has emerged rapidly as an EU alternative to Gulf labour migration for Nepalis, drawing growing numbers into manufacturing, warehouse logistics, food processing and construction roles around Warsaw, Wrocław and Kraków, often through recruitment agencies that arrange work permits tied to a specific employer. For many, Poland is a first foothold in the EU labour market, and the hope of eventual mobility to work elsewhere in Europe sits alongside the reality of a Polish-language-dominant workplace and healthcare system that few arrive prepared for. Winters are far colder and darker than almost anywhere most workers have experienced, and recruitment debt taken on in Nepal to secure the job adds real financial pressure from the very start of the contract, compounded if the promised role or pay differs from what was arranged before departure. Because the Nepali community here is newer and smaller than in the Gulf or longer-established European destinations, there are fewer countrymen nearby to share the adjustment with, and shared worker housing arranged by an employer can mean little say over living conditions.",
+    commonConcerns: [
+      "Financial pressure and anxiety from recruitment debt taken on before departure from Nepal",
+      "Distress when the actual job, pay or conditions differ from what was promised before leaving Nepal",
+      "Depression and low mood during Polish winters that are far colder and darker than most workers have experienced",
+      "Language barrier making daily tasks and healthcare access feel effortful",
+      "Isolation from being part of a newer, smaller and more spread-out Nepali community",
+      "Sleep disruption and fatigue from manufacturing, warehouse or food-processing shift work",
+      "Uncertainty and stress around work permit renewal and the path to longer-term EU status",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Poland",
+      "Nepalese mental health Poland",
+      "online psychiatrist for Nepali in Poland",
+      "Nepali migrant worker mental health Poland",
+    ],
+    practicalNote:
+      "Poland is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Polish afternoon or early evening, which tends to work well around most shift patterns. A Nepal-issued prescription cannot be assumed to be recognised at a Polish pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace or agency record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+  },
+  {
+    country: "Italy",
+    slug: "italy",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Italy",
+    intro:
+      "Italy is home to one of the largest and longest-established Nepali communities in Europe, concentrated especially in Rome, with smaller communities in Florence, Milan and other northern cities, many families now into a second generation. Elderly and home care work (known locally as badante roles), hospitality and retail have long been common paths into the Italian labour market, and while the community's long history means more established support networks and Nepali shops, restaurants and cultural associations than in newer destinations, it does not remove real pressures. Overstretched Italian bureaucracy for permesso di soggiorno (residence permit) renewal can mean months of legal limbo even for those who followed every rule, and this uncertainty alone is a significant source of chronic anxiety. Care workers living in with an elderly Italian client face an isolation similar to live-in domestic work elsewhere, with limited free time and the emotional weight of caring closely for someone else's ageing relative while unable to be present for their own family's milestones back in Nepal. Younger, Italian-raised Nepalis can also feel caught between two cultures, fluent in Italian but navigating expectations rooted in a Nepal many have visited only occasionally.",
+    commonConcerns: [
+      "Chronic anxiety from prolonged permesso di soggiorno (residence permit) renewal delays and bureaucratic limbo",
+      "Isolation for live-in care workers (badanti) with limited free time and privacy",
+      "Depression and guilt from caring for someone else's elderly relative while distant from one's own family",
+      "Intergenerational and identity tension for Italian-raised children of Nepali families",
+      "Financial pressure from the cost of living balanced against often modest care, hospitality or retail wages",
+      "Sleep disruption and burnout from demanding live-in care or hospitality shift schedules",
+      "Reluctance to seek mental health support due to stigma, even within a large and established community",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Italy",
+      "Nepalese mental health Italy",
+      "online psychiatrist for Nepali in Italy",
+      "Nepali community mental health Rome",
+    ],
+    practicalNote:
+      "Italy is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Italian afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at an Italian pharmacy, so medication needs are discussed openly, including whether registering with a local medico di base (GP) for prescribing and referral into the Italian system is the right next step. Speaking with a psychiatrist in Nepali first can also help for live-in care workers who find it hard to leave their workplace household to attend a local appointment. For a medical emergency, safety concern or thoughts of self-harm, calling 112 or attending the nearest hospital emergency department should not wait for a scheduled online session.",
+  },
 ];
 
 export function getAbroadGuide(slug: string) {
