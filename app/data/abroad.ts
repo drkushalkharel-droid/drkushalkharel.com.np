@@ -710,6 +710,331 @@ export const abroadGuides: AbroadGuide[] = [
     practicalNote:
       "Italy is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Italian afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at an Italian pharmacy, so medication needs are discussed openly, including whether registering with a local medico di base (GP) for prescribing and referral into the Italian system is the right next step. Speaking with a psychiatrist in Nepali first can also help for live-in care workers who find it hard to leave their workplace household to attend a local appointment. For a medical emergency, safety concern or thoughts of self-harm, calling 112 or attending the nearest hospital emergency department should not wait for a scheduled online session.",
   },
+  {
+    country: "Myanmar",
+    slug: "myanmar",
+    region: "Southeast Asia",
+    headline: "Mental health support for Nepalese in Myanmar",
+    intro:
+      "Myanmar is home to one of the largest and oldest Nepali-origin communities anywhere in the world, numbering in the hundreds of thousands and rooted in generations of Gorkha settlement dating back to British colonial rule, concentrated especially in Shan State towns such as Kalaw, Taunggyi and Pyin Oo Lwin, alongside communities in Yangon and Mandalay. Many families have lived in Myanmar for four or five generations, yet a meaningful number still face unresolved citizenship status under Myanmar's 1982 Citizenship Law, which recognises only certain 'national races' and has left some Nepali-origin residents functionally stateless despite generations of residence, unable to fully access services, travel freely, or feel secure about their children's future. The ongoing political instability and armed conflict in Myanmar since 2021 adds a further layer of uncertainty and, for some families, direct exposure to danger or displacement, compounding the everyday strain of raising children and running a business or farm in a country where full legal belonging has never been guaranteed. For a long-settled community, the pull toward an ancestral homeland many have never actually visited sits alongside a genuine, complicated love for the only home most have ever known.",
+    commonConcerns: [
+      "Chronic anxiety and insecurity linked to unresolved or unclear citizenship status under Myanmar's Citizenship Law",
+      "Acute stress, fear or trauma linked to the ongoing political instability and armed conflict in parts of Myanmar since 2021",
+      "Identity strain from feeling caught between a Nepali heritage and a Myanmar home across multiple generations",
+      "Depression and hopelessness linked to restricted travel, education or work opportunities tied to unclear legal status",
+      "Grief and displacement-related distress for families affected by conflict, relocation or loss of property",
+      "Isolation for Nepali-origin families in more remote Shan State towns with limited access to specialist mental health care",
+      "Difficulty accessing culturally and linguistically appropriate mental health support locally",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Myanmar",
+      "Nepalese mental health Myanmar",
+      "online psychiatrist for Nepali in Myanmar",
+      "Gorkha community mental health Myanmar",
+    ],
+    practicalNote:
+      "Myanmar is usually around forty-five minutes ahead of Kathmandu, which makes scheduling a video consultation straightforward without a significant time difference to plan around, where internet access and safety conditions allow. A Nepal-issued prescription cannot be assumed to be recognised at a Myanmar pharmacy, so medication needs are discussed openly, including when local clinic care is the safer and more realistic option. Consultations can be conducted in Nepali, which can be a genuine relief for families who find explaining symptoms in Burmese or a local Shan dialect difficult. Given the current instability in parts of the country, safety always comes first: for any medical emergency, threat to safety, or urgent risk, contacting local emergency services, a trusted community welfare contact, or the Nepali embassy should not wait for a scheduled online appointment.",
+  },
+  {
+    country: "Bangladesh",
+    slug: "bangladesh",
+    region: "South Asia",
+    headline: "Mental health support for Nepalese in Bangladesh",
+    intro:
+      "Bangladesh's proximity and long-standing ties to Nepal draw students into medical, engineering and other university programmes in Dhaka, Chittagong and other cities, alongside a smaller number of business owners and workers, often assuming that geographic and cultural closeness will make the adjustment easier than moving further afield. In practice, Bangladesh's own intensely competitive academic culture, the pressure of studying medicine or engineering in a foreign curriculum and sometimes a different teaching language, and the financial strain of tuition and hostel costs on a family budget are all genuine sources of stress. Traffic congestion, monsoon flooding, and a much larger, more crowded urban environment than most home towns in Nepal can also take a toll that's easy to underestimate before arrival. As with India, closeness to Nepal does not remove the emotional weight of being away from home, and some students describe a subtle sense of being neither fully at home in Bangladesh nor able to easily pop back to Nepal for a weekend the way the map might suggest.",
+    commonConcerns: [
+      "Academic pressure and anxiety in competitive medical, engineering or business programmes taught in an unfamiliar curriculum",
+      "Financial stress from tuition, hostel costs and tight family budgets",
+      "Adjustment difficulty to Dhaka's dense urban environment, traffic and monsoon flooding",
+      "Depression and low motivation linked to academic performance and future career uncertainty",
+      "Homesickness sharpened by the mistaken assumption that geographic closeness would make missing home easier to manage",
+      "Language barrier navigating Bengali-medium daily life and healthcare outside the classroom",
+      "Isolation for students living independently in hostel accommodation away from family supervision for the first time",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Bangladesh",
+      "Nepalese mental health Bangladesh",
+      "online psychiatrist for Nepali in Bangladesh",
+      "Nepali student mental health Dhaka",
+    ],
+    practicalNote:
+      "Bangladesh is usually only around fifteen minutes ahead of Kathmandu, so scheduling a video consultation is simple and does not require planning around odd hours, similar to India. A Nepal-written prescription may not automatically be accepted at every Bangladeshi pharmacy, so this is discussed directly, alongside whether local psychiatric care, a hostel or college counselling service, or continued follow-up with Dr. Kushal Kharel is the best fit. For a medical emergency, safety risk or acute crisis, the nearest hospital or local emergency services should be used rather than waiting for an online appointment. Many families find it reassuring that a first conversation can happen in Nepali, which often makes it easier to describe symptoms accurately before deciding on next steps.",
+  },
+  {
+    country: "Thailand",
+    slug: "thailand",
+    region: "Southeast Asia",
+    headline: "Mental health support for Nepalese in Thailand",
+    intro:
+      "Thailand draws a mixed group of Nepalis, from workers in hospitality, restaurants and construction around Bangkok and tourist hubs like Phuket and Chiang Mai, to a smaller number of students and long-term residents, often on tourist-turned-work arrangements or employer-sponsored permits that carry their own uncertainty. Thailand's role as a major transit and tourism hub for the wider region means some Nepalis pass through on their way to or from other Southeast Asian work destinations, which can bring its own instability and short-term, insecure housing arrangements. Long hours in hospitality and food service, a Thai-language-dominant daily life and healthcare system, and distance from the more established Nepali diaspora networks found in the Gulf or the West all add to the everyday strain of building a life in Thailand. For workers whose status is less formally regulated than in some other destinations, worry about their legal standing sits alongside the ordinary pressures of remittances and distance from family.",
+    commonConcerns: [
+      "Anxiety and stress tied to informal, tourist-turned-work or employer-sponsored visa arrangements",
+      "Depression and low mood linked to long hospitality or service-sector shifts and irregular income",
+      "Isolation from being more dispersed and less organised than Nepali communities in other major destinations",
+      "Financial pressure from unstable or informal work arrangements and ongoing remittance responsibility",
+      "Language barrier navigating Thai-language daily life, healthcare and any legal or work paperwork",
+      "Instability and stress for workers using Thailand as a transit point to or from other regional destinations",
+      "Alcohol use linked to Thailand's tourism and hospitality work culture and social isolation",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Thailand",
+      "Nepalese mental health Thailand",
+      "online psychiatrist for Nepali in Thailand",
+      "Nepali migrant worker mental health Thailand",
+    ],
+    practicalNote:
+      "Thailand is usually around one hour and fifteen minutes ahead of Kathmandu, so video consultations can generally be scheduled around work shifts without a significant time difference to plan around. A Nepal-issued prescription cannot be assumed to be recognised at a Thai pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+  },
+  {
+    country: "Croatia",
+    slug: "croatia",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Croatia",
+    intro:
+      "Croatia has emerged rapidly as a new EU destination for Nepali workers over the past few years, drawing growing numbers into hospitality, tourism, construction and food service roles around Zagreb, Split, and the Adriatic coastal resort towns, as recruitment agencies increasingly present it as an accessible alternative to the Gulf or more established Western European destinations. Much of the work is seasonal, tied to Croatia's intense summer tourism season along the coast, which brings long hours during peak months followed by uncertainty about work and income during the quieter off-season. As one of Europe's newest Nepali worker destinations, the community is still small and dispersed, and Croatian-language bureaucracy for residence permits and healthcare registration can feel genuinely disorienting for workers who arrived with limited preparation for the paperwork involved. Recruitment costs paid before departure from Nepal, combined with the seasonal, sometimes precarious nature of tourism-sector work, add real financial pressure from the very start of a contract.",
+    commonConcerns: [
+      "Financial pressure and anxiety from recruitment debt taken on before departure from Nepal",
+      "Stress and income uncertainty tied to Croatia's seasonal tourism work cycle and off-season gaps",
+      "Isolation from being part of a very new, small and dispersed Nepali worker community",
+      "Anxiety navigating Croatian-language bureaucracy for residence permits and healthcare registration",
+      "Sleep disruption and fatigue from long shifts during the intense summer tourism season",
+      "Distress when the actual job, pay or conditions differ from what was promised before leaving Nepal",
+      "Uncertainty and stress around contract renewal and the pathway to longer-term EU work status",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Croatia",
+      "Nepalese mental health Croatia",
+      "online psychiatrist for Nepali in Croatia",
+      "Nepali migrant worker mental health Croatia",
+    ],
+    practicalNote:
+      "Croatia is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Croatian afternoon or early evening, which tends to work well around most shift patterns. A Nepal-issued prescription cannot be assumed to be recognised at a Croatian pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace or agency record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+  },
+  {
+    country: "Fiji",
+    slug: "fiji",
+    region: "Oceania",
+    headline: "Mental health support for Nepalese in Fiji",
+    intro:
+      "Fiji is home to a small but historic Nepali-origin community, with roots stretching back to the era of indentured labour migration to Fiji from the Indian subcontinent, alongside a smaller, more recent group of Nepali students and professionals drawn to Fiji's role as a regional hub in the Pacific for education and business. For the long-settled community, questions of identity and belonging can run deep across generations of connection to Fiji layered over a distant, sometimes largely symbolic connection to Nepal itself, while newer arrivals face a different, more immediate set of adjustment challenges: a small, dispersed community with limited Nepali-language services, distance from any major hub of Nepali diaspora life, and a healthcare system that few arrive familiar with. Fiji's Pacific island geography also means genuine physical isolation, both from Nepal and from other, larger diaspora communities elsewhere in the world, which can compound the ordinary strain of settling far from family.",
+    commonConcerns: [
+      "Identity and belonging questions for a long-settled, multi-generational Nepali-origin community with a distant ancestral connection to Nepal",
+      "Isolation from being part of a very small, geographically remote Pacific community",
+      "Difficulty accessing Nepali-language or culturally specific mental health support locally",
+      "Adjustment stress for newer students or professionals arriving with limited preparation for local systems",
+      "Homesickness compounded by Fiji's physical distance from Nepal and from larger diaspora hubs",
+      "Financial pressure and uncertainty for those building a business or career in a smaller island economy",
+      "Family strain from limited opportunities to travel to Nepal given cost and distance",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Fiji",
+      "Nepalese mental health Fiji",
+      "online psychiatrist for Nepali in Fiji",
+      "Nepali community mental health Fiji",
+    ],
+    practicalNote:
+      "Fiji is usually around six to seven hours ahead of Kathmandu depending on daylight saving, so a Nepal-morning video consultation slot generally lines up with a Fiji afternoon or evening on the same day. A prescription written in Nepal cannot be assumed to be valid or fillable at a Fijian pharmacy, so medication questions are discussed honestly, including whether registering with a local doctor is the more appropriate route for ongoing prescribing. Consultations can be conducted in Nepali, which can be a genuine relief for a community with deep roots but limited access to Nepali-language services locally. For urgent risk, suicidal thoughts, or a mental health crisis, contacting local emergency services or the nearest hospital is safer than waiting for a scheduled online appointment.",
+  },
+  {
+    country: "Denmark",
+    slug: "denmark",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Denmark",
+    intro:
+      "Denmark's Nepali community is small but steadily growing, centred mainly around Copenhagen, drawn by university programmes, a well-regarded public system, and, for some, family reunification with a partner already settled there. Danish bureaucracy for residence permits, the CPR personal registration number that unlocks nearly everything from a bank account to healthcare, and Denmark's own high cost of living relative to typical student or entry-level wages are all genuine early hurdles. Denmark's long, dark winters, with only a few hours of daylight at the depth of the season, can meaningfully worsen mood for those unused to the climate, and a small, still-developing Nepali community means fewer natural opportunities to speak Nepali socially or mark festivals like Dashain and Tihar with a wider community. Danish social culture, often described as reserved and private on first meeting even by other Europeans, can add a further layer of adjustment for newcomers used to a more immediately warm, communal social style.",
+    commonConcerns: [
+      "Anxiety navigating Danish residence permits, CPR registration and unfamiliar bureaucratic systems",
+      "Depression and low mood during long, dark Danish winters with very limited daylight",
+      "Isolation from being part of a small, still-developing Nepali community",
+      "Financial strain from Denmark's high cost of living relative to student or entry-level wages",
+      "Adjustment stress from Danish social culture feeling more reserved than home",
+      "Academic or work pressure combined with the effort of settling into a new system",
+      "Homesickness and difficulty finding Nepali food, festivals or community events nearby",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Denmark",
+      "Nepalese mental health Denmark",
+      "online psychiatrist for Nepali in Denmark",
+      "Nepali student mental health Copenhagen",
+    ],
+    practicalNote:
+      "Denmark is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Danish afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at a Danish pharmacy (apotek), so medication needs are discussed openly, including whether registering with a local læge (GP) for prescribing and referral into the Danish system is the right next step. University student counselling services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
+  },
+  {
+    country: "Brunei",
+    slug: "brunei",
+    region: "Southeast Asia",
+    headline: "Mental health support for Nepalese in Brunei",
+    intro:
+      "Brunei is home to a distinctive Nepali community centred on the Gurkha Reserve Unit, an elite force of Nepali Gurkha soldiers who have served the Sultanate for decades, alongside their families and a smaller number of workers in construction, hospitality and services. Military family life brings its own particular pressures: long deployments or duty postings away from home even while stationed in Brunei, a base community that can feel both close-knit and quite closed off from the wider Bruneian population, and the eventual, often emotionally complex transition when a soldier's service ends and the family must decide whether to stay in Brunei, return to Nepal, or seek settlement elsewhere. For the smaller group of civilian workers, Brunei's strict laws, small size, and limited nightlife or social outlets compared with other destinations can make off-duty time feel quite restricted, and the extremely small, tightly-knit expatriate Nepali community means very little anonymity when seeking help locally.",
+    commonConcerns: [
+      "Stress and family separation linked to Gurkha Reserve Unit deployments and duty postings",
+      "Anxiety and identity strain around the transition when military service in Brunei ends",
+      "Isolation for military spouses and children adjusting to base life away from wider Bruneian society",
+      "Privacy concerns and reluctance to seek help locally given how small and close-knit the community is",
+      "Adjustment stress to Brunei's strict social norms and limited off-duty outlets for civilian workers",
+      "Depression and low mood linked to prolonged distance from extended family in Nepal",
+      "Financial and future-planning anxiety around life after Gurkha service concludes",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Brunei",
+      "Nepalese mental health Brunei",
+      "online psychiatrist for Nepali in Brunei",
+      "Gurkha family mental health Brunei",
+    ],
+    practicalNote:
+      "Brunei is usually around two hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal generally lines up with a Brunei night-time slot. A Nepal-issued prescription cannot be assumed to be recognised at a Brunei pharmacy, so medication needs are discussed openly, including whether registering with a local clinic, including on-base medical services where relevant, is the right next step. Consultations can be conducted in Nepali, which can be a genuine relief given how small and interconnected the local Nepali community is, and confidentiality is maintained separately from any military or employer record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services or the nearest hospital should not wait for a scheduled online appointment.",
+  },
+  {
+    country: "Sri Lanka",
+    slug: "sri-lanka",
+    region: "South Asia",
+    headline: "Mental health support for Nepalese in Sri Lanka",
+    intro:
+      "Sri Lanka draws a small community of Nepalis, mainly students pursuing medical, engineering or hospitality-management programmes in Colombo and Kandy, alongside a smaller number of business travellers and workers, often choosing Sri Lanka for its relatively affordable, English-medium higher education compared with Western destinations. Sri Lanka's own recent economic instability, including periods of currency devaluation, fuel and goods shortages, and political uncertainty, has added a layer of everyday practical stress for students and workers alike that sits on top of the ordinary pressures of academic performance and distance from family. A small, dispersed Nepali community means fewer natural opportunities to connect with other Nepalis or mark festivals together, and English-medium instruction, while easing the academic transition, does not remove the emotional weight of being far from home in an unfamiliar culture.",
+    commonConcerns: [
+      "Academic pressure and anxiety in competitive medical, engineering or hospitality-management programmes",
+      "Financial stress sharpened by Sri Lanka's recent economic instability and currency devaluation",
+      "Isolation from being part of a very small, dispersed Nepali community",
+      "Depression and low motivation linked to academic performance and future career uncertainty",
+      "Everyday practical stress from periods of shortages, price rises or political uncertainty",
+      "Homesickness and difficulty finding Nepali food, festivals or community events nearby",
+      "Family conflict and pressure around academic or career expectations",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Sri Lanka",
+      "Nepalese mental health Sri Lanka",
+      "online psychiatrist for Nepali in Sri Lanka",
+      "Nepali student mental health Colombo",
+    ],
+    practicalNote:
+      "Sri Lanka is usually only around fifteen minutes behind Kathmandu, so scheduling a video consultation is simple and does not require planning around odd hours. A Nepal-written prescription may not automatically be accepted at every Sri Lankan pharmacy, so this is discussed directly, alongside whether local psychiatric care, a college counselling service, or continued follow-up with Dr. Kushal Kharel is the best fit. For a medical emergency, safety risk or acute crisis, the nearest hospital or local emergency services should be used rather than waiting for an online appointment. Many families find it reassuring that a first conversation can happen in Nepali, which often makes it easier to describe symptoms accurately before deciding on next steps.",
+  },
+  {
+    country: "Finland",
+    slug: "finland",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Finland",
+    intro:
+      "Finland has drawn a small but growing number of Nepalis, mainly students pursuing master's programmes in technology, business and engineering in Helsinki, Tampere and other university cities, alongside a smaller group working in cleaning, care and hospitality roles. Historically low or tuition-free university fees made Finland an attractive destination before recent policy changes introduced fees for non-EU students, which now adds real financial planning pressure for newer arrivals. Finland's extremely long, dark winters, among the most extreme in Europe for daylight variation, can significantly affect mood, energy and sleep for those unused to the climate, while the short, intense summer with nearly round-the-clock daylight brings its own adjustment. Finnish social culture, often characterised by comfort with silence and a slower pace of forming close friendships than many Nepalis are used to, combined with a small, still-developing Nepali community, can leave newcomers feeling socially isolated even in a country widely regarded as safe, well-organised and genuinely welcoming to newcomers.",
+    commonConcerns: [
+      "Seasonal low mood, fatigue and disrupted sleep during Finland's extremely long, dark winters",
+      "Financial pressure and planning stress following the introduction of tuition fees for non-EU students",
+      "Isolation from being part of a small, still-developing Nepali community",
+      "Adjustment stress from Finnish social culture's slower pace of building close friendships",
+      "Depression and low motivation linked to academic pressure and distance from family",
+      "Sleep disruption during Finland's short, nearly round-the-clock daylight summer",
+      "Homesickness and difficulty finding Nepali food, festivals or community events nearby",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Finland",
+      "Nepalese mental health Finland",
+      "online psychiatrist for Nepali in Finland",
+      "Nepali student mental health Helsinki",
+    ],
+    practicalNote:
+      "Finland is usually around three to four hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Finnish afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at a Finnish pharmacy (apteekki), so medication needs are discussed openly, including whether registering with a local lääkäri (doctor) for prescribing and referral into the Finnish system is the right next step. University student wellbeing services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
+  },
+  {
+    country: "Spain",
+    slug: "spain",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Spain",
+    intro:
+      "Spain's Nepali community, while still relatively small, has grown steadily around Madrid, Barcelona and other cities, drawn by hospitality, retail and service-sector work as well as a smaller number of students, often as a more affordable entry point into Western Europe than some neighbouring countries. Spanish-language bureaucracy for the empadronamiento (municipal registration), residence permits (NIE) and healthcare enrolment can be genuinely difficult to navigate without local support, and the process for regularising status for those who arrived through less formal routes can involve years of uncertainty. Spain's relaxed, later-paced social and working culture, often a relief for some, can also be disorienting for others used to a more structured daily rhythm, and the community's smaller size relative to countries like Italy or the UK means fewer established Nepali cultural or religious organisations to lean on for support during difficult periods.",
+    commonConcerns: [
+      "Anxiety navigating Spanish-language bureaucracy for residence permits, NIE and healthcare registration",
+      "Prolonged uncertainty and stress during the process of regularising immigration status",
+      "Isolation from being part of a smaller, less established Nepali community than in some other European countries",
+      "Financial strain from modest hospitality or service-sector wages relative to the cost of living in major cities",
+      "Depression and low mood linked to work pressure and distance from family",
+      "Language barrier making healthcare access and daily bureaucracy feel effortful",
+      "Adjustment stress to Spain's different daily rhythm and social culture",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Spain",
+      "Nepalese mental health Spain",
+      "online psychiatrist for Nepali in Spain",
+      "Nepali migrant worker mental health Madrid Barcelona",
+    ],
+    practicalNote:
+      "Spain is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Spanish afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at a Spanish pharmacy (farmacia), so medication needs are discussed openly, including whether registering with a local médico de cabecera (GP) for prescribing and referral into the Spanish system is the right next step. Consultations are confidential and kept separate from any workplace record. For a medical emergency, suicidal thoughts or an urgent safety concern, contacting Spanish emergency services (112) or the nearest hospital is safer than waiting for a scheduled online session.",
+  },
+  {
+    country: "Norway",
+    slug: "norway",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Norway",
+    intro:
+      "Norway's Nepali community is small, centred mainly around Oslo and a handful of other cities, drawn by university programmes and, for some, family reunification or work in fields such as engineering, IT and healthcare support roles. Norway's exceptionally high cost of living relative to typical student or entry-level income is a genuine early shock for many newcomers, and Norwegian-language requirements for longer-term residence, work in many sectors, and full participation in daily life add a substantial adjustment on top of purely academic or work pressures. Long, dark winters in a country stretching well into the Arctic Circle can meaningfully affect mood and energy, particularly in the northern regions, and a very small, geographically spread Nepali community means fewer opportunities to mark festivals together or simply speak Nepali socially outside the home. Norway's strong social welfare system and generally high quality of life sit alongside these real, often underestimated adjustment challenges for newcomers building a life from scratch.",
+    commonConcerns: [
+      "Financial strain from Norway's exceptionally high cost of living relative to student or entry-level income",
+      "Anxiety and pressure around meeting Norwegian-language requirements for residence, work or further study",
+      "Seasonal low mood and fatigue during long, dark Norwegian winters, especially further north",
+      "Isolation from being part of a very small, geographically spread Nepali community",
+      "Academic or work pressure combined with the effort of settling into a new system",
+      "Depression and low motivation linked to distance from family and limited community nearby",
+      "Homesickness and difficulty finding Nepali food, festivals or community events nearby",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Norway",
+      "Nepalese mental health Norway",
+      "online psychiatrist for Nepali in Norway",
+      "Nepali student mental health Oslo",
+    ],
+    practicalNote:
+      "Norway is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Norwegian afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at a Norwegian pharmacy (apotek), so medication needs are discussed openly, including whether registering with a local fastlege (regular GP) for prescribing and referral into the Norwegian system is the right next step. University student wellbeing services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 113 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
+  },
+  {
+    country: "Sweden",
+    slug: "sweden",
+    region: "Europe",
+    headline: "Mental health support for Nepalese in Sweden",
+    intro:
+      "Sweden's Nepali community, though small, has grown around Stockholm, Gothenburg and university towns like Uppsala and Lund, drawn by strong master's programmes in engineering, technology and design, though the introduction of tuition fees for non-EU students some years ago made Sweden a more significant financial commitment than it once was. Swedish bureaucracy for residence permits, personnummer (personal identity number) registration and healthcare enrolment can feel slow and impersonal to newcomers used to more direct systems, and Sweden's long, dark winters, similar to its Nordic neighbours, can meaningfully affect mood and motivation. Swedish social culture, valuing personal space, independence and a more reserved style of forming friendships, can be a genuine adjustment for those used to closer, more immediately communal social norms in Nepal, and a small, still-developing Nepali diaspora means fewer natural opportunities to build community or mark festivals together.",
+    commonConcerns: [
+      "Financial pressure and planning stress from tuition fees and Sweden's cost of living relative to income",
+      "Anxiety navigating Swedish bureaucracy for residence permits, personnummer and healthcare registration",
+      "Seasonal low mood and fatigue during long, dark Swedish winters",
+      "Isolation from being part of a small, still-developing Nepali community",
+      "Adjustment stress from Swedish social culture's more reserved approach to forming friendships",
+      "Academic pressure and homesickness balancing demanding coursework with distance from family",
+      "Depression and low motivation linked to social isolation and limited community nearby",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist Sweden",
+      "Nepalese mental health Sweden",
+      "online psychiatrist for Nepali in Sweden",
+      "Nepali student mental health Stockholm",
+    ],
+    practicalNote:
+      "Sweden is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Swedish afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at a Swedish pharmacy (apotek), so medication needs are discussed openly, including whether registering with a local vårdcentral (health centre) for prescribing and referral into the Swedish system is the right next step. University student health services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
+  },
+  {
+    country: "China",
+    slug: "china",
+    region: "Asia",
+    headline: "Mental health support for Nepalese in China",
+    intro:
+      "China draws a steady stream of Nepali students, many on Chinese government scholarships, into medical, engineering and Mandarin-language programmes in cities such as Beijing, Shanghai, Kunming and Chengdu, alongside a smaller number of business owners and traders, particularly those connected to Nepal-China border trade. Mandarin-language demands, both for academic coursework and for daily life outside a relatively insulated international-student environment, can be intense, and China's own strict internet regulations mean some of the everyday tools students might otherwise use to stay connected with family and friends back home are unavailable or require a workaround, adding a subtle but real layer of disconnection. China's vast scale and fast-paced, high-pressure academic and work culture can also feel overwhelming, particularly for students arriving from smaller towns in Nepal, and a Nepali community that is significant in aggregate but often spread thinly across a huge country means the actual day-to-day experience for many students is one of real isolation.",
+    commonConcerns: [
+      "Anxiety and stress from intensive Mandarin-language requirements for coursework and daily life",
+      "Isolation from disrupted contact with family due to internet restrictions and unfamiliar communication platforms",
+      "Academic pressure in competitive, scholarship-tied medical, engineering or language programmes",
+      "Adjustment stress to China's fast-paced, high-pressure academic and urban culture",
+      "Depression and homesickness sharpened by China's vast scale and thinly-spread Nepali community",
+      "Financial pressure for students and traders navigating an unfamiliar, large-scale economy",
+      "Difficulty accessing Nepali-language or culturally familiar mental health support locally",
+    ],
+    searchTerms: [
+      "Nepali psychiatrist China",
+      "Nepalese mental health China",
+      "online psychiatrist for Nepali in China",
+      "Nepali student mental health Beijing",
+    ],
+    practicalNote:
+      "China is usually around two hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal typically lines up with a Chinese night-time slot after classes or work. A Nepal-issued prescription cannot be assumed to be recognised at a Chinese pharmacy, so medication needs are discussed openly, including whether registering with a local clinic or university health service for prescribing is the right next step. Given China's internet restrictions, it's worth confirming in advance which video-call platform will work reliably for a scheduled consultation. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services or the nearest hospital should not wait for a scheduled online appointment.",
+  },
 ];
 
 export function getAbroadGuide(slug: string) {
