@@ -38,11 +38,11 @@ function buildConditionLeaflet(slug: string, title: string): Resource {
     relatedConditionSlug: slug,
     sections: [
       { heading: `What is ${condition.title}?`, body: condition.overview },
-      { heading: "Common symptoms", bullets: condition.symptoms.slice(0, 8) },
-      { heading: "What causes it", body: condition.causes },
-      { heading: "Treatment options", body: condition.treatmentOverview },
-      { heading: "Self-help tips", bullets: condition.lifestyleAdvice.slice(0, 6) },
-      { heading: "Prognosis", body: condition.prognosis },
+      { heading: `Common symptoms of ${condition.title}`, bullets: condition.symptoms.slice(0, 8) },
+      { heading: `What causes ${condition.title}?`, body: condition.causes },
+      { heading: `Treatment options for ${condition.title}`, body: condition.treatmentOverview },
+      { heading: `Self-help tips for ${condition.title}`, bullets: condition.lifestyleAdvice.slice(0, 6) },
+      { heading: `What is the outlook (prognosis) for ${condition.title}?`, body: condition.prognosis },
     ],
     urgentNote: condition.urgentCare,
   };
@@ -64,7 +64,7 @@ function buildFamilySheet(slug: string, title: string): Resource {
       bullets: condition.howTo.steps.map((step) => `${step.name}: ${step.text}`),
     });
   } else {
-    sections.push({ heading: "How to support your family member", body: condition.familyGuidance });
+    sections.push({ heading: `How to support a family member with ${condition.title}`, body: condition.familyGuidance });
   }
   sections.push({
     heading: "Taking care of yourself as a caregiver",
