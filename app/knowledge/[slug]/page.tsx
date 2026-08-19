@@ -11,10 +11,27 @@ function getArticle(slug: string) {
 }
 
 // Generic clinical labels rewritten to how patients actually phrase these
-// questions when searching. Only rewrites known generic headings — bespoke,
-// already-specific headings (including the many written directly in Nepali)
-// are left exactly as authored.
-const genericHeadingQuestions: Record<string, string> = {
+// questions when searching, with the article's specific condition name
+// inserted for SEO/AEO heading-to-query matching (e.g. "What causes
+// dementia?" instead of a generic "What causes it?" repeated on every
+// article). Only rewrites known generic headings — bespoke, already-specific
+// headings (including the many written directly in Nepali) are left exactly
+// as authored.
+const genericHeadingQuestions: Record<string, (topic: string) => string> = {
+  "Clinical Definition": (topic) => `What is ${topic}?`,
+  "Signs and Symptoms": (topic) => `What are the signs and symptoms of ${topic}?`,
+  "Symptoms": (topic) => `What are the symptoms of ${topic}?`,
+  "Causes": (topic) => `What causes ${topic}, and what are the risk factors?`,
+  "Risk Factors": (topic) => `What are the risk factors for ${topic}?`,
+  "Transmission": (topic) => `Is ${topic} inherited or contagious?`,
+  "Diagnosis": (topic) => `How is ${topic} diagnosed?`,
+  "Types": (topic) => `What are the types of ${topic}?`,
+  "Treatment": (topic) => `How is ${topic} treated?`,
+};
+
+// Fallback wording used only if a generic heading somehow appears on an
+// article with no topic set.
+const genericHeadingFallback: Record<string, string> = {
   "Clinical Definition": "What is it?",
   "Signs and Symptoms": "What are the signs and symptoms?",
   "Symptoms": "What are the symptoms?",
@@ -26,8 +43,10 @@ const genericHeadingQuestions: Record<string, string> = {
   "Treatment": "How is it treated?",
 };
 
-function displayHeading(heading: string) {
-  return genericHeadingQuestions[heading] ?? heading;
+function displayHeading(heading: string, topic?: string) {
+  const build = genericHeadingQuestions[heading];
+  if (!build) return heading;
+  return topic ? build(topic) : genericHeadingFallback[heading];
 }
 
 export function generateStaticParams() {
@@ -274,7 +293,7 @@ export default async function KnowledgeArticlePage({
                   href={`#section-${index + 1}`}
                   className="block rounded-md px-3 py-2 text-sm font-semibold text-stone-600 transition hover:bg-sage-50 hover:text-sage-700"
                 >
-                  {displayHeading(section.heading)}
+                  {displayHeading(section.heading, article.topic)}
                 </a>
               ))}
             </nav>
@@ -306,7 +325,7 @@ export default async function KnowledgeArticlePage({
               className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8"
             >
               <h2 className="text-3xl font-bold text-sage-950">
-                {displayHeading(section.heading)}
+                {displayHeading(section.heading, article.topic)}
               </h2>
               <div className="mt-5 space-y-4 text-lg leading-9 text-stone-700">
                 {section.body.split("\n").map((paragraph) => (

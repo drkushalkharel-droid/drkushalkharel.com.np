@@ -11,6 +11,11 @@ export type DocArticle = {
   sourceFile: string;
   description: string;
   sections: DocArticleSection[];
+  // Short, clean English condition name (e.g. "dementia", "PTSD") used to
+  // build SEO/AEO-friendly section headings for articles that still use
+  // generic clinical section labels ("Causes", "Diagnosis", etc.) instead
+  // of bespoke headings. Only needed where such generic labels are used.
+  topic?: string;
 };
 
 export const docArticles = [
@@ -63,6 +68,7 @@ export const docArticles = [
   {
     "slug": "adhd",
     "title": "Attention-Deficit/ Hyperactivity Disorder",
+    "topic": "attention-deficit/hyperactivity disorder (ADHD)",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "adhd.docx",
@@ -105,6 +111,7 @@ export const docArticles = [
   {
     "slug": "alcohol-dependence-syndrome",
     "title": "Alcohol Dependence Syndrome",
+    "topic": "alcohol dependence syndrome",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "ALCOHOL DEPENDENCE SYNDROME (ADS) copy.docx",
@@ -139,6 +146,7 @@ export const docArticles = [
   {
     "slug": "autism-spectrum-disorder",
     "title": "Autism Spectrum Disorder",
+    "topic": "autism spectrum disorder",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "autismspectrumdisorder.docx",
@@ -181,6 +189,7 @@ export const docArticles = [
   {
     "slug": "delirium",
     "title": "Delirium",
+    "topic": "delirium",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "delerium.docx",
@@ -223,6 +232,7 @@ export const docArticles = [
   {
     "slug": "dementia",
     "title": "Dementia",
+    "topic": "dementia",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "dementia.docx",
@@ -265,6 +275,7 @@ export const docArticles = [
   {
     "slug": "mania",
     "title": "MANIA",
+    "topic": "mania",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "MANIA.docx",
@@ -303,6 +314,7 @@ export const docArticles = [
   {
     "slug": "intellectual-development-disorder",
     "title": "Intellectual Development Disorder",
+    "topic": "intellectual development disorder",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "intellectualdevelopment disorder.docx",
@@ -345,6 +357,7 @@ export const docArticles = [
   {
     "slug": "insomnia",
     "title": "Insomnia",
+    "topic": "insomnia",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "INSOMNIA copy.docx",
@@ -387,6 +400,7 @@ export const docArticles = [
   {
     "slug": "gender-dysphoria",
     "title": "Gender Dysphoria",
+    "topic": "gender dysphoria",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "GENDER DYSPHORIA copy.docx",
@@ -429,6 +443,7 @@ export const docArticles = [
   {
     "slug": "elimination-disorder",
     "title": "Elimination Disorder",
+    "topic": "elimination disorder",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "ELIMINATION DISORDER copy.docx",
@@ -471,6 +486,7 @@ export const docArticles = [
   {
     "slug": "eating-disorder",
     "title": "Eating Disorder",
+    "topic": "eating disorder",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "EATING DISORDER copy.docx",
@@ -513,6 +529,7 @@ export const docArticles = [
   {
     "slug": "motor-disorder",
     "title": "Motor Disorder",
+    "topic": "motor disorder",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "motordisorder.docx",
@@ -555,6 +572,7 @@ export const docArticles = [
   {
     "slug": "ptsd",
     "title": "Post-Traumatic Stress Disorder",
+    "topic": "PTSD",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "PTSD copy.docx",
@@ -597,6 +615,7 @@ export const docArticles = [
   {
     "slug": "restless-legs-syndrome",
     "title": "Restless Legs Syndrome",
+    "topic": "restless legs syndrome",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "RESTLESS LEG SYNDROME copy.docx",
@@ -639,6 +658,7 @@ export const docArticles = [
   {
     "slug": "schizophrenia",
     "title": "Schizophrenia",
+    "topic": "schizophrenia",
     "category": "Psychiatry",
     "language": "Nepali",
     "sourceFile": "schizophrenia.docx",
@@ -1013,6 +1033,7 @@ export const docArticles = [
   {
     "slug": "bipolar-disorder",
     "title": "Bipolar Disorder",
+    "topic": "bipolar disorder",
     "category": "Psychiatry",
     "language": "Bilingual",
     "sourceFile": "generated",
@@ -1029,6 +1050,7 @@ export const docArticles = [
   {
     "slug": "obsessive-compulsive-disorder",
     "title": "Obsessive-Compulsive Disorder (OCD)",
+    "topic": "obsessive-compulsive disorder (OCD)",
     "category": "Psychiatry",
     "language": "Bilingual",
     "sourceFile": "generated",
@@ -1044,6 +1066,7 @@ export const docArticles = [
   {
     "slug": "substance-use-disorder",
     "title": "Substance Use Disorder",
+    "topic": "substance use disorder",
     "category": "Addiction",
     "language": "Bilingual",
     "sourceFile": "generated",
@@ -1061,6 +1084,7 @@ export const docArticles = [
   {
     "slug": "adjustment-disorder",
     "title": "Adjustment Disorder",
+    "topic": "adjustment disorder",
     "category": "Stress",
     "language": "Bilingual",
     "sourceFile": "generated",
