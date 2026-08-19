@@ -163,6 +163,25 @@ export default async function NepaleseAbroadPage({
         </div>
       </section>
 
+      {guide.testimonial && (
+        <section className="mx-auto max-w-4xl px-6 py-14 lg:px-8">
+          <figure className="rounded-lg border border-sage-200 bg-sage-50 p-8">
+            <blockquote className="text-lg leading-8 text-stone-800">
+              &ldquo;{guide.testimonial.quote}&rdquo;
+            </blockquote>
+            <figcaption className="mt-5 font-semibold text-sage-800">
+              &mdash; {guide.testimonial.attribution}
+            </figcaption>
+          </figure>
+          <p className="mt-3 text-center text-sm text-stone-500">
+            Shared with permission. Names and identifying details are withheld to protect patient privacy.{" "}
+            <Link href="/patient-testimonials" className="underline hover:text-sage-700">
+              Read more patient experiences
+            </Link>
+          </p>
+        </section>
+      )}
+
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-3">
@@ -211,6 +230,50 @@ export default async function NepaleseAbroadPage({
                 WhatsApp consultation
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+          <h2 className="text-2xl font-bold text-stone-950">Related reading</h2>
+          <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <Link
+              href="/blog/mental-health-nepali-migrant-workers"
+              className="rounded-lg border border-stone-200 bg-stone-50 p-5 font-semibold text-stone-800 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+            >
+              Mental health support for Nepali migrant workers abroad
+            </Link>
+            <Link
+              href="/blog/mental-health-nepali-students-abroad"
+              className="rounded-lg border border-stone-200 bg-stone-50 p-5 font-semibold text-stone-800 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+            >
+              Mental health support for Nepali students abroad
+            </Link>
+            <Link
+              href="/blog/first-psychiatric-appointment-what-to-expect-nepal"
+              className="rounded-lg border border-stone-200 bg-stone-50 p-5 font-semibold text-stone-800 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+            >
+              What to expect at your first psychiatric appointment
+            </Link>
+            <Link
+              href="/blog/sending-psychiatric-medications-abroad-nepal"
+              className="rounded-lg border border-stone-200 bg-stone-50 p-5 font-semibold text-stone-800 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+            >
+              Sending psychiatric medications abroad from Nepal
+            </Link>
+            <Link
+              href="/psychiatric-care-for-family-in-nepal"
+              className="rounded-lg border border-stone-200 bg-stone-50 p-5 font-semibold text-stone-800 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+            >
+              Arranging psychiatric care for family still in Nepal
+            </Link>
+            <Link
+              href="/returning-to-nepal-after-abroad"
+              className="rounded-lg border border-stone-200 bg-stone-50 p-5 font-semibold text-stone-800 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+            >
+              Returning to Nepal after living abroad
+            </Link>
           </div>
         </div>
       </section>

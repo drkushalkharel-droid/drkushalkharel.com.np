@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Globe2, Mail, MessageCircle, Phone } from "lucide-react";
+import { Globe2, Mail, MessageCircle, Phone, Quote } from "lucide-react";
 import { abroadGuides } from "../data/abroad";
 import { buildHowToJsonLd } from "../lib/schema";
 
@@ -57,6 +57,29 @@ const faqs = [
     question: "Is the consultation conducted in Nepali or English?",
     answer:
       "Consultations can be conducted in Nepali, English, or a mix of both, whichever you're most comfortable with.",
+  },
+];
+
+const testimonials = [
+  {
+    quote:
+      "I was looking for psychiatric support from Nepal while living abroad and came across Dr. Kushal's online consultation service. The entire experience was straightforward and comfortable. He took time to understand my concerns and provided clear explanations rather than giving a quick response. The flexibility of online consultation made it possible for me to seek professional help despite being outside Nepal.",
+    attribution: "Confidential international patient",
+  },
+  {
+    quote:
+      "One of the things I appreciated most about my consultation was being able to speak openly without feeling judged. Dr. Kushal listened patiently and helped me organise my thoughts about what I had been experiencing. The online format was convenient and made it much easier to continue seeking mental health support from abroad.",
+    attribution: "Confidential international patient",
+  },
+  {
+    quote:
+      "I had been postponing psychiatric consultation because I was unsure whether I really needed professional help. After speaking with Dr. Kushal, I understood my concerns differently. I found his approach calm, structured and non-judgemental, and the online consultation was easy to arrange from another country.",
+    attribution: "Confidential international patient",
+  },
+  {
+    quote:
+      "I was able to discuss concerns that I had been keeping to myself for a long time. He listened carefully and explained the possible psychological and psychiatric factors involved in a way that I could understand. Receiving psychiatric counselling online was particularly useful for me because I currently live outside Nepal.",
+    attribution: "Confidential international patient",
   },
 ];
 
@@ -250,6 +273,38 @@ export default function NepaleseAbroadHubPage() {
           >
             Read the guide
           </Link>
+        </div>
+      </section>
+
+      <section>
+        <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+          <h2 className="text-3xl font-bold text-stone-950">What Nepalis abroad say</h2>
+          <p className="mt-4 max-w-3xl leading-8 text-stone-600">
+            Real, anonymised patient testimonials. Names and identifying
+            details are withheld, with each patient&apos;s permission, to
+            protect their privacy.
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {testimonials.map((item, index) => (
+              <figure
+                key={index}
+                className="flex h-full flex-col rounded-lg border border-stone-200 bg-white p-7 shadow-sm"
+              >
+                <Quote size={28} className="text-clay-300" aria-hidden="true" />
+                <blockquote className="mt-4 flex-1 leading-7 text-stone-700">
+                  &ldquo;{item.quote}&rdquo;
+                </blockquote>
+                <figcaption className="mt-5 font-semibold text-sage-800">
+                  &mdash; {item.attribution}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <p className="mt-8 text-center">
+            <Link href="/patient-testimonials" className="font-semibold text-sage-700 underline">
+              Read more patient testimonials, including country-specific stories
+            </Link>
+          </p>
         </div>
       </section>
 

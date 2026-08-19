@@ -52,6 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     { url: `${siteUrl}/psychiatrist-for-nepalis-abroad`, lastModified: new Date("2026-07-29"), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${siteUrl}/psychiatric-care-for-family-in-nepal`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/patient-testimonials`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
 
     {
       url: `${siteUrl}/anxiety`,

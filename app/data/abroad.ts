@@ -7,6 +7,12 @@ export type AbroadGuide = {
   commonConcerns: string[];
   searchTerms: string[];
   practicalNote: string;
+  // Real, anonymised patient quotes. Names and identifying details are
+  // withheld by the patient's request — do not add a name or invent one.
+  testimonial?: {
+    quote: string;
+    attribution: string;
+  };
 };
 
 export const abroadGuides: AbroadGuide[] = [
@@ -34,6 +40,11 @@ export const abroadGuides: AbroadGuide[] = [
     ],
     practicalNote:
       "Video consultations with Kathmandu can usually be arranged for early morning or late evening on the Nepal side, which lines up with evening or morning hours across most US time zones, so it helps to mention your specific state when booking. A prescription written in Nepal cannot be assumed to be valid or fillable at a US pharmacy, so medication questions are discussed honestly, including when it makes more sense to arrange ongoing care with a licensed local prescriber who can also work with US insurance. Many university campuses also offer a counselling center that can provide free short-term support between psychiatric appointments, and it helps to have your current medicines and any prior diagnosis ready before the call. If there is any thought of self-harm, a safety crisis, confusion or an overdose, calling 911 or going to the nearest emergency department is the right first step rather than waiting for a scheduled online appointment.",
+    testimonial: {
+      quote:
+        "I had been dealing with my mental health concerns for quite some time before deciding to seek professional help. Dr. Kushal created a comfortable environment where I could discuss things openly. He listened carefully and asked questions that helped clarify what I had been experiencing. I particularly appreciated the clear explanation of the symptoms and treatment options. The online format made it possible for me to receive psychiatric support while living in the USA, which was extremely convenient.",
+      attribution: "Confidential patient, USA",
+    },
   },
   {
     country: "UK",
@@ -59,6 +70,11 @@ export const abroadGuides: AbroadGuide[] = [
     ],
     practicalNote:
       "Nepal is typically only a few hours behind UK clocks, which usually makes it straightforward to find a video-call slot that works for both sides without very early or late hours. As with any consultation from abroad, a Nepal-written prescription cannot simply be taken to a UK pharmacy, so medication needs are discussed openly, including whether registering with a local GP for an NHS mental health referral, or continuing privately, is the more appropriate route for ongoing prescribing. University wellbeing services and student unions can also offer interim support while longer-term care is arranged, and bringing any previous diagnosis or GP letters to the first call helps build a fuller picture quickly. If there are thoughts of self-harm, a mental health crisis or safety concerns, contacting UK emergency services or attending A&E is safer than waiting for a scheduled online appointment.",
+    testimonial: {
+      quote:
+        "My experience with Dr. Kushal through online psychiatric counselling was very positive. I felt that my concerns were taken seriously and that I had enough time to explain what I was going through. He communicated clearly and explained the possible treatment approaches without making things unnecessarily complicated. I also appreciated the professional and confidential nature of the consultation. Being able to access psychiatric support online while living in the UK made the process much easier for me.",
+      attribution: "Confidential patient, United Kingdom",
+    },
   },
   {
     country: "Australia",
@@ -84,6 +100,11 @@ export const abroadGuides: AbroadGuide[] = [
     ],
     practicalNote:
       "Australia is usually four to six hours ahead of Kathmandu depending on the state and season, which generally makes it easier to schedule a video consultation without very unsociable hours on either side. A prescription issued in Nepal cannot be assumed to be recognised at an Australian pharmacy, so this is discussed honestly, including whether registering with a local GP or student health service, often accessible through Overseas Student Health Cover, is the better long-term option for ongoing prescribing. University counselling services can also provide free interim support between appointments, and it is worth checking what your specific OSHC policy actually covers before assuming mental health visits are excluded. For urgent risk, suicidal thoughts, or a mental health crisis, calling 000 or presenting to a local emergency department is safer than waiting for a booked online appointment.",
+    testimonial: {
+      quote:
+        "Living in Australia, I wanted to speak with a psychiatrist who understood my background and with whom I could communicate comfortably. My online consultation with Dr. Kushal was professional and supportive. He took time to understand my concerns and explained the possible reasons behind my symptoms in simple language. I appreciated that the consultation was not rushed. It helped me understand what I was experiencing and gave me a clearer plan for managing my mental health.",
+      attribution: "Confidential patient, Australia",
+    },
   },
   {
     country: "Canada",
@@ -159,6 +180,11 @@ export const abroadGuides: AbroadGuide[] = [
     ],
     practicalNote:
       "Dubai is usually around one to two hours behind Kathmandu, so video consultations can often be scheduled fairly easily around work shifts, with only a small time difference to plan around and finding a private moment away from shared accommodation the bigger practical challenge. A Nepal-issued prescription cannot be assumed to be recognised by a UAE pharmacy, so medication questions are discussed honestly, including when arranging care through a local clinic is the safer option. Consultations are kept confidential and are never shared with an employer, and using headphones and stepping outside during a break can help protect privacy during a call. If there is a medical emergency, thoughts of self-harm or an urgent safety concern, contacting local emergency services, the nearest hospital, or the Nepali embassy or a trusted community welfare contact should not wait for a scheduled online appointment. It is also worth telling the clinic in advance if your shift pattern rotates, so a workable slot can be found without you needing to request time off.",
+    testimonial: {
+      quote:
+        "I consulted Dr. Kushal online while living in Dubai. What I appreciated most was his patient and understanding approach. He tried to understand my situation rather than simply focusing on individual symptoms. The treatment options were explained clearly, and I felt comfortable asking questions. The online consultation was especially useful because I could receive professional psychiatric support without having to travel. Overall, the experience was reassuring and helped me take my mental health more seriously.",
+      attribution: "Confidential patient, Dubai, UAE",
+    },
   },
   {
     country: "Qatar",
@@ -184,6 +210,11 @@ export const abroadGuides: AbroadGuide[] = [
     ],
     practicalNote:
       "Qatar is usually around one to two hours behind Kathmandu, so arranging a video consultation is generally easier than for countries much further away, though shift patterns and limited free time still need to be planned around. A prescription from Nepal cannot be assumed to be usable at a pharmacy in Qatar, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace record, so concerns can be raised honestly without fear of it reaching an employer. Mental health symptoms are treatable and nothing to be ashamed of; for a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, a workplace welfare officer, or the Nepali embassy should not wait for a scheduled appointment. Bringing a rough timeline of symptoms and any recent changes at work or home to the first call helps make the most of a limited window of free time.",
+    testimonial: {
+      quote:
+        "Living in Qatar, I wanted to seek psychiatric support while being able to communicate comfortably about my concerns. My consultation with Dr. Kushal was reassuring and professional. He listened carefully, asked relevant questions and explained the situation in a way that was easy to understand. I felt respected throughout the consultation and did not feel judged for discussing my difficulties. The session gave me greater clarity about my mental health and helped me understand the available options for treatment.",
+      attribution: "Confidential patient, Qatar",
+    },
   },
   {
     country: "Japan",
@@ -209,6 +240,11 @@ export const abroadGuides: AbroadGuide[] = [
     ],
     practicalNote:
       "Japan is usually around three hours ahead of Kathmandu, so an evening video consultation on the Nepal side generally lines up well with a Japanese night-time slot after work or classes. A Nepal-issued prescription cannot be assumed to be usable at a Japanese pharmacy, so this is discussed honestly, including when registering with a local clinic for prescribing is the more realistic path. If there is a medical or safety emergency, calling Japan's emergency services or attending a nearby hospital is the right first step, and a Nepali psychiatrist can still help organise the story and next steps in Nepali when language makes explaining symptoms locally difficult, including preparing what to say to a local doctor or workplace health office if follow-up in Japanese becomes necessary.",
+    testimonial: {
+      quote:
+        "I was living in Japan when I decided to seek professional help for my mental health concerns. The online consultation with Dr. Kushal was comfortable and convenient. He listened carefully, asked relevant questions and explained my symptoms in a way that was easy to understand. I never felt rushed during the consultation. Being able to speak with a psychiatrist from Nepal while living abroad made accessing mental health support much easier for me.",
+      attribution: "Confidential patient, Japan",
+    },
   },
   {
     country: "Korea",
@@ -234,6 +270,11 @@ export const abroadGuides: AbroadGuide[] = [
     ],
     practicalNote:
       "South Korea is usually around three hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal typically lines up with a Korean night-time slot after work. A Nepal-written prescription cannot be assumed to be recognised at a Korean pharmacy, so this is discussed openly, including when local clinic care is the more workable long-term option. Sleep problems, panic, anger, persistent sadness or increasing alcohol use can be early signs professional support is needed, and naming these early rather than waiting until a crisis makes treatment considerably easier. It also helps to know that a phone or video consultation from a dormitory room can be kept just as confidential as an in-person visit, with nothing shared with an employer. For a medical emergency or safety concern, local emergency services or the nearest hospital should be contacted rather than waiting for a scheduled appointment.",
+    testimonial: {
+      quote:
+        "I had been struggling with several personal and emotional difficulties and was unsure whether online psychiatric counselling would be helpful. Dr. Kushal made me feel comfortable from the beginning. He listened without judgement and gave me enough time to explain what I was going through. His explanations helped me understand my symptoms and reactions much better. The consultation gave me clarity and a sense of direction regarding what I could do next.",
+      attribution: "Confidential patient, South Korea",
+    },
   },
   {
     country: "India",
@@ -309,6 +350,11 @@ export const abroadGuides: AbroadGuide[] = [
     ],
     practicalNote:
       "Belgium is usually around three to four hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the Belgian afternoon or early evening without unreasonable hours for either side. A Nepal-written prescription cannot be assumed to be valid at a Belgian pharmacy, so medication questions are discussed openly, including whether registering with a local huisarts or médecin généraliste for prescribing is the better long-term step. Speaking with a psychiatrist in Nepali or English first can also help clarify what to say later in a French or Dutch-language appointment if one becomes necessary, particularly for anyone unsure which regional health service applies to their address. Professional guidance is especially important if symptoms persist, affect work or study, or involve thoughts of self-harm or substance use, and any safety emergency should go to local emergency services rather than wait for an online appointment.",
+    testimonial: {
+      quote:
+        "I consulted Dr. Kushal from Belgium and found the online session very helpful. I was initially hesitant about discussing my mental health through an online appointment, but the consultation felt natural and comfortable. He listened patiently and tried to understand my concerns in the context of my personal circumstances. The explanations were clear and practical. I finished the consultation with a much better understanding of my difficulties and felt more confident about taking the appropriate next steps.",
+      attribution: "Confidential patient, Belgium",
+    },
   },
   {
     country: "Germany",
@@ -384,6 +430,11 @@ export const abroadGuides: AbroadGuide[] = [
     ],
     practicalNote:
       "Malaysia is usually around two hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal typically lines up with a Malaysian night-time slot after work. A Nepal-issued prescription cannot be assumed to be recognised at a Malaysian pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace record. If a passport has been retained by an employer, this is a separate legal and welfare matter best raised with the Nepali embassy or a labour welfare organisation alongside any mental health support. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+    testimonial: {
+      quote:
+        "The online psychiatric consultation was convenient and professional. Dr. Kushal gave me adequate time to explain my concerns and listened carefully before discussing possible explanations and treatment options. I appreciated the fact that I could ask questions and clarify my doubts during the session. The consultation helped me understand my symptoms better and reduced some of the uncertainty I had been experiencing. Being able to access psychiatric care remotely while living in Malaysia was particularly helpful.",
+      attribution: "Confidential patient, Malaysia",
+    },
   },
   {
     country: "Kuwait",

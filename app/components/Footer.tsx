@@ -255,6 +255,14 @@ export default function Footer() {
               Nepalese Abroad
             </Link>
 
+            <Link href="/psychiatric-care-for-family-in-nepal" className="block hover:text-white transition">
+              Family Care in Nepal from Abroad
+            </Link>
+
+            <Link href="/patient-testimonials" className="block hover:text-white transition">
+              Patient Testimonials
+            </Link>
+
             <Link href="/psychiatrist-for-nepalis-abroad" className="block hover:text-white transition">
               Psychiatrist for Nepalis Abroad
             </Link>
