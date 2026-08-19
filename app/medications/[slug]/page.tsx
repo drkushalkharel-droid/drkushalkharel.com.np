@@ -107,29 +107,29 @@ export default async function MedicationPage({
           <p>{med.whatItIs}</p>
         </Section>
 
-        <Section title="Common indications">
+        <Section title={`What is ${med.name} commonly used for?`}>
           <ul className="list-disc space-y-2 pl-5">
             {med.commonIndications.map((item) => <li key={item}>{item}</li>)}
           </ul>
         </Section>
 
-        <Section title="Common side effects">
+        <Section title={`What are the common side effects of ${med.name}?`}>
           <ul className="list-disc space-y-2 pl-5">
             {med.commonSideEffects.map((item) => <li key={item}>{item}</li>)}
           </ul>
         </Section>
 
-        <Section title="Precautions and warnings">
+        <Section title={`What precautions and warnings apply to ${med.name}?`}>
           <ul className="list-disc space-y-2 pl-5">
             {med.precautions.map((item) => <li key={item}>{item}</li>)}
           </ul>
         </Section>
 
-        <Section title="How long does it take to work?">
+        <Section title={`How long does ${med.name} take to work?`}>
           <p>{med.timeToEffect}</p>
         </Section>
 
-        <Section title="Stopping or changing this medication">
+        <Section title={`Stopping or changing ${med.name}`}>
           <p>{med.discontinuation}</p>
         </Section>
 
