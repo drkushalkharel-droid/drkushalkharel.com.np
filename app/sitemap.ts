@@ -158,6 +158,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/psychiatric-medication-side-effects`, lastModified: new Date("2026-08-14"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/returning-to-nepal-after-abroad`, lastModified: new Date("2026-08-14"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/corporate-mental-health-partner-nepal`, lastModified: new Date("2026-08-14"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteUrl}/depression-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${siteUrl}/panic-attack-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/adhd-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/bipolar-disorder-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/schizophrenia-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/psychosis-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.85 },
 
     {
       url: `${siteUrl}/counselling-in-nepal`,

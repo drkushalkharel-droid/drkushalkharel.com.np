@@ -1476,6 +1476,450 @@ export const audiencePages: AudiencePage[] = [
       },
     ],
   },
+  {
+    slug: "depression-treatment-kathmandu",
+    title: "Depression Treatment in Kathmandu, Nepal",
+    headline: "Depression treatment in Kathmandu, Nepal",
+    shortDescription:
+      "Evidence-based depression treatment in Kathmandu — psychiatric assessment, antidepressant medication where appropriate, and structured therapy such as CBT — from Dr. Kushal Kharel, Consultant Psychiatrist.",
+    intro:
+      "Depression is more than ordinary sadness — it's a persistent low mood, loss of interest or energy, and changes in sleep, appetite or concentration that last most of the day, most days, for two weeks or more, and it is genuinely treatable. Dr. Kushal Kharel, a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) in Kalanki, Kathmandu, provides a full psychiatric assessment to confirm the diagnosis and its severity, followed by an individualised treatment plan — which may include antidepressant medication, structured therapy such as CBT, or both — available in person or online.",
+    whoThisIsFor: [
+      "Anyone with persistent low mood, loss of interest or low energy lasting two weeks or more",
+      "People whose sleep, appetite or concentration has changed alongside a low mood",
+      "People who've tried to manage low mood alone without lasting improvement",
+      "Anyone unsure whether what they're feeling is depression or ordinary sadness",
+      "People with depression accompanied by anxiety or physical symptoms",
+      "Postpartum, adolescent or elderly patients with depression needing an age-appropriate approach",
+      "Family members concerned about a loved one who seems persistently low or withdrawn",
+    ],
+    commonConcerns: [
+      "Persistent low mood, tearfulness or emptiness",
+      "Loss of interest or pleasure in previously enjoyed activities",
+      "Low energy, fatigue and reduced motivation",
+      "Sleep disturbance — insomnia or oversleeping",
+      "Appetite and weight changes",
+      "Difficulty concentrating or making decisions",
+      "Feelings of worthlessness, guilt or hopelessness",
+      "Thoughts of self-harm or that life isn't worth living",
+    ],
+    practicalNote:
+      "Treatment is individualised: mild depression often responds well to structured therapy alone, moderate-to-severe depression generally needs a combination of antidepressant medication and therapy, and response to medication is reviewed and adjusted over the following weeks rather than assumed to be right the first time. If depression includes any thoughts of self-harm or suicide, or is accompanied by hallucinations or delusions, seek an urgent assessment or go to the nearest emergency department rather than waiting for a scheduled appointment.",
+    searchTerms: [
+      "Depression treatment Kathmandu",
+      "Depression treatment Nepal",
+      "Psychiatrist for depression Kathmandu",
+      "Depression doctor Nepal",
+      "Antidepressant treatment Kathmandu",
+      "Clinical depression treatment Nepal",
+    ],
+    faqs: [
+      {
+        question: "How is depression treated in Kathmandu?",
+        answer:
+          "Treatment follows the same evidence-based approach used internationally: a full psychiatric assessment to confirm diagnosis and severity, followed by antidepressant medication, structured therapy such as CBT, or a combination of both, individualised to the severity and nature of your symptoms.",
+      },
+      {
+        question: "Do I need medication, or can therapy alone treat depression?",
+        answer:
+          "This depends on severity. Mild depression often responds well to therapy alone. Moderate-to-severe depression generally benefits from combining medication with therapy, since the two work through different but complementary mechanisms.",
+      },
+      {
+        question: "How long does it take for antidepressants to work?",
+        answer:
+          "Most antidepressants take two to four weeks to show a noticeable effect, with full benefit often taking six to eight weeks, so dosing and choice of medication are reviewed and adjusted over this period rather than expected to be right immediately.",
+      },
+      {
+        question: "Is depression treatment available online?",
+        answer:
+          "Yes, both assessment and follow-up can be conducted online, alongside in-person consultation at the Kalanki clinic in Kathmandu, and medication can be prescribed through either format.",
+      },
+      {
+        question: "What if I've tried an antidepressant before and it didn't help?",
+        answer:
+          "This is common and doesn't mean depression is untreatable — it often means the medication, dose or diagnosis needs re-evaluating. A fresh assessment can review what was tried before and adjust the approach accordingly.",
+      },
+      {
+        question: "Is postpartum or adolescent depression treated differently?",
+        answer:
+          "Yes, treatment is adapted for the specific context — postpartum depression involves considerations around breastfeeding and the baby, while adolescent depression involves family involvement and developmentally appropriate therapy, both handled as part of general psychiatric practice.",
+      },
+      {
+        question: "What should I do if depression includes thoughts of self-harm?",
+        answer:
+          "Seek an urgent assessment or go to the nearest emergency department immediately rather than waiting for a scheduled appointment — this is treated as a safety priority, not routine follow-up.",
+      },
+    ],
+  },
+  {
+    slug: "panic-attack-treatment-kathmandu",
+    title: "Panic Attack Treatment in Kathmandu, Nepal",
+    headline: "Panic attack treatment in Kathmandu, Nepal",
+    shortDescription:
+      "Assessment and evidence-based treatment for panic attacks and panic disorder in Kathmandu, including CBT-based techniques and medication where appropriate, from Dr. Kushal Kharel, Consultant Psychiatrist.",
+    intro:
+      "A panic attack — a sudden surge of intense fear with a racing heart, breathlessness, chest tightness and a feeling of losing control — is frightening enough that many people first go to an emergency room believing it's a heart attack. Once a medical cause has been ruled out, panic attacks are highly treatable. Dr. Kushal Kharel provides psychiatric assessment and treatment for panic attacks and panic disorder in Kathmandu, in person at the Kalanki clinic or online, combining CBT-based techniques with medication when needed.",
+    whoThisIsFor: [
+      "Anyone who has had one or more sudden episodes of intense fear with physical symptoms",
+      "People who've been to an emergency room for panic symptoms and been told their heart is fine",
+      "People experiencing recurrent panic attacks with ongoing worry about the next one",
+      "People avoiding places or situations for fear of triggering an attack",
+      "Anyone unsure whether their symptoms are panic, a medical condition, or both",
+      "People whose panic attacks are affecting work, travel or daily routine",
+    ],
+    commonConcerns: [
+      "Sudden episodes of intense fear peaking within minutes",
+      "Racing heart, chest tightness, breathlessness and dizziness during an attack",
+      "Fear of dying, losing control or having a heart attack during an episode",
+      "Persistent worry about when the next attack will happen",
+      "Avoidance of places associated with a previous attack",
+      "Distinguishing panic symptoms from a cardiac or other medical emergency",
+      "Panic attacks occurring alongside generalized anxiety or social anxiety",
+    ],
+    practicalNote:
+      "Treatment typically combines CBT-based techniques — including breathing retraining and gradual exposure to avoided situations — with short-term or longer-term medication where appropriate, depending on frequency and severity. A first-ever panic attack, new or unexplained chest pain, or any symptoms you cannot confidently attribute to panic should be evaluated urgently as a possible medical emergency before being treated as psychiatric.",
+    searchTerms: [
+      "Panic attack treatment Kathmandu",
+      "Panic attack doctor Nepal",
+      "Panic disorder treatment Kathmandu",
+      "Psychiatrist for panic attacks Nepal",
+      "Panic attack vs heart attack Kathmandu",
+    ],
+    faqs: [
+      {
+        question: "How are panic attacks treated in Kathmandu?",
+        answer:
+          "After ruling out a medical cause where relevant, treatment combines CBT-based techniques — such as breathing retraining, understanding the panic cycle, and gradual exposure to avoided situations — with medication where the frequency or severity of attacks warrants it.",
+      },
+      {
+        question: "How can I tell if it's a panic attack or a heart attack?",
+        answer:
+          "You generally can't tell reliably in the moment, which is why a first-ever episode, new chest pain, or symptoms you're unsure about should be evaluated urgently as a possible medical emergency. Once a medical cause has been ruled out, recurring similar episodes are more confidently treated as panic.",
+      },
+      {
+        question: "Is medication necessary, or can panic attacks be treated with therapy alone?",
+        answer:
+          "Many people improve significantly with CBT-based therapy alone, particularly with consistent practice of the techniques between sessions. Medication is added when attacks are frequent, severe, or significantly restricting daily life, and this is decided individually.",
+      },
+      {
+        question: "Why do I feel like I'm going to die during a panic attack?",
+        answer:
+          "The physical symptoms of panic — racing heart, breathlessness, chest tightness — genuinely mimic a life-threatening event, which is the body's alarm system firing when there is no actual danger. Understanding this pattern is a core part of treatment.",
+      },
+      {
+        question: "I've started avoiding places where I've had attacks before — is this a problem?",
+        answer:
+          "Yes, avoidance tends to reinforce panic over time and can narrow your daily life considerably. Gradual, structured exposure to avoided situations, done at a manageable pace, is a core part of effective treatment.",
+      },
+      {
+        question: "Is panic attack treatment available online?",
+        answer:
+          "Yes, both assessment and ongoing CBT-based treatment can be conducted online, alongside in-person consultation at the Kalanki clinic in Kathmandu.",
+      },
+      {
+        question: "How long does treatment for panic attacks usually take?",
+        answer:
+          "This varies by individual, but many people see meaningful improvement within weeks of starting structured treatment, with the exact course depending on frequency of attacks, degree of avoidance, and response to initial treatment.",
+      },
+    ],
+  },
+  {
+    slug: "adhd-treatment-kathmandu",
+    title: "ADHD Assessment & Treatment in Kathmandu, Nepal",
+    headline: "ADHD assessment and treatment in Kathmandu, Nepal",
+    shortDescription:
+      "Psychiatric assessment and treatment for ADHD in children, adolescents and adults in Kathmandu, including stimulant and non-stimulant medication options and behavioral strategies.",
+    intro:
+      "ADHD (Attention-Deficit/Hyperactivity Disorder) affects children, adolescents and adults, and often goes unrecognised in adults who were never assessed as children, showing up instead as chronic disorganisation, procrastination or underachievement relative to ability. Dr. Kushal Kharel provides ADHD assessment and treatment in Kathmandu — a full clinical evaluation, followed by an individualised plan that may include stimulant or non-stimulant medication, behavioral strategies, or, where testing would clarify the picture further, referral for formal psychometric assessment.",
+    whoThisIsFor: [
+      "Parents concerned about a child's inattention, hyperactivity or impulsivity",
+      "Adults who suspect they have ADHD but were never assessed as children",
+      "Adults with chronic disorganisation, procrastination or difficulty finishing tasks",
+      "Students struggling academically despite putting in effort",
+      "Adults or children where ADHD needs to be distinguished from anxiety or a mood disorder",
+      "People who've tried general willpower-based strategies without lasting success",
+      "Families wanting a formal diagnosis before starting medication or requesting school accommodations",
+    ],
+    commonConcerns: [
+      "Inattention, distractibility and difficulty sustaining focus",
+      "Hyperactivity and restlessness (more prominent in children)",
+      "Impulsivity affecting decisions, relationships or work",
+      "Chronic disorganisation, procrastination and missed deadlines",
+      "Underachievement relative to ability at school, university or work",
+      "Emotional dysregulation and low frustration tolerance",
+      "Whether symptoms are ADHD, anxiety, or overlapping with both",
+      "Concerns about starting stimulant medication",
+    ],
+    practicalNote:
+      "Assessment includes a detailed developmental and symptom history — for children, this involves parents and, where useful, school input — and, where the clinical picture is unclear, referral for formal psychometric testing to clarify the diagnosis. Medication is not automatic: treatment is individualised and may combine stimulant or non-stimulant medication with behavioral strategies and, for children, parent guidance and school-based support.",
+    searchTerms: [
+      "ADHD assessment Kathmandu",
+      "ADHD treatment Nepal",
+      "ADHD doctor Kathmandu",
+      "Adult ADHD diagnosis Nepal",
+      "ADHD medication Kathmandu",
+      "ADHD psychiatrist Nepal",
+    ],
+    faqs: [
+      {
+        question: "How is ADHD diagnosed in Kathmandu?",
+        answer:
+          "Diagnosis is based on a detailed clinical history of symptoms and their impact across settings (home, school or work), following standard diagnostic criteria. For children, parent and, where useful, school input is included; formal psychometric testing can be added when the picture needs further clarification.",
+      },
+      {
+        question: "Can adults be diagnosed with ADHD for the first time?",
+        answer:
+          "Yes. Many adults were never assessed as children and instead grew up managing ADHD symptoms without a name for them. An adult ADHD assessment looks at both current symptoms and a childhood history consistent with the diagnosis.",
+      },
+      {
+        question: "Is medication always needed for ADHD?",
+        answer:
+          "No. Treatment is individualised and may include stimulant or non-stimulant medication, behavioral strategies, or both, depending on symptom severity, age and personal preference — medication is discussed as one option, not a default.",
+      },
+      {
+        question: "What's the difference between ADHD and anxiety, since both affect concentration?",
+        answer:
+          "Both can cause difficulty concentrating, but the underlying pattern differs — ADHD involves a longstanding, cross-situational pattern of inattention or hyperactivity typically present since childhood, while anxiety-related concentration difficulty is usually tied to worry and can have a later onset. Distinguishing between them, or identifying both together, is part of the assessment.",
+      },
+      {
+        question: "Are stimulant medications for ADHD available in Nepal?",
+        answer:
+          "Yes, though availability of a specific brand can vary by pharmacy; this is discussed as part of treatment planning, alongside non-stimulant alternatives where appropriate.",
+      },
+      {
+        question: "Is ADHD assessment available online?",
+        answer:
+          "An initial consultation can be conducted online, though formal psychometric testing, when needed, requires an in-person visit to the Kalanki clinic in Kathmandu.",
+      },
+      {
+        question: "Will my child's school be involved in the assessment?",
+        answer:
+          "Only with your consent. School input can be useful for a fuller picture of how symptoms affect functioning across settings, and is coordinated with parents rather than sought independently.",
+      },
+    ],
+  },
+  {
+    slug: "bipolar-disorder-treatment-kathmandu",
+    title: "Bipolar Disorder Treatment in Kathmandu, Nepal",
+    headline: "Bipolar disorder treatment in Kathmandu, Nepal",
+    shortDescription:
+      "Diagnosis and long-term management of Bipolar I and Bipolar II disorder in Kathmandu, including mood stabilizer medication, relapse prevention, and family psychoeducation.",
+    intro:
+      "Bipolar disorder involves episodes of depression alongside episodes of mania or hypomania — elevated, expansive or irritable mood with a marked increase in energy — and is frequently misdiagnosed as depression alone for years before the bipolar pattern is recognised, since hypomania can feel productive rather than problematic. Dr. Kushal Kharel provides assessment and long-term management of Bipolar I and Bipolar II disorder in Kathmandu, centred on mood stabilizer medication, relapse prevention, and helping both patients and families understand the illness and its early warning signs.",
+    whoThisIsFor: [
+      "Anyone diagnosed with, or suspected to have, Bipolar I or Bipolar II disorder",
+      "People treated for depression who've never fully responded to antidepressants alone",
+      "People who've experienced periods of unusually high energy, reduced need for sleep or racing thoughts",
+      "Family members noticing dramatic mood swings or risky behaviour in a loved one",
+      "Patients wanting a second opinion on an existing bipolar diagnosis or medication plan",
+      "People newly diagnosed who want to understand what long-term management involves",
+      "Families wanting guidance on recognising early warning signs of relapse",
+    ],
+    commonConcerns: [
+      "Distinguishing a manic or hypomanic episode from ordinary high energy or good mood",
+      "Depressive episodes that haven't responded to antidepressants alone",
+      "Reduced need for sleep, racing thoughts or rapid speech during high periods",
+      "Impulsive or risky behaviour during elevated mood — spending, driving, relationships",
+      "Understanding the difference between Bipolar I and Bipolar II",
+      "Starting and staying on mood stabilizer medication long-term",
+      "Recognising early warning signs of an emerging episode",
+      "Risk that antidepressants alone can trigger or worsen mania if not paired with a mood stabilizer",
+    ],
+    practicalNote:
+      "Mood stabilizer medication, with lithium as one gold-standard option, forms the cornerstone of both acute treatment and long-term relapse prevention, and antidepressants are generally avoided as monotherapy because of the risk of triggering mania. Ongoing follow-up, mood monitoring and family psychoeducation about early warning signs are central to reducing relapse. Seek emergency care immediately for severe mania with psychotic features, dangerous or risky behaviour, or any suicidal thoughts during a depressive phase.",
+    searchTerms: [
+      "Bipolar disorder treatment Kathmandu",
+      "Bipolar disorder doctor Nepal",
+      "Bipolar disorder psychiatrist Kathmandu",
+      "Mood stabilizer treatment Nepal",
+      "Bipolar I disorder treatment Kathmandu",
+      "Bipolar II disorder treatment Nepal",
+    ],
+    faqs: [
+      {
+        question: "How is bipolar disorder treated in Kathmandu?",
+        answer:
+          "Treatment centres on mood stabilizer medication for both acute episodes and long-term relapse prevention, combined with regular follow-up, mood monitoring, and psychoeducation for the patient and, where helpful, the family, about early warning signs of relapse.",
+      },
+      {
+        question: "How is bipolar disorder different from ordinary mood swings or just depression?",
+        answer:
+          "Bipolar disorder involves distinct episodes of mania or hypomania — a clear change in mood and energy lasting days or longer, noticeable to others, and going beyond ordinary ups and downs — not simply variable mood day to day.",
+      },
+      {
+        question: "I've been treated for depression for years without full improvement — could it be bipolar?",
+        answer:
+          "This is worth assessing. A history of unrecognised hypomanic or manic periods is a common reason depression treatment doesn't fully work, since bipolar depression is managed differently from unipolar depression.",
+      },
+      {
+        question: "Is medication needed for life?",
+        answer:
+          "For most people with Bipolar I, and many with Bipolar II, long-term mood stabilizer treatment substantially reduces relapse risk, and stopping medication is generally discussed carefully with a psychiatrist rather than done independently, given the risk of relapse.",
+      },
+      {
+        question: "Can antidepressants make bipolar disorder worse?",
+        answer:
+          "Yes, if used alone without a mood stabilizer, antidepressants can trigger a manic episode or speed up cycling between mood states in some people with bipolar disorder, which is why they are generally avoided as monotherapy once bipolar disorder is diagnosed.",
+      },
+      {
+        question: "What is the difference between Bipolar I and Bipolar II?",
+        answer:
+          "Bipolar I requires at least one full manic episode, which can be severe enough to need hospitalization. Bipolar II involves hypomania — a milder, shorter form — together with major depressive episodes, without ever a full manic episode.",
+      },
+      {
+        question: "Can family members be involved in ongoing management?",
+        answer:
+          "Yes, and this is encouraged. Family members are often the first to notice early warning signs of an emerging episode, and psychoeducation for the family is a meaningful part of relapse prevention, with the patient's consent.",
+      },
+    ],
+  },
+  {
+    slug: "schizophrenia-treatment-kathmandu",
+    title: "Schizophrenia Treatment in Kathmandu, Nepal",
+    headline: "Schizophrenia treatment in Kathmandu, Nepal",
+    shortDescription:
+      "Diagnosis and ongoing management of schizophrenia in Kathmandu, including antipsychotic medication, relapse prevention, and family psychoeducation, from Dr. Kushal Kharel, Consultant Psychiatrist.",
+    intro:
+      "Schizophrenia is a serious but treatable psychiatric condition involving hallucinations, delusions, disorganised thinking or speech, and a decline in functioning, typically emerging in late adolescence or early adulthood. With consistent, appropriate treatment, many people achieve meaningful symptom control and stability. Dr. Kushal Kharel provides assessment and long-term management of schizophrenia in Kathmandu — antipsychotic medication, monitoring for side effects, relapse prevention, and psychoeducation for families, coordinating with hospital-based care for acute episodes when inpatient treatment is needed.",
+    whoThisIsFor: [
+      "Anyone experiencing hallucinations, delusions or disorganised thinking for the first time",
+      "People diagnosed with schizophrenia needing ongoing outpatient management",
+      "Family members trying to understand a loved one's psychotic symptoms and how to respond",
+      "Patients being discharged from hospital after an acute psychotic episode who need outpatient follow-up",
+      "Patients wanting a second opinion on an existing diagnosis or medication",
+      "Families concerned about early warning signs of relapse or medication non-adherence",
+      "Patients whose current antipsychotic medication is causing troublesome side effects",
+    ],
+    commonConcerns: [
+      "Hallucinations — hearing, seeing or sensing things that aren't there",
+      "Delusions — fixed, false beliefs not shared by others",
+      "Disorganised thinking, speech or behaviour",
+      "Reduced motivation, social withdrawal and flattened emotional expression",
+      "Starting, tolerating and staying consistent with antipsychotic medication",
+      "Managing side effects of antipsychotic treatment",
+      "Family understanding of the illness and how to respond supportively",
+      "Recognising early warning signs of relapse before a full crisis develops",
+    ],
+    practicalNote:
+      "Antipsychotic medication is the cornerstone of treatment for both acute symptoms and long-term relapse prevention, with dosing adjusted to balance symptom control against side effects, and long-acting injectable options considered when adherence to daily tablets is difficult. Family psychoeducation and involvement meaningfully improve outcomes. Seek emergency psychiatric care immediately for an acute psychotic crisis involving risk to self or others, command hallucinations, severe self-neglect, or any suicidal ideation — a first episode of psychosis in particular warrants prompt assessment, since early treatment improves long-term outcomes.",
+    searchTerms: [
+      "Schizophrenia treatment Kathmandu",
+      "Schizophrenia doctor Nepal",
+      "Schizophrenia psychiatrist Kathmandu",
+      "Antipsychotic treatment Nepal",
+      "Schizophrenia management Kathmandu",
+    ],
+    faqs: [
+      {
+        question: "Is schizophrenia treatable?",
+        answer:
+          "Yes. While not curable in the sense of being permanently eliminated, schizophrenia is highly treatable — with consistent antipsychotic medication and ongoing support, many people achieve meaningful symptom control, stability and a functional daily life.",
+      },
+      {
+        question: "How is schizophrenia treated in Kathmandu?",
+        answer:
+          "Treatment centres on antipsychotic medication, chosen and dosed to balance symptom control against side effects, combined with regular follow-up, monitoring, and family psychoeducation, with coordination to hospital-based care when an acute episode needs inpatient treatment.",
+      },
+      {
+        question: "Is medication needed for life?",
+        answer:
+          "For most people with schizophrenia, long-term antipsychotic treatment substantially reduces the risk of relapse, and decisions about reducing or stopping medication are made carefully and gradually with a psychiatrist, not independently, given the high relapse risk otherwise.",
+      },
+      {
+        question: "What should I do if a loved one is having a first psychotic episode?",
+        answer:
+          "Seek prompt psychiatric assessment — a first episode of psychosis responds especially well to early treatment, and delaying assessment is associated with worse long-term outcomes. If there is any risk to safety, go to the nearest emergency department immediately.",
+      },
+      {
+        question: "Are long-acting injectable antipsychotics available in Nepal?",
+        answer:
+          "Long-acting injectable options are considered for patients who find daily oral medication difficult to maintain consistently, and availability of specific formulations is discussed individually as part of treatment planning.",
+      },
+      {
+        question: "Can family members be involved in treatment and care?",
+        answer:
+          "Yes, and this is strongly encouraged. Family psychoeducation about the illness, its early warning signs and how to respond supportively is a core part of relapse prevention, with the patient's consent.",
+      },
+      {
+        question: "What are early warning signs that someone with schizophrenia may be relapsing?",
+        answer:
+          "Common early signs include social withdrawal, disrupted sleep, increasing suspiciousness, difficulty concentrating, or stopping medication, and recognising these early allows treatment to be adjusted before a full crisis develops.",
+      },
+    ],
+  },
+  {
+    slug: "psychosis-treatment-kathmandu",
+    title: "Psychosis Treatment in Kathmandu: When to Seek Help",
+    headline: "Psychosis treatment in Kathmandu — when to seek help",
+    shortDescription:
+      "Urgent assessment and treatment for a first or recurring episode of psychosis in Kathmandu — hallucinations, delusions or disorganised thinking — with guidance on when hospital-level care is needed.",
+    intro:
+      "Psychosis — losing touch with reality through hallucinations, delusions or severely disorganised thinking — can be a one-off episode triggered by extreme stress, substance use or a medical condition, or the first sign of an underlying condition such as schizophrenia or bipolar disorder. It is always worth taking seriously and assessing promptly. Dr. Kushal Kharel provides urgent psychiatric assessment for psychosis in Kathmandu, clarifying the likely cause, starting treatment, and coordinating with hospital-based inpatient care when the situation calls for it.",
+    whoThisIsFor: [
+      "Anyone experiencing hallucinations, delusions or a sudden change in thinking for the first time",
+      "Family members noticing a loved one acting confused, suspicious or out of touch with reality",
+      "People with psychosis linked to cannabis or other substance use",
+      "New mothers with sudden confusion, hallucinations or delusions after childbirth (postpartum psychosis)",
+      "Patients with a known psychiatric condition experiencing a return or worsening of psychotic symptoms",
+      "Families unsure whether a loved one's symptoms need emergency hospital care or an outpatient appointment",
+    ],
+    commonConcerns: [
+      "Hearing, seeing or sensing things that others don't (hallucinations)",
+      "Fixed, false beliefs not shared by others (delusions)",
+      "Confused, disorganised or hard-to-follow thinking and speech",
+      "Sudden onset of suspiciousness or paranoia",
+      "Psychosis triggered or worsened by cannabis or other substance use",
+      "Postpartum psychosis in the days or weeks after childbirth",
+      "Whether symptoms mean an emergency hospital visit or an urgent outpatient assessment",
+      "Fear and stigma around what a psychotic episode means for the future",
+    ],
+    practicalNote:
+      "Psychosis with any risk to safety — command hallucinations instructing self-harm or harm to others, severe agitation, or an inability to keep oneself safe — is a psychiatric emergency requiring immediate hospital evaluation, not a scheduled outpatient visit; go to the nearest emergency department or call for urgent help. Once safety is confirmed, a full psychiatric assessment clarifies the likely cause and appropriate treatment, typically antipsychotic medication, with close early follow-up given how much early treatment improves long-term outcomes.",
+    searchTerms: [
+      "Psychosis treatment Kathmandu",
+      "Psychosis doctor Nepal",
+      "First episode psychosis Kathmandu",
+      "Psychotic episode treatment Nepal",
+      "When to see a psychiatrist for psychosis",
+    ],
+    faqs: [
+      {
+        question: "What are the warning signs of psychosis?",
+        answer:
+          "Warning signs include hallucinations (hearing, seeing or sensing things that aren't there), delusions (fixed false beliefs), disorganised or hard-to-follow speech, sudden suspiciousness, and a noticeable decline in functioning or self-care — any of these warrant prompt assessment.",
+      },
+      {
+        question: "Is psychosis always a sign of schizophrenia?",
+        answer:
+          "No. Psychosis can occur as a one-off episode from extreme stress, sleep deprivation, substance use or a medical condition, or as part of conditions including schizophrenia, bipolar disorder, severe depression or postpartum psychosis — assessment is needed to clarify the cause.",
+      },
+      {
+        question: "When is psychosis a medical emergency versus something that can wait for an appointment?",
+        answer:
+          "Any risk to safety — command hallucinations to harm oneself or others, severe agitation, or an inability to keep oneself safe — is an emergency requiring immediate hospital care. Without an immediate safety risk, prompt (same-day or next-day) psychiatric assessment is still important, since early treatment of a first episode significantly improves outcomes.",
+      },
+      {
+        question: "Can cannabis or other substances cause psychosis?",
+        answer:
+          "Yes, cannabis and certain other substances can trigger a psychotic episode, particularly with heavy or early use, and can also worsen an existing psychotic condition — assessment includes a careful review of substance use as part of identifying the cause.",
+      },
+      {
+        question: "Is postpartum psychosis different from postpartum depression?",
+        answer:
+          "Yes, and this distinction matters urgently. Postpartum psychosis is a rare but serious emergency involving hallucinations, delusions or disorganised behaviour, usually within the first two weeks after childbirth, and requires immediate hospitalization, unlike postpartum depression.",
+      },
+      {
+        question: "How is a first episode of psychosis treated?",
+        answer:
+          "Treatment typically begins with antipsychotic medication alongside a safe environment, sometimes requiring initial hospital admission depending on severity, followed by close outpatient follow-up — early, consistent treatment of a first episode is associated with substantially better long-term outcomes.",
+      },
+      {
+        question: "Will someone who has had a psychotic episode need lifelong treatment?",
+        answer:
+          "This depends on the underlying cause. A single substance-induced or stress-triggered episode may not require indefinite medication, while psychosis linked to an underlying condition such as schizophrenia usually needs longer-term management — this is clarified through assessment and follow-up over time.",
+      },
+    ],
+  },
 ];
 
 export function getAudiencePage(slug: string) {

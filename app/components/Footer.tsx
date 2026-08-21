@@ -179,6 +179,30 @@ export default function Footer() {
               ERP Therapy for OCD
             </Link>
 
+            <Link href="/depression-treatment-kathmandu" className="block hover:text-white transition">
+              Depression Treatment
+            </Link>
+
+            <Link href="/panic-attack-treatment-kathmandu" className="block hover:text-white transition">
+              Panic Attack Treatment
+            </Link>
+
+            <Link href="/adhd-treatment-kathmandu" className="block hover:text-white transition">
+              ADHD Assessment &amp; Treatment
+            </Link>
+
+            <Link href="/bipolar-disorder-treatment-kathmandu" className="block hover:text-white transition">
+              Bipolar Disorder Treatment
+            </Link>
+
+            <Link href="/schizophrenia-treatment-kathmandu" className="block hover:text-white transition">
+              Schizophrenia Treatment
+            </Link>
+
+            <Link href="/psychosis-treatment-kathmandu" className="block hover:text-white transition">
+              Psychosis Treatment
+            </Link>
+
             <Link href="/iq-psychological-testing" className="block hover:text-white transition">
               IQ &amp; Psychological Testing
             </Link>
