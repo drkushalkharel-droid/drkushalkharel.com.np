@@ -132,12 +132,4 @@ export const plannedTopics: ArticleLink[] = [
     category: "Anxiety",
     language: "English",
   },
-  {
-    title: "Addiction and De-addiction Care",
-    description:
-      "Understanding alcohol, nicotine and substance use disorders, relapse prevention and psychiatric support.",
-    href: "/#services",
-    category: "Addiction",
-    language: "English",
-  },
 ];
