@@ -443,6 +443,20 @@ export default function Footer() {
             ))}
           </div>
 
+          {/* Google Preferred Sources button. Requires the publisher.js
+              script loaded in app/layout.tsx. Lets a reader mark this
+              site as a source they'd like to see more of in Google
+              Search, Top Stories and AI Overviews/AI Mode. */}
+          <div className="mt-6 pt-6 border-t border-gray-800">
+            <p className="text-gray-500 text-xs mb-3">
+              See more from us on Google
+            </p>
+            <div
+              {...{ "google-add-preferred-source-btn": "" }}
+              data-theme="dark"
+            />
+          </div>
+
         </div>
 
       </div>

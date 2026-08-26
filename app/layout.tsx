@@ -365,6 +365,14 @@ export default function RootLayout({
             crossOrigin="anonymous"
           />
         )}
+        {/* Google Preferred Sources: lets readers mark this site as a
+            source they prefer, which can surface it more in Top Stories,
+            AI Overviews and AI Mode. See app/components/Footer.tsx for
+            the button itself. */}
+        <Script
+          src="https://news.google.com/swg/js/v1/publisher.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
