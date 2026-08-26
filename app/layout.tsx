@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import ConversionDock from "./components/ConversionDock";
 import ConversionTracking from "./components/ConversionTracking";
+import { reviewStats } from "./data/reviewStats";
 import "./globals.css";
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -203,9 +204,9 @@ export default function RootLayout({
     priceRange: "$$",
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5",
-      bestRating: "5",
-      reviewCount: "81",
+      ratingValue: reviewStats.ratingValue,
+      bestRating: reviewStats.bestRating,
+      reviewCount: reviewStats.reviewCount,
     },
     openingHoursSpecification: [
       {
@@ -312,9 +313,9 @@ export default function RootLayout({
     ],
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5",
-      bestRating: "5",
-      reviewCount: "81",
+      ratingValue: reviewStats.ratingValue,
+      bestRating: reviewStats.bestRating,
+      reviewCount: reviewStats.reviewCount,
     },
   };
 

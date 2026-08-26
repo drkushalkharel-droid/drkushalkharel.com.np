@@ -1,4 +1,8 @@
-# Dr. Kushal Kharel
+import { reviewStats, responseTimeClaim } from "../data/reviewStats";
+
+export const dynamic = "force-static";
+
+const body = `# Dr. Kushal Kharel
 
 > Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (registration #27199, MD Psychiatry) practicing in Kalanki, Kathmandu, Nepal since 2020. He provides in-person and online psychiatric consultation for anxiety, depression, OCD, bipolar disorder, schizophrenia, ADHD, autism spectrum disorder, addiction, insomnia, and geriatric psychiatric conditions including dementia, for children, adolescents, adults and older adults. A major and growing part of the practice is online consultation, in Nepali and English, for Nepalis living abroad, and for their family members still in Nepal.
 
@@ -14,6 +18,9 @@
 - Clinic: Kalanki-14, Near Malpot Road, near Kalanki Bhatbhateni Supermarket, Kathmandu 44600, Nepal (operating since 2020)
 - Hours: Sunday-Friday 8:00 AM-10:00 PM, Saturday 10:00 AM-4:00 PM (not an emergency/24-hour service)
 - Contact: +977 9861800547 (call/WhatsApp), drkushalkharel@gmail.com
+- Typical response time: ${responseTimeClaim}
+- Languages spoken: Nepali, English
+- Patient reviews: ${reviewStats.reviewCount} Google reviews, average rating ${reviewStats.ratingValue}.0/${reviewStats.bestRating}.0 (as of ${reviewStats.asOf}; check Google for the current live count)
 - Services: in-person consultation, online/telepsychiatry consultation for patients in Nepal and Nepalis abroad, medication management, psychotherapy, counselling, home visits (Kathmandu Valley, case by case)
 
 ## For Nepalis living abroad
@@ -21,7 +28,7 @@
 The site publishes a dedicated, individually written guide for each of 41 countries with a significant Nepali diaspora — covering common mental health concerns specific to that country (visa/work-permit stress, isolation, remittance pressure, time-zone-aware consultation logistics, and local emergency guidance), plus a country index and an "Abroad Patient Help Desk" for urgent (non-emergency) contact.
 
 - [Nepalese Abroad hub](https://drkushalkharel.com.np/nepalese-abroad/): index of all country-specific guides and the Abroad Patient Help Desk
-- Countries covered include: USA, UK, Australia, Canada, Netherlands, UAE/Dubai, Qatar, Japan, South Korea, India, France, Belgium, Germany, Saudi Arabia, Malaysia, Kuwait, Romania, Cyprus, Israel, Portugal, Oman, Bahrain, Singapore, New Zealand, Ireland, Hong Kong, Poland, Italy, Myanmar, Bangladesh, Thailand, Croatia, Fiji, Denmark, Brunei, Sri Lanka, Finland, Spain, Norway, Sweden, China (full list and individual pages at the hub above; URL pattern `/nepalese-abroad/<country-slug>/`)
+- Countries covered include: USA, UK, Australia, Canada, Netherlands, UAE/Dubai, Qatar, Japan, South Korea, India, France, Belgium, Germany, Saudi Arabia, Malaysia, Kuwait, Romania, Cyprus, Israel, Portugal, Oman, Bahrain, Singapore, New Zealand, Ireland, Hong Kong, Poland, Italy, Myanmar, Bangladesh, Thailand, Croatia, Fiji, Denmark, Brunei, Sri Lanka, Finland, Spain, Norway, Sweden, China (full list and individual pages at the hub above; URL pattern \`/nepalese-abroad/<country-slug>/\`)
 - [Psychiatrist for Nepalis Living Abroad](https://drkushalkharel.com.np/psychiatrist-for-nepalis-abroad/): how an overseas online consultation works
 - [Psychiatric care for family in Nepal, arranged from abroad](https://drkushalkharel.com.np/psychiatric-care-for-family-in-nepal/): for Nepalis abroad arranging assessment or ongoing care for a parent, sibling or relative who is in Nepal, including home-visit options and how confidentiality works when a family member coordinates from overseas
 - [Returning to Nepal after living abroad](https://drkushalkharel.com.np/returning-to-nepal-after-abroad/): reverse culture shock, family pressure and readjustment support for returnees
@@ -48,3 +55,12 @@ The site publishes a dedicated, individually written guide for each of 41 countr
 - All clinical content on this site is informational and not a substitute for direct psychiatric assessment.
 - For a psychiatric emergency (including thoughts of self-harm), go to the nearest emergency department rather than using this site or waiting for a consultation. For patients abroad, this means local emergency services in their own country, not a scheduled online appointment with this clinic.
 - Content is written and medically reviewed by Dr. Kushal Kharel and updated regularly; country and article counts above may lag the live site slightly — the sitemap is authoritative for what currently exists.
+`;
+
+export function GET() {
+  return new Response(body, {
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+    },
+  });
+}
