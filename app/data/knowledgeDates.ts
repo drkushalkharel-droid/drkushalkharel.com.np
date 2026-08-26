@@ -44,6 +44,7 @@ export const knowledgeDates: Record<string, { published: string; modified: strin
   "obsessive-compulsive-disorder": { published: "2026-08-05", modified: "2026-08-05" },
   "panic-attacks-what-to-do": { published: "2026-08-02", modified: "2026-08-02" },
   "pesticide-self-poisoning-prevention-nepal": { published: "2026-08-06", modified: "2026-08-06" },
+  "psychological-first-aid-flood-landslide-nepal": { published: "2026-08-26", modified: "2026-08-26" },
   "ptsd": { published: "2026-07-06", modified: "2026-07-06" },
   "restless-legs-syndrome": { published: "2026-07-06", modified: "2026-07-06" },
   "schizophrenia": { published: "2026-07-06", modified: "2026-07-06" },
