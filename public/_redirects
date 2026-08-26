@@ -1,12 +1,17 @@
+# NOTE (2026-08-26): drkushalkharel.com.np is currently served live by GitHub
+# Pages (Cloudflare only proxies DNS in front of it) — the Cloudflare Pages
+# deploy step has no CLOUDFLARE_API_TOKEN/CLOUDFLARE_ACCOUNT_ID secrets set and
+# silently skips itself, so this file has no effect on production today. It's
+# kept so these redirects work immediately if Cloudflare Pages is ever made
+# the live origin. The routes below also have real static "moved" pages under
+# app/ (RedirectNotice) that work on the actual live host right now.
 /depression /conditions/major-depressive-disorder 301
 /ocd /conditions/ocd 301
 /adhd /conditions/adhd 301
 /bipolar-disorder /conditions/bipolar-i-disorder 301
 /schizophrenia /conditions/schizophrenia 301
-/cities/chitwan /online-psychiatrist-nepal 301
 /cities/biratnagar /online-psychiatrist-nepal 301
 /cities/dhangadhi /online-psychiatrist-nepal 301
-/cities/pokhara /online-psychiatrist-nepal 301
 /cities/nepalgunj /online-psychiatrist-nepal 301
 /cities/lalitpur /online-psychiatrist-nepal 301
 /cities/bhaktapur /online-psychiatrist-nepal 301
