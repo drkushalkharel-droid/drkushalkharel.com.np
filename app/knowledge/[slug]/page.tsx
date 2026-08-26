@@ -74,7 +74,9 @@ export async function generateMetadata({
       ? "Anxiety Treatment in Nepal | Symptoms, Panic Attacks & Help"
       : article.slug === "depression-treatment-nepal"
         ? "Depression Treatment in Nepal | Symptoms, Therapy & Help"
-        : title;
+        : article.nepaliMeaning
+          ? `${article.title} (${article.nepaliMeaning.term}) — Meaning, Symptoms and Treatment`
+          : title;
   const keywordTitle = article.title.split(" | ")[0];
 
   return {
@@ -170,6 +172,10 @@ export default async function KnowledgeArticlePage({
   if (!article) {
     notFound();
   }
+
+  const relatedArticles = docArticles.filter(
+    (item) => item.category === article.category && item.slug !== article.slug,
+  );
 
   const faqs = [
     [
@@ -307,6 +313,18 @@ export default async function KnowledgeArticlePage({
             लागि मनोचिकित्सकसँग प्रत्यक्ष परामर्श गर्नुहोस्।
           </div>
 
+          {article.nepaliMeaning && (
+            <div className="rounded-lg border border-stone-200 bg-white p-5 leading-7">
+              <p className="text-sm font-semibold uppercase tracking-[2px] text-sage-700">
+                Meaning in Nepali
+              </p>
+              <p className="mt-2 text-lg font-bold text-stone-950">
+                {article.title} ({article.nepaliMeaning.term})
+              </p>
+              <p className="mt-1 text-stone-700">{article.nepaliMeaning.meaning}</p>
+            </div>
+          )}
+
           <div className="rounded-lg border border-sage-200 bg-sage-50 p-5 text-sm leading-7 text-sage-950">
             <p className="font-bold">Medically reviewed by Dr. Kushal Kharel, MD Psychiatry</p>
             <p className="mt-1">
@@ -334,6 +352,25 @@ export default async function KnowledgeArticlePage({
               </div>
             </section>
           ))}
+
+          {relatedArticles.length > 0 && (
+            <section className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+              <h2 className="text-3xl font-bold text-sage-950">
+                Related {article.category} articles
+              </h2>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                {relatedArticles.slice(0, 6).map((item) => (
+                  <Link
+                    key={item.slug}
+                    href={`/knowledge/${item.slug}`}
+                    className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50"
+                  >
+                    {item.title.split(" | ")[0]}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           <section className="rounded-lg bg-sage-950 p-8 text-white">
             <h2 className="text-3xl font-bold">Need professional help?</h2>

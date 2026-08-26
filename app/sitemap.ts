@@ -5,7 +5,6 @@ import { conditions } from "./data/conditions";
 import { docArticles } from "./data/docArticles";
 import { screeningTools } from "./data/screening";
 import { resources } from "./data/resources";
-import { pillars } from "./data/pillars";
 import { supportingArticles } from "./data/supportingArticles";
 import { medications } from "./data/medications";
 
@@ -15,6 +14,14 @@ const siteUrl = "https://drkushalkharel.com.np";
 // Keep the sitemap current whenever content changes so crawlers can prioritize
 // newly published patient resources and guides.
 const lastModified = new Date("2026-07-18");
+
+// The site is configured with trailingSlash: true (next.config.ts), so every
+// real route resolves with a trailing slash. Sitemap entries must match that
+// exactly — a bare URL here makes Google follow a 301 redirect for every
+// single page instead of indexing the canonical URL directly.
+function withSlash(url: string): string {
+  return url.endsWith("/") ? url : `${url}/`;
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -62,8 +69,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
       alternates: {
         languages: {
-          en: `${siteUrl}/anxiety`,
-          ne: `${siteUrl}/anxiety/np`,
+          en: withSlash(`${siteUrl}/anxiety`),
+          ne: withSlash(`${siteUrl}/anxiety/np`),
         },
       },
     },
@@ -75,8 +82,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       alternates: {
         languages: {
-          en: `${siteUrl}/anxiety`,
-          ne: `${siteUrl}/anxiety/np`,
+          en: withSlash(`${siteUrl}/anxiety`),
+          ne: withSlash(`${siteUrl}/anxiety/np`),
         },
       },
     },
@@ -196,15 +203,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  const pillarRoutes: MetadataRoute.Sitemap = pillars
-    .filter((pillar) => pillar.slug !== "anxiety")
-    .map((pillar) => ({
-      url: `${siteUrl}/${pillar.slug}`,
-      lastModified: new Date("2026-07-29"),
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    }));
-
   const cityRoutes: MetadataRoute.Sitemap = cityGuides.filter((guide) => guide.clinicLocation || guide.published).map((guide) => ({
     url: `${siteUrl}/cities/${guide.slug}`,
     lastModified,
@@ -254,9 +252,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [
+  const allRoutes: MetadataRoute.Sitemap = [
     ...staticRoutes,
-    ...pillarRoutes,
     ...articleRoutes,
     ...cityRoutes,
     ...abroadRoutes,
@@ -266,4 +263,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogRoutes,
     ...medicationRoutes,
   ];
+
+  // Normalize every entry to the canonical trailing-slash form so crawlers
+  // never spend a redirect hop resolving a sitemap URL.
+  return allRoutes.map((route) => ({
+    ...route,
+    url: withSlash(route.url),
+  }));
 }

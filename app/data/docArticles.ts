@@ -16,6 +16,10 @@ export type DocArticle = {
   // generic clinical section labels ("Causes", "Diagnosis", etc.) instead
   // of bespoke headings. Only needed where such generic labels are used.
   topic?: string;
+  // Short bilingual definition shown near the top of the page for terms
+  // people search as "X meaning in Nepali" — only populated where that
+  // search pattern is confirmed (Search Console), not for every article.
+  nepaliMeaning?: { term: string; meaning: string };
 };
 
 export const docArticles = [
@@ -68,6 +72,7 @@ export const docArticles = [
   {
     "slug": "adhd",
     "title": "Attention-Deficit/ Hyperactivity Disorder",
+    "nepaliMeaning": { "term": "एडीएचडी / अत्यधिक चञ्चलता र ध्यान केन्द्रित गर्न नसक्ने समस्या", "meaning": "ध्यान केन्द्रित गर्न गाह्रो हुने, अत्यधिक चञ्चल हुने र आवेगमा आई काम गर्ने बालबालिका र वयस्कमा देखिने विकासात्मक मानसिक अवस्था।" },
     "topic": "attention-deficit/hyperactivity disorder (ADHD)",
     "category": "Psychiatry",
     "language": "Nepali",
@@ -189,6 +194,7 @@ export const docArticles = [
   {
     "slug": "delirium",
     "title": "Delirium",
+    "nepaliMeaning": { "term": "डेलिरियम / होस हराउने-भ्रम हुने अस्थायी अवस्था", "meaning": "प्रायः शारीरिक बिरामीपछि छोटो समयमै देखा पर्ने भ्रम, अस्पष्ट सोच र होसमा उतारचढाव हुने अस्थायी मानसिक अवस्था।" },
     "topic": "delirium",
     "category": "Psychiatry",
     "language": "Nepali",
@@ -357,6 +363,7 @@ export const docArticles = [
   {
     "slug": "insomnia",
     "title": "Insomnia",
+    "nepaliMeaning": { "term": "निद्रा नलाग्ने समस्या", "meaning": "रातभर सजिलै निदाउन नसक्ने, बारम्बार ब्युँझने वा चाँडै ब्युँझेर फेरि निदाउन नसक्ने समस्या।" },
     "topic": "insomnia",
     "category": "Psychiatry",
     "language": "Nepali",

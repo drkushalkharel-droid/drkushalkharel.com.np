@@ -20,7 +20,7 @@ import Footer from "./components/Footer";
 import { buildSpeakableSpec } from "./lib/schema";
 
 export const metadata: Metadata = {
-  title: "Psychiatrist in Kathmandu, Nepal | Dr. Kushal Kharel",
+  title: "Dr. Kushal Kharel, MD — Consultant Psychiatrist, Kathmandu",
   description:
     "Dr. Kushal Kharel, MD — Consultant Psychiatrist in Kathmandu since 2020. Evidence-based care for anxiety, depression, OCD, ADHD & more. Book online today.",
   alternates: {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     "Best Psychiatrist in Nepalgunj",
   ],
   openGraph: {
-    title: "Dr. Kushal Kharel | Psychiatrist in Kathmandu, Nepal",
+    title: "Dr. Kushal Kharel, MD | Consultant Psychiatrist, Kathmandu",
     description:
       "Consultant psychiatric care in Kathmandu and online for anxiety, depression, OCD, ADHD, addiction and more.",
     url: "/",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Kushal Kharel | Psychiatrist in Kathmandu, Nepal",
+    title: "Dr. Kushal Kharel, MD | Consultant Psychiatrist, Kathmandu",
     description:
       "Consultant psychiatric care in Kathmandu and online across Nepal.",
     images: ["/images/doctor.png"],

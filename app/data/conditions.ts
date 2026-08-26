@@ -68,6 +68,10 @@ export type Condition = {
   // set where a genuine, informative diagram exists — not generic
   // decoration.
   diagram?: { src: string; alt: string; caption: string };
+  // Short bilingual definition shown near the top of the page for terms
+  // people search as "X meaning in Nepali" — only populated where that
+  // search pattern is confirmed (Search Console), not for every condition.
+  nepaliMeaning?: { term: string; meaning: string };
 };
 
 // Full list of categories this library is being built out to cover.
@@ -96,7 +100,13 @@ export const conditionCategories: string[] = [
 
 export const conditions: Condition[] = [
   {
+    nepaliMeaning: { term: "चिन्ता रोग", meaning: "धेरै कुराको बारेमा लगातार र नियन्त्रण गर्न गाह्रो हुने अत्यधिक चिन्ता वा डर लाग्ने मानसिक अवस्था।" },
     slug: "generalized-anxiety-disorder",
+    diagram: {
+      src: "/images/diagrams/worry-cycle.webp",
+      alt: "Diagram of the GAD worry cycle: a triggering thought, catastrophic thinking, physical symptoms, and checking or reassurance-seeking looping back",
+      caption: "The worry cycle: a triggering thought leads to catastrophic thinking and physical symptoms, and checking or reassurance-seeking brings brief relief that reinforces the next worry — the cycle CBT for GAD interrupts.",
+    },
     title: "Generalized Anxiety Disorder (GAD)",
     category: "Anxiety Disorders",
     shortDescription:
@@ -281,6 +291,7 @@ export const conditions: Condition[] = [
     ],
   },
   {
+    nepaliMeaning: { term: "प्यानिक अट्याक / आतंक दौरा", meaning: "अचानक आउने डर र शारीरिक असजिलोको तीव्र लहर, जुन केही मिनेटमै चरम बिन्दुमा पुग्छ।" },
     slug: "panic-disorder",
     title: "Panic Disorder",
     category: "Anxiety Disorders",
@@ -638,6 +649,11 @@ export const conditions: Condition[] = [
   },
   {
     slug: "social-anxiety-disorder",
+    diagram: {
+      src: "/images/diagrams/social-anxiety-cycle.webp",
+      alt: "Diagram of the social anxiety cycle: an upcoming social situation, anticipatory anxiety, avoidance or safety behaviors, and relief that reinforces the fear",
+      caption: "The social anxiety cycle: anticipating a social situation triggers anxiety, which leads to avoidance or safety behaviors — the short-term relief confirms the fear and strengthens it next time.",
+    },
     title: "Social Anxiety Disorder (Social Phobia)",
     category: "Anxiety Disorders",
     shortDescription:
@@ -1972,6 +1988,7 @@ export const conditions: Condition[] = [
     ],
   },
   {
+    nepaliMeaning: { term: "डिप्रेसन / निराशा रोग", meaning: "कम्तीमा दुई हप्तासम्म रहने गहिरो उदासी, रुचि हराउने र दैनिक कामकाजमा असर पार्ने मानसिक अवस्था।" },
     slug: "major-depressive-disorder",
     title: "Major Depressive Disorder (MDD)",
     category: "Depressive Disorders",
@@ -2999,6 +3016,11 @@ export const conditions: Condition[] = [
   },
   {
     slug: "schizophrenia",
+    diagram: {
+      src: "/images/diagrams/schizophrenia-relapse-pathway.webp",
+      alt: "Diagram of the schizophrenia illness course: prodrome, acute episode, treatment and stabilization, and recovery and maintenance, with a relapse-risk arrow back to the acute stage",
+      caption: "Illness course and relapse pathway: from early prodromal changes through an acute episode to treatment and recovery — relapse risk rises sharply if maintenance medication is stopped without medical guidance.",
+    },
     title: "Schizophrenia",
     category: "Psychotic Disorders",
     shortDescription:
@@ -3505,6 +3527,11 @@ export const conditions: Condition[] = [
   },
   {
     slug: "ptsd",
+    diagram: {
+      src: "/images/diagrams/trauma-response-cycle.webp",
+      alt: "Diagram of the PTSD trauma response cycle: a reminder or trigger, intrusive memory, avoidance, and hyperarousal looping back",
+      caption: "The trauma response cycle: reminders trigger intrusive memories and hyperarousal, which lead to avoidance — narrowing life without resolving the underlying trauma memory.",
+    },
     title: "Post-Traumatic Stress Disorder (PTSD)",
     category: "Trauma and Stressor-Related Disorders",
     shortDescription:
@@ -4390,6 +4417,11 @@ export const conditions: Condition[] = [
   },
   {
     slug: "borderline-personality-disorder",
+    diagram: {
+      src: "/images/diagrams/emotional-dysregulation-cycle.webp",
+      alt: "Diagram of the BPD emotional dysregulation cycle: a sensitive trigger, intense emotional surge, urgent response, and relationship strain and shame looping back",
+      caption: "The emotional dysregulation cycle: a sensitive trigger produces a rapid emotional surge and an urgent response, which strains relationships and creates fresh triggers — DBT skills target the response, not the emotion itself.",
+    },
     title: "Borderline Personality Disorder (BPD)",
     category: "Personality Disorders",
     shortDescription:
@@ -5234,6 +5266,11 @@ export const conditions: Condition[] = [
   },
   {
     slug: "alcohol-use-disorder",
+    diagram: {
+      src: "/images/diagrams/alcohol-craving-relapse-cycle.webp",
+      alt: "Diagram of the alcohol craving-relapse cycle: trigger or stress, craving, drinking to cope, and guilt and withdrawal looping back",
+      caption: "The craving-relapse cycle: stress or triggers produce craving, drinking relieves it temporarily, and the guilt and withdrawal that follow feed the next stressor — an unacted craving typically passes within 15-20 minutes.",
+    },
     title: "Alcohol Use Disorder",
     category: "Substance Use and Addictive Disorders",
     shortDescription:
@@ -6584,6 +6621,11 @@ export const conditions: Condition[] = [
   },
   {
     slug: "binge-eating-disorder",
+    diagram: {
+      src: "/images/diagrams/binge-shame-cycle.webp",
+      alt: "Diagram of the binge-shame cycle: restriction or stress, loss of control, shame and guilt, and renewed restriction looping back",
+      caption: "The binge-shame cycle: restriction or emotional stress leads to a loss-of-control binge, followed by shame and guilt that prompt renewed restriction — setting up the next binge.",
+    },
     title: "Binge Eating Disorder",
     category: "Eating Disorders",
     shortDescription:
@@ -9481,6 +9523,7 @@ export const conditions: Condition[] = [
     extraKeywords: ["conduct disorder Nepal", "child behaviour disorder psychiatrist Kathmandu", "teenage aggression treatment Nepal"],
   },
   {
+    nepaliMeaning: { term: "OCPD / जिद्दी पूर्णतावादी व्यक्तित्व समस्या", meaning: "नियम, व्यवस्था र पूर्णतामा अत्यधिक जोड दिने स्वभावगत समस्या — यो OCD (Obsessive-Compulsive Disorder) भन्दा फरक हो।" },
     slug: "obsessive-compulsive-personality-disorder",
     title: "Obsessive-Compulsive Personality Disorder (OCPD)",
     category: "Personality Disorders",

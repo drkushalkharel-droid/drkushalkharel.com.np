@@ -60,7 +60,10 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = `${condition.title}: ${condition.titleSuffix ?? "Symptoms, Causes, Diagnosis & Treatment"}`;
+  const titleName = condition.nepaliMeaning
+    ? `${condition.title} (${condition.nepaliMeaning.term})`
+    : condition.title;
+  const title = `${titleName}: ${condition.titleSuffix ?? "Symptoms, Causes, Diagnosis & Treatment"}`;
 
   return {
     title,
@@ -247,6 +250,18 @@ export default async function ConditionPage({
             treatment plan, please consult Dr. Kushal Kharel or a qualified
             mental health professional directly.
           </div>
+
+          {condition.nepaliMeaning && (
+            <div className="rounded-lg border border-stone-200 bg-white p-5 leading-7">
+              <p className="text-sm font-semibold uppercase tracking-[2px] text-sage-700">
+                Meaning in Nepali
+              </p>
+              <p className="mt-2 text-lg font-bold text-stone-950">
+                {condition.title} ({condition.nepaliMeaning.term})
+              </p>
+              <p className="mt-1 text-stone-700">{condition.nepaliMeaning.meaning}</p>
+            </div>
+          )}
 
           <div className="rounded-lg border border-sage-200 bg-sage-50 p-6 md:p-8">
             <h2 className="text-xl font-bold uppercase tracking-[2px] text-sage-800">Key Facts</h2>
