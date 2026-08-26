@@ -42,27 +42,20 @@ const authoredContent = [
 ];
 
 export default function AboutPage() {
+  // References the single canonical Physician entity defined in
+  // app/layout.tsx (#psychiatrist) instead of minting a second, separate
+  // "/about#psychiatrist" node for the same real person — a previous version
+  // duplicated the same name/credentials under a different @id, which
+  // fragments the entity across two identities instead of reinforcing one.
   const personJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Physician",
-    "@id": `${siteUrl}/about#psychiatrist`,
-    name: "Dr. Kushal Kharel",
-    jobTitle: "Consultant Psychiatrist",
+    "@type": "ProfilePage",
+    "@id": `${siteUrl}/about`,
     url: `${siteUrl}/about`,
-    image: `${siteUrl}/images/doctor.png`,
-    medicalSpecialty: "Psychiatry",
-    worksFor: { "@id": `${siteUrl}#clinic` },
-    hasCredential: [
-      {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "license",
-        name: "Nepal Medical Council Registered Psychiatrist",
-        identifier: "27199",
-        recognizedBy: { "@type": "Organization", name: "Nepal Medical Council" },
-      },
-      { "@type": "EducationalOccupationalCredential", credentialCategory: "degree", name: "MD Psychiatry" },
-    ],
-    alumniOf: { "@type": "MedicalOrganization", name: "KIST Medical College Teaching Hospital" },
+    name: title,
+    description,
+    about: { "@id": `${siteUrl}#psychiatrist` },
+    mainEntity: { "@id": `${siteUrl}#psychiatrist` },
   };
 
   const breadcrumbJsonLd = {

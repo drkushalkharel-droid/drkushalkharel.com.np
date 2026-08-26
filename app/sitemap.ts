@@ -3,9 +3,11 @@ import { abroadGuides } from "./data/abroad";
 import { cityGuides } from "./data/cities";
 import { conditions } from "./data/conditions";
 import { docArticles } from "./data/docArticles";
+import { knowledgeDates } from "./data/knowledgeDates";
 import { screeningTools } from "./data/screening";
 import { resources } from "./data/resources";
 import { supportingArticles } from "./data/supportingArticles";
+import { articleDates } from "./data/articleDates";
 import { medications } from "./data/medications";
 
 export const dynamic = "force-static";
@@ -198,7 +200,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({
     url: `${siteUrl}/knowledge/${article.slug}`,
-    lastModified,
+    lastModified: knowledgeDates[article.slug]?.modified ?? lastModified,
     changeFrequency: "monthly",
     priority: 0.75,
   }));
@@ -240,7 +242,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogRoutes: MetadataRoute.Sitemap = supportingArticles.map((article) => ({
     url: `${siteUrl}/blog/${article.slug}`,
-    lastModified: new Date("2026-08-05"),
+    lastModified: articleDates[article.slug]?.modified ?? new Date("2026-08-05"),
     changeFrequency: "monthly",
     priority: 0.75,
   }));

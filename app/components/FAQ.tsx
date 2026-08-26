@@ -7,6 +7,26 @@ const faqs = [
       "There is no official ranking for 'best psychiatrist' — it's a search phrase, not a clinical credential. A reasonable way to choose is a Nepal Medical Council-registered psychiatrist with relevant experience and a communication style that fits you. Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) practicing in Kalanki, Kathmandu since 2020, offering in-person and online consultation for anxiety, depression, OCD, bipolar disorder, schizophrenia, ADHD and addiction.",
   },
   {
+    question: "Who is a good psychiatrist in Kathmandu for anxiety or depression?",
+    answer:
+      "Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) practicing in Kalanki, Kathmandu since 2020, with clinical experience treating anxiety disorders and depression through assessment, medication management and psychotherapy, in person and online.",
+  },
+  {
+    question: "Can Nepalis living abroad consult Dr. Kushal Kharel online?",
+    answer:
+      "Yes. Dr. Kushal Kharel provides online psychiatric consultation, in Nepali and English, for Nepalis living abroad and for their family members still in Nepal. The site publishes dedicated guides for 41 countries with a significant Nepali diaspora.",
+  },
+  {
+    question: "What is Dr. Kushal Kharel's NMC registration number?",
+    answer:
+      "Dr. Kushal Kharel is registered with the Nepal Medical Council under registration number 27199.",
+  },
+  {
+    question: "How many years has Dr. Kushal Kharel been practicing?",
+    answer:
+      "Dr. Kushal Kharel has run a psychiatric clinic in Kalanki, Kathmandu since 2020. He completed MD Psychiatry training at KIST Medical College Teaching Hospital (2023-2026) and previously worked as a Medical Officer at Kantipur Hospital (2020-2021), Patan Hospital (2021-2022) and Kathmandu ENT Hospital (2022-2023).",
+  },
+  {
     question: "Who is a psychiatrist in Nepal?",
     answer:
       "Dr. Kushal Kharel is a Consultant Psychiatrist based in Kathmandu, Nepal, registered with the Nepal Medical Council. He provides evidence-based assessment, diagnosis, medication management and psychotherapy for children, adolescents, adults and older adults, in person and online.",

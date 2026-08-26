@@ -75,9 +75,12 @@ export default function OnlinePsychiatristNepalPage() {
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })),
   };
+  // Note: this graph intentionally only *references* the #clinic/#psychiatrist
+  // entities (defined once, fully, in app/layout.tsx) rather than redefining
+  // them — an earlier version redeclared both with different field values
+  // (e.g. a different clinic `name`), which put two conflicting definitions
+  // of the same @id on this page at once.
   const practiceJsonLd = { "@context": "https://schema.org", "@graph": [
-    { "@type": "MedicalBusiness", "@id": `${siteUrl}#clinic`, name: "Dr. Kushal Kharel Psychiatry", url: siteUrl, areaServed: ["Nepal", "Australia", "United Kingdom", "United States", "Canada", "New Zealand", "Japan", "South Korea", "United Arab Emirates", "Qatar", "Saudi Arabia", "Germany", "Ireland"], availableLanguage: ["English", "Nepali"], medicalSpecialty: "Psychiatry", availableService: { "@type": "MedicalProcedure", name: "Online psychiatric consultation" } },
-    { "@type": "Physician", "@id": `${siteUrl}#psychiatrist`, name: "Dr. Kushal Kharel", honorificSuffix: "MD Psychiatry", medicalSpecialty: "Psychiatry", address: { "@type": "PostalAddress", addressLocality: "Kathmandu", addressCountry: "NP" } },
     { "@type": "Article", headline: title, author: { "@id": `${siteUrl}#psychiatrist` }, mainEntityOfPage: pageUrl },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: siteUrl }, { "@type": "ListItem", position: 2, name: "Online Psychiatrist Nepal", item: pageUrl }] }
   ] };
