@@ -363,6 +363,8 @@ export default function PsychiatricCareForFamilyPage() {
             <Link href="/home-visit-psychiatrist-nepal" className="underline">Home visit psychiatrist</Link>
             {" · "}
             <Link href="/returning-to-nepal-after-abroad" className="underline">Returning to Nepal after abroad</Link>
+            {" · "}
+            <Link href="/help-relative-abroad-see-psychiatrist" className="underline">Relative living abroad instead?</Link>
           </p>
         </div>
       </section>

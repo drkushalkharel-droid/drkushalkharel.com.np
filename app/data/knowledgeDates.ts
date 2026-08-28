@@ -27,6 +27,7 @@ export const knowledgeDates: Record<string, { published: string; modified: strin
   "elimination-disorder": { published: "2026-07-06", modified: "2026-07-06" },
   "gender-dysphoria": { published: "2026-07-06", modified: "2026-07-06" },
   "grief-and-loss": { published: "2026-08-05", modified: "2026-08-05" },
+  "help-relative-abroad-psychiatrist-nepal": { published: "2026-08-27", modified: "2026-08-27" },
   "helping-your-child-everyday-mental-wellbeing-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "home-visit-psychiatric-assessment-nepal": { published: "2026-08-24", modified: "2026-08-24" },
   "insomnia": { published: "2026-07-06", modified: "2026-07-06" },

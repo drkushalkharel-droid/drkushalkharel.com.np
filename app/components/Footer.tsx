@@ -283,6 +283,10 @@ export default function Footer() {
               Family Care in Nepal from Abroad
             </Link>
 
+            <Link href="/help-relative-abroad-see-psychiatrist" className="block hover:text-white transition">
+              Help a Relative Abroad See a Psychiatrist
+            </Link>
+
             <Link href="/patient-testimonials" className="block hover:text-white transition">
               Patient Testimonials
             </Link>
