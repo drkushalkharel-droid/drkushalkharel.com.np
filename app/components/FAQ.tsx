@@ -84,7 +84,7 @@ const faqs = [
   {
     question: "Is my consultation with Dr. Kushal Kharel confidential?",
     answer:
-      "Yes. All psychiatric consultations, whether in-person or online, are confidential and handled with professional discretion in line with standard medical ethics.",
+      "Yes. All psychiatric consultations, whether in-person or online, are confidential and handled with professional discretion in line with standard medical ethics. Your records are accessed only by those directly involved in your care, with narrow, clearly explained exceptions where there is a serious safety risk to you or someone else.",
   },
   {
     question: "What is neuropsychiatry?",
@@ -194,7 +194,7 @@ const faqs = [
   {
     question: "How much does a psychiatric consultation cost in Nepal?",
     answer:
-      "Fees vary by appointment type and whether it's an initial assessment or a follow-up. Ask when you call or message to book so you know the cost upfront before your appointment, with no surprises.",
+      "Fees vary by appointment type — an initial assessment typically costs more than a routine follow-up, since it involves a longer, fuller history. Ask when you call or message to book so you know the exact cost upfront before your appointment, with no surprises.",
   },
   {
     question: "How do I know if I need a psychiatrist or a psychologist/counselor?",
@@ -210,6 +210,36 @@ const faqs = [
     question: "Can I message Dr. Kushal Kharel between appointments if something comes up?",
     answer:
       "Yes, for brief non-urgent questions such as clarifying a medication instruction or a mild side effect, WhatsApp messages are generally reviewed and responded to within clinic hours on the next working day. This isn't a substitute for a proper follow-up appointment when something has genuinely changed, and it should never be relied on in a psychiatric emergency — go to the nearest hospital emergency department instead if there is any risk to your safety.",
+  },
+  {
+    question: "Do I need a referral from another doctor before booking?",
+    answer:
+      "No referral is required. You can contact the clinic directly to book a consultation, though bringing any previous medical reports or a referral letter, if you have one, can still be useful background for the first assessment.",
+  },
+  {
+    question: "How does the process work for NRN (non-resident Nepali) patients — timezones, payment, prescriptions?",
+    answer:
+      "Online consultation is arranged around your time zone wherever you're based, with payment options confirmed when you book. A Nepal-issued prescription cannot generally be assumed to be fillable at a pharmacy abroad, so this is discussed individually depending on your country and situation. The Nepalese Abroad guides on this site cover country-specific detail in full.",
+  },
+  {
+    question: "Do you see teenagers/adolescents, or adults only?",
+    answer:
+      "Yes, adolescents and children are seen as part of general psychiatric practice, alongside adults and older adults. This is general psychiatric care for younger patients rather than a distinct child-and-adolescent psychiatry subspecialty, and more complex presentations may be referred to a specialist when that's a better fit.",
+  },
+  {
+    question: "Do you accept insurance, or is it out-of-pocket only?",
+    answer:
+      "Most patients in Nepal pay out of pocket, since private and government insurance coverage for psychiatric consultation, therapy and medication is inconsistent and often limited. If you have insurance, it's worth confirming directly with your provider what's covered before starting treatment.",
+  },
+  {
+    question: "Can a family member join the session, or is it strictly one-on-one?",
+    answer:
+      "Many patients find it helpful to have a family member join, and this is generally welcomed with the patient's consent, since family input can add useful history and support the treatment plan. Whether and how much to involve family remains the patient's choice.",
+  },
+  {
+    question: "Do I need to stop or change my current medication before the first visit?",
+    answer:
+      "No, don't stop or change any current medication on your own before the visit. Bring a list of what you're taking, or the medicines themselves, so it can be reviewed together — any changes are then made as part of a proper assessment, not beforehand.",
   },
 ];
 
