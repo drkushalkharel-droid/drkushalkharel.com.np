@@ -186,6 +186,31 @@ const faqs = [
     answer:
       "Yes. Psychiatric consultations are confidential and non-judgmental by professional standard, whether the concern is addiction, relationship difficulty, sexual health, a parenting worry or anything else that feels hard to say out loud. You do not need to have the 'right words' prepared before booking.",
   },
+  {
+    question: "What happens during a first psychiatric consultation?",
+    answer:
+      "A first appointment is mainly a structured conversation about your main concerns, when they started, how they affect your daily life, physical health, current medicines, sleep and family history. It is a two-way discussion, not a test to pass or fail, and you will leave with a shared plan for what happens next.",
+  },
+  {
+    question: "How much does a psychiatric consultation cost in Nepal?",
+    answer:
+      "Fees vary by appointment type and whether it's an initial assessment or a follow-up. Ask when you call or message to book so you know the cost upfront before your appointment, with no surprises.",
+  },
+  {
+    question: "How do I know if I need a psychiatrist or a psychologist/counselor?",
+    answer:
+      "A psychiatrist is a medical doctor who can diagnose mental health conditions, order relevant tests and prescribe medication when appropriate, alongside offering or coordinating therapy. Psychologists and counselors provide therapy and assessment but do not prescribe medication. If you're unsure which is right for you, Dr. Kharel can help you figure that out at an initial consultation rather than you needing to decide in advance.",
+  },
+  {
+    question: "How long does treatment or recovery typically take?",
+    answer:
+      "This varies considerably by individual and condition. Some people notice meaningful improvement within a few weeks of starting treatment, while others benefit from a longer course reviewed over months. Progress is tracked at follow-up appointments so the plan can be adjusted as needed, rather than fixed to a set timeline from the start.",
+  },
+  {
+    question: "Can I message Dr. Kushal Kharel between appointments if something comes up?",
+    answer:
+      "Yes, for brief non-urgent questions such as clarifying a medication instruction or a mild side effect, WhatsApp messages are generally reviewed and responded to within clinic hours on the next working day. This isn't a substitute for a proper follow-up appointment when something has genuinely changed, and it should never be relied on in a psychiatric emergency — go to the nearest hospital emergency department instead if there is any risk to your safety.",
+  },
 ];
 
 export default function FAQ() {

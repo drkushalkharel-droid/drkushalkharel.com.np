@@ -718,9 +718,9 @@ export const supportingArticles: SupportingArticle[] = [
     overview: "Not knowing what will happen is one of the biggest barriers to booking a first psychiatric appointment, and the reality is usually far less intimidating than people expect. A first visit is primarily a structured conversation, not a test, and there is no way to 'get it wrong' — the goal is simply to understand what you are experiencing well enough to plan the right next step together.",
     symptoms: "This is less about symptoms and more about recognising that you don't need a crisis to justify booking. Persistent low mood, worry, sleep problems, concentration difficulties, unusual experiences, or simply a sense that something isn't right are all reasonable, sufficient reasons to book a first assessment, whether or not you can clearly name what's wrong.",
     causes: "People often delay a first appointment out of uncertainty about cost, fear of judgement, not knowing what will be asked, or worry about medication being forced on them. Clear information about the actual structure of a first visit reliably reduces this anxiety, and most people report feeling noticeably more at ease once the appointment has actually begun.",
-    assessment: "A first appointment typically covers your main concerns in your own words, how long they've lasted and how they affect daily life, relevant physical health and medication history, sleep, substance use, family history, and safety. The clinician will ask questions but will also welcome yours — it is a two-way conversation, not an interrogation.",
+    assessment: "A first appointment typically covers your main concerns in your own words, how long they've lasted and how they affect daily life, relevant physical health and medication history, sleep, substance use, family history, and safety. The clinician will ask questions but will also welcome yours — it is a two-way conversation, not an interrogation. Good practice means taking the time this actually needs rather than rushing to a conclusion, and explaining the reasoning behind any recommendation clearly enough that you genuinely understand it, not just being told what to do.",
     treatment: "You will not necessarily leave with a prescription; sometimes the first visit concludes with further assessment, therapy referral, practical guidance, or a follow-up plan rather than medication, depending on what fits your situation. Bringing a list of current medications, a few written notes about your main concerns, and anything you're unsure how to say out loud can make the visit more productive.",
-    local: "Dr. Kushal Kharel's clinic in Kalanki, Kathmandu welcomes first-time patients in person or via online consultation, with no referral required to book.",
+    local: "Dr. Kushal Kharel's clinic in Kalanki, Kathmandu welcomes first-time patients in person or via online consultation, with no referral required to book, and takes the time each first visit needs rather than rushing to fit a schedule.",
     related: ["/appointment", "/blog/psychiatric-doctor-kathmandu", "/contact"],
     faqs: [
       { question: "Will I definitely be prescribed medication at my first appointment?", answer: "Not necessarily. Some situations warrant starting medication early, while others are better served by further assessment or therapy first. The decision depends on your specific presentation." },
@@ -1722,6 +1722,78 @@ export const supportingArticles: SupportingArticle[] = [
       { question: "How is a specific learning disorder actually diagnosed?", answer: "Through a full psychoeducational assessment involving standardised cognitive (IQ) testing and specific academic skills testing, which identifies the precise pattern of strengths and difficulties and rules out other explanations such as vision problems, ADHD or a broader intellectual disability." },
       { question: "Will my child need medication for a learning disorder?", answer: "No, medication doesn't treat a learning disorder itself. Structured remedial teaching and classroom accommodations are the core treatment, though treating a genuinely co-occurring condition like ADHD, when present, can help a child engage better with that support." },
       { question: "My child's school says they're just lazy or not trying hard enough — could it actually be a learning disorder?", answer: "This is a very common and unfortunately frequent misunderstanding. What can look like laziness or lack of effort is often a genuine, unrecognised learning difficulty, and a formal assessment is the most reliable way to tell the difference and get your child the right kind of support." },
+    ],
+  },
+  {
+    slug: "anxiety-vs-depression-difference-nepal",
+    category: "Getting Treatment & Clinic Services",
+    title: "Anxiety vs. Depression: How a Psychiatrist Tells the Difference",
+    description:
+      "Anxiety and depression often overlap and can be hard to tell apart on your own. Learn how a psychiatrist distinguishes them, why they so often occur together, and how treatment differs.",
+    keywords: ["Anxiety vs depression Nepal", "Difference between anxiety and depression", "Anxiety and depression together", "Psychiatrist Kathmandu anxiety depression"],
+    h1: "Anxiety vs. Depression: How a Psychiatrist Tells the Difference",
+    topic: "anxiety and depression",
+    headingOverrides: [
+      "How do anxiety and depression feel different day to day?",
+      "Why do anxiety and depression so often occur together?",
+      "How does a psychiatrist tell anxiety and depression apart?",
+      "How does treatment differ between anxiety and depression?",
+      "Getting an accurate diagnosis in Kathmandu",
+    ],
+    overview:
+      "Anxiety and depression are the two most common reasons people book a psychiatric consultation in Kathmandu, and it's genuinely common to have both at once rather than a single, clean diagnosis. Anxiety centres on excessive worry, dread and a sense of danger, while depression centres on persistent low mood and loss of interest — but the overlap in fatigue, poor sleep, irritability and trouble concentrating means it's rarely obvious from the outside, or even to the person experiencing it, which one is driving the picture. A psychiatric assessment exists precisely to sort this out, rather than expecting someone to arrive with the right label already worked out.",
+    symptoms:
+      "Anxiety tends to feel forward-looking: a racing mind rehearsing what might go wrong, physical tension, a pounding heart, restlessness, and a sense of needing to stay on guard. Depression tends to feel like the opposite direction — flat, heavy, slowed down, with a loss of interest in things that used to matter and a pervasive sense that effort isn't worth it. Someone with anxiety often struggles to switch off; someone with depression often struggles to switch on. In practice, many people notice a mix of both, changing hour to hour or day to day, which is one reason people delay booking an assessment — the picture just doesn't feel clean enough to describe.",
+    causes:
+      "Anxiety and depression share overlapping biology and life triggers — prolonged stress, poor sleep, isolation, grief, financial pressure or a difficult life transition can trigger either, or both together. Persistent anxiety that goes unaddressed can wear a person down into depression over time, and depression frequently brings its own layer of anxious worry about the future, about being a burden, or about never feeling normal again. This is why psychiatrists rarely treat the two as entirely separate problems requiring entirely separate plans — the overlap is the rule, not the exception.",
+    assessment:
+      "A psychiatric assessment asks about the pattern and timeline of symptoms rather than relying on a single symptom in isolation: which came first, what a typical day and night actually look like, whether worry or low mood dominates, sleep and appetite changes, energy levels, and how each symptom affects work, study and relationships. The clinician is listening for the overall shape of the picture, not checking boxes, because two people with an identical symptom list can have very different underlying diagnoses depending on the story around it. This is also the point where other explanations, such as thyroid problems, are considered rather than assumed away.",
+    treatment:
+      "Anxiety-focused treatment often emphasises cognitive behavioural therapy aimed at testing feared predictions and reducing avoidance, alongside medication when symptoms are more severe or persistent. Depression-focused treatment often emphasises behavioural activation — small, scheduled steps back into activity and connection — alongside therapy for unhelpful thought patterns and medication when indicated. When both are present together, which is common, treatment is usually integrated rather than tackling one and ignoring the other, and the plan is adjusted as it becomes clearer which symptoms are improving and which need more attention.",
+    local:
+      "In Kathmandu, an initial psychiatric assessment is the most reliable way to get an accurate answer rather than guessing from an online symptom checklist, which can't account for your specific history, sleep, physical health or context. Both in-person consultation at the Kalanki clinic and online consultation are available, and either can be a reasonable starting point for figuring out whether anxiety, depression, or both, are what you're dealing with.",
+    related: ["/anxiety", "/best-psychiatrist-nepal", "/online-psychiatrist-nepal"],
+    faqs: [
+      { question: "Can you have anxiety and depression at the same time?", answer: "Yes, this is very common rather than unusual. Many people have overlapping symptoms of both, and treatment is usually planned to address both together rather than picking just one." },
+      { question: "Is it possible to have depression without feeling sad?", answer: "Yes. Some people with depression describe numbness, exhaustion, irritability or physical complaints rather than sadness, which is one reason self-diagnosis from a checklist can be misleading." },
+      { question: "Do anxiety and depression need different medications?", answer: "Some medications treat both effectively, particularly certain antidepressants, while others are more specific to one. The right choice depends on your individual symptoms, physical health and history, decided together with a psychiatrist." },
+      { question: "How long does it take to know if it's anxiety, depression, or both?", answer: "Often a first assessment gives a reasonably clear initial picture, though it may be refined at follow-up as treatment progresses and it becomes clearer which symptoms respond and which persist." },
+    ],
+  },
+  {
+    slug: "whatsapp-support-between-sessions-nepal",
+    category: "Getting Treatment & Clinic Services",
+    title: "WhatsApp Support Between Psychiatry Appointments: What to Expect",
+    description:
+      "Many patients ask whether they can message their psychiatrist between appointments. An honest look at what WhatsApp support can and can't realistically offer in ongoing psychiatric care.",
+    keywords: ["WhatsApp psychiatrist Nepal", "message psychiatrist between appointments", "psychiatrist support Nepal", "contact psychiatrist WhatsApp Kathmandu"],
+    h1: "WhatsApp Support Between Psychiatry Appointments: What to Expect",
+    topic: "between-session psychiatric support",
+    headingOverrides: [
+      "Why does between-session support matter so much to patients?",
+      "What can realistically be offered between appointments?",
+      "What WhatsApp support is not a substitute for",
+      "How to make between-session contact actually useful",
+      "Between-session support in Kathmandu",
+    ],
+    overview:
+      "Feeling unable to reach anyone between appointments is one of the quieter fears patients carry into psychiatric care — what happens if a side effect appears on a Tuesday and the next appointment isn't until next month? Many clinics, including this one, use WhatsApp as a practical way to bridge that gap for non-urgent questions, but it's worth understanding honestly what that kind of support can and can't do, rather than assuming it means round-the-clock access to your psychiatrist.",
+    symptoms:
+      "Trust in ongoing psychiatric care is built as much between appointments as during them. A quick reply confirming that a new symptom is a known, manageable side effect, rather than something to worry about alone for weeks, can meaningfully reduce anxiety and prevent someone from stopping medication abruptly out of fear. For patients managing a medication change, a new diagnosis, or simply feeling uncertain about their plan, knowing a message will get a response, even a brief one, changes how safe the whole treatment process feels.",
+    causes:
+      "WhatsApp support is generally most useful for short, specific, non-urgent questions: clarifying a medication instruction, confirming whether a mild side effect is expected, rescheduling, or a brief check-in during a difficult week. A solo or small clinical practice can reasonably commit to reviewing and responding to messages within a working day or so during clinic hours, not instantly and not at all hours — setting this expectation clearly at the start of treatment avoids both anxiety on the patient's side and burnout on the clinician's.",
+    assessment:
+      "Between-session messaging is not a substitute for an actual appointment when something has genuinely changed — new or worsening symptoms, a safety concern, or a complex question that needs a proper conversation rather than a text reply. It is also never appropriate for a psychiatric emergency: any risk of self-harm, severe confusion, or inability to stay safe needs an immediate in-person emergency assessment, not a message sent while waiting for a reply. A responsible clinician says this plainly rather than let a patient believe messaging is a safety net for a genuine crisis.",
+    treatment:
+      "Between-session contact works best when it's specific and time-bound: naming the exact concern, when it started, and what you're asking, rather than an open-ended 'can we talk.' Saving non-urgent questions for the next scheduled appointment, where there's time for a proper conversation, is often more useful than a rushed exchange of messages for anything requiring real discussion. Most patients find a simple, mutually understood rhythm — message for quick logistical or reassurance needs, book a follow-up for anything requiring a real conversation — works better than either extreme.",
+    local:
+      "Dr. Kushal Kharel's clinic in Kalanki, Kathmandu, uses phone and WhatsApp for booking, logistics and brief non-urgent questions between appointments, alongside scheduled in-person or online follow-up for anything that needs a fuller conversation. This is discussed early in treatment so expectations are clear on both sides from the start, rather than assumed.",
+    related: ["/online-psychiatrist-nepal", "/appointment", "/psychiatrist-for-nepalis-abroad"],
+    faqs: [
+      { question: "Can I message my psychiatrist anytime, including at night or on weekends?", answer: "Non-urgent messages can be sent anytime, but responses are generally expected within clinic hours on the next working day, not instantly or overnight. This is a working boundary that protects both timely emergency care and sustainable ongoing care." },
+      { question: "What should I do if I have a mental health emergency and can't reach the clinic immediately?", answer: "Go to the nearest hospital emergency department or contact local emergency services immediately. Do not wait for a WhatsApp reply if there is any risk to your safety." },
+      { question: "Will WhatsApp messages be kept confidential?", answer: "Yes, the same confidentiality standards that apply to in-person and online consultations apply to messages exchanged as part of your care." },
+      { question: "Is there an extra cost for WhatsApp support between appointments?", answer: "This varies by situation and is best confirmed directly with the clinic; brief logistical questions are typically handled as part of ongoing care, while anything requiring a fuller clinical discussion is usually arranged as a proper follow-up." },
     ],
   },
 ];

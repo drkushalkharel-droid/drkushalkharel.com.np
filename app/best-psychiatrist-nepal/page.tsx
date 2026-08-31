@@ -179,7 +179,7 @@ export default function BestPsychiatristNepalPage() {
           <div className="grid gap-4 sm:grid-cols-2">
             <Fact title="Qualifications" text="Look for a registered medical doctor with specialist training in psychiatry. Dr. Kharel holds an MD in Psychiatry and practises as a Consultant Psychiatrist." />
             <Fact title="Individualised care" text="The same label can look different in different people. Assessment should consider symptoms, physical health, medicines, family history, stressors and your own priorities." />
-            <Fact title="Communication" text="You should be able to ask what a diagnosis means, why a treatment is suggested, what alternatives exist and when progress will be reviewed." />
+            <Fact title="Communication" text="You should never feel rushed. A good consultation lets you ask what a diagnosis means, why a treatment is suggested, what alternatives exist and when progress will be reviewed." />
             <Fact title="Continuity" text="Mental health care often works best with follow-up. Choose a service where review, adjustment and referral are possible when your needs change." />
           </div>
         </Section>

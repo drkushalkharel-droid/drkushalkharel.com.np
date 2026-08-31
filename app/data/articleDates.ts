@@ -31,7 +31,7 @@ export const articleDates: Record<string, { published: string; modified: string 
   "exam-stress-see-board-exams-nepal": { published: "2026-08-05", modified: "2026-08-06" },
   "festival-alcohol-use-dashain-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "first-job-career-transition-anxiety-nepal": { published: "2026-08-06", modified: "2026-08-06" },
-  "first-psychiatric-appointment-what-to-expect-nepal": { published: "2026-08-06", modified: "2026-08-06" },
+  "first-psychiatric-appointment-what-to-expect-nepal": { published: "2026-08-06", modified: "2026-08-31" },
   "free-low-cost-mental-health-services-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "gambling-addiction-treatment-nepal": { published: "2026-08-07", modified: "2026-08-07" },
   "generalized-anxiety-disorder-nepal": { published: "2026-07-29", modified: "2026-07-29" },
@@ -101,4 +101,6 @@ export const articleDates: Record<string, { published: string; modified: string 
   "opioid-heroin-brown-sugar-addiction-treatment-nepal": { published: "2026-08-18", modified: "2026-08-18" },
   "separation-anxiety-school-refusal-children-nepal": { published: "2026-08-18", modified: "2026-08-18" },
   "specific-learning-disorder-dyslexia-children-nepal": { published: "2026-08-18", modified: "2026-08-18" },
+  "anxiety-vs-depression-difference-nepal": { published: "2026-08-31", modified: "2026-08-31" },
+  "whatsapp-support-between-sessions-nepal": { published: "2026-08-31", modified: "2026-08-31" },
 };
