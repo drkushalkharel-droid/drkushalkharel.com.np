@@ -19,6 +19,7 @@ export const knowledgeDates: Record<string, { published: string; modified: strin
   "building-resilience": { published: "2026-08-02", modified: "2026-08-02" },
   "burnout-at-work": { published: "2026-08-02", modified: "2026-08-02" },
   "child-counselling-nepal": { published: "2026-08-24", modified: "2026-08-24" },
+  "counselling-services-nepal": { published: "2026-09-01", modified: "2026-09-01" },
   "coping-with-anxiety": { published: "2026-08-02", modified: "2026-08-02" },
   "delirium": { published: "2026-07-06", modified: "2026-07-06" },
   "dementia": { published: "2026-07-06", modified: "2026-07-06" },
