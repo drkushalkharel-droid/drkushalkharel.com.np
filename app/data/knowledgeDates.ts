@@ -4,6 +4,16 @@
 // to regenerate this via git log in a build script. Regenerate locally when
 // articles are added or substantively edited.
 export const knowledgeDates: Record<string, { published: string; modified: string }> = {
+  "panic-attack-nepali-guide": { published: "2026-09-02", modified: "2026-09-02" },
+  "aithan-sleep-paralysis-nepal": { published: "2026-09-02", modified: "2026-09-02" },
+  "alcohol-effects-body-brain-nepal": { published: "2026-09-02", modified: "2026-09-02" },
+  "psychiatric-medication-right-or-wrong-nepal": { published: "2026-09-02", modified: "2026-09-02" },
+  "non-restorative-sleep-nepal": { published: "2026-09-02", modified: "2026-09-02" },
+  "morning-drinking-alcohol-nepal": { published: "2026-09-02", modified: "2026-09-02" },
+  "overthinking-kasari-niko-parne-nepal": { published: "2026-09-02", modified: "2026-09-02" },
+  "internet-ma-lakshan-search-garne-nepal": { published: "2026-09-02", modified: "2026-09-02" },
+  "aalash-ho-ki-manasik-samasya-nepal": { published: "2026-09-02", modified: "2026-09-02" },
+  "smiling-depression-nepal": { published: "2026-09-02", modified: "2026-09-02" },
   "adhd": { published: "2026-07-06", modified: "2026-07-06" },
   "adjustment-disorder": { published: "2026-08-05", modified: "2026-08-05" },
   "after-suicide-attempt-recovery-follow-up-care-nepal": { published: "2026-08-06", modified: "2026-08-06" },
