@@ -14,6 +14,7 @@ export const knowledgeDates: Record<string, { published: string; modified: strin
   "anxiety-treatment-nepal": { published: "2026-07-20", modified: "2026-08-24" },
   "autism-spectrum-disorder": { published: "2026-07-06", modified: "2026-07-06" },
   "best-psychiatrist-anxiety-depression-nepal": { published: "2026-08-24", modified: "2026-08-24" },
+  "best-therapy-for-anxiety": { published: "2026-09-02", modified: "2026-09-02" },
   "bipolar-disorder": { published: "2026-08-05", modified: "2026-08-05" },
   "boost-mental-health": { published: "2026-07-18", modified: "2026-07-18" },
   "building-resilience": { published: "2026-08-02", modified: "2026-08-02" },
@@ -53,6 +54,7 @@ export const knowledgeDates: Record<string, { published: string; modified: strin
   "self-care-caregivers": { published: "2026-08-02", modified: "2026-08-02" },
   "sexual-health-performance-anxiety-intimacy-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "sleep-and-mental-health": { published: "2026-08-02", modified: "2026-08-02" },
+  "sleep-problems-which-doctor-kathmandu": { published: "2026-09-02", modified: "2026-09-02" },
   "social-media-mental-health": { published: "2026-08-02", modified: "2026-08-02" },
   "substance-use-disorder": { published: "2026-08-05", modified: "2026-08-05" },
   "suicide-crisis-helplines-nepal": { published: "2026-08-06", modified: "2026-08-06" },
@@ -63,6 +65,7 @@ export const knowledgeDates: Record<string, { published: string; modified: strin
   "teen-mental-health-parents": { published: "2026-08-02", modified: "2026-08-02" },
   "therapy-types-explained": { published: "2026-08-02", modified: "2026-08-02" },
   "therapy-vs-medication-which-is-right-nepal": { published: "2026-08-06", modified: "2026-08-06" },
+  "when-do-you-need-counselling": { published: "2026-09-02", modified: "2026-09-02" },
   "yati-sano-kurama": { published: "2026-07-14", modified: "2026-07-14" },
   "youth-suicide-prevention-gatekeeper-guide-parents-teachers-nepal": { published: "2026-08-06", modified: "2026-08-06" },
 };

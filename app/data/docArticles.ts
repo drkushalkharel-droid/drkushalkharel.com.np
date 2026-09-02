@@ -405,6 +405,36 @@ export const docArticles = [
     ]
   },
   {
+    "slug": "sleep-problems-which-doctor-kathmandu",
+    "title": "Sleep Problems: What to Do, and Which Doctor to See in Kathmandu | निद्राको समस्यामा के गर्ने, कुन डाक्टरलाई देखाउने?",
+    "category": "Sleep",
+    "language": "Bilingual",
+    "sourceFile": "website-seo-content",
+    "description": "Practical steps for sleep problems, and clear guidance on which doctor to see in Kathmandu — a psychiatrist, ENT or other specialist — depending on the cause, in English and Nepali.",
+    "sections": [
+      {
+        "heading": "What should I actually do about my sleep problem? | निद्राको समस्याका लागि वास्तवमा के गर्ने?",
+        "body": "Start with the basics that make the biggest difference for most people: a consistent wake-up time every day (even on weekends), reducing caffeine after midday, keeping screens away for the last 30-60 minutes before bed, and getting out of bed if you're lying awake and frustrated rather than forcing sleep. These changes alone resolve many mild, short-term sleep problems within a few weeks. If sleep hasn't improved after genuinely trying this for two to three weeks, it's time to see a doctor rather than continuing to self-manage.\n\nधेरैलाई सबैभन्दा फरक पार्ने आधारभूत कुराबाट सुरु गर्नुहोस्: हरेक दिन (शनिबार-आइतबार पनि) एउटै समयमा उठ्ने बानी, मध्यान्हपछि क्याफिन घटाउने, सुत्नुभन्दा ३०-६० मिनेटअघि स्क्रिनबाट टाढा रहने, र निद्रा नलागी झर्किरहनुभएको छ भने जबरजस्ती सुत्ने प्रयास नगरी ओछ्यानबाट उठ्ने। यी परिवर्तनले मात्र धेरैको हल्का, छोटो समयको निद्रा समस्या केही हप्तामै समाधान हुन्छ। साँच्चै दुई-तीन हप्ता प्रयास गर्दा पनि निद्रा नसुध्रिए डाक्टरलाई भेट्ने बेला भइसक्यो।"
+      },
+      {
+        "heading": "When sleep problems need more than self-help | कहिले निद्रा समस्या स्व-सहयोगभन्दा बढी चाहिन्छ?",
+        "body": "See a doctor sooner, not later, if poor sleep has lasted more than a month, if you're loudly snoring or someone has noticed you stop breathing briefly during sleep, if you feel excessively sleepy during the day despite enough time in bed, if worry or racing thoughts are what's keeping you awake, or if low mood, alcohol use or a physical health condition might be contributing. Sleep problems are rarely just about sleep itself — they're often connected to anxiety, depression, physical health or a specific sleep disorder that needs its own diagnosis.\n\nनिद्रा समस्या एक महिनाभन्दा बढी रहेको छ, ठूलो घुर्ने आवाज आउने वा सुतिरहँदा केही समय सास रोकिएको कसैले याद गरेको छ, ओछ्यानमा पर्याप्त समय बिताउँदा पनि दिनभरि अत्यधिक निद्रा लाग्छ, चिन्ता वा दौडिरहेको सोचाइले निदाउन दिइरहेको छैन, वा उदासी, रक्सी सेवन वा शारीरिक स्वास्थ्य समस्याले योगदान गरिरहेको हुन सक्छ भने ढिलो नगरी डाक्टरलाई भेट्नुहोस्। निद्रा समस्या प्रायः निद्राको मात्र विषय हुँदैन — यो प्रायः चिन्ता, डिप्रेसन, शारीरिक स्वास्थ्य वा छुट्टै निदान चाहिने निद्रा विकारसँग जोडिएको हुन्छ।"
+      },
+      {
+        "heading": "Which doctor should I actually see in Kathmandu? | काठमाडौंमा वास्तवमा कुन डाक्टरलाई देखाउने?",
+        "body": "If your sleep problem seems connected to stress, worry, low mood, racing thoughts, or you're not sure what's causing it, a psychiatrist is the right starting point — this is by far the most common underlying picture behind ongoing insomnia. If you or someone else has noticed loud snoring with breathing pauses (suggesting possible sleep apnea), an ENT specialist or a sleep-study referral may be needed first. Restless, uncomfortable legs at night that improve with movement point toward a specific neurological pattern worth mentioning to whichever doctor you see first, since it changes the approach. When in doubt, a psychiatric assessment can help clarify which direction is right rather than guessing which specialist to book first.\n\nतपाईंको निद्रा समस्या तनाव, चिन्ता, उदासी, दौडिरहेको सोचाइसँग जोडिएको जस्तो लाग्छ भने, वा कारण थाहा छैन भने, मनोचिकित्सक नै सही सुरुवात बिन्दु हो — लगातार अनिद्राको पछाडि प्रायः यही सबैभन्दा सामान्य कारण हुन्छ। तपाईं वा कसैले सास रोकिने खालको ठूलो घुर्ने आवाज याद गर्नुभएको छ (सम्भावित स्लिप एप्निया संकेत गर्दै) भने, पहिले ENT विशेषज्ञ वा स्लिप-स्टडी रेफरल चाहिन सक्छ। राति खुट्टा बेचैन र असजिलो हुने तर हल्लाउँदा सजिलो हुने लक्षणले एउटा विशिष्ट स्नायु सम्बन्धी ढाँचा संकेत गर्छ, जुन जुनसुकै डाक्टरलाई पहिले भेटे पनि उल्लेख गर्नुपर्छ किनकि यसले उपचारको दृष्टिकोण बदल्छ। अन्योल भएमा, कुन विशेषज्ञलाई पहिले भेट्ने भनेर अड्कल गर्नुभन्दा मनोचिकित्सकीय मूल्याङ्कनले सही दिशा छुट्याउन मद्दत गर्न सक्छ।"
+      },
+      {
+        "heading": "What happens at a sleep-focused psychiatric consultation | निद्रा समस्याका लागि मनोचिकित्सकीय परामर्शमा के हुन्छ?",
+        "body": "A sleep-focused consultation covers your sleep pattern in detail (timing, quality, what happens when you wake at night), daytime functioning, caffeine and alcohol use, mood and anxiety symptoms, physical health, and current medicines, since several common medicines and health conditions can disrupt sleep. Treatment may include structured sleep-focused CBT (the most evidence-based approach for chronic insomnia), addressing an underlying mood or anxiety condition, or medication for short-term relief while other approaches take effect, rather than long-term sleeping pills as a default.\n\nनिद्राकेन्द्रित परामर्शमा तपाईंको निद्राको ढाँचा (समय, गुणस्तर, राति ब्युँझँदा के हुन्छ), दिनको कामकाज, क्याफिन र रक्सी सेवन, मुड र चिन्ताका लक्षण, शारीरिक स्वास्थ्य, र हालका औषधिबारे विस्तृत कुराकानी हुन्छ, किनभने धेरै सामान्य औषधि र स्वास्थ्य समस्याले निद्रामा बाधा पुर्‍याउन सक्छन्। उपचारमा संरचित निद्राकेन्द्रित CBT (दीर्घकालीन अनिद्राको लागि सबैभन्दा प्रमाणित विधि), अन्तर्निहित मुड वा चिन्ता समस्याको उपचार, वा अन्य विधिले काम गर्दासम्म छोटो समयका लागि औषधि समावेश हुन सक्छ — दीर्घकालीन निद्राको औषधि पहिलो विकल्पका रूपमा होइन।"
+      },
+      {
+        "heading": "Booking a sleep consultation in Kathmandu, in person or online | काठमाडौंमा निद्रा परामर्शका लागि बुक गर्ने, प्रत्यक्ष वा अनलाइन",
+        "body": "Dr. Kushal Kharel assesses and treats sleep problems as part of general psychiatric practice at the Kalanki, Kathmandu clinic, in person or online, and can advise whether a referral to another specialist is needed based on your specific pattern. Call or WhatsApp +977 9861800547 to describe your sleep problem and how long it's been going on.\n\nडा. कुशल खरेलले कालंकी, काठमाडौंको क्लिनिकमा सामान्य मनोचिकित्सा अभ्यासकै भागको रूपमा निद्रा समस्याको मूल्याङ्कन र उपचार गर्नुहुन्छ, प्रत्यक्ष वा अनलाइन, र तपाईंको विशिष्ट ढाँचाअनुसार अर्को विशेषज्ञकहाँ रेफर गर्नुपर्ने हो कि होइन भनेर सल्लाह दिन सक्नुहुन्छ। आफ्नो निद्रा समस्या र त्यो कति समयदेखि भइरहेको छ भनेर बताउन +977 9861800547 मा फोन वा ह्वाट्सएप गर्नुहोस्।"
+      }
+    ]
+  },
+  {
     "slug": "gender-dysphoria",
     "title": "Gender Dysphoria",
     "topic": "gender dysphoria",
@@ -824,6 +854,36 @@ export const docArticles = [
     ]
   },
   {
+    "slug": "best-therapy-for-anxiety",
+    "title": "Best Therapy for Anxiety: What the Evidence Actually Shows | चिन्ताको लागि उत्तम थेरापी के हो?",
+    "category": "Anxiety Treatment",
+    "language": "Bilingual",
+    "sourceFile": "website-seo-content",
+    "description": "Is there one 'best' therapy for anxiety? An honest, evidence-based comparison of CBT, exposure therapy, mindfulness and medication for anxiety, in English and Nepali.",
+    "sections": [
+      {
+        "heading": "Is there really one 'best' therapy for anxiety? | के चिन्ताको लागि साँच्चै एउटै 'उत्तम' थेरापी हुन्छ?",
+        "body": "There's no single therapy that works best for every person or every type of anxiety, but there is a clear evidence-based front-runner for most anxiety disorders: cognitive behavioural therapy (CBT). Rather than searching for one universally 'best' option, it's more useful to understand what CBT actually does, when other approaches fit better, and how medication fits into the picture, so you can make an informed choice with a clinician rather than guessing from a list.\n\nहरेक व्यक्ति वा हरेक प्रकारको चिन्ताका लागि उत्तम हुने एउटै थेरापी हुँदैन, तर धेरैजसो चिन्ता रोगका लागि प्रमाणमा आधारित सबैभन्दा अगाडि रहने विकल्प भनेको कग्निटिभ बिहेभियरल थेरापी (CBT) हो। एउटै विश्वव्यापी रूपमा 'उत्तम' विकल्प खोज्नुभन्दा, CBT ले वास्तवमा के गर्छ, कहिले अन्य विधि बढी उपयुक्त हुन्छन्, र औषधि यसमा कसरी मिल्छ भन्ने बुझ्नु बढी उपयोगी हुन्छ, ताकि सूचीबाट अड्कल नगरी चिकित्सकसँग मिलेर सही निर्णय लिन सकियोस्।"
+      },
+      {
+        "heading": "Why CBT is the most evidence-based option for most anxiety | धेरैजसो चिन्ताका लागि CBT किन सबैभन्दा प्रमाणित विकल्प हो?",
+        "body": "CBT is the most researched psychological treatment for anxiety disorders, with decades of trial evidence supporting its use for generalised anxiety, social anxiety, panic disorder and specific phobias. It works by helping a person identify anxious thought patterns, test them against real evidence, and gradually reduce the avoidance that keeps anxiety going. Unlike simply talking about feelings, CBT is structured and skills-based, which is part of why its effects tend to be measurable and reasonably durable.\n\nसामान्यीकृत चिन्ता, सामाजिक चिन्ता, प्यानिक डिसअर्डर र विशिष्ट फोबियाका लागि CBT सबैभन्दा बढी अनुसन्धान गरिएको मनोवैज्ञानिक उपचार हो, जसलाई दशकौंको प्रमाणले समर्थन गर्छ। यसले व्यक्तिलाई चिन्तायुक्त सोचाइको ढाँचा चिन्न, त्यसलाई वास्तविक प्रमाणसँग जाँच्न, र चिन्तालाई कायम राख्ने पन्साउने बानी बिस्तारै घटाउन मद्दत गर्छ। केवल भावनाबारे कुरा गर्नुभन्दा फरक, CBT संरचित र सीपमा आधारित हुन्छ, जुन यसको प्रभाव नाप्न सकिने र दिगो हुनुको एउटा कारण हो।"
+      },
+      {
+        "heading": "When exposure therapy or other approaches fit better | कहिले एक्सपोजर थेरापी वा अन्य विधि बढी उपयुक्त हुन्छ?",
+        "body": "For panic disorder, phobias and social anxiety specifically, a specialised form of CBT called exposure therapy — gradually and safely facing feared situations rather than avoiding them — is often the most directly effective ingredient. For generalised worry without a clear trigger, standard CBT and mindfulness-based approaches tend to be more relevant than exposure work. No single format fits every presentation, which is why an assessment matters more than picking a therapy name off a list.\n\nविशेष गरी प्यानिक डिसअर्डर, फोबिया र सामाजिक चिन्ताका लागि, एक्सपोजर थेरापी (डराउने परिस्थितिलाई पन्साउनुको सट्टा बिस्तारै र सुरक्षित रूपमा सामना गर्ने CBT को विशेष रूप) प्रायः सबैभन्दा प्रत्यक्ष प्रभावकारी उपाय हुन्छ। स्पष्ट ट्रिगर नभएको सामान्य चिन्ताका लागि, सामान्य CBT र माइन्डफुलनेसमा आधारित विधि एक्सपोजर भन्दा बढी सान्दर्भिक हुन्छन्। कुनै एउटै ढाँचा हरेक अवस्थामा मिल्दैन, त्यसैले सूचीबाट थेरापीको नाम छान्नुभन्दा मूल्याङ्कन बढी महत्त्वपूर्ण हुन्छ।"
+      },
+      {
+        "heading": "Does medication compete with therapy, or work alongside it? | औषधिले थेरापीसँग प्रतिस्पर्धा गर्छ कि सँगै काम गर्छ?",
+        "body": "Medication is not a competing 'alternative' to therapy so much as a different tool for a different job: it can reduce the intensity of anxiety enough to make engaging in therapy more possible, particularly when symptoms are moderate to severe. Many people do well with CBT alone; others benefit most from combining CBT with medication, especially in the early stages of treatment. This is a clinical decision made together, not a choice between two competing philosophies.\n\nऔषधि थेरापीको प्रतिस्पर्धी 'विकल्प' भन्दा बढी फरक काम गर्ने फरक उपकरण हो: यसले चिन्ताको तीव्रता घटाई थेरापीमा संलग्न हुन सजिलो बनाउन सक्छ, विशेष गरी लक्षण मध्यम देखि गम्भीर भएको बेला। धेरैलाई CBT मात्रैले नै राम्रो हुन्छ; अरूलाई उपचारको सुरुवाती चरणमा CBT र औषधिको संयोजनले बढी फाइदा गर्छ। यो दुई प्रतिस्पर्धी दर्शनबीचको छनोट होइन, सँगै मिलेर लिने चिकित्सकीय निर्णय हो।"
+      },
+      {
+        "heading": "Finding the right therapy approach in Kathmandu | काठमाडौंमा उपयुक्त थेरापी विधि पत्ता लगाउने",
+        "body": "The most reliable way to find the right therapy approach is a proper psychiatric assessment rather than self-diagnosing from an article, however evidence-based. Dr. Kushal Kharel assesses the specific type and pattern of anxiety before recommending CBT, exposure-based work, medication or a combination, in person in Kalanki, Kathmandu or online.\n\nसही थेरापी विधि पत्ता लगाउने सबैभन्दा भरपर्दो तरिका भनेको जतिसुकै प्रमाणमा आधारित लेख भए पनि त्यसबाट आफैं निदान गर्नुभन्दा उचित मनोचिकित्सकीय मूल्याङ्कन नै हो। डा. कुशल खरेलले चिन्ताको विशिष्ट प्रकार र ढाँचा मूल्याङ्कन गरेपछि मात्र CBT, एक्सपोजर-आधारित उपचार, औषधि वा संयोजन सिफारिस गर्नुहुन्छ, कालंकी काठमाडौंमा प्रत्यक्ष वा अनलाइन।"
+      }
+    ]
+  },
+  {
     "slug": "depression-treatment-nepal",
     "title": "Depression Treatment in Nepal: Symptoms, Help & When to See a Psychiatrist | डिप्रेसन उपचार",
     "category": "Depression Treatment",
@@ -1060,6 +1120,36 @@ export const docArticles = [
       {
         "heading": "आकस्मिक अवस्थामा के गर्ने?",
         "body": "आफूलाई वा अरूलाई हानि पुर्‍याउने सोच, वा सुरक्षित रहन नसक्ने अवस्था भएमा काउन्सिलिङ भेटको पर्खाइ नगरी तुरुन्त नजिकको अस्पतालको आकस्मिक सेवामा जानुहोस् वा राष्ट्रिय आत्महत्या रोकथाम हेल्पलाइन 1166 मा सम्पर्क गर्नुहोस्।"
+      }
+    ]
+  },
+  {
+    "slug": "when-do-you-need-counselling",
+    "title": "When Do You Need Counselling? Signs and Situations | कस्तो अवस्थामा काउन्सिलिङ चाहिन्छ?",
+    "category": "Getting Treatment",
+    "language": "Bilingual",
+    "sourceFile": "website-seo-content",
+    "description": "Signs and situations where counselling can help — from everyday stress to relationship difficulty and overthinking — explained in English and Nepali, with guidance on when to see a psychiatrist instead.",
+    "sections": [
+      {
+        "heading": "Do I really need counselling, or am I overreacting? | मलाई साँच्चै काउन्सिलिङ चाहिन्छ कि म बढी सोचिरहेको छु?",
+        "body": "There is no minimum threshold of suffering required before counselling becomes appropriate. Many people wait until a problem feels unbearable before reaching out, but counselling is just as useful — often more useful — when a difficulty is still manageable but persistent, confusing or draining. If something has been bothering you for weeks, if you keep thinking about it, or if you simply don't have anyone else you can talk to about it honestly, that is reason enough to consider it.\n\nकाउन्सिलिङ लिनुअघि समस्या 'ठूलो' नै हुनुपर्छ भन्ने छैन। धेरैले समस्या असहनीय नभएसम्म पर्खिरहन्छन्, तर समस्या अझै व्यवस्थापन गर्न सकिने तर लगातार, अलमल्याउने वा थकाउने खालको हुँदा नै काउन्सिलिङ बढी उपयोगी हुन्छ। केही हप्तादेखि तपाईंलाई कुनै कुराले सताइरहेको छ, त्यही कुरा बारम्बार सोचिरहनुभएको छ, वा इमानदारीपूर्वक कुरा गर्ने कोही छैन भने, यो काउन्सिलिङ लिनका लागि पर्याप्त कारण हो।"
+      },
+      {
+        "heading": "Common situations that bring people to counselling | काउन्सिलिङमा मानिस ल्याउने सामान्य अवस्थाहरू",
+        "body": "People commonly seek counselling for ongoing stress at work or in studies, relationship or family conflict, grief after a loss, difficulty adjusting to a big life change such as migration or a new job, persistent low mood or worry that hasn't reached a clinical diagnosis, overthinking and difficulty switching off, parenting stress, or simply feeling stuck and wanting an outside perspective. None of these require a formal mental illness to be a valid reason to seek support.\n\nकाम वा पढाइमा लगातार तनाव, सम्बन्ध वा पारिवारिक द्वन्द्व, कसैको मृत्युपछिको शोक, बसाइँसराइ वा नयाँ जागिर जस्तो ठूलो जीवन परिवर्तनसँग तालमेल मिलाउन गाह्रो हुनु, अझै औपचारिक निदान नभएको लगातार उदासी वा चिन्ता, धेरै सोचिरहने बानी, अभिभावकत्वको तनाव, वा जीवनमा अल्झिएको महसुस भई बाहिरी दृष्टिकोण चाहिनु — यी सबै कारणले मानिसहरू काउन्सिलिङमा जान्छन्। यीमध्ये कुनैलाई पनि औपचारिक मानसिक रोग हुनैपर्छ भन्ने छैन।"
+      },
+      {
+        "heading": "Warning signs it's time to stop putting it off | ढिलो नगरी काउन्सिलिङ लिनुपर्ने संकेतहरू",
+        "body": "Certain signs suggest counselling shouldn't wait much longer: sleep or appetite has changed noticeably, you're withdrawing from people you used to enjoy spending time with, small tasks feel overwhelming, you're relying more heavily on alcohol or other substances to cope, irritability or tearfulness is affecting your relationships, or the same difficult thoughts keep circling without resolution. None of these are emergencies on their own, but they are signs that self-managing alone has reached its limit.\n\nकेही संकेतले काउन्सिलिङ धेरै ढिलो नगर्नु राम्रो भएको देखाउँछन्: निद्रा वा भोकमा उल्लेखनीय परिवर्तन आएको छ, पहिले रमाइलो लाग्ने मानिससँग टाढा हुँदै जानुभएको छ, साना कामहरू पनि गाह्रो लाग्न थालेको छ, सामना गर्न रक्सी वा अन्य पदार्थमा बढी भर पर्नुभएको छ, चिडचिडापन वा रुने बानीले सम्बन्धमा असर परिरहेको छ, वा एउटै गाह्रो सोचाइ समाधान नभई बारम्बार दोहोरिरहेको छ। यी मध्ये कुनै पनि एक्लै आकस्मिक अवस्था होइन, तर यसले आफैं व्यवस्थापन गर्ने क्षमताको सीमा पुगेको संकेत गर्छ।"
+      },
+      {
+        "heading": "When counselling isn't enough, and a psychiatrist is needed instead | कहिले काउन्सिलिङ मात्र पर्याप्त हुँदैन, मनोचिकित्सक चाहिन्छ?",
+        "body": "Counselling is talk-based support and does not include medical diagnosis or medication. If symptoms are severe, have lasted a long time, involve major changes in sleep, energy, thinking or perception, or include any thoughts of self-harm, a psychiatric assessment is more appropriate, either instead of counselling or alongside it. A counsellor or psychiatrist can help you figure out which is the better starting point if you're unsure.\n\nकाउन्सिलिङ कुराकानीमा आधारित सहयोग हो र यसमा चिकित्सकीय निदान वा औषधि समावेश हुँदैन। लक्षण गम्भीर भएमा, लामो समयदेखि रहेमा, निद्रा, ऊर्जा, सोचाइ वा अनुभूतिमा ठूलो परिवर्तन भएमा, वा आफूलाई हानि पुर्‍याउने कुनै पनि सोच आएमा, काउन्सिलिङको सट्टा वा साथसाथै मनोचिकित्सकीय मूल्याङ्कन बढी उपयुक्त हुन्छ। अन्योल भएमा काउन्सिलर वा मनोचिकित्सकले नै कुन उपयुक्त सुरुवात बिन्दु हो भनेर टुंग्याउन मद्दत गर्न सक्छन्।"
+      },
+      {
+        "heading": "Getting started in Kathmandu, in person or online | काठमाडौंमा सुरु गर्ने तरिका, प्रत्यक्ष वा अनलाइन",
+        "body": "Dr. Kushal Kharel's clinic in Kalanki, Kathmandu offers both counselling-informed support and full psychiatric assessment, in person or online, so you don't need to have already decided which one you need before reaching out. Call or WhatsApp +977 9861800547 to describe what's going on, and the right starting point can be worked out together.\n\nकालंकी, काठमाडौंस्थित डा. कुशल खरेलको क्लिनिकमा काउन्सिलिङ-आधारित सहयोग र पूर्ण मनोचिकित्सकीय मूल्याङ्कन दुवै, प्रत्यक्ष वा अनलाइन उपलब्ध छ, त्यसैले सम्पर्क गर्नुअघि नै कुन चाहिन्छ भनेर टुंग्याइसक्नुपर्ने आवश्यकता छैन। +977 9861800547 मा फोन वा ह्वाट्सएप गरेर आफ्नो अवस्था बताउनुहोस्, र सही सुरुवात बिन्दु सँगै मिलाएर टुंग्याउन सकिन्छ।"
       }
     ]
   },
