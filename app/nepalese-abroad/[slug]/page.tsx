@@ -29,7 +29,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: {
-      canonical: `/nepalese-abroad/${guide.slug}`,
+      canonical: `/nepalese-abroad/${guide.slug}/`,
     },
     keywords: [
       ...guide.searchTerms,

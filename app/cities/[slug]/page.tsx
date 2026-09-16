@@ -36,7 +36,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: {
-      canonical: `/cities/${guide.slug}`,
+      canonical: `/cities/${guide.slug}/`,
     },
     keywords: [
       ...guide.searchTerms,

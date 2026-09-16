@@ -69,7 +69,7 @@ export async function generateMetadata({
     title,
     description: condition.shortDescription,
     alternates: {
-      canonical: `/conditions/${condition.slug}`,
+      canonical: `/conditions/${condition.slug}/`,
     },
     keywords: [
       condition.title,

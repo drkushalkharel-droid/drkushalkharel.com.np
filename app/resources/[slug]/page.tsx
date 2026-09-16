@@ -32,7 +32,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: {
-      canonical: `/resources/${resource.slug}`,
+      canonical: `/resources/${resource.slug}/`,
     },
     keywords: [resource.title, resource.category, "Dr Kushal Kharel", "Psychiatrist Kathmandu"],
     openGraph: {

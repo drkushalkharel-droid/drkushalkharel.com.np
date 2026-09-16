@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Psychiatrist Kathmandu",
   ],
   alternates: {
-    canonical: "/conditions",
+    canonical: "/conditions/",
   },
   openGraph: {
     title: "Psychiatric Conditions Library A-Z | Dr. Kushal Kharel",

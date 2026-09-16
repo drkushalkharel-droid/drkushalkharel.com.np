@@ -12,7 +12,7 @@ const description =
 export const metadata: Metadata = {
   title: { absolute: title },
   description,
-  alternates: { canonical: "/online-psychiatrist-nepal" },
+  alternates: { canonical: "/online-psychiatrist-nepal/" },
   keywords: [
     "online psychiatrist Nepal",
     "online psychiatric consultation Nepal",

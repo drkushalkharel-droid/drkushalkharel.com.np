@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: {
-    canonical: "/resources",
+    canonical: "/resources/",
   },
   keywords: [
     "psychiatric patient leaflets Nepal",
