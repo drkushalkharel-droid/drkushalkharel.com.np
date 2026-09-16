@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import RedirectNotice from "../components/RedirectNotice";
 
-const destination = "/conditions/adhd";
+const destination = "/conditions/adhd/";
 
 export const metadata: Metadata = {
   title: "ADHD — page moved",

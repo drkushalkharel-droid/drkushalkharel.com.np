@@ -83,7 +83,7 @@ export async function generateMetadata({
     title: { absolute: seoTitle },
     description: article.description,
     alternates: {
-      canonical: `/knowledge/${article.slug}`,
+      canonical: `/knowledge/${article.slug}/`,
     },
     keywords: [
       keywordTitle,

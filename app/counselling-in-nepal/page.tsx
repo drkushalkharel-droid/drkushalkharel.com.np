@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: {
-    canonical: "/counselling-in-nepal",
+    canonical: "/counselling-in-nepal/",
   },
   keywords: [
     "counselling in Nepal",

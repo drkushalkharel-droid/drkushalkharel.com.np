@@ -30,7 +30,7 @@ export async function generateMetadata({
     title,
     description: tool.seoDescription,
     alternates: {
-      canonical: `/screening/${tool.id}`,
+      canonical: `/screening/${tool.id}/`,
     },
     keywords: tool.keywords,
     openGraph: {

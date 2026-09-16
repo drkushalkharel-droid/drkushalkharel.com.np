@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: {
-    canonical: "/privacy-policy",
+    canonical: "/privacy-policy/",
   },
   robots: {
     index: true,

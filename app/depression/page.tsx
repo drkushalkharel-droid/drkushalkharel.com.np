@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import RedirectNotice from "../components/RedirectNotice";
 
-const destination = "/conditions/major-depressive-disorder";
+const destination = "/conditions/major-depressive-disorder/";
 
 export const metadata: Metadata = {
   title: "Depression — page moved",

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Book a Psychiatric Consultation",
   description:
     "Book an in-person psychiatric consultation in Kathmandu or ask about online consultation with Dr. Kushal Kharel.",
-  alternates: { canonical: "/appointment" },
+  alternates: { canonical: "/appointment/" },
 };
 
 const phone = "+977 9861800547";

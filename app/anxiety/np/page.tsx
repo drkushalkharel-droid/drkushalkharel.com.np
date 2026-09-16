@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: {
-    canonical: "/anxiety/np",
+    canonical: "/anxiety/np/",
     languages: {
       en: "/anxiety",
       ne: "/anxiety/np",

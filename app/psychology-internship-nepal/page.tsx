@@ -11,7 +11,7 @@ const description =
 export const metadata: Metadata = {
   title: { absolute: title },
   description,
-  alternates: { canonical: "/psychology-internship-nepal" },
+  alternates: { canonical: "/psychology-internship-nepal/" },
   keywords: [
     "Psychology internship Nepal",
     "Social work internship Kathmandu",

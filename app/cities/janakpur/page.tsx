@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import RedirectNotice from "../../components/RedirectNotice";
 
-const destination = "/online-psychiatrist-nepal";
+const destination = "/online-psychiatrist-nepal/";
 
 export const metadata: Metadata = {
   title: "Janakpur — page moved",

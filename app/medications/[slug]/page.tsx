@@ -22,7 +22,7 @@ export async function generateMetadata({
   return {
     title,
     description: med.shortDescription,
-    alternates: { canonical: `/medications/${med.slug}` },
+    alternates: { canonical: `/medications/${med.slug}/` },
     keywords: [med.name, `${med.name} Nepal`, `${med.name} side effects`, "Dr Kushal Kharel", "Psychiatrist Kathmandu"],
     openGraph: {
       title,

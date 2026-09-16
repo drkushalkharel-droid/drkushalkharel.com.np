@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: {
-    canonical: "/medical-disclaimer",
+    canonical: "/medical-disclaimer/",
   },
   robots: {
     index: true,

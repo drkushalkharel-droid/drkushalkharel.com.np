@@ -111,7 +111,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: siteUrl,
+    canonical: `${siteUrl}/`,
   },
 
   ...(googleSiteVerification || bingSiteVerification

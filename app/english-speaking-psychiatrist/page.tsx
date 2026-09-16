@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: page.title,
   description: page.shortDescription,
   alternates: {
-    canonical: "/english-speaking-psychiatrist",
+    canonical: "/english-speaking-psychiatrist/",
   },
   keywords: page.searchTerms,
   openGraph: {

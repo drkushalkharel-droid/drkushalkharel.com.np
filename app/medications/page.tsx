@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Lithium Nepal",
     "Benzodiazepines Nepal",
   ],
-  alternates: { canonical: "/medications" },
+  alternates: { canonical: "/medications/" },
   openGraph: {
     title: "Psychiatric Medication Information | Dr. Kushal Kharel",
     description: "Educational information on psychiatric medications, by category, for patients in Nepal.",

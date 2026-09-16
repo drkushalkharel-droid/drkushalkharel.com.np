@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: page.title,
   description: page.shortDescription,
   alternates: {
-    canonical: "/how-to-control-your-mind-nepal",
+    canonical: "/how-to-control-your-mind-nepal/",
   },
   keywords: page.searchTerms,
   openGraph: {

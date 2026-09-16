@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: {
-    canonical: "/patient-testimonials",
+    canonical: "/patient-testimonials/",
   },
   keywords: [
     "Dr Kushal Kharel patient reviews",

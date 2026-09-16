@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Dr Kushal Kharel Blog",
     "Psychiatrist Articles Nepal",
   ],
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: "/blog/" },
   openGraph: {
     title: "Mental Health Articles & Psychiatry Guides for Nepal",
     description: "Browse mental health articles by topic, from Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal.",
