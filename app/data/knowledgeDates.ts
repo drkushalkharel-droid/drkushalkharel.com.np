@@ -17,7 +17,6 @@ export const knowledgeDates: Record<string, { published: string; modified: strin
   "adhd": { published: "2026-07-06", modified: "2026-07-06" },
   "adjustment-disorder": { published: "2026-08-05", modified: "2026-08-05" },
   "after-suicide-attempt-recovery-follow-up-care-nepal": { published: "2026-08-06", modified: "2026-08-06" },
-  "alcohol-addiction-treatment-nepal": { published: "2026-08-24", modified: "2026-08-24" },
   "alcohol-dependence-syndrome": { published: "2026-07-06", modified: "2026-07-06" },
   "alcohol-substance-use-suicide-risk-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "anxiety-treatment-nepal": { published: "2026-07-20", modified: "2026-09-23" },

@@ -6,7 +6,7 @@
 export const articleDates: Record<string, { published: string; modified: string }> = {
   "adult-adhd-nepal": { published: "2026-07-29", modified: "2026-07-29" },
   "adult-autism-late-diagnosis-nepal": { published: "2026-08-06", modified: "2026-08-06" },
-  "alcohol-addiction-treatment-nepal": { published: "2026-07-29", modified: "2026-07-29" },
+  "alcohol-addiction-treatment-nepal": { published: "2026-07-29", modified: "2026-09-23" },
   "alcohol-drug-rehab-referral-collaboration-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "andropause-male-midlife-mental-health-nepal": { published: "2026-08-07", modified: "2026-08-07" },
   "anger-management-irritability-treatment-nepal": { published: "2026-08-05", modified: "2026-08-06" },
