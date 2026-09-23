@@ -40,7 +40,6 @@ export const knowledgeDates: Record<string, { published: string; modified: strin
   "home-visit-psychiatric-assessment-nepal": { published: "2026-08-24", modified: "2026-08-24" },
   "insomnia": { published: "2026-07-06", modified: "2026-07-06" },
   "intellectual-development-disorder": { published: "2026-07-06", modified: "2026-07-06" },
-  "managing-depression": { published: "2026-08-02", modified: "2026-08-02" },
   "mania": { published: "2026-07-06", modified: "2026-07-06" },
   "means-restriction-lethal-means-safety-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "media-werther-effect-samuhik-jimmewari": { published: "2026-07-14", modified: "2026-07-14" },

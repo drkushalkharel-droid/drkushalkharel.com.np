@@ -45,13 +45,6 @@ export const publishedArticles: ArticleLink[] = [
     language: "Bilingual",
   },
   {
-    title: "Understanding and Managing Depression: Practical Steps That Help",
-    description: "Compassionate guidance on spotting depression and practical steps to find relief and support.",
-    href: "/knowledge/managing-depression",
-    category: "Depression",
-    language: "Bilingual",
-  },
-  {
     title: "Burnout at Work: How to Recognize It and Recover",
     description: "Learn how to spot workplace burnout early and proven steps to recover and prevent relapse.",
     href: "/knowledge/burnout-at-work",

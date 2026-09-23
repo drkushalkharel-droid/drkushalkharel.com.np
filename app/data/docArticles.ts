@@ -1067,21 +1067,6 @@ export const docArticles = [
     ]
   },
   {
-    "slug": "managing-depression",
-    "title": "Understanding and Managing Depression: Practical Steps That Help",
-    "category": "Depression",
-    "language": "Bilingual",
-    "sourceFile": "generated",
-    "description": "Compassionate guidance on spotting depression and practical steps to find relief and support.",
-    "sections": [
-      { "heading": "What is depression?", "body": "Depression involves persistent low mood, loss of interest, changes in sleep or appetite, low energy and negative thinking. It is common and treatable with a combination of therapy, medication and lifestyle changes." },
-      { "heading": "Self-help and routine-based strategies", "body": "Set small achievable goals, reintroduce pleasurable activities, maintain sleep schedule, eat regularly and include gentle physical activity. Social contact even when difficult is protective." },
-      { "heading": "Therapy and medication overview", "body": "CBT, behavioural activation and interpersonal therapy have strong evidence. Antidepressant medication can help moderate-to-severe depression and is often combined with therapy." },
-      { "heading": "Supporting someone with depression", "body": "Listen without judgement, encourage small steps, help with appointments and safety planning. Avoid minimising feelings and take any suicidal talk seriously." },
-      { "heading": "Crisis and safety planning", "body": "If there is a plan or intent to self-harm, seek urgent in-person help or emergency services. Keep emergency contacts handy and remove immediate means of harm when possible." }
-    ]
-  },
-  {
     "slug": "burnout-at-work",
     "title": "Burnout at Work: How to Recognize It and Recover",
     "category": "Workplace",
