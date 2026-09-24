@@ -3,6 +3,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MessageCircle, Phone } from "lucide-react";
 import { abroadGuides, getAbroadGuide } from "../../data/abroad";
+import { buildAbroadFaqs, googleMeetStatement, treatedSummary, withArticle } from "../../data/onlineCare";
+import {
+  buildFaqPageJsonLd,
+  buildOnlineServiceJsonLd,
+  buildSpeakableSpec,
+  serializeJsonLd,
+} from "../../lib/schema";
+import { FaqList, NameLine, OnlineFactsRow, OnlineTreatmentCards, TreatedList } from "../../components/OnlineCareSections";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -22,21 +30,29 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = `Nepali Psychiatrist for Nepalese in ${guide.country}`;
-  const description = `${guide.headline}. Learn common mental health concerns among Nepalese in ${guide.country} and contact Dr. Kushal Kharel at +9779861800547.`;
+  const title = `Nepali Consultant Psychiatrist in ${guide.country} – Online Therapy`;
+  const description = `Consultant psychiatrist & online therapy for Nepalis abroad in ${withArticle(guide.country)}: constant worry, intrusive thoughts, sleep problems. Google Meet, at a time that suits your time zone.`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: {
       canonical: `/nepalese-abroad/${guide.slug}/`,
     },
     keywords: [
       ...guide.searchTerms,
+      `Nepali psychiatrist in ${guide.country}`,
+      `Nepali consultant psychiatrist ${guide.country}`,
+      `Nepali psychiatrist online ${guide.country}`,
+      `online therapy for Nepalis in ${guide.country}`,
+      "consultant psychiatrist for Nepalis abroad",
+      "constant worry and intrusive thoughts online therapy",
+      `Nepali constant worry anxiety help ${guide.country}`,
       `Nepali mental health support ${guide.country}`,
       `Nepalese depression anxiety ${guide.country}`,
       `Dr Kushal Kharel ${guide.country}`,
       "online psychiatrist Nepal",
+      "Google Meet psychiatrist Nepali",
     ],
     openGraph: {
       title,
@@ -53,6 +69,7 @@ export async function generateMetadata({
       ],
       type: "article",
     },
+    twitter: { card: "summary_large_image", title, description, images: ["/images/doctor.png"] },
   };
 }
 
@@ -68,51 +85,79 @@ export default async function NepaleseAbroadPage({
     notFound();
   }
 
-  const jsonLd = {
+  const pageUrl = `${siteUrl}/nepalese-abroad/${guide.slug}`;
+  const place = withArticle(guide.country);
+  const faqs = buildAbroadFaqs(guide.country);
+  const sameRegion = abroadGuides.filter(
+    (other) => other.region === guide.region && other.slug !== guide.slug,
+  );
+
+  const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     name: guide.headline,
-    description: guide.intro,
-    url: `${siteUrl}/nepalese-abroad/${guide.slug}`,
+    description: `${googleMeetStatement} This guide covers common concerns for Nepalis in ${place}.`,
+    url: pageUrl,
     inLanguage: "en",
+    dateModified: "2026-09-24",
     audience: {
       "@type": "PeopleAudience",
       name: `Nepalese people in ${guide.country}`,
     },
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Kathmandu",
-        addressCountry: "NP",
-      },
-    },
+    about: { "@id": `${siteUrl}#clinic` },
+    mainEntity: { "@id": `${pageUrl}#service` },
+    author: { "@id": `${siteUrl}#psychiatrist` },
+    reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
+    speakable: buildSpeakableSpec(["#country-quick-answer"]),
+  };
+
+  const serviceJsonLd = buildOnlineServiceJsonLd({
+    id: `${pageUrl}#service`,
+    name: `Online psychiatric consultation for Nepalis in ${place}`,
+    description: `${googleMeetStatement} Treats ${treatedSummary}, with therapy and medication together where appropriate.`,
+    url: pageUrl,
+    audienceType: `Nepalis living in ${place}`,
+    areaServed: [guide.country],
+  });
+
+  const faqJsonLd = buildFaqPageJsonLd(faqs);
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Nepalese abroad", item: `${siteUrl}/nepalese-abroad` },
+      { "@type": "ListItem", position: 3, name: guide.country, item: pageUrl },
+    ],
   };
 
   return (
     <main className="min-h-screen bg-stone-50 text-stone-900">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(webPageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(serviceJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbJsonLd) }} />
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
           <Link href="/nepalese-abroad" className="font-semibold text-sage-700">
             &larr; Back to Nepalese abroad guides
           </Link>
-          <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
-            {guide.region}
-          </p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
-            Nepali psychiatrist guidance for Nepalese in {guide.country}
+          <NameLine />
+          <h1 className="mt-4 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
+            Nepali consultant psychiatrist and online therapy for Nepalis in {guide.country}
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
-            {guide.intro}
+          <p id="country-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
+            Yes, Nepalis in {place} can see a Nepali psychiatrist online. Dr.
+            Kushal Kharel, a Nepal Medical Council-registered Consultant
+            Psychiatrist in Kathmandu, offers online therapy and video
+            consultation for Nepalis abroad through Google Meet, in Nepali or
+            English, at a time that suits your time zone. He treats constant
+            worry, anxiety, intrusive thoughts, sleep problems and depression,
+            and every session is confidential.
           </p>
+          <TreatedList />
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="tel:+9779861800547"
@@ -131,14 +176,22 @@ export default async function NepaleseAbroadPage({
               WhatsApp
             </a>
           </div>
+          <OnlineFactsRow />
         </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-6 pt-14 lg:px-8">
+        <h2 className="text-3xl font-bold text-stone-950">
+          Mental health for Nepalese in {place}
+        </h2>
+        <p className="mt-4 leading-8 text-stone-600">{guide.intro}</p>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div>
             <h2 className="text-3xl font-bold text-stone-950">
-              Common mental health concerns among Nepalese in {guide.country}
+              Common mental health concerns among Nepalese in {place}
             </h2>
             <p className="mt-4 leading-8 text-stone-600">
               Living abroad can bring opportunity and pressure at the same
@@ -146,7 +199,10 @@ export default async function NepaleseAbroadPage({
               affect sleep, study, work, relationships, safety or substance use.
             </p>
             <div className="mt-8 rounded-lg border border-amber-200 bg-amber-50 p-5 leading-7 text-amber-950">
-              {guide.practicalNote}
+              <h3 className="font-bold">
+                Time zone, prescriptions and emergencies in {place}
+              </h3>
+              <p className="mt-2">{guide.practicalNote}</p>
             </div>
           </div>
 
@@ -162,6 +218,11 @@ export default async function NepaleseAbroadPage({
           </div>
         </div>
       </section>
+
+      <OnlineTreatmentCards
+        heading={`How Dr. Kushal treats depression, anxiety, OCD and sleep problems for Nepalis in ${place}`}
+        intro="Therapy and medication are planned together, all through Google Meet video consultation."
+      />
 
       {guide.testimonial && (
         <section className="mx-auto max-w-4xl px-6 py-14 lg:px-8">
@@ -183,17 +244,26 @@ export default async function NepaleseAbroadPage({
       )}
 
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+        <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+          <h2 className="text-3xl font-bold text-stone-950">
+            Questions from Nepalis in {place}
+          </h2>
+          <FaqList faqs={faqs} />
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-7xl px-6 pb-14 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold text-stone-950">
-                How Nepalese in {guide.country} can contact Dr. Kushal Kharel
+                How Nepalese in {place} can contact Dr. Kushal Kharel
               </h2>
               <p className="mt-4 leading-8 text-stone-600">
                 Call or message with your main concern, symptom duration,
                 current medicines, previous diagnosis, substance use, sleep
                 pattern, safety concerns and country of residence. Dr. Kushal
-                Kharel can guide whether online psychiatric consultation,
+                Kharel can guide whether a Google Meet video consultation,
                 family discussion, local emergency care or in-person follow-up
                 is most appropriate.
               </p>
@@ -235,9 +305,21 @@ export default async function NepaleseAbroadPage({
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 pb-14 lg:px-8">
           <h2 className="text-2xl font-bold text-stone-950">Related reading</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <Link
+              href="/psychiatrist-for-nepalis-abroad"
+              className="rounded-lg border border-stone-200 bg-stone-50 p-5 font-semibold text-stone-800 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+            >
+              How online psychiatry for Nepalis abroad works
+            </Link>
+            <Link
+              href="/sleep-problems-treatment-nepal"
+              className="rounded-lg border border-stone-200 bg-stone-50 p-5 font-semibold text-stone-800 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+            >
+              Sleep problems and insomnia treatment
+            </Link>
             <Link
               href="/blog/mental-health-nepali-migrant-workers"
               className="rounded-lg border border-stone-200 bg-stone-50 p-5 font-semibold text-stone-800 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
@@ -275,6 +357,23 @@ export default async function NepaleseAbroadPage({
               Returning to Nepal after living abroad
             </Link>
           </div>
+
+          {sameRegion.length > 0 && (
+            <div className="mt-10">
+              <h3 className="font-bold text-stone-950">Nepali psychiatrist online, other countries in {guide.region}</h3>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {sameRegion.map((other) => (
+                  <Link
+                    key={other.slug}
+                    href={`/nepalese-abroad/${other.slug}`}
+                    className="rounded-full border border-sage-200 bg-white px-4 py-2 text-sm font-semibold text-sage-900 transition hover:border-sage-400 hover:bg-sage-100"
+                  >
+                    {other.country}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </main>

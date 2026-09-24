@@ -110,7 +110,7 @@ export default function AnxietyPage() {
         name: "Can I consult online?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Online consultation can be suitable for many anxiety concerns, especially follow-up, psychoeducation and treatment monitoring.",
+          text: "Yes. Dr. Kushal Kharel treats anxiety with medication and CBT together through Google Meet video consultation, in Nepali or English, including for Nepalis living abroad.",
         },
       },
       {

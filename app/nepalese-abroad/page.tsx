@@ -1,26 +1,50 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Globe2, Mail, MessageCircle, Phone, Quote } from "lucide-react";
+import { Mail, MessageCircle, Phone, Quote } from "lucide-react";
 import { abroadGuides } from "../data/abroad";
-import { buildHowToJsonLd } from "../lib/schema";
+import { abroadFaqs, googleMeetStatement, treatedSummary } from "../data/onlineCare";
+import {
+  buildFaqPageJsonLd,
+  buildHowToJsonLd,
+  buildOnlineServiceJsonLd,
+  buildSpeakableSpec,
+  serializeJsonLd,
+} from "../lib/schema";
+import { FaqList, NameLine, OnlineFactsRow, OnlineTreatmentCards, TreatedList } from "../components/OnlineCareSections";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/nepalese-abroad`;
-const title = "Online Psychiatric Consultation for Nepalese Abroad";
+const title = "Consultant Psychiatrist & Online Therapy for Nepalis Abroad";
 const description =
-  "Confidential online psychiatric consultation for Nepalese living abroad — anxiety, depression, addiction and family concerns, with country-specific guidance for the USA, UK, Australia, Canada, Gulf and more.";
+  "Consultant psychiatrist & online therapy for Nepalis abroad: constant worry, intrusive thoughts, sleep problems. Google Meet, at a time that suits your time zone.";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
   alternates: {
     canonical: "/nepalese-abroad/",
   },
   keywords: [
-    "Online psychiatric consultation for Nepalese abroad",
     "Nepali psychiatrist online",
+    "Nepali consultant psychiatrist",
+    "Consultant psychiatrist for Nepalis abroad",
+    "online therapy for Nepalis abroad",
+    "constant worry and intrusive thoughts online therapy",
+    "sleep problems for Nepalis abroad",
+    "Nepali online therapy",
+    "Nepali psychiatrist abroad",
+    "constant worry chinta treatment online",
+    "intrusive thoughts OCD online Nepali",
+    "sleep problems insomnia Nepali abroad",
+    "Online psychiatrist for Nepalis abroad",
+    "Nepali speaking psychiatrist online",
+    "Nepali psychiatrist Google Meet",
+    "Online psychiatric consultation for Nepalese abroad",
     "Nepalese mental health abroad",
-    "Online psychiatrist for Nepali diaspora",
+    "Nepali depression anxiety OCD sleep problems online",
+    "नेपाली मनोचिकित्सक अनलाइन",
+    "अनलाइन थेरापी",
+    "चिन्ता उपचार अनलाइन",
   ],
   openGraph: {
     title,
@@ -30,19 +54,14 @@ export const metadata: Metadata = {
     images: [{ url: "/images/doctor.png", width: 1200, height: 630 }],
     type: "website",
   },
+  twitter: { card: "summary_large_image", title, description, images: ["/images/doctor.png"] },
 };
 
+// The six short patient questions come from the shared onlineCare module so
+// every abroad page answers them identically. The two below are specific to
+// this hub.
 const faqs = [
-  {
-    question: "Can Nepalese living abroad book an online psychiatric consultation?",
-    answer:
-      "Yes. Dr. Kushal Kharel provides online psychiatric consultation by phone or video call for Nepalese living in the USA, UK, Australia, Canada, the Gulf and other countries.",
-  },
-  {
-    question: "How does an online consultation work across time zones?",
-    answer:
-      "Message on WhatsApp with your country and preferred times, and a slot is arranged that works across the time difference. Follow-up messages can be exchanged asynchronously between live sessions.",
-  },
+  ...abroadFaqs,
   {
     question: "Can prescriptions be provided during an online consultation from abroad?",
     answer:
@@ -53,10 +72,24 @@ const faqs = [
     answer:
       "Contact local emergency services or the nearest hospital immediately for any urgent safety risk. For an urgent but non-emergency concern, such as a sudden relapse or a medication question, the Abroad Patient Help Desk above can be reached by call, WhatsApp or email. Online consultation is for ongoing psychiatric care, not a substitute for local emergency response.",
   },
+];
+
+const bookingSteps = [
   {
-    question: "Is the consultation conducted in Nepali or English?",
-    answer:
-      "Consultations can be conducted in Nepali, English, or a mix of both, whichever you're most comfortable with.",
+    name: "Message with your country and availability",
+    text: "Send a WhatsApp message to +977 9861800547 with your country of residence and a time that suits your time zone, so a slot can be arranged.",
+  },
+  {
+    name: "Join the Google Meet video call",
+    text: "Join the Google Meet call at the agreed time. Dr. Kushal Kharel reviews your symptoms, history and current medications.",
+  },
+  {
+    name: "Discuss diagnosis and treatment",
+    text: "You'll discuss a diagnosis and treatment plan together, with a prescription provided where clinically appropriate and permitted in your country.",
+  },
+  {
+    name: "Follow up as needed",
+    text: "Follow-up sessions are arranged in your time zone, and questions between sessions can be exchanged by message.",
   },
 ];
 
@@ -91,87 +124,77 @@ export default function NepaleseAbroadHubPage() {
     description,
     url: pageUrl,
     inLanguage: "en",
+    dateModified: "2026-09-24",
     audience: {
       "@type": "PeopleAudience",
       name: "Nepalese living abroad",
     },
     medicalAudience: ["Patient", "MedicalAudience"],
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-    },
+    about: { "@id": `${siteUrl}#clinic` },
+    mainEntity: { "@id": `${pageUrl}#service` },
+    author: { "@id": `${siteUrl}#psychiatrist` },
+    reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
+    speakable: buildSpeakableSpec(["#abroad-hub-quick-answer"]),
     relatedLink: abroadGuides.map((guide) => `${siteUrl}/nepalese-abroad/${guide.slug}`),
   };
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
-    })),
-  };
+  const serviceJsonLd = buildOnlineServiceJsonLd({
+    id: `${pageUrl}#service`,
+    name: "Online psychiatric consultation for Nepalis living abroad",
+    description: `${googleMeetStatement} Treats ${treatedSummary}, with therapy and medication together where appropriate.`,
+    url: pageUrl,
+    audienceType: "Nepalis living abroad",
+    areaServed: abroadGuides.map((guide) => guide.country),
+  });
+
+  const faqJsonLd = buildFaqPageJsonLd(faqs);
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
-      { "@type": "ListItem", position: 2, name: title, item: pageUrl },
+      { "@type": "ListItem", position: 2, name: "Nepalese abroad", item: pageUrl },
     ],
   };
 
-  const howToJsonLd = buildHowToJsonLd({
-    id: `${pageUrl}#how-to`,
-    name: "How to Book an Online Consultation from Abroad",
-    description: "Steps for Nepalese living abroad to book and complete an online psychiatric consultation.",
-    steps: [
-      {
-        name: "Message with your country and availability",
-        text: "Send a WhatsApp message to +977 9861800547 with your country of residence and preferred times, so a slot can be arranged across the time difference.",
-      },
-      {
-        name: "Join the call at the scheduled time",
-        text: "Connect by phone or video call at the agreed time. Dr. Kushal Kharel reviews your symptoms, history and current medications.",
-      },
-      {
-        name: "Discuss diagnosis and treatment",
-        text: "You'll discuss a diagnosis and treatment plan together, with a prescription provided where clinically appropriate and permitted in your country.",
-      },
-      {
-        name: "Follow up asynchronously if needed",
-        text: "Between live sessions, follow-up questions can be exchanged by message, working around the time difference.",
-      },
-    ],
-  });
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    ...buildHowToJsonLd({
+      id: `${pageUrl}#how-to`,
+      name: "How to book an online psychiatric consultation from abroad",
+      description: "Steps for Nepalis living abroad to book and complete a Google Meet psychiatric consultation.",
+      steps: bookingSteps,
+    }),
+  };
 
   return (
     <main className="min-h-screen bg-stone-50 text-stone-900">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(webPageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(serviceJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(howToJsonLd) }} />
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
           <Link href="/" className="font-semibold text-sage-700">
             &larr; Back to home
           </Link>
-          <span className="mt-8 flex h-14 w-14 items-center justify-center rounded-full bg-sage-100 text-sage-800">
-            <Globe2 size={26} aria-hidden="true" />
-          </span>
-          <h1 className="mt-6 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
-            Online psychiatric consultation for Nepalese living abroad
+          <NameLine />
+          <h1 className="mt-4 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
+            Nepali consultant psychiatrist and online therapy for Nepalis abroad
           </h1>
           <p id="abroad-hub-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
-            Nepalese students, workers and families abroad can book a
-            confidential online psychiatric consultation with Dr. Kushal
-            Kharel, in Nepali or English, for anxiety, depression, addiction,
-            sleep problems and family concerns.
+            Yes, you can see a Nepali psychiatrist online from abroad. Dr. Kushal
+            Kharel, a Nepal Medical Council-registered Consultant Psychiatrist
+            in Kathmandu, offers online therapy and video consultation for
+            Nepalis abroad through Google Meet, in Nepali or English, at a time
+            that suits your time zone. He treats constant worry, anxiety,
+            intrusive thoughts, sleep problems and depression, and every
+            session is confidential.
           </p>
+          <TreatedList />
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="tel:+9779861800547"
@@ -189,6 +212,7 @@ export default function NepaleseAbroadHubPage() {
               WhatsApp
             </a>
           </div>
+          <OnlineFactsRow />
         </div>
       </section>
 
@@ -240,11 +264,52 @@ export default function NepaleseAbroadHubPage() {
         </div>
       </section>
 
+      <OnlineTreatmentCards
+        id="what-we-treat-online"
+        heading="What Dr. Kushal treats by Google Meet video call"
+        intro="Therapy and medication are planned together, so you do not have to choose between them. Nepalis abroad most often ask for help with these four concerns."
+      />
+
+      <section id="how-it-works" className="bg-white">
+        <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+          <h2 className="text-3xl font-bold text-stone-950">How an online consultation from abroad works</h2>
+          <ol className="mt-8 space-y-4">
+            {bookingSteps.map((step, index) => (
+              <li key={step.name} className="flex gap-4 rounded-lg border border-stone-200 p-5">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sage-700 font-bold text-white">
+                  {index + 1}
+                </span>
+                <div>
+                  <h3 className="font-bold text-sage-950">{step.name}</h3>
+                  <p className="mt-1 leading-7 text-stone-700">{step.text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section lang="ne" className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+        <h2 className="text-3xl font-bold text-stone-950">विदेशमा बस्ने नेपालीका लागि अनलाइन मनोचिकित्सक</h2>
+        <p className="mt-4 leading-8 text-stone-700">
+          डा. कुशल खरेल (कन्सल्टेन्ट साइकाइट्रिस्ट, काठमाडौं) ले विदेशमा बस्ने
+          नेपालीहरूलाई Google Meet भिडियोमार्फत अनलाइन थेरापी र परामर्श दिनुहुन्छ
+          — निरन्तर चिन्ता (constant worry), एन्जाइटी र प्यानिक, बारम्बार आउने
+          विचार (OCD), निद्राको समस्या र डिप्रेसनको उपचार। डिप्रेसन र चिन्तामा
+          CBT र औषधि सँगै, OCD मा ERP र औषधि सँगै उपचार गरिन्छ। परामर्श नेपाली वा अंग्रेजी,
+          जुन भाषामा सहज लाग्छ त्यसैमा हुन्छ, समय तपाईंको देशको समयअनुसार
+          मिलाइन्छ, र सबै कुरा गोप्य राखिन्छ। तपाईंको सहमतिमा परिवारका सदस्य
+          पनि सामेल हुन सक्छन्।
+        </p>
+      </section>
+
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
-        <h2 className="text-3xl font-bold text-stone-950">Find guidance for your country</h2>
+        <h2 className="text-3xl font-bold text-stone-950">Nepali psychiatrist online: find your country</h2>
         <p className="mt-4 max-w-3xl leading-8 text-stone-600">
-          Each guide below covers common mental health concerns for Nepalese
-          in that country and how to get in touch.
+          Each guide covers the mental health concerns Nepalis commonly face in
+          that country, time-zone tips, local emergency guidance and how to get
+          in touch, from the USA, UK, Australia and Canada to Dubai, Qatar,
+          Japan and South Korea.
         </p>
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {abroadGuides.map((guide) => (
@@ -264,7 +329,7 @@ export default function NepaleseAbroadHubPage() {
           <div>
             <h3 className="text-xl font-bold text-stone-950">Recently moved back to Nepal?</h3>
             <p className="mt-2 max-w-2xl leading-7 text-stone-600">
-              Readjusting after years abroad — reverse culture shock, family pressure, or uncertainty about what's next — is its own kind of difficult. See dedicated guidance for returnees.
+              Readjusting after years abroad — reverse culture shock, family pressure, or uncertainty about what&apos;s next — is its own kind of difficult. See dedicated guidance for returnees.
             </p>
           </div>
           <Link
@@ -311,14 +376,7 @@ export default function NepaleseAbroadHubPage() {
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
           <h2 className="text-3xl font-bold text-stone-950">Frequently Asked Questions</h2>
-          <div className="mt-8 space-y-5">
-            {faqs.map((faq) => (
-              <div key={faq.question} className="rounded-lg border border-stone-200 p-5">
-                <h3 className="font-bold text-sage-950">{faq.question}</h3>
-                <p className="mt-2 leading-7 text-stone-700">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
+          <FaqList faqs={faqs} />
         </div>
       </section>
 

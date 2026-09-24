@@ -650,7 +650,7 @@ export const audiencePages: AudiencePage[] = [
       {
         question: "Is CBT available online?",
         answer:
-          "Yes, CBT sessions can be conducted online as well as in person at the Kalanki clinic in Kathmandu.",
+          "Yes. CBT sessions can be conducted by Google Meet video consultation as well as in person at the Kalanki clinic in Kathmandu, including for Nepalis living abroad.",
       },
     ],
   },
@@ -683,7 +683,7 @@ export const audiencePages: AudiencePage[] = [
       "Family accommodation of OCD rituals and how to reduce it safely",
     ],
     practicalNote:
-      "ERP is delivered gradually, starting with less distressing exposures and building up at a pace agreed with you, with response prevention skills practiced in session and between sessions. It is available in person at the Kalanki clinic in Kathmandu or online, and can be combined with medication when appropriate; book by phone or WhatsApp.",
+      "ERP is delivered gradually, starting with less distressing exposures and building up at a pace agreed with you, with response prevention skills practiced in session and between sessions. It is available in person at the Kalanki clinic in Kathmandu or online through Google Meet video consultation, where Dr. Kushal uses ERP and medication together when appropriate, including for Nepalis living abroad; book by phone or WhatsApp.",
     searchTerms: [
       "ERP therapy Nepal",
       "Exposure and response prevention Kathmandu",
@@ -727,6 +727,11 @@ export const audiencePages: AudiencePage[] = [
         question: "Can ERP be combined with medication for OCD?",
         answer:
           "Yes, ERP and medication (typically an SSRI) are often used together for OCD, and this combination is generally more effective than either approach alone for many patients.",
+      },
+      {
+        question: "Can ERP therapy be done online?",
+        answer:
+          "Yes. Dr. Kushal Kharel provides ERP and medication together through Google Meet video consultation. Exposures are planned in the session and practised in your own surroundings between sessions.",
       },
       {
         question: "Is there more information about OCD itself on this website?",
@@ -1504,7 +1509,7 @@ export const audiencePages: AudiencePage[] = [
       "Thoughts of self-harm or that life isn't worth living",
     ],
     practicalNote:
-      "Treatment is individualised: mild depression often responds well to structured therapy alone, moderate-to-severe depression generally needs a combination of antidepressant medication and therapy, and response to medication is reviewed and adjusted over the following weeks rather than assumed to be right the first time. If depression includes any thoughts of self-harm or suicide, or is accompanied by hallucinations or delusions, seek an urgent assessment or go to the nearest emergency department rather than waiting for a scheduled appointment.",
+      "Dr. Kushal provides CBT and medication together, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad. Treatment is individualised: mild depression often responds well to structured therapy alone, moderate-to-severe depression generally needs a combination of antidepressant medication and therapy, and response to medication is reviewed and adjusted over the following weeks rather than assumed to be right the first time. If depression includes any thoughts of self-harm or suicide, or is accompanied by hallucinations or delusions, seek an urgent assessment or go to the nearest emergency department rather than waiting for a scheduled appointment.",
     searchTerms: [
       "Depression treatment Kathmandu",
       "Depression treatment Nepal",
@@ -1532,7 +1537,7 @@ export const audiencePages: AudiencePage[] = [
       {
         question: "Is depression treatment available online?",
         answer:
-          "Yes, both assessment and follow-up can be conducted online, alongside in-person consultation at the Kalanki clinic in Kathmandu, and medication can be prescribed through either format.",
+          "Yes. Dr. Kushal Kharel provides CBT and medication together through Google Meet video consultation, for assessment and follow-up, alongside in-person consultation at the Kalanki clinic in Kathmandu. Nepalis living abroad can use it too; a prescription written in Nepal may not be valid abroad, so medication is planned individually.",
       },
       {
         question: "What if I've tried an antidepressant before and it didn't help?",
@@ -1614,7 +1619,7 @@ export const audiencePages: AudiencePage[] = [
       {
         question: "Is panic attack treatment available online?",
         answer:
-          "Yes, both assessment and ongoing CBT-based treatment can be conducted online, alongside in-person consultation at the Kalanki clinic in Kathmandu.",
+          "Yes. Dr. Kushal Kharel treats panic and anxiety with medication and CBT together through Google Meet video consultation, for assessment and ongoing treatment, alongside in-person consultation at the Kalanki clinic in Kathmandu, including for Nepalis living abroad.",
       },
       {
         question: "How long does treatment for panic attacks usually take?",
@@ -1917,6 +1922,85 @@ export const audiencePages: AudiencePage[] = [
         question: "Will someone who has had a psychotic episode need lifelong treatment?",
         answer:
           "This depends on the underlying cause. A single substance-induced or stress-triggered episode may not require indefinite medication, while psychosis linked to an underlying condition such as schizophrenia usually needs longer-term management — this is clarified through assessment and follow-up over time.",
+      },
+    ],
+  },
+  {
+    slug: "sleep-problems-treatment-nepal",
+    title: "Sleep Problems & Insomnia Treatment in Nepal",
+    headline: "Sleep problems and insomnia treatment in Nepal, and online",
+    shortDescription:
+      "Help for sleep problems and insomnia: trouble falling asleep, waking at night or too early. Dr. Kushal Kharel, in Kathmandu or by Google Meet from anywhere.",
+    intro:
+      "Sleep problems — trouble falling asleep, waking in the night, waking too early or not feeling rested — are common and treatable. Dr. Kushal Kharel, a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199), looks for why your sleep is disturbed — stress, anxiety, low mood, shift work, alcohol, medicines or a separate sleep disorder — and treats it with CBT for insomnia (CBT-I) and, when appropriate, medication. Consultations are in person at the Kalanki clinic in Kathmandu, or by Google Meet video consultation for people elsewhere in Nepal and Nepalis living abroad, in Nepali or English.",
+    whoThisIsFor: [
+      "People who struggle to fall asleep, or lie awake with racing thoughts at bedtime",
+      "People who wake during the night, or very early, and cannot get back to sleep",
+      "People who sleep enough hours but wake unrefreshed and tired through the day",
+      "Anyone whose sleep difficulty has lasted several weeks or is affecting work, study or mood",
+      "People whose sleep is disturbed alongside low mood, anxiety, OCD or heavy stress",
+      "Nepalis abroad whose sleep is disrupted by shift work, night duty, a new time zone or homesickness",
+      "People using sleeping tablets or alcohol to fall asleep who want a safer long-term plan",
+      "Family members worried about a loved one who is barely sleeping",
+    ],
+    commonConcerns: [
+      "Difficulty falling asleep",
+      "Waking often during the night",
+      "Waking very early and not being able to go back to sleep",
+      "Racing thoughts or worry at bedtime",
+      "Tiredness, low energy and poor concentration in the day",
+      "Irritability, low mood or anxiety linked to poor sleep",
+      "Sleep disrupted by shift work, night duty or an irregular schedule",
+      "A reversed day-night pattern, or trouble adjusting to a new time zone",
+      "Relying on sleeping tablets or alcohol to fall asleep",
+    ],
+    practicalNote:
+      "Video consultations for sleep problems are held on Google Meet, and sessions are arranged in your own time zone. Before the first call, note roughly when you go to bed and wake up, how long it takes to fall asleep, how often you wake, and your caffeine, alcohol and any medicines. If you snore loudly, stop breathing in your sleep or fall asleep without meaning to in the day, mention it — that may need a separate physical sleep assessment. If poor sleep comes with thoughts of self-harm, confusion or hallucinations, seek urgent help rather than waiting for a scheduled appointment.",
+    searchTerms: [
+      "Sleep problems treatment Nepal",
+      "Insomnia treatment Kathmandu",
+      "Sleep difficulty psychiatrist Nepal",
+      "Can't sleep at night doctor Nepal",
+      "Online insomnia treatment for Nepalis abroad",
+      "Insomnia doctor Kathmandu",
+      "निद्राको समस्या उपचार",
+      "अनिद्रा उपचार",
+    ],
+    faqs: [
+      {
+        question: "What counts as a sleep problem?",
+        answer:
+          "Trouble falling asleep, waking during the night, waking too early, or feeling unrefreshed even though you had enough time in bed. It is worth getting help if this happens most nights and affects your day.",
+      },
+      {
+        question: "Can sleep problems be treated online?",
+        answer:
+          "Yes. Dr. Kushal Kharel treats sleep problems by Google Meet video consultation — assessment, CBT for insomnia (CBT-I) and, when appropriate, medication — for people in Nepal and Nepalis living abroad.",
+      },
+      {
+        question: "Will I need sleeping pills?",
+        answer:
+          "Not always. CBT-I is recommended as the first-line treatment for long-term insomnia, and medication may be added for a short period or when CBT-I alone is not enough. This is decided individually.",
+      },
+      {
+        question: "Why can't I sleep when I am stressed, anxious or low?",
+        answer:
+          "Stress, anxiety and depression are among the most common causes of poor sleep, and poor sleep in turn makes mood and anxiety worse. Treating both together usually works best.",
+      },
+      {
+        question: "Can night shifts or moving to a new time zone cause sleep problems?",
+        answer:
+          "Yes. Shift work, night duty and time-zone changes disrupt the body clock and are a common cause of poor sleep among Nepalis working or studying abroad. A plan can be built around your working hours.",
+      },
+      {
+        question: "Is it safe to use alcohol or sleeping tablets to fall asleep?",
+        answer:
+          "Alcohol and sleeping tablets can make sleep worse over time and can become habit-forming. Please do not stop a prescribed sleeping medicine suddenly — talk to the prescriber about a gradual, safe plan.",
+      },
+      {
+        question: "What if I snore loudly or stop breathing during sleep?",
+        answer:
+          "That can be a sign of sleep apnoea, which needs a physical sleep assessment rather than psychiatric treatment alone. Tell the doctor at the start of your consultation.",
       },
     ],
   },

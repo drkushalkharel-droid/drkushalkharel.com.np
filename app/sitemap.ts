@@ -60,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
-    { url: `${siteUrl}/psychiatrist-for-nepalis-abroad`, lastModified: new Date("2026-07-29"), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${siteUrl}/psychiatrist-for-nepalis-abroad`, lastModified: new Date("2026-09-24"), changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/psychiatric-care-for-family-in-nepal`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/help-relative-abroad-see-psychiatrist`, lastModified: new Date("2026-08-27"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/patient-testimonials`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
@@ -121,7 +121,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     {
       url: `${siteUrl}/nepalese-abroad`,
-      lastModified,
+      lastModified: new Date("2026-09-24"),
       changeFrequency: "monthly",
       priority: 0.85,
     },
@@ -152,8 +152,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/iq-psychological-testing`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/medical-fitness-certificate`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/female-counselor-kathmandu`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.75 },
-    { url: `${siteUrl}/cbt-therapist-kathmandu`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${siteUrl}/erp-therapy-ocd`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/cbt-therapist-kathmandu`, lastModified: new Date("2026-09-24"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/erp-therapy-ocd`, lastModified: new Date("2026-09-24"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/addiction-treatment-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/psychology-internship-nepal`, lastModified: new Date("2026-08-06"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${siteUrl}/psychiatrist-fee-nepal`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.85 },
@@ -168,12 +168,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/psychiatric-medication-side-effects`, lastModified: new Date("2026-08-14"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/returning-to-nepal-after-abroad`, lastModified: new Date("2026-08-14"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/corporate-mental-health-partner-nepal`, lastModified: new Date("2026-08-14"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${siteUrl}/depression-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${siteUrl}/panic-attack-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/depression-treatment-kathmandu`, lastModified: new Date("2026-09-24"), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${siteUrl}/panic-attack-treatment-kathmandu`, lastModified: new Date("2026-09-24"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/adhd-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/bipolar-disorder-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/schizophrenia-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/psychosis-treatment-kathmandu`, lastModified: new Date("2026-08-21"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/sleep-problems-treatment-nepal`, lastModified: new Date("2026-09-24"), changeFrequency: "monthly", priority: 0.85 },
 
     {
       url: `${siteUrl}/counselling-in-nepal`,
@@ -215,7 +216,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const abroadRoutes: MetadataRoute.Sitemap = abroadGuides.map((guide) => ({
     url: `${siteUrl}/nepalese-abroad/${guide.slug}`,
-    lastModified,
+    lastModified: new Date("2026-09-24"),
     changeFrequency: "monthly",
     priority: 0.75,
   }));

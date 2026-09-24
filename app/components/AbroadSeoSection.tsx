@@ -16,10 +16,12 @@ export default function AbroadSeoSection() {
                 A Nepali living abroad and looking for support?
               </h2>
               <p className="mt-2 max-w-2xl leading-7 text-stone-600">
-                Country-specific guidance for Nepali students, workers and
-                families abroad dealing with loneliness, visa pressure, work
-                stress or mental health concerns, with online consultation
-                available from Dr. Kushal Kharel.
+                Online therapy for Nepalis abroad with Dr. Kushal Kharel,
+                Consultant Psychiatrist, for students, workers and families
+                dealing with constant worry, anxiety, intrusive thoughts, sleep
+                problems, loneliness or visa and work stress, at a time that
+                suits your time zone, with country-specific guidance for each
+                place.
               </p>
             </div>
           </div>

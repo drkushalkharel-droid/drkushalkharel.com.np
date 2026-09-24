@@ -6,6 +6,7 @@ import { conditions, getCondition } from "../../data/conditions";
 import { screeningTools } from "../../data/screening";
 import { resources } from "../../data/resources";
 import { supportingArticles } from "../../data/supportingArticles";
+import { conditionOnlineApproach } from "../../data/onlineCare";
 import {
   buildHowToJsonLd,
   buildMedicalConditionJsonLd,
@@ -122,6 +123,7 @@ export default async function ConditionPage({
     ? [...baseToc, howToTocItem, ...endToc]
     : [...baseToc, ...endToc];
   const quickFacts = buildQuickFacts(condition);
+  const onlineApproach = conditionOnlineApproach[condition.slug];
   const screeningTool = screeningTools.find((tool) => tool.relatedConditionSlug === condition.slug);
   const relatedResources = resources.filter((resource) => resource.relatedConditionSlug === condition.slug);
   const relatedArticles = supportingArticles.filter((article) =>
@@ -400,6 +402,15 @@ export default async function ConditionPage({
 
           <Section id="treatment" title={`How is ${condition.title} treated?`}>
             <p>{condition.treatmentOverview}</p>
+            {onlineApproach && (
+              <div className="rounded-lg border border-sage-200 bg-sage-50 p-5 text-base leading-7 text-sage-950">
+                <h3 className="text-xl font-bold">{onlineApproach.heading}</h3>
+                <p className="mt-2">{onlineApproach.text}</p>
+                <Link href="/nepalese-abroad" className="mt-3 inline-block font-semibold text-sage-700 underline">
+                  Online consultation for Nepalis living abroad
+                </Link>
+              </div>
+            )}
           </Section>
 
           <Section id="treatment-at-a-glance" title="Treatment at a Glance">

@@ -109,7 +109,7 @@ const faqs = [
   {
     question: "How do online psychiatric consultations work?",
     answer:
-      "Online consultations take place by phone or video call after booking through a call or WhatsApp message. Dr. Kushal Kharel reviews your symptoms, history, and current medications, then discusses a diagnosis and treatment plan, the same as an in-person visit.",
+      "Online consultations take place by Google Meet video call (or by phone) after booking through a call or WhatsApp message, in Nepali or English. Dr. Kushal Kharel reviews your symptoms, history, and current medications, then discusses a diagnosis and treatment plan, the same as an in-person visit.",
   },
   {
     question: "Can prescriptions be provided after an online consultation?",
@@ -139,7 +139,7 @@ const faqs = [
   {
     question: "Do you offer teleconsultation services?",
     answer:
-      "Yes. Teleconsultation (online consultation by phone or video call) is available for patients across Nepal and Nepalis living abroad, suitable for follow-up appointments and many initial assessments. Urgent or complex situations may still need in-person or emergency evaluation.",
+      "Yes. Teleconsultation (online consultation by Google Meet video call or phone) is available for patients across Nepal and Nepalis living abroad, suitable for follow-up appointments and many initial assessments. Urgent or complex situations may still need in-person or emergency evaluation.",
   },
   {
     question: "What can I expect during my first appointment?",
@@ -219,7 +219,7 @@ const faqs = [
   {
     question: "How does the process work for NRN (non-resident Nepali) patients — timezones, payment, prescriptions?",
     answer:
-      "Online consultation is arranged around your time zone wherever you're based, with payment options confirmed when you book. A Nepal-issued prescription cannot generally be assumed to be fillable at a pharmacy abroad, so this is discussed individually depending on your country and situation. The Nepalese Abroad guides on this site cover country-specific detail in full.",
+      "Online consultation by Google Meet is arranged around your time zone wherever you're based, with payment options confirmed when you book. A Nepal-issued prescription cannot generally be assumed to be fillable at a pharmacy abroad, so this is discussed individually depending on your country and situation. The Nepalese Abroad guides on this site cover country-specific detail in full.",
   },
   {
     question: "Do you see teenagers/adolescents, or adults only?",

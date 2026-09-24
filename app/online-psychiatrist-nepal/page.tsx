@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MessageCircle, Phone, Video } from "lucide-react";
 import { buildSpeakableSpec } from "../lib/schema";
+import { OnlineTreatmentCards } from "../components/OnlineCareSections";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/online-psychiatrist-nepal`;
@@ -36,6 +37,10 @@ const faqs = [
   {
     question: "Can I consult a psychiatrist online in Nepal?",
     answer: "Online psychiatric consultation can be suitable for many follow-up visits, medication reviews, psychoeducation, counselling-informed care and selected initial assessments. The appropriate format depends on your symptoms, safety and clinical needs.",
+  },
+  {
+    question: "Which video platform is used for online consultations?",
+    answer: "Consultations are held by Google Meet video call, in Nepali or English, at a time arranged around your time zone. It works on a phone, tablet or computer.",
   },
   {
     question: "What should I prepare for an online psychiatric appointment?",
@@ -95,11 +100,15 @@ export default function OnlinePsychiatristNepalPage() {
           <Link href="/" className="font-semibold text-sage-700">&larr; Back to home</Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">Telepsychiatry across Nepal</p>
           <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">Online Psychiatrist in Nepal: confidential psychiatric consultation from home</h1>
-          <p id="online-consultation-answer" className="mt-6 max-w-4xl text-lg leading-8 text-stone-600">If you live outside Kathmandu, travel is difficult, or you need a follow-up that fits around work or caregiving, online psychiatric consultation may be a practical way to access care. Dr. Kushal Kharel provides online consultation for many anxiety, depression, OCD, sleep, addiction and medication-review concerns when it is clinically appropriate.</p>
+          <p id="online-consultation-answer" className="mt-6 max-w-4xl text-lg leading-8 text-stone-600">If you live outside Kathmandu, travel is difficult, or you need a follow-up that fits around work or caregiving, online psychiatric consultation may be a practical way to access care. Dr. Kushal Kharel provides online video consultation through Google Meet, in Nepali or English, for many anxiety, depression, OCD, sleep, addiction and medication-review concerns when it is clinically appropriate.</p>
           <div className="mt-8 flex flex-wrap gap-4"><a href="tel:+9779861800547" className="inline-flex items-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800"><Phone size={20} aria-hidden="true" />Call +977 9861800547</a><a href="https://wa.me/9779861800547" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 rounded-lg border border-green-600 px-6 py-3 font-bold text-green-700 transition hover:bg-green-600 hover:text-white"><MessageCircle size={20} aria-hidden="true" />WhatsApp to request a slot</a></div>
         </div>
       </section>
-      <article className="mx-auto max-w-5xl space-y-6 px-6 py-14 lg:px-8">
+      <OnlineTreatmentCards
+        heading="Depression, anxiety, OCD and sleep problems by Google Meet"
+        intro="Therapy and medication are planned together, so you do not have to choose between them."
+      />
+      <article className="mx-auto max-w-5xl space-y-6 px-6 pb-14 lg:px-8">
         <Section title="Who can benefit from an online psychiatric consultation?"><p>Online care can help adults, young people and families throughout Nepal who need a psychiatric opinion but cannot easily visit the Kalanki clinic in Kathmandu. It is often useful for follow-up appointments, medication reviews, discussing side effects, counselling-informed support, psychoeducation and selected first assessments. A video or phone visit can also help a family member join with consent when that support is useful.</p><p>Common reasons to book include persistent worry, panic attacks, low mood, loss of interest, OCD symptoms, disturbed sleep, attention concerns, alcohol or substance-use concerns, stress and burnout. An online appointment does not mean care is less personal: the psychiatrist still takes a history, considers physical health and safety, explains options and makes a shared treatment plan.</p></Section>
         <Section title="Psychiatric care for Nepalis abroad and international patients"><p>Many people contact the clinic from Australia, the United Kingdom, the United States, Canada and New Zealand, often because they prefer to speak in Nepali or English with a psychiatrist who understands the family, migration and study pressures that can shape mental health. Patients also request care from Japan, South Korea, Qatar, the UAE, Saudi Arabia, Germany, Ireland and elsewhere in Europe.</p><p>Being abroad does not automatically make an appointment appropriate. Before booking, the clinic confirms where you are, whether a video consultation is clinically suitable, how emergency care would work locally, and whether any medicine recommendation would require a clinician in your country. This is an ethical safeguard, not an obstacle to care.</p></Section>
         <Section title="Conditions that may be suitable for online care"><p>Selected consultations can support depression, anxiety disorders, panic, OCD, PTSD, adult ADHD, stress, insomnia, grief, burnout, relationship difficulties, alcohol concerns and internet or gaming problems. Bipolar disorder and schizophrenia may be appropriate for stable follow-up when there is a clear safety plan and reliable local support; an acute episode needs urgent in-person care.</p><div className="grid gap-3 sm:grid-cols-2"><Resource href="/anxiety">Anxiety treatment</Resource><Resource href="/conditions/major-depressive-disorder">Depression treatment</Resource><Resource href="/conditions/ocd">OCD treatment</Resource><Resource href="/conditions/adhd">ADHD assessment</Resource><Resource href="/conditions/bipolar-i-disorder">Bipolar disorder care</Resource><Resource href="/conditions/schizophrenia">Schizophrenia care</Resource></div></Section>

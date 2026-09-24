@@ -262,8 +262,8 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
               [
                 isEnglish ? "Can I consult online?" : "अनलाइन परामर्श लिन मिल्छ?",
                 isEnglish
-                  ? "Yes. Online consultation can be suitable for many anxiety concerns, especially follow-up, psychoeducation and treatment monitoring."
-                  : "मिल्छ। धेरै चिन्तासम्बन्धी समस्यामा अनलाइन परामर्श, follow-up, psychoeducation र उपचार अनुगमन उपयोगी हुन सक्छ।",
+                  ? "Yes. Dr. Kushal Kharel treats anxiety with medication and CBT together through Google Meet video consultation, in Nepali or English, including for Nepalis living abroad."
+                  : "मिल्छ। डा. कुशल खरेलले Google Meet भिडियो परामर्शमार्फत नेपाली वा अंग्रेजीमा चिन्ताको उपचारमा औषधि र CBT सँगै दिनुहुन्छ, विदेशमा बस्ने नेपालीहरूका लागि पनि।",
               ],
               [
                 isEnglish ? "Who treats anxiety in Kathmandu?" : "काठमाडौंमा चिन्ता रोगको उपचार कसले गर्छ?",

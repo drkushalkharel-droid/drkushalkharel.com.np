@@ -62,6 +62,58 @@ export function buildSpeakableSpec(cssSelectors: string[]) {
   };
 }
 
+// JSON.stringify does not escape "<", so a stray "</script>" in copy could end
+// the tag early. Next's JSON-LD guide recommends escaping it as <.
+export function serializeJsonLd(data: unknown): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
+export function buildFaqPageJsonLd(faqs: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  };
+}
+
+// Describes the online consultation as a Service delivered over Google Meet.
+// It only *references* the Physician entity defined once in app/layout.tsx
+// (`#psychiatrist`) rather than redefining it, so there is never a second,
+// conflicting definition of the doctor on the same page.
+export function buildOnlineServiceJsonLd(params: {
+  id: string;
+  name: string;
+  description: string;
+  url: string;
+  audienceType: string;
+  areaServed: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": params.id,
+    name: params.name,
+    description: params.description,
+    serviceType: "Online psychiatric consultation (telepsychiatry)",
+    provider: { "@id": "https://drkushalkharel.com.np#psychiatrist" },
+    audience: { "@type": "PeopleAudience", audienceType: params.audienceType },
+    areaServed: params.areaServed,
+    availableChannel: {
+      "@type": "ServiceChannel",
+      name: "Google Meet video consultation",
+      serviceUrl: params.url,
+      availableLanguage: [
+        { "@type": "Language", name: "Nepali" },
+        { "@type": "Language", name: "English" },
+      ],
+    },
+  };
+}
+
 export type HowToStep = { name: string; text: string };
 
 export function buildHowToJsonLd(params: {
