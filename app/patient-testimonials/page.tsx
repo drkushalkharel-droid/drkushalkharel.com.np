@@ -74,11 +74,7 @@ export default function PatientTestimonialsPage() {
     description,
     url: pageUrl,
     inLanguage: "en",
-    about: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-    },
+    about: { "@id": `${siteUrl}#psychiatrist` },
   };
 
   const breadcrumbJsonLd = {

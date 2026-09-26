@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Mail, MessageCircle, Phone, Quote } from "lucide-react";
 import { abroadGuides } from "../data/abroad";
+import { regions } from "../data/abroadRegions";
 import { abroadFaqs, googleMeetStatement, treatedSummary } from "../data/onlineCare";
 import {
   buildFaqPageJsonLd,
@@ -78,6 +79,10 @@ const bookingSteps = [
   {
     name: "Message with your country and availability",
     text: "Send a WhatsApp message to +977 9861800547 with your country of residence and a time that suits your time zone, so a slot can be arranged.",
+  },
+  {
+    name: "Confirm the time and payment",
+    text: "The clinic confirms your slot and the fee, and you pay by card, bank transfer or another method that works from your country.",
   },
   {
     name: "Join the Google Meet video call",
@@ -299,8 +304,31 @@ export default function NepaleseAbroadHubPage() {
           CBT र औषधि सँगै, OCD मा ERP र औषधि सँगै उपचार गरिन्छ। परामर्श नेपाली वा अंग्रेजी,
           जुन भाषामा सहज लाग्छ त्यसैमा हुन्छ, समय तपाईंको देशको समयअनुसार
           मिलाइन्छ, र सबै कुरा गोप्य राखिन्छ। तपाईंको सहमतिमा परिवारका सदस्य
-          पनि सामेल हुन सक्छन्।
+          पनि सामेल हुन सक्छन्। भुक्तानी कार्ड, बैंक ट्रान्सफर वा अन्य तरिकाले गर्न सकिन्छ।
         </p>
+      </section>
+
+      <section id="regions" className="mx-auto max-w-7xl px-6 pt-14 lg:px-8">
+        <h2 className="text-3xl font-bold text-stone-950">Browse by region</h2>
+        <p className="mt-4 max-w-3xl leading-8 text-stone-600">
+          Not sure which country page to open? Start with your region for the concerns, session times and emergency
+          numbers that apply across it.
+        </p>
+        <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {regions.map((region) => (
+            <Link
+              key={region.slug}
+              href={`/nepalese-abroad/${region.slug}`}
+              className="block rounded-lg border border-sage-200 bg-sage-50 p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-400 hover:shadow-md"
+            >
+              <p className="text-sm font-semibold uppercase tracking-[2px] text-sage-700">
+                {region.countrySlugs.length} countries
+              </p>
+              <h3 className="mt-3 text-2xl font-bold text-stone-950">Nepalis in {region.shortName}</h3>
+              <p className="mt-3 leading-7 text-stone-600">Nepali psychiatrist and online therapy</p>
+            </Link>
+          ))}
+        </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">

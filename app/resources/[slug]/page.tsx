@@ -71,12 +71,7 @@ export default async function ResourceDetailPage({
     inLanguage: "en",
     medicalAudience: ["Patient", "Caregiver"],
     about: condition ? { "@id": `${siteUrl}/conditions/${condition.slug}#condition` } : resource.category,
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-    },
+    reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
     speakable: buildSpeakableSpec(["#resource-quick-answer"]),
   };
 

@@ -18,6 +18,7 @@ const siteUrl = "https://drkushalkharel.com.np";
 
 const baseToc = [
   { id: "overview", label: "Overview" },
+  { id: "doctors-approach", label: "How Dr. Kharel Approaches This" },
   { id: "definition", label: "Definition" },
   { id: "causes", label: "Causes" },
   { id: "risk-factors", label: "Risk Factors" },
@@ -140,12 +141,7 @@ export default async function ConditionPage({
     inLanguage: "en",
     about: { "@id": `${pageUrl}#condition` },
     medicalAudience: ["Patient", "Caregiver", "MedicalAudience"],
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-    },
+    reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
     speakable: buildSpeakableSpec(["#cond-quick-answer"]),
     relatedLink: relatedConditions.map((item) => `${siteUrl}/conditions/${item.slug}`),
   };
@@ -341,6 +337,13 @@ export default async function ConditionPage({
               </figure>
             )}
           </Section>
+
+          <section id="doctors-approach" className="rounded-lg border border-sage-200 bg-sage-50 p-6 md:p-8">
+            <h2 className="text-xl font-bold uppercase tracking-[2px] text-sage-800">
+              How Dr. Kharel Approaches {condition.title}
+            </h2>
+            <p className="mt-3 leading-7 text-stone-700">{condition.doctorsApproach}</p>
+          </section>
 
           <Section id="definition" title="Definition">
             <p>{condition.definition}</p>

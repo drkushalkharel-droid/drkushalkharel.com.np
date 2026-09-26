@@ -34,6 +34,14 @@ export const conditionsTreated: string[] = [
 export const treatedSummary =
   "constant worry, anxiety, intrusive thoughts, sleep problems and depression";
 
+// How patients pay. Dr. Kushal confirmed (2026-09-24) that payment can be made
+// by card, bank transfer or another method. No fee amount is published on the
+// site, so the wording says the clinic confirms the fee when booking. If a fee
+// or a specific payment platform is added later, change it here and every
+// abroad page, FAQ and llms.txt follows.
+export const paymentStatement =
+  "By card, bank transfer or another method that works from your country. The clinic confirms the fee and the payment options when you book.";
+
 const countriesWithArticle = new Set(["USA", "UK", "Netherlands"]);
 
 // "the USA", "the UK", "the Netherlands", otherwise the name unchanged, for
@@ -87,6 +95,10 @@ export function buildAbroadFaqs(country?: string): OnlineFaq[] {
       question: "What does Dr. Kushal Kharel treat?",
       answer:
         "Dr. Kushal Kharel, a Consultant Psychiatrist, treats constant worry (chinta), anxiety and panic, repetitive intrusive thoughts (OCD), sleep problems, depression and low mood, stress and burnout, alcohol and substance use, and relationship and family problems, by online therapy and video consultation.",
+    },
+    {
+      question: "How do I pay from abroad?",
+      answer: paymentStatement,
     },
   ];
 }

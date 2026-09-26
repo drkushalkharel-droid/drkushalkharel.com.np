@@ -3,6 +3,7 @@ export type Pillar = {
   symptoms: string; causes: string; risks: string; diagnosis: string; differential: string;
   investigations: string; treatment: string; medication: string; therapy: string; family: string;
   lifestyle: string; relapse: string; journey: string; imagePrompt: string; alt: string;
+  doctorsApproach: string;
 };
 
 // depression, ocd, adhd, bipolar-disorder and schizophrenia pillar entries were
@@ -30,7 +31,8 @@ export const pillars: Pillar[] = [
     lifestyle: "Regular sleep and wake times, meals, movement, a measured reduction in caffeine, less nicotine and alcohol, and brief daily calming practices can reduce vulnerability. These are supports, not a substitute for care when anxiety is severe.",
     relapse: "Relapse prevention means noticing early signs—poor sleep, increased avoidance, constant checking or escalating worry—and acting early. Keep a written plan, continue learned CBT skills and arrange review before symptoms become overwhelming.",
     journey: "A first consultation usually lasts long enough to hear the story properly. Together, you identify the problem, rule out urgent concerns and agree on next steps. Follow-ups review progress, side effects if medication is used, and whether the plan still fits.",
-    imagePrompt: "Warm, respectful editorial photograph of an adult Nepali patient speaking with a compassionate psychiatrist in a calm, light-filled Kathmandu clinic; no visible medical records, no stereotypes, natural documentary style, 16:9.", alt: "Psychiatric consultation for anxiety treatment in Kathmandu"
+    imagePrompt: "Warm, respectful editorial photograph of an adult Nepali patient speaking with a compassionate psychiatrist in a calm, light-filled Kathmandu clinic; no visible medical records, no stereotypes, natural documentary style, 16:9.", alt: "Psychiatric consultation for anxiety treatment in Kathmandu",
+    doctorsApproach: "When someone comes to me with anxiety, I spend the first session simply understanding their particular pattern — is it constant background worry, sudden panic attacks, or fear tied to specific situations like crowds or public speaking — because the plan differs for each. I explain the alarm-and-avoidance cycle in plain terms, without jargon, so it makes sense to the patient rather than just to me. Most people start with CBT, and I only bring medication into the conversation if symptoms are more severe or CBT alone isn't enough, always walking through what to expect and for how long. I see patients in person at Kalanki or by Google Meet, and I check in at follow-up to see what's actually changed, not just how it looks on paper.",
   }
 ];
 

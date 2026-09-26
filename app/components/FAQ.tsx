@@ -4,12 +4,12 @@ const faqs = [
   {
     question: "Who is the best psychiatrist in Kathmandu?",
     answer:
-      "There is no official ranking for 'best psychiatrist' — it's a search phrase, not a clinical credential. A reasonable way to choose is a Nepal Medical Council-registered psychiatrist with relevant experience and a communication style that fits you. Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) practicing in Kalanki, Kathmandu since 2020, offering in-person and online consultation for anxiety, depression, OCD, bipolar disorder, schizophrenia, ADHD and addiction.",
+      "There is no official ranking for 'best psychiatrist' — it's a search phrase, not a clinical credential. A reasonable way to choose is a Nepal Medical Council-registered psychiatrist with relevant experience and a communication style that fits you. Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) practicing in Kalanki, Kathmandu, offering in-person and online consultation for anxiety, depression, OCD, bipolar disorder, schizophrenia, ADHD and addiction.",
   },
   {
     question: "Who is a good psychiatrist in Kathmandu for anxiety or depression?",
     answer:
-      "Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) practicing in Kalanki, Kathmandu since 2020, with clinical experience treating anxiety disorders and depression through assessment, medication management and psychotherapy, in person and online.",
+      "Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) practicing in Kalanki, Kathmandu, with clinical experience treating anxiety disorders and depression through assessment, medication management and psychotherapy, in person and online.",
   },
   {
     question: "Can Nepalis living abroad consult Dr. Kushal Kharel online?",
@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "How many years has Dr. Kushal Kharel been practicing?",
     answer:
-      "Dr. Kushal Kharel has run a psychiatric clinic in Kalanki, Kathmandu since 2020. He completed MD Psychiatry training at KIST Medical College Teaching Hospital (2023-2026) and previously worked as a Medical Officer at Kantipur Hospital (2020-2021), Patan Hospital (2021-2022) and Kathmandu ENT Hospital (2022-2023).",
+      "Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) who completed specialist psychiatric training at KIST Medical College Teaching Hospital and runs a psychiatric clinic in Kalanki, Kathmandu, offering in-person and online consultation.",
   },
   {
     question: "Who is a psychiatrist in Nepal?",
@@ -49,7 +49,7 @@ const faqs = [
   {
     question: "What is Dr. Kushal Kharel's medical background and experience?",
     answer:
-      "Dr. Kushal Kharel completed MD Psychiatry training at KIST Medical College Teaching Hospital (2023-2026) and previously worked as a Medical Officer at Kantipur Hospital (2020-2021), Patan Hospital (2021-2022) and Kathmandu ENT Hospital (2022-2023). He has run a psychiatric clinic in Kalanki, Kathmandu since 2020 and is a Nepal Medical Council registered psychiatrist.",
+      "Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant Psychiatrist (registration #27199) with MD Psychiatry training from KIST Medical College Teaching Hospital, and a Lifetime Member of the Nepal Medical Association and the Psychiatrists' Association of Nepal (PAN). He runs a psychiatric clinic in Kalanki, Kathmandu, offering in-person and online consultation.",
   },
   {
     question: "How do I book a psychiatrist in Nepal?",
@@ -219,7 +219,7 @@ const faqs = [
   {
     question: "How does the process work for NRN (non-resident Nepali) patients — timezones, payment, prescriptions?",
     answer:
-      "Online consultation by Google Meet is arranged around your time zone wherever you're based, with payment options confirmed when you book. A Nepal-issued prescription cannot generally be assumed to be fillable at a pharmacy abroad, so this is discussed individually depending on your country and situation. The Nepalese Abroad guides on this site cover country-specific detail in full.",
+      "Online consultation by Google Meet is arranged around your time zone wherever you're based, and you can pay by card, bank transfer or another method that works from your country (the clinic confirms the fee and options when you book). A Nepal-issued prescription cannot generally be assumed to be fillable at a pharmacy abroad, so this is discussed individually depending on your country and situation. The Nepalese Abroad guides on this site cover country-specific detail in full.",
   },
   {
     question: "Do you see teenagers/adolescents, or adults only?",

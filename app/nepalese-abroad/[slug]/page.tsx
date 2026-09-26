@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MessageCircle, Phone } from "lucide-react";
 import { abroadGuides, getAbroadGuide } from "../../data/abroad";
+import { abroadMeta } from "../../data/abroadMeta";
+import { getRegionForCountry } from "../../data/abroadRegions";
 import { buildAbroadFaqs, googleMeetStatement, treatedSummary, withArticle } from "../../data/onlineCare";
 import {
   buildFaqPageJsonLd,
@@ -11,6 +13,7 @@ import {
   serializeJsonLd,
 } from "../../lib/schema";
 import { FaqList, NameLine, OnlineFactsRow, OnlineTreatmentCards, TreatedList } from "../../components/OnlineCareSections";
+import { EmergencyBox, NepaliBlock, TimeGuide } from "../../components/AbroadPracticalSections";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -45,6 +48,8 @@ export async function generateMetadata({
       `Nepali consultant psychiatrist ${guide.country}`,
       `Nepali psychiatrist online ${guide.country}`,
       `online therapy for Nepalis in ${guide.country}`,
+      ...(guide.slug === "korea" ? ["Nepali psychiatrist South Korea", "online therapy for Nepalis in South Korea"] : []),
+      ...(guide.slug === "dubai" ? ["Nepali psychiatrist UAE", "Nepali psychiatrist Abu Dhabi Sharjah"] : []),
       "consultant psychiatrist for Nepalis abroad",
       "constant worry and intrusive thoughts online therapy",
       `Nepali constant worry anxiety help ${guide.country}`,
@@ -88,9 +93,17 @@ export default async function NepaleseAbroadPage({
   const pageUrl = `${siteUrl}/nepalese-abroad/${guide.slug}`;
   const place = withArticle(guide.country);
   const faqs = buildAbroadFaqs(guide.country);
-  const sameRegion = abroadGuides.filter(
-    (other) => other.region === guide.region && other.slug !== guide.slug,
-  );
+  const meta = abroadMeta[guide.slug];
+  const region = getRegionForCountry(guide.slug);
+  const neighbours = (region ? region.countrySlugs : [])
+    .filter((other) => other !== guide.slug)
+    .map((other) => getAbroadGuide(other))
+    .filter((other): other is NonNullable<typeof other> => Boolean(other));
+  // Real quotes only: when this country has none, borrow the nearest neighbour's
+  // and label it with that patient's own country.
+  const neighbourTestimonial = guide.testimonial
+    ? undefined
+    : neighbours.find((other) => other.testimonial);
 
   const webPageJsonLd = {
     "@context": "https://schema.org",
@@ -200,10 +213,11 @@ export default async function NepaleseAbroadPage({
             </p>
             <div className="mt-8 rounded-lg border border-amber-200 bg-amber-50 p-5 leading-7 text-amber-950">
               <h3 className="font-bold">
-                Time zone, prescriptions and emergencies in {place}
+                Prescriptions and practical notes for {place}
               </h3>
               <p className="mt-2">{guide.practicalNote}</p>
             </div>
+            <EmergencyBox place={place} meta={meta} />
           </div>
 
           <div className="grid gap-4">
@@ -219,8 +233,10 @@ export default async function NepaleseAbroadPage({
         </div>
       </section>
 
+      <TimeGuide place={place} zones={meta.zones} />
+
       <OnlineTreatmentCards
-        heading={`How Dr. Kushal treats depression, anxiety, OCD and sleep problems for Nepalis in ${place}`}
+        heading={`How Dr. Kushal treats constant worry, intrusive thoughts and sleep problems for Nepalis in ${place}`}
         intro="Therapy and medication are planned together, all through Google Meet video consultation."
       />
 
@@ -242,6 +258,31 @@ export default async function NepaleseAbroadPage({
           </p>
         </section>
       )}
+
+      {neighbourTestimonial && (
+        <section className="mx-auto max-w-4xl px-6 py-14 lg:px-8">
+          <figure className="rounded-lg border border-sage-200 bg-sage-50 p-8">
+            <blockquote className="text-lg leading-8 text-stone-800">
+              &ldquo;{neighbourTestimonial.testimonial!.quote}&rdquo;
+            </blockquote>
+            <figcaption className="mt-5 font-semibold text-sage-800">
+              &mdash; {neighbourTestimonial.testimonial!.attribution}
+            </figcaption>
+          </figure>
+          <p className="mt-3 text-center text-sm text-stone-500">
+            From a Nepali patient in {withArticle(neighbourTestimonial.country)}, shared with permission. Names and
+            identifying details are withheld to protect patient privacy.{" "}
+            <Link href="/patient-testimonials" className="underline hover:text-sage-700">
+              Read more patient experiences
+            </Link>
+          </p>
+        </section>
+      )}
+
+      <NepaliBlock
+        heading={`${meta.nepaliName}मा बस्ने नेपालीका लागि अनलाइन मनोचिकित्सक`}
+        text={`${meta.nepaliName}मा बस्ने नेपालीहरूका लागि डा. कुशल खरेल (कन्सल्टेन्ट साइकाइट्रिस्ट, काठमाडौं) ले Google Meet भिडियोमार्फत अनलाइन थेरापी र परामर्श दिनुहुन्छ — निरन्तर चिन्ता, एन्जाइटी र प्यानिक, बारम्बार आउने विचार (OCD), निद्राको समस्या र डिप्रेसनको उपचार। परामर्श नेपाली वा अंग्रेजीमा हुन्छ, समय तपाईंको समयअनुसार मिलाइन्छ, र सबै कुरा गोप्य राखिन्छ। भुक्तानी कार्ड, बैंक ट्रान्सफर वा अन्य तरिकाले गर्न सकिन्छ।`}
+      />
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
@@ -358,11 +399,19 @@ export default async function NepaleseAbroadPage({
             </Link>
           </div>
 
-          {sameRegion.length > 0 && (
+          {region && neighbours.length > 0 && (
             <div className="mt-10">
-              <h3 className="font-bold text-stone-950">Nepali psychiatrist online, other countries in {guide.region}</h3>
+              <h3 className="font-bold text-stone-950">
+                Nepali psychiatrist online, other countries in the region
+              </h3>
               <div className="mt-4 flex flex-wrap gap-2">
-                {sameRegion.map((other) => (
+                <Link
+                  href={`/nepalese-abroad/${region.slug}`}
+                  className="rounded-full border border-sage-700 bg-sage-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-sage-800"
+                >
+                  All Nepalis in {region.shortName}
+                </Link>
+                {neighbours.map((other) => (
                   <Link
                     key={other.slug}
                     href={`/nepalese-abroad/${other.slug}`}

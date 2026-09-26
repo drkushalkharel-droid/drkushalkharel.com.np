@@ -29,6 +29,14 @@ const symptoms = [
 
 const treatments = [
   {
+    en: "How Dr. Kharel approaches this",
+    np: "डा. खरेलको उपचार शैली",
+    descEn:
+      "When someone comes to me with anxiety, I spend the first session understanding their particular pattern — constant worry, panic attacks, or fear tied to specific situations — because the plan differs for each. Most people start with CBT; I only bring medication into the conversation if symptoms are more severe or CBT alone isn't enough, and I explain what to expect at every step, in person at Kalanki or by Google Meet.",
+    descNp:
+      "कसैलाई चिन्ताको समस्या भएर आउँदा, म पहिलो भेटमा नै उनको समस्याको किसिम बुझ्ने प्रयास गर्छु — निरन्तर चिन्ता हो, panic attack हो, वा कुनै खास परिस्थितिसँग जोडिएको डर हो — किनभने उपचार योजना फरक हुन्छ। धेरैजसो बिरामीलाई पहिले CBT बाट सुरु गरिन्छ; लक्षण गम्भीर भएमा वा CBT मात्र पर्याप्त नभएमा मात्र औषधि थपिन्छ, र हरेक चरणमा के हुनेछ भनेर स्पष्ट रूपमा बुझाइन्छ, चाहे कालंकीको क्लिनिकमा होस् वा Google Meet मार्फत।",
+  },
+  {
     en: "Assessment and diagnosis",
     np: "मूल्याङ्कन र निदान",
     descEn:

@@ -80,8 +80,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: doctorImage,
-        width: 1365,
-        height: 1909,
+        width: 800,
+        height: 800,
         alt: "Dr. Kushal Kharel - Consultant Psychiatrist in Kathmandu",
       },
     ],
@@ -202,6 +202,7 @@ export default function RootLayout({
     },
     image: `${siteUrl}${doctorImage}`,
     priceRange: "$$",
+    paymentAccepted: "Card, bank transfer",
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: reviewStats.ratingValue,
@@ -282,6 +283,10 @@ export default function RootLayout({
       {
         "@type": "Organization",
         name: "Nepal Medical Association",
+      },
+      {
+        "@type": "Organization",
+        name: "Psychiatrists' Association of Nepal",
       },
     ],
     alumniOf: {

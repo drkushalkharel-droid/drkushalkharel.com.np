@@ -26,12 +26,7 @@ export default function AudienceLandingPage({
       name: page.headline,
     },
     medicalAudience: ["Patient", "MedicalAudience"],
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-    },
+    reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
   };
 
   const faqJsonLd = {
@@ -113,6 +108,15 @@ export default function AudienceLandingPage({
           </div>
         </section>
       )}
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-4xl px-6 py-14 lg:px-8">
+          <div className="rounded-lg border border-sage-200 bg-sage-50 p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-sage-950">How Dr. Kharel approaches this</h2>
+            <p className="mt-4 leading-8 text-sage-900">{page.doctorsApproach}</p>
+          </div>
+        </div>
+      </section>
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">

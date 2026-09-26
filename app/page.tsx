@@ -22,7 +22,7 @@ import { buildSpeakableSpec } from "./lib/schema";
 export const metadata: Metadata = {
   title: "Dr. Kushal Kharel, MD — Consultant Psychiatrist, Kathmandu",
   description:
-    "Dr. Kushal Kharel, MD — Consultant Psychiatrist in Kathmandu since 2020. Evidence-based care for anxiety, depression, OCD, ADHD & more. Book online today.",
+    "Dr. Kushal Kharel, MD — Consultant Psychiatrist in Kathmandu. Evidence-based care for anxiety, depression, OCD, ADHD & more. Book online today.",
   alternates: {
     canonical: "/",
   },
@@ -63,8 +63,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/doctor.png",
-        width: 1365,
-        height: 1909,
+        width: 800,
+        height: 800,
         alt: "Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal",
       },
     ],

@@ -55,12 +55,7 @@ export default async function MedicationPage({
     inLanguage: "en",
     about: { "@type": "Drug", name: med.name, drugClass: med.category },
     medicalAudience: ["Patient", "Caregiver"],
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-    },
+    reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
   };
 
   const faqJsonLd = {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check, Clock3, Languages, ShieldCheck, Video } from "lucide-react";
+import { Check, Clock3, CreditCard, Languages, ShieldCheck, Video } from "lucide-react";
 import { conditionsTreated, consultantTitle, onlineTreatments, type OnlineFaq } from "../data/onlineCare";
 
 // Name line shown above the H1 on every abroad page, so the role and the
@@ -38,6 +38,7 @@ export function OnlineFactsRow() {
     { icon: Languages, label: "Nepali or English" },
     { icon: Clock3, label: "A time that suits your time zone" },
     { icon: ShieldCheck, label: "Private and confidential" },
+    { icon: CreditCard, label: "Pay by card or bank transfer" },
   ];
 
   return (

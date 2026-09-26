@@ -24,12 +24,10 @@ export const metadata: Metadata = {
 
 const credentials = [
   { credential: "Nepal Medical Council registration (No. 27199)", institution: "Nepal Medical Council", year: "Active" },
-  { credential: "MD Psychiatry", institution: "KIST Medical College Teaching Hospital", year: "2023–2026" },
+  { credential: "MD Psychiatry", institution: "KIST Medical College Teaching Hospital", year: "Completed" },
   { credential: "Lifetime Member", institution: "Nepal Medical Association", year: "Active" },
-  { credential: "Medical Officer", institution: "Kathmandu ENT Hospital", year: "2022–2023" },
-  { credential: "Medical Officer", institution: "Patan Hospital", year: "2021–2022" },
-  { credential: "Medical Officer", institution: "Kantipur Hospital", year: "2020–2021" },
-  { credential: "Psychiatric clinic, Kalanki-14", institution: "Private practice", year: "2020–Present" },
+  { credential: "Lifetime Member", institution: "Psychiatrists' Association of Nepal (PAN)", year: "Active" },
+  { credential: "Psychiatric clinic, Kalanki-14", institution: "Private practice", year: "Ongoing" },
 ];
 
 const authoredContent = [

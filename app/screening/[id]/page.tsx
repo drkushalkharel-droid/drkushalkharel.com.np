@@ -97,12 +97,7 @@ export default async function ScreeningToolPage({
     inLanguage: "en",
     medicalAudience: ["Patient", "Caregiver"],
     about: condition ? { "@id": `${siteUrl}/conditions/${condition.slug}#condition` } : tool.shortTitle,
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-    },
+    reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
     speakable: buildSpeakableSpec(["#tool-quick-answer"]),
   };
 

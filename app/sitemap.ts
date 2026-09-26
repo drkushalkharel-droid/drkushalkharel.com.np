@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { abroadGuides } from "./data/abroad";
+import { regions } from "./data/abroadRegions";
 import { cityGuides } from "./data/cities";
 import { conditions } from "./data/conditions";
 import { docArticles } from "./data/docArticles";
@@ -15,7 +16,7 @@ export const dynamic = "force-static";
 const siteUrl = "https://drkushalkharel.com.np";
 // Keep the sitemap current whenever content changes so crawlers can prioritize
 // newly published patient resources and guides.
-const lastModified = new Date("2026-07-18");
+const lastModified = new Date("2026-09-26");
 
 // The site is configured with trailingSlash: true (next.config.ts), so every
 // real route resolves with a trailing slash. Sitemap entries must match that
@@ -38,6 +39,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date("2026-08-03"),
       changeFrequency: "monthly",
       priority: 0.9,
+    },
+
+    {
+      url: `${siteUrl}/contact`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
     },
 
     {
@@ -221,6 +229,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  const regionRoutes: MetadataRoute.Sitemap = regions.map((region) => ({
+    url: `${siteUrl}/nepalese-abroad/${region.slug}`,
+    lastModified: new Date("2026-09-24"),
+    changeFrequency: "monthly",
+    priority: 0.85,
+  }));
+
   const conditionRoutes: MetadataRoute.Sitemap = conditions.map((condition) => ({
     url: `${siteUrl}/conditions/${condition.slug}`,
     lastModified,
@@ -260,6 +275,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticRoutes,
     ...articleRoutes,
     ...cityRoutes,
+    ...regionRoutes,
     ...abroadRoutes,
     ...conditionRoutes,
     ...screeningRoutes,

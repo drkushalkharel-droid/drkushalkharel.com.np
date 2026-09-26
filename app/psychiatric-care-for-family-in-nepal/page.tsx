@@ -64,7 +64,7 @@ const faqs = [
   {
     question: "Can I pay for my family member's treatment from abroad?",
     answer:
-      "Yes, payment arrangements from abroad are commonly worked out directly with the clinic. Ask about this when you first get in touch, so your parent or relative isn't left worrying about the cost of attending.",
+      "Yes. You can pay by card, bank transfer or another method that works from your country; the clinic confirms the fee and the options when you first get in touch, so your parent or relative isn't left worrying about the cost of attending.",
   },
   {
     question: "What if my parent or relative refuses to see a psychiatrist?",
@@ -96,12 +96,7 @@ export default function PsychiatricCareForFamilyPage() {
       name: "Nepalis living abroad arranging care for family in Nepal",
     },
     medicalAudience: ["Patient", "Caregiver"],
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-    },
+    reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
   };
 
   const faqJsonLd = {

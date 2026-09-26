@@ -49,12 +49,7 @@ export default function ScreeningPage() {
     medicalAudience: ["Patient", "Caregiver"],
     about: screeningTools.map((tool) => tool.title),
     relatedLink: screeningTools.map((tool) => `${pageUrl}/${tool.id}`),
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-    },
+    reviewedBy: { "@id": "https://drkushalkharel.com.np#psychiatrist" },
     speakable: buildSpeakableSpec(["#screening-quick-answer"]),
   };
 

@@ -1,8 +1,8 @@
-import { Briefcase, GraduationCap, Home, Stethoscope } from "lucide-react";
+import { GraduationCap, Home } from "lucide-react";
 
 const timeline = [
   {
-    year: "2020 — Present",
+    year: "Ongoing",
     title: "Home-Based Psychiatric Clinic",
     place: "Kalanki-14, Kathmandu",
     description:
@@ -10,36 +10,12 @@ const timeline = [
     icon: Home,
   },
   {
-    year: "2023 — 2026",
+    year: "Completed",
     title: "MD Psychiatry (Psychiatry Training)",
     place: "KIST Medical College Teaching Hospital",
     description:
-      "Completed specialist postgraduate training in psychiatry, building expertise in the assessment and treatment of anxiety, mood, psychotic, neurodevelopmental and addiction-related disorders.",
+      "Specialist postgraduate training in psychiatry, building expertise in the assessment and treatment of anxiety, mood, psychotic, neurodevelopmental and addiction-related disorders.",
     icon: GraduationCap,
-  },
-  {
-    year: "2022 — 2023",
-    title: "Medical Officer",
-    place: "Kathmandu ENT Hospital",
-    description:
-      "Provided general medical care as a Medical Officer prior to specializing in psychiatry.",
-    icon: Stethoscope,
-  },
-  {
-    year: "2021 — 2022",
-    title: "Medical Officer",
-    place: "Patan Hospital",
-    description:
-      "Provided general medical care as a Medical Officer, building broad clinical experience across patient populations.",
-    icon: Briefcase,
-  },
-  {
-    year: "2020 — 2021",
-    title: "Medical Officer",
-    place: "Kantipur Hospital",
-    description:
-      "Began clinical practice as a Medical Officer, providing general medical care.",
-    icon: Briefcase,
   },
 ];
 
@@ -52,13 +28,12 @@ export default function Experience() {
             Experience &amp; Training
           </span>
           <h2 className="mt-5 text-4xl font-bold leading-tight md:text-5xl">
-            A clinical career built on broad medical experience
+            A clinical career built on specialist psychiatric training
           </h2>
           <p className="mt-6 text-lg leading-8 text-stone-300">
-            Dr. Kushal Kharel&apos;s path to psychiatry included general
-            clinical experience across multiple Kathmandu hospitals before and
-            during specialist training, alongside a continuously running
-            clinical practice since 2020.
+            Dr. Kushal Kharel is a Nepal Medical Council-registered Consultant
+            Psychiatrist with specialist MD Psychiatry training, running a
+            continuous clinical practice in Kalanki, Kathmandu.
           </p>
         </div>
 

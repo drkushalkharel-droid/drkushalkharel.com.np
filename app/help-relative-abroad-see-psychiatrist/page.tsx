@@ -96,12 +96,7 @@ export default function HelpRelativeAbroadPage() {
       name: "Families trying to help a relative living abroad access psychiatric care",
     },
     medicalAudience: ["Patient", "Caregiver"],
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-    },
+    reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
   };
 
   const faqJsonLd = {

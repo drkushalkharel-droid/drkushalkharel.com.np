@@ -69,7 +69,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali mental health support UK students",
     ],
     practicalNote:
-      "Nepal is typically about five hours ahead of UK clocks (roughly 4 hours 45 minutes in summer and 5 hours 45 minutes in winter), so a Nepal-evening video-call slot usually lands in the UK afternoon, without very early or late hours for either side. As with any consultation from abroad, a Nepal-written prescription cannot simply be taken to a UK pharmacy, so medication needs are discussed openly, including whether registering with a local GP for an NHS mental health referral, or continuing privately, is the more appropriate route for ongoing prescribing. University wellbeing services and student unions can also offer interim support while longer-term care is arranged, and bringing any previous diagnosis or GP letters to the first call helps build a fuller picture quickly. If there are thoughts of self-harm, a mental health crisis or safety concerns, contacting UK emergency services or attending A&E is safer than waiting for a scheduled online appointment.",
+      "As with any consultation from abroad, a Nepal-written prescription cannot simply be taken to a UK pharmacy, so medication needs are discussed openly, including whether registering with a local GP for an NHS mental health referral, or continuing privately, is the more appropriate route for ongoing prescribing. University wellbeing services and student unions can also offer interim support while longer-term care is arranged, and bringing any previous diagnosis or GP letters to the first call helps build a fuller picture quickly. If there are thoughts of self-harm, a mental health crisis or safety concerns, contacting UK emergency services or attending A&E is safer than waiting for a scheduled online appointment.",
     testimonial: {
       quote:
         "My experience with Dr. Kushal through online psychiatric counselling was very positive. I felt that my concerns were taken seriously and that I had enough time to explain what I was going through. He communicated clearly and explained the possible treatment approaches without making things unnecessarily complicated. I also appreciated the professional and confidential nature of the consultation. Being able to access psychiatric support online while living in the UK made the process much easier for me.",
@@ -99,7 +99,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Australia",
     ],
     practicalNote:
-      "Australia is usually four to six hours ahead of Kathmandu depending on the state and season, which generally makes it easier to schedule a video consultation without very unsociable hours on either side. A prescription issued in Nepal cannot be assumed to be recognised at an Australian pharmacy, so this is discussed honestly, including whether registering with a local GP or student health service, often accessible through Overseas Student Health Cover, is the better long-term option for ongoing prescribing. University counselling services can also provide free interim support between appointments, and it is worth checking what your specific OSHC policy actually covers before assuming mental health visits are excluded. For urgent risk, suicidal thoughts, or a mental health crisis, calling 000 or presenting to a local emergency department is safer than waiting for a booked online appointment.",
+      "A prescription issued in Nepal cannot be assumed to be recognised at an Australian pharmacy, so this is discussed honestly, including whether registering with a local GP or student health service, often accessible through Overseas Student Health Cover, is the better long-term option for ongoing prescribing. University counselling services can also provide free interim support between appointments, and it is worth checking what your specific OSHC policy actually covers before assuming mental health visits are excluded. For urgent risk, suicidal thoughts, or a mental health crisis, calling 000 or presenting to a local emergency department is safer than waiting for a booked online appointment.",
     testimonial: {
       quote:
         "Living in Australia, I wanted to speak with a psychiatrist who understood my background and with whom I could communicate comfortably. My online consultation with Dr. Kushal was professional and supportive. He took time to understand my concerns and explained the possible reasons behind my symptoms in simple language. I appreciated that the consultation was not rushed. It helped me understand what I was experiencing and gave me a clearer plan for managing my mental health.",
@@ -129,7 +129,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali international student mental health Canada",
     ],
     practicalNote:
-      "Canada is usually around eleven to fourteen hours behind Kathmandu depending on the province and time of year, so video consultations are often easiest to schedule for a Nepal-morning slot that lands in the previous Canadian evening. A Nepal-issued prescription cannot be assumed to be fillable at a Canadian pharmacy, so medication decisions are discussed transparently, including whether a local family doctor, walk-in clinic or campus health service should take on ongoing prescribing. Campus international student offices can also help connect students with local counselling in the meantime, and having your provincial health card details or study permit information handy speeds up any local referral. If there is any risk of self-harm or a mental health emergency, calling 911 or going to the nearest emergency department is the appropriate first step rather than waiting for an online appointment.",
+      "A Nepal-issued prescription cannot be assumed to be fillable at a Canadian pharmacy, so medication decisions are discussed transparently, including whether a local family doctor, walk-in clinic or campus health service should take on ongoing prescribing. Campus international student offices can also help connect students with local counselling in the meantime, and having your provincial health card details or study permit information handy speeds up any local referral. If there is any risk of self-harm or a mental health emergency, calling 911 or going to the nearest emergency department is the appropriate first step rather than waiting for an online appointment.",
   },
   {
     country: "Netherlands",
@@ -154,7 +154,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Wageningen",
     ],
     practicalNote:
-      "The Netherlands is usually around three to four hours behind Kathmandu, which generally allows for a video consultation slot in the Nepal evening that lands in the Dutch afternoon or early evening. A Nepal-written prescription cannot be assumed to be usable at a Dutch pharmacy, so this is discussed openly, including whether registering with a local huisarts (GP) for prescribing and referral into the Dutch system is the right next step. University student psychologists can also offer short-term support while this is arranged, and it is worth checking your specific Dutch health insurance policy for what mental health cover it already includes. If there is a mental health crisis, suicidal thinking or urgent safety concern, contacting Dutch emergency services or the nearest hospital is safer than waiting for a scheduled online session.",
+      "A Nepal-written prescription cannot be assumed to be usable at a Dutch pharmacy, so this is discussed openly, including whether registering with a local huisarts (GP) for prescribing and referral into the Dutch system is the right next step. University student psychologists can also offer short-term support while this is arranged, and it is worth checking your specific Dutch health insurance policy for what mental health cover it already includes. If there is a mental health crisis, suicidal thinking or urgent safety concern, contacting Dutch emergency services or the nearest hospital is safer than waiting for a scheduled online session.",
   },
   {
     country: "Dubai",
@@ -209,7 +209,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali migrant worker mental health Qatar",
     ],
     practicalNote:
-      "Qatar is usually around one to two hours behind Kathmandu, so arranging a video consultation is generally easier than for countries much further away, though shift patterns and limited free time still need to be planned around. A prescription from Nepal cannot be assumed to be usable at a pharmacy in Qatar, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace record, so concerns can be raised honestly without fear of it reaching an employer. Mental health symptoms are treatable and nothing to be ashamed of; for a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, a workplace welfare officer, or the Nepali embassy should not wait for a scheduled appointment. Bringing a rough timeline of symptoms and any recent changes at work or home to the first call helps make the most of a limited window of free time.",
+      "Qatar is usually around two hours and forty-five minutes behind Kathmandu, so arranging a video consultation is generally easier than for countries much further away, though shift patterns and limited free time still need to be planned around. A prescription from Nepal cannot be assumed to be usable at a pharmacy in Qatar, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace record, so concerns can be raised honestly without fear of it reaching an employer. Mental health symptoms are treatable and nothing to be ashamed of; for a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, a workplace welfare officer, or the Nepali embassy should not wait for a scheduled appointment. Bringing a rough timeline of symptoms and any recent changes at work or home to the first call helps make the most of a limited window of free time.",
     testimonial: {
       quote:
         "Living in Qatar, I wanted to seek psychiatric support while being able to communicate comfortably about my concerns. My consultation with Dr. Kushal was reassuring and professional. He listened carefully, asked relevant questions and explained the situation in a way that was easy to understand. I felt respected throughout the consultation and did not feel judged for discussing my difficulties. The session gave me greater clarity about my mental health and helped me understand the available options for treatment.",
@@ -239,7 +239,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali worker mental health Japan",
     ],
     practicalNote:
-      "Japan is usually around three hours ahead of Kathmandu, so an evening video consultation on the Nepal side generally lines up well with a Japanese night-time slot after work or classes. A Nepal-issued prescription cannot be assumed to be usable at a Japanese pharmacy, so this is discussed honestly, including when registering with a local clinic for prescribing is the more realistic path. If there is a medical or safety emergency, calling Japan's emergency services or attending a nearby hospital is the right first step, and a Nepali psychiatrist can still help organise the story and next steps in Nepali when language makes explaining symptoms locally difficult, including preparing what to say to a local doctor or workplace health office if follow-up in Japanese becomes necessary.",
+      "A Nepal-issued prescription cannot be assumed to be usable at a Japanese pharmacy, so this is discussed honestly, including when registering with a local clinic for prescribing is the more realistic path. If there is a medical or safety emergency, calling Japan's emergency services or attending a nearby hospital is the right first step, and a Nepali psychiatrist can still help organise the story and next steps in Nepali when language makes explaining symptoms locally difficult, including preparing what to say to a local doctor or workplace health office if follow-up in Japanese becomes necessary.",
     testimonial: {
       quote:
         "I was living in Japan when I decided to seek professional help for my mental health concerns. The online consultation with Dr. Kushal was comfortable and convenient. He listened carefully, asked relevant questions and explained my symptoms in a way that was easy to understand. I never felt rushed during the consultation. Being able to speak with a psychiatrist from Nepal while living abroad made accessing mental health support much easier for me.",
@@ -269,7 +269,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali EPS worker mental health Korea",
     ],
     practicalNote:
-      "South Korea is usually around three hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal typically lines up with a Korean night-time slot after work. A Nepal-written prescription cannot be assumed to be recognised at a Korean pharmacy, so this is discussed openly, including when local clinic care is the more workable long-term option. Sleep problems, panic, anger, persistent sadness or increasing alcohol use can be early signs professional support is needed, and naming these early rather than waiting until a crisis makes treatment considerably easier. It also helps to know that a phone or video consultation from a dormitory room can be kept just as confidential as an in-person visit, with nothing shared with an employer. For a medical emergency or safety concern, local emergency services or the nearest hospital should be contacted rather than waiting for a scheduled appointment.",
+      "A Nepal-written prescription cannot be assumed to be recognised at a Korean pharmacy, so this is discussed openly, including when local clinic care is the more workable long-term option. Sleep problems, panic, anger, persistent sadness or increasing alcohol use can be early signs professional support is needed, and naming these early rather than waiting until a crisis makes treatment considerably easier. It also helps to know that a phone or video consultation from a dormitory room can be kept just as confidential as an in-person visit, with nothing shared with an employer. For a medical emergency or safety concern, local emergency services or the nearest hospital should be contacted rather than waiting for a scheduled appointment.",
     testimonial: {
       quote:
         "I had been struggling with several personal and emotional difficulties and was unsure whether online psychiatric counselling would be helpful. Dr. Kushal made me feel comfortable from the beginning. He listened without judgement and gave me enough time to explain what I was going through. His explanations helped me understand my symptoms and reactions much better. The consultation gave me clarity and a sense of direction regarding what I could do next.",
@@ -324,7 +324,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Paris",
     ],
     practicalNote:
-      "France is usually around three to four hours behind Kathmandu, so a video consultation booked for the Nepal evening typically falls in the French afternoon or early evening, which tends to work well for most schedules. A Nepal-issued prescription cannot be assumed to be usable at a French pharmacy, so this is discussed honestly, including whether registering with a local médecin traitant (GP) for prescribing and referral into the French system is the more realistic path. Being able to describe symptoms first in Nepali or English before facing a French-language appointment can make that later conversation considerably less daunting, and it can also help to prepare a short written summary of symptoms in French beforehand for a later local appointment. For a medical emergency, suicidal thoughts or an urgent safety concern, contacting French emergency services (SAMU) or the nearest hospital is safer than waiting for a scheduled online session.",
+      "A Nepal-issued prescription cannot be assumed to be usable at a French pharmacy, so this is discussed honestly, including whether registering with a local médecin traitant (GP) for prescribing and referral into the French system is the more realistic path. Being able to describe symptoms first in Nepali or English before facing a French-language appointment can make that later conversation considerably less daunting, and it can also help to prepare a short written summary of symptoms in French beforehand for a later local appointment. For a medical emergency, suicidal thoughts or an urgent safety concern, contacting French emergency services (SAMU) or the nearest hospital is safer than waiting for a scheduled online session.",
   },
   {
     country: "Belgium",
@@ -349,7 +349,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Brussels",
     ],
     practicalNote:
-      "Belgium is usually around three to four hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the Belgian afternoon or early evening without unreasonable hours for either side. A Nepal-written prescription cannot be assumed to be valid at a Belgian pharmacy, so medication questions are discussed openly, including whether registering with a local huisarts or médecin généraliste for prescribing is the better long-term step. Speaking with a psychiatrist in Nepali or English first can also help clarify what to say later in a French or Dutch-language appointment if one becomes necessary, particularly for anyone unsure which regional health service applies to their address. Professional guidance is especially important if symptoms persist, affect work or study, or involve thoughts of self-harm or substance use, and any safety emergency should go to local emergency services rather than wait for an online appointment.",
+      "A Nepal-written prescription cannot be assumed to be valid at a Belgian pharmacy, so medication questions are discussed openly, including whether registering with a local huisarts or médecin généraliste for prescribing is the better long-term step. Speaking with a psychiatrist in Nepali or English first can also help clarify what to say later in a French or Dutch-language appointment if one becomes necessary, particularly for anyone unsure which regional health service applies to their address. Professional guidance is especially important if symptoms persist, affect work or study, or involve thoughts of self-harm or substance use, and any safety emergency should go to local emergency services rather than wait for an online appointment.",
     testimonial: {
       quote:
         "I consulted Dr. Kushal from Belgium and found the online session very helpful. I was initially hesitant about discussing my mental health through an online appointment, but the consultation felt natural and comfortable. He listened patiently and tried to understand my concerns in the context of my personal circumstances. The explanations were clear and practical. I finished the consultation with a much better understanding of my difficulties and felt more confident about taking the appropriate next steps.",
@@ -379,7 +379,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Berlin Munich",
     ],
     practicalNote:
-      "Germany is usually around three to four hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the German afternoon or early evening for either side. A Nepal-written prescription cannot be assumed to be valid at a German pharmacy (Apotheke), so medication questions are discussed openly, including whether registering with a local Hausarzt for prescribing and referral into the German system is the right next step. Many universities also offer a free Studierendenwerk psychosocial counselling service that can provide short-term support in English while this is arranged, and Ausbildung trainees can typically raise a health concern with their training provider without it affecting their residence status. If there is a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or going to the nearest hospital emergency department is safer than waiting for a scheduled online appointment.",
+      "A Nepal-written prescription cannot be assumed to be valid at a German pharmacy (Apotheke), so medication questions are discussed openly, including whether registering with a local Hausarzt for prescribing and referral into the German system is the right next step. Many universities also offer a free Studierendenwerk psychosocial counselling service that can provide short-term support in English while this is arranged, and Ausbildung trainees can typically raise a health concern with their training provider without it affecting their residence status. If there is a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or going to the nearest hospital emergency department is safer than waiting for a scheduled online appointment.",
   },
   {
     country: "Saudi Arabia",
@@ -429,7 +429,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali migrant worker mental health Malaysia",
     ],
     practicalNote:
-      "Malaysia is usually around two hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal typically lines up with a Malaysian night-time slot after work. A Nepal-issued prescription cannot be assumed to be recognised at a Malaysian pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace record. If a passport has been retained by an employer, this is a separate legal and welfare matter best raised with the Nepali embassy or a labour welfare organisation alongside any mental health support. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at a Malaysian pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace record. If a passport has been retained by an employer, this is a separate legal and welfare matter best raised with the Nepali embassy or a labour welfare organisation alongside any mental health support. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
     testimonial: {
       quote:
         "The online psychiatric consultation was convenient and professional. Dr. Kushal gave me adequate time to explain my concerns and listened carefully before discussing possible explanations and treatment options. I appreciated the fact that I could ask questions and clarify my doubts during the session. The consultation helped me understand my symptoms better and reduced some of the uncertainty I had been experiencing. Being able to access psychiatric care remotely while living in Malaysia was particularly helpful.",
@@ -484,7 +484,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali migrant worker mental health Romania",
     ],
     practicalNote:
-      "Romania is usually around three to four hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the Romanian afternoon or early evening, which tends to work well around most shift patterns. A Nepal-issued prescription cannot be assumed to be recognised at a Romanian pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at a Romanian pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
   },
   {
     country: "Cyprus",
@@ -509,7 +509,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali migrant worker mental health Cyprus",
     ],
     practicalNote:
-      "Cyprus is usually around three to four hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the Cypriot afternoon or early evening. A Nepal-issued prescription cannot be assumed to be recognised at a Cypriot pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at a Cypriot pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
   },
   {
     country: "Israel",
@@ -534,7 +534,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali caregiver mental health Israel",
     ],
     practicalNote:
-      "Israel is usually around three hours behind Kathmandu, so a Nepal-evening video consultation slot generally falls in the Israeli afternoon or early evening. A Nepal-issued prescription cannot be assumed to be recognised at an Israeli pharmacy, so medication needs are discussed honestly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace or agency record. Compassion fatigue and grief after a resident's death are genuine, treatable conditions, not a sign of being unsuited to caregiving work. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at an Israeli pharmacy, so medication needs are discussed honestly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace or agency record. Compassion fatigue and grief after a resident's death are genuine, treatable conditions, not a sign of being unsuited to caregiving work. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
   },
   {
     country: "Portugal",
@@ -559,7 +559,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali migrant worker mental health Portugal",
     ],
     practicalNote:
-      "Portugal is usually around five to six hours behind Kathmandu, the largest gap of any country covered here, so a Nepal late-evening or night video consultation slot generally lines up best with the Portuguese afternoon or early evening. A Nepal-issued prescription cannot be assumed to be recognised at a Portuguese pharmacy, so medication needs are discussed openly, including when registering with a local clinic for prescribing is the more realistic path. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at a Portuguese pharmacy, so medication needs are discussed openly, including when registering with a local clinic for prescribing is the more realistic path. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
   },
   {
     country: "Oman",
@@ -634,7 +634,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali migrant worker mental health Singapore",
     ],
     practicalNote:
-      "Singapore is usually around two hours and fifteen minutes ahead of Kathmandu, so a Nepal-evening video consultation slot generally lines up with a Singapore night-time slot after work, without an unreasonable time difference on either side. A Nepal-issued prescription cannot be assumed to be recognised at a Singapore pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option for ongoing prescribing. Consultations are confidential and kept separate from any workplace, dormitory or employer record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at a Singapore pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option for ongoing prescribing. Consultations are confidential and kept separate from any workplace, dormitory or employer record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
   },
   {
     country: "New Zealand",
@@ -659,7 +659,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health New Zealand",
     ],
     practicalNote:
-      "New Zealand is usually around six to seven hours ahead of Kathmandu depending on daylight saving, so a Nepal-morning video consultation slot generally lines up with a New Zealand afternoon or evening on the same day. A prescription written in Nepal cannot be assumed to be valid or fillable at a New Zealand pharmacy, so medication questions are discussed honestly, including whether registering with a local GP or student health service is the more appropriate route for ongoing prescribing. Many institutions also offer a free student wellbeing or counselling service that can provide interim support between appointments. For urgent risk, suicidal thoughts, or a mental health crisis, calling 111 or presenting to a local emergency department is safer than waiting for a scheduled online appointment.",
+      "A prescription written in Nepal cannot be assumed to be valid or fillable at a New Zealand pharmacy, so medication questions are discussed honestly, including whether registering with a local GP or student health service is the more appropriate route for ongoing prescribing. Many institutions also offer a free student wellbeing or counselling service that can provide interim support between appointments. For urgent risk, suicidal thoughts, or a mental health crisis, calling 111 or presenting to a local emergency department is safer than waiting for a scheduled online appointment.",
   },
   {
     country: "Ireland",
@@ -684,7 +684,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Dublin",
     ],
     practicalNote:
-      "Ireland is usually around five to six hours behind Kathmandu depending on daylight saving, so a Nepal late-evening video consultation slot generally lines up with an Irish afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at an Irish pharmacy, so medication needs are discussed openly, including whether registering with a local GP for prescribing and referral into the Irish system, often through the HSE, is the right next step. University student health and counselling services can also offer interim support while this is arranged. For urgent risk, suicidal thoughts or a mental health crisis, calling 112 or 999 or attending a local emergency department is safer than waiting for a scheduled online appointment.",
+      "A Nepal-written prescription cannot be assumed to be valid at an Irish pharmacy, so medication needs are discussed openly, including whether registering with a local GP for prescribing and referral into the Irish system, often through the HSE, is the right next step. University student health and counselling services can also offer interim support while this is arranged. For urgent risk, suicidal thoughts or a mental health crisis, calling 112 or 999 or attending a local emergency department is safer than waiting for a scheduled online appointment.",
   },
   {
     country: "Hong Kong",
@@ -709,7 +709,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Gurkha family mental health Hong Kong",
     ],
     practicalNote:
-      "Hong Kong is usually around two hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal generally lines up with a Hong Kong night-time slot after work or school. A Nepal-issued prescription cannot be assumed to be recognised at a Hong Kong pharmacy, so medication needs are discussed openly, including whether registering with a local general practitioner or public clinic for prescribing is the right next step. Consultations can be conducted in Nepali, which can be a genuine relief for elderly Gurkha veterans, spouses or newer arrivals who find explaining symptoms in English or Cantonese difficult. For a medical emergency, safety concern or thoughts of self-harm, calling 999 or attending the nearest hospital accident and emergency department should not wait for a scheduled online appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at a Hong Kong pharmacy, so medication needs are discussed openly, including whether registering with a local general practitioner or public clinic for prescribing is the right next step. Consultations can be conducted in Nepali, which can be a genuine relief for elderly Gurkha veterans, spouses or newer arrivals who find explaining symptoms in English or Cantonese difficult. For a medical emergency, safety concern or thoughts of self-harm, calling 999 or attending the nearest hospital accident and emergency department should not wait for a scheduled online appointment.",
   },
   {
     country: "Poland",
@@ -734,7 +734,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali migrant worker mental health Poland",
     ],
     practicalNote:
-      "Poland is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Polish afternoon or early evening, which tends to work well around most shift patterns. A Nepal-issued prescription cannot be assumed to be recognised at a Polish pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace or agency record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at a Polish pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace or agency record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
   },
   {
     country: "Italy",
@@ -759,7 +759,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali community mental health Rome",
     ],
     practicalNote:
-      "Italy is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Italian afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at an Italian pharmacy, so medication needs are discussed openly, including whether registering with a local medico di base (GP) for prescribing and referral into the Italian system is the right next step. Speaking with a psychiatrist in Nepali first can also help for live-in care workers who find it hard to leave their workplace household to attend a local appointment. For a medical emergency, safety concern or thoughts of self-harm, calling 112 or attending the nearest hospital emergency department should not wait for a scheduled online session.",
+      "A Nepal-written prescription cannot be assumed to be valid at an Italian pharmacy, so medication needs are discussed openly, including whether registering with a local medico di base (GP) for prescribing and referral into the Italian system is the right next step. Speaking with a psychiatrist in Nepali first can also help for live-in care workers who find it hard to leave their workplace household to attend a local appointment. For a medical emergency, safety concern or thoughts of self-harm, calling 112 or attending the nearest hospital emergency department should not wait for a scheduled online session.",
   },
   {
     country: "Myanmar",
@@ -809,7 +809,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Dhaka",
     ],
     practicalNote:
-      "Bangladesh is usually only around fifteen minutes ahead of Kathmandu, so scheduling a video consultation is simple and does not require planning around odd hours, similar to India. A Nepal-written prescription may not automatically be accepted at every Bangladeshi pharmacy, so this is discussed directly, alongside whether local psychiatric care, a hostel or college counselling service, or continued follow-up with Dr. Kushal Kharel is the best fit. For a medical emergency, safety risk or acute crisis, the nearest hospital or local emergency services should be used rather than waiting for an online appointment. Many families find it reassuring that a first conversation can happen in Nepali, which often makes it easier to describe symptoms accurately before deciding on next steps.",
+      "A Nepal-written prescription may not automatically be accepted at every Bangladeshi pharmacy, so this is discussed directly, alongside whether local psychiatric care, a hostel or college counselling service, or continued follow-up with Dr. Kushal Kharel is the best fit. For a medical emergency, safety risk or acute crisis, the nearest hospital or local emergency services should be used rather than waiting for an online appointment. Many families find it reassuring that a first conversation can happen in Nepali, which often makes it easier to describe symptoms accurately before deciding on next steps.",
   },
   {
     country: "Thailand",
@@ -834,7 +834,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali migrant worker mental health Thailand",
     ],
     practicalNote:
-      "Thailand is usually around one hour and fifteen minutes ahead of Kathmandu, so video consultations can generally be scheduled around work shifts without a significant time difference to plan around. A Nepal-issued prescription cannot be assumed to be recognised at a Thai pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at a Thai pharmacy, so medication needs are discussed openly, including when local clinic care is the more practical option. Consultations are confidential and kept separate from any workplace record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services, the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
   },
   {
     country: "Croatia",
@@ -859,7 +859,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali migrant worker mental health Croatia",
     ],
     practicalNote:
-      "Croatia is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Croatian afternoon or early evening, which tends to work well around most shift patterns. A Nepal-issued prescription cannot be assumed to be recognised at a Croatian pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace or agency record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at a Croatian pharmacy, so medication needs are discussed openly, including when registering with local clinic care is the more realistic path for ongoing prescribing. Consultations are confidential and kept separate from any workplace or agency record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services (112), the nearest hospital, or the Nepali embassy should not wait for a scheduled appointment.",
   },
   {
     country: "Fiji",
@@ -884,7 +884,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali community mental health Fiji",
     ],
     practicalNote:
-      "Fiji is usually around six to seven hours ahead of Kathmandu depending on daylight saving, so a Nepal-morning video consultation slot generally lines up with a Fiji afternoon or evening on the same day. A prescription written in Nepal cannot be assumed to be valid or fillable at a Fijian pharmacy, so medication questions are discussed honestly, including whether registering with a local doctor is the more appropriate route for ongoing prescribing. Consultations can be conducted in Nepali, which can be a genuine relief for a community with deep roots but limited access to Nepali-language services locally. For urgent risk, suicidal thoughts, or a mental health crisis, contacting local emergency services or the nearest hospital is safer than waiting for a scheduled online appointment.",
+      "A prescription written in Nepal cannot be assumed to be valid or fillable at a Fijian pharmacy, so medication questions are discussed honestly, including whether registering with a local doctor is the more appropriate route for ongoing prescribing. Consultations can be conducted in Nepali, which can be a genuine relief for a community with deep roots but limited access to Nepali-language services locally. For urgent risk, suicidal thoughts, or a mental health crisis, contacting local emergency services or the nearest hospital is safer than waiting for a scheduled online appointment.",
   },
   {
     country: "Denmark",
@@ -909,7 +909,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Copenhagen",
     ],
     practicalNote:
-      "Denmark is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Danish afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at a Danish pharmacy (apotek), so medication needs are discussed openly, including whether registering with a local læge (GP) for prescribing and referral into the Danish system is the right next step. University student counselling services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
+      "A Nepal-written prescription cannot be assumed to be valid at a Danish pharmacy (apotek), so medication needs are discussed openly, including whether registering with a local læge (GP) for prescribing and referral into the Danish system is the right next step. University student counselling services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
   },
   {
     country: "Brunei",
@@ -934,7 +934,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Gurkha family mental health Brunei",
     ],
     practicalNote:
-      "Brunei is usually around two hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal generally lines up with a Brunei night-time slot. A Nepal-issued prescription cannot be assumed to be recognised at a Brunei pharmacy, so medication needs are discussed openly, including whether registering with a local clinic, including on-base medical services where relevant, is the right next step. Consultations can be conducted in Nepali, which can be a genuine relief given how small and interconnected the local Nepali community is, and confidentiality is maintained separately from any military or employer record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services or the nearest hospital should not wait for a scheduled online appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at a Brunei pharmacy, so medication needs are discussed openly, including whether registering with a local clinic, including on-base medical services where relevant, is the right next step. Consultations can be conducted in Nepali, which can be a genuine relief given how small and interconnected the local Nepali community is, and confidentiality is maintained separately from any military or employer record. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services or the nearest hospital should not wait for a scheduled online appointment.",
   },
   {
     country: "Sri Lanka",
@@ -959,7 +959,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Colombo",
     ],
     practicalNote:
-      "Sri Lanka is usually only around fifteen minutes behind Kathmandu, so scheduling a video consultation is simple and does not require planning around odd hours. A Nepal-written prescription may not automatically be accepted at every Sri Lankan pharmacy, so this is discussed directly, alongside whether local psychiatric care, a college counselling service, or continued follow-up with Dr. Kushal Kharel is the best fit. For a medical emergency, safety risk or acute crisis, the nearest hospital or local emergency services should be used rather than waiting for an online appointment. Many families find it reassuring that a first conversation can happen in Nepali, which often makes it easier to describe symptoms accurately before deciding on next steps.",
+      "A Nepal-written prescription may not automatically be accepted at every Sri Lankan pharmacy, so this is discussed directly, alongside whether local psychiatric care, a college counselling service, or continued follow-up with Dr. Kushal Kharel is the best fit. For a medical emergency, safety risk or acute crisis, the nearest hospital or local emergency services should be used rather than waiting for an online appointment. Many families find it reassuring that a first conversation can happen in Nepali, which often makes it easier to describe symptoms accurately before deciding on next steps.",
   },
   {
     country: "Finland",
@@ -984,7 +984,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Helsinki",
     ],
     practicalNote:
-      "Finland is usually around three to four hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Finnish afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at a Finnish pharmacy (apteekki), so medication needs are discussed openly, including whether registering with a local lääkäri (doctor) for prescribing and referral into the Finnish system is the right next step. University student wellbeing services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
+      "A Nepal-written prescription cannot be assumed to be valid at a Finnish pharmacy (apteekki), so medication needs are discussed openly, including whether registering with a local lääkäri (doctor) for prescribing and referral into the Finnish system is the right next step. University student wellbeing services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
   },
   {
     country: "Spain",
@@ -1009,7 +1009,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali migrant worker mental health Madrid Barcelona",
     ],
     practicalNote:
-      "Spain is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Spanish afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at a Spanish pharmacy (farmacia), so medication needs are discussed openly, including whether registering with a local médico de cabecera (GP) for prescribing and referral into the Spanish system is the right next step. Consultations are confidential and kept separate from any workplace record. For a medical emergency, suicidal thoughts or an urgent safety concern, contacting Spanish emergency services (112) or the nearest hospital is safer than waiting for a scheduled online session.",
+      "A Nepal-written prescription cannot be assumed to be valid at a Spanish pharmacy (farmacia), so medication needs are discussed openly, including whether registering with a local médico de cabecera (GP) for prescribing and referral into the Spanish system is the right next step. Consultations are confidential and kept separate from any workplace record. For a medical emergency, suicidal thoughts or an urgent safety concern, contacting Spanish emergency services (112) or the nearest hospital is safer than waiting for a scheduled online session.",
   },
   {
     country: "Norway",
@@ -1034,7 +1034,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Oslo",
     ],
     practicalNote:
-      "Norway is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Norwegian afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at a Norwegian pharmacy (apotek), so medication needs are discussed openly, including whether registering with a local fastlege (regular GP) for prescribing and referral into the Norwegian system is the right next step. University student wellbeing services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 113 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
+      "A Nepal-written prescription cannot be assumed to be valid at a Norwegian pharmacy (apotek), so medication needs are discussed openly, including whether registering with a local fastlege (regular GP) for prescribing and referral into the Norwegian system is the right next step. University student wellbeing services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 113 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
   },
   {
     country: "Sweden",
@@ -1059,7 +1059,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Stockholm",
     ],
     practicalNote:
-      "Sweden is usually around four to five hours behind Kathmandu depending on daylight saving, so a Nepal-evening video consultation slot generally falls in the Swedish afternoon or early evening. A Nepal-written prescription cannot be assumed to be valid at a Swedish pharmacy (apotek), so medication needs are discussed openly, including whether registering with a local vårdcentral (health centre) for prescribing and referral into the Swedish system is the right next step. University student health services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
+      "A Nepal-written prescription cannot be assumed to be valid at a Swedish pharmacy (apotek), so medication needs are discussed openly, including whether registering with a local vårdcentral (health centre) for prescribing and referral into the Swedish system is the right next step. University student health services can also offer interim support while this is arranged. For a mental health crisis, suicidal thinking or urgent safety concern, calling 112 or attending the nearest hospital emergency department is safer than waiting for a scheduled online session.",
   },
   {
     country: "China",
@@ -1084,7 +1084,7 @@ export const abroadGuides: AbroadGuide[] = [
       "Nepali student mental health Beijing",
     ],
     practicalNote:
-      "China is usually around two hours and fifteen minutes ahead of Kathmandu, so an evening video consultation from Nepal typically lines up with a Chinese night-time slot after classes or work. A Nepal-issued prescription cannot be assumed to be recognised at a Chinese pharmacy, so medication needs are discussed openly, including whether registering with a local clinic or university health service for prescribing is the right next step. Google Meet is often blocked or unreliable in mainland China without a VPN, so mention this when booking and confirm in advance which video-call option will work reliably for a scheduled consultation. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services or the nearest hospital should not wait for a scheduled online appointment.",
+      "A Nepal-issued prescription cannot be assumed to be recognised at a Chinese pharmacy, so medication needs are discussed openly, including whether registering with a local clinic or university health service for prescribing is the right next step. Google Meet is often blocked or unreliable in mainland China without a VPN, so mention this when booking and confirm in advance which video-call option will work reliably for a scheduled consultation. For a medical emergency, safety concern or thoughts of self-harm, contacting local emergency services or the nearest hospital should not wait for a scheduled online appointment.",
   },
 ];
 

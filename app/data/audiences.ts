@@ -4,6 +4,10 @@ export type AudiencePage = {
   headline: string;
   shortDescription: string;
   intro: string;
+  // First-person-adjacent, jargon-free paragraph on how Dr. Kharel personally
+  // approaches this specific audience/concern — not a generic clinical
+  // description. See app/components/AudienceLandingPage.tsx for where it renders.
+  doctorsApproach: string;
   whoThisIsFor: string[];
   commonConcerns: string[];
   practicalNote: string;
@@ -18,6 +22,8 @@ export type AudiencePage = {
 export const audiencePages: AudiencePage[] = [
   {
     slug: "expatriates-in-nepal",
+    doctorsApproach:
+      "When an expatriate comes to see me, I don't assume the usual cultural context applies — I ask more, not less, about what's normal for them, their support system back home, and what's actually changed since moving to Nepal. Sessions run fully in English, and I'm just as direct about medication side effects and alternatives as I would be with any patient, so you're not guessing at what I'm not saying.",
     title: "Psychiatrist for Expatriates in Nepal",
     headline: "Psychiatric care for expatriates living in Nepal",
     shortDescription:
@@ -90,6 +96,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "english-speaking-psychiatrist",
+    doctorsApproach:
+      "I run the whole consultation in English if that's what puts you at ease — history, diagnosis, medication explanation, all of it — rather than switching to Nepali partway and losing precision on the details that matter. If a term doesn't have a natural English equivalent for how you're feeling, I'd rather you describe it in your own words than force it into clinical language.",
     title: "English Speaking Psychiatrist in Nepal",
     headline: "English-speaking psychiatric care in Kathmandu, Nepal",
     shortDescription:
@@ -148,6 +156,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "tourists-in-nepal",
+    doctorsApproach:
+      "With a tourist or trekker, my first question is practical: how long are you actually in Nepal for, and what do you need before you leave. That shapes everything — whether we can do a short course of therapy, whether medication makes sense given the timeline, and what I write down for you to hand to a doctor back home if follow-up is needed.",
     title: "Mental Health Support for Tourists in Nepal",
     headline: "Mental health support for tourists and trekkers in Nepal",
     shortDescription:
@@ -207,6 +217,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "couple-relationship-counseling",
+    doctorsApproach:
+      "I see both partners together for most of the session, but I also make space for a few minutes one-on-one with each person, because some things are easier to say without the other person in the room. I'm not there to decide who's right — I'm there to help you both hear what's actually being said underneath the argument.",
     title: "Couple and Relationship Counseling in Kathmandu, Nepal",
     headline: "Couple and relationship counseling in Kathmandu, Nepal",
     shortDescription:
@@ -282,6 +294,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "child-adolescent-psychiatry",
+    doctorsApproach:
+      "With a younger patient, I talk to the parents first to get the history, then I make sure the child or teenager gets real time to talk to me directly, in their own words, without a parent answering for them. Where a concern turns out to need specialised child-and-adolescent input beyond general psychiatric care, I'll say so and help point you toward it rather than stretch past what I do well.",
     title: "Child & Adolescent Mental Health Care in Kathmandu, Nepal",
     headline: "Psychiatric care for children and adolescents in Kathmandu, Nepal",
     shortDescription:
@@ -358,6 +372,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "iq-psychological-testing",
+    doctorsApproach:
+      "Before I arrange any testing, I want to know what the result is actually going to be used for — school placement, a work requirement, your own curiosity — because that changes which test is appropriate. I sit down afterward and go through what the numbers actually mean in plain terms, since a score sheet on its own tells you very little.",
     title: "IQ and Psychological Testing in Kathmandu, Nepal",
     headline: "IQ and psychological testing in Kathmandu, Nepal",
     shortDescription:
@@ -429,6 +445,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "medical-fitness-certificate",
+    doctorsApproach:
+      "A fitness certificate isn't a rubber stamp for me — I do a proper assessment first, because signing off on someone's fitness for work, travel or a licence is a real medical judgment. If I have any doubt, I'll tell you directly what needs to be sorted out first rather than issue something I'm not confident in.",
     title: "Medical and Fitness-to-Work Certificates in Kathmandu, Nepal",
     headline: "Psychiatric medical and fitness-to-work certificates in Kathmandu, Nepal",
     shortDescription:
@@ -500,6 +518,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "female-counselor-kathmandu",
+    doctorsApproach:
+      "I'm upfront that I'm male, so if you'd feel more comfortable speaking with a woman about what's going on, say so when you book and I'll help arrange a qualified female counsellor as part of your care — alongside my own psychiatric assessment where that's still useful, not instead of it. There's no need to explain or justify the preference.",
     title: "Female Counselor in Kathmandu, Nepal",
     headline: "Female counselor in Kathmandu, Nepal",
     shortDescription:
@@ -575,6 +595,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "cbt-therapist-kathmandu",
+    doctorsApproach:
+      "I run CBT as structured, between-session work, not just a conversation once a week — you'll leave most sessions with something specific to practice, and we review what happened with it next time. Where medication would speed things up or CBT alone genuinely isn't enough, I say so plainly rather than pushing therapy as the only answer.",
     title: "CBT Therapist in Kathmandu, Nepal",
     headline: "CBT therapist in Kathmandu, Nepal",
     shortDescription:
@@ -656,6 +678,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "erp-therapy-ocd",
+    doctorsApproach:
+      "ERP only works if it's paced right, so I build the hierarchy of triggers together with the patient, starting with something genuinely manageable rather than the worst fear on the list — going too fast just teaches someone to avoid the process. I check in on what happened between sessions in detail, because the between-session practice matters as much as anything we do together in the room.",
     title: "Exposure and Response Prevention (ERP) Therapy in Nepal",
     headline: "Exposure and Response Prevention (ERP) therapy in Nepal",
     shortDescription:
@@ -742,6 +766,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "addiction-treatment-kathmandu",
+    doctorsApproach:
+      "I don't start an addiction consultation with a lecture — I start by understanding what the substance is actually doing for the person, because that's usually where the real treatment plan begins. Withdrawal from alcohol or sedatives can be medically dangerous, so I'm direct about when that needs to be managed safely rather than attempted alone, and family involvement is offered, never forced.",
     title: "Best Addiction Treatment in Kathmandu, Nepal",
     headline: "Best addiction treatment and alcohol counselling in Kathmandu",
     shortDescription:
@@ -825,6 +851,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "psychiatrist-fee-nepal",
+    doctorsApproach:
+      "I'd rather you know the cost before you sit down than be surprised afterward — call or message and the clinic will confirm the fee for your specific appointment type up front. An initial assessment costs more than a follow-up because it takes longer, and that's the only reason for the difference.",
     title: "Psychiatrist Consultation Fees in Kathmandu, Nepal",
     headline: "What does a psychiatrist consultation cost in Kathmandu?",
     shortDescription:
@@ -891,6 +919,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "psychiatric-hospital-vs-clinic-kathmandu",
+    doctorsApproach:
+      "If what you're describing needs a hospital — safety risk, severe confusion, a level of care my clinic can't provide — I'll tell you that directly and help point you toward appropriate emergency or inpatient care rather than try to manage it here. Most ongoing psychiatric care doesn't need a hospital setting, and that's the judgment I make with you at the first assessment, not a default either way.",
     title: "Psychiatric Hospital vs. Clinic in Kathmandu: What's the Difference?",
     headline: "Psychiatric hospital or psychiatric clinic — which do you need?",
     shortDescription:
@@ -950,6 +980,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "relationship-counselling-kathmandu",
+    doctorsApproach:
+      "I treat relationship difficulty as its own legitimate reason to come in, not something you need a diagnosis to justify. Where I notice depression, anxiety or another condition sitting underneath the relationship stress, I'll say so and fold that into the plan, but plenty of people just need a structured space to work through a specific problem with a partner or family member.",
     title: "Relationship Counselling in Kathmandu, Nepal",
     headline: "Relationship counselling in Kathmandu: what it is, and when to use it",
     shortDescription:
@@ -1016,6 +1048,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "stress-anger-management-kathmandu",
+    doctorsApproach:
+      "I look for the pattern behind the anger or the stress — what's actually feeding it, and what's already been tried — rather than just handing over generic coping tips. If it turns out sleep, alcohol use or an underlying mood problem is driving it, we treat that directly instead of only working on the anger itself.",
     title: "Stress and Anger Management in Kathmandu, Nepal",
     headline: "Stress and anger management in Kathmandu, Nepal",
     shortDescription:
@@ -1079,6 +1113,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "how-to-control-your-mind-nepal",
+    doctorsApproach:
+      "\"Controlling your mind\" usually isn't really the goal I end up working on with someone — it's understanding why a thought pattern keeps recurring and building specific skills to respond to it differently. I'll tell you plainly if what you're describing sounds like it needs a proper assessment rather than a technique, because sometimes it does.",
     title: "How to Control Your Mind: Practical Techniques in Nepal",
     headline: "How to control your mind: practical techniques that actually work",
     shortDescription:
@@ -1145,6 +1181,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "psychiatry-clinic-kathmandu",
+    doctorsApproach:
+      "This is my own clinic in Kalanki, not a franchise or a rotating roster of doctors — you see me, and I'm the one reviewing your file at every follow-up, so the plan actually builds on what we discussed last time instead of starting over. I run it the same way whether you're there in person or joining by Google Meet.",
     title: "Psychiatry Clinic in Kathmandu, Nepal",
     headline: "Dr. Kushal Kharel's psychiatry clinic in Kalanki, Kathmandu",
     shortDescription:
@@ -1210,6 +1248,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "medication-review-second-opinion-nepal",
+    doctorsApproach:
+      "For a second opinion, I want to see what you're actually taking and why, not just hear a summary — bring the medicines or the prescription. I'll tell you honestly if I agree with the current plan; a second opinion isn't obligated to disagree just to justify the visit, and I won't change anything without a full assessment first.",
     title: "Medication Review & Second Opinion in Nepal",
     headline: "A second opinion on medication you're already taking",
     shortDescription:
@@ -1276,6 +1316,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "psychiatric-medication-side-effects",
+    doctorsApproach:
+      "Before I prescribe anything, I go through the realistic side effects — not the worst-case list, the actually likely ones — and what to do if they show up, so you're not caught off guard or tempted to just stop taking it. If a side effect is genuinely hard to live with, tell me; there's almost always another option worth trying rather than pushing through it silently.",
     title: "Common Side Effects of Psychiatric Medications (FAQ)",
     headline: "Common side effects of psychiatric medications, explained",
     shortDescription:
@@ -1353,6 +1395,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "returning-to-nepal-after-abroad",
+    doctorsApproach:
+      "Reverse culture shock is something I take as seriously as any other adjustment difficulty, even though people often minimise it themselves. I spend time on the specific friction — family expectations, pace of life, a sense of not fitting back into a place that's supposed to feel like home — rather than treating it as something you should just get over quickly.",
     title: "Mental Health Support for Nepalis Returning from Abroad",
     headline: "Readjusting to life in Nepal after years abroad",
     shortDescription:
@@ -1419,6 +1463,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "corporate-mental-health-partner-nepal",
+    doctorsApproach:
+      "When I work with an organisation, individual employee consultations stay completely confidential from the employer — I'll discuss aggregate themes for a workshop or screening program, never a specific person's details. That boundary is what makes it safe for staff to actually use the service rather than avoid it.",
     title: "Corporate & Workplace Mental Health Partner in Nepal",
     headline: "A confidential psychiatric referral partner for workplace mental health",
     shortDescription:
@@ -1483,6 +1529,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "depression-treatment-kathmandu",
+    doctorsApproach:
+      "My first priority with depression is always a safety check, done gently and without alarm, before anything else. From there I look at what's realistic for that person specifically — sometimes therapy alone is enough, sometimes medication helps someone get to a place where therapy can actually work — and I review that at every follow-up rather than deciding it once and leaving it.",
     title: "Depression Treatment in Kathmandu, Nepal",
     headline: "Depression treatment in Kathmandu, Nepal",
     shortDescription:
@@ -1518,6 +1566,11 @@ export const audiencePages: AudiencePage[] = [
       "Antidepressant treatment Kathmandu",
       "Clinical depression treatment Nepal",
     ],
+    diagram: {
+      src: "/images/diagrams/depression-spiral.webp",
+      alt: "Diagram of the depression spiral showing low mood, withdrawal and reduced activity reinforcing one another",
+      caption: "The depression spiral: low mood, withdrawal and inactivity feed each other, which is why treatment works on breaking the cycle, not just the mood.",
+    },
     faqs: [
       {
         question: "How is depression treated in Kathmandu?",
@@ -1558,6 +1611,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "panic-attack-treatment-kathmandu",
+    doctorsApproach:
+      "For a first severe panic attack I'd rather rule out a physical cause properly before we call it panic, especially if the chest symptoms were new. Once that's settled, most people do well with CBT built around the specific triggers and bodily sensations they fear — I only bring in medication when attacks are frequent or severe enough that therapy alone is a slow start.",
     title: "Panic Attack Treatment in Kathmandu, Nepal",
     headline: "Panic attack treatment in Kathmandu, Nepal",
     shortDescription:
@@ -1590,6 +1645,11 @@ export const audiencePages: AudiencePage[] = [
       "Psychiatrist for panic attacks Nepal",
       "Panic attack vs heart attack Kathmandu",
     ],
+    diagram: {
+      src: "/images/diagrams/panic-attack-cycle.webp",
+      alt: "Diagram of the panic attack cycle showing a bodily sensation, catastrophic thought and fear response reinforcing each other",
+      caption: "The panic cycle: a bodily sensation is misread as danger, which triggers fear and more of the same sensations.",
+    },
     faqs: [
       {
         question: "How are panic attacks treated in Kathmandu?",
@@ -1630,6 +1690,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "adhd-treatment-kathmandu",
+    doctorsApproach:
+      "With adult ADHD especially, I spend real time on the childhood history, because the diagnosis needs that pattern to have been there early even if it was never named at the time. Treatment is rarely medication alone in my practice — practical strategies for work or study routines usually go alongside it, and I adjust based on what's actually helping at follow-up.",
     title: "ADHD Assessment & Treatment in Kathmandu, Nepal",
     headline: "ADHD assessment and treatment in Kathmandu, Nepal",
     shortDescription:
@@ -1665,6 +1727,11 @@ export const audiencePages: AudiencePage[] = [
       "ADHD medication Kathmandu",
       "ADHD psychiatrist Nepal",
     ],
+    diagram: {
+      src: "/images/diagrams/adhd-executive-function.webp",
+      alt: "Diagram of ADHD executive function difficulties affecting attention, organization and impulse control",
+      caption: "ADHD affects the brain's executive function system — attention, organization, and impulse control — not just \"focus.\"",
+    },
     faqs: [
       {
         question: "How is ADHD diagnosed in Kathmandu?",
@@ -1705,6 +1772,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "bipolar-disorder-treatment-kathmandu",
+    doctorsApproach:
+      "Getting the diagnosis right matters more here than almost anywhere else in psychiatry, because treating bipolar depression like ordinary depression can make things worse rather than better — so I ask carefully about past periods of unusually high energy or reduced need for sleep, not just the low periods. Medication is usually central, and I explain clearly why stopping it suddenly is risky rather than just telling you not to.",
     title: "Bipolar Disorder Treatment in Kathmandu, Nepal",
     headline: "Bipolar disorder treatment in Kathmandu, Nepal",
     shortDescription:
@@ -1740,6 +1809,11 @@ export const audiencePages: AudiencePage[] = [
       "Bipolar I disorder treatment Kathmandu",
       "Bipolar II disorder treatment Nepal",
     ],
+    diagram: {
+      src: "/images/diagrams/bipolar-mood-cycle.webp",
+      alt: "Diagram of the bipolar mood cycle showing depressive and manic or hypomanic episodes over time",
+      caption: "Bipolar disorder involves swings between depressive and manic or hypomanic episodes, which is why accurate diagnosis changes the treatment plan.",
+    },
     faqs: [
       {
         question: "How is bipolar disorder treated in Kathmandu?",
@@ -1780,6 +1854,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "schizophrenia-treatment-kathmandu",
+    doctorsApproach:
+      "I try to bring family into the picture early where the patient welcomes it, because recognising an early warning sign at home matters as much as anything I do in a consultation. I explain what each medication is doing and why sudden stopping is risky, and I stay focused on helping the person keep their daily roles and dignity, not just reducing symptoms on paper.",
     title: "Schizophrenia Treatment in Kathmandu, Nepal",
     headline: "Schizophrenia treatment in Kathmandu, Nepal",
     shortDescription:
@@ -1814,6 +1890,11 @@ export const audiencePages: AudiencePage[] = [
       "Antipsychotic treatment Nepal",
       "Schizophrenia management Kathmandu",
     ],
+    diagram: {
+      src: "/images/diagrams/schizophrenia-relapse-pathway.webp",
+      alt: "Diagram of the schizophrenia relapse pathway showing early warning signs, stress and reduced medication adherence",
+      caption: "Relapse in schizophrenia usually follows a recognizable pathway — which is why family education on early warning signs matters.",
+    },
     faqs: [
       {
         question: "Is schizophrenia treatable?",
@@ -1854,6 +1935,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "psychosis-treatment-kathmandu",
+    doctorsApproach:
+      "A first episode of psychosis needs a careful look at physical causes too — substance use, sleep deprivation, medical illness can all produce something that looks similar — so I don't assume the diagnosis before that's been considered. Once a plan is in place, family education on early warning signs is something I actively offer, because catching a relapse early changes the whole course.",
     title: "Psychosis Treatment in Kathmandu: When to Seek Help",
     headline: "Psychosis treatment in Kathmandu — when to seek help",
     shortDescription:
@@ -1927,6 +2010,8 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "sleep-problems-treatment-nepal",
+    doctorsApproach:
+      "I ask about sleep in detail before reaching for a sleeping tablet — habits, screen use, caffeine timing, and whether an underlying anxiety or low mood is actually what's keeping you up. Medication has a place for some people, but it's rarely my starting point, since fixing the underlying driver usually holds up better over time.",
     title: "Sleep Problems & Insomnia Treatment in Nepal",
     headline: "Sleep problems and insomnia treatment in Nepal, and online",
     shortDescription:
@@ -1966,6 +2051,11 @@ export const audiencePages: AudiencePage[] = [
       "निद्राको समस्या उपचार",
       "अनिद्रा उपचार",
     ],
+    diagram: {
+      src: "/images/diagrams/circadian-sleep-cycle.webp",
+      alt: "Diagram of the circadian sleep-wake cycle showing how light, routine and body clock timing affect sleep",
+      caption: "Sleep follows the body's circadian rhythm — which is why consistent timing and habits are central to treating insomnia, alongside CBT-I.",
+    },
     faqs: [
       {
         question: "What counts as a sleep problem?",

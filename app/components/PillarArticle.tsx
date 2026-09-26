@@ -29,6 +29,7 @@ export default function PillarArticle({ pillar }: { pillar: Pillar }) {
   const url = `${siteUrl}/${pillar.slug}`;
   const conditionVerb = pillar.condition === "anxiety disorders" || pillar.condition === "schizophrenia and psychosis" ? "are" : "is";
   const sections = [
+    ["How Dr. Kharel approaches this", pillar.doctorsApproach],
     [`What are the symptoms of ${pillar.condition}?`, pillar.symptoms],
     [`What causes ${pillar.condition}?`, pillar.causes],
     [`What are the risk factors for ${pillar.condition}?`, pillar.risks],
@@ -45,7 +46,7 @@ export default function PillarArticle({ pillar }: { pillar: Pillar }) {
   ];
   const graph = [
     { "@type": "MedicalWebPage", name: pillar.title, url, description: pillar.meta, about: { "@type": "MedicalCondition", name: pillar.condition }, medicalAudience: ["Patient", "Caregiver"] },
-    { "@type": "Physician", name: "Dr. Kushal Kharel", honorificSuffix: "MD Psychiatry", medicalSpecialty: "Psychiatry", address: { "@type": "PostalAddress", addressLocality: "Kathmandu", addressCountry: "NP" } },
+    { "@id": `${siteUrl}#psychiatrist` },
     { "@type": "Article", headline: pillar.title, description: pillar.meta, author: { "@type": "Person", name: "Dr. Kushal Kharel" }, reviewer: { "@type": "Person", name: "Dr. Kushal Kharel" }, mainEntityOfPage: url },
     { "@type": "FAQPage", mainEntity: faqs.map(([name, text]) => ({ "@type": "Question", name, acceptedAnswer: { "@type": "Answer", text } })) },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: siteUrl }, { "@type": "ListItem", position: 2, name: pillar.title, item: url }] }

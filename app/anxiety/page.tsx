@@ -68,17 +68,7 @@ export default function AnxietyPage() {
       name: "Anxiety Disorders",
     },
     medicalAudience: ["Patient", "Caregiver"],
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Kathmandu",
-        addressCountry: "NP",
-      },
-    },
+    reviewedBy: { "@id": "https://drkushalkharel.com.np#psychiatrist" },
     publisher: {
       "@type": "Person",
       name: "Dr. Kushal Kharel",

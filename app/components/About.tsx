@@ -200,7 +200,7 @@ export default function About() {
                   <tr className="border-t border-gray-200 bg-gray-50">
                     <td className="px-5 py-3 font-semibold">MD Psychiatry</td>
                     <td className="px-5 py-3">KIST Medical College Teaching Hospital</td>
-                    <td className="px-5 py-3">2023-2026</td>
+                    <td className="px-5 py-3">Completed</td>
                   </tr>
                   <tr className="border-t border-gray-200">
                     <td className="px-5 py-3 font-semibold">Lifetime Member</td>
@@ -208,24 +208,14 @@ export default function About() {
                     <td className="px-5 py-3">Active</td>
                   </tr>
                   <tr className="border-t border-gray-200 bg-gray-50">
-                    <td className="px-5 py-3 font-semibold">Medical Officer</td>
-                    <td className="px-5 py-3">Kathmandu ENT Hospital</td>
-                    <td className="px-5 py-3">2022-2023</td>
-                  </tr>
-                  <tr className="border-t border-gray-200 bg-gray-50">
-                    <td className="px-5 py-3 font-semibold">Medical Officer</td>
-                    <td className="px-5 py-3">Patan Hospital</td>
-                    <td className="px-5 py-3">2021-2022</td>
+                    <td className="px-5 py-3 font-semibold">Lifetime Member</td>
+                    <td className="px-5 py-3">Psychiatrists&apos; Association of Nepal (PAN)</td>
+                    <td className="px-5 py-3">Active</td>
                   </tr>
                   <tr className="border-t border-gray-200">
-                    <td className="px-5 py-3 font-semibold">Medical Officer</td>
-                    <td className="px-5 py-3">Kantipur Hospital</td>
-                    <td className="px-5 py-3">2020-2021</td>
-                  </tr>
-                  <tr className="border-t border-gray-200 bg-gray-50">
                     <td className="px-5 py-3 font-semibold">Psychiatric clinic, Kalanki-14</td>
                     <td className="px-5 py-3">Private practice</td>
-                    <td className="px-5 py-3">2020-Present</td>
+                    <td className="px-5 py-3">Ongoing</td>
                   </tr>
                 </tbody>
               </table>

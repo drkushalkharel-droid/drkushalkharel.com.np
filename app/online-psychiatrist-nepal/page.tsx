@@ -57,7 +57,7 @@ const faqs = [
   { question: "Can a family member join my appointment?", answer: "Yes, when you want this and it is clinically helpful. Family participation can support history-taking, education and treatment planning while respecting your privacy." },
   { question: "Can prescriptions be used overseas?", answer: "Prescription and dispensing rules differ by country. An online consultation cannot guarantee that a Nepal-issued prescription can be filled abroad; local medical coordination may be needed." },
   { question: "How long is the first appointment?", answer: "The time needed depends on the concern and complexity. A first assessment is structured to understand symptoms, history, safety, physical-health factors and treatment goals." },
-  { question: "How do I arrange payment?", answer: "The clinic will explain appointment availability, payment method and confirmation steps before your consultation is finalised." },
+  { question: "How do I arrange payment?", answer: "You can pay by card, bank transfer or another method that works for you, including from abroad. The clinic confirms appointment availability, the fee and the payment options before your consultation is finalised." },
   { question: "Is my information confidential?", answer: "Psychiatric care is handled confidentially, with limited exceptions when there is a serious and immediate safety concern or another legal duty." },
 ];
 

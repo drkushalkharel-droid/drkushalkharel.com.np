@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { Fragment } from "react";
 import { notFound } from "next/navigation";
 import { docArticles } from "../../data/docArticles";
 import { knowledgeDates } from "../../data/knowledgeDates";
@@ -210,12 +212,7 @@ export default async function KnowledgeArticlePage({
           name: article.title,
         },
         medicalAudience: ["Patient", "Caregiver"],
-        reviewedBy: {
-          "@type": "Physician",
-          name: "Dr. Kushal Kharel",
-          medicalSpecialty: "Psychiatry",
-          telephone: "+9779861800547",
-        },
+        reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
         ...(knowledgeDates[article.slug]
           ? { datePublished: knowledgeDates[article.slug].published, dateModified: knowledgeDates[article.slug].modified }
           : {}),
@@ -337,20 +334,37 @@ export default async function KnowledgeArticlePage({
           </div>
 
           {article.sections.map((section, index) => (
-            <section
-              key={section.heading}
-              id={`section-${index + 1}`}
-              className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8"
-            >
-              <h2 className="text-3xl font-bold text-sage-950">
-                {displayHeading(section.heading, article.topic)}
-              </h2>
-              <div className="mt-5 space-y-4 text-lg leading-9 text-stone-700">
-                {section.body.split("\n").map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </div>
-            </section>
+            <Fragment key={section.heading}>
+              <section
+                id={`section-${index + 1}`}
+                className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8"
+              >
+                <h2 className="text-3xl font-bold text-sage-950">
+                  {displayHeading(section.heading, article.topic)}
+                </h2>
+                <div className="mt-5 space-y-4 text-lg leading-9 text-stone-700">
+                  {section.body.split("\n").map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
+              </section>
+              {index === 1 && article.diagram && (
+                <figure className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+                  <div className="overflow-hidden rounded-lg border border-stone-200">
+                    <Image
+                      src={article.diagram.src}
+                      alt={article.diagram.alt}
+                      width={1408}
+                      height={768}
+                      className="w-full"
+                    />
+                  </div>
+                  <figcaption className="mt-3 text-center text-sm text-stone-500">
+                    {article.diagram.caption}
+                  </figcaption>
+                </figure>
+              )}
+            </Fragment>
           ))}
 
           {relatedArticles.length > 0 && (

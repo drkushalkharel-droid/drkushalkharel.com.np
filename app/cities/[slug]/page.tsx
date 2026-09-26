@@ -85,25 +85,7 @@ export default async function CityGuidePage({
       "@type": "MedicalCondition",
       name: concern.name,
     })),
-    reviewedBy: {
-      "@type": "Physician",
-      name: "Dr. Kushal Kharel",
-      medicalSpecialty: "Psychiatry",
-      telephone: "+9779861800547",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Kalanki-14, Near Malpot Road, Near Kalanki Bhatbhateni Supermarket",
-        addressLocality: "Kathmandu",
-        postalCode: "44600",
-        addressCountry: "NP",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 27.6914922,
-        longitude: 85.2807309,
-      },
-      hasMap: guide.clinicLocation?.directionsUrl ?? "https://maps.app.goo.gl/2t5B2EqgDKYMRLE48",
-    },
+    reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
     areaServed: guide.city,
   };
 

@@ -72,6 +72,10 @@ export type Condition = {
   // people search as "X meaning in Nepali" — only populated where that
   // search pattern is confirmed (Search Console), not for every condition.
   nepaliMeaning?: { term: string; meaning: string };
+  // Short (3-5 sentence) first-person-adjacent paragraph describing how
+  // Dr. Kharel personally approaches treating this specific condition —
+  // grounded only in facts true of this practice, never generic.
+  doctorsApproach: string;
 };
 
 // Full list of categories this library is being built out to cover.
@@ -102,6 +106,8 @@ export const conditions: Condition[] = [
   {
     nepaliMeaning: { term: "चिन्ता रोग", meaning: "धेरै कुराको बारेमा लगातार र नियन्त्रण गर्न गाह्रो हुने अत्यधिक चिन्ता वा डर लाग्ने मानसिक अवस्था।" },
     slug: "generalized-anxiety-disorder",
+    doctorsApproach:
+      "When patients come to me with the restless, hard-to-switch-off worry of GAD, I first map which parts of their life the worry has spread into — work, health, family — because that shapes whether we start with therapy, medication, or both together. I explain in plain terms how CBT retrains the worry cycle, and if sleep or concentration is badly affected I'll often add an SSRI rather than waiting for things to worsen. Quite a few of my GAD patients are Nepalis abroad who join by video call in Nepali or English. I always warn patients that benzodiazepines are a short-term bridge, not a long-term plan, and we adjust the mix at follow-up.",
     diagram: {
       src: "/images/diagrams/worry-cycle.webp",
       alt: "Diagram of the GAD worry cycle: a triggering thought, catastrophic thinking, physical symptoms, and checking or reassurance-seeking looping back",
@@ -293,6 +299,8 @@ export const conditions: Condition[] = [
   {
     nepaliMeaning: { term: "प्यानिक अट्याक / आतंक दौरा", meaning: "अचानक आउने डर र शारीरिक असजिलोको तीव्र लहर, जुन केही मिनेटमै चरम बिन्दुमा पुग्छ।" },
     slug: "panic-disorder",
+    doctorsApproach:
+      "Panic Disorder patients almost always arrive convinced something is wrong with their heart, so my first job is to calmly separate what's medical from what's the panic cycle itself, sometimes after confirming with an ECG or blood test if there's any doubt. From there I teach the specific technique of gently provoking the very sensations — a racing heart, breathlessness — in session so the fear of the sensations themselves fades, alongside an SSRI when attacks are frequent enough to be shaping daily decisions. Follow-up visits track how much avoidance is creeping back in, since that's usually the last thing to resolve.",
     title: "Panic Disorder",
     category: "Anxiety Disorders",
     shortDescription:
@@ -468,6 +476,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "panic-attacks",
+    doctorsApproach:
+      "Not everyone who has a panic attack needs ongoing treatment, and I try to figure out early which kind of patient is in front of me — someone who had one frightening episode during a stressful week, or someone heading toward a recurring pattern. For the first group, a clear explanation of what actually happened in their body is often enough to prevent it from becoming a bigger problem. For the second, we move into structured breathing retraining and, if attacks keep recurring, the same exposure-based approach used for panic disorder. I keep the door open for a follow-up if attacks return.",
     title: "Panic Attacks",
     category: "Anxiety Disorders",
     shortDescription:
@@ -649,6 +659,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "social-anxiety-disorder",
+    doctorsApproach:
+      "For social anxiety, I usually hear the same story first: years of assuming this is just shyness, until avoiding meetings, calls, or eating in front of others has quietly narrowed someone's life. I map exactly which situations are avoided and which safety behaviors — avoiding eye contact, rehearsing sentences — keep the fear alive, then build a graded plan to face those situations, often alongside an SSRI when it's affecting most areas of life. For Nepalis abroad, a video consultation in Nepali or English is often a more comfortable first step. For patients who only fear public speaking, a beta-blocker before the event is sometimes all that's needed.",
     diagram: {
       src: "/images/diagrams/social-anxiety-cycle.webp",
       alt: "Diagram of the social anxiety cycle: an upcoming social situation, anticipatory anxiety, avoidance or safety behaviors, and relief that reinforces the fear",
@@ -807,6 +819,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "agoraphobia",
+    doctorsApproach:
+      "Agoraphobia tends to creep in gradually — someone stops taking the bus, then avoids the market, then eventually finds it hard to leave the house alone — so I start by mapping out exactly which places and situations have been dropped over time. Treatment is built as a step-by-step ladder back into those situations, starting with whatever feels only mildly difficult, and I'll sometimes involve a family member for early practice sessions before gradually stepping back their support. Medication, usually an SSRI, is added when the agoraphobia grew out of untreated panic attacks. Progress is genuinely gradual, and I tell families that directly.",
     title: "Agoraphobia",
     category: "Anxiety Disorders",
     shortDescription:
@@ -955,6 +969,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "specific-phobias",
+    doctorsApproach:
+      "Specific phobias respond faster than almost anything else I treat, and I say that directly to patients who've often avoided a single trigger — flying, injections, a particular animal — for years out of embarrassment. Depending on the phobia, we may do a single longer session of structured, real-life exposure rather than spreading it over months, and for blood or injection phobias I teach a muscle-tensing technique specifically to prevent the fainting that makes this phobia different from others. Medication has a very limited role here, mostly an occasional short-term option before an unavoidable one-off exposure like a flight.",
     title: "Specific Phobias",
     category: "Anxiety Disorders",
     shortDescription:
@@ -1098,6 +1114,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "separation-anxiety",
+    doctorsApproach:
+      "With separation anxiety, whether in a child or an adult, I spend real time with whoever is most affected by the separations — often a parent — because how they respond to the distress matters as much as anything I do in session. We build a plan of brief, then gradually longer, separations, and I coach parents on responding consistently rather than accommodating every protest, since that unintentionally reinforces the fear. Medication is added only for more moderate-to-severe presentations where therapy alone isn't shifting things quickly enough. Most families see real change within a few months of sticking with the plan.",
     title: "Separation Anxiety Disorder",
     category: "Anxiety Disorders",
     shortDescription:
@@ -1244,6 +1262,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "ocd",
+    doctorsApproach:
+      "OCD is one of the conditions where I'm most direct with patients about what actually works: gradually facing the triggers that set off obsessions while resisting the urge to perform the compulsion — a specific technique called ERP — done in small enough steps that it's tolerable rather than overwhelming. I explain that SSRIs for OCD typically need higher doses and a longer trial before we judge whether they're working, which differs from how they're used for depression, and I make sure patients know that upfront so they don't give up early. Combining ERP with medication that I, as a psychiatrist with an MD in Psychiatry, adjust carefully at each follow-up is usually how we get the most durable improvement.",
     title: "Obsessive-Compulsive Disorder (OCD)",
     category: "Obsessive-Compulsive and Related Disorders",
     shortDescription:
@@ -1409,6 +1429,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "body-dysmorphic-disorder",
+    doctorsApproach:
+      "When someone describes a flaw in their appearance that I genuinely cannot see, or that looks minor to me, I don't argue with them about how they look — I focus instead on the checking, camouflaging, and reassurance-seeking that's keeping the preoccupation alive, and gradually work on reducing those behaviors alongside an SSRI, often at a higher dose similar to OCD treatment. I'm also honest that cosmetic procedures rarely solve this and can sometimes shift the focus to a new perceived flaw, which is important for patients to hear before, not after, they've spent money on one. We track mood closely given how much distress this condition can carry.",
     title: "Body Dysmorphic Disorder (BDD)",
     category: "Obsessive-Compulsive and Related Disorders",
     shortDescription:
@@ -1553,6 +1575,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "hoarding-disorder",
+    doctorsApproach:
+      "Hoarding is one condition where I try to lower the pressure rather than raise it — patients usually already feel judged, and pushing for a fully decluttered home overnight almost never works and often ends contact with treatment altogether. Instead we work on specific decision-making and sorting skills, practice discarding a manageable number of items at a time, often in the person's own home, and prioritize genuine safety risks — blocked exits, fire hazards — over cosmetic tidiness. Insight into the severity is often limited, so I spend real time on motivation before pushing on the behavior itself. Change tends to be slow and needs patience from everyone involved.",
     title: "Hoarding Disorder",
     category: "Obsessive-Compulsive and Related Disorders",
     shortDescription:
@@ -1698,6 +1722,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "trichotillomania",
+    doctorsApproach:
+      "For hair-pulling, I start by helping patients notice the two different patterns — pulling they're barely aware of during other activities, and pulling that follows a specific urge or tension — because the plan differs depending on which is more common for them. We build habit reversal training together: catching the early warning signs, and swapping in a competing action like clenching a fist before the urge takes over. I'll sometimes suggest N-acetylcysteine, an over-the-counter supplement with a favorable safety profile, alongside this work. Progress is usually a steady reduction in pulling rather than a sudden stop, and I set that expectation early.",
     title: "Trichotillomania (Hair-Pulling Disorder)",
     category: "Obsessive-Compulsive and Related Disorders",
     shortDescription:
@@ -1845,6 +1871,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "excoriation-disorder",
+    doctorsApproach:
+      "Skin picking often starts with a small, real irregularity — a bump or scab — and I find it helps patients to actually name that trigger out loud in session, since most have never mapped out what sets it off. From there we build the same kind of habit reversal approach used for hair-pulling: noticing the urge early, substituting another action, and adjusting situations that make picking more likely, such as bright bathroom mirrors. N-acetylcysteine is a reasonable add-on given its safety profile, and an SSRI helps when anxiety is clearly part of what's driving the picking. Most people see a real drop in frequency well before the skin has fully healed.",
     title: "Excoriation (Skin-Picking) Disorder",
     category: "Obsessive-Compulsive and Related Disorders",
     shortDescription:
@@ -1990,6 +2018,8 @@ export const conditions: Condition[] = [
   {
     nepaliMeaning: { term: "डिप्रेसन / निराशा रोग", meaning: "कम्तीमा दुई हप्तासम्म रहने गहिरो उदासी, रुचि हराउने र दैनिक कामकाजमा असर पार्ने मानसिक अवस्था।" },
     slug: "major-depressive-disorder",
+    doctorsApproach:
+      "With major depression, my first priority in the room is simply making sure someone doesn't feel judged for how flat or exhausted they've become — many patients apologize for their own symptoms before I've asked a single question. I match the treatment to severity: therapy alone for milder presentations, and a combination of an antidepressant with CBT or interpersonal therapy when sleep, appetite, and functioning have been badly affected for weeks. I explain honestly that antidepressants take a few weeks to show their full effect, and that depression carries a real chance of returning, which is why we keep a maintenance plan in place even after someone feels better.",
     title: "Major Depressive Disorder (MDD)",
     category: "Depressive Disorders",
     shortDescription:
@@ -2178,6 +2208,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "persistent-depressive-disorder",
+    doctorsApproach:
+      "Persistent Depressive Disorder is the one where patients most often tell me they thought this low, flat baseline was simply their personality, not something treatable — so the first real work is helping them recognize that two years or more of this isn't how they're supposed to feel. Because it's such a long-standing pattern, I generally recommend combining medication with therapy from the start rather than trying one alone, and I'm upfront that it may take a longer trial than for a typical depressive episode before we see the shift. Recognizing the problem early, rather than years into it, tends to make the biggest difference to how quickly things improve.",
     title: "Persistent Depressive Disorder (Dysthymia)",
     category: "Depressive Disorders",
     shortDescription:
@@ -2323,6 +2355,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "postpartum-depression",
+    doctorsApproach:
+      "For postpartum depression, I always ask directly about bonding with the baby and about intrusive worries, because many mothers are too afraid or ashamed to bring these up unprompted, worried it makes them a bad mother. Treatment is individualized around breastfeeding plans — often starting with interpersonal therapy focused on the huge role transition motherhood involves, and choosing medication options with a good safety profile for breastfeeding when symptoms are more than mild. For mothers who can't easily leave a newborn to come in, I offer this same care over a video consultation. I explain to the whole family, not just the mother, that this is a medical condition that affects bonding and needs prompt treatment, not something to wait out quietly.",
     title: "Postpartum Depression",
     category: "Depressive Disorders",
     shortDescription:
@@ -2481,6 +2515,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "seasonal-affective-disorder",
+    doctorsApproach:
+      "Because SAD follows such a predictable calendar pattern, I encourage patients to start treatment before the season actually turns, rather than waiting until they're deep into the low mood, fatigue, and oversleeping that shows up every year around the same time. Light therapy each morning is usually where we begin, and I talk through practical details like timing and duration since a light box used incorrectly won't help much. For patients whose pattern is severe or who've had limited benefit from light alone, I add extended-release bupropion or an SSRI, and we build the plan around what actually worked, or didn't, in previous years.",
     title: "Seasonal Affective Disorder (SAD)",
     category: "Depressive Disorders",
     shortDescription:
@@ -2623,6 +2659,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "bipolar-i-disorder",
+    doctorsApproach:
+      "With Bipolar I, one of my first conversations is about recognizing a patient's own early warning signs — changes in sleep, spending, or talkativeness — because catching an episode early makes an enormous difference to how disruptive it becomes. Lithium remains my usual starting point given how well-established it is for both acute mania and long-term stability, though the choice is individualized and requires regular blood level and kidney/thyroid monitoring, which I build into every follow-up visit. I involve family in understanding the warning signs too, and, as a psychiatrist, I'm cautious about antidepressants used alone, since they can destabilize mood without a mood stabilizer alongside them.",
     title: "Bipolar I Disorder",
     category: "Bipolar and Related Disorders",
     shortDescription:
@@ -2796,6 +2834,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "bipolar-ii-disorder",
+    doctorsApproach:
+      "Bipolar II is frequently missed for years because the hypomanic periods often don't feel like a problem at the time — patients tell me those weeks felt like their best, most productive self, which is exactly why I ask about them carefully rather than only asking about the depression that brought them in. Since depression is usually the more burdensome part of this condition, I lean toward mood stabilizers with good evidence for the depressive phase, like lamotrigine or quetiapine, rather than an antidepressant on its own. We keep a simple mood record together so the pattern becomes visible over time, not just in hindsight.",
     title: "Bipolar II Disorder",
     category: "Bipolar and Related Disorders",
     shortDescription:
@@ -2913,6 +2953,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "cyclothymic-disorder",
+    doctorsApproach:
+      "Cyclothymia often shows up as a lifelong sense of never having a stable, predictable mood, and I spend real time just helping patients put a name to that pattern, since many have never had it explained as a genuine, treatable condition rather than 'just how I am.' We track mood fluctuations together to see how much they're affecting work and relationships, and I consider a mood stabilizer when the swings are disruptive rather than mild. Because a meaningful number of people with cyclothymia go on to develop a fuller bipolar pattern, I keep a longer-term eye on this even during quiet periods, not just when symptoms flare.",
     title: "Cyclothymic Disorder (Cyclothymia)",
     category: "Bipolar and Related Disorders",
     shortDescription:
@@ -3016,6 +3058,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "schizophrenia",
+    doctorsApproach:
+      "Schizophrenia is a condition where I try to move quickly, especially with a first episode, because getting treatment started early is one of the clearest ways to improve how someone does over the following years. I explain antipsychotic medication honestly, including what side effects to expect and that we may need to try more than one before finding the right fit, and I combine this with practical support for coping with voices or unusual beliefs rather than medication alone. Because this often benefits from in-person follow-up, I see many of these families regularly at the Kalanki clinic, and I spend real time coaching them on responding calmly at home, since a calmer environment measurably lowers the chance of relapse.",
     diagram: {
       src: "/images/diagrams/schizophrenia-relapse-pathway.webp",
       alt: "Diagram of the schizophrenia illness course: prodrome, acute episode, treatment and stabilization, and recovery and maintenance, with a relapse-risk arrow back to the acute stage",
@@ -3223,6 +3267,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "schizoaffective-disorder",
+    doctorsApproach:
+      "Schizoaffective disorder means I'm treating two things at once — psychosis and a significant mood episode — and I explain to patients and family why the medication plan usually needs both an antipsychotic and a mood stabilizer or antidepressant rather than just one. I pay close attention to which symptoms showed up first and which persist even when mood has settled, since that distinction shapes how we adjust treatment over time. Because relapse risk is high without consistent treatment, I build a follow-up schedule that checks both the psychotic and mood sides of the picture, not just whichever symptom brought someone in that week.",
     title: "Schizoaffective Disorder",
     category: "Psychotic Disorders",
     shortDescription:
@@ -3318,6 +3364,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "brief-psychotic-disorder",
+    doctorsApproach:
+      "Brief Psychotic Disorder is unsettling precisely because it arrives suddenly, often after real stress, and resolves within a month — so my approach leans toward short-term medication to manage symptoms safely rather than assuming this is the start of a lifelong illness. I talk openly with the patient and family about the stressor that may have triggered it, and I schedule closer follow-up in the months after recovery specifically to watch for any sign this becomes something more chronic, since a minority of people do go on to develop a longer-term condition. Most people return fully to how they were before the episode.",
     title: "Brief Psychotic Disorder",
     category: "Psychotic Disorders",
     shortDescription:
@@ -3417,6 +3465,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "delusional-disorder",
+    doctorsApproach:
+      "With delusional disorder, I've learned that the first real task isn't confronting the belief itself, since directly disputing it tends to entrench it further — it's building enough trust that the person is willing to keep coming back and talking with me at all. I focus treatment on day-to-day functioning and coping rather than trying to argue someone out of a fixed belief, while still offering an antipsychotic, with the honest caveat that response is often partial. Outside the specific area affected by the delusion, many patients function well, and I try to help them and their families hold onto that alongside the harder parts.",
     title: "Delusional Disorder",
     category: "Psychotic Disorders",
     shortDescription:
@@ -3527,6 +3577,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "ptsd",
+    doctorsApproach:
+      "For PTSD, I don't rush into asking someone to recount the traumatic event in detail on day one — we first build safety and stability, then move into trauma-focused therapy at a pace the patient can tolerate, whether that's trauma-focused CBT, EMDR, or prolonged exposure depending on what fits. I generally avoid benzodiazepines here, since evidence suggests they can interfere with trauma memories actually healing, and I explain that reasoning clearly. An SSRI is often added, and prazosin specifically when nightmares are a major part of the picture.",
     diagram: {
       src: "/images/diagrams/trauma-response-cycle.webp",
       alt: "Diagram of the PTSD trauma response cycle: a reminder or trigger, intrusive memory, avoidance, and hyperarousal looping back",
@@ -3664,6 +3716,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "acute-stress-disorder",
+    doctorsApproach:
+      "In the first weeks after a trauma, I'm cautious about doing too much too soon — a single, mandatory debriefing session right after a traumatic event isn't something I use, since the evidence suggests it can sometimes make things worse rather than better. Instead I focus on practical, non-intrusive support and start trauma-focused CBT if symptoms are significant, since that has the best evidence for preventing this from progressing into full PTSD. Medication plays a limited early role, mostly for severe insomnia or anxiety, and I hold off on benzodiazepines given their downsides here too. Most patients I see at this stage recover well with the right early support.",
     title: "Acute Stress Disorder",
     category: "Trauma and Stressor-Related Disorders",
     shortDescription:
@@ -3768,6 +3822,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "complex-ptsd",
+    doctorsApproach:
+      "Complex PTSD, from prolonged or repeated trauma, needs a different pace than a single traumatic event, so I work in phases — first building safety and emotion-regulation skills, often drawing on DBT-style tools, before we ever move into processing the trauma itself. Many patients with this history carry a deep sense of shame or of being permanently damaged, and I address that directly, since it rarely resolves from symptom reduction alone. Medication can help with associated depression or anxiety but isn't the core treatment. I'm upfront that this is usually longer, more gradual work than treating a single-incident trauma — and that pace is normal, not failure.",
     title: "Complex PTSD",
     category: "Trauma and Stressor-Related Disorders",
     shortDescription:
@@ -3876,6 +3932,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "adhd",
+    doctorsApproach:
+      "With ADHD, whether in a child or an adult who's only just being diagnosed, I spend a good portion of the first visit simply mapping where the inattention or restlessness is actually causing problems — schoolwork, work deadlines, relationships — since that shapes the whole plan. Stimulant medication works well for most patients and I explain dosing and side effects clearly, but for children especially I pair it with behavioral strategies for parents and teachers rather than relying on medication alone. Adults living abroad who suspect undiagnosed ADHD often start with a video assessment before deciding on next steps. I adjust the plan at follow-up based on what's actually changed day to day.",
     title: "Attention-Deficit/Hyperactivity Disorder (ADHD)",
     category: "Neurodevelopmental Disorders",
     shortDescription:
@@ -4048,6 +4106,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "autism-spectrum-disorder",
+    doctorsApproach:
+      "When a family brings in a child, or occasionally an adult, with signs of autism, I focus first on understanding their specific pattern of strengths and challenges rather than applying a single template, since the range within autism is genuinely wide. There's no medication that treats the core features of autism itself, so I coordinate with speech and occupational therapy where needed and reserve medication for specific, separate issues like irritability or a co-occurring condition such as ADHD or anxiety. I make a point of discussing real strengths — focus, pattern recognition, depth in areas of interest — with families alongside the challenges, since both matter for a realistic, supportive plan.",
     title: "Autism Spectrum Disorder (ASD)",
     category: "Neurodevelopmental Disorders",
     shortDescription:
@@ -4184,6 +4244,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "intellectual-disability",
+    doctorsApproach:
+      "For intellectual disability, my role is less about a single treatment and more about coordinating the right supports — early intervention services, individualized schooling, and treatment of any co-occurring condition like anxiety, depression, or ADHD that's adding an extra, addressable layer of difficulty. I spend time with families explaining that support needs and levels of independence vary enormously depending on severity, and that the goal is maximizing functioning and quality of life rather than expecting a single medication or therapy to change the underlying picture. I check in regularly as needs shift with age and circumstances, since the right support today may not be right in a few years.",
     title: "Intellectual Disability (Intellectual Developmental Disorder)",
     category: "Neurodevelopmental Disorders",
     shortDescription:
@@ -4302,6 +4364,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "specific-learning-disorder",
+    doctorsApproach:
+      "When a learning difficulty in reading, writing, or math is the concern, I make clear early on that there's no medication for the learning disorder itself — my role is usually identifying whether a co-occurring condition like ADHD is also present and treating that, since it can make it much easier for a child to actually benefit from the structured, skill-specific educational support that does the real work. I coordinate with schools on individualized plans and appropriate accommodations, and I spend time with families on protecting a child's self-esteem, since years of academic struggle before diagnosis often does as much damage as the learning difficulty itself.",
     title: "Specific Learning Disorder",
     category: "Neurodevelopmental Disorders",
     shortDescription:
@@ -4417,6 +4481,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "borderline-personality-disorder",
+    doctorsApproach:
+      "BPD is a condition I want patients to hear a genuinely hopeful message about early on, because so many have already been told, directly or indirectly, that they're 'too much' or untreatable — neither is true. Dialectical Behavior Therapy, teaching skills in managing intense emotion, tolerating distress, and navigating relationships, is where I focus treatment, with medication used only for specific symptoms like mood instability rather than as the main treatment. I take any self-harm or suicidal thoughts seriously and build a clear safety plan around them from the first sessions. People who engage consistently with DBT skills over time often see real, lasting improvement, and that's the message I try to keep front and center.",
     diagram: {
       src: "/images/diagrams/emotional-dysregulation-cycle.webp",
       alt: "Diagram of the BPD emotional dysregulation cycle: a sensitive trigger, intense emotional surge, urgent response, and relationship strain and shame looping back",
@@ -4541,6 +4607,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "narcissistic-personality-disorder",
+    doctorsApproach:
+      "People rarely come to see me specifically for narcissistic traits — it's usually a relationship crisis, a job loss, or a depressive episode that brings them in, and the grandiosity or need for admiration only becomes apparent once we're talking. I try to work with whatever motivated them to come in that day, since insight into their own contribution to relationship or work difficulties is often limited early on, and pushing too hard, too fast on that tends to end treatment. Therapy focused on the more fragile self-esteem underneath the grandiose presentation is where real change happens, though it's honestly slower and more uneven than with most other conditions I treat.",
     title: "Narcissistic Personality Disorder (NPD)",
     category: "Personality Disorders",
     shortDescription:
@@ -4649,6 +4717,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "antisocial-personality-disorder",
+    doctorsApproach:
+      "Antisocial personality disorder is one of the more difficult conditions to treat by the nature of the pattern itself — most people I see with these traits aren't seeking change for its own sake, and I'm realistic with families about that from the start rather than promising more than treatment can deliver. My focus tends to be on specific, tractable targets: a co-occurring substance use problem, mood symptoms, or ADHD, since treating those directly often does more good than attempting to change the underlying personality pattern. When the person in front of me is a child or teenager showing early conduct problems, I push harder for family-based intervention then, since that's where the real opportunity to change course lies.",
     title: "Antisocial Personality Disorder (ASPD)",
     category: "Personality Disorders",
     shortDescription:
@@ -4760,6 +4830,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "avoidant-personality-disorder",
+    doctorsApproach:
+      "Avoidant personality disorder often gets mistaken for simple shyness or introversion, so I spend the early sessions distinguishing it from social anxiety disorder, since the fear here runs deeper — into a person's whole sense of being inadequate or unlikeable, not just fear of a specific situation. Treatment leans on CBT that challenges those core beliefs about the self, paired with structured, graded practice being around and vulnerable with other people. Because the difficulty is woven into identity rather than a single fear, I set expectations for steady, gradual movement over months rather than a quick fix, and most patients do see real change with sustained work.",
     title: "Avoidant Personality Disorder (AVPD)",
     category: "Personality Disorders",
     shortDescription:
@@ -4865,6 +4937,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "insomnia",
+    doctorsApproach:
+      "For insomnia, my first question usually isn't about medication at all — it's about the bed itself: what someone does there besides sleep, what time they get up regardless of how the night went, and how they respond to a bad night's sleep the next day. CBT for insomnia, using stimulus control and a temporary reduction in time spent in bed to rebuild sleep drive, is genuinely the most effective long-term option and where I start for most patients, rather than reaching for a sleeping tablet first. Because sleep problems don't keep office hours, I keep the clinic open until 10pm most nights specifically for visits like this. When a short-term medication is needed alongside that, I use it briefly, not as an ongoing crutch.",
     title: "Insomnia Disorder",
     category: "Sleep-Wake Disorders",
     shortDescription:
@@ -5046,6 +5120,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "parasomnias",
+    doctorsApproach:
+      "Parasomnias cover quite different problems, so my approach depends heavily on which one is in front of me — sleepwalking and night terrors in a child are usually reassured and managed with safety measures and better sleep habits, while an adult acting out vivid dreams gets a different conversation entirely, including melatonin or clonazepam and a careful, unalarming discussion about the recognized link between that specific pattern and future neurological conditions. For recurring nightmares, I teach a technique of rehearsing a changed, less threatening version of the dream while awake. Safety in the bedroom environment is something I address concretely in every case.",
     title: "Parasomnias",
     category: "Sleep-Wake Disorders",
     shortDescription:
@@ -5158,6 +5234,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "circadian-rhythm-sleep-wake-disorders",
+    doctorsApproach:
+      "When someone's real problem is timing rather than the sleep itself — unable to fall asleep until very late, or waking long before they need to — I focus on shifting the body clock deliberately, using carefully timed light exposure and melatonin at specific times of day rather than as a general sedative. For shift workers, we build a schedule around strategic light and nap timing rather than fighting the work pattern itself. I'm honest that delayed sleep phase in particular can be stubborn against a strong natural tendency, and that consistency with the plan matters more than any single tool.",
     title: "Circadian Rhythm Sleep-Wake Disorders",
     category: "Sleep-Wake Disorders",
     shortDescription:
@@ -5266,6 +5344,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "alcohol-use-disorder",
+    doctorsApproach:
+      "With alcohol use disorder, safety comes first — if someone has been drinking heavily and regularly, I assess whether they need a medically supervised withdrawal rather than stopping abruptly on their own, since that can genuinely be dangerous. Beyond that acute period, I individualize the plan around what the person actually wants, whether that's complete abstinence or harm reduction, and combine counseling with medication such as naltrexone or acamprosate when it fits. I talk openly about relapse as a common part of recovery rather than a failure, since patients who expect perfection from themselves often drop out of treatment after a single setback. Family involvement, when welcomed, tends to strengthen the whole plan.",
     diagram: {
       src: "/images/diagrams/alcohol-craving-relapse-cycle.webp",
       alt: "Diagram of the alcohol craving-relapse cycle: trigger or stress, craving, drinking to cope, and guilt and withdrawal looping back",
@@ -5431,6 +5511,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "nicotine-dependence",
+    doctorsApproach:
+      "For nicotine dependence, I try to shift the conversation away from willpower and toward a structured plan — a specific quit date, nicotine replacement or a medication like varenicline or bupropion, and regular check-ins, since combining counseling with medication clearly beats trying to quit alone. I'm upfront that most people need more than one attempt before quitting sticks, and I frame an earlier attempt that didn't work as useful information, not a personal failure. Because many patients are quitting for a specific reason already on their mind — pregnancy, a new diagnosis, a family member's illness — I try to build the plan around that motivation rather than a generic script.",
     title: "Nicotine Dependence (Tobacco Use Disorder)",
     category: "Substance Use and Addictive Disorders",
     shortDescription:
@@ -5584,6 +5666,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "cannabis-use-disorder",
+    doctorsApproach:
+      "Cannabis use disorder often comes up almost incidentally, while I'm treating something else — anxiety, low mood, poor sleep — and part of my job is helping the person see the connection between the two rather than assuming cannabis is unrelated to why they came in. Since there's no specific medication for this, I focus on structured counseling that builds motivation, identifies triggers, and plans realistic alternatives, and I treat any underlying anxiety or depression directly, since that's often what's driving the use in the first place. Withdrawal here is uncomfortable but not medically dangerous, which I explain clearly so patients aren't afraid to stop suddenly out of unfounded fear.",
     title: "Cannabis Use Disorder",
     category: "Substance Use and Addictive Disorders",
     shortDescription:
@@ -5729,6 +5813,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "opioid-use-disorder",
+    doctorsApproach:
+      "Opioid use disorder is one of the few conditions where I lead with medication rather than starting with counseling alone, because buprenorphine or a similar medication-assisted approach measurably reduces the risk of a fatal overdose, and that risk is simply too serious to wait on. I make sure every patient and their family knows about naloxone and has access to it, regardless of where else we are in treatment. Counseling and family support run alongside the medication rather than replacing it, and I'm honest that this tends to be a longer-term, relapsing condition where staying connected to care matters more than achieving instant, permanent abstinence.",
     title: "Opioid Use Disorder",
     category: "Substance Use and Addictive Disorders",
     shortDescription:
@@ -5888,6 +5974,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "internet-addiction",
+    doctorsApproach:
+      "With problematic internet use, I don't aim for complete abstinence — that's not realistic or even desirable given how much of daily life now runs through a screen — so treatment focuses on identifying exactly what the internet is being used to escape, whether that's anxiety, boredom, or loneliness, and building healthier alternatives for that same need. CBT adapted specifically for this pattern works on triggers and structured limits, and when there's an underlying condition like depression or ADHD driving the excessive use, treating that directly often does more than any amount of willpower-based advice. Family involvement matters especially for younger patients.",
     title: "Internet Addiction (Problematic Internet Use)",
     category: "Substance Use and Addictive Disorders",
     shortDescription:
@@ -6030,6 +6118,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "gaming-disorder",
+    doctorsApproach:
+      "Gaming disorder usually arrives at my clinic through a worried parent rather than the person doing the gaming, so an early part of my job is getting the young person themselves genuinely engaged in the conversation rather than just their family. Like problematic internet use, the goal is controlled, healthy gaming rather than giving it up completely, so we work on specific triggers, structured time limits, and rebuilding other activities that gaming has crowded out. I check for an underlying condition — ADHD, depression, anxiety — since treating that directly often reduces the gaming pattern more than addressing the gaming alone. Family sessions are usually part of the plan.",
     title: "Gaming Disorder",
     category: "Substance Use and Addictive Disorders",
     shortDescription:
@@ -6175,6 +6265,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "suicide-prevention",
+    doctorsApproach:
+      "When someone is in a suicidal crisis, my first priority is always immediate safety — a clear, collaborative plan covering their personal warning signs, what helps in the moment, who to call, and reducing access to any means of harm — before anything else. I treat the underlying condition driving the crisis, whether that's depression, bipolar disorder, or something else, since the crisis itself is usually time-limited even when it feels permanent in the moment. I stay in closer contact in the days after a crisis than I would otherwise, since simple, caring follow-up genuinely reduces the risk of it happening again. Family is included in the safety plan whenever possible.",
     title: "Suicide Prevention and Crisis Support",
     category: "Suicide Prevention and Crisis Support",
     titleSuffix: "Warning Signs, Risk Factors & Getting Help",
@@ -6377,6 +6469,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "anorexia-nervosa",
+    doctorsApproach:
+      "Anorexia is a condition where I move quickly on the medical side first — checking weight, heart rate, and blood tests — because malnutrition itself affects mood and thinking, and no amount of therapy fully works while someone is still significantly underweight. For younger patients, I lean heavily on family-based treatment, where parents take an active, structured role in supporting nutrition rather than the young person managing it alone, since that approach has the strongest evidence in this age group. For adults, CBT adapted specifically for eating disorders is central. I'm direct with families that this carries real medical risk, so they understand why we act promptly rather than waiting to see if it resolves on its own.",
     title: "Anorexia Nervosa",
     category: "Eating Disorders",
     shortDescription:
@@ -6500,6 +6594,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "bulimia-nervosa",
+    doctorsApproach:
+      "With bulimia, patients often carry enormous shame about the binge-purge cycle and go to great lengths to hide it, so I make a point of asking about it directly and matter-of-factly, since that alone tends to reduce the secrecy that keeps it going. CBT for eating disorders, working on the interconnected cycle of restriction, bingeing, and compensatory behavior, is where I focus therapy, and I often add fluoxetine, which has specific evidence for bulimia at a higher dose than typically used for depression. I check physical health markers regularly given the real risk of electrolyte problems from repeated vomiting, and I explain why that monitoring matters rather than just ordering the tests.",
     title: "Bulimia Nervosa",
     category: "Eating Disorders",
     shortDescription:
@@ -6621,6 +6717,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "binge-eating-disorder",
+    doctorsApproach:
+      "Binge eating disorder is the one I most often see mistaken for a willpower problem, by patients and sometimes by their own families, when it's actually a recognized, treatable condition with a real loss-of-control component. I focus treatment on CBT for eating disorders, working directly on the binge cycle and the guilt or distress that follows it, rather than on weight loss as the primary goal, since that framing tends to produce better, more lasting results. For more severe presentations, I'll discuss lisdexamfetamine, which is specifically approved for reducing binge frequency. Progress is measured by fewer binge episodes and less distress around food, not by a number on a scale.",
     diagram: {
       src: "/images/diagrams/binge-shame-cycle.webp",
       alt: "Diagram of the binge-shame cycle: restriction or stress, loss of control, shame and guilt, and renewed restriction looping back",
@@ -6745,6 +6843,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "arfid",
+    doctorsApproach:
+      "ARFID looks different from other eating disorders because there's no fear of weight gain involved — the issue is sensory sensitivity, low interest in food, or fear of choking or vomiting, and figuring out which of those is driving a particular child or adult's eating is the first real work I do. From there, treatment is gradual food exposure, introducing new foods in small steps that build on what's already accepted, alongside nutritional support and, for sensory-based cases, coordination with occupational therapy. I involve family closely, especially around structuring mealtimes without added pressure, since pressure around food tends to backfire with this particular pattern.",
     title: "Avoidant/Restrictive Food Intake Disorder (ARFID)",
     category: "Eating Disorders",
     shortDescription:
@@ -6860,6 +6960,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "somatic-symptom-disorder",
+    doctorsApproach:
+      "With somatic symptom disorder, my approach is deliberately collaborative rather than dismissive — I don't tell patients their pain or fatigue isn't real, because it is, and I work to be one consistent point of contact rather than adding to a pattern of repeated tests and different opinions from different doctors. CBT focused on the worry and behaviors around the symptoms, not on disproving the symptoms themselves, is where I put most of the therapeutic work, and medication helps when anxiety or depression is clearly part of the picture. I coordinate directly with a patient's other treating physicians so everyone is working from the same understanding.",
     title: "Somatic Symptom Disorder",
     category: "Somatic Symptom and Related Disorders",
     shortDescription:
@@ -6986,6 +7088,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "illness-anxiety-disorder",
+    doctorsApproach:
+      "Illness anxiety often means a patient has already seen several doctors and had reassuring results each time, yet the worry returns within days — so I spend time explaining why reassurance alone doesn't fix this, since the anxiety itself, not the absence of information, is the real target of treatment. CBT addresses the catastrophic interpretation of normal body sensations and gradually reduces both excessive checking and, for some patients, complete avoidance of medical care in the other direction. An SSRI can help meaningfully here given how closely this overlaps with anxiety and OCD-type mechanisms. I try to be the one steady, coordinated point of contact rather than one more appointment in a long list.",
     title: "Illness Anxiety Disorder",
     category: "Somatic Symptom and Related Disorders",
     shortDescription:
@@ -7097,6 +7201,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "conversion-disorder",
+    doctorsApproach:
+      "Functional neurological symptoms — a limb that won't move, seizure-like episodes without the usual test findings — are genuinely real and involuntary, and the first thing I do is say that plainly, since many patients arrive having been told, directly or indirectly, that nothing is actually wrong with them. I work closely with a neurologist so the diagnosis is explained consistently by both of us, then bring in physiotherapy specifically adapted for these symptoms alongside psychotherapy addressing whatever stress is maintaining the pattern. Clear, respectful communication about the diagnosis is often the single most therapeutic thing that happens in the whole process.",
     title: "Conversion Disorder (Functional Neurological Symptom Disorder)",
     category: "Somatic Symptom and Related Disorders",
     shortDescription:
@@ -7206,6 +7312,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "factitious-disorder",
+    doctorsApproach:
+      "Factitious disorder is difficult precisely because the presenting problem is the deception itself, so I try not to lead with confrontation, which almost always ends contact immediately — instead I focus on whatever genuine psychological need seems to be underneath the behavior, while being honest about the limits of what I can address if someone isn't ready to acknowledge it. When a child or other dependent is involved, protecting their safety takes priority over everything else, including any treatment I might otherwise offer the person responsible. Coordinating with a patient's other doctors, rather than each of us working in isolation, reduces unnecessary and sometimes risky procedures.",
     title: "Factitious Disorder",
     category: "Somatic Symptom and Related Disorders",
     shortDescription:
@@ -7311,6 +7419,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "delirium",
+    doctorsApproach:
+      "Delirium is a medical emergency dressed up as a psychiatric one, so my first move is always making sure the underlying cause — an infection, a medication, dehydration — is being actively treated by the right specialist, since no amount of psychiatric care fixes confusion caused by an unaddressed physical problem. While that's happening, I focus on simple, practical measures: keeping the person oriented with clear reminders of time and place, involving family for a familiar presence, and using medication only cautiously and briefly if agitation or hallucinations pose a genuine safety risk. My role is coordinating closely with the treating physician rather than working in isolation, and I explain to families early that this is usually reversible.",
     title: "Delirium",
     category: "Psychiatric Emergencies",
     titleSuffix: "Causes, Warning Signs & Emergency Care",
@@ -7469,6 +7579,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "serotonin-syndrome",
+    doctorsApproach:
+      "Serotonin syndrome is one of the situations where speed matters more than anything else I do — recognizing it, stopping every serotonergic medication involved, and arranging emergency medical care immediately, since this can escalate from mild tremor to a genuine medical emergency within hours. Once the acute episode is over, I go through a patient's full medication list carefully with them to understand exactly which combination caused it, so we can avoid it going forward, and I document that clearly for any other prescriber involved in their care. This is a case where careful prescribing matters as much as treating the episode itself.",
     title: "Serotonin Syndrome",
     category: "Psychiatric Emergencies",
     titleSuffix: "Causes, Warning Signs & Emergency Care",
@@ -7608,6 +7720,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "neuroleptic-malignant-syndrome",
+    doctorsApproach:
+      "Neuroleptic Malignant Syndrome, a rare but serious reaction to antipsychotic medication, is something I watch for actively in anyone starting or changing this type of medication, since early recognition of rigidity, high fever, or unstable vital signs makes a real difference to outcome. If it happens, the causative medication is stopped immediately and the person is managed in a hospital setting with close medical supervision, coordinated with me as the treating psychiatrist. Afterward, I take real care in choosing any future antipsychotic, often a different class altogether, introduced slowly and monitored closely given the risk of recurrence. I make sure the patient and family understand exactly what to watch for going forward.",
     title: "Neuroleptic Malignant Syndrome (NMS)",
     category: "Psychiatric Emergencies",
     titleSuffix: "Causes, Warning Signs & Emergency Care",
@@ -7754,6 +7868,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "acute-agitation-behavioral-emergency",
+    doctorsApproach:
+      "When someone arrives acutely agitated, my first move is always calm, non-confrontational de-escalation — lowering stimulation, giving choices, speaking slowly — before considering any medication, and that approach resolves more situations than people often expect. Medication is reserved for when de-escalation alone isn't enough and there's a genuine safety concern for the person or people around them. Just as important is figuring out what's actually driving the agitation — psychosis, substance withdrawal, dementia, an untreated medical problem — since treating that directly prevents the same crisis from repeating. I also spend time afterward with family or caregivers on recognizing early warning signs, so we can intervene sooner next time.",
     title: "Acute Agitation and Behavioral Emergency",
     category: "Psychiatric Emergencies",
     titleSuffix: "Warning Signs, Causes & Getting Help",
@@ -7905,6 +8021,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "erectile-dysfunction",
+    doctorsApproach:
+      "With erectile dysfunction, I start by mapping out which factors are actually contributing for that particular patient — performance anxiety, a medication side effect, an underlying health condition like diabetes, or some combination — rather than assuming it's purely psychological or purely physical. If a psychiatric medication seems to be the cause, I review it together with the patient rather than having them stop it abruptly, since that can risk relapse of whatever we were originally treating. Where anxiety or the fear of 'failing again' is central, CBT and structured couples work address that directly, and I coordinate with urology or endocrinology when a medical cause needs its own specialist input.",
     title: "Erectile Dysfunction (ED)",
     category: "Sexual Dysfunctions",
     shortDescription:
@@ -8080,6 +8198,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "premature-ejaculation",
+    doctorsApproach:
+      "Premature ejaculation responds well to fairly straightforward, practical work, and I say that clearly upfront since so many men have quietly lived with this for years assuming nothing could be done. We usually start with structured behavioral techniques — the stop-start and squeeze methods — practiced deliberately rather than left to chance, and I address the performance anxiety that almost always accompanies and worsens the pattern. When a partner is willing to be involved, working with the couple together tends to produce faster, more complete improvement than working with the individual alone. Medical options exist for men who need additional help, decided case by case.",
     title: "Premature Ejaculation (PE)",
     category: "Sexual Dysfunctions",
     shortDescription:
@@ -8244,6 +8364,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "intermittent-explosive-disorder",
+    doctorsApproach:
+      "For anger that's become disproportionate to whatever triggered it, I start by helping patients identify their own specific early warning signs — the tension, the racing thoughts — since most have never actually mapped out what happens in their body and mind in the moments just before an outburst. From there we build a structured anger management approach: relaxation techniques practiced regularly rather than only in the heat of the moment, and restructuring the hostile assumptions about others' intentions that often fuel the reaction. Where anger is clearly secondary to something else — depression, PTSD, ADHD — treating that condition directly is usually where the real, lasting improvement comes from.",
     title: "Anger Management & Intermittent Explosive Disorder (IED)",
     category: "Disruptive, Impulse-Control, and Conduct Disorders",
     shortDescription:
@@ -8415,6 +8537,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "depersonalization-derealization-disorder",
+    doctorsApproach:
+      "Patients describing depersonalization almost always start by asking me if they're going crazy, and being able to tell them clearly — no, this is a recognized and treatable condition, not psychosis — is often the single most relieving thing that happens in the first session. From there, treatment focuses on reducing the fear and over-attention to the sensations themselves, since that fear is part of what keeps the episodes going, alongside grounding techniques for use in the moment. Where an underlying anxiety disorder, depression, or trauma history is present, which is common, treating that directly is usually central to real improvement.",
     title: "Depersonalization-Derealization Disorder",
     category: "Dissociative Disorders",
     shortDescription:
@@ -8580,6 +8704,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "migraine-and-headache-disorders",
+    doctorsApproach:
+      "Because migraine and mood so often travel together, I frequently end up managing headache prevention alongside anxiety or depression treatment rather than treating them as separate problems — amitriptyline, for instance, is something I prescribe at headache-appropriate doses while also watching how it affects mood and sleep. I coordinate closely with a neurologist for acute treatment and any physical work-up, while my part focuses on stress-management, relaxation training, and treating any coexisting mood or anxiety disorder, since all of these measurably reduce headache frequency on their own. I also watch carefully for medication-overuse patterns, since that can quietly turn an occasional headache into a daily one.",
     title: "Migraine & Tension-Type Headache",
     category: "Headache Disorders",
     titleSuffix: "Causes, Triggers, Stress Links & Treatment",
@@ -8741,6 +8867,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "major-neurocognitive-disorder-dementia",
+    doctorsApproach:
+      "With dementia, one of my most important conversations happens early, while the person can still take part in it — talking honestly with the family about what medication can and can't do, since nothing currently reverses the underlying decline, and framing our goals around function, comfort, and safety rather than a cure. I use cholinesterase inhibitors or memantine where appropriate, but I spend just as much time on structured routines, environmental safety changes, and direct support for the family caregiver, who in Nepal usually carries most of the daily burden. Medication for agitation or distressing symptoms is used cautiously and only after non-drug approaches have been tried first.",
     title: "Major Neurocognitive Disorder (Dementia)",
     category: "Neurocognitive Disorders",
     titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
@@ -8864,6 +8992,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "mild-cognitive-impairment",
+    doctorsApproach:
+      "When someone comes in with memory changes that are more than expected for their age but not yet affecting their independence, I focus first on finding anything reversible — thyroid problems, vitamin deficiencies, untreated depression or sleep apnea — since addressing those can sometimes improve or stabilize the picture considerably. There's no medication approved specifically for MCI itself, so I build a monitoring plan with reassessment every six to twelve months, and I use this window, while judgment and decision-making are still largely intact, to have honest, unhurried conversations with the person and family about future planning. Some people stay stable for years; I explain that variability clearly rather than assuming decline is inevitable.",
     title: "Mild Cognitive Impairment (MCI)",
     category: "Neurocognitive Disorders",
     titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
@@ -8975,6 +9105,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "postpartum-psychosis",
+    doctorsApproach:
+      "Postpartum psychosis is one of the few situations where I move toward hospital admission quickly rather than trying outpatient treatment first, because symptoms can escalate within days and the safety of both mother and baby has to come first. Treatment usually combines an antipsychotic with a mood stabilizer, chosen with breastfeeding considered where relevant, and I involve family closely in supporting infant care while the mother recovers. Once the acute episode has resolved, I talk with the family about the meaningfully higher chance of this recurring in a future pregnancy, since planning ahead changes how that pregnancy is managed. With prompt treatment, recovery is usually full within weeks to months, and I make a point of telling frightened families that early.",
     title: "Postpartum Psychosis",
     category: "Psychiatric Emergencies",
     titleSuffix: "A Postnatal Psychiatric Emergency — Symptoms & Treatment",
@@ -9084,6 +9216,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "premenstrual-dysphoric-disorder",
+    doctorsApproach:
+      "PMDD is frequently dismissed as 'just PMS,' so I start by having patients track symptoms against their actual cycle for a cycle or two, since confirming the pattern is what separates PMDD from ordinary premenstrual symptoms and shapes the whole treatment plan. An SSRI is usually where I start, and I explain the somewhat unusual option of taking it only during the two weeks before the period rather than every day, which many women find preferable and which often works faster than typical depression dosing. I take any suicidal thinking on symptomatic days seriously rather than assuming it will pass with the cycle, and we build the plan around each person's own confirmed pattern.",
     title: "Premenstrual Dysphoric Disorder (PMDD)",
     category: "Depressive Disorders",
     titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
@@ -9196,6 +9330,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "gambling-disorder",
+    doctorsApproach:
+      "Gambling disorder usually arrives at my clinic wrapped in a lot of shame, often once debt or a relationship crisis has already happened, so I try to make the first conversation about understanding the pattern rather than judgment. CBT is where I focus treatment, working on the specific distorted beliefs that keep gambling going — like feeling 'due' for a win — and building concrete relapse-prevention plans, often alongside financial counseling and structured limits on access to money. I also check carefully for a co-occurring condition like depression or alcohol use, since treating that directly often reduces the gambling as well. I tell patients plainly that earlier treatment, before things escalate further, tends to go better.",
     title: "Gambling Disorder",
     category: "Substance Use and Addictive Disorders",
     titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
@@ -9303,6 +9439,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "oppositional-defiant-disorder",
+    doctorsApproach:
+      "With ODD, most of my actual work happens with the parents, not just the child — teaching specific, structured ways of reinforcing wanted behavior and responding to defiance that interrupt the cycle where both parent and child escalate against each other. I usually meet the whole family together at the clinic for the first session, then see the child individually too, building frustration tolerance and problem-solving skills. I'm honest with families that consistency at home predicts good outcomes more than anything I do in the room, and where ADHD is also present, treating that directly often takes some of the pressure off the oppositional behavior too.",
     title: "Oppositional Defiant Disorder (ODD)",
     category: "Disruptive, Impulse-Control, and Conduct Disorders",
     titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
@@ -9410,6 +9548,8 @@ export const conditions: Condition[] = [
   },
   {
     slug: "conduct-disorder",
+    doctorsApproach:
+      "Conduct disorder is one where I move quickly to bring in the whole family and, often, the school, rather than treating the young person alone, since addressing behavior across every setting works better than addressing it in an office once a week. I focus on structured family therapy and building the young person's own skills in problem-solving and managing frustration, and I check thoroughly for a co-occurring condition — ADHD, depression, a trauma history — since treating that directly can meaningfully shift the trajectory. I'm honest with families that earlier intervention, before patterns become entrenched or legal problems begin, makes a real difference to the outcome.",
     title: "Conduct Disorder",
     category: "Disruptive, Impulse-Control, and Conduct Disorders",
     titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",
@@ -9525,6 +9665,8 @@ export const conditions: Condition[] = [
   {
     nepaliMeaning: { term: "OCPD / जिद्दी पूर्णतावादी व्यक्तित्व समस्या", meaning: "नियम, व्यवस्था र पूर्णतामा अत्यधिक जोड दिने स्वभावगत समस्या — यो OCD (Obsessive-Compulsive Disorder) भन्दा फरक हो।" },
     slug: "obsessive-compulsive-personality-disorder",
+    doctorsApproach:
+      "OCPD is unusual among the conditions I treat because most patients don't experience their own perfectionism or need for control as a problem — it's often a spouse, a burned-out feeling, or a stalled project that eventually brings them in, not the traits themselves. I focus therapy on building tolerance for imperfection and flexibility in very concrete, practiced ways, like deliberately delegating a task and sitting with the discomfort of it, rather than a general conversation about being 'less rigid.' There's no medication for OCPD itself, though I treat any co-occurring depression, anxiety, or OCD directly. I measure progress over months, since motivation here tends to build slowly rather than arrive all at once.",
     title: "Obsessive-Compulsive Personality Disorder (OCPD)",
     category: "Personality Disorders",
     titleSuffix: "Symptoms, Causes, Diagnosis & Treatment",

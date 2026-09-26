@@ -18,7 +18,7 @@ export default function Services() {
       icon: "💊",
       title: "Medication Management",
       description:
-        "Safe, individualized psychopharmacological treatment with regular monitoring and long-term follow-up.",
+        "Safe, individualized medication treatment with regular monitoring and long-term follow-up.",
     },
     {
       icon: "💬",
