@@ -173,6 +173,8 @@ export default function About() {
                 <p>✓ Neuropsychiatry</p>
                 <p>✓ Addiction Medicine</p>
                 <p>✓ Telepsychiatry</p>
+                <p>✓ CBT-Trained</p>
+                <p>✓ Crisis Management</p>
                 <p>✓ Evidence-Based Practice</p>
 
               </div>
@@ -218,6 +220,11 @@ export default function About() {
                     <td className="px-5 py-3">Active</td>
                   </tr>
                   <tr className="border-t border-gray-200 bg-gray-50">
+                    <td className="px-5 py-3 font-semibold">Free telepsychiatry service</td>
+                    <td className="px-5 py-3">Kathmandu Mental Health Clinic</td>
+                    <td className="px-5 py-3">Ongoing</td>
+                  </tr>
+                  <tr className="border-t border-gray-200">
                     <td className="px-5 py-3 font-semibold">Psychiatric clinic, Kalanki-14</td>
                     <td className="px-5 py-3">Private practice</td>
                     <td className="px-5 py-3">Ongoing</td>

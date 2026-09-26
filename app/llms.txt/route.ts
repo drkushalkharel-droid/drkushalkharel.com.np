@@ -20,6 +20,8 @@ const body = `# Dr. Kushal Kharel
 - Lifetime Member, Nepal Medical Association
 - Lifetime Member, Psychiatrists' Association of Nepal (PAN)
 - Therapist at TherapyMantra, an online mental-health platform
+- Conducts free telepsychiatry service through Kathmandu Mental Health Clinic
+- CBT-trained; also conducts crisis-management and stress-management programs for schools and colleges (see Community Mental Health Programs page)
 - Clinic: Kalanki-14, Near Malpot Road, near Kalanki Bhatbhateni Supermarket, Kathmandu 44600, Nepal
 - Hours: Sunday-Friday 8:00 AM-10:00 PM, Saturday 10:00 AM-4:00 PM (not an emergency/24-hour service)
 - Contact: +977 9861800547 (call/WhatsApp), drkushalkharel@gmail.com

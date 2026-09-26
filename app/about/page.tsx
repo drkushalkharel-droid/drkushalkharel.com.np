@@ -28,6 +28,7 @@ const credentials = [
   { credential: "Lifetime Member", institution: "Nepal Medical Association", year: "Active" },
   { credential: "Lifetime Member", institution: "Psychiatrists' Association of Nepal (PAN)", year: "Active" },
   { credential: "Therapist", institution: "TherapyMantra (online mental-health platform)", year: "Active" },
+  { credential: "Free telepsychiatry service", institution: "Kathmandu Mental Health Clinic", year: "Ongoing" },
   { credential: "Psychiatric clinic, Kalanki-14", institution: "Private practice", year: "Ongoing" },
 ];
 

@@ -1465,34 +1465,39 @@ export const audiencePages: AudiencePage[] = [
     slug: "corporate-mental-health-partner-nepal",
     doctorsApproach:
       "When I work with an organisation, individual employee consultations stay completely confidential from the employer — I'll discuss aggregate themes for a workshop or screening program, never a specific person's details. That boundary is what makes it safe for staff to actually use the service rather than avoid it.",
-    title: "Corporate & Workplace Mental Health Partner in Nepal",
-    headline: "A confidential psychiatric referral partner for workplace mental health",
+    title: "Corporate, School & College Mental Health Partner in Nepal",
+    headline: "A confidential psychiatric referral partner for workplaces, schools and colleges",
     shortDescription:
-      "For HR teams and company leadership in Nepal wanting a confidential referral option for employee mental health, workplace stress and burnout support.",
+      "For HR teams, company leadership, and school or college administrations in Nepal wanting a confidential referral option, crisis-management support, or a stress-management workshop for employees or students.",
     intro:
-      "Companies increasingly want a straightforward, confidential way to point employees toward professional mental health support rather than leaving struggling staff to manage alone. Dr. Kushal Kharel, a Consultant Psychiatrist in Kalanki, Kathmandu, is available as a referral point for organisations wanting to offer employees confidential access to psychiatric assessment and treatment, in person or online, for work-related stress, burnout, anxiety, depression and other concerns affecting wellbeing and performance. This is not a fixed package with predetermined terms — HR teams or leadership are welcome to get in touch directly to discuss what a referral arrangement could look like for your organisation.",
+      "Organisations increasingly want a straightforward, confidential way to point employees or students toward professional mental health support rather than leaving them to manage alone. Dr. Kushal Kharel, a Consultant Psychiatrist in Kalanki, Kathmandu, is available as a referral point for companies wanting to offer employees confidential access to psychiatric assessment and treatment, and has also run crisis-management and stress-management programs directly with schools and colleges, including suicide-prevention awareness sessions and student stress-management workshops (see the Community Mental Health Programs page for documented examples). This is not a fixed package with predetermined terms — HR teams, school administrations or leadership are welcome to get in touch directly to discuss what an arrangement could look like.",
     whoThisIsFor: [
       "HR teams and company leadership wanting a confidential referral option for employee mental health",
-      "Employees experiencing work-related stress, burnout or a mental health concern who want support outside their workplace",
+      "School and college administrations wanting a stress-management or crisis-management program for students",
+      "Employees or students experiencing stress, burnout or a mental health concern who want support outside their workplace or institution",
       "Organisations building or improving workplace wellness support",
-      "Managers unsure how to support a team member who seems to be struggling",
+      "Managers or teachers unsure how to support someone who seems to be struggling",
       "Companies with remote or distributed teams needing accessible online psychiatric consultation",
     ],
     commonConcerns: [
-      "Employee confidentiality and what is or isn't shared with the employer",
-      "Work-related stress, burnout and anxiety affecting performance",
-      "How a referral pathway from HR to psychiatric consultation would work in practice",
-      "Supporting an employee without a diagnosis affecting their standing at work",
-      "Providing accessible online consultation for employees outside Kathmandu or working remotely",
-      "Guidance for managers on recognising when a team member needs professional support",
+      "Confidentiality and what is or isn't shared with the employer or institution",
+      "Work-related stress, burnout and anxiety affecting performance, or exam and academic stress among students",
+      "How a referral pathway from HR or school staff to psychiatric consultation would work in practice",
+      "Crisis-management and suicide-prevention awareness for a school or college community",
+      "Supporting someone without a diagnosis affecting their standing at work or school",
+      "Providing accessible online consultation for people outside Kathmandu or working remotely",
+      "Guidance for managers or teachers on recognising when someone needs professional support",
     ],
     practicalNote:
-      "Individual consultations remain confidential to the standard expected of any psychiatric care: session content is not shared with an employer without the employee's consent, except in the narrow circumstances required by law or immediate safety. Companies or HR teams interested in a referral arrangement, workplace talk, or a point of contact for employee mental health can call or message directly to discuss what would work for your organisation, rather than a one-size-fits-all package.",
+      "Individual consultations remain confidential to the standard expected of any psychiatric care: session content is not shared with an employer, school or college without the individual's consent, except in the narrow circumstances required by law or immediate safety. Organisations, HR teams or school and college administrations interested in a referral arrangement, a stress-management or crisis-management workshop, or a point of contact for mental health can call or message directly to discuss what would work for you, rather than a one-size-fits-all package.",
     searchTerms: [
       "Workplace mental health Nepal",
       "Corporate mental health partner Kathmandu",
       "Employee mental health referral Nepal",
       "EAP psychiatrist Nepal",
+      "School mental health program Nepal",
+      "College stress management workshop Nepal",
+      "Crisis management psychiatrist Nepal",
     ],
     faqs: [
       {
@@ -1524,6 +1529,11 @@ export const audiencePages: AudiencePage[] = [
         question: "Does this replace our company's existing insurance or benefits coverage?",
         answer:
           "No. This is a referral and consultation option, not an insurance product. Any existing health insurance or benefits coverage your company provides operates separately, and employees should check their own policy for what it covers.",
+      },
+      {
+        question: "Do you run mental health programs for schools and colleges?",
+        answer:
+          "Yes. Dr. Kushal Kharel has run crisis-management and stress-management programs directly with schools and colleges, including suicide-prevention awareness sessions and student stress-management workshops, documented on the Community Mental Health Programs page. School and college administrations can get in touch to discuss a program for their students.",
       },
     ],
   },
