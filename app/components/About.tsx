@@ -213,6 +213,11 @@ export default function About() {
                     <td className="px-5 py-3">Active</td>
                   </tr>
                   <tr className="border-t border-gray-200">
+                    <td className="px-5 py-3 font-semibold">Therapist</td>
+                    <td className="px-5 py-3">TherapyMantra (online mental-health platform)</td>
+                    <td className="px-5 py-3">Active</td>
+                  </tr>
+                  <tr className="border-t border-gray-200 bg-gray-50">
                     <td className="px-5 py-3 font-semibold">Psychiatric clinic, Kalanki-14</td>
                     <td className="px-5 py-3">Private practice</td>
                     <td className="px-5 py-3">Ongoing</td>

@@ -245,9 +245,10 @@ export default function RootLayout({
     email: "drkushalkharel@gmail.com",
     medicalSpecialty: "Psychiatry",
     mainEntityOfPage: siteUrl,
-    worksFor: {
-      "@id": `${siteUrl}#clinic`,
-    },
+    worksFor: [
+      { "@id": `${siteUrl}#clinic` },
+      { "@type": "Organization", name: "TherapyMantra" },
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Kalanki-14, Near Malpot Road, Near Kalanki Bhatbhateni Supermarket",
@@ -315,6 +316,12 @@ export default function RootLayout({
       "https://www.tiktok.com/@drkushalkharel",
       "https://www.threads.net/@cusalnova",
       "https://nagariknews.nagariknetwork.com/author/dr.kushal-kharel",
+      "https://therapists.therapymantra.co/list/therapist/268690/dr-kushal-kharel",
+      "https://www.upchaarnepal.com/find/doctors/CjxZEz8BmbNtVtVl3kz38wbCRAv1",
+      "https://kathmandumentalhealth.com.np/doctors/dr-kushal-kharel/",
+      "https://about.me/dr.kushalkharelpsychiatrist",
+      "https://yandex.com/maps/org/dr_kushal_kharel/209638868435/reviews/",
+      "https://www.quora.com/profile/Dr-Kushal-Kharel",
     ],
     aggregateRating: {
       "@type": "AggregateRating",

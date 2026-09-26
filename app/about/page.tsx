@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone } from "lucide-react";
+import { ExternalLink, Phone } from "lucide-react";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const title = "About Dr. Kushal Kharel — Consultant Psychiatrist, Kathmandu";
@@ -27,7 +27,18 @@ const credentials = [
   { credential: "MD Psychiatry", institution: "KIST Medical College Teaching Hospital", year: "Completed" },
   { credential: "Lifetime Member", institution: "Nepal Medical Association", year: "Active" },
   { credential: "Lifetime Member", institution: "Psychiatrists' Association of Nepal (PAN)", year: "Active" },
+  { credential: "Therapist", institution: "TherapyMantra (online mental-health platform)", year: "Active" },
   { credential: "Psychiatric clinic, Kalanki-14", institution: "Private practice", year: "Ongoing" },
+];
+
+const verifiedProfiles = [
+  { label: "Nagarik News — author profile", href: "https://nagariknews.nagariknetwork.com/author/dr.kushal-kharel" },
+  { label: "TherapyMantra — therapist profile", href: "https://therapists.therapymantra.co/list/therapist/268690/dr-kushal-kharel" },
+  { label: "UpchaarNepal — doctor profile", href: "https://www.upchaarnepal.com/find/doctors/CjxZEz8BmbNtVtVl3kz38wbCRAv1" },
+  { label: "Kathmandu Mental Health Clinic — doctor profile", href: "https://kathmandumentalhealth.com.np/doctors/dr-kushal-kharel/" },
+  { label: "about.me profile", href: "https://about.me/dr.kushalkharelpsychiatrist" },
+  { label: "Yandex Maps — clinic listing & reviews", href: "https://yandex.com/maps/org/dr_kushal_kharel/209638868435/reviews/" },
+  { label: "Quora profile", href: "https://www.quora.com/profile/Dr-Kushal-Kharel" },
 ];
 
 const authoredContent = [
@@ -134,6 +145,28 @@ export default function AboutPage() {
               ))}
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
+        <h2 className="text-3xl font-bold text-stone-950">Verified profiles</h2>
+        <p className="mt-4 max-w-3xl leading-8 text-stone-600">
+          Dr. Kushal Kharel&apos;s practice and credentials are also verifiable on these external, independently
+          operated platforms.
+        </p>
+        <div className="mt-6 grid gap-3 sm:grid-cols-3">
+          {verifiedProfiles.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-between gap-2 rounded-lg border border-stone-200 bg-stone-50 p-4 font-semibold text-sage-800 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+            >
+              {item.label}
+              <ExternalLink size={16} aria-hidden="true" className="shrink-0" />
+            </a>
+          ))}
         </div>
       </section>
 
