@@ -16,10 +16,12 @@ export function TimeGuide({ place, zones }: { place: string; zones: ZoneRef[] })
     <section id="session-times" className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
       <h2 className="text-3xl font-bold text-stone-950">Session times for Nepalis in {place}</h2>
       <p className="mt-4 max-w-3xl leading-8 text-stone-600">
-        Sessions are booked at a time that suits your time zone. This table shows what your local
-        time is in Nepal, and whether it falls inside the clinic&apos;s published hours (Sunday to
-        Friday 8 AM to 10 PM, Saturday 10 AM to 4 PM, Nepal time). If a time is outside those hours,
-        message to ask what can be arranged.
+        Sessions are arranged around your time zone and your specific work shift — including night
+        shifts and rotating schedules. This table shows what your local time is in Nepal, and
+        whether it falls inside the clinic&apos;s published hours (Sunday to Friday 8 AM to 10 PM,
+        Saturday 10 AM to 4 PM, Nepal time). If your available time falls outside those hours, or
+        your situation is urgent, message anyway — what can be arranged is worked out with you
+        directly rather than limited to a fixed slot list.
       </p>
 
       <div className="mt-8 space-y-8">

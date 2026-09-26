@@ -165,10 +165,11 @@ export default async function NepaleseAbroadPage({
             Yes, Nepalis in {place} can see a Nepali psychiatrist online. Dr.
             Kushal Kharel, a Nepal Medical Council-registered Consultant
             Psychiatrist in Kathmandu, offers online therapy and video
-            consultation for Nepalis abroad through Google Meet, in Nepali or
-            English, at a time that suits your time zone. He treats constant
-            worry, anxiety, intrusive thoughts, sleep problems and depression,
-            and every session is confidential.
+            consultation for Nepalis abroad through Google Meet or WhatsApp
+            video call, in Nepali or English, arranged around your time zone
+            and work shift in {place} — including urgent requests. He treats
+            constant worry, anxiety, intrusive thoughts, sleep problems and
+            depression, and every session is confidential.
           </p>
           <TreatedList />
           <div className="mt-8 flex flex-wrap gap-4">
@@ -237,7 +238,7 @@ export default async function NepaleseAbroadPage({
 
       <OnlineTreatmentCards
         heading={`How Dr. Kushal treats constant worry, intrusive thoughts and sleep problems for Nepalis in ${place}`}
-        intro="Therapy and medication are planned together, all through Google Meet video consultation."
+        intro="Therapy and medication are planned together, all through Google Meet or WhatsApp video call."
       />
 
       {guide.testimonial && (

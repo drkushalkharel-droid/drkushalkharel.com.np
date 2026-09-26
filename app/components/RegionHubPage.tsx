@@ -199,7 +199,7 @@ export default function RegionHubPage({ region }: { region: Region }) {
 
       <OnlineTreatmentCards
         heading={`How Dr. Kushal treats constant worry, intrusive thoughts and sleep problems for Nepalis in ${region.shortName}`}
-        intro="Therapy and medication are planned together, all through Google Meet video consultation."
+        intro="Therapy and medication are planned together, all through Google Meet or WhatsApp video call."
       />
 
       {testimonials.length > 0 && (

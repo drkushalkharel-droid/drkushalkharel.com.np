@@ -102,15 +102,26 @@ export function buildOnlineServiceJsonLd(params: {
     provider: { "@id": "https://drkushalkharel.com.np#psychiatrist" },
     audience: { "@type": "PeopleAudience", audienceType: params.audienceType },
     areaServed: params.areaServed,
-    availableChannel: {
-      "@type": "ServiceChannel",
-      name: "Google Meet video consultation",
-      serviceUrl: params.url,
-      availableLanguage: [
-        { "@type": "Language", name: "Nepali" },
-        { "@type": "Language", name: "English" },
-      ],
-    },
+    availableChannel: [
+      {
+        "@type": "ServiceChannel",
+        name: "Google Meet video consultation",
+        serviceUrl: params.url,
+        availableLanguage: [
+          { "@type": "Language", name: "Nepali" },
+          { "@type": "Language", name: "English" },
+        ],
+      },
+      {
+        "@type": "ServiceChannel",
+        name: "WhatsApp video call consultation",
+        servicePhone: "+9779861800547",
+        availableLanguage: [
+          { "@type": "Language", name: "Nepali" },
+          { "@type": "Language", name: "English" },
+        ],
+      },
+    ],
   };
 }
 

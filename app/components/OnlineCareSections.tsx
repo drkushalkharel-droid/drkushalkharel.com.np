@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check, Clock3, CreditCard, Languages, ShieldCheck, Video } from "lucide-react";
+import { Check, Clock3, CreditCard, Languages, ShieldCheck, Video, Zap } from "lucide-react";
 import { conditionsTreated, consultantTitle, onlineTreatments, type OnlineFaq } from "../data/onlineCare";
 
 // Name line shown above the H1 on every abroad page, so the role and the
@@ -34,9 +34,10 @@ export function TreatedList() {
 // Small row of facts shown under the hero on every online-care page.
 export function OnlineFactsRow() {
   const facts = [
-    { icon: Video, label: "Video call on Google Meet" },
+    { icon: Video, label: "Google Meet or WhatsApp video call" },
     { icon: Languages, label: "Nepali or English" },
-    { icon: Clock3, label: "A time that suits your time zone" },
+    { icon: Clock3, label: "Arranged around your time zone and work shift" },
+    { icon: Zap, label: "Urgent requests prioritised" },
     { icon: ShieldCheck, label: "Private and confidential" },
     { icon: CreditCard, label: "Pay by card or bank transfer" },
   ];

@@ -14,7 +14,7 @@ export const consultantTitle = "Consultant Psychiatrist";
 
 // One-line statement reused as the lead sentence wherever the service is described.
 export const googleMeetStatement =
-  "Dr. Kushal Kharel, Consultant Psychiatrist, offers online therapy and video consultation through Google Meet, in Nepali or English, for Nepalis abroad and for patients across Nepal, at a time that suits your time zone.";
+  "Dr. Kushal Kharel, Consultant Psychiatrist, offers online therapy and video consultation through Google Meet or WhatsApp video call, in Nepali or English, for Nepalis abroad and for patients across Nepal, at a time arranged around your time zone and work shift — including urgent requests.";
 
 // Plain-language list of what is treated, worded the way people search for it
 // (constant worry, repetitive thoughts, sleep problems). Shown in the intro of
@@ -62,7 +62,7 @@ export function buildAbroadFaqs(country?: string): OnlineFaq[] {
       question: country
         ? `Can I see a Nepali psychiatrist online from ${withArticle(country)}?`
         : "Can I see a Nepali psychiatrist online from abroad?",
-      answer: `Yes. Dr. Kushal Kharel, a Nepal Medical Council-registered psychiatrist in Kathmandu, sees Nepalis living ${where} by Google Meet video consultation. One realistic limit: a prescription written in Nepal ${
+      answer: `Yes. Dr. Kushal Kharel, a Nepal Medical Council-registered psychiatrist in Kathmandu, sees Nepalis living ${where} by Google Meet or WhatsApp video call. One realistic limit: a prescription written in Nepal ${
         country ? `cannot be assumed to be valid at a pharmacy ${where}` : "usually cannot be filled abroad"
       }, so medication is planned with you individually.`,
     },
@@ -71,10 +71,20 @@ export function buildAbroadFaqs(country?: string): OnlineFaq[] {
       answer: "Nepali or English, whichever you prefer. You can switch between the two during a session.",
     },
     {
+      question: "Can I have the consultation over WhatsApp video call instead of Google Meet?",
+      answer:
+        "Yes. Both are offered — use whichever app is more reliable on your connection. Say which you prefer when you book.",
+    },
+    {
       question: country
         ? `What time are the sessions for Nepalis ${where}?`
         : "What time are the sessions?",
-      answer: `At a time that suits your time zone${country ? ` in ${withArticle(country)}` : ""}. Tell us what works for you and a slot is arranged around it.`,
+      answer: `At a time arranged around your time zone${country ? ` in ${withArticle(country)}` : ""} and your work shift — including night-shift or rotating schedules. Message with the times that actually work for you and a slot is arranged around it, not a fixed menu of hours.`,
+    },
+    {
+      question: "What if my situation is urgent?",
+      answer:
+        "Say so when you message. Urgent requests are prioritised and an appointment is arranged as quickly as possible — but if there is any immediate danger to life, contact local emergency services first rather than waiting for a scheduled appointment.",
     },
     {
       question: "Is online treatment as good as in-person treatment?",

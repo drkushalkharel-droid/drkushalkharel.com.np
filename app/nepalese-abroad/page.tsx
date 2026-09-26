@@ -77,16 +77,16 @@ const faqs = [
 
 const bookingSteps = [
   {
-    name: "Message with your country and availability",
-    text: "Send a WhatsApp message to +977 9861800547 with your country of residence and a time that suits your time zone, so a slot can be arranged.",
+    name: "Message with your country, time zone and shift",
+    text: "Send a WhatsApp message to +977 9861800547 with your country of residence and a time (and work shift, if relevant) that suits you, so a slot can be arranged — say if it's urgent.",
   },
   {
     name: "Confirm the time and payment",
     text: "The clinic confirms your slot and the fee, and you pay by card, bank transfer or another method that works from your country.",
   },
   {
-    name: "Join the Google Meet video call",
-    text: "Join the Google Meet call at the agreed time. Dr. Kushal Kharel reviews your symptoms, history and current medications.",
+    name: "Join the Google Meet or WhatsApp video call",
+    text: "Join the call at the agreed time, on whichever app is more reliable on your connection. Dr. Kushal Kharel reviews your symptoms, history and current medications.",
   },
   {
     name: "Discuss diagnosis and treatment",
@@ -168,7 +168,7 @@ export default function NepaleseAbroadHubPage() {
     ...buildHowToJsonLd({
       id: `${pageUrl}#how-to`,
       name: "How to book an online psychiatric consultation from abroad",
-      description: "Steps for Nepalis living abroad to book and complete a Google Meet psychiatric consultation.",
+      description: "Steps for Nepalis living abroad to book and complete an online psychiatric consultation by Google Meet or WhatsApp video call.",
       steps: bookingSteps,
     }),
   };
@@ -194,8 +194,9 @@ export default function NepaleseAbroadHubPage() {
             Yes, you can see a Nepali psychiatrist online from abroad. Dr. Kushal
             Kharel, a Nepal Medical Council-registered Consultant Psychiatrist
             in Kathmandu, offers online therapy and video consultation for
-            Nepalis abroad through Google Meet, in Nepali or English, at a time
-            that suits your time zone. He treats constant worry, anxiety,
+            Nepalis abroad through Google Meet or WhatsApp video call, in
+            Nepali or English, arranged around your time zone and work shift —
+            including urgent requests. He treats constant worry, anxiety,
             intrusive thoughts, sleep problems and depression, and every
             session is confidential.
           </p>

@@ -120,10 +120,11 @@ export default function DiasporaPage() {
           <p id="diaspora-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             Nepalis living abroad can see Dr. Kushal Kharel, a Consultant
             Psychiatrist in Kathmandu, for online therapy and video
-            consultation for Nepalis abroad through Google Meet, in Nepali or
-            English, at a time that suits your time zone. Students,
-            professionals, workers and families use it for constant worry,
-            anxiety, intrusive thoughts, sleep problems, depression and other
+            consultation through Google Meet or WhatsApp video call, in
+            Nepali or English, arranged around your time zone and work
+            shift — including urgent requests. Students, professionals,
+            workers and families use it for constant worry, anxiety,
+            intrusive thoughts, sleep problems, depression and other
             mental-health concerns.
           </p>
           <TreatedList />
@@ -140,7 +141,7 @@ export default function DiasporaPage() {
       </section>
 
       <OnlineTreatmentCards
-        heading="What Dr. Kushal treats by Google Meet video call"
+        heading="What Dr. Kushal treats by Google Meet or WhatsApp video call"
         intro="Therapy and medication are planned together, so you do not have to choose between them."
       />
 
@@ -177,9 +178,9 @@ export default function DiasporaPage() {
         <Section h="How an overseas consultation works">
           <ol className="list-decimal space-y-2 pl-5">
             <li>Contact the clinic by WhatsApp, phone or email.</li>
-            <li>Confirm your country, time zone, privacy and whether online care is suitable.</li>
+            <li>Confirm your country, time zone, work shift, privacy and whether online care is suitable — say if it&apos;s urgent.</li>
             <li>Confirm the fee and pay by card, bank transfer or another method that works from your country.</li>
-            <li>Join the Google Meet call from a quiet private space with medicines and prior reports available.</li>
+            <li>Join the Google Meet or WhatsApp video call from a quiet private space with medicines and prior reports available.</li>
             <li>Discuss symptoms, history, safety and a personalised plan.</li>
             <li>Arrange follow-up or local coordination when needed.</li>
           </ol>
