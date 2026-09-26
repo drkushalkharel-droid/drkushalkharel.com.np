@@ -37,7 +37,7 @@ export function OnlineFactsRow() {
     { icon: Video, label: "Google Meet or WhatsApp video call" },
     { icon: Languages, label: "Nepali or English" },
     { icon: Clock3, label: "Arranged around your time zone and work shift" },
-    { icon: Zap, label: "Urgent requests prioritised" },
+    { icon: Zap, label: "Same-day consultation for urgent needs" },
     { icon: ShieldCheck, label: "Private and confidential" },
     { icon: CreditCard, label: "Pay by card or bank transfer" },
   ];

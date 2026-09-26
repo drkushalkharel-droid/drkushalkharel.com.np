@@ -5,7 +5,7 @@ import { MessageCircle, Phone } from "lucide-react";
 import { abroadGuides, getAbroadGuide } from "../../data/abroad";
 import { abroadMeta } from "../../data/abroadMeta";
 import { getRegionForCountry } from "../../data/abroadRegions";
-import { buildAbroadFaqs, googleMeetStatement, treatedSummary, withArticle } from "../../data/onlineCare";
+import { buildAbroadFaqs, googleMeetStatement, prescriptionAbroadStatement, treatedSummary, withArticle } from "../../data/onlineCare";
 import {
   buildFaqPageJsonLd,
   buildOnlineServiceJsonLd,
@@ -217,6 +217,7 @@ export default async function NepaleseAbroadPage({
                 Prescriptions and practical notes for {place}
               </h3>
               <p className="mt-2">{guide.practicalNote}</p>
+              <p className="mt-3">{prescriptionAbroadStatement}</p>
             </div>
             <EmergencyBox place={place} meta={meta} />
           </div>

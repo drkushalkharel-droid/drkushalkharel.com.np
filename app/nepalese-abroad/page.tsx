@@ -82,7 +82,7 @@ const bookingSteps = [
   },
   {
     name: "Confirm the time and payment",
-    text: "The clinic confirms your slot and the fee, and you pay by card, bank transfer or another method that works from your country.",
+    text: "The clinic confirms your slot and the fee, and you pay by card, bank transfer, or have a family member in Nepal pay locally on your behalf.",
   },
   {
     name: "Join the Google Meet or WhatsApp video call",

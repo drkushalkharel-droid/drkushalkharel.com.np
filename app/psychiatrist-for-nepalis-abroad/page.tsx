@@ -179,7 +179,7 @@ export default function DiasporaPage() {
           <ol className="list-decimal space-y-2 pl-5">
             <li>Contact the clinic by WhatsApp, phone or email.</li>
             <li>Confirm your country, time zone, work shift, privacy and whether online care is suitable — say if it&apos;s urgent.</li>
-            <li>Confirm the fee and pay by card, bank transfer or another method that works from your country.</li>
+            <li>Confirm the fee and pay by card, bank transfer, or have a family member in Nepal pay locally on your behalf.</li>
             <li>Join the Google Meet or WhatsApp video call from a quiet private space with medicines and prior reports available.</li>
             <li>Discuss symptoms, history, safety and a personalised plan.</li>
             <li>Arrange follow-up or local coordination when needed.</li>

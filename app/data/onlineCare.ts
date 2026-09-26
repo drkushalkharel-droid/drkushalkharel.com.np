@@ -35,12 +35,20 @@ export const treatedSummary =
   "constant worry, anxiety, intrusive thoughts, sleep problems and depression";
 
 // How patients pay. Dr. Kushal confirmed (2026-09-24) that payment can be made
-// by card, bank transfer or another method. No fee amount is published on the
-// site, so the wording says the clinic confirms the fee when booking. If a fee
-// or a specific payment platform is added later, change it here and every
-// abroad page, FAQ and llms.txt follows.
+// by card, bank transfer or another method, and (2026-09-26) that a family
+// member in Nepal can pay locally on the patient's behalf. No fee amount is
+// published on the site, so the wording says the clinic confirms the fee when
+// booking. If a fee or a specific payment platform is added later, change it
+// here and every abroad page, FAQ and llms.txt follows.
 export const paymentStatement =
-  "By card, bank transfer or another method that works from your country. The clinic confirms the fee and the payment options when you book.";
+  "By card, bank transfer, or by having a family member in Nepal pay locally on your behalf — whichever is easiest from your country. The clinic confirms the fee and the payment options when you book.";
+
+// The general mechanism for prescriptions abroad: a letter of recommendation
+// / clinical summary the patient can take to a local clinic, hospital or
+// psychiatrist, rather than any specific named partnership (none exists —
+// never invent one). Confirmed by Dr. Kushal 2026-09-26.
+export const prescriptionAbroadStatement =
+  "A Nepal-issued prescription cannot generally be assumed to be fillable at a pharmacy abroad. Where useful, Dr. Kushal Kharel can provide a letter of recommendation or clinical summary that you can take to a local clinic, hospital or general psychiatrist in your country of residence, to help them arrange local prescribing.";
 
 const countriesWithArticle = new Set(["USA", "UK", "Netherlands"]);
 
@@ -84,7 +92,11 @@ export function buildAbroadFaqs(country?: string): OnlineFaq[] {
     {
       question: "What if my situation is urgent?",
       answer:
-        "Say so when you message. Urgent requests are prioritised and an appointment is arranged as quickly as possible — but if there is any immediate danger to life, contact local emergency services first rather than waiting for a scheduled appointment.",
+        "Say so when you message. Same-day consultation is available for urgent needs, and every session is confidential — please don't feel hesitant to reach out. The only exception is genuine immediate danger to life, which needs local emergency services first rather than waiting for a scheduled appointment.",
+    },
+    {
+      question: "What happens about my prescription if I'm not in Nepal?",
+      answer: prescriptionAbroadStatement,
     },
     {
       question: "Is online treatment as good as in-person treatment?",

@@ -219,7 +219,7 @@ const faqs = [
   {
     question: "How does the process work for NRN (non-resident Nepali) patients — timezones, payment, prescriptions?",
     answer:
-      "Online consultation by Google Meet is arranged around your time zone wherever you're based, and you can pay by card, bank transfer or another method that works from your country (the clinic confirms the fee and options when you book). A Nepal-issued prescription cannot generally be assumed to be fillable at a pharmacy abroad, so this is discussed individually depending on your country and situation. The Nepalese Abroad guides on this site cover country-specific detail in full.",
+      "Online consultation by Google Meet or WhatsApp video call is arranged around your time zone and work shift wherever you're based, with same-day consultation available for urgent needs. You can pay by card, bank transfer, or have a family member in Nepal pay locally on your behalf. A Nepal-issued prescription cannot generally be assumed to be fillable at a pharmacy abroad — where useful, Dr. Kushal Kharel can provide a letter of recommendation or clinical summary to take to a local clinic, hospital or psychiatrist. The Nepalese Abroad guides on this site cover country-specific detail in full.",
   },
   {
     question: "Do you see teenagers/adolescents, or adults only?",
