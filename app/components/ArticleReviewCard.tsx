@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ArticleDates } from "../lib/siteSchema";
+import { SITE_LAST_REVIEWED, latestReviewDate } from "../data/reviewDate";
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -22,7 +23,7 @@ export default function ArticleReviewCard({
   lang?: "en" | "ne";
   className?: string;
 }) {
-  const reviewed = dates.reviewed ?? dates.modified;
+  const reviewed = latestReviewDate(dates.reviewed, dates.modified, SITE_LAST_REVIEWED);
 
   return (
     <div className={`rounded-lg border border-sage-200 bg-sage-50 p-5 text-sm leading-7 text-sage-950 ${className}`}>

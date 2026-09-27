@@ -1,3 +1,5 @@
+import { SITE_LAST_REVIEWED, latestReviewDate } from "../data/reviewDate";
+
 // The site's core entities (clinic, doctor, website) in schema.org JSON-LD.
 //
 // These are defined in full ONLY on the homepage and /about/ (see
@@ -228,15 +230,15 @@ export function buildWebSiteJsonLd() {
 export type ArticleDates = { published: string; modified: string; reviewed?: string };
 
 // The authorship and freshness fields for a medical article: who wrote it, who
-// reviewed it, and when. `lastReviewed` falls back to the last-modified date, since
-// the content is reviewed by the doctor whenever it is edited; supply `reviewed`
-// in the date map if a review ever happens without an edit.
+// reviewed it, and when. `lastReviewed` is the latest of the page's own review date, its
+// last-modified date and the site-wide review date in app/data/reviewDate.ts (the doctor
+// reviews content whenever it is edited, and also in full read-throughs of the site).
 export function buildArticleProvenance(dates: ArticleDates) {
   return {
     author: doctorRef,
     reviewedBy: doctorRef,
     datePublished: dates.published,
     dateModified: dates.modified,
-    lastReviewed: dates.reviewed ?? dates.modified,
+    lastReviewed: latestReviewDate(dates.reviewed, dates.modified, SITE_LAST_REVIEWED),
   };
 }

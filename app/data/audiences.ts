@@ -873,14 +873,16 @@ export const audiencePages: AudiencePage[] = [
         { label: "Repeat consultation", value: "NPR 800", note: "After the free follow-up, or once the one-week window has passed." },
         { label: "Online consultation (Google Meet or WhatsApp video call)", value: "Confirmed when you book", note: "The clinic confirms the fee and the payment options before your consultation." },
         { label: "Medication", value: "Not included", note: "Bought separately at a pharmacy." },
-        { label: "Testing, medical certificates, unusual situations", value: "Confirmed before booking", note: "Call or WhatsApp +977 9861800547." },
+        { label: "Medical certificate", value: "NPR 2,000", note: "Issued only when needed, after an evaluation." },
+        { label: "Home visit", value: "NPR 5,000 per visit", note: "Kathmandu Valley, case by case." },
+        { label: "Psychometric testing and unusual situations", value: "Confirmed before booking", note: "Call or WhatsApp +977 9861800547." },
       ],
     },
     guideSections: [
       {
         heading: "What the consultation fee includes",
         body:
-          "The consultation fee covers the psychiatric assessment and consultation itself. Any prescribed medication is bought separately at a pharmacy and is not part of the clinic's fee. Fees for testing, medical certificates, fitness-to-work documentation or unusual situations are confirmed directly with the clinic before booking.",
+          "The consultation fee covers the psychiatric assessment and consultation itself. Any prescribed medication is bought separately at a pharmacy and is not part of the clinic's fee. A receipt is given for insurance purposes. Fees for psychometric testing or unusual situations are confirmed directly with the clinic before booking.",
       },
       {
         heading: "What affects the price of a psychiatric consultation",
@@ -891,6 +893,12 @@ export const audiencePages: AudiencePage[] = [
         heading: "Follow-up fees",
         body:
           "If you return within one week of your initial visit, that first follow-up is free, once. After that free follow-up, or once the one-week window has passed, each repeat consultation costs NPR 800.",
+      },
+      {
+        heading: "Medical certificates and home visits",
+        body:
+          "A medical certificate costs NPR 2,000. It is issued only when needed, after an evaluation. A home visit costs NPR 5,000 per visit, in the Kathmandu Valley and case by case.",
+        link: { href: "/home-visit-psychiatrist-nepal/", label: "Home-visit psychiatrist in Nepal" },
       },
       {
         heading: "Online consultations and paying from abroad",
@@ -920,11 +928,11 @@ export const audiencePages: AudiencePage[] = [
       "Whether a follow-up soon after the first visit is free (yes, within one week, once)",
       "Repeat consultation cost after the free follow-up window (NPR 800)",
       "Medication costs, which are separate from the consultation fee and paid at the pharmacy",
-      "Cost of medical certificates and fitness-to-work documentation",
+      "Cost of a medical certificate (NPR 2,000) and of a home visit (NPR 5,000)",
       "Whether reduced-cost options exist for those who need them",
     ],
     practicalNote:
-      "In practice: the initial assessment is NPR 800–1,500 depending on complexity; if you come back within a week for a quick follow-up, that visit is free, once; after that, repeat consultations are NPR 800 each. Exact pricing for testing, certificates, or unusual situations is confirmed directly with the clinic before booking. If cost is a genuine barrier, mention this when you call — it's worth asking rather than avoiding care altogether.",
+      "In practice: the initial assessment is NPR 800–1,500 depending on complexity; if you come back within a week for a quick follow-up, that visit is free, once; after that, repeat consultations are NPR 800 each. A medical certificate is NPR 2,000 (only when needed, after an evaluation) and a home visit is NPR 5,000 per visit. Pricing for psychometric testing or unusual situations is confirmed directly with the clinic before booking. If cost is a genuine barrier, mention this when you call — it's worth asking rather than avoiding care altogether.",
     searchTerms: [
       "Psychiatrist fee Nepal",
       "Psychiatrist consultation cost Kathmandu",
@@ -961,7 +969,7 @@ export const audiencePages: AudiencePage[] = [
       {
         question: "What if I can't afford the standard consultation fee?",
         answer:
-          "Mention this when you contact the clinic. It's worth asking directly rather than avoiding care altogether, and Dr. Kharel's community mental-health work includes free and low-cost outreach programmes in some settings.",
+          "Mention this when you contact the clinic. It's worth asking directly rather than avoiding care altogether. Free guidance over text message is given in urgent cases and for people in genuine need, and Dr. Kharel's community mental-health work includes free and low-cost outreach programmes in some settings.",
       },
       {
         question: "Is the fee the same for an online consultation?",
@@ -973,9 +981,19 @@ export const audiencePages: AudiencePage[] = [
         answer: paymentStatement,
       },
       {
-        question: "Are medical certificates and testing part of the consultation fee?",
+        question: "How much does a medical certificate cost?",
         answer:
-          "Their fees are confirmed directly with the clinic before booking, rather than being part of the standard consultation fees listed on this page.",
+          "A medical certificate costs NPR 2,000. It is issued only when needed, after an evaluation.",
+      },
+      {
+        question: "How much does a home visit cost?",
+        answer:
+          "A home visit costs NPR 5,000 per visit, in the Kathmandu Valley and case by case.",
+      },
+      {
+        question: "Do you give a receipt for insurance or reimbursement?",
+        answer:
+          "Yes. A receipt is given for insurance purposes.",
       },
     ],
   },
@@ -1883,18 +1901,18 @@ export const audiencePages: AudiencePage[] = [
       {
         heading: "What does an ADHD assessment involve?",
         body:
-          "An ADHD assessment is a full clinical evaluation. It starts with a detailed developmental and symptom history, looking at how symptoms affect life across settings such as home, school and work, and it follows standard diagnostic criteria.\n\nFor children, the history involves parents and, where useful and with your consent, school input. For adults, the assessment looks at current symptoms and at a childhood history consistent with the diagnosis, even if ADHD was never named at the time. It also considers whether the symptoms are ADHD, anxiety, or both together.\n\nWhere the clinical picture is unclear, referral for formal psychometric testing can clarify the diagnosis. An initial consultation can be held online, but formal psychometric testing, when needed, requires an in-person visit to the Kalanki clinic in Kathmandu.",
+          "An ADHD assessment is a full clinical evaluation, and it is done in a single visit. It starts with a detailed developmental and symptom history, looking at how symptoms affect life across settings such as home, school and work, and it follows standard diagnostic criteria. Relevant family history is taken, and the ASRS (Adult ADHD Self-Report Scale) rating scale is used.\n\nFor children, the history involves parents and, where useful and with your consent, school input. For adults, the assessment looks at current symptoms and at a childhood history consistent with the diagnosis, even if ADHD was never named at the time. It also considers whether the symptoms are ADHD, anxiety, or both together.\n\nWhere the clinical picture is unclear, psychometric testing is done with a psychologist to clarify the diagnosis. An initial consultation can be held online, but psychometric testing, when needed, requires an in-person visit to the Kalanki clinic in Kathmandu.",
       },
       {
         heading: "How much does an ADHD assessment cost in Kathmandu?",
         body:
-          "Consultation fees are set out on the clinic's fee page. For reference, an initial psychiatric consultation is NPR 800–1,500 depending on the complexity and length of the assessment, and repeat consultations are NPR 800. Because every assessment differs, call or WhatsApp +977 9861800547 to have the fee for an ADHD assessment confirmed before you book. If formal psychometric testing is needed, its cost is also confirmed with the clinic first.",
+          "An ADHD assessment is charged at the clinic's standard consultation fees, which are set out on the fee page. For an in-person initial consultation that is NPR 800–1,500 depending on the complexity and length of the assessment, and repeat consultations are NPR 800. If psychometric testing with a psychologist is needed, its cost is confirmed with the clinic before you book. Call or WhatsApp +977 9861800547 for any question about the fee.",
         link: { href: "/psychiatrist-fee-nepal/", label: "Psychiatrist consultation fees in Kathmandu" },
       },
       {
         heading: "What happens after an ADHD diagnosis?",
         body:
-          "Treatment is individualised. It may include stimulant or non-stimulant medication, behavioral strategies, or both, depending on symptom severity, age and personal preference. Medication is one option, not a default. For adults, practical strategies for work or study routines usually go alongside it; for children, parent guidance and school-based support may be added. The plan is adjusted at follow-up based on what is actually helping.",
+          "Treatment is individualised. It may include stimulant or non-stimulant medication, behavioral strategies, or both, depending on symptom severity, age and personal preference. Medication is one option, not a default. For adults, practical strategies for work or study routines usually go alongside it; for children, parent guidance and school-based support may be added. The plan is adjusted at follow-up based on what is actually helping.\n\nIf a school or an employer needs documentation, Dr. Kharel writes a report based on the genuine clinical findings.",
       },
     ],
     doctorsApproach:
@@ -1978,7 +1996,17 @@ export const audiencePages: AudiencePage[] = [
       {
         question: "How much does an ADHD assessment cost in Kathmandu?",
         answer:
-          "Consultation fees are listed on the clinic's fee page: an initial psychiatric consultation is NPR 800–1,500 depending on complexity and length, and repeat consultations are NPR 800. Call or WhatsApp +977 9861800547 to have the fee for an ADHD assessment, and for any psychometric testing, confirmed before you book.",
+          "An ADHD assessment is charged at the clinic's standard consultation fees, listed on the fee page: an initial in-person consultation is NPR 800–1,500 depending on complexity and length, and repeat consultations are NPR 800. If psychometric testing with a psychologist is needed, its cost is confirmed before you book.",
+      },
+      {
+        question: "Is an ADHD assessment done in one visit?",
+        answer:
+          "Yes, the assessment is done in a single visit. Relevant family history is taken and the ASRS rating scale is used. If psychometric testing is needed, it is done with a psychologist.",
+      },
+      {
+        question: "Can I get a report for my child's school or for my employer?",
+        answer:
+          "Yes. Dr. Kharel writes a report for schools or employers based on the genuine clinical findings.",
       },
       {
         question: "What happens after an ADHD diagnosis?",
