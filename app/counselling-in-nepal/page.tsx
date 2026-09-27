@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MessageCircle, Phone } from "lucide-react";
 import { buildSpeakableSpec } from "../lib/schema";
+import RelatedContent from "../components/RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/counselling-in-nepal`;
@@ -384,6 +385,9 @@ export default function CounsellingInNepalPage() {
           </div>
         </section>
       </article>
+      <div className="mx-auto max-w-5xl px-6 pb-16 lg:px-8">
+        <RelatedContent path="/counselling-in-nepal/" heading="Related services" showCallout={false} />
+      </div>
     </main>
   );
 }

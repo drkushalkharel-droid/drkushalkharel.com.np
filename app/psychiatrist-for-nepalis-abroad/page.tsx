@@ -9,6 +9,7 @@ import {
   serializeJsonLd,
 } from "../lib/schema";
 import { FaqList, NameLine, OnlineFactsRow, OnlineTreatmentCards, TreatedList } from "../components/OnlineCareSections";
+import RelatedContent from "../components/RelatedContent";
 
 const site = "https://drkushalkharel.com.np";
 const url = `${site}/psychiatrist-for-nepalis-abroad`;
@@ -220,6 +221,9 @@ export default function DiasporaPage() {
           </p>
         </footer>
       </article>
+      <div className="mx-auto max-w-5xl px-6 pb-16 lg:px-8">
+        <RelatedContent path="/psychiatrist-for-nepalis-abroad/" heading="Related services" showCallout={false} />
+      </div>
     </main>
   );
 }

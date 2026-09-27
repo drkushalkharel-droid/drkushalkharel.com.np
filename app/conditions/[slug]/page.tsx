@@ -13,6 +13,7 @@ import {
   buildQuickFacts,
   buildSpeakableSpec,
 } from "../../lib/schema";
+import RelatedContent from "../../components/RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -595,6 +596,8 @@ export default async function ConditionPage({
               </div>
             </section>
           )}
+
+          <RelatedContent path={`/conditions/${condition.slug}/`} heading="Patient guides and related reading" />
 
           <section className="rounded-lg bg-sage-950 p-8 text-white">
             <h2 className="text-3xl font-bold">Need professional help?</h2>

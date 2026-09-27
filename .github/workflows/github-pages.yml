@@ -37,6 +37,12 @@ jobs:
       - name: Build static site
         run: npm run build
 
+      - name: SEO audit (broken internal links, page language, ratings markup, canonicals)
+        run: node scripts/seo-audit.mjs --strict
+
+      - name: Validate JSON-LD
+        run: node scripts/validate-jsonld.mjs --all
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

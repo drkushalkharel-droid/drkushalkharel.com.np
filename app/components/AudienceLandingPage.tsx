@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Phone, type LucideIcon } from "lucide-react";
 import type { AudiencePage } from "../data/audiences";
+import RelatedContent from "./RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -166,18 +167,12 @@ export default function AudienceLandingPage({
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-14 lg:px-8">
-          <h2 className="text-2xl font-bold text-stone-950">Related services</h2>
-          <div className="mt-5 grid gap-3 sm:grid-cols-3">
-            <Link href="/counselling-in-nepal" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
-              Counselling &amp; psychiatric services
-            </Link>
-            <Link href="/conditions" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
-              Conditions treated
-            </Link>
-            <Link href="/screening" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
-              Mental health screening
-            </Link>
-          </div>
+          <RelatedContent
+            path={`/${page.slug}/`}
+            heading="Related services and reading"
+            curated={["/counselling-in-nepal/", "/conditions/", "/screening/"]}
+            showCallout={false}
+          />
         </div>
       </section>
 

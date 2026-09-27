@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { GraduationCap, Mail, MessageCircle, Phone } from "lucide-react";
+import RelatedContent from "../components/RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/psychology-internship-nepal`;
@@ -216,6 +217,9 @@ export default function PsychologyInternshipPage() {
           </div>
         </div>
       </section>
+      <div className="mx-auto max-w-5xl px-6 pb-16 lg:px-8">
+        <RelatedContent path="/psychology-internship-nepal/" heading="Related services" showCallout={false} />
+      </div>
     </main>
   );
 }

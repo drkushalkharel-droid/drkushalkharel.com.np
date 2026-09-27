@@ -26,7 +26,13 @@ export default function ArticleReviewCard({
 
   return (
     <div className={`rounded-lg border border-sage-200 bg-sage-50 p-5 text-sm leading-7 text-sage-950 ${className}`}>
-      <p className="font-bold">Medically reviewed by Dr. Kushal Kharel, MD Psychiatry</p>
+      <p className="font-bold">
+        Medically reviewed by{" "}
+        <Link href="/about/" className="underline underline-offset-2 hover:text-sage-800">
+          Dr. Kushal Kharel
+        </Link>
+        , MD Psychiatry
+      </p>
       <p className="mt-1">Consultant Psychiatrist · Nepal Medical Council registered</p>
       <p className="mt-1">
         {lang === "ne" ? "प्रकाशित / Published: " : "Published: "}

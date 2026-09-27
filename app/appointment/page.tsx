@@ -104,6 +104,11 @@ export default function AppointmentPage() {
           <Link href="/psychiatric-hospital-vs-clinic-kathmandu" className="mt-3 inline-block font-semibold text-red-800 underline">When do you need a hospital instead of a clinic?</Link>
         </div>
       </section>
+
+      <p className="mx-auto mt-8 max-w-6xl px-6 pb-12 text-sm leading-7 text-stone-600 lg:px-8">
+        How your personal information is handled is described in the{" "}
+        <Link href="/privacy-policy/" className="font-semibold text-sage-800 underline">privacy policy</Link>.
+      </p>
     </main>
   );
 }

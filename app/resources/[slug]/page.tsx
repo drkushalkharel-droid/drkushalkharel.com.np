@@ -6,6 +6,7 @@ import { resources, getResource } from "../../data/resources";
 import { getCondition } from "../../data/conditions";
 import { buildSpeakableSpec } from "../../lib/schema";
 import PrintButton from "../PrintButton";
+import RelatedContent from "../../components/RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -165,6 +166,9 @@ export default async function ResourceDetailPage({
           </div>
         )}
       </article>
+      <div className="mx-auto max-w-4xl px-6 pb-16 print:hidden">
+        <RelatedContent path={`/resources/${resource.slug}/`} heading="More leaflets and guides" />
+      </div>
     </main>
   );
 }

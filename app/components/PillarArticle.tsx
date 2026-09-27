@@ -3,12 +3,13 @@ import type { Pillar } from "../data/pillars";
 import { getPageDates } from "../data/pageDates";
 import { buildArticleProvenance, clinicRef, doctorRef } from "../lib/siteSchema";
 import { formatIsoDate } from "./ArticleReviewCard";
+import RelatedContent from "./RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const internalLinks = [
   ["Online psychiatrist in Nepal", "/online-psychiatrist-nepal"], ["Dr. Kushal Kharel", "/best-psychiatrist-nepal"],
-  ["depression guide", "/depression"], ["anxiety guide", "/anxiety"], ["OCD guide", "/ocd"], ["ADHD guide", "/adhd"],
-  ["bipolar disorder guide", "/bipolar-disorder"], ["schizophrenia guide", "/schizophrenia"], ["mental-health screening", "/mental-health-screening"], ["contact the clinic", "/contact"], ["mental-health blog", "/blog"],
+  ["depression treatment in Kathmandu", "/depression-treatment-kathmandu"], ["anxiety treatment in Kathmandu", "/anxiety"], ["OCD treatment (ERP therapy)", "/erp-therapy-ocd"], ["ADHD treatment in Kathmandu", "/adhd-treatment-kathmandu"],
+  ["bipolar disorder treatment in Kathmandu", "/bipolar-disorder-treatment-kathmandu"], ["schizophrenia treatment in Kathmandu", "/schizophrenia-treatment-kathmandu"], ["free mental-health screening", "/screening"], ["contact the clinic", "/contact"], ["mental-health blog", "/blog"],
 ];
 const faqs = [
   ["Can this condition be treated?", "Many people improve substantially with an accurate diagnosis, a plan that fits their circumstances and consistent follow-up. The aim is symptom relief, recovery of daily functioning and prevention of future episodes."],
@@ -70,5 +71,5 @@ export default function PillarArticle({ pillar }: { pillar: Pillar }) {
       <section className="rounded-lg bg-sage-950 p-7 text-white"><h2 className="text-3xl font-bold">Why choose Dr. Kushal Kharel?</h2><p className="mt-4 leading-8 text-sage-100">Dr. Kushal Kharel, MD Psychiatry, is a Consultant Psychiatrist in Kathmandu. Care is grounded in careful assessment, clear explanation, evidence-based treatment and respectful partnership with patients and families.</p><p className="mt-4 leading-8 text-sage-100">Explore: {internalLinks.map(([label, href], i) => <span key={href}><Link className="underline" href={href}>{label}</Link>{i < internalLinks.length - 1 ? " · " : ""}</span>)}</p><Link href="/contact" className="mt-6 inline-block rounded-lg bg-white px-5 py-3 font-semibold text-sage-950">Contact the clinic</Link></section>
       <section className="rounded-lg border border-stone-200 bg-white p-7"><h2 className="text-2xl font-bold">Image and social media assets</h2><p className="mt-3 leading-8"><strong>Featured-image prompt:</strong> {pillar.imagePrompt}</p><p className="mt-3 leading-8"><strong>Alt text:</strong> {pillar.alt}</p><p className="mt-3 leading-8"><strong>Social snippet:</strong> Clear, compassionate information about {pillar.condition}, treatment and when to seek support in Nepal.</p><p className="mt-3 leading-8"><strong>Tweet/X:</strong> Understanding {pillar.condition} starts with an accurate assessment. Learn symptoms, evidence-based treatment and when to seek urgent care from Dr. Kushal Kharel.</p><p className="mt-3 leading-8"><strong>Facebook/LinkedIn:</strong> A practical, medically reviewed guide for patients and families in Nepal: symptoms, diagnosis, treatment choices, family support and relapse prevention for {pillar.condition}.</p></section>
       <footer className="rounded-lg border border-amber-200 bg-amber-50 p-6 text-amber-950"><p>{dates && <><strong>Published:</strong> {formatIsoDate(dates.published)}<br/><strong>Last medically reviewed:</strong> {formatIsoDate(dates.modified)}<br/></>}<strong>Dr. Kushal Kharel</strong><br/>MD Psychiatry</p><p className="mt-4"><strong>Medical disclaimer:</strong> This article provides general education and is not a diagnosis, medical advice or a substitute for personal psychiatric care. For urgent safety concerns, seek immediate in-person emergency help.</p></footer>
-    </div></article></main>;
+    </div></article><div className="mx-auto max-w-7xl px-6 pb-16 lg:px-8"><RelatedContent path={`/${pillar.slug}/`} heading="Related guides and services" /></div></main>;
 }

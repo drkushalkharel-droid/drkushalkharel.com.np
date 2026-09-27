@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { medications, getMedication } from "../../data/medications";
+import RelatedContent from "../../components/RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -153,6 +154,8 @@ export default async function MedicationPage({
             {med.references.map((ref) => <li key={ref}>{ref}</li>)}
           </ol>
         </Section>
+
+        <RelatedContent path={`/medications/${med.slug}/`} heading="Related medication and treatment guides" />
 
         <section className="rounded-lg bg-sage-950 p-8 text-white">
           <h2 className="text-3xl font-bold">Have questions about your medication?</h2>

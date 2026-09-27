@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RelatedContent from "../components/RelatedContent";
 
 const facts = [
   ["Common", "चिन्ता धेरैलाई हुने समस्या हो"],
@@ -294,6 +295,6 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
           </div>
         </section>
       </article>
-    </main>
+    <div className="mx-auto max-w-7xl px-6 pb-16 lg:px-8"><RelatedContent path={isEnglish ? "/anxiety/" : "/anxiety/np/"} lang={isEnglish ? "en" : "ne"} heading={isEnglish ? "Related guides" : "सम्बन्धित गाइडहरू"} /></div></main>
   );
 }

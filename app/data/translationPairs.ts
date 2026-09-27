@@ -30,6 +30,14 @@ function findPair(path: string): TranslationPair | undefined {
   return translationPairs.find((pair) => pair.en === p || pair.ne === p);
 }
 
+// The other-language version of a page, if it has one.
+export function counterpartOf(path: string): { href: string; lang: "en" | "ne" } | undefined {
+  const p = withSlash(path);
+  const pair = findPair(p);
+  if (!pair) return undefined;
+  return p === pair.en ? { href: pair.ne, lang: "ne" } : { href: pair.en, lang: "en" };
+}
+
 // `alternates.languages` for a page, or undefined when it has no translation.
 // Relative paths (resolved against metadataBase) for page metadata.
 export function hreflangAlternates(path: string): Record<string, string> | undefined {

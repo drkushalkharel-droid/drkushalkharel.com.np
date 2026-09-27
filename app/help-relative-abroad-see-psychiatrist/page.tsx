@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import { hreflangAlternates } from "../data/translationPairs";
 import { buildHowToJsonLd } from "../lib/schema";
+import RelatedContent from "../components/RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/help-relative-abroad-see-psychiatrist`;
@@ -359,6 +360,9 @@ export default function HelpRelativeAbroadPage() {
           </p>
         </div>
       </section>
+      <div className="mx-auto max-w-5xl px-6 pb-16 lg:px-8">
+        <RelatedContent path="/help-relative-abroad-see-psychiatrist/" heading="Related services" showCallout={false} />
+      </div>
     </main>
   );
 }

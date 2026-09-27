@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MessageCircle, Phone } from "lucide-react";
 import { buildSpeakableSpec } from "../lib/schema";
+import RelatedContent from "../components/RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/best-psychiatrist-nepal`;
@@ -292,6 +293,9 @@ export default function BestPsychiatristNepalPage() {
 
         <section className="rounded-lg bg-sage-950 p-8 text-white"><h2 className="text-3xl font-bold">Book a psychiatric consultation</h2><p className="mt-4 max-w-3xl leading-8 text-sage-100">Dr. Kushal Kharel provides confidential psychiatric consultation in Kalanki, Kathmandu, as well as online consultation when clinically appropriate. You can discuss anxiety, depression, OCD, bipolar disorder, psychosis, addiction, sleep, stress or another mental-health concern.</p><div className="mt-6 flex flex-wrap gap-4"><a href="tel:+9779861800547" className="rounded-lg bg-white px-6 py-3 font-semibold text-sage-950">Call +977 9861800547</a><a href="https://wa.me/9779861800547" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-white/50 px-6 py-3 font-semibold text-white">Message on WhatsApp</a></div></section>
       </article>
+      <div className="mx-auto max-w-5xl px-6 pb-16 lg:px-8">
+        <RelatedContent path="/best-psychiatrist-nepal/" heading="Related services" showCallout={false} />
+      </div>
     </main>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import { buildHowToJsonLd } from "../lib/schema";
+import RelatedContent from "../components/RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/psychiatric-care-for-family-in-nepal`;
@@ -363,6 +364,9 @@ export default function PsychiatricCareForFamilyPage() {
           </p>
         </div>
       </section>
+      <div className="mx-auto max-w-5xl px-6 pb-16 lg:px-8">
+        <RelatedContent path="/psychiatric-care-for-family-in-nepal/" heading="Related services" showCallout={false} />
+      </div>
     </main>
   );
 }

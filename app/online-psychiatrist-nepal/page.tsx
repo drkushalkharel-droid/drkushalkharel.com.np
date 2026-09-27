@@ -4,6 +4,7 @@ import { MessageCircle, Phone, Video } from "lucide-react";
 import { buildSpeakableSpec } from "../lib/schema";
 import { OnlineTreatmentCards } from "../components/OnlineCareSections";
 import { getPageDates } from "../data/pageDates";
+import RelatedContent from "../components/RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/online-psychiatrist-nepal`;
@@ -121,6 +122,9 @@ export default function OnlinePsychiatristNepalPage() {
         <Section title="Frequently asked questions"><div className="space-y-4">{faqs.map((faq) => <div key={faq.question} className="rounded-lg border border-stone-200 p-5"><h3 className="font-bold text-sage-950">{faq.question}</h3><p className="mt-2 leading-7 text-stone-700">{faq.answer}</p></div>)}</div></Section>
         <section className="rounded-lg bg-sage-950 p-8 text-white"><div className="flex items-center gap-3"><Video aria-hidden="true" /><h2 className="text-3xl font-bold">Request an online consultation</h2></div><p className="mt-4 max-w-3xl leading-8 text-sage-100">Call or message to discuss your concern and confirm whether online psychiatric consultation is appropriate for you.</p><div className="mt-6 flex flex-wrap gap-4"><a href="tel:+9779861800547" className="rounded-lg bg-white px-6 py-3 font-semibold text-sage-950">Call +977 9861800547</a><a href="https://wa.me/9779861800547" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-white/50 px-6 py-3 font-semibold text-white">WhatsApp</a></div></section>
       </article>
+      <div className="mx-auto max-w-5xl px-6 pb-16 lg:px-8">
+        <RelatedContent path="/online-psychiatrist-nepal/" heading="Related services" showCallout={false} />
+      </div>
     </main>
   );
 }

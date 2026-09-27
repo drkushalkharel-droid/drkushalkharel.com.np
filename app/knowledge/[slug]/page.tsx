@@ -5,6 +5,7 @@ import { Fragment } from "react";
 import { notFound } from "next/navigation";
 import { docArticles } from "../../data/docArticles";
 import ArticleReviewCard from "../../components/ArticleReviewCard";
+import RelatedContent from "../../components/RelatedContent";
 import { knowledgeDates } from "../../data/knowledgeDates";
 import { hreflangAlternates } from "../../data/translationPairs";
 import { buildArticleProvenance, doctorRef } from "../../lib/siteSchema";
@@ -190,10 +191,6 @@ export default async function KnowledgeArticlePage({
 
   const pageLang = articleLanguage(article);
   const dates = knowledgeDates[article.slug];
-
-  const relatedArticles = docArticles.filter(
-    (item) => item.category === article.category && item.slug !== article.slug,
-  );
 
   const faqs = [
     [
@@ -384,24 +381,11 @@ export default async function KnowledgeArticlePage({
             </Fragment>
           ))}
 
-          {relatedArticles.length > 0 && (
-            <section className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-3xl font-bold text-sage-950">
-                Related {article.category} articles
-              </h2>
-              <div className="mt-5 grid gap-3 sm:grid-cols-2">
-                {relatedArticles.slice(0, 6).map((item) => (
-                  <Link
-                    key={item.slug}
-                    href={`/knowledge/${item.slug}`}
-                    className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50"
-                  >
-                    {item.title.split(" | ")[0]}
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
+          <RelatedContent
+            path={`/knowledge/${article.slug}/`}
+            lang={pageLang}
+            browseAll={pageLang === "ne" ? { href: "/knowledge/", label: "सबै नेपाली रोगी गाइडहरू" } : { href: "/knowledge/", label: "Browse all patient guides" }}
+          />
 
           <section className="rounded-lg bg-sage-950 p-8 text-white">
             <h2 className="text-3xl font-bold">Need professional help?</h2>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink, Phone } from "lucide-react";
 import SiteEntitySchema from "../components/SiteEntitySchema";
+import RelatedContent from "../components/RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const title = "About Dr. Kushal Kharel — Consultant Psychiatrist, Kathmandu";
@@ -202,6 +203,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <div className="mx-auto max-w-5xl px-6 pb-16 lg:px-8">
+        <RelatedContent path="/about/" heading="Related services" showCallout={false} />
+      </div>
     </main>
   );
 }

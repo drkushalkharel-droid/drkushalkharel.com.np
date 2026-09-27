@@ -119,6 +119,11 @@ export default function MedicalDisclaimerPage() {
             .
           </p>
         </section>
+
+        <p className="mt-8 text-sm leading-7 text-stone-600">
+          How your personal information is handled is described in the{" "}
+          <Link href="/privacy-policy/" className="font-semibold text-sage-800 underline">privacy policy</Link>.
+        </p>
       </article>
     </main>
   );
