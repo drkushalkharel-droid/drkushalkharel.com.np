@@ -117,7 +117,11 @@ export default function AudienceLandingPage({
         <div className="mx-auto max-w-4xl px-6 py-14 lg:px-8">
           <div className="rounded-lg border border-sage-200 bg-sage-50 p-6 md:p-8">
             <h2 className="text-2xl font-bold text-sage-950">How Dr. Kharel approaches this</h2>
-            <p className="mt-4 leading-8 text-sage-900">{page.doctorsApproach}</p>
+            {page.doctorsApproach.split("\n\n").map((paragraph) => (
+              <p key={paragraph.slice(0, 24)} className="mt-4 leading-8 text-sage-900">
+                {paragraph}
+              </p>
+            ))}
           </div>
         </div>
       </section>
@@ -174,7 +178,28 @@ export default function AudienceLandingPage({
             {page.guideSections?.map((section) => (
               <div key={section.heading} className="mt-10 first:mt-0">
                 <h2 className="text-3xl font-bold text-stone-950">{section.heading}</h2>
-                <p className="mt-4 leading-8 text-stone-700">{section.body}</p>
+                {section.body.split("\n\n").map((paragraph) => (
+                  <p key={paragraph.slice(0, 24)} className="mt-4 leading-8 text-stone-700">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {page.nepaliSections && page.nepaliSections.length > 0 && (
+        <section lang="ne" className="bg-stone-50">
+          <div className="mx-auto max-w-4xl px-6 py-14 lg:px-8">
+            {page.nepaliSections.map((section) => (
+              <div key={section.heading} className="mt-10 first:mt-0">
+                <h2 className="text-3xl font-bold text-stone-950">{section.heading}</h2>
+                {section.body.split("\n\n").map((paragraph) => (
+                  <p key={paragraph.slice(0, 24)} className="mt-4 leading-8 text-stone-700">
+                    {paragraph}
+                  </p>
+                ))}
               </div>
             ))}
           </div>

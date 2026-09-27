@@ -7,7 +7,7 @@ export default function Conditions() {
       icon: "😊",
       title: "Depression",
       desc: "Persistent sadness, loss of interest, fatigue and low mood.",
-      href: "/knowledge/depression-treatment-nepal",
+      href: "/depression-treatment-kathmandu",
     },
     {
       icon: "😰",

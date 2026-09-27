@@ -84,14 +84,9 @@ export async function generateMetadata({
   const title = isBilingual
     ? `${article.title} | Dr. Kushal Kharel`
     : `${article.title} | Nepali Patient Guide`;
-  const seoTitle =
-    article.slug === "anxiety-treatment-nepal"
-      ? "Anxiety Treatment in Nepal | Symptoms, Panic Attacks & Help"
-      : article.slug === "depression-treatment-nepal"
-        ? "Depression Treatment in Nepal | Symptoms, Therapy & Help"
-        : article.nepaliMeaning
-          ? `${article.title} (${article.nepaliMeaning.term}) — Meaning, Symptoms and Treatment`
-          : title;
+  const seoTitle = article.nepaliMeaning
+    ? `${article.title} (${article.nepaliMeaning.term}) — Meaning, Symptoms and Treatment`
+    : title;
   const keywordTitle = article.title.split(" | ")[0];
   const meta = metaFor(`/knowledge/${article.slug}/`, { title: seoTitle, description: article.description });
 
@@ -120,24 +115,6 @@ export async function generateMetadata({
             "mental health tips Nepal",
             "मानसिक स्वास्थ्य कसरी सुधार्ने",
             "mental health doctor Kathmandu",
-          ]
-        : []),
-      ...(article.slug === "anxiety-treatment-nepal"
-        ? [
-            "anxiety treatment Nepal",
-            "anxiety doctor Nepal",
-            "panic attack treatment Nepal",
-            "psychiatrist for anxiety Kathmandu",
-            "online anxiety consultation Nepal",
-          ]
-        : []),
-      ...(article.slug === "depression-treatment-nepal"
-        ? [
-            "depression treatment Nepal",
-            "depression doctor Nepal",
-            "psychiatrist for depression Kathmandu",
-            "depression counselling Nepal",
-            "online depression consultation Nepal",
           ]
         : []),
       ...(article.category === "Suicide Prevention"

@@ -63,7 +63,7 @@ const treatments = [
   },
 ];
 
-export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
+export default function AnxietyGuide({ lang, extraSections }: { lang: "en" | "np"; extraSections?: { heading: string; body: string }[] }) {
   const isEnglish = lang === "en";
 
   return (
@@ -232,6 +232,21 @@ export default function AnxietyGuide({ lang }: { lang: "en" | "np" }) {
             ))}
           </div>
         </section>
+
+        {extraSections && extraSections.length > 0 && (
+          <section id="more" className="mt-14 space-y-10">
+            {extraSections.map((section) => (
+              <div key={section.heading}>
+                <h2 className="text-3xl font-bold text-stone-950">{section.heading}</h2>
+                {section.body.split("\n\n").map((paragraph) => (
+                  <p key={paragraph.slice(0, 24)} className="mt-4 leading-8 text-stone-700">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ))}
+          </section>
+        )}
 
         <section id="help" className="mt-14 rounded-lg border border-clay-200 bg-clay-50 p-8">
           <h2 className="text-3xl font-bold text-stone-950">

@@ -31,7 +31,7 @@ const REPRESENTATIVE = [
   "/about/", // profile: full entities
   "/blog/adult-adhd-nepal/", // blog article
   "/knowledge/adhd/", // Nepali knowledge article
-  "/knowledge/anxiety-treatment-nepal/", // bilingual knowledge article
+  "/knowledge/burnout-at-work/", // bilingual knowledge article
   "/conditions/adhd/", // clinical reference
   "/depression-treatment-kathmandu/", // service/commercial page
   "/psychiatrist-fee-nepal/", // fee page

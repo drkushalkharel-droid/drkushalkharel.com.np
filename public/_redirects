@@ -19,11 +19,11 @@
 /cities/dharan /online-psychiatrist-nepal 301
 /cities/janakpur /online-psychiatrist-nepal 301
 /cities/hetauda /online-psychiatrist-nepal 301
-/knowledge/best-therapy-for-anxiety /knowledge/anxiety-treatment-nepal 301
-/knowledge/anxiety-depression-treatment-options-nepal /knowledge/anxiety-treatment-nepal 301
+/knowledge/best-therapy-for-anxiety /anxiety 301
+/knowledge/anxiety-depression-treatment-options-nepal /anxiety 301
 /knowledge/best-psychiatrist-anxiety-depression-nepal /best-psychiatrist-nepal 301
 /knowledge/alcohol-addiction-treatment-nepal /blog/alcohol-addiction-treatment-nepal 301
-/knowledge/managing-depression /knowledge/depression-treatment-nepal 301
+/knowledge/managing-depression /depression-treatment-kathmandu 301
 
 # Added 2026-09-27 (seo/consolidation-merges): 41 country pages merged into 8 regional pages,
 # two articles merged, three thin city pages retired. Generated from redirects/cloudflare-redirects.csv.
@@ -74,3 +74,6 @@
 /nepalese-abroad/thailand /nepalese-abroad/southeast-asia 301
 /nepalese-abroad/uk /nepalese-abroad/uk-ireland 301
 /nepalese-abroad/usa /nepalese-abroad/usa-canada 301
+/knowledge/anxiety-treatment-nepal /anxiety 301
+/knowledge/depression-treatment-nepal /depression-treatment-kathmandu 301
+/knowledge/sleep-problems-which-doctor-kathmandu /sleep-problems-treatment-nepal 301

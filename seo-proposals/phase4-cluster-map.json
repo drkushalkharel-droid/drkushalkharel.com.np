@@ -1,5 +1,5 @@
 {
-  "status": "M1 and M5 APPROVED 2026-09-27 and applied. M2, M3 and M4 are HELD until Search Console data shows whether the page to be removed currently outranks the page to be kept.",
+  "status": "M1-M5 all APPROVED and applied on branch seo/consolidation-merges. M1 and M5 were approved 2026-09-27; M2-M4 were held for Search Console data, which arrived the same day and showed the pages being removed get 0 clicks (positions 32-38, or 5 impressions in 3 months).",
   "clusterCount": 8,
   "pagesCovered": 124,
   "clusters": [
@@ -1018,7 +1018,7 @@
       "fromInlinks": 3,
       "fromWords": 1723,
       "intoWords": 805,
-      "approved": false
+      "approved": true
     },
     {
       "id": "M3",
@@ -1031,7 +1031,7 @@
       "fromInlinks": 5,
       "fromWords": 1912,
       "intoWords": 2441,
-      "approved": false
+      "approved": true
     },
     {
       "id": "M4",
@@ -1044,7 +1044,7 @@
       "fromInlinks": 4,
       "fromWords": 1335,
       "intoWords": 823,
-      "approved": false
+      "approved": true
     },
     {
       "id": "M5",

@@ -20,6 +20,8 @@ export type AudiencePage = {
   // Longer clinical sections shown between "Common concerns" and the FAQ. Used where a
   // separate article on the same topic was merged into this page.
   guideSections?: { heading: string; body: string }[];
+  // Nepali-language sections (rendered as lang="ne") merged in from a Nepali guide on the same topic.
+  nepaliSections?: { heading: string; body: string }[];
   // A screening tool id from app/data/screening.ts to offer on this page.
   screeningId?: string;
 };
@@ -1544,8 +1546,77 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "depression-treatment-kathmandu",
+    guideSections: [
+      {
+        heading: "Is it depression or just stress?",
+        body:
+          "People looking for a depression doctor in Nepal often describe feeling empty, exhausted, unmotivated, tearful, irritable or disconnected from life. Stress and sadness are part of being human, especially after a loss, illness, relationship problem or financial difficulty. Depression may be present when low mood or loss of interest persists for at least two weeks and makes daily life, work, study, relationships or self-care significantly harder.\n\nDepression does not look the same in everyone. Some people feel sad; others mainly notice fatigue, body aches, poor concentration, anger, sleep changes, appetite changes or a loss of hope. Men, young people and older adults may describe depression differently. There is no need to prove that you are “depressed enough” before asking for an assessment.",
+      },
+      {
+        heading: "Common depression symptoms",
+        body:
+          "Possible symptoms include feeling low, numb or hopeless; losing interest or pleasure; low energy; difficulty thinking or making decisions; feeling worthless or guilty; moving or speaking more slowly; changes in sleep or appetite; withdrawing from other people; and thoughts that life is not worth living. Symptoms can be emotional, physical and behavioural.\n\nNot every low mood is major depressive disorder, and depression can occur alongside anxiety, grief, trauma, alcohol or drug use, chronic pain and physical health conditions. A psychiatrist may also check for bipolar disorder, because episodes of unusually high energy, reduced need for sleep, impulsive behaviour or elevated mood change which treatment approach is safest.",
+      },
+      {
+        heading: "How is depression diagnosed?",
+        body:
+          "There is no single blood test or brain scan that proves depression. Diagnosis is based on a careful clinical conversation about symptoms, their duration, daily functioning, medical history, current medicines, sleep, substance use, family history and safety. A doctor may recommend tests or a physical-health review if symptoms could be caused or worsened by another condition, such as thyroid problems, anaemia, nutritional deficiency or medication effects.\n\nAn assessment is not about labelling a person. It is about understanding what is happening, ruling out important causes and building a plan that fits the person’s life. You can bring a trusted family member or notes about symptoms if that makes the conversation easier.",
+      },
+      {
+        heading: "Depression treatment: counselling, therapy and medication",
+        body:
+          "Effective depression treatment is personalised. Counselling can offer support during a difficult period, while structured therapies such as CBT, behavioural activation and interpersonal therapy help people change patterns that maintain low mood and rebuild daily activity, connection and confidence. Treatment may also include support for sleep, nutrition, routine, exercise, grief, relationship stress or substance use.\n\nAntidepressant medication may be recommended when depression is moderate to severe, long-lasting, recurrent, or not improving enough with therapy alone. A psychiatrist should discuss the expected benefits, possible side effects, interactions, alternatives and when treatment will be reviewed. Medicines do not erase personality or solve every life problem; when used appropriately, they can reduce symptoms enough for a person to engage with recovery.",
+      },
+      {
+        heading: "How long does depression treatment take?",
+        body:
+          "Recovery is individual. Some people feel an early improvement in sleep, appetite or daily routine before mood improves. Therapy skills take practice, and medication may need time and review before its effect is clear. Follow-up appointments help monitor progress, side effects, safety and whether a different approach is needed.\n\nA temporary improvement does not mean care should stop suddenly. The plan should be reviewed with the clinician, particularly if symptoms have returned before or if there are major changes in stress, physical health, pregnancy plans or substance use. Small steps—getting out of bed, eating a regular meal, replying to one message or attending one appointment—can be meaningful parts of recovery.",
+      },
+      {
+        heading: "When depression needs urgent help",
+        body:
+          "Seek urgent help now if you are thinking about suicide or self-harm, have made a plan or attempt, feel unable to stay safe, are severely confused, or are not eating, drinking or caring for yourself. Tell a trusted person, go to the nearest emergency department or contact local emergency services. Do not stay alone with an immediate safety risk.\n\nIf you are worried about someone else, ask directly and calmly whether they are thinking of harming themselves, listen without judgement, remove immediate dangers only if it is safe to do so, and help them reach emergency or professional care. Asking about suicide does not put the idea into someone’s mind; it can open a path to support.",
+      },
+      {
+        heading: "Can I consult a psychiatrist online for depression?",
+        body:
+          "Online psychiatric consultation can be appropriate for many follow-ups, medication reviews, psychoeducation and selected initial assessments. It can make care more accessible for people outside Kathmandu or people who find travel difficult. Be in a private place, keep a list of medicines and previous reports nearby, and tell the clinician where you are during the appointment in case urgent local support is needed.\n\nOnline care is not a replacement for emergency support. Severe safety risk, overdose, severe withdrawal, psychosis or urgent medical symptoms need immediate in-person help. The clinic can advise whether an online or in-person appointment is right for your first consultation.",
+      },
+    ],
+    nepaliSections: [
+      {
+        heading: "डा. खरेलको उपचार शैली",
+        body:
+          "आफूलाई खाली, थकित वा उत्साहविहीन महसुस भइरहेको बताउने बिरामीसँग म पहिलो भेटमै यो कति समयदेखि रहेको छ र दैनिक जीवनका कुन-कुन भाग असर परेको छ भनेर बुझ्न समय लगाउँछु, तुरुन्तै औषधि लेख्दिन। धेरैलाई परामर्श र दिनचर्या पुनर्निर्माण गर्ने संरचित थेरापीले नै सघाउँछ; डिप्रेसन मध्यम वा गम्भीर वा लामो समयदेखिको भएमा एन्टिडिप्रेसेन्ट थप्छु, र के आशा गर्ने र कहिले पुनरावलोकन गर्ने भनेर स्पष्ट बुझाउँछु। सुधार प्रायः सीधा रेखामा हुँदैन, त्यसैले फलोअपमा निरन्तर संलग्न रहन्छु।",
+      },
+      {
+        heading: "डिप्रेसनका लक्षणहरू के के हुन्?",
+        body:
+          "उदासी, शून्यता वा निराशा महसुस हुनु, पहिले मन पर्ने कुरामा रुचि नरहनु, ऊर्जा कम हुनु, सोच्न वा निर्णय गर्न गाह्रो हुनु, आफूलाई दोषी वा बेकम्मा ठान्नु, चाल वा बोली सुस्त हुनु, निद्रा वा भोकमा परिवर्तन हुनु, मानिसबाट टाढा हुँदै जानु, र जीवन बाँच्न लायक छैन जस्तो सोच आउनु डिप्रेसनका सामान्य लक्षण हुन्।\n\nसबैमा डिप्रेसन उस्तै तरिकाले देखिँदैन — कसैलाई उदासी लाग्छ भने कसैलाई मुख्यतया थकान, शरीर दुखाइ, रिस वा ध्यान केन्द्रित गर्न गाह्रो हुने समस्या हुन्छ। डिप्रेसन चिन्ता, शोक, आघात (trauma), रक्सी वा लागुऔषध सेवन र अन्य शारीरिक रोगसँगै पनि देखिन सक्छ।",
+      },
+      {
+        heading: "डिप्रेसनको निदान कसरी हुन्छ?",
+        body:
+          "डिप्रेसन छ कि छैन भनेर पत्ता लगाउने कुनै एउटै रगत जाँच वा स्क्यान हुँदैन। निदान लक्षणको अवधि, दैनिक कामकाजमा परेको असर, स्वास्थ्य इतिहास, हालका औषधि, निद्रा, लागुऔषध सेवन, पारिवारिक इतिहास र सुरक्षाबारे विस्तृत कुराकानीमा आधारित हुन्छ। थाइरोइड समस्या, रक्तअल्पता वा पोषणको कमी जस्ता कारणले पनि यस्तै लक्षण देखा पर्न सक्ने भएकाले आवश्यक परेमा थप जाँच सिफारिस गरिन्छ।\n\nमूल्याङ्कन कसैलाई लेबल लगाउनका लागि होइन — यो के भइरहेको छ भन्ने बुझ्न, महत्त्वपूर्ण कारण पहिचान गर्न र व्यक्तिको जीवनसँग मिल्ने योजना बनाउनका लागि हो। सजिलो होस् भनेर विश्वासिलो परिवारको सदस्य वा लक्षणको टिपोट साथमा ल्याउन सक्नुहुन्छ।",
+      },
+      {
+        heading: "डिप्रेसनको उपचारमा के के समावेश हुन्छ?",
+        body:
+          "डिप्रेसनको उपचार व्यक्तिगत हुन्छ। परामर्शले गाह्रो समयमा सहयोग दिन सक्छ, भने CBT, behavioural activation जस्ता संरचित थेरापीले उदासी कायम राख्ने ढाँचा बदल्न र दैनिक गतिविधि, सम्बन्ध र आत्मविश्वास पुनर्निर्माण गर्न मद्दत गर्छ। निद्रा, पोषण, दिनचर्या, व्यायाम, शोक वा सम्बन्धगत तनावमा पनि सहयोग समावेश हुन सक्छ।\n\nडिप्रेसन मध्यम वा गम्भीर, लामो समयदेखिको वा थेरापीले मात्र पर्याप्त सुधार नल्याएको अवस्थामा एन्टिडिप्रेसेन्ट औषधि सिफारिस गर्न सकिन्छ। मनोचिकित्सकले फाइदा, सम्भावित साइड इफेक्ट, अन्य विकल्प र कहिले पुनरावलोकन गरिने बताउनुपर्छ। औषधिले व्यक्तित्व मेटाउँदैन वा हरेक समस्या समाधान गर्दैन, तर उपयुक्त प्रयोग गर्दा रिकभरीमा संलग्न हुन सक्ने बनाउँछ।",
+      },
+      {
+        heading: "डिप्रेसनमा तत्काल सहयोग कहिले लिने?",
+        body:
+          "आत्महत्या वा आफूलाई हानि पुर्‍याउने सोच आइरहेको छ, योजना वा प्रयास भइसकेको छ, आफू सुरक्षित रहन सक्दिन जस्तो लाग्छ, गम्भीर भ्रम छ, वा खान, पिउन वा आफ्नो हेरचाह गर्न सकिरहनुभएको छैन भने तुरुन्त सहयोग लिनुहोस्। विश्वासिलो व्यक्तिलाई बताउनुहोस्, नजिकको अस्पतालको आकस्मिक सेवामा जानुहोस् वा आकस्मिक सेवामा सम्पर्क गर्नुहोस्। तत्काल जोखिम भएमा एक्लै नबस्नुहोस्।\n\nअरू कसैको बारेमा चिन्तित हुनुहुन्छ भने सीधै तर शान्त भएर सोध्नुहोस् — के उनी आफूलाई हानि पुर्‍याउने सोचमा छन्? कुनै पूर्वाग्रह नराखी सुन्नुहोस्, सुरक्षित भएसम्म तत्काल खतरा हुने वस्तु हटाउनुहोस्, र आकस्मिक वा पेशेवर सहयोगसम्म पुर्‍याउन मद्दत गर्नुहोस्। आत्महत्याबारे सोध्नु हानिकारक होइन — यसले सहयोगको बाटो खोल्न सक्छ।",
+      },
+      {
+        heading: "डिप्रेसनबारे छोटो जानकारी",
+        body:
+          "डिप्रेसन कमजोरी वा इच्छाशक्तिको कमी होइन। दुई हप्ता वा बढी समयदेखि उदासी, रुचि हराउने, थकान, निद्रा वा भोकमा परिवर्तन, निराशा, एक्लोपन वा दैनिक काममा असर भइरहेको छ भने मनोचिकित्सक वा मानसिक स्वास्थ्यकर्मीसँग कुरा गर्नु उपयोगी हुन्छ। परामर्श, थेरापी, दिनचर्यामा सुधार र आवश्यक परेमा औषधिको संयोजनबाट धेरै मानिसमा सुधार हुन्छ।\n\nआफूलाई हानि पुर्‍याउने सोच, आत्महत्याको विचार वा आफू सुरक्षित रहन नसक्ने अवस्था भएमा तुरुन्त नजिकको अस्पतालको आकस्मिक सेवामा जानुहोस् वा विश्वासिलो व्यक्तिलाई साथमा राख्नुहोस्।",
+      },
+    ],
     doctorsApproach:
-      "My first priority with depression is always a safety check, done gently and without alarm, before anything else. From there I look at what's realistic for that person specifically — sometimes therapy alone is enough, sometimes medication helps someone get to a place where therapy can actually work — and I review that at every follow-up rather than deciding it once and leaving it.",
+      "My first priority with depression is always a safety check, done gently and without alarm, before anything else. From there I look at what's realistic for that person specifically — sometimes therapy alone is enough, sometimes medication helps someone get to a place where therapy can actually work — and I review that at every follow-up rather than deciding it once and leaving it.\n\nWhen someone describes feeling empty, exhausted or unmotivated, I spend the first consultation understanding how long this has lasted and what parts of daily life it is affecting, rather than jumping straight to a prescription. For many patients, counselling and structured approaches like behavioural activation help rebuild routine and connection; when depression is moderate to severe or long-lasting, I add antidepressant medication, explaining clearly what to expect and when we will review it together. Recovery is rarely a straight line, so I stay closely involved through follow-up rather than treating one appointment as the whole plan.",
     title: "Depression Treatment in Kathmandu, Nepal",
     headline: "Depression treatment in Kathmandu, Nepal",
     shortDescription:
@@ -2073,8 +2144,67 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "sleep-problems-treatment-nepal",
+    guideSections: [
+      {
+        heading: "What should I actually do about my sleep problem?",
+        body:
+          "Start with the basics that make the biggest difference for most people: a consistent wake-up time every day (even on weekends), reducing caffeine after midday, keeping screens away for the last 30-60 minutes before bed, and getting out of bed if you're lying awake and frustrated rather than forcing sleep. These changes alone resolve many mild, short-term sleep problems within a few weeks. If sleep hasn't improved after genuinely trying this for two to three weeks, it's time to see a doctor rather than continuing to self-manage.",
+      },
+      {
+        heading: "When sleep problems need more than self-help",
+        body:
+          "See a doctor sooner, not later, if poor sleep has lasted more than a month, if you're loudly snoring or someone has noticed you stop breathing briefly during sleep, if you feel excessively sleepy during the day despite enough time in bed, if worry or racing thoughts are what's keeping you awake, or if low mood, alcohol use or a physical health condition might be contributing. Sleep problems are rarely just about sleep itself — they're often connected to anxiety, depression, physical health or a specific sleep disorder that needs its own diagnosis.",
+      },
+      {
+        heading: "Which doctor should I actually see in Kathmandu?",
+        body:
+          "If your sleep problem seems connected to stress, worry, low mood, racing thoughts, or you're not sure what's causing it, a psychiatrist is the right starting point — this is by far the most common underlying picture behind ongoing insomnia. If you or someone else has noticed loud snoring with breathing pauses (suggesting possible sleep apnea), an ENT specialist or a sleep-study referral may be needed first. Restless, uncomfortable legs at night that improve with movement point toward a specific neurological pattern worth mentioning to whichever doctor you see first, since it changes the approach. When in doubt, a psychiatric assessment can help clarify which direction is right rather than guessing which specialist to book first.",
+      },
+      {
+        heading: "What happens at a sleep-focused psychiatric consultation",
+        body:
+          "A sleep-focused consultation covers your sleep pattern in detail (timing, quality, what happens when you wake at night), daytime functioning, caffeine and alcohol use, mood and anxiety symptoms, physical health, and current medicines, since several common medicines and health conditions can disrupt sleep. Treatment may include structured sleep-focused CBT (the most evidence-based approach for chronic insomnia), addressing an underlying mood or anxiety condition, or medication for short-term relief while other approaches take effect, rather than long-term sleeping pills as a default.",
+      },
+      {
+        heading: "Booking a sleep consultation in Kathmandu, in person or online",
+        body:
+          "Dr. Kushal Kharel assesses and treats sleep problems as part of general psychiatric practice at the Kalanki, Kathmandu clinic, in person or online, and can advise whether a referral to another specialist is needed based on your specific pattern. Call or WhatsApp +977 9861800547 to describe your sleep problem and how long it's been going on.",
+      },
+    ],
+    nepaliSections: [
+      {
+        heading: "डा. खरेलको उपचार शैली",
+        body:
+          "निद्रा बिग्रिनु 'तनाव मात्र' हो कि अरू केही हो भनेर अलमलिएर आउने बिरामीलाई म तुरुन्तै निद्राको औषधि नदिई पहिले समय, घुर्ने बानी, दौडिरहेको सोचाइ र मुडबारे विस्तृत सोध्छु। यो प्रायः चिन्ता वा उदासीसँग जोडिएको देखिन्छ भने सामान्य मनोचिकित्सा उपचारकै भागको रूपमा हेर्छु, तर सास रोकिने खालको घुर्ने आवाज सुनिएमा पहिले ENT विशेषज्ञकहाँ रेफर गर्छु। जुनसुकै अवस्थामा पनि फलोअपमा प्रगति पुनरावलोकन गर्छु, औषधि अनिश्चित कालसम्म जारी राख्दिन।",
+      },
+      {
+        heading: "निद्राको समस्याका लागि वास्तवमा के गर्ने?",
+        body:
+          "धेरैलाई सबैभन्दा फरक पार्ने आधारभूत कुराबाट सुरु गर्नुहोस्: हरेक दिन (शनिबार-आइतबार पनि) एउटै समयमा उठ्ने बानी, मध्यान्हपछि क्याफिन घटाउने, सुत्नुभन्दा ३०-६० मिनेटअघि स्क्रिनबाट टाढा रहने, र निद्रा नलागी झर्किरहनुभएको छ भने जबरजस्ती सुत्ने प्रयास नगरी ओछ्यानबाट उठ्ने। यी परिवर्तनले मात्र धेरैको हल्का, छोटो समयको निद्रा समस्या केही हप्तामै समाधान हुन्छ। साँच्चै दुई-तीन हप्ता प्रयास गर्दा पनि निद्रा नसुध्रिए डाक्टरलाई भेट्ने बेला भइसक्यो।",
+      },
+      {
+        heading: "कहिले निद्रा समस्या स्व-सहयोगभन्दा बढी चाहिन्छ?",
+        body:
+          "निद्रा समस्या एक महिनाभन्दा बढी रहेको छ, ठूलो घुर्ने आवाज आउने वा सुतिरहँदा केही समय सास रोकिएको कसैले याद गरेको छ, ओछ्यानमा पर्याप्त समय बिताउँदा पनि दिनभरि अत्यधिक निद्रा लाग्छ, चिन्ता वा दौडिरहेको सोचाइले निदाउन दिइरहेको छैन, वा उदासी, रक्सी सेवन वा शारीरिक स्वास्थ्य समस्याले योगदान गरिरहेको हुन सक्छ भने ढिलो नगरी डाक्टरलाई भेट्नुहोस्। निद्रा समस्या प्रायः निद्राको मात्र विषय हुँदैन — यो प्रायः चिन्ता, डिप्रेसन, शारीरिक स्वास्थ्य वा छुट्टै निदान चाहिने निद्रा विकारसँग जोडिएको हुन्छ।",
+      },
+      {
+        heading: "काठमाडौंमा वास्तवमा कुन डाक्टरलाई देखाउने?",
+        body:
+          "तपाईंको निद्रा समस्या तनाव, चिन्ता, उदासी, दौडिरहेको सोचाइसँग जोडिएको जस्तो लाग्छ भने, वा कारण थाहा छैन भने, मनोचिकित्सक नै सही सुरुवात बिन्दु हो — लगातार अनिद्राको पछाडि प्रायः यही सबैभन्दा सामान्य कारण हुन्छ। तपाईं वा कसैले सास रोकिने खालको ठूलो घुर्ने आवाज याद गर्नुभएको छ (सम्भावित स्लिप एप्निया संकेत गर्दै) भने, पहिले ENT विशेषज्ञ वा स्लिप-स्टडी रेफरल चाहिन सक्छ। राति खुट्टा बेचैन र असजिलो हुने तर हल्लाउँदा सजिलो हुने लक्षणले एउटा विशिष्ट स्नायु सम्बन्धी ढाँचा संकेत गर्छ, जुन जुनसुकै डाक्टरलाई पहिले भेटे पनि उल्लेख गर्नुपर्छ किनकि यसले उपचारको दृष्टिकोण बदल्छ। अन्योल भएमा, कुन विशेषज्ञलाई पहिले भेट्ने भनेर अड्कल गर्नुभन्दा मनोचिकित्सकीय मूल्याङ्कनले सही दिशा छुट्याउन मद्दत गर्न सक्छ।",
+      },
+      {
+        heading: "निद्रा समस्याका लागि मनोचिकित्सकीय परामर्शमा के हुन्छ?",
+        body:
+          "निद्राकेन्द्रित परामर्शमा तपाईंको निद्राको ढाँचा (समय, गुणस्तर, राति ब्युँझँदा के हुन्छ), दिनको कामकाज, क्याफिन र रक्सी सेवन, मुड र चिन्ताका लक्षण, शारीरिक स्वास्थ्य, र हालका औषधिबारे विस्तृत कुराकानी हुन्छ, किनभने धेरै सामान्य औषधि र स्वास्थ्य समस्याले निद्रामा बाधा पुर्‍याउन सक्छन्। उपचारमा संरचित निद्राकेन्द्रित CBT (दीर्घकालीन अनिद्राको लागि सबैभन्दा प्रमाणित विधि), अन्तर्निहित मुड वा चिन्ता समस्याको उपचार, वा अन्य विधिले काम गर्दासम्म छोटो समयका लागि औषधि समावेश हुन सक्छ — दीर्घकालीन निद्राको औषधि पहिलो विकल्पका रूपमा होइन।",
+      },
+      {
+        heading: "काठमाडौंमा निद्रा परामर्शका लागि बुक गर्ने, प्रत्यक्ष वा अनलाइन",
+        body:
+          "डा. कुशल खरेलले कालंकी, काठमाडौंको क्लिनिकमा सामान्य मनोचिकित्सा अभ्यासकै भागको रूपमा निद्रा समस्याको मूल्याङ्कन र उपचार गर्नुहुन्छ, प्रत्यक्ष वा अनलाइन, र तपाईंको विशिष्ट ढाँचाअनुसार अर्को विशेषज्ञकहाँ रेफर गर्नुपर्ने हो कि होइन भनेर सल्लाह दिन सक्नुहुन्छ। आफ्नो निद्रा समस्या र त्यो कति समयदेखि भइरहेको छ भनेर बताउन +977 9861800547 मा फोन वा ह्वाट्सएप गर्नुहोस्।",
+      },
+    ],
     doctorsApproach:
-      "I ask about sleep in detail before reaching for a sleeping tablet — habits, screen use, caffeine timing, and whether an underlying anxiety or low mood is actually what's keeping you up. Medication has a place for some people, but it's rarely my starting point, since fixing the underlying driver usually holds up better over time.",
+      "I ask about sleep in detail before reaching for a sleeping tablet — habits, screen use, caffeine timing, and whether an underlying anxiety or low mood is actually what's keeping you up. Medication has a place for some people, but it's rarely my starting point, since fixing the underlying driver usually holds up better over time.\n\nWhen someone comes to me unsure whether poor sleep is 'just stress' or something else, I start by asking about the pattern in detail -- timing, snoring, racing thoughts, mood -- rather than reaching straight for a sleeping pill. If it looks connected to anxiety or low mood, which is the most common picture I see, I treat it as part of general psychiatric care; if snoring with breathing pauses suggests sleep apnea, I refer to an ENT specialist first. Either way, I review progress at follow-up rather than leaving someone on medication indefinitely.",
     title: "Sleep Problems & Insomnia Treatment in Nepal",
     headline: "Sleep problems and insomnia treatment in Nepal, and online",
     shortDescription:

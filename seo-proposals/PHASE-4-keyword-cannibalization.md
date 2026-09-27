@@ -1,14 +1,12 @@
 # Phase 4 proposal: pages competing for the same condition
 
-**Status: M1 and M5 APPROVED 2026-09-27 and built on branch `seo/consolidation-merges`. M2, M3 and M4 are ON HOLD
-until Search Console data shows whether the page to be removed currently outranks the one to be kept.** The
-psychosis and schizophrenia pages stay separate, the OCD page is widened to "OCD treatment in Kathmandu: ERP and
-medication", and the Nepali guides are titled Nepali-first (title and heading only, never the URL).
-The non-destructive parts (internal links, "Related" boxes, sharper titles and H1s) do not need
-approval and I will do them in Phases 5 and 7. They leave every URL alive.
-
-Full detail (every page in each cluster, current title, H1, word count, inlinks) is in
-[phase4-cluster-map.json](phase4-cluster-map.json).
+**Status: all five merges (M1-M5) APPROVED and built on branch `seo/consolidation-merges`.** M1 and M5 were
+approved on 2026-09-27; M2-M4 were held for Search Console data, which arrived the same day. Over the last three
+months the pages being removed had **0 clicks** (M2: 65 impressions at average position 38; M3: 11 impressions at
+position 32; M4: 5 impressions at position 6.8), and the pages being kept ranked equal or better, so nothing
+that ranks is lost. Also decided: the psychosis and schizophrenia pages stay separate, the OCD page is widened to
+"OCD treatment in Kathmandu: ERP and medication", and the Nepali guides are titled Nepali-first (title and heading
+only, never the URL). The text below is the original proposal, kept for the record.
 
 ---
 

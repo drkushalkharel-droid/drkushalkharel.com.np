@@ -140,7 +140,7 @@ function toCsv(rows) {
 fs.mkdirSync(OUT_DIR, { recursive: true });
 const mainRows = includePending ? combined : readyRows;
 fs.writeFileSync(path.join(OUT_DIR, "cloudflare-redirects.csv"), toCsv(mainRows));
-if (!includePending) {
+if (!includePending && pendingRows.length) {
   fs.writeFileSync(path.join(OUT_DIR, "cloudflare-redirects.pending-approval.csv"), toCsv(pendingRows));
 } else {
   const stale = path.join(OUT_DIR, "cloudflare-redirects.pending-approval.csv");
@@ -149,7 +149,7 @@ if (!includePending) {
 
 console.log(`cloudflare-redirects.csv: ${mainRows.length} redirects (${mainRows.length * 2} CSV rows: with and without trailing slash)${includePending ? " [includes pending]" : " [safe to upload today]"}`);
 if (!includePending) {
-  console.log(`cloudflare-redirects.pending-approval.csv: ${pendingRows.length} redirects (not yet approved, do not upload)`);
+  console.log(pendingRows.length ? `cloudflare-redirects.pending-approval.csv: ${pendingRows.length} redirects (not yet approved, do not upload)` : "Nothing pending: every proposed redirect is approved and in cloudflare-redirects.csv");
   if (willBeCreated.length) console.log(`  ${new Set(willBeCreated.map((m) => m.to)).size} target pages do not exist yet (new regional pages)`);
 }
 const flat = combined.filter((r) => r.flattened);

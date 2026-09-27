@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import RedirectNotice from "../../components/RedirectNotice";
 
-const destination = "/knowledge/anxiety-treatment-nepal/";
+const destination = "/anxiety/";
 
 export const metadata: Metadata = {
   title: "Best Therapy for Anxiety — page moved",

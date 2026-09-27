@@ -136,11 +136,7 @@ export const clusters: Cluster[] = [
 // Pages proposed for merging (seo-proposals/PHASE-4). Until the owner approves,
 // they stay live but nothing new links to them; each shows a callout to the page
 // it would merge into.
-export const pendingMerges: Record<string, string> = {
-  "/knowledge/depression-treatment-nepal/": "/depression-treatment-kathmandu/",
-  "/knowledge/anxiety-treatment-nepal/": "/anxiety/",
-  "/knowledge/sleep-problems-which-doctor-kathmandu/": "/sleep-problems-treatment-nepal/",
-};
+export const pendingMerges: Record<string, string> = {};
 
 // Natural-language link text for service and hub pages (used as anchor text).
 export const pageLabels: Record<string, string> = {

@@ -12,12 +12,13 @@ is what makes this possible.
 
 | File | What it is | Upload it? |
 |---|---|---|
-| `cloudflare-redirects.csv` | **66 redirects**: the 41 country pages to their regional pages, the 12 retired city pages, the old pillar pages (`/depression/`, `/adhd/`, `/ocd/`, `/schizophrenia/`, `/bipolar-disorder/`), 5 retired `/knowledge/` pages, the two merged articles (`/blog/panic-attack-treatment-kathmandu/` and `/knowledge/sleep-and-mental-health/`), and `/mental-health-screening/` to `/screening/` | **Yes** |
-| `cloudflare-redirects.pending-approval.csv` | 3 redirects for merges that are still on hold (the depression, anxiety and "which doctor for sleep problems" knowledge pages) | **No. Not approved yet.** |
+| `cloudflare-redirects.csv` | **69 redirects**: the 41 country pages to their regional pages, the 12 retired city pages, the old pillar pages (`/depression/`, `/adhd/`, `/ocd/`, `/schizophrenia/`, `/bipolar-disorder/`), 8 retired `/knowledge/` pages (including the depression, anxiety and "which doctor for sleep problems" guides), the merged panic-attack article, and `/mental-health-screening/` to `/screening/` | **Yes** |
+
+There is no second file any more: every proposed merge has been approved, so all redirects are in this one.
 
 Each redirect appears twice in the file, with and without the trailing `/`, because Cloudflare's
 documentation does not say whether it treats them as the same address. The extra lines are harmless.
-The file has 132 lines for the 66 redirects.
+The file has 138 lines for the 69 redirects.
 
 **If you already uploaded the earlier 20-redirect file:** the new file contains all 20 of those plus the
 new ones, so replace that list with this one (or create a new list from this file, point the rule at it,
@@ -32,14 +33,14 @@ and delete the old list). Do not keep both lists active with the same addresses.
 4. Give it a name such as `legacy-urls-2026` and a short description, then click **Next**.
 5. Choose the option to **import a CSV file**, then drag `cloudflare-redirects.csv` onto the box (or click
    **browse** and choose it).
-6. Cloudflare shows the redirects it read. Check that the count looks right (132 lines) and click **Next**.
+6. Cloudflare shows the redirects it read. Check that the count looks right (138 lines) and click **Next**.
 7. Review once more, click **Next**, then **Continue to Redirect Rules**.
 8. **This step is easy to miss:** a list does nothing until a rule turns it on. On the next screen:
    - **Rule name:** `Apply legacy URL redirects`
    - **Select the list** you just created.
    - Click **Save and Deploy**.
 
-Cloudflare's free plan allows 10,000 bulk redirects, so 132 lines is well within the limit.
+Cloudflare's free plan allows 10,000 bulk redirects, so 138 lines is well within the limit.
 
 ## Check that it worked
 
@@ -56,6 +57,8 @@ bar should change:
 | `drkushalkharel.com.np/nepalese-abroad/dubai/` | `/nepalese-abroad/gulf/` |
 | `drkushalkharel.com.np/nepalese-abroad/usa/` | `/nepalese-abroad/usa-canada/` |
 | `drkushalkharel.com.np/blog/panic-attack-treatment-kathmandu/` | `/panic-attack-treatment-kathmandu/` |
+| `drkushalkharel.com.np/knowledge/depression-treatment-nepal/` | `/depression-treatment-kathmandu/` |
+| `drkushalkharel.com.np/knowledge/anxiety-treatment-nepal/` | `/anxiety/` |
 
 If you (or I) use a terminal: `curl -I https://drkushalkharel.com.np/depression/` should show
 `HTTP/2 301` and a `location:` line. Today it shows `HTTP/2 200`.

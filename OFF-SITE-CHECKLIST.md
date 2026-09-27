@@ -49,7 +49,7 @@ near me".
 
 - [ ] **Search Console** (search.google.com/search-console): add the property as a **Domain** property
       (drkushalkharel.com.np). Verify with a DNS record in Cloudflare.
-- [ ] **Submit the sitemap:** `https://drkushalkharel.com.np/sitemap.xml`. It now has 337 URLs with real
+- [ ] **Submit the sitemap:** `https://drkushalkharel.com.np/sitemap.xml`. It now has 334 URLs with real
       last-modified dates and hreflang for the Nepali pages.
 - [ ] **Request indexing** (URL Inspection, then "Request indexing") for the pages that changed most: the
       homepage, `/faq/`, `/about/`, `/psychiatrist-fee-nepal/`, `/adhd-treatment-kathmandu/`,
@@ -59,9 +59,8 @@ near me".
       request per day, so start with these.
 - [ ] **Bing Webmaster Tools** (bing.com/webmasters): use "Import from Google Search Console" (fastest), then
       submit the same sitemap. (Your deploy already notifies Bing and others through IndexNow.)
-- [ ] **Export data for me.** Two exports would let me decide the three merges still on hold (the depression,
-      anxiety and "which doctor for sleep problems" knowledge pages, M2 to M4 in `seo-proposals/`):
-      *Performance, Pages* for the last 6 to 12 months, and *Performance, Queries*.
+- [ ] **Keep exporting.** Every month or so, export *Performance, Pages* and *Queries* the same way you did for
+      me. The export you already sent settled the merge decisions; later ones show whether the changes worked.
 - [ ] **After the country pages merge:** in *Performance, Pages*, watch the eight `/nepalese-abroad/` region pages
       for the next 4 to 8 weeks. Clicks that used to go to a country page (for example `/nepalese-abroad/dubai/`)
       should move to its region page. If a big market such as UAE loses clicks and does not recover, tell me and we
@@ -148,9 +147,9 @@ For reference, these support the steps above and need nothing from you:
 - Every page now has the correct language tag; Nepali pages are marked as Nepali.
 - No review-rating markup remains (it risked a manual action); doctor and clinic details appear once, on the
   homepage and About page, and other pages point to them.
-- Titles and descriptions are in range and unique on all 337 pages.
+- Titles and descriptions are in range and unique on all 334 pages.
 - The sitemap has real dates and Nepali alternates.
-- The 41 country pages are merged into 8 regional pages (each country is a section on its region's page), two
+- The 41 country pages are merged into 8 regional pages (each country is a section on its region's page), five
   overlapping articles are merged into the pages that cover them, and three thin city pages are retired.
-- Legacy addresses redirect once you upload `redirects/cloudflare-redirects.csv` (66 redirects; steps in
+- Legacy addresses redirect once you upload `redirects/cloudflare-redirects.csv` (69 redirects; steps in
   `redirects/UPLOAD-STEPS.md`).

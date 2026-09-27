@@ -37,8 +37,9 @@ shown to you with it.
 
 **Link to Phase 4.** Once page 4 or 5 exists, the Nepali articles in that group point to it instead of to the
 English page (one line in `app/data/contentClusters.ts`). For depression this also gives merge **M2** a cleaner
-alternative: instead of folding `/knowledge/depression-treatment-nepal/` into the English page, its Nepali
-sections could move to the new Nepali page. I will lay out both options when you decide M2.
+alternative: M2 has been done by folding `/knowledge/depression-treatment-nepal/` into the English page, with
+its Nepali sections shown in a Nepali block at the bottom of that page. When page 4 is built, those Nepali sections
+can move onto it and the English page can drop them.
 
 **What I need for A:** approval of the five URLs, a decision on numerals, and your review time.
 

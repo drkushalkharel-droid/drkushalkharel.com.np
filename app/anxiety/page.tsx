@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PillarArticle from "../components/PillarArticle";
+import { anxietyExtraSectionsEn } from "../data/anxietyExtraSections";
 import { getPillar } from "../data/pillars";
 import { hreflangAlternates } from "../data/translationPairs";
 import { seoDescription, seoTitle } from "../lib/seoText";
@@ -131,7 +132,7 @@ export default function AnxietyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <PillarArticle pillar={getPillar("anxiety")!} />
+      <PillarArticle pillar={getPillar("anxiety")!} extraSections={anxietyExtraSectionsEn} />
     </>
   );
 }

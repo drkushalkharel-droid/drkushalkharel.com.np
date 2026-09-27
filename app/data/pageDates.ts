@@ -879,10 +879,6 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-09-23",
     "modified": "2026-09-23"
   },
-  "/knowledge/anxiety-treatment-nepal/": {
-    "published": "2026-07-20",
-    "modified": "2026-09-23"
-  },
   "/knowledge/autism-spectrum-disorder/": {
     "published": "2026-07-06",
     "modified": "2026-07-06"
@@ -930,10 +926,6 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   "/knowledge/dementia/": {
     "published": "2026-07-06",
     "modified": "2026-07-06"
-  },
-  "/knowledge/depression-treatment-nepal/": {
-    "published": "2026-07-20",
-    "modified": "2026-08-24"
   },
   "/knowledge/eating-disorder/": {
     "published": "2026-07-06",
@@ -1070,10 +1062,6 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   "/knowledge/sexual-health-performance-anxiety-intimacy-nepal/": {
     "published": "2026-08-06",
     "modified": "2026-08-06"
-  },
-  "/knowledge/sleep-problems-which-doctor-kathmandu/": {
-    "published": "2026-09-02",
-    "modified": "2026-09-02"
   },
   "/knowledge/smiling-depression-nepal/": {
     "published": "2026-09-02",

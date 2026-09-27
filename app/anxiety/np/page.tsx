@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AnxietyGuide from "../AnxietyGuide";
+import { anxietyExtraSectionsNp } from "../../data/anxietyExtraSections";
 import { hreflangAlternates } from "../../data/translationPairs";
 import { languageMetadata } from "../../lib/language";
 import { seoDescription, seoTitle } from "../../lib/seoText";
@@ -125,7 +126,7 @@ export default function AnxietyNepaliPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <AnxietyGuide lang="np" />
+      <AnxietyGuide lang="np" extraSections={anxietyExtraSectionsNp} />
     </>
   );
 }
