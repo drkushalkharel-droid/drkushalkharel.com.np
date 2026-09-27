@@ -12,15 +12,16 @@ import {
   serializeJsonLd,
 } from "../lib/schema";
 import { FaqList, NameLine, OnlineFactsRow, OnlineTreatmentCards, TreatedList } from "../components/OnlineCareSections";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/nepalese-abroad`;
-const title = "Consultant Psychiatrist & Online Therapy for Nepalis Abroad";
+const title = seoTitle("/nepalese-abroad/", "Consultant Psychiatrist & Online Therapy for Nepalis Abroad");
 const description =
-  "Consultant psychiatrist & online therapy for Nepalis abroad: constant worry, intrusive thoughts, sleep problems. Google Meet, at a time that suits your time zone.";
+  seoDescription("/nepalese-abroad/", "Consultant psychiatrist & online therapy for Nepalis abroad: constant worry, intrusive thoughts, sleep problems. Google Meet, at a time that suits your time zone.");
 
 export const metadata: Metadata = {
-  title: { absolute: title },
+  title,
   description,
   alternates: {
     canonical: "/nepalese-abroad/",

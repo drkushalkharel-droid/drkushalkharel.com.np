@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getRegion, type Region } from "../data/abroadRegions";
+import { metaFor } from "./seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -7,10 +8,11 @@ const siteUrl = "https://drkushalkharel.com.np";
 export function regionMetadata(slug: Region["slug"]): Metadata {
   const region = getRegion(slug);
   const url = `${siteUrl}/nepalese-abroad/${region.slug}`;
+  const meta = metaFor(`/nepalese-abroad/${region.slug}/`, { title: region.title, description: region.description });
 
   return {
-    title: { absolute: region.title },
-    description: region.description,
+    title: meta.title,
+    description: meta.description,
     alternates: { canonical: `/nepalese-abroad/${region.slug}/` },
     keywords: [
       ...region.keywords,
@@ -19,8 +21,8 @@ export function regionMetadata(slug: Region["slug"]): Metadata {
       "constant worry and intrusive thoughts online therapy",
     ],
     openGraph: {
-      title: region.title,
-      description: region.description,
+      title: meta.title,
+      description: meta.description,
       url,
       siteName: "Dr. Kushal Kharel",
       images: [{ url: "/images/doctor.png", width: 1200, height: 630, alt: "Dr. Kushal Kharel - Consultant Psychiatrist" }],
@@ -28,8 +30,8 @@ export function regionMetadata(slug: Region["slug"]): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      title: region.title,
-      description: region.description,
+      title: meta.title,
+      description: meta.description,
       images: ["/images/doctor.png"],
     },
   };

@@ -2,13 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Pill } from "lucide-react";
 import { medications } from "../data/medications";
+import { metaFor } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
+const meta = metaFor("/medications/", { title: "Psychiatric Medication Information", description: "Educational information on psychiatric medications — what they treat, common side effects, precautions, time to effect and safe discontinuation — by Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal." });
+
 export const metadata: Metadata = {
-  title: "Psychiatric Medication Information",
+  title: meta.title,
   description:
-    "Educational information on psychiatric medications — what they treat, common side effects, precautions, time to effect and safe discontinuation — by Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal.",
+    meta.description,
   keywords: [
     "Psychiatric medication information Nepal",
     "SSRI explained",

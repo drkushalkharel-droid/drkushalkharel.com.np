@@ -4,11 +4,12 @@ import Link from "next/link";
 import { ExternalLink, Phone } from "lucide-react";
 import SiteEntitySchema from "../components/SiteEntitySchema";
 import RelatedContent from "../components/RelatedContent";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
-const title = "About Dr. Kushal Kharel — Consultant Psychiatrist, Kathmandu";
+const title = seoTitle("/about/", "About Dr. Kushal Kharel — Consultant Psychiatrist, Kathmandu");
 const description =
-  "Dr. Kushal Kharel's professional background: MD Psychiatry, Nepal Medical Council registration #27199, clinical experience, credentials and areas of clinical focus.";
+  seoDescription("/about/", "Dr. Kushal Kharel's professional background: MD Psychiatry, Nepal Medical Council registration #27199, clinical experience, credentials and areas of clinical focus.");
 
 export const metadata: Metadata = {
   title,

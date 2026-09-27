@@ -3,12 +3,13 @@ import Link from "next/link";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import { buildHowToJsonLd } from "../lib/schema";
 import RelatedContent from "../components/RelatedContent";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/psychiatric-care-for-family-in-nepal`;
-const title = "Psychiatric Care for Family in Nepal, Arranged From Abroad";
+const title = seoTitle("/psychiatric-care-for-family-in-nepal/", "Psychiatric Care for Family in Nepal, Arranged From Abroad");
 const description =
-  "A practical guide for Nepalis living abroad arranging mental health care for a parent, sibling or relative in Nepal — how to start, home visits, confidentiality and staying involved.";
+  seoDescription("/psychiatric-care-for-family-in-nepal/", "A practical guide for Nepalis living abroad arranging mental health care for a parent, sibling or relative in Nepal — how to start, home visits, confidentiality and staying involved.");
 
 export const metadata: Metadata = {
   title,

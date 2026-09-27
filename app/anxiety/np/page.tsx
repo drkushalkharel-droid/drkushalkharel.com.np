@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import AnxietyGuide from "../AnxietyGuide";
 import { hreflangAlternates } from "../../data/translationPairs";
 import { languageMetadata } from "../../lib/language";
+import { seoDescription, seoTitle } from "../../lib/seoText";
 
 const pageUrl = "https://drkushalkharel.com.np/anxiety/np";
-const title = "चिन्ता विकार उपचार काठमाडौं | लक्षण, कारण र समाधान";
+const title = seoTitle("/anxiety/np/", "चिन्ता विकार उपचार काठमाडौं | लक्षण, कारण र समाधान");
 const description =
-  "डा. कुशल खरेल, काठमाडौंका कन्सल्टेन्ट साइकाइट्रिस्टबाट चिन्ता विकारका लक्षण, कारण, उपचार विधि (CBT, औषधि) र कहिले सहयोग लिने भन्ने बारे नेपाली भाषामा जानकारी।";
+  seoDescription("/anxiety/np/", "डा. कुशल खरेल, काठमाडौंका कन्सल्टेन्ट साइकाइट्रिस्टबाट चिन्ता विकारका लक्षण, कारण, उपचार विधि (CBT, औषधि) र कहिले सहयोग लिने भन्ने बारे नेपाली भाषामा जानकारी।");
 
 export const metadata: Metadata = {
   title,

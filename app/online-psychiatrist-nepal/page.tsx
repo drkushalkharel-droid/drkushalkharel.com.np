@@ -5,15 +5,16 @@ import { buildSpeakableSpec } from "../lib/schema";
 import { OnlineTreatmentCards } from "../components/OnlineCareSections";
 import { getPageDates } from "../data/pageDates";
 import RelatedContent from "../components/RelatedContent";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/online-psychiatrist-nepal`;
-const title = "Online Psychiatrist in Nepal | Psychiatric Consultation from Home";
+const title = seoTitle("/online-psychiatrist-nepal/", "Online Psychiatrist in Nepal | Psychiatric Consultation from Home");
 const description =
-  "Online psychiatric consultation in Nepal for anxiety, depression, OCD, sleep problems, addiction and follow-up care. Learn when online care is suitable and how to book.";
+  seoDescription("/online-psychiatrist-nepal/", "Online psychiatric consultation in Nepal for anxiety, depression, OCD, sleep problems, addiction and follow-up care. Learn when online care is suitable and how to book.");
 
 export const metadata: Metadata = {
-  title: { absolute: title },
+  title,
   description,
   alternates: { canonical: "/online-psychiatrist-nepal/" },
   keywords: [

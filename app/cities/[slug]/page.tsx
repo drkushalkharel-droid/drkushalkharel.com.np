@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MapPin, MessageCircle, Phone } from "lucide-react";
 import { cityGuides, getCityGuide } from "../../data/cities";
+import { metaFor } from "../../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -29,8 +30,10 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = `Psychiatric Consultation in ${guide.city} | Dr. Kushal Kharel`;
-  const description = `${guide.headline}. Learn common mental health problems in ${guide.city}, when to seek psychiatric help, and call Dr. Kushal Kharel at +9779861800547.`;
+  const { title, description } = metaFor(`/cities/${guide.slug}/`, {
+    title: `Psychiatric Consultation in ${guide.city}`,
+    description: `${guide.headline}. Learn common mental health problems in ${guide.city} and when to seek psychiatric help.`,
+  });
 
   return {
     title,

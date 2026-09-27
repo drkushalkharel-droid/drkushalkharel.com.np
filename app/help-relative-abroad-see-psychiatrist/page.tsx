@@ -4,12 +4,13 @@ import { Mail, MessageCircle, Phone } from "lucide-react";
 import { hreflangAlternates } from "../data/translationPairs";
 import { buildHowToJsonLd } from "../lib/schema";
 import RelatedContent from "../components/RelatedContent";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/help-relative-abroad-see-psychiatrist`;
-const title = "Getting a Family Member Who Lives Abroad to See a Psychiatrist";
+const title = seoTitle("/help-relative-abroad-see-psychiatrist/", "Getting a Family Member Who Lives Abroad to See a Psychiatrist");
 const description =
-  "A practical guide for families trying to help a relative living abroad access psychiatric care — recognizing warning signs from a distance, starting the conversation, and what online or local consultation actually involves.";
+  seoDescription("/help-relative-abroad-see-psychiatrist/", "A practical guide for families trying to help a relative living abroad access psychiatric care — recognizing warning signs from a distance, starting the conversation, and what online or local consultation actually involves.");
 
 export const metadata: Metadata = {
   title,

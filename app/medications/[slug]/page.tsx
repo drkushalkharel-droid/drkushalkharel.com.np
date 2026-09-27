@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { medications, getMedication } from "../../data/medications";
 import RelatedContent from "../../components/RelatedContent";
+import { metaFor } from "../../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -19,15 +20,18 @@ export async function generateMetadata({
   const med = getMedication(slug);
   if (!med) return {};
 
-  const title = `${med.name}: Uses, Side Effects & What to Know`;
+  const { title, description } = metaFor(`/medications/${med.slug}/`, {
+    title: `${med.name}: Uses, Side Effects & What to Know`,
+    description: med.shortDescription,
+  });
   return {
     title,
-    description: med.shortDescription,
+    description,
     alternates: { canonical: `/medications/${med.slug}/` },
     keywords: [med.name, `${med.name} Nepal`, `${med.name} side effects`, "Dr Kushal Kharel", "Psychiatrist Kathmandu"],
     openGraph: {
       title,
-      description: med.shortDescription,
+      description,
       url: `${siteUrl}/medications/${med.slug}`,
       siteName: "Dr. Kushal Kharel",
       images: [{ url: "/images/doctor.png", width: 1200, height: 630 }],

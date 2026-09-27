@@ -5,6 +5,7 @@ import { getCondition } from "../../data/conditions";
 import { screeningTools, getScreeningTool } from "../../data/screening";
 import { buildSpeakableSpec } from "../../lib/schema";
 import SingleScreeningTool from "../SingleScreeningTool";
+import { metaFor } from "../../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -24,18 +25,21 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = `${tool.searchQuestion} Free ${tool.shortTitle} Screening Test`;
+  const { title, description } = metaFor(`/screening/${tool.id}/`, {
+    title: `${tool.searchQuestion} Free ${tool.shortTitle} Screening Test`,
+    description: tool.seoDescription,
+  });
 
   return {
     title,
-    description: tool.seoDescription,
+    description,
     alternates: {
       canonical: `/screening/${tool.id}/`,
     },
     keywords: tool.keywords,
     openGraph: {
       title,
-      description: tool.seoDescription,
+      description,
       url: `${siteUrl}/screening/${tool.id}`,
       siteName: "Dr. Kushal Kharel",
       images: [{ url: "/images/doctor.png", width: 1200, height: 630 }],
@@ -44,7 +48,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title,
-      description: tool.seoDescription,
+      description,
       images: ["/images/doctor.png"],
     },
   };

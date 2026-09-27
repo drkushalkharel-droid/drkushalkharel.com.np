@@ -2,13 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getSupportingArticlesByCategory } from "../data/supportingArticles";
 import BlogIndex from "../components/BlogIndex";
+import { metaFor } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
+const meta = metaFor("/blog/", { title: "Mental Health Articles & Psychiatry Guides for Nepal", description: "Browse mental health articles by topic — anxiety, depression, addiction, relationships, sleep and more — from Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal." });
+
 export const metadata: Metadata = {
-  title: "Mental Health Articles & Psychiatry Guides for Nepal",
+  title: meta.title,
   description:
-    "Browse mental health articles by topic — anxiety, depression, addiction, relationships, sleep and more — from Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal.",
+    meta.description,
   keywords: [
     "Mental Health Articles Nepal",
     "Psychiatry Blog Nepal",
@@ -18,7 +21,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/blog/" },
   openGraph: {
-    title: "Mental Health Articles & Psychiatry Guides for Nepal",
+    title: meta.title,
     description: "Browse mental health articles by topic, from Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal.",
     url: `${siteUrl}/blog`,
     siteName: "Dr. Kushal Kharel",

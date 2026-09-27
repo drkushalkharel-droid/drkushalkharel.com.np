@@ -3,10 +3,11 @@ import Link from "next/link";
 import ScreeningPlatform from "./ScreeningPlatform";
 import { screeningTools } from "../data/screening";
 import { buildHowToJsonLd, buildSpeakableSpec } from "../lib/schema";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
-const title = "Mental Health Screening Nepal | 13 Free Self-Rated Tools";
+const title = seoTitle("/screening/", "Mental Health Screening Nepal | 13 Free Self-Rated Tools");
 const description =
-  "Free self-rated mental health screening tools covering depression, anxiety, social anxiety, OCD, PTSD, bipolar mood, adult ADHD, alcohol use, insomnia, panic disorder, eating disorders and postpartum depression. Get a score and contact Dr. Kushal Kharel for psychiatric consultation.";
+  seoDescription("/screening/", "Free self-rated mental health screening tools covering depression, anxiety, social anxiety, OCD, PTSD, bipolar mood, adult ADHD, alcohol use, insomnia, panic disorder, eating disorders and postpartum depression. Get a score and contact Dr. Kushal Kharel for psychiatric consultation.");
 
 export const metadata: Metadata = {
   title,

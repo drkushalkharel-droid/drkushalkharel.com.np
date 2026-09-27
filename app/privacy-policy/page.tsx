@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
-const title = "Privacy Policy";
+const title = seoTitle("/privacy-policy/", "Privacy Policy");
 const description =
-  "How Dr. Kushal Kharel's website collects, uses and protects your information, including analytics, contact details and website cookies.";
+  seoDescription("/privacy-policy/", "How Dr. Kushal Kharel's website collects, uses and protects your information, including analytics, contact details and website cookies.");
 
 export const metadata: Metadata = {
   title,

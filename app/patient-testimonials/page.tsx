@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Mail, MessageCircle, Phone, Quote } from "lucide-react";
 import { abroadGuides } from "../data/abroad";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/patient-testimonials`;
-const title = "Patient Testimonials | Dr. Kushal Kharel";
+const title = seoTitle("/patient-testimonials/", "Patient Testimonials | Dr. Kushal Kharel");
 const description =
-  "Real, anonymised patient testimonials for Dr. Kushal Kharel's online and in-person psychiatric consultations, from patients in Nepal and Nepalis living abroad.";
+  seoDescription("/patient-testimonials/", "Real, anonymised patient testimonials for Dr. Kushal Kharel's online and in-person psychiatric consultations, from patients in Nepal and Nepalis living abroad.");
 
 export const metadata: Metadata = {
   title,

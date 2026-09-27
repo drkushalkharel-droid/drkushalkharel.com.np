@@ -3,12 +3,13 @@ import Link from "next/link";
 import { MessageCircle, Phone } from "lucide-react";
 import { buildSpeakableSpec } from "../lib/schema";
 import RelatedContent from "../components/RelatedContent";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/counselling-in-nepal`;
-const title = "Counselling and Psychiatric Services in Nepal";
+const title = seoTitle("/counselling-in-nepal/", "Counselling and Psychiatric Services in Nepal");
 const description =
-  "Looking for a counselor, counselling doctor or stress counseling in Nepal? Learn the difference between counselling, psychotherapy and psychiatric consultation, and how to get confidential support from Dr. Kushal Kharel in Kathmandu, in person or online.";
+  seoDescription("/counselling-in-nepal/", "Looking for a counselor, counselling doctor or stress counseling in Nepal? Learn the difference between counselling, psychotherapy and psychiatric consultation, and how to get confidential support from Dr. Kushal Kharel in Kathmandu, in person or online.");
 
 export const metadata: Metadata = {
   title,

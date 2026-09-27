@@ -11,12 +11,15 @@ import { supportingArticles } from "./data/supportingArticles";
 import { articleDates } from "./data/articleDates";
 import { medications } from "./data/medications";
 import { hreflangAlternatesAbsolute } from "./data/translationPairs";
+import { getPageDates } from "./data/pageDates";
 
 export const dynamic = "force-static";
 
 const siteUrl = "https://drkushalkharel.com.np";
-// Keep the sitemap current whenever content changes so crawlers can prioritize
-// newly published patient resources and guides.
+// <lastmod> for every URL comes from app/data/pageDates.ts: the real date the page's
+// content last changed, from git history (regenerate with `npm run dates`). The
+// per-route dates written below are placeholders that the final map overrides. A
+// lastmod that is just the build date on every URL teaches crawlers to ignore it.
 const lastModified = new Date("2026-09-26");
 
 // The site is configured with trailingSlash: true (next.config.ts), so every
@@ -279,7 +282,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // app/data/translationPairs.ts, the same registry the page <head> tags use.
   return allRoutes.map((route) => {
     const url = withSlash(route.url);
-    const languages = hreflangAlternatesAbsolute(url.replace(siteUrl, ""));
-    return { ...route, url, ...(languages ? { alternates: { languages } } : {}) };
+    const path = url.replace(siteUrl, "");
+    const languages = hreflangAlternatesAbsolute(path);
+    const dates = getPageDates(path);
+    return {
+      ...route,
+      url,
+      // No date is better than a wrong one: fall back to none rather than the build date.
+      lastModified: dates ? new Date(dates.modified) : undefined,
+      ...(languages ? { alternates: { languages } } : {}),
+    };
   });
 }

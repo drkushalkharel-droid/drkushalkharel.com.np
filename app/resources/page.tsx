@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getResourcesByCategory } from "../data/resources";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
-const title = "Downloadable Patient Resources | Leaflets, Guides & Handouts";
+const title = seoTitle("/resources/", "Downloadable Patient Resources | Leaflets, Guides & Handouts");
 const description =
-  "Free downloadable patient information leaflets, medication guides, coping tools, and family psychoeducation sheets from Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal.";
+  seoDescription("/resources/", "Free downloadable patient information leaflets, medication guides, coping tools, and family psychoeducation sheets from Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal.");
 
 export const metadata: Metadata = {
   title,

@@ -16,10 +16,11 @@ const doctorImage = "/images/doctor.png";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
+  // Pages supply only the keyword part; the template adds a short brand so the whole
+  // title stays within 60 characters. See app/lib/seoText.ts.
   title: {
-    default:
-      "Dr. Kushal Kharel | Psychiatrist in Kathmandu, Nepal",
-    template: "%s | Dr. Kushal Kharel",
+    default: "Psychiatrist in Kathmandu, Nepal | Dr. Kushal Kharel",
+    template: "%s | Dr. Kharel",
   },
 
   description:

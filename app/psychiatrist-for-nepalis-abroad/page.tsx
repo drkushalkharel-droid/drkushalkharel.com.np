@@ -10,12 +10,13 @@ import {
 } from "../lib/schema";
 import { FaqList, NameLine, OnlineFactsRow, OnlineTreatmentCards, TreatedList } from "../components/OnlineCareSections";
 import RelatedContent from "../components/RelatedContent";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const site = "https://drkushalkharel.com.np";
 const url = `${site}/psychiatrist-for-nepalis-abroad`;
-const title = "Psychiatrist for Nepalis Living Abroad | Online via Google Meet";
+const title = seoTitle("/psychiatrist-for-nepalis-abroad/", "Psychiatrist for Nepalis Living Abroad | Online via Google Meet");
 const description =
-  "Consultant psychiatrist and online therapy for Nepalis abroad: constant worry, intrusive thoughts, sleep problems. Google Meet, at a time that suits your time zone.";
+  seoDescription("/psychiatrist-for-nepalis-abroad/", "Consultant psychiatrist and online therapy for Nepalis abroad: constant worry, intrusive thoughts, sleep problems. Google Meet, at a time that suits your time zone.");
 
 const faqs = [
   ...abroadFaqs,
@@ -37,7 +38,7 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: { absolute: title },
+  title,
   description,
   alternates: { canonical: "/psychiatrist-for-nepalis-abroad/" },
   keywords: [

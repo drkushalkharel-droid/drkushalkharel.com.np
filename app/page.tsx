@@ -19,11 +19,13 @@ import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import SiteEntitySchema from "./components/SiteEntitySchema";
 import { buildSpeakableSpec } from "./lib/schema";
+import { metaFor } from "./lib/seoText";
+
+const meta = metaFor("/", { title: "Dr. Kushal Kharel, MD — Consultant Psychiatrist, Kathmandu", description: "Dr. Kushal Kharel, MD — Consultant Psychiatrist in Kathmandu. Evidence-based care for anxiety, depression, OCD, ADHD & more. Book online today." });
 
 export const metadata: Metadata = {
-  title: "Dr. Kushal Kharel, MD — Consultant Psychiatrist, Kathmandu",
-  description:
-    "Dr. Kushal Kharel, MD — Consultant Psychiatrist in Kathmandu. Evidence-based care for anxiety, depression, OCD, ADHD & more. Book online today.",
+  title: { absolute: `${meta.title} | Dr. Kushal Kharel` },
+  description: meta.description,
   alternates: {
     canonical: "/",
   },
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
     "Best Psychiatrist in Nepalgunj",
   ],
   openGraph: {
-    title: "Dr. Kushal Kharel, MD | Consultant Psychiatrist, Kathmandu",
+    title: `${meta.title} | Dr. Kushal Kharel`,
     description:
       "Consultant psychiatric care in Kathmandu and online for anxiety, depression, OCD, ADHD, addiction and more.",
     url: "/",
@@ -74,7 +76,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Kushal Kharel, MD | Consultant Psychiatrist, Kathmandu",
+    title: `${meta.title} | Dr. Kushal Kharel`,
     description:
       "Consultant psychiatric care in Kathmandu and online across Nepal.",
     images: ["/images/doctor.png"],

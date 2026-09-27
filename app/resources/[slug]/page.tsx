@@ -7,6 +7,7 @@ import { getCondition } from "../../data/conditions";
 import { buildSpeakableSpec } from "../../lib/schema";
 import PrintButton from "../PrintButton";
 import RelatedContent from "../../components/RelatedContent";
+import { metaFor } from "../../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -26,8 +27,10 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = `${resource.title} (Free Download) | Dr. Kushal Kharel`;
-  const description = `Free downloadable PDF: ${resource.title}. ${resource.shortDescription}`;
+  const { title, description } = metaFor(`/resources/${resource.slug}/`, {
+    title: `${resource.title} (Free Download)`,
+    description: `Free downloadable PDF: ${resource.title}. ${resource.shortDescription}`,
+  });
 
   return {
     title,

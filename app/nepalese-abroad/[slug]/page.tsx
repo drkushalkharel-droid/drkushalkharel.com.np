@@ -14,6 +14,7 @@ import {
 } from "../../lib/schema";
 import { FaqList, NameLine, OnlineFactsRow, OnlineTreatmentCards, TreatedList } from "../../components/OnlineCareSections";
 import { EmergencyBox, NepaliBlock, TimeGuide } from "../../components/AbroadPracticalSections";
+import { fitTitle, metaFor, pickDescription } from "../../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -33,11 +34,22 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = `Nepali Consultant Psychiatrist in ${guide.country} – Online Therapy`;
-  const description = `Consultant psychiatrist & online therapy for Nepalis abroad in ${withArticle(guide.country)}: constant worry, intrusive thoughts, sleep problems. Google Meet, at a time that suits your time zone.`;
+  const country = withArticle(guide.country);
+  const { title, description } = metaFor(`/nepalese-abroad/${guide.slug}/`, {
+    title: fitTitle(
+      `Nepali Psychiatrist in ${guide.country}: Online Therapy`,
+      `Nepali Psychiatrist in ${guide.country}: Online Care`,
+      `Nepali Psychiatrist in ${guide.country}`,
+    ),
+    description: pickDescription([
+      `Online psychiatric care for Nepalis in ${country}: constant worry, intrusive thoughts and sleep problems, by Google Meet in your time zone. Book online.`,
+      `Online psychiatric care for Nepalis in ${country}: constant worry, intrusive thoughts and sleep problems, by Google Meet in your time zone. Book online from anywhere.`,
+      `Online psychiatric care for Nepalis in ${country}: constant worry and sleep problems, by Google Meet in your time zone. Book online.`,
+    ]),
+  }, { fitted: true });
 
   return {
-    title: { absolute: title },
+    title,
     description,
     alternates: {
       canonical: `/nepalese-abroad/${guide.slug}/`,

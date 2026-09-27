@@ -7,11 +7,14 @@ import {
   type ArticleLink,
 } from "../data/articles";
 import { docArticles } from "../data/docArticles";
+import { metaFor } from "../lib/seoText";
+
+const meta = metaFor("/knowledge/", { title: "Mental Health Articles & Patient Guides | Dr. Kushal Kharel", description: "Mental health articles and patient guides by Dr. Kushal Kharel on anxiety, depression, addiction, sleep, teen mental health and evidence-based psychiatric care in Nepal." });
 
 export const metadata: Metadata = {
-  title: "Mental Health Articles & Patient Guides | Dr. Kushal Kharel",
+  title: meta.title,
   description:
-    "Mental health articles and patient guides by Dr. Kushal Kharel on anxiety, depression, addiction, sleep, teen mental health and evidence-based psychiatric care in Nepal.",
+    meta.description,
   keywords: [
     "Mental Health Articles Nepal",
     "Psychiatrist Articles Nepal",
@@ -26,7 +29,7 @@ export const metadata: Metadata = {
     canonical: "/knowledge/",
   },
   openGraph: {
-    title: "Mental Health Articles & Patient Guides | Dr. Kushal Kharel",
+    title: meta.title,
     description:
       "Trusted psychiatric education for patients and families in Nepal.",
     url: "https://drkushalkharel.com.np/knowledge",
@@ -36,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mental Health Articles & Patient Guides | Dr. Kushal Kharel",
+    title: meta.title,
     description:
       "Practical patient guides from Dr. Kushal Kharel for anxiety, depression, burnout and mental health in Nepal.",
     images: ["/images/doctor.png"],

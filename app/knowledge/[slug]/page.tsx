@@ -9,6 +9,7 @@ import RelatedContent from "../../components/RelatedContent";
 import { knowledgeDates } from "../../data/knowledgeDates";
 import { hreflangAlternates } from "../../data/translationPairs";
 import { buildArticleProvenance, doctorRef } from "../../lib/siteSchema";
+import { metaFor, seoTitle as seoTitleFor } from "../../lib/seoText";
 import { detectLanguage, languageMetadata, ogLocaleFor, paragraphLanguage } from "../../lib/language";
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -92,10 +93,11 @@ export async function generateMetadata({
           ? `${article.title} (${article.nepaliMeaning.term}) — Meaning, Symptoms and Treatment`
           : title;
   const keywordTitle = article.title.split(" | ")[0];
+  const meta = metaFor(`/knowledge/${article.slug}/`, { title: seoTitle, description: article.description });
 
   return {
-    title: { absolute: seoTitle },
-    description: article.description,
+    title: meta.title,
+    description: meta.description,
     alternates: {
       canonical: `/knowledge/${article.slug}/`,
       languages: hreflangAlternates(`/knowledge/${article.slug}/`),
@@ -152,8 +154,8 @@ export async function generateMetadata({
         : []),
     ],
     openGraph: {
-      title: seoTitle,
-      description: article.description,
+      title: meta.title,
+      description: meta.description,
       url: `${siteUrl}/knowledge/${article.slug}`,
       siteName: "Dr. Kushal Kharel",
       images: [
@@ -169,8 +171,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: seoTitle,
-      description: article.description,
+      title: meta.title,
+      description: meta.description,
       images: ["/images/doctor.png"],
       creator: "@Drkushalpsych",
     },
@@ -191,6 +193,13 @@ export default async function KnowledgeArticlePage({
 
   const pageLang = articleLanguage(article);
   const dates = knowledgeDates[article.slug];
+  // A Nepali guide whose title is only an English term ("Schizophrenia") would compete
+  // with the English /conditions/ page for the same query, so its H1 is the Nepali-first
+  // title from seoMetaCollections (e.g. "स्किजोफ्रेनिया: लक्षण, कारण र उपचार").
+  const heading =
+    pageLang === "ne" && !/[\u0900-\u097F]/.test(article.title)
+      ? seoTitleFor(`/knowledge/${article.slug}/`, article.title)
+      : article.title;
 
   const faqs = [
     [
@@ -272,7 +281,7 @@ export default async function KnowledgeArticlePage({
             {article.language === "Bilingual" ? "English & नेपाली Patient Guide" : "Nepali Patient Guide"}
           </p>
           <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
-            {article.title}
+            {heading}
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             {article.description}

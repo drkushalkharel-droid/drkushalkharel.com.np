@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { GraduationCap, Mail, MessageCircle, Phone } from "lucide-react";
 import RelatedContent from "../components/RelatedContent";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/psychology-internship-nepal`;
-const title = "Free Psychology & Social Work Internship in Kathmandu, Nepal";
+const title = seoTitle("/psychology-internship-nepal/", "Free Psychology & Social Work Internship in Kathmandu, Nepal");
 const description =
-  "Dr. Kushal Kharel offers a free internship for psychology and social work students at his psychiatric clinic in Kalanki, Kathmandu. Learn what it involves and how to apply.";
+  seoDescription("/psychology-internship-nepal/", "Dr. Kushal Kharel offers a free internship for psychology and social work students at his psychiatric clinic in Kalanki, Kathmandu. Learn what it involves and how to apply.");
 
 export const metadata: Metadata = {
-  title: { absolute: title },
+  title,
   description,
   alternates: { canonical: "/psychology-internship-nepal/" },
   keywords: [

@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { conditions, getConditionsByCategory } from "../data/conditions";
+import { metaFor } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
+const meta = metaFor("/conditions/", { title: "Psychiatric Conditions Library A-Z", description: "A growing, evidence-based library of psychiatric disorders — causes, symptoms, diagnosis, treatment, medications, therapy and family guidance, by Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal." });
+
 export const metadata: Metadata = {
-  title: "Psychiatric Conditions Library A-Z",
+  title: meta.title,
   description:
-    "A growing, evidence-based library of psychiatric disorders — causes, symptoms, diagnosis, treatment, medications, therapy and family guidance, by Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal.",
+    meta.description,
   keywords: [
     "Psychiatric Conditions Nepal",
     "Mental Illness Symptoms and Treatment",

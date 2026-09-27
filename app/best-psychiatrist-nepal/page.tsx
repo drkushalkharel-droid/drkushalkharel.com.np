@@ -3,15 +3,16 @@ import Link from "next/link";
 import { MessageCircle, Phone } from "lucide-react";
 import { buildSpeakableSpec } from "../lib/schema";
 import RelatedContent from "../components/RelatedContent";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/best-psychiatrist-nepal`;
-const title = "Best Psychiatrist in Kathmandu: How to Actually Choose One";
+const title = seoTitle("/best-psychiatrist-nepal/", "Best Psychiatrist in Kathmandu: How to Actually Choose One");
 const description =
-  "There's no official ranking for 'best psychiatrist' — here's what to actually check: credentials, NMC registration, communication style and fit. Dr. Kushal Kharel, MD, treats anxiety, depression, OCD & more. Book today.";
+  seoDescription("/best-psychiatrist-nepal/", "There's no official ranking for 'best psychiatrist' — here's what to actually check: credentials, NMC registration, communication style and fit. Dr. Kushal Kharel, MD, treats anxiety, depression, OCD & more. Book today.");
 
 export const metadata: Metadata = {
-  title: { absolute: title },
+  title,
   description,
   alternates: { canonical: "/best-psychiatrist-nepal/" },
   keywords: [

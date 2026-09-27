@@ -14,6 +14,11 @@ import {
   buildSpeakableSpec,
 } from "../../lib/schema";
 import RelatedContent from "../../components/RelatedContent";
+import { conditionTitle, metaFor } from "../../lib/seoText";
+import { clusters } from "../../data/contentClusters";
+
+// Conditions that have a "treatment in Kathmandu" page of their own (contentClusters.ts).
+const referencePages = new Set(clusters.flatMap((cluster) => cluster.reference));
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -63,14 +68,15 @@ export async function generateMetadata({
     return {};
   }
 
-  const titleName = condition.nepaliMeaning
-    ? `${condition.title} (${condition.nepaliMeaning.term})`
-    : condition.title;
-  const title = `${titleName}: ${condition.titleSuffix ?? "Symptoms, Causes, Diagnosis & Treatment"}`;
+  const url = `/conditions/${condition.slug}/`;
+  const { title, description } = metaFor(url, {
+    title: conditionTitle(condition.title, referencePages.has(url)),
+    description: condition.shortDescription,
+  });
 
   return {
     title,
-    description: condition.shortDescription,
+    description,
     alternates: {
       canonical: `/conditions/${condition.slug}/`,
     },
@@ -88,7 +94,7 @@ export async function generateMetadata({
     ],
     openGraph: {
       title,
-      description: condition.shortDescription,
+      description,
       url: `${siteUrl}/conditions/${condition.slug}`,
       siteName: "Dr. Kushal Kharel",
       images: [

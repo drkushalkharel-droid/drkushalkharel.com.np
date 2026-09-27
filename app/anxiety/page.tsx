@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import PillarArticle from "../components/PillarArticle";
 import { getPillar } from "../data/pillars";
 import { hreflangAlternates } from "../data/translationPairs";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const pageUrl = "https://drkushalkharel.com.np/anxiety";
-const title = "Anxiety Treatment in Kathmandu | Symptoms, Causes & Help";
+const title = seoTitle("/anxiety/", "Anxiety Treatment in Kathmandu | Symptoms, Causes & Help");
 const description =
-  "A bilingual patient guide to anxiety disorders by Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu. Learn symptoms, causes, treatment options, CBT, medication and when to seek help.";
+  seoDescription("/anxiety/", "A bilingual patient guide to anxiety disorders by Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu. Learn symptoms, causes, treatment options, CBT, medication and when to seek help.");
 
 export const metadata: Metadata = {
   title,

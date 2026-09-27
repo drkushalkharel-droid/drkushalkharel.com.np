@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
-const title = "Medical Disclaimer";
+const title = seoTitle("/medical-disclaimer/", "Medical Disclaimer");
 const description =
-  "Important information about the limits of the content on this website and when to seek direct psychiatric or emergency care.";
+  seoDescription("/medical-disclaimer/", "Important information about the limits of the content on this website and when to seek direct psychiatric or emergency care.");
 
 export const metadata: Metadata = {
   title,

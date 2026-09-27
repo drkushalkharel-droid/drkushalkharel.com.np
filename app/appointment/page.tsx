@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CalendarCheck, Clock3, MapPin, MessageCircle, Phone, ShieldCheck, Video } from "lucide-react";
+import { metaFor } from "../lib/seoText";
+
+const meta = metaFor("/appointment/", { title: "Book a Psychiatric Consultation", description: "Book an in-person psychiatric consultation in Kathmandu or ask about online consultation with Dr. Kushal Kharel." });
 
 export const metadata: Metadata = {
-  title: "Book a Psychiatric Consultation",
+  title: meta.title,
   description:
-    "Book an in-person psychiatric consultation in Kathmandu or ask about online consultation with Dr. Kushal Kharel.",
+    meta.description,
   alternates: { canonical: "/appointment/" },
 };
 
