@@ -1,0 +1,559 @@
+{
+  "status": "PROPOSED - nothing here has been applied. Awaiting owner approval (Phase 3).",
+  "summary": {
+    "before": "41 country pages + 4 region hubs + index",
+    "after": "8 regional pages + index",
+    "regionalPages": 8,
+    "existingHubsKept": 4,
+    "newHubs": 4,
+    "redirects": 41
+  },
+  "targets": [
+    {
+      "url": "/nepalese-abroad/gulf/",
+      "status": "existing",
+      "name": "The Gulf",
+      "countries": [
+        "dubai",
+        "qatar",
+        "saudi-arabia",
+        "kuwait",
+        "oman",
+        "bahrain"
+      ]
+    },
+    {
+      "url": "/nepalese-abroad/europe/",
+      "status": "existing",
+      "name": "Europe (excluding UK & Ireland)",
+      "countries": [
+        "germany",
+        "netherlands",
+        "france",
+        "belgium",
+        "portugal",
+        "romania",
+        "cyprus",
+        "poland",
+        "italy",
+        "spain",
+        "croatia",
+        "denmark",
+        "finland",
+        "norway",
+        "sweden"
+      ]
+    },
+    {
+      "url": "/nepalese-abroad/uk-ireland/",
+      "status": "new",
+      "name": "UK and Ireland",
+      "countries": [
+        "uk",
+        "ireland"
+      ]
+    },
+    {
+      "url": "/nepalese-abroad/usa-canada/",
+      "status": "new",
+      "name": "USA and Canada",
+      "countries": [
+        "usa",
+        "canada"
+      ]
+    },
+    {
+      "url": "/nepalese-abroad/australia-new-zealand/",
+      "status": "new",
+      "name": "Australia and New Zealand",
+      "countries": [
+        "australia",
+        "new-zealand",
+        "fiji"
+      ]
+    },
+    {
+      "url": "/nepalese-abroad/east-asia/",
+      "status": "existing",
+      "name": "East Asia (Japan, South Korea, Hong Kong, China)",
+      "countries": [
+        "japan",
+        "korea",
+        "hong-kong",
+        "china"
+      ]
+    },
+    {
+      "url": "/nepalese-abroad/southeast-asia/",
+      "status": "existing",
+      "name": "Southeast Asia",
+      "countries": [
+        "malaysia",
+        "singapore",
+        "thailand",
+        "brunei",
+        "myanmar"
+      ]
+    },
+    {
+      "url": "/nepalese-abroad/south-asia/",
+      "status": "new",
+      "name": "South Asia (India, Bangladesh, Sri Lanka)",
+      "countries": [
+        "india",
+        "bangladesh",
+        "sri-lanka"
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "from": "/nepalese-abroad/dubai/",
+      "to": "/nepalese-abroad/gulf/",
+      "anchor": "dubai",
+      "code": 301,
+      "country": "Dubai",
+      "carries": [
+        "real patient testimonial",
+        "verified emergency number"
+      ],
+      "internalInlinks": 8
+    },
+    {
+      "from": "/nepalese-abroad/qatar/",
+      "to": "/nepalese-abroad/gulf/",
+      "anchor": "qatar",
+      "code": 301,
+      "country": "Qatar",
+      "carries": [
+        "real patient testimonial",
+        "verified emergency number"
+      ],
+      "internalInlinks": 8
+    },
+    {
+      "from": "/nepalese-abroad/saudi-arabia/",
+      "to": "/nepalese-abroad/gulf/",
+      "anchor": "saudi-arabia",
+      "code": 301,
+      "country": "Saudi Arabia",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 8
+    },
+    {
+      "from": "/nepalese-abroad/kuwait/",
+      "to": "/nepalese-abroad/gulf/",
+      "anchor": "kuwait",
+      "code": 301,
+      "country": "Kuwait",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 8
+    },
+    {
+      "from": "/nepalese-abroad/oman/",
+      "to": "/nepalese-abroad/gulf/",
+      "anchor": "oman",
+      "code": 301,
+      "country": "Oman",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 8
+    },
+    {
+      "from": "/nepalese-abroad/bahrain/",
+      "to": "/nepalese-abroad/gulf/",
+      "anchor": "bahrain",
+      "code": 301,
+      "country": "Bahrain",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 8
+    },
+    {
+      "from": "/nepalese-abroad/germany/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "germany",
+      "code": 301,
+      "country": "Germany",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/netherlands/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "netherlands",
+      "code": 301,
+      "country": "Netherlands",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/france/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "france",
+      "code": 301,
+      "country": "France",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/belgium/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "belgium",
+      "code": 301,
+      "country": "Belgium",
+      "carries": [
+        "real patient testimonial",
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/portugal/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "portugal",
+      "code": 301,
+      "country": "Portugal",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/romania/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "romania",
+      "code": 301,
+      "country": "Romania",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/cyprus/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "cyprus",
+      "code": 301,
+      "country": "Cyprus",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/poland/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "poland",
+      "code": 301,
+      "country": "Poland",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/italy/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "italy",
+      "code": 301,
+      "country": "Italy",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/spain/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "spain",
+      "code": 301,
+      "country": "Spain",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/croatia/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "croatia",
+      "code": 301,
+      "country": "Croatia",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/denmark/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "denmark",
+      "code": 301,
+      "country": "Denmark",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/finland/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "finland",
+      "code": 301,
+      "country": "Finland",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/norway/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "norway",
+      "code": 301,
+      "country": "Norway",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/sweden/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "sweden",
+      "code": 301,
+      "country": "Sweden",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/uk/",
+      "to": "/nepalese-abroad/uk-ireland/",
+      "anchor": "uk",
+      "code": 301,
+      "country": "UK",
+      "carries": [
+        "real patient testimonial"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/ireland/",
+      "to": "/nepalese-abroad/uk-ireland/",
+      "anchor": "ireland",
+      "code": 301,
+      "country": "Ireland",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 19
+    },
+    {
+      "from": "/nepalese-abroad/usa/",
+      "to": "/nepalese-abroad/usa-canada/",
+      "anchor": "usa",
+      "code": 301,
+      "country": "USA",
+      "carries": [
+        "real patient testimonial",
+        "multiple time zones"
+      ],
+      "internalInlinks": 2
+    },
+    {
+      "from": "/nepalese-abroad/canada/",
+      "to": "/nepalese-abroad/usa-canada/",
+      "anchor": "canada",
+      "code": 301,
+      "country": "Canada",
+      "carries": [
+        "multiple time zones"
+      ],
+      "internalInlinks": 2
+    },
+    {
+      "from": "/nepalese-abroad/australia/",
+      "to": "/nepalese-abroad/australia-new-zealand/",
+      "anchor": "australia",
+      "code": 301,
+      "country": "Australia",
+      "carries": [
+        "real patient testimonial",
+        "multiple time zones"
+      ],
+      "internalInlinks": 2
+    },
+    {
+      "from": "/nepalese-abroad/new-zealand/",
+      "to": "/nepalese-abroad/australia-new-zealand/",
+      "anchor": "new-zealand",
+      "code": 301,
+      "country": "New Zealand",
+      "carries": [],
+      "internalInlinks": 2
+    },
+    {
+      "from": "/nepalese-abroad/fiji/",
+      "to": "/nepalese-abroad/australia-new-zealand/",
+      "anchor": "fiji",
+      "code": 301,
+      "country": "Fiji",
+      "carries": [],
+      "internalInlinks": 2
+    },
+    {
+      "from": "/nepalese-abroad/japan/",
+      "to": "/nepalese-abroad/east-asia/",
+      "anchor": "japan",
+      "code": 301,
+      "country": "Japan",
+      "carries": [
+        "real patient testimonial",
+        "verified emergency number",
+        "local helpline"
+      ],
+      "internalInlinks": 6
+    },
+    {
+      "from": "/nepalese-abroad/korea/",
+      "to": "/nepalese-abroad/east-asia/",
+      "anchor": "korea",
+      "code": 301,
+      "country": "Korea",
+      "carries": [
+        "real patient testimonial",
+        "verified emergency number"
+      ],
+      "internalInlinks": 6
+    },
+    {
+      "from": "/nepalese-abroad/hong-kong/",
+      "to": "/nepalese-abroad/east-asia/",
+      "anchor": "hong-kong",
+      "code": 301,
+      "country": "Hong Kong",
+      "carries": [],
+      "internalInlinks": 6
+    },
+    {
+      "from": "/nepalese-abroad/china/",
+      "to": "/nepalese-abroad/east-asia/",
+      "anchor": "china",
+      "code": 301,
+      "country": "China",
+      "carries": [],
+      "internalInlinks": 6
+    },
+    {
+      "from": "/nepalese-abroad/malaysia/",
+      "to": "/nepalese-abroad/southeast-asia/",
+      "anchor": "malaysia",
+      "code": 301,
+      "country": "Malaysia",
+      "carries": [
+        "real patient testimonial",
+        "verified emergency number"
+      ],
+      "internalInlinks": 7
+    },
+    {
+      "from": "/nepalese-abroad/singapore/",
+      "to": "/nepalese-abroad/southeast-asia/",
+      "anchor": "singapore",
+      "code": 301,
+      "country": "Singapore",
+      "carries": [
+        "verified emergency number"
+      ],
+      "internalInlinks": 7
+    },
+    {
+      "from": "/nepalese-abroad/thailand/",
+      "to": "/nepalese-abroad/southeast-asia/",
+      "anchor": "thailand",
+      "code": 301,
+      "country": "Thailand",
+      "carries": [],
+      "internalInlinks": 7
+    },
+    {
+      "from": "/nepalese-abroad/brunei/",
+      "to": "/nepalese-abroad/southeast-asia/",
+      "anchor": "brunei",
+      "code": 301,
+      "country": "Brunei",
+      "carries": [],
+      "internalInlinks": 7
+    },
+    {
+      "from": "/nepalese-abroad/myanmar/",
+      "to": "/nepalese-abroad/southeast-asia/",
+      "anchor": "myanmar",
+      "code": 301,
+      "country": "Myanmar",
+      "carries": [],
+      "internalInlinks": 7
+    },
+    {
+      "from": "/nepalese-abroad/india/",
+      "to": "/nepalese-abroad/south-asia/",
+      "anchor": "india",
+      "code": 301,
+      "country": "India",
+      "carries": [],
+      "internalInlinks": 2
+    },
+    {
+      "from": "/nepalese-abroad/bangladesh/",
+      "to": "/nepalese-abroad/south-asia/",
+      "anchor": "bangladesh",
+      "code": 301,
+      "country": "Bangladesh",
+      "carries": [],
+      "internalInlinks": 2
+    },
+    {
+      "from": "/nepalese-abroad/sri-lanka/",
+      "to": "/nepalese-abroad/south-asia/",
+      "anchor": "sri-lanka",
+      "code": 301,
+      "country": "Sri Lanka",
+      "carries": [],
+      "internalInlinks": 2
+    },
+    {
+      "from": "/nepalese-abroad/israel/",
+      "to": "/nepalese-abroad/europe/",
+      "anchor": "israel",
+      "code": 301,
+      "country": "Israel",
+      "decision": "OWNER DECISION NEEDED — Not Gulf and not Europe; Nepali care-worker patterns and conflict-related stress are distinct. Alternatives: keep /nepalese-abroad/israel/ as its own page, or fold into the Gulf page.",
+      "carries": [],
+      "internalInlinks": 2
+    }
+  ],
+  "standaloneCandidates": {
+    "note": "Recommended to keep as their own URLs UNLESS Search Console shows they earn little. Decide with per-URL clicks/impressions.",
+    "urls": [
+      "/nepalese-abroad/dubai/",
+      "/nepalese-abroad/usa/",
+      "/nepalese-abroad/australia/",
+      "/nepalese-abroad/uk/"
+    ]
+  }
+}
