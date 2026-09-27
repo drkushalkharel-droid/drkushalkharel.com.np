@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { Globe2, MessageCircle } from "lucide-react";
+import { abroadGuides } from "../data/abroad";
 import { regions } from "../data/abroadRegions";
+
+// Countries that no regional page covers. They get their own link here so they are
+// not reachable only from the country index; countries inside a region are reached
+// through that region's page.
+const uncoveredCountries = abroadGuides.filter(
+  (guide) => !regions.some((region) => region.countrySlugs.includes(guide.slug)),
+);
 
 export default function AbroadSeoSection() {
   return (
@@ -38,6 +46,20 @@ export default function AbroadSeoSection() {
             ))}
           </div>
 
+          {uncoveredCountries.length > 0 && (
+            <div className="mt-3 flex flex-wrap items-center gap-2">
+              <span className="text-sm font-semibold text-stone-600">Also:</span>
+              {uncoveredCountries.map((guide) => (
+                <Link
+                  key={guide.slug}
+                  href={`/nepalese-abroad/${guide.slug}`}
+                  className="rounded-full border border-sage-200 bg-white px-4 py-2 text-sm font-semibold text-sage-900 transition hover:border-sage-400 hover:bg-sage-100"
+                >
+                  {guide.country}
+                </Link>
+              ))}
+            </div>
+          )}
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/nepalese-abroad"
