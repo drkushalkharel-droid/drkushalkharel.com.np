@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Image from "../../components/OptimizedImage";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { conditions, getCondition } from "../../data/conditions";
@@ -335,6 +335,7 @@ export default async function ConditionPage({
                     alt={condition.diagram.alt}
                     width={1408}
                     height={768}
+                    sizes="(max-width: 1024px) 100vw, 900px"
                     className="w-full"
                   />
                 </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Image from "../components/OptimizedImage";
 import Link from "next/link";
 import { CalendarCheck, Clock3, MapPin, MessageCircle, Phone, ShieldCheck, Video } from "lucide-react";
 import { metaFor } from "../lib/seoText";
@@ -49,6 +49,7 @@ export default function AppointmentPage() {
             alt="Diagram of the treatment pathway: contact, assessment, diagnosis, treatment plan, and follow-up"
             width={1408}
             height={768}
+            sizes="(max-width: 1024px) 100vw, 1024px"
             className="w-full"
           />
         </div>

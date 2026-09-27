@@ -1,0 +1,475 @@
+{
+  "/certificates/cert1.JPG": {
+    "width": 2000,
+    "height": 1414,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "/certificates/cert2.JPG": {
+    "width": 2452,
+    "height": 1800,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "/certificates/cert3.JPG": {
+    "width": 2592,
+    "height": 1816,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "/certificates/cert4.JPG": {
+    "width": 2496,
+    "height": 1832,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "/certificates/cert5.JPG": {
+    "width": 1316,
+    "height": 964,
+    "widths": [
+      480,
+      800,
+      1200,
+      1316
+    ]
+  },
+  "/certificates/cert6.JPG": {
+    "width": 2560,
+    "height": 1880,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "/certificates/cert9.JPG": {
+    "width": 1448,
+    "height": 2048,
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ]
+  },
+  "/images/award-1600.jpg": {
+    "width": 1200,
+    "height": 1600,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "/images/award.jpg": {
+    "width": 3024,
+    "height": 4032,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "/images/community/bishnudevi-health-camp.jpg": {
+    "width": 1080,
+    "height": 1440,
+    "widths": [
+      480,
+      800,
+      1080
+    ]
+  },
+  "/images/community/blood-donation-lions-club.jpg": {
+    "width": 1080,
+    "height": 610,
+    "widths": [
+      480,
+      800,
+      1080
+    ]
+  },
+  "/images/community/cbt-conference.jpg": {
+    "width": 1364,
+    "height": 1031,
+    "widths": [
+      480,
+      800,
+      1200,
+      1364
+    ]
+  },
+  "/images/community/community-health-camp.jpg": {
+    "width": 4096,
+    "height": 3072,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "/images/community/emergency-blood-donation-campaign.jpg": {
+    "width": 480,
+    "height": 640,
+    "widths": [
+      480
+    ]
+  },
+  "/images/community/janpriya-see-scholarship-support.jpg": {
+    "width": 590,
+    "height": 345,
+    "widths": [
+      480,
+      590
+    ]
+  },
+  "/images/community/kamyak-school-stress-management.jpg": {
+    "width": 1080,
+    "height": 810,
+    "widths": [
+      480,
+      800,
+      1080
+    ]
+  },
+  "/images/community/lions-cancer-support-fellowship-week.jpg": {
+    "width": 590,
+    "height": 354,
+    "widths": [
+      480,
+      590
+    ]
+  },
+  "/images/community/mental-health-and-wellbeing-week-district-325k.jpg": {
+    "width": 588,
+    "height": 350,
+    "widths": [
+      480,
+      588
+    ]
+  },
+  "/images/community/nepal-health-corps-school-outreach.jpg": {
+    "width": 4032,
+    "height": 3024,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "/images/community/online-suicide-prevention-session.jpg": {
+    "width": 1080,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1080
+    ]
+  },
+  "/images/community/responsible-suicide-reporting-advocacy.jpg": {
+    "width": 504,
+    "height": 600,
+    "widths": [
+      480,
+      504
+    ]
+  },
+  "/images/community/rotaract-kist-postpartum-depression-keynote.jpg": {
+    "width": 1083,
+    "height": 1344,
+    "widths": [
+      480,
+      800,
+      1083
+    ]
+  },
+  "/images/community/sandy-beach-mega-health-camp.jpg": {
+    "width": 590,
+    "height": 393,
+    "widths": [
+      480,
+      590
+    ]
+  },
+  "/images/community/school-mental-health-awareness.jpg": {
+    "width": 1080,
+    "height": 608,
+    "widths": [
+      480,
+      800,
+      1080
+    ]
+  },
+  "/images/community/suicide-prevention-certificate.jpg": {
+    "width": 5826,
+    "height": 4119,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "/images/community/tobacco-deaddiction-training.png": {
+    "width": 2000,
+    "height": 1414,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "/images/community/world-mental-health-day-2025.jpg": {
+    "width": 1080,
+    "height": 810,
+    "widths": [
+      480,
+      800,
+      1080
+    ]
+  },
+  "/images/diagrams/addiction-craving-cycle.webp": {
+    "width": 1254,
+    "height": 1254,
+    "widths": [
+      480,
+      800,
+      1200,
+      1254
+    ]
+  },
+  "/images/diagrams/adhd-executive-function.webp": {
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      480,
+      800,
+      1200,
+      1536
+    ]
+  },
+  "/images/diagrams/aging-mci-dementia-spectrum.webp": {
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      480,
+      800,
+      1200,
+      1536
+    ]
+  },
+  "/images/diagrams/alcohol-craving-relapse-cycle.webp": {
+    "width": 1400,
+    "height": 1320,
+    "widths": [
+      480,
+      800,
+      1200,
+      1400
+    ]
+  },
+  "/images/diagrams/binge-shame-cycle.webp": {
+    "width": 1400,
+    "height": 1320,
+    "widths": [
+      480,
+      800,
+      1200,
+      1400
+    ]
+  },
+  "/images/diagrams/bipolar-mood-cycle.webp": {
+    "width": 1408,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1200,
+      1408
+    ]
+  },
+  "/images/diagrams/cbt-thought-cycle.webp": {
+    "width": 1408,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1200,
+      1408
+    ]
+  },
+  "/images/diagrams/circadian-sleep-cycle.webp": {
+    "width": 1408,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1200,
+      1408
+    ]
+  },
+  "/images/diagrams/depression-spiral.webp": {
+    "width": 1254,
+    "height": 1254,
+    "widths": [
+      480,
+      800,
+      1200,
+      1254
+    ]
+  },
+  "/images/diagrams/emotional-dysregulation-cycle.webp": {
+    "width": 1400,
+    "height": 1320,
+    "widths": [
+      480,
+      800,
+      1200,
+      1400
+    ]
+  },
+  "/images/diagrams/erp-exposure-ladder.webp": {
+    "width": 1408,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1200,
+      1408
+    ]
+  },
+  "/images/diagrams/panic-attack-cycle.webp": {
+    "width": 1254,
+    "height": 1254,
+    "widths": [
+      480,
+      800,
+      1200,
+      1254
+    ]
+  },
+  "/images/diagrams/pmdd-symptom-timing.webp": {
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      480,
+      800,
+      1200,
+      1536
+    ]
+  },
+  "/images/diagrams/schizophrenia-relapse-pathway.webp": {
+    "width": 1408,
+    "height": 1040,
+    "widths": [
+      480,
+      800,
+      1200,
+      1408
+    ]
+  },
+  "/images/diagrams/social-anxiety-cycle.webp": {
+    "width": 1400,
+    "height": 1320,
+    "widths": [
+      480,
+      800,
+      1200,
+      1400
+    ]
+  },
+  "/images/diagrams/trauma-response-cycle.webp": {
+    "width": 1400,
+    "height": 1320,
+    "widths": [
+      480,
+      800,
+      1200,
+      1400
+    ]
+  },
+  "/images/diagrams/treatment-pathway.webp": {
+    "width": 1408,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1200,
+      1408
+    ]
+  },
+  "/images/diagrams/worry-cycle.webp": {
+    "width": 1400,
+    "height": 1320,
+    "widths": [
+      480,
+      800,
+      1200,
+      1400
+    ]
+  },
+  "/images/doctor.png": {
+    "width": 800,
+    "height": 800,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "/images/dr-kushal-headshot.jpg": {
+    "width": 600,
+    "height": 600,
+    "widths": [
+      480,
+      600
+    ]
+  },
+  "/images/opd-consultation-room.jpg": {
+    "width": 960,
+    "height": 1280,
+    "widths": [
+      480,
+      800,
+      960
+    ]
+  },
+  "/images/speaker-1600.jpg": {
+    "width": 1200,
+    "height": 1600,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "/images/speaker.jpg": {
+    "width": 3024,
+    "height": 4032,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  }
+}

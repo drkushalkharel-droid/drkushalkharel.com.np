@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "./OptimizedImage";
 import Link from "next/link";
 import { MessageCircle, Phone, type LucideIcon } from "lucide-react";
 import type { AudiencePage } from "../data/audiences";
@@ -102,6 +102,7 @@ export default function AudienceLandingPage({
                 alt={page.diagram.alt}
                 width={1408}
                 height={768}
+                sizes="(max-width: 1024px) 100vw, 1024px"
                 className="w-full"
               />
             </div>

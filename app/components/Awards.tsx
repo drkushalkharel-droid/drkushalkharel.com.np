@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "./OptimizedImage";
 import { Award, ChevronDown, ExternalLink, FileBadge, Mic2, Newspaper, Phone } from "lucide-react";
 
 const certificates = [
