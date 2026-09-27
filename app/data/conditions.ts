@@ -4937,6 +4937,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "insomnia",
+    nepaliMeaning: { term: "अनिद्रा / निद्रा नलाग्ने समस्या", meaning: "रातभर सजिलै निदाउन नसक्ने, बारम्बार ब्युँझने वा चाँडै ब्युँझेर फेरि निदाउन नसक्ने समस्या।" },
     doctorsApproach:
       "For insomnia, my first question usually isn't about medication at all — it's about the bed itself: what someone does there besides sleep, what time they get up regardless of how the night went, and how they respond to a bad night's sleep the next day. CBT for insomnia, using stimulus control and a temporary reduction in time spent in bed to rebuild sleep drive, is genuinely the most effective long-term option and where I start for most patients, rather than reaching for a sleeping tablet first. Because sleep problems don't keep office hours, I keep the clinic open until 10pm most nights specifically for visits like this. When a short-term medication is needed alongside that, I use it briefly, not as an ongoing crutch.",
     title: "Insomnia Disorder",

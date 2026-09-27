@@ -299,6 +299,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-03",
     "modified": "2026-08-03"
   },
+  "/blog/panic-attack-treatment-kathmandu/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
+  },
   "/blog/panic-attack-vs-heart-attack/": {
     "published": "2026-08-03",
     "modified": "2026-08-03"
@@ -467,6 +471,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-26",
     "modified": "2026-09-16"
   },
+  "/cities/chitwan/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
+  },
   "/cities/dhangadhi/": {
     "published": "2026-08-26",
     "modified": "2026-09-16"
@@ -483,6 +491,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-26",
     "modified": "2026-09-16"
   },
+  "/cities/kathmandu/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
+  },
   "/cities/lalitpur/": {
     "published": "2026-08-26",
     "modified": "2026-09-16"
@@ -490,6 +502,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   "/cities/nepalgunj/": {
     "published": "2026-08-26",
     "modified": "2026-09-16"
+  },
+  "/cities/pokhara/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
   },
   "/community-mental-health-programs/": {
     "published": "2026-07-29",
@@ -637,7 +653,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/conditions/insomnia/": {
     "published": "2026-07-07",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/conditions/intellectual-disability/": {
     "published": "2026-07-07",
@@ -877,7 +893,11 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/knowledge/anxiety-depression-treatment-options-nepal/": {
     "published": "2026-09-23",
-    "modified": "2026-09-23"
+    "modified": "2026-09-27"
+  },
+  "/knowledge/anxiety-treatment-nepal/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
   },
   "/knowledge/autism-spectrum-disorder/": {
     "published": "2026-07-06",
@@ -889,7 +909,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/knowledge/best-therapy-for-anxiety/": {
     "published": "2026-09-23",
-    "modified": "2026-09-23"
+    "modified": "2026-09-27"
   },
   "/knowledge/bipolar-disorder/": {
     "published": "2026-08-05",
@@ -926,6 +946,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   "/knowledge/dementia/": {
     "published": "2026-07-06",
     "modified": "2026-07-06"
+  },
+  "/knowledge/depression-treatment-nepal/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
   },
   "/knowledge/eating-disorder/": {
     "published": "2026-07-06",
@@ -969,7 +993,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/knowledge/managing-depression/": {
     "published": "2026-09-23",
-    "modified": "2026-09-23"
+    "modified": "2026-09-27"
   },
   "/knowledge/mania/": {
     "published": "2026-07-06",
@@ -1062,6 +1086,14 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   "/knowledge/sexual-health-performance-anxiety-intimacy-nepal/": {
     "published": "2026-08-06",
     "modified": "2026-08-06"
+  },
+  "/knowledge/sleep-and-mental-health/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
+  },
+  "/knowledge/sleep-problems-which-doctor-kathmandu/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
   },
   "/knowledge/smiling-depression-nepal/": {
     "published": "2026-09-02",

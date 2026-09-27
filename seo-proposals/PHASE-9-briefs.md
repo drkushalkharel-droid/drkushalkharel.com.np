@@ -1,6 +1,20 @@
 # Phase 9 briefs: new content
 
-**Status: BRIEFS ONLY. Nothing has been written or published.** Each brief says what I would build, what I
+**Status update 2026-09-27 (branch `seo/content-improvements`, not yet published):**
+- **B (fee page):** built using only facts already on the site: a fee table in the first screen, what the fee
+  includes, what affects the price, follow-up fees, online and paying from abroad, three more FAQs, and a visible
+  "Page last updated" date. Payment wording reuses what you confirmed on 24 and 26 Sept (card, bank transfer, family
+  member in Nepal). **Still open: B1 (online fee), B3 (certificate, testing, home-visit fees), B4, B5, B6, B7.**
+- **C (ADHD section):** built from what the page already says: what an assessment involves, what it costs (points to
+  the fee page and says the clinic confirms the ADHD fee), what happens after diagnosis, two more FAQs.
+  **Still open: C1 to C5.**
+- **Insomnia upgrade (topic 4 in section D):** done for `/knowledge/insomnia/` (Nepali) and `/conditions/insomnia/`
+  (English). `/knowledge/non-restorative-sleep-nepal/` is not done yet.
+- Section A (Nepali twins) and the other topics in D are untouched.
+
+The original brief follows.
+
+Original status: BRIEFS ONLY. Each brief says what I would build, what I
 would reuse, and exactly what I need from you first. Section E collects the questions in one place.
 
 The rule for all of it: I use only facts already on your site or facts you give me. Where a number or a

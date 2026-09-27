@@ -3,6 +3,8 @@ import Link from "next/link";
 import { MessageCircle, Phone, type LucideIcon } from "lucide-react";
 import type { AudiencePage } from "../data/audiences";
 import { screeningTools } from "../data/screening";
+import { getPageDates } from "../data/pageDates";
+import { formatIsoDate } from "./ArticleReviewCard";
 import RelatedContent from "./RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -15,6 +17,7 @@ export default function AudienceLandingPage({
   icon: LucideIcon;
 }) {
   const pageUrl = `${siteUrl}/${page.slug}`;
+  const dates = page.showLastUpdated ? getPageDates(`/${page.slug}/`) : undefined;
   const screeningTool = page.screeningId ? screeningTools.find((tool) => tool.id === page.screeningId) : undefined;
 
   const webPageJsonLd = {
@@ -30,6 +33,7 @@ export default function AudienceLandingPage({
     },
     medicalAudience: ["Patient", "MedicalAudience"],
     reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
+    ...(dates ? { dateModified: dates.modified } : {}),
   };
 
   const faqJsonLd = {
@@ -74,6 +78,11 @@ export default function AudienceLandingPage({
           <p id="audience-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             {page.intro}
           </p>
+          {dates && (
+            <p className="mt-4 text-sm text-stone-500">
+              Page last updated: <time dateTime={dates.modified}>{formatIsoDate(dates.modified)}</time>
+            </p>
+          )}
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="tel:+9779861800547"
@@ -94,6 +103,38 @@ export default function AudienceLandingPage({
           </div>
         </div>
       </section>
+
+      {page.factTable && (
+        <section className="bg-stone-50">
+          <div className="mx-auto max-w-5xl px-6 py-12 lg:px-8">
+            <div className="overflow-x-auto rounded-lg border border-stone-200 bg-white shadow-sm">
+              <table className="w-full min-w-[560px] text-left text-base">
+                <caption className="border-b border-stone-200 bg-stone-100 px-4 py-3 text-left text-lg font-bold text-stone-950">
+                  {page.factTable.caption}
+                </caption>
+                <thead className="sr-only">
+                  <tr>
+                    <th>Service</th>
+                    <th>Fee</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {page.factTable.rows.map((row) => (
+                    <tr key={row.label} className="border-t border-stone-200 align-top odd:bg-white even:bg-stone-50">
+                      <th scope="row" className="px-4 py-3 font-semibold text-sage-950">
+                        {row.label}
+                      </th>
+                      <td className="px-4 py-3 font-bold text-stone-950">{row.value}</td>
+                      <td className="px-4 py-3 text-stone-600">{row.note}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      )}
 
       {page.diagram && (
         <section className="bg-white">
@@ -183,6 +224,13 @@ export default function AudienceLandingPage({
                     {paragraph}
                   </p>
                 ))}
+                {section.link && (
+                  <p className="mt-4">
+                    <Link href={section.link.href} className="font-semibold text-sage-700 underline">
+                      {section.link.label}
+                    </Link>
+                  </p>
+                )}
               </div>
             ))}
           </div>

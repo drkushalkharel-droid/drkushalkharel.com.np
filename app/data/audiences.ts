@@ -1,3 +1,5 @@
+import { paymentStatement } from "./onlineCare";
+
 export type AudiencePage = {
   slug: string;
   title: string;
@@ -19,9 +21,13 @@ export type AudiencePage = {
   diagram?: { src: string; alt: string; caption: string };
   // Longer clinical sections shown between "Common concerns" and the FAQ. Used where a
   // separate article on the same topic was merged into this page.
-  guideSections?: { heading: string; body: string }[];
+  guideSections?: { heading: string; body: string; link?: { href: string; label: string } }[];
   // Nepali-language sections (rendered as lang="ne") merged in from a Nepali guide on the same topic.
   nepaliSections?: { heading: string; body: string }[];
+  // A short table of facts shown in the first screen (used for prices). Only put confirmed facts here.
+  factTable?: { caption: string; rows: { label: string; value: string; note?: string }[] };
+  // Show "Page last updated" (from app/data/pageDates.ts) under the intro.
+  showLastUpdated?: boolean;
   // A screening tool id from app/data/screening.ts to offer on this page.
   screeningId?: string;
 };
@@ -858,6 +864,41 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "psychiatrist-fee-nepal",
+    showLastUpdated: true,
+    factTable: {
+      caption: "Consultation fees at Dr. Kushal Kharel's clinic",
+      rows: [
+        { label: "Initial consultation", value: "NPR 800–1,500", note: "Depends on the complexity and length of the assessment." },
+        { label: "First follow-up within one week of the initial visit", value: "Free", note: "Once." },
+        { label: "Repeat consultation", value: "NPR 800", note: "After the free follow-up, or once the one-week window has passed." },
+        { label: "Online consultation (Google Meet or WhatsApp video call)", value: "Confirmed when you book", note: "The clinic confirms the fee and the payment options before your consultation." },
+        { label: "Medication", value: "Not included", note: "Bought separately at a pharmacy." },
+        { label: "Testing, medical certificates, unusual situations", value: "Confirmed before booking", note: "Call or WhatsApp +977 9861800547." },
+      ],
+    },
+    guideSections: [
+      {
+        heading: "What the consultation fee includes",
+        body:
+          "The consultation fee covers the psychiatric assessment and consultation itself. Any prescribed medication is bought separately at a pharmacy and is not part of the clinic's fee. Fees for testing, medical certificates, fitness-to-work documentation or unusual situations are confirmed directly with the clinic before booking.",
+      },
+      {
+        heading: "What affects the price of a psychiatric consultation",
+        body:
+          "An initial assessment costs more than a follow-up because it takes longer, and that is the only reason for the difference. Within the initial range of NPR 800–1,500, the fee depends on the complexity and length of the assessment, which is why the clinic confirms the fee for your specific appointment type before you book.",
+      },
+      {
+        heading: "Follow-up fees",
+        body:
+          "If you return within one week of your initial visit, that first follow-up is free, once. After that free follow-up, or once the one-week window has passed, each repeat consultation costs NPR 800.",
+      },
+      {
+        heading: "Online consultations and paying from abroad",
+        body:
+          "Online consultations are held by Google Meet or WhatsApp video call, in Nepali or English. " + paymentStatement,
+        link: { href: "/online-psychiatrist-nepal/", label: "How online psychiatric consultation works" },
+      },
+    ],
     doctorsApproach:
       "I'd rather you know the cost before you sit down than be surprised afterward — call or message and the clinic will confirm the fee for your specific appointment type up front. An initial assessment costs more than a follow-up because it takes longer, and that's the only reason for the difference.",
     title: "Psychiatrist Consultation Fees in Kathmandu, Nepal",
@@ -921,6 +962,20 @@ export const audiencePages: AudiencePage[] = [
         question: "What if I can't afford the standard consultation fee?",
         answer:
           "Mention this when you contact the clinic. It's worth asking directly rather than avoiding care altogether, and Dr. Kharel's community mental-health work includes free and low-cost outreach programmes in some settings.",
+      },
+      {
+        question: "Is the fee the same for an online consultation?",
+        answer:
+          "The clinic confirms the fee for your appointment type, including online consultations, when you book. Call or WhatsApp +977 9861800547 and say whether you prefer online or in person.",
+      },
+      {
+        question: "Can I pay for an online consultation from abroad?",
+        answer: paymentStatement,
+      },
+      {
+        question: "Are medical certificates and testing part of the consultation fee?",
+        answer:
+          "Their fees are confirmed directly with the clinic before booking, rather than being part of the standard consultation fees listed on this page.",
       },
     ],
   },
@@ -1824,6 +1879,24 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "adhd-treatment-kathmandu",
+    guideSections: [
+      {
+        heading: "What does an ADHD assessment involve?",
+        body:
+          "An ADHD assessment is a full clinical evaluation. It starts with a detailed developmental and symptom history, looking at how symptoms affect life across settings such as home, school and work, and it follows standard diagnostic criteria.\n\nFor children, the history involves parents and, where useful and with your consent, school input. For adults, the assessment looks at current symptoms and at a childhood history consistent with the diagnosis, even if ADHD was never named at the time. It also considers whether the symptoms are ADHD, anxiety, or both together.\n\nWhere the clinical picture is unclear, referral for formal psychometric testing can clarify the diagnosis. An initial consultation can be held online, but formal psychometric testing, when needed, requires an in-person visit to the Kalanki clinic in Kathmandu.",
+      },
+      {
+        heading: "How much does an ADHD assessment cost in Kathmandu?",
+        body:
+          "Consultation fees are set out on the clinic's fee page. For reference, an initial psychiatric consultation is NPR 800–1,500 depending on the complexity and length of the assessment, and repeat consultations are NPR 800. Because every assessment differs, call or WhatsApp +977 9861800547 to have the fee for an ADHD assessment confirmed before you book. If formal psychometric testing is needed, its cost is also confirmed with the clinic first.",
+        link: { href: "/psychiatrist-fee-nepal/", label: "Psychiatrist consultation fees in Kathmandu" },
+      },
+      {
+        heading: "What happens after an ADHD diagnosis?",
+        body:
+          "Treatment is individualised. It may include stimulant or non-stimulant medication, behavioral strategies, or both, depending on symptom severity, age and personal preference. Medication is one option, not a default. For adults, practical strategies for work or study routines usually go alongside it; for children, parent guidance and school-based support may be added. The plan is adjusted at follow-up based on what is actually helping.",
+      },
+    ],
     doctorsApproach:
       "With adult ADHD especially, I spend real time on the childhood history, because the diagnosis needs that pattern to have been there early even if it was never named at the time. Treatment is rarely medication alone in my practice — practical strategies for work or study routines usually go alongside it, and I adjust based on what's actually helping at follow-up.",
     title: "ADHD Assessment & Treatment in Kathmandu, Nepal",
@@ -1901,6 +1974,16 @@ export const audiencePages: AudiencePage[] = [
         question: "Will my child's school be involved in the assessment?",
         answer:
           "Only with your consent. School input can be useful for a fuller picture of how symptoms affect functioning across settings, and is coordinated with parents rather than sought independently.",
+      },
+      {
+        question: "How much does an ADHD assessment cost in Kathmandu?",
+        answer:
+          "Consultation fees are listed on the clinic's fee page: an initial psychiatric consultation is NPR 800–1,500 depending on complexity and length, and repeat consultations are NPR 800. Call or WhatsApp +977 9861800547 to have the fee for an ADHD assessment, and for any psychometric testing, confirmed before you book.",
+      },
+      {
+        question: "What happens after an ADHD diagnosis?",
+        answer:
+          "You and Dr. Kharel agree an individualised plan. It may combine stimulant or non-stimulant medication with behavioral strategies and, for children, parent guidance and school-based support, and it is adjusted at follow-up based on what is helping.",
       },
     ],
   },
