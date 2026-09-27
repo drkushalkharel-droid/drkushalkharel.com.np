@@ -123,6 +123,16 @@ export default function OnlinePsychiatristNepalPage() {
         <Section title="Frequently asked questions"><div className="space-y-4">{faqs.map((faq) => <div key={faq.question} className="rounded-lg border border-stone-200 p-5"><h3 className="font-bold text-sage-950">{faq.question}</h3><p className="mt-2 leading-7 text-stone-700">{faq.answer}</p></div>)}</div></Section>
         <section className="rounded-lg bg-sage-950 p-8 text-white"><div className="flex items-center gap-3"><Video aria-hidden="true" /><h2 className="text-3xl font-bold">Request an online consultation</h2></div><p className="mt-4 max-w-3xl leading-8 text-sage-100">Call or message to discuss your concern and confirm whether online psychiatric consultation is appropriate for you.</p><div className="mt-6 flex flex-wrap gap-4"><a href="tel:+9779861800547" className="rounded-lg bg-white px-6 py-3 font-semibold text-sage-950">Call +977 9861800547</a><a href="https://wa.me/9779861800547" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-white/50 px-6 py-3 font-semibold text-white">WhatsApp</a></div></section>
       </article>
+      <section className="mx-auto max-w-5xl px-6 pb-10 lg:px-8">
+        <h2 className="text-2xl font-bold text-stone-950">Online care for patients in your city</h2>
+        <p className="mt-3 max-w-3xl leading-8 text-stone-600">
+          The clinic is in Kalanki, Kathmandu. Patients in other cities can use online consultation when it is clinically
+          appropriate. City guides:{" "}
+          <Link href="/cities/kathmandu/" className="font-semibold text-sage-800 underline">Kathmandu</Link>,{" "}
+          <Link href="/cities/pokhara/" className="font-semibold text-sage-800 underline">Pokhara</Link> and{" "}
+          <Link href="/cities/chitwan/" className="font-semibold text-sage-800 underline">Chitwan</Link>.
+        </p>
+      </section>
       <div className="mx-auto max-w-5xl px-6 pb-16 lg:px-8">
         <RelatedContent path="/online-psychiatrist-nepal/" heading="Related services" showCallout={false} />
       </div>

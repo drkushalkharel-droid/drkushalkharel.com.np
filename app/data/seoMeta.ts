@@ -123,6 +123,11 @@ export const seoMeta: Record<string, SeoEntry> = {
     description:
       "Confidential English-language psychiatric assessment and treatment for expatriates, foreign workers and international staff. Book in-person or online.",
   },
+  "/faq/": {
+    title: "Psychiatrist FAQ: Kathmandu & Online",
+    description:
+      "Answers to common questions about seeing Dr. Kushal Kharel: booking, fees, online consultation, confidentiality and your first visit. Book in-person or online.",
+  },
   "/female-counselor-kathmandu/": {
     title: "Female Counselor in Kathmandu, Nepal",
     description:

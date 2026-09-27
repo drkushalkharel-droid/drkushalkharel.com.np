@@ -8,8 +8,8 @@
  *
  * Where the mappings come from (so nothing is retyped by hand):
  *   - Legacy stubs: the `destination` of every RedirectNotice page in app/.
- *   - Phase 3 / Phase 4 proposals: seo-proposals/phase3-redirect-map.json and
- *     phase4-cluster-map.json (merges). These are PENDING owner approval and are
+ *   - Proposals: seo-proposals/phase3-redirect-map.json, phase4-cluster-map.json (merges)
+ *     and phase7-cities-redirect-map.json. These are PENDING owner approval and are
  *     only written with --include-pending.
  *
  * Output (redirects/):
@@ -66,6 +66,13 @@ const p4 = path.join(ROOT, "seo-proposals/phase4-cluster-map.json");
 if (fs.existsSync(p4)) {
   for (const m of JSON.parse(fs.readFileSync(p4, "utf8")).merges) {
     pending.push({ from: m.from, to: m.into, why: `Phase 4 merge ${m.id}` });
+  }
+}
+
+const p7 = path.join(ROOT, "seo-proposals/phase7-cities-redirect-map.json");
+if (fs.existsSync(p7)) {
+  for (const r of JSON.parse(fs.readFileSync(p7, "utf8")).redirects) {
+    pending.push({ from: r.from, to: r.to, why: "Phase 7: thin city page" });
   }
 }
 

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Globe2, MessageCircle } from "lucide-react";
-import { abroadGuides } from "../data/abroad";
 import { regions } from "../data/abroadRegions";
 
 export default function AbroadSeoSection() {
@@ -35,18 +34,6 @@ export default function AbroadSeoSection() {
                 className="rounded-full border border-sage-700 bg-sage-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-sage-800"
               >
                 Nepalis in {region.shortName}
-              </Link>
-            ))}
-          </div>
-
-          <div className="mt-3 flex flex-wrap gap-2">
-            {abroadGuides.map((guide) => (
-              <Link
-                key={guide.slug}
-                href={`/nepalese-abroad/${guide.slug}`}
-                className="rounded-full border border-sage-200 bg-white px-4 py-2 text-sm font-semibold text-sage-900 transition hover:border-sage-400 hover:bg-sage-100"
-              >
-                {guide.country}
               </Link>
             ))}
           </div>

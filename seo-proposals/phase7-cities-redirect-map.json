@@ -1,0 +1,11 @@
+{
+  "status": "PROPOSED - nothing here has been applied. Awaiting owner approval (Phase 7, thin city pages).",
+  "why": "Three ~400-word pages built from one template, none linked from the homepage any more. /online-psychiatrist-nepal/ (1,700+ words) is already the 'online consultation from anywhere in Nepal' page, and the nine retired city pages already redirect to it.",
+  "redirects": [
+    { "from": "/cities/kathmandu/", "to": "/psychiatry-clinic-kathmandu/", "code": 301, "note": "Kathmandu is where the physical clinic is, so the clinic page is the better match than the online page." },
+    { "from": "/cities/pokhara/", "to": "/online-psychiatrist-nepal/", "code": 301, "note": "Online-only city, same target as the nine retired city pages." },
+    { "from": "/cities/chitwan/", "to": "/online-psychiatrist-nepal/", "code": 301, "note": "Online-only city, same target as the nine retired city pages." }
+  ],
+  "contentToKeep": "Fold any city-specific facts worth keeping into a short 'Online care for patients in your city' section on /online-psychiatrist-nepal/ (a placeholder section with links already exists there).",
+  "checkFirst": "Search Console clicks/impressions for the three URLs. If /cities/kathmandu/ ranks for 'psychiatrist in Kathmandu', keep it (and make it distinct) instead of redirecting."
+}

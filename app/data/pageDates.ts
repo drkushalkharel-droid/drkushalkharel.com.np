@@ -5,11 +5,11 @@
 export const pageDates: Record<string, { published: string; modified: string }> = {
   "/": {
     "published": "2026-07-05",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/about/": {
     "published": "2026-08-12",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/addiction-treatment-kathmandu/": {
     "published": "2026-08-07",
@@ -827,6 +827,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-07-08",
     "modified": "2026-09-26"
   },
+  "/faq/": {
+    "published": "2026-07-08",
+    "modified": "2026-09-27"
+  },
   "/female-counselor-kathmandu/": {
     "published": "2026-08-05",
     "modified": "2026-09-26"
@@ -849,7 +853,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/knowledge/": {
     "published": "2026-07-06",
-    "modified": "2026-09-26"
+    "modified": "2026-09-23"
   },
   "/knowledge/aalash-ho-ki-manasik-samasya-nepal/": {
     "published": "2026-09-02",
@@ -1161,7 +1165,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/medications/": {
     "published": "2026-08-12",
-    "modified": "2026-09-16"
+    "modified": "2026-09-27"
   },
   "/medications/antipsychotic-medications-explained/": {
     "published": "2026-08-12",
@@ -1373,7 +1377,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/online-psychiatrist-nepal/": {
     "published": "2026-07-20",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/panic-attack-treatment-kathmandu/": {
     "published": "2026-08-21",
@@ -1429,91 +1433,91 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/resources/adhd-leaflet/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/adhd-stimulant-medications-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-07-09"
+    "modified": "2026-09-27"
   },
   "/resources/alcohol-use-disorder-family-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/alcohol-use-disorder-leaflet/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/antidepressants-ssri-snri-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-07-09"
+    "modified": "2026-09-27"
   },
   "/resources/antipsychotics-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-07-09"
+    "modified": "2026-09-27"
   },
   "/resources/anxiety-coping-cards/": {
     "published": "2026-07-09",
-    "modified": "2026-07-09"
+    "modified": "2026-09-27"
   },
   "/resources/benzodiazepines-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-07-09"
+    "modified": "2026-09-27"
   },
   "/resources/bipolar-i-disorder-family-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/bipolar-i-disorder-leaflet/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/breathing-exercise-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-07-09"
+    "modified": "2026-09-27"
   },
   "/resources/caregiver-support-resource/": {
     "published": "2026-07-09",
-    "modified": "2026-07-09"
+    "modified": "2026-09-27"
   },
   "/resources/generalized-anxiety-disorder-leaflet/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/insomnia-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/major-depressive-disorder-family-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/major-depressive-disorder-leaflet/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/mood-stabilizers-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-07-09"
+    "modified": "2026-09-27"
   },
   "/resources/ocd-leaflet/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/panic-attacks-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/panic-disorder-leaflet/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/schizophrenia-family-guide/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/schizophrenia-leaflet/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/returning-to-nepal-after-abroad/": {
     "published": "2026-08-14",

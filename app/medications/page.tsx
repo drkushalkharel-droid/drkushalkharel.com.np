@@ -30,6 +30,14 @@ export const metadata: Metadata = {
   },
 };
 
+const medicationGuides = [
+  { href: "/resources/antidepressants-ssri-snri-guide/", title: "Understanding Antidepressants (SSRIs & SNRIs)", text: "How they work, common side effects and what to expect during treatment." },
+  { href: "/resources/antipsychotics-guide/", title: "Understanding Antipsychotic Medications", text: "How they work, common side effects and physical health monitoring." },
+  { href: "/resources/mood-stabilizers-guide/", title: "Understanding Mood Stabilizers", text: "Medicines used for bipolar disorder, including lithium, and the monitoring they need." },
+  { href: "/resources/benzodiazepines-guide/", title: "Understanding Benzodiazepines", text: "Short-term use for anxiety, panic or insomnia, and the risk of dependence." },
+  { href: "/resources/adhd-stimulant-medications-guide/", title: "Understanding ADHD Stimulant Medications", text: "Common effects and the monitoring that goes with them." },
+];
+
 export default function MedicationsIndexPage() {
   return (
     <main className="min-h-screen bg-stone-50 text-stone-900">
@@ -74,7 +82,46 @@ export default function MedicationsIndexPage() {
           ))}
         </div>
 
-        <div className="mt-6 grid gap-6 sm:grid-cols-2">
+        <div className="mt-12 rounded-lg border border-sage-200 bg-sage-50 p-6 md:p-8">
+          <h2 className="text-2xl font-bold text-sage-950">Before you start, change or stop a medicine</h2>
+          <p className="mt-3 max-w-3xl leading-8 text-stone-700">
+            Do not stop or change a psychiatric medicine on your own, even if you feel better or are worried about a side
+            effect. Some medicines need to be reduced gradually, and the right plan depends on your diagnosis, other
+            medicines and health. Bring a list of everything you take, or the medicines themselves, to your appointment so
+            they can be reviewed together.
+          </p>
+          <p className="mt-5 font-semibold text-stone-950">Questions worth asking your prescriber</p>
+          <ul className="mt-3 list-disc space-y-2 pl-5 leading-7 text-stone-700">
+            <li>What is this medicine for, and what should I notice if it is working?</li>
+            <li>How long before I feel a difference, and how long will I take it?</li>
+            <li>Which side effects are common, and which ones mean I should call you?</li>
+            <li>What should I do if I miss a dose, and can I drink alcohol or take other medicines with it?</li>
+            <li>When will we review whether to continue, reduce or stop it?</li>
+          </ul>
+        </div>
+
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold text-stone-950">Downloadable medication guides</h2>
+          <p className="mt-3 max-w-3xl leading-8 text-stone-600">
+            Printable one-page guides you can read at home or share with family. Each is general information, not a
+            prescription.
+          </p>
+          <ul className="mt-6 grid gap-4 sm:grid-cols-2">
+            {medicationGuides.map((guide) => (
+              <li key={guide.href}>
+                <Link
+                  href={guide.href}
+                  className="block h-full rounded-lg border border-stone-200 bg-white p-5 shadow-sm transition hover:border-sage-300 hover:bg-sage-50"
+                >
+                  <span className="font-semibold text-sage-800 underline underline-offset-2">{guide.title}</span>
+                  <span className="mt-2 block leading-7 text-stone-600">{guide.text}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
           <Link
             href="/psychiatric-medication-side-effects"
             className="block rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"

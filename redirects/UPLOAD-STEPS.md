@@ -13,7 +13,7 @@ is what makes this possible.
 | File | What it is | Upload it? |
 |---|---|---|
 | `cloudflare-redirects.csv` | 20 redirects: the old pillar pages (`/depression/`, `/adhd/`, `/ocd/`, `/schizophrenia/`, `/bipolar-disorder/`), the 9 retired city pages, 5 retired `/knowledge/` pages, and `/mental-health-screening/` to `/screening/` | **Yes, now** |
-| `cloudflare-redirects.pending-approval.csv` | 46 redirects for the country-page consolidation (Phase 3) and article merges (Phase 4) | **No. Wait for your approval and the matching site update** |
+| `cloudflare-redirects.pending-approval.csv` | 49 redirects for the country-page consolidation (Phase 3), article merges (Phase 4) and the three thin city pages (Phase 7) | **No. Wait for your approval and the matching site update** |
 
 Each redirect appears twice in the file, with and without the trailing `/`, because Cloudflare's
 documentation does not say whether it treats them as the same address. The extra lines are harmless.
@@ -37,7 +37,7 @@ When you approve Phases 3 and 4, I will produce one combined `cloudflare-redirec
    - **Select the list** you just created.
    - Click **Save and Deploy**.
 
-Cloudflare's free plan allows 10,000 bulk redirects, so 40 (or the 132 in the later combined file) is
+Cloudflare's free plan allows 10,000 bulk redirects, so 40 (or the 138 in the later combined file) is
 well within the limit.
 
 ## Check that it worked

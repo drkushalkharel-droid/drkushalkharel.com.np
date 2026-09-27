@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink, Phone } from "lucide-react";
 import SiteEntitySchema from "../components/SiteEntitySchema";
+import { aboutFacts } from "../data/aboutFacts";
 import RelatedContent from "../components/RelatedContent";
 import { seoDescription, seoTitle } from "../lib/seoText";
 
@@ -43,6 +44,18 @@ const verifiedProfiles = [
   { label: "about.me profile", href: "https://about.me/dr.kushalkharelpsychiatrist" },
   { label: "Yandex Maps — clinic listing & reviews", href: "https://yandex.com/maps/org/dr_kushal_kharel/209638868435/reviews/" },
   { label: "Quora profile", href: "https://www.quora.com/profile/Dr-Kushal-Kharel" },
+];
+
+const focusAreas = [
+  { label: "Anxiety and panic", href: "/anxiety/" },
+  { label: "Depression", href: "/depression-treatment-kathmandu/" },
+  { label: "OCD and ERP therapy", href: "/erp-therapy-ocd/" },
+  { label: "ADHD", href: "/adhd-treatment-kathmandu/" },
+  { label: "Bipolar disorder", href: "/bipolar-disorder-treatment-kathmandu/" },
+  { label: "Schizophrenia and psychosis", href: "/schizophrenia-treatment-kathmandu/" },
+  { label: "Addiction psychiatry", href: "/addiction-treatment-kathmandu/" },
+  { label: "Sleep problems", href: "/sleep-problems-treatment-nepal/" },
+  { label: "Online consultation", href: "/online-psychiatrist-nepal/" },
 ];
 
 const authoredContent = [
@@ -151,6 +164,117 @@ export default function AboutPage() {
           </table>
         </div>
       </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
+          <h2 className="text-3xl font-bold text-stone-950">How and where he practices</h2>
+          <div className="mt-6 grid gap-8 lg:grid-cols-2">
+            <p className="leading-8 text-stone-600">
+              Dr. Kharel sees patients in person at his clinic in Kalanki-14, Kathmandu, near Malpot Road and the
+              Kalanki Bhatbhateni Supermarket, and by video consultation for patients elsewhere in Nepal and for
+              Nepalis living abroad. Consultations are in Nepali or English. He treats children, adolescents,
+              adults and older adults.
+            </p>
+            <p className="leading-8 text-stone-600">
+              The clinic is open Sunday to Friday from 8:00 AM to 10:00 PM and on Saturday from 10:00 AM to
+              4:00 PM. It is not an emergency or 24-hour service: if there is immediate risk of harm, go to the
+              nearest hospital. See the{" "}
+              <Link href="/psychiatry-clinic-kathmandu/" className="font-semibold text-sage-800 underline">
+                psychiatry clinic page
+              </Link>{" "}
+              for what to expect at a first visit, or the{" "}
+              <Link href="/faq/" className="font-semibold text-sage-800 underline">
+                frequently asked questions
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
+        <h2 className="text-3xl font-bold text-stone-950">Areas of clinical focus</h2>
+        <p className="mt-4 max-w-3xl leading-8 text-stone-600">
+          The conditions and services Dr. Kharel most often treats. Each links to its own page with what
+          assessment and treatment involve.
+        </p>
+        <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {focusAreas.map((area) => (
+            <li key={area.href}>
+              <Link
+                href={area.href}
+                className="block rounded-lg border border-stone-200 bg-white p-4 font-semibold text-sage-800 shadow-sm transition hover:border-sage-300 hover:bg-sage-50"
+              >
+                {area.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {aboutFacts.education.length > 0 && (
+        <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
+          <h2 className="text-3xl font-bold text-stone-950">Education and training</h2>
+          <ul className="mt-6 space-y-3 text-stone-700">
+            {aboutFacts.education.map((item) => (
+              <li key={`${item.qualification}-${item.institution}`}>
+                <span className="font-semibold">{item.qualification}</span>, {item.institution}
+                {item.years ? ` (${item.years})` : ""}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {aboutFacts.affiliations.length > 0 && (
+        <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
+          <h2 className="text-3xl font-bold text-stone-950">Hospital and clinic affiliations</h2>
+          <ul className="mt-6 space-y-3 text-stone-700">
+            {aboutFacts.affiliations.map((item) => (
+              <li key={`${item.organisation}-${item.role}`}>
+                <span className="font-semibold">{item.organisation}</span>: {item.role}
+                {item.years ? ` (${item.years})` : ""}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {aboutFacts.publications.length > 0 && (
+        <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
+          <h2 className="text-3xl font-bold text-stone-950">Publications and presentations</h2>
+          <ul className="mt-6 space-y-3 text-stone-700">
+            {aboutFacts.publications.map((item) => (
+              <li key={`${item.title}-${item.year}`}>
+                {item.url ? (
+                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-sage-800 underline">
+                    {item.title}
+                  </a>
+                ) : (
+                  <span className="font-semibold">{item.title}</span>
+                )}
+                , {item.venue} ({item.year})
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {aboutFacts.mediaMentions.length > 0 && (
+        <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
+          <h2 className="text-3xl font-bold text-stone-950">In the media</h2>
+          <ul className="mt-6 space-y-3 text-stone-700">
+            {aboutFacts.mediaMentions.map((item) => (
+              <li key={item.url}>
+                <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-sage-800 underline">
+                  {item.title}
+                </a>
+                , {item.outlet} ({item.year})
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
         <h2 className="text-3xl font-bold text-stone-950">Verified profiles</h2>

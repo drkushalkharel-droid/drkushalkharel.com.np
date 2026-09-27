@@ -7,15 +7,13 @@ import Experience from "./components/Experience";
 import Awards from "./components/Awards";
 import Services from "./components/Services";
 import Conditions from "./components/Conditions";
-import SearchIntentSection from "./components/SearchIntentSection";
-import CitySeoSection from "./components/CitySeoSection";
 import ScreeningTeaser from "./components/ScreeningTeaser";
 import AbroadSeoSection from "./components/AbroadSeoSection";
 import Testimonials from "./components/Testimonials";
 import GoogleReviewsMap from "./components/GoogleReviewsMap";
 import AppointmentGuide from "./components/AppointmentGuide";
-import CounsellingSeoSection from "./components/CounsellingSeoSection";
 import FAQ from "./components/FAQ";
+import HomeGuides from "./components/HomeGuides";
 import Footer from "./components/Footer";
 import SiteEntitySchema from "./components/SiteEntitySchema";
 import { buildSpeakableSpec } from "./lib/schema";
@@ -114,20 +112,18 @@ export default function Home() {
       />
       <Navbar />
       <Hero />
-      <SearchIntentSection />
       <ScreeningTeaser />
-      <CitySeoSection />
       <AbroadSeoSection />
       <Statistics />
       <About />
       <Experience />
       <Awards />
       <Services />
-      <CounsellingSeoSection />
       <Conditions />
       <AppointmentGuide />
       <Testimonials />
       <GoogleReviewsMap />
+      <HomeGuides />
       <FAQ />
       <Footer />
     </>

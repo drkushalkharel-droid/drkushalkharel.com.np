@@ -21,7 +21,8 @@ export default function Hero() {
 
             <h1 className="text-5xl lg:text-7xl font-extrabold mt-8 leading-tight text-stone-950">
 
-              Dr. Kushal Kharel
+              <span className="block">Psychiatrist in Kathmandu</span>{" "}
+              <span className="mt-3 block text-3xl lg:text-5xl font-bold text-sage-800">Dr. Kushal Kharel</span>
 
             </h1>
 

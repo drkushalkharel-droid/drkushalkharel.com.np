@@ -8,6 +8,7 @@ import { buildSpeakableSpec } from "../../lib/schema";
 import PrintButton from "../PrintButton";
 import RelatedContent from "../../components/RelatedContent";
 import { metaFor } from "../../lib/seoText";
+import ResourceAbout from "../../components/ResourceAbout";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -124,6 +125,8 @@ export default async function ResourceDetailPage({
           </a>
           <PrintButton />
         </div>
+
+        <ResourceAbout resource={resource} />
 
         <div className="mt-10 space-y-8 border-t border-stone-200 pt-8 print:border-stone-300">
           {resource.sections.map((section) => (
