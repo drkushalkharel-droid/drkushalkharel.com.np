@@ -1,0 +1,1057 @@
+{
+  "status": "PROPOSED - nothing here has been applied. Merges await owner approval (Phase 4).",
+  "clusterCount": 8,
+  "pagesCovered": 124,
+  "clusters": [
+    {
+      "id": "adhd",
+      "name": "ADHD",
+      "primary": {
+        "url": "/adhd-treatment-kathmandu/",
+        "anchor": "ADHD treatment in Kathmandu",
+        "title": "ADHD Assessment & Treatment in Kathmandu, Nepal | Dr. Kushal Kharel",
+        "h1": "ADHD assessment and treatment in Kathmandu, Nepal",
+        "words": 709,
+        "contextualInlinks": 0
+      },
+      "reference": [
+        {
+          "url": "/conditions/adhd/",
+          "title": "Attention-Deficit/Hyperactivity Disorder (ADHD): Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+          "words": 2259,
+          "contextualInlinks": 8
+        }
+      ],
+      "nepali": [
+        {
+          "url": "/knowledge/adhd/",
+          "title": "Attention-Deficit/ Hyperactivity Disorder (एडीएचडी / अत्यधिक चञ्चलता र ध्यान केन्द्रित गर्न नसक्ने समस्या) — Meaning, Symptoms and Treatment",
+          "h1": "Attention-Deficit/ Hyperactivity Disorder",
+          "words": 914,
+          "contextualInlinks": 18
+        }
+      ],
+      "subtopics": [
+        {
+          "url": "/blog/adult-adhd-nepal/",
+          "title": "Adult ADHD Nepal | Dr. Kushal Kharel",
+          "h1": "Adult ADHD in Nepal",
+          "words": 1174,
+          "contextualInlinks": 1
+        }
+      ],
+      "tools": [
+        {
+          "url": "/screening/adult-adhd/",
+          "title": "Do I have ADHD? Free Adult ADHD Screening Test | Dr. Kushal Kharel",
+          "h1": "Do I have ADHD?",
+          "words": 664,
+          "contextualInlinks": 3
+        }
+      ],
+      "leaflets": [
+        {
+          "url": "/resources/adhd-leaflet/",
+          "title": "ADHD: Patient Information Leaflet (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "ADHD: Patient Information Leaflet",
+          "words": 544,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/resources/adhd-stimulant-medications-guide/",
+          "title": "Understanding ADHD Stimulant Medications (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Understanding ADHD Stimulant Medications",
+          "words": 289,
+          "contextualInlinks": 2
+        }
+      ]
+    },
+    {
+      "id": "depression",
+      "name": "Depression",
+      "primary": {
+        "url": "/depression-treatment-kathmandu/",
+        "anchor": "depression treatment in Kathmandu",
+        "title": "Depression Treatment in Kathmandu, Nepal | Dr. Kushal Kharel",
+        "h1": "Depression treatment in Kathmandu, Nepal",
+        "words": 805,
+        "contextualInlinks": 0
+      },
+      "reference": [
+        {
+          "url": "/conditions/major-depressive-disorder/",
+          "title": "Major Depressive Disorder (MDD) (डिप्रेसन / निराशा रोग): Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Major Depressive Disorder (MDD)",
+          "words": 2790,
+          "contextualInlinks": 74
+        },
+        {
+          "url": "/conditions/persistent-depressive-disorder/",
+          "title": "Persistent Depressive Disorder (Dysthymia): Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Persistent Depressive Disorder (Dysthymia)",
+          "words": 2036,
+          "contextualInlinks": 6
+        },
+        {
+          "url": "/conditions/postpartum-depression/",
+          "title": "Postpartum Depression: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Postpartum Depression",
+          "words": 2335,
+          "contextualInlinks": 8
+        },
+        {
+          "url": "/conditions/seasonal-affective-disorder/",
+          "title": "Seasonal Affective Disorder (SAD): Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Seasonal Affective Disorder (SAD)",
+          "words": 2111,
+          "contextualInlinks": 5
+        }
+      ],
+      "nepali": [
+        {
+          "url": "/knowledge/smiling-depression-nepal/",
+          "title": "मन लगातार दुखी तर अरूसँग हाँसेर हिँड्ने बानी: यो के हो? | Nepali Patient Guide",
+          "h1": "मन लगातार दुखी तर अरूसँग हाँसेर हिँड्ने बानी: यो के हो?",
+          "words": 536,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/knowledge/aalash-ho-ki-manasik-samasya-nepal/",
+          "title": "यो अल्छी हो कि मानसिक समस्या? कसरी छुट्याउने? | Nepali Patient Guide",
+          "h1": "यो अल्छी हो कि मानसिक समस्या? कसरी छुट्याउने?",
+          "words": 523,
+          "contextualInlinks": 2
+        }
+      ],
+      "subtopics": [
+        {
+          "url": "/blog/depression-vs-normal-sadness/",
+          "title": "Depression vs Normal Sadness | Dr. Kushal Kharel",
+          "h1": "Depression vs Normal Sadness",
+          "words": 1448,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/help-family-member-with-depression-nepal/",
+          "title": "How to Help a Family Member with Depression | Dr. Kushal Kharel",
+          "h1": "How to Help a Family Member with Depression",
+          "words": 952,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/postpartum-depression-nepal/",
+          "title": "Postpartum Depression Nepal | Dr. Kushal Kharel",
+          "h1": "Postpartum Depression in Nepal",
+          "words": 1257,
+          "contextualInlinks": 6
+        },
+        {
+          "url": "/blog/postpartum-depression-in-fathers-nepal/",
+          "title": "Postpartum Depression in Fathers: An Overlooked Concern | Dr. Kushal Kharel",
+          "h1": "Postpartum Depression in Fathers: An Overlooked Concern",
+          "words": 1077,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/dashain-tihar-festival-loneliness-depression/",
+          "title": "Coping with Loneliness and Depression During Dashain and Tihar | Dr. Kushal Kharel",
+          "h1": "Coping with Loneliness and Depression During Dashain and Tihar",
+          "words": 1117,
+          "contextualInlinks": 3
+        },
+        {
+          "url": "/blog/elderly-loneliness-late-life-depression-nepal/",
+          "title": "Loneliness and Depression in Elderly Parents Left Behind | Dr. Kushal Kharel",
+          "h1": "Loneliness and Depression in Elderly Parents Left Behind in Nepal",
+          "words": 1110,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/chronic-illness-depression-overlooked-connection-nepal/",
+          "title": "Chronic Illness and Depression: The Overlooked Connection | Dr. Kushal Kharel",
+          "h1": "Chronic Illness and Depression: The Overlooked Connection",
+          "words": 1079,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/blog/anxiety-vs-depression-difference-nepal/",
+          "title": "Anxiety vs. Depression: How a Psychiatrist Tells the Difference | Dr. Kushal Kharel",
+          "h1": "Anxiety vs. Depression: How a Psychiatrist Tells the Difference",
+          "words": 1159,
+          "contextualInlinks": 1
+        },
+        {
+          "url": "/blog/bipolar-disorder-vs-depression/",
+          "title": "Bipolar Disorder vs Depression | Dr. Kushal Kharel",
+          "h1": "Bipolar Disorder vs Depression",
+          "words": 1203,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/ketamine-therapy-depression-anxiety-nepal/",
+          "title": "Ketamine Therapy for Depression and Anxiety: What to Know | Dr. Kushal Kharel",
+          "h1": "Ketamine Therapy for Depression and Anxiety: What It Is and What to Know",
+          "words": 1147,
+          "contextualInlinks": 1
+        }
+      ],
+      "tools": [
+        {
+          "url": "/screening/depression/",
+          "title": "Do I have depression? Free Depression Screening Test | Dr. Kushal Kharel",
+          "h1": "Do I have depression?",
+          "words": 731,
+          "contextualInlinks": 11
+        },
+        {
+          "url": "/screening/postpartum-depression/",
+          "title": "Do I have postpartum depression? Free Postpartum Depression Screening Test | Dr. Kushal Kharel",
+          "h1": "Do I have postpartum depression?",
+          "words": 671,
+          "contextualInlinks": 4
+        }
+      ],
+      "leaflets": [
+        {
+          "url": "/resources/major-depressive-disorder-leaflet/",
+          "title": "Depression: Patient Information Leaflet (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Depression: Patient Information Leaflet",
+          "words": 585,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/resources/major-depressive-disorder-family-guide/",
+          "title": "Family Guide: Supporting a Loved One with Depression (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Family Guide: Supporting a Loved One with Depression",
+          "words": 318,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/resources/antidepressants-ssri-snri-guide/",
+          "title": "Understanding Antidepressants (SSRIs & SNRIs) (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Understanding Antidepressants (SSRIs & SNRIs)",
+          "words": 358,
+          "contextualInlinks": 2
+        }
+      ]
+    },
+    {
+      "id": "bipolar",
+      "name": "Bipolar disorder",
+      "primary": {
+        "url": "/bipolar-disorder-treatment-kathmandu/",
+        "anchor": "bipolar disorder treatment in Kathmandu",
+        "title": "Bipolar Disorder Treatment in Kathmandu, Nepal | Dr. Kushal Kharel",
+        "h1": "Bipolar disorder treatment in Kathmandu, Nepal",
+        "words": 809,
+        "contextualInlinks": 0
+      },
+      "reference": [
+        {
+          "url": "/conditions/bipolar-i-disorder/",
+          "title": "Bipolar I Disorder: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Bipolar I Disorder",
+          "words": 2558,
+          "contextualInlinks": 10
+        },
+        {
+          "url": "/conditions/bipolar-ii-disorder/",
+          "title": "Bipolar II Disorder: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Bipolar II Disorder",
+          "words": 1929,
+          "contextualInlinks": 3
+        },
+        {
+          "url": "/conditions/cyclothymic-disorder/",
+          "title": "Cyclothymic Disorder (Cyclothymia): Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Cyclothymic Disorder (Cyclothymia)",
+          "words": 1819,
+          "contextualInlinks": 3
+        }
+      ],
+      "nepali": [
+        {
+          "url": "/knowledge/mania/",
+          "title": "MANIA | Nepali Patient Guide",
+          "h1": "MANIA",
+          "words": 963,
+          "contextualInlinks": 18
+        },
+        {
+          "url": "/knowledge/bipolar-disorder/",
+          "title": "Bipolar Disorder | Dr. Kushal Kharel",
+          "h1": "Bipolar Disorder",
+          "words": 960,
+          "contextualInlinks": 1
+        }
+      ],
+      "subtopics": [
+        {
+          "url": "/blog/bipolar-disorder-vs-depression/",
+          "title": "Bipolar Disorder vs Depression | Dr. Kushal Kharel",
+          "h1": "Bipolar Disorder vs Depression",
+          "words": 1203,
+          "contextualInlinks": 2
+        }
+      ],
+      "tools": [
+        {
+          "url": "/screening/bipolar/",
+          "title": "Do I have bipolar disorder? Free Bipolar Screening Test | Dr. Kushal Kharel",
+          "h1": "Do I have bipolar disorder?",
+          "words": 750,
+          "contextualInlinks": 3
+        }
+      ],
+      "leaflets": [
+        {
+          "url": "/resources/bipolar-i-disorder-leaflet/",
+          "title": "Bipolar Disorder: Patient Information Leaflet (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Bipolar Disorder: Patient Information Leaflet",
+          "words": 618,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/resources/bipolar-i-disorder-family-guide/",
+          "title": "Family Guide: Supporting a Loved One with Bipolar Disorder (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Family Guide: Supporting a Loved One with Bipolar Disorder",
+          "words": 330,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/resources/mood-stabilizers-guide/",
+          "title": "Understanding Mood Stabilizers (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Understanding Mood Stabilizers",
+          "words": 344,
+          "contextualInlinks": 1
+        }
+      ]
+    },
+    {
+      "id": "schizophrenia",
+      "name": "Schizophrenia and psychosis",
+      "primary": {
+        "url": "/schizophrenia-treatment-kathmandu/",
+        "anchor": "schizophrenia treatment in Kathmandu",
+        "title": "Schizophrenia Treatment in Kathmandu, Nepal | Dr. Kushal Kharel",
+        "h1": "Schizophrenia treatment in Kathmandu, Nepal",
+        "words": 751,
+        "contextualInlinks": 0
+      },
+      "secondaryPrimary": {
+        "url": "/psychosis-treatment-kathmandu/",
+        "anchor": "psychosis treatment in Kathmandu",
+        "title": "Psychosis Treatment in Kathmandu: When to Seek Help | Dr. Kushal Kharel",
+        "h1": "Psychosis treatment in Kathmandu — when to seek help",
+        "words": 795,
+        "contextualInlinks": 0
+      },
+      "reference": [
+        {
+          "url": "/conditions/schizophrenia/",
+          "title": "Schizophrenia: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Schizophrenia",
+          "words": 2775,
+          "contextualInlinks": 10
+        },
+        {
+          "url": "/conditions/schizoaffective-disorder/",
+          "title": "Schizoaffective Disorder: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Schizoaffective Disorder",
+          "words": 1649,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/conditions/brief-psychotic-disorder/",
+          "title": "Brief Psychotic Disorder: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Brief Psychotic Disorder",
+          "words": 1650,
+          "contextualInlinks": 5
+        },
+        {
+          "url": "/conditions/postpartum-psychosis/",
+          "title": "Postpartum Psychosis: A Postnatal Psychiatric Emergency — Symptoms & Treatment | Dr. Kushal Kharel",
+          "h1": "Postpartum Psychosis",
+          "words": 2734,
+          "contextualInlinks": 6
+        },
+        {
+          "url": "/conditions/delusional-disorder/",
+          "title": "Delusional Disorder: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Delusional Disorder",
+          "words": 1910,
+          "contextualInlinks": 4
+        }
+      ],
+      "nepali": [
+        {
+          "url": "/knowledge/schizophrenia/",
+          "title": "Schizophrenia | Nepali Patient Guide",
+          "h1": "Schizophrenia",
+          "words": 826,
+          "contextualInlinks": 2
+        }
+      ],
+      "subtopics": [
+        {
+          "url": "/blog/schizophrenia-early-warning-signs/",
+          "title": "Early Signs of Schizophrenia | Dr. Kushal Kharel",
+          "h1": "Schizophrenia: Early Warning Signs",
+          "words": 1140,
+          "contextualInlinks": 1
+        },
+        {
+          "url": "/blog/cannabis-substance-induced-psychosis-nepal/",
+          "title": "Cannabis and Substance-Induced Psychosis: Warning Signs | Dr. Kushal Kharel",
+          "h1": "Cannabis and Substance-Induced Psychosis: Warning Signs",
+          "words": 976,
+          "contextualInlinks": 3
+        },
+        {
+          "url": "/blog/postpartum-psychosis-nepal/",
+          "title": "Postpartum Psychosis: A Psychiatric Emergency After Childbirth | Dr. Kushal Kharel",
+          "h1": "Postpartum Psychosis: A Psychiatric Emergency After Childbirth",
+          "words": 1105,
+          "contextualInlinks": 3
+        }
+      ],
+      "tools": [],
+      "leaflets": [
+        {
+          "url": "/resources/schizophrenia-leaflet/",
+          "title": "Schizophrenia: Patient Information Leaflet (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Schizophrenia: Patient Information Leaflet",
+          "words": 597,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/resources/schizophrenia-family-guide/",
+          "title": "Family Guide: Supporting a Loved One with Schizophrenia (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Family Guide: Supporting a Loved One with Schizophrenia",
+          "words": 379,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/resources/antipsychotics-guide/",
+          "title": "Understanding Antipsychotic Medications (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Understanding Antipsychotic Medications",
+          "words": 347,
+          "contextualInlinks": 1
+        }
+      ]
+    },
+    {
+      "id": "ocd",
+      "name": "OCD",
+      "primary": {
+        "url": "/erp-therapy-ocd/",
+        "anchor": "OCD treatment (ERP therapy) in Kathmandu",
+        "title": "Exposure and Response Prevention (ERP) Therapy in Nepal | Dr. Kushal Kharel",
+        "h1": "Exposure and Response Prevention (ERP) therapy in Nepal",
+        "words": 779,
+        "contextualInlinks": 49
+      },
+      "primaryNote": "Only service page for OCD; see decision 4.",
+      "reference": [
+        {
+          "url": "/conditions/ocd/",
+          "title": "Obsessive-Compulsive Disorder (OCD): Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Obsessive-Compulsive Disorder (OCD)",
+          "words": 2332,
+          "contextualInlinks": 11
+        },
+        {
+          "url": "/conditions/obsessive-compulsive-personality-disorder/",
+          "title": "Obsessive-Compulsive Personality Disorder (OCPD) (OCPD / जिद्दी पूर्णतावादी व्यक्तित्व समस्या): Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Obsessive-Compulsive Personality Disorder (OCPD)",
+          "words": 2778,
+          "contextualInlinks": 6
+        }
+      ],
+      "nepali": [
+        {
+          "url": "/knowledge/obsessive-compulsive-disorder/",
+          "title": "Obsessive-Compulsive Disorder (OCD) | Dr. Kushal Kharel",
+          "h1": "Obsessive-Compulsive Disorder (OCD)",
+          "words": 869,
+          "contextualInlinks": 2
+        }
+      ],
+      "subtopics": [
+        {
+          "url": "/blog/ocd-common-misconceptions/",
+          "title": "OCD Myths and Facts | Dr. Kushal Kharel",
+          "h1": "OCD: Common Misconceptions",
+          "words": 1225,
+          "contextualInlinks": 1
+        }
+      ],
+      "tools": [
+        {
+          "url": "/screening/ocd/",
+          "title": "Do I have OCD? Free OCD Screening Test | Dr. Kushal Kharel",
+          "h1": "Do I have OCD?",
+          "words": 677,
+          "contextualInlinks": 4
+        }
+      ],
+      "leaflets": [
+        {
+          "url": "/resources/ocd-leaflet/",
+          "title": "OCD: Patient Information Leaflet (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "OCD: Patient Information Leaflet",
+          "words": 542,
+          "contextualInlinks": 2
+        }
+      ]
+    },
+    {
+      "id": "anxiety",
+      "name": "Anxiety and panic",
+      "primary": {
+        "url": "/anxiety/",
+        "anchor": "anxiety treatment in Kathmandu",
+        "title": "Anxiety Treatment in Kathmandu | Symptoms, Causes & Help | Dr. Kushal Kharel",
+        "h1": "Anxiety Treatment in Kathmandu, Nepal",
+        "words": 2441,
+        "contextualInlinks": 62
+      },
+      "secondaryPrimary": {
+        "url": "/panic-attack-treatment-kathmandu/",
+        "anchor": "panic attack treatment in Kathmandu",
+        "title": "Panic Attack Treatment in Kathmandu, Nepal | Dr. Kushal Kharel",
+        "h1": "Panic attack treatment in Kathmandu, Nepal",
+        "words": 781,
+        "contextualInlinks": 0
+      },
+      "reference": [
+        {
+          "url": "/conditions/generalized-anxiety-disorder/",
+          "title": "Generalized Anxiety Disorder (GAD) (चिन्ता रोग): Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Generalized Anxiety Disorder (GAD)",
+          "words": 3040,
+          "contextualInlinks": 21
+        },
+        {
+          "url": "/conditions/panic-disorder/",
+          "title": "Panic Disorder (प्यानिक अट्याक / आतंक दौरा): Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Panic Disorder",
+          "words": 2435,
+          "contextualInlinks": 14
+        },
+        {
+          "url": "/conditions/panic-attacks/",
+          "title": "Panic Attacks: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Panic Attacks",
+          "words": 2284,
+          "contextualInlinks": 8
+        },
+        {
+          "url": "/conditions/social-anxiety-disorder/",
+          "title": "Social Anxiety Disorder (Social Phobia): Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Social Anxiety Disorder (Social Phobia)",
+          "words": 2356,
+          "contextualInlinks": 10
+        },
+        {
+          "url": "/conditions/illness-anxiety-disorder/",
+          "title": "Illness Anxiety Disorder: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Illness Anxiety Disorder",
+          "words": 1719,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/conditions/separation-anxiety/",
+          "title": "Separation Anxiety Disorder: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Separation Anxiety Disorder",
+          "words": 2114,
+          "contextualInlinks": 8
+        }
+      ],
+      "nepali": [
+        {
+          "url": "/anxiety/np/",
+          "title": "चिन्ता विकार उपचार काठमाडौं | लक्षण, कारण र समाधान | Dr. Kushal Kharel",
+          "h1": "चिन्ता विकार: लक्षण, उपचार र सुधार",
+          "words": 631,
+          "contextualInlinks": 0
+        },
+        {
+          "url": "/knowledge/panic-attack-nepali-guide/",
+          "title": "Panic Attack (आतंक दौरा): कारण, लक्षण र उपचार | Nepali Patient Guide",
+          "h1": "Panic Attack (आतंक दौरा): कारण, लक्षण र उपचार",
+          "words": 611,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/knowledge/overthinking-kasari-niko-parne-nepal/",
+          "title": "धेरै सोच्ने बानी: सोच कसरी हटाउने, कसरी निको पार्ने? | Nepali Patient Guide",
+          "h1": "धेरै सोच्ने बानी: सोच कसरी हटाउने, कसरी निको पार्ने?",
+          "words": 544,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/knowledge/internet-ma-lakshan-search-garne-nepal/",
+          "title": "इन्टरनेटमा आफ्नो लक्षणबारे धेरै सर्च गर्नु ठीक हो? | Nepali Patient Guide",
+          "h1": "इन्टरनेटमा आफ्नो लक्षणबारे धेरै सर्च गर्नु ठीक हो?",
+          "words": 523,
+          "contextualInlinks": 4
+        }
+      ],
+      "subtopics": [
+        {
+          "url": "/blog/generalized-anxiety-disorder-nepal/",
+          "title": "Generalized Anxiety Disorder Nepal | Dr. Kushal Kharel",
+          "h1": "Generalized Anxiety Disorder: Symptoms and Treatment",
+          "words": 1497,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/social-anxiety-treatment-nepal/",
+          "title": "Social Anxiety Treatment Nepal | Dr. Kushal Kharel",
+          "h1": "Social Anxiety Disorder Treatment in Nepal",
+          "words": 1527,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/health-anxiety-treatment-nepal/",
+          "title": "Health Anxiety Treatment Nepal | Dr. Kushal Kharel",
+          "h1": "Health Anxiety: Treatment and Support in Nepal",
+          "words": 925,
+          "contextualInlinks": 3
+        },
+        {
+          "url": "/blog/overthinking-treatment-nepal/",
+          "title": "Overthinking Treatment Nepal | Dr. Kushal Kharel",
+          "h1": "Overthinking: Treatment and Support in Nepal",
+          "words": 900,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/panic-attack-vs-heart-attack/",
+          "title": "Panic Attack vs Heart Attack | Dr. Kushal Kharel",
+          "h1": "Panic Attack vs Heart Attack: Know the Differences",
+          "words": 962,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/panic-disorder-vs-generalized-anxiety-nepal/",
+          "title": "Panic Disorder vs Generalized Anxiety Disorder: Key Differences | Dr. Kushal Kharel",
+          "h1": "Panic Disorder vs Generalized Anxiety Disorder: Key Differences",
+          "words": 944,
+          "contextualInlinks": 3
+        },
+        {
+          "url": "/blog/relaxation-breathing-exercises-anxiety-nepal/",
+          "title": "Relaxation and Breathing Exercises for Anxiety | Dr. Kushal Kharel",
+          "h1": "Relaxation and Breathing Exercises for Anxiety",
+          "words": 896,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/blog/postpartum-anxiety-nepal/",
+          "title": "Postpartum Anxiety in Nepal: Symptoms and Treatment | Dr. Kushal Kharel",
+          "h1": "Postpartum Anxiety: Symptoms and Treatment in Nepal",
+          "words": 1172,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/antenatal-pregnancy-anxiety-nepal/",
+          "title": "Anxiety During Pregnancy: Symptoms and Treatment | Dr. Kushal Kharel",
+          "h1": "Anxiety During Pregnancy: Symptoms and Treatment",
+          "words": 918,
+          "contextualInlinks": 3
+        },
+        {
+          "url": "/blog/exam-stress-see-board-exams-nepal/",
+          "title": "Exam Stress and SEE/Board Exam Anxiety: A Guide for Students | Dr. Kushal Kharel",
+          "h1": "Exam Stress and SEE/Board Exam Anxiety: A Guide for Students and Families in Nepal",
+          "words": 1109,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/blog/first-job-career-transition-anxiety-nepal/",
+          "title": "First Job Anxiety and Career Transition Stress in Nepal | Dr. Kushal Kharel",
+          "h1": "First Job Anxiety and Career Transition Stress in Nepal",
+          "words": 1083,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/blog/separation-anxiety-school-refusal-children-nepal/",
+          "title": "Separation Anxiety and School Refusal in Children: A Parent's Guide | Dr. Kushal Kharel",
+          "h1": "Separation Anxiety and School Refusal in Children: A Parent's Guide",
+          "words": 1265,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/do-i-have-hiv-anxiety-testing/",
+          "title": "Do I Have HIV? Anxiety, Symptoms and Testing | Dr. Kushal Kharel",
+          "h1": "Do I Have HIV? Testing, Symptoms and Health Anxiety",
+          "words": 1020,
+          "contextualInlinks": 1
+        },
+        {
+          "url": "/knowledge/coping-with-anxiety/",
+          "title": "Coping with Anxiety: 12 Evidence-Based Strategies | Dr. Kushal Kharel",
+          "h1": "Coping with Anxiety: 12 Evidence-Based Strategies",
+          "words": 411,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/knowledge/panic-attacks-what-to-do/",
+          "title": "Panic Attacks: What to Do When One Happens | Dr. Kushal Kharel",
+          "h1": "Panic Attacks: What to Do When One Happens",
+          "words": 933,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/knowledge/sexual-health-performance-anxiety-intimacy-nepal/",
+          "title": "Sexual Health and Performance Anxiety: When to See a Psychiatrist | यौन स्वास्थ्य र मानसिक कारण | Dr. Kushal Kharel",
+          "h1": "Sexual Health and Performance Anxiety: When to See a Psychiatrist | यौन स्वास्थ्य र मानसिक कारण",
+          "words": 1034,
+          "contextualInlinks": 1
+        }
+      ],
+      "tools": [
+        {
+          "url": "/screening/anxiety/",
+          "title": "Do I have anxiety? Free Anxiety Screening Test | Dr. Kushal Kharel",
+          "h1": "Do I have anxiety?",
+          "words": 709,
+          "contextualInlinks": 12
+        },
+        {
+          "url": "/screening/panic-disorder/",
+          "title": "Do I have panic disorder? Free Panic Disorder Screening Test | Dr. Kushal Kharel",
+          "h1": "Do I have panic disorder?",
+          "words": 524,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/screening/social-anxiety/",
+          "title": "Do I have social anxiety? Free Social Anxiety Screening Test | Dr. Kushal Kharel",
+          "h1": "Do I have social anxiety?",
+          "words": 678,
+          "contextualInlinks": 4
+        }
+      ],
+      "leaflets": [
+        {
+          "url": "/resources/generalized-anxiety-disorder-leaflet/",
+          "title": "Generalized Anxiety Disorder: Patient Information Leaflet (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Generalized Anxiety Disorder: Patient Information Leaflet",
+          "words": 698,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/resources/panic-disorder-leaflet/",
+          "title": "Panic Disorder: Patient Information Leaflet (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Panic Disorder: Patient Information Leaflet",
+          "words": 549,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/resources/panic-attacks-guide/",
+          "title": "Panic Attack Management Instructions (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Panic Attack Management Instructions",
+          "words": 291,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/resources/anxiety-coping-cards/",
+          "title": "Anxiety Coping Cards (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Anxiety Coping Cards",
+          "words": 258,
+          "contextualInlinks": 1
+        },
+        {
+          "url": "/resources/breathing-exercise-guide/",
+          "title": "Breathing Exercise Guide (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Breathing Exercise Guide",
+          "words": 254,
+          "contextualInlinks": 1
+        }
+      ]
+    },
+    {
+      "id": "sleep",
+      "name": "Insomnia and sleep",
+      "primary": {
+        "url": "/sleep-problems-treatment-nepal/",
+        "anchor": "sleep problems treatment in Nepal",
+        "title": "Sleep Problems & Insomnia Treatment in Nepal | Dr. Kushal Kharel",
+        "h1": "Sleep problems and insomnia treatment in Nepal, and online",
+        "words": 823,
+        "contextualInlinks": 48
+      },
+      "reference": [
+        {
+          "url": "/conditions/insomnia/",
+          "title": "Insomnia Disorder: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Insomnia Disorder",
+          "words": 2416,
+          "contextualInlinks": 11
+        },
+        {
+          "url": "/conditions/circadian-rhythm-sleep-wake-disorders/",
+          "title": "Circadian Rhythm Sleep-Wake Disorders: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Circadian Rhythm Sleep-Wake Disorders",
+          "words": 1990,
+          "contextualInlinks": 3
+        },
+        {
+          "url": "/conditions/parasomnias/",
+          "title": "Parasomnias: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Parasomnias",
+          "words": 2077,
+          "contextualInlinks": 3
+        }
+      ],
+      "nepali": [
+        {
+          "url": "/knowledge/insomnia/",
+          "title": "Insomnia (निद्रा नलाग्ने समस्या) — Meaning, Symptoms and Treatment",
+          "h1": "Insomnia",
+          "words": 748,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/knowledge/aithan-sleep-paralysis-nepal/",
+          "title": "आइठान (Sleep Paralysis) र डरलाग्दो सपनाबाट ब्युँझने समस्या | Nepali Patient Guide",
+          "h1": "आइठान (Sleep Paralysis) र डरलाग्दो सपनाबाट ब्युँझने समस्या",
+          "words": 590,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/knowledge/non-restorative-sleep-nepal/",
+          "title": "राति राम्ररी सुते पनि बिहान उठ्दा ताजा किन महसुस हुँदैन? | Nepali Patient Guide",
+          "h1": "राति राम्ररी सुते पनि बिहान उठ्दा ताजा किन महसुस हुँदैन?",
+          "words": 521,
+          "contextualInlinks": 4
+        }
+      ],
+      "subtopics": [
+        {
+          "url": "/blog/insomnia-cbt-treatment-without-medication-nepal/",
+          "title": "Insomnia Treatment Without Medication: CBT-I in Nepal | Dr. Kushal Kharel",
+          "h1": "Insomnia Treatment Without Medication: CBT-I in Nepal",
+          "words": 927,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/nightmares-sleep-paralysis-when-to-worry-nepal/",
+          "title": "Nightmares and Sleep Paralysis: When to See a Psychiatrist | Dr. Kushal Kharel",
+          "h1": "Nightmares and Sleep Paralysis: When to See a Psychiatrist",
+          "words": 1055,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/blog/sleep-apnea-mental-health-nepal/",
+          "title": "Sleep Apnea and Mental Health in Nepal | Dr. Kushal Kharel",
+          "h1": "Sleep Apnea and Mental Health in Nepal",
+          "words": 1073,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/blog/sleep-problems-and-mental-health/",
+          "title": "Sleep Problems and Mental Health | Dr. Kushal Kharel",
+          "h1": "Sleep Problems and Mental Health",
+          "words": 1317,
+          "contextualInlinks": 5
+        }
+      ],
+      "tools": [
+        {
+          "url": "/screening/insomnia/",
+          "title": "Do I have insomnia? Free Insomnia Screening Test | Dr. Kushal Kharel",
+          "h1": "Do I have insomnia?",
+          "words": 545,
+          "contextualInlinks": 4
+        },
+        {
+          "url": "/screening/sleepiness/",
+          "title": "Am I too sleepy during the day? Free Sleepiness Screening Test | Dr. Kushal Kharel",
+          "h1": "Am I too sleepy during the day?",
+          "words": 537,
+          "contextualInlinks": 3
+        }
+      ],
+      "leaflets": [
+        {
+          "url": "/resources/insomnia-guide/",
+          "title": "Sleep Hygiene Handout (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Sleep Hygiene Handout",
+          "words": 373,
+          "contextualInlinks": 2
+        }
+      ]
+    },
+    {
+      "id": "addiction",
+      "name": "Addiction (alcohol and substances)",
+      "primary": {
+        "url": "/addiction-treatment-kathmandu/",
+        "anchor": "addiction treatment in Kathmandu",
+        "title": "Best Addiction Treatment in Kathmandu, Nepal | Dr. Kushal Kharel",
+        "h1": "Best addiction treatment and alcohol counselling in Kathmandu",
+        "words": 792,
+        "contextualInlinks": 12
+      },
+      "reference": [
+        {
+          "url": "/conditions/alcohol-use-disorder/",
+          "title": "Alcohol Use Disorder: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Alcohol Use Disorder",
+          "words": 2348,
+          "contextualInlinks": 13
+        },
+        {
+          "url": "/conditions/opioid-use-disorder/",
+          "title": "Opioid Use Disorder: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Opioid Use Disorder",
+          "words": 2188,
+          "contextualInlinks": 8
+        },
+        {
+          "url": "/conditions/cannabis-use-disorder/",
+          "title": "Cannabis Use Disorder: Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Cannabis Use Disorder",
+          "words": 1965,
+          "contextualInlinks": 8
+        },
+        {
+          "url": "/conditions/nicotine-dependence/",
+          "title": "Nicotine Dependence (Tobacco Use Disorder): Symptoms, Causes, Diagnosis & Treatment | Dr. Kushal Kharel",
+          "h1": "Nicotine Dependence (Tobacco Use Disorder)",
+          "words": 2041,
+          "contextualInlinks": 9
+        }
+      ],
+      "nepali": [
+        {
+          "url": "/knowledge/alcohol-dependence-syndrome/",
+          "title": "Alcohol Dependence Syndrome | Nepali Patient Guide",
+          "h1": "Alcohol Dependence Syndrome",
+          "words": 740,
+          "contextualInlinks": 18
+        },
+        {
+          "url": "/knowledge/alcohol-effects-body-brain-nepal/",
+          "title": "नियमित रक्सी सेवनले शरीर र दिमागमा पार्ने असर | Nepali Patient Guide",
+          "h1": "नियमित रक्सी सेवनले शरीर र दिमागमा पार्ने असर",
+          "words": 516,
+          "contextualInlinks": 3
+        },
+        {
+          "url": "/knowledge/morning-drinking-alcohol-nepal/",
+          "title": "बिहानै खाली पेटमा रक्सी खाने बानी: यो किन खतरनाक हो, र कसरी रोक्ने? | Nepali Patient Guide",
+          "h1": "बिहानै खाली पेटमा रक्सी खाने बानी: यो किन खतरनाक हो, र कसरी रोक्ने?",
+          "words": 521,
+          "contextualInlinks": 3
+        }
+      ],
+      "subtopics": [
+        {
+          "url": "/blog/alcohol-addiction-treatment-nepal/",
+          "title": "Alcohol Addiction Treatment Nepal | Dr. Kushal Kharel",
+          "h1": "Alcohol Addiction Treatment in Nepal",
+          "words": 1337,
+          "contextualInlinks": 5
+        },
+        {
+          "url": "/blog/alcohol-drug-rehab-referral-collaboration-nepal/",
+          "title": "Alcohol and Drug Rehabilitation: Referral and Collaborative Care in Nepal | Dr. Kushal Kharel",
+          "h1": "Alcohol and Drug Rehabilitation: Referral and Collaborative Care in Nepal",
+          "words": 994,
+          "contextualInlinks": 3
+        }
+      ],
+      "tools": [
+        {
+          "url": "/screening/alcohol-use/",
+          "title": "Do I have a drinking problem? Free Alcohol Use Screening Test | Dr. Kushal Kharel",
+          "h1": "Do I have a drinking problem?",
+          "words": 639,
+          "contextualInlinks": 5
+        }
+      ],
+      "leaflets": [
+        {
+          "url": "/resources/alcohol-use-disorder-leaflet/",
+          "title": "Alcohol Use Disorder: Patient Information Leaflet (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Alcohol Use Disorder: Patient Information Leaflet",
+          "words": 547,
+          "contextualInlinks": 2
+        },
+        {
+          "url": "/resources/alcohol-use-disorder-family-guide/",
+          "title": "Family Guide: Supporting a Loved One with Alcohol Use Disorder (Free Download) | Dr. Kushal Kharel | Dr. Kushal Kharel",
+          "h1": "Family Guide: Supporting a Loved One with Alcohol Use Disorder",
+          "words": 310,
+          "contextualInlinks": 2
+        }
+      ]
+    }
+  ],
+  "merges": [
+    {
+      "id": "M1",
+      "from": "/blog/panic-attack-treatment-kathmandu/",
+      "into": "/panic-attack-treatment-kathmandu/",
+      "why": "Identical target query (\"panic attack treatment Kathmandu\") and identical commercial intent. The blog post has more content (1,670 words) than the service page (781).",
+      "fold": "The service page has only 'Who this is for / Common concerns / FAQ / Related services'. Move across the blog's symptoms, causes and risk factors, assessment, treatment, support-in-Nepal, when-to-seek-urgent-help and key-takeaways sections.",
+      "code": 301,
+      "fromInlinks": 3,
+      "fromWords": 1670,
+      "intoWords": 781
+    },
+    {
+      "id": "M2",
+      "from": "/knowledge/depression-treatment-nepal/",
+      "into": "/depression-treatment-kathmandu/",
+      "why": "Same query family (\"depression treatment Nepal/Kathmandu\") and same intent. The knowledge page (1,723 words, English + Nepali) is fuller than the service page (805).",
+      "fold": "Move across 'Is it depression or just stress?', symptoms, diagnosis, treatment (counselling, therapy, medication), how long treatment takes, when depression needs urgent help, online consultation, and the Nepali summary sections.",
+      "risk": "Its title was hand-tuned in code for search, so it may already rank. Check Search Console before redirecting.",
+      "code": 301,
+      "fromInlinks": 3,
+      "fromWords": 1723,
+      "intoWords": 805
+    },
+    {
+      "id": "M3",
+      "from": "/knowledge/anxiety-treatment-nepal/",
+      "into": "/anxiety/",
+      "why": "Same query family (\"anxiety treatment Nepal/Kathmandu\"). /anxiety/ is already the primary page (2,441 words, 62 internal links) and already covers symptoms, causes, treatment and when to see a psychiatrist.",
+      "fold": "The English content is largely redundant with /anxiety/. The Nepali sections (symptoms, panic attack, treatment, online consultation, best therapy, lifestyle) should move to /anxiety/np/, which is only 631 words.",
+      "risk": "Its title was hand-tuned in code for search, so it may already rank. Check Search Console before redirecting.",
+      "code": 301,
+      "fromInlinks": 5,
+      "fromWords": 1912,
+      "intoWords": 2441
+    },
+    {
+      "id": "M4",
+      "from": "/knowledge/sleep-problems-which-doctor-kathmandu/",
+      "into": "/sleep-problems-treatment-nepal/",
+      "why": "\"Which doctor for sleep problems in Kathmandu\" and \"sleep problems treatment Nepal\" are the same searcher with the same intent. The removed page's sections (which doctor to see, what happens at a sleep consultation, how to book) are exactly what a commercial page needs and the service page lacks.",
+      "fold": "Move across 'what should I do about my sleep problem', 'when sleep problems need more than self-help', 'which doctor should I see in Kathmandu', 'what happens at a sleep-focused psychiatric consultation', and 'booking a sleep consultation', with their Nepali versions.",
+      "risk": "Very long bilingual title (137 characters). Check Search Console before redirecting.",
+      "code": 301,
+      "fromInlinks": 4,
+      "fromWords": 1335,
+      "intoWords": 823
+    },
+    {
+      "id": "M5",
+      "from": "/knowledge/sleep-and-mental-health/",
+      "into": "/blog/sleep-problems-and-mental-health/",
+      "why": "Same topic and intent as the blog post (\"sleep and mental health\"), but only 395 words versus 1,317.",
+      "fold": "Keep the removed page's 'Sleep hygiene basics' and 'Techniques for insomnia' sections; the blog post does not have them.",
+      "code": 301,
+      "fromInlinks": 4,
+      "fromWords": 395,
+      "intoWords": 1317
+    }
+  ]
+}
