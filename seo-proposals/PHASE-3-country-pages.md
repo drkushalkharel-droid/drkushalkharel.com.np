@@ -1,7 +1,9 @@
 # Phase 3 proposal: the 41 "Nepalese abroad" country pages
 
-**Status: PROPOSAL ONLY. Nothing has been deleted, merged or redirected.** Please read the
-"Decisions I need from you" section, then tell me to go ahead (or what to change).
+**Status: APPROVED 2026-09-27 and built on branch `seo/consolidation-merges` (not yet on the live site).**
+The owner chose to merge **all 41** country pages into the 8 regional pages, including Dubai, USA, Australia and
+UK (my recommendation to keep those four standalone was not taken), with Israel in the Europe page and every
+other recommendation accepted. The text below is the original proposal, kept for the record.
 
 The full machine-readable redirect map is in [phase3-redirect-map.json](phase3-redirect-map.json).
 

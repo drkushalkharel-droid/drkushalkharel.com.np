@@ -13,11 +13,11 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/addiction-treatment-kathmandu/": {
     "published": "2026-08-07",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/adhd-treatment-kathmandu/": {
     "published": "2026-08-21",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/adhd/": {
     "published": "2026-08-26",
@@ -25,23 +25,23 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/anxiety/": {
     "published": "2026-07-06",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/anxiety/np/": {
     "published": "2026-07-06",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/appointment/": {
     "published": "2026-08-03",
-    "modified": "2026-09-16"
+    "modified": "2026-09-27"
   },
   "/best-psychiatrist-nepal/": {
     "published": "2026-07-20",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/bipolar-disorder-treatment-kathmandu/": {
     "published": "2026-08-21",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/bipolar-disorder/": {
     "published": "2026-08-26",
@@ -49,7 +49,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/blog/": {
     "published": "2026-07-29",
-    "modified": "2026-09-23"
+    "modified": "2026-09-27"
   },
   "/blog/adult-adhd-nepal/": {
     "published": "2026-07-29",
@@ -299,10 +299,6 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-03",
     "modified": "2026-08-03"
   },
-  "/blog/panic-attack-treatment-kathmandu/": {
-    "published": "2026-07-29",
-    "modified": "2026-07-29"
-  },
   "/blog/panic-attack-vs-heart-attack/": {
     "published": "2026-08-03",
     "modified": "2026-08-03"
@@ -401,7 +397,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/blog/sleep-problems-and-mental-health/": {
     "published": "2026-07-29",
-    "modified": "2026-07-29"
+    "modified": "2026-09-27"
   },
   "/blog/smoking-cessation-quit-smoking-nepal/": {
     "published": "2026-08-06",
@@ -453,67 +449,55 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/cbt-therapist-kathmandu/": {
     "published": "2026-08-05",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/child-adolescent-psychiatry/": {
     "published": "2026-08-05",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/cities/bhaktapur/": {
-    "published": "2026-07-08",
+    "published": "2026-08-26",
     "modified": "2026-09-16"
   },
   "/cities/biratnagar/": {
-    "published": "2026-07-06",
+    "published": "2026-08-26",
     "modified": "2026-09-16"
   },
   "/cities/butwal/": {
-    "published": "2026-07-08",
+    "published": "2026-08-26",
     "modified": "2026-09-16"
   },
-  "/cities/chitwan/": {
-    "published": "2026-07-06",
-    "modified": "2026-08-12"
-  },
   "/cities/dhangadhi/": {
-    "published": "2026-07-06",
+    "published": "2026-08-26",
     "modified": "2026-09-16"
   },
   "/cities/dharan/": {
-    "published": "2026-07-08",
+    "published": "2026-08-26",
     "modified": "2026-09-16"
   },
   "/cities/hetauda/": {
-    "published": "2026-07-08",
+    "published": "2026-08-26",
     "modified": "2026-09-16"
   },
   "/cities/janakpur/": {
-    "published": "2026-07-08",
+    "published": "2026-08-26",
     "modified": "2026-09-16"
   },
-  "/cities/kathmandu/": {
-    "published": "2026-07-06",
-    "modified": "2026-07-08"
-  },
   "/cities/lalitpur/": {
-    "published": "2026-07-08",
+    "published": "2026-08-26",
     "modified": "2026-09-16"
   },
   "/cities/nepalgunj/": {
-    "published": "2026-07-06",
+    "published": "2026-08-26",
     "modified": "2026-09-16"
-  },
-  "/cities/pokhara/": {
-    "published": "2026-07-06",
-    "modified": "2026-08-12"
   },
   "/community-mental-health-programs/": {
     "published": "2026-07-29",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/conditions/": {
     "published": "2026-07-07",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/conditions/acute-agitation-behavioral-emergency/": {
     "published": "2026-07-08",
@@ -793,23 +777,23 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/contact/": {
     "published": "2026-07-29",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/corporate-mental-health-partner-nepal/": {
     "published": "2026-08-14",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/counselling-in-nepal/": {
     "published": "2026-07-08",
-    "modified": "2026-09-16"
+    "modified": "2026-09-27"
   },
   "/couple-relationship-counseling/": {
     "published": "2026-08-05",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/depression-treatment-kathmandu/": {
     "published": "2026-08-21",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/depression/": {
     "published": "2026-08-26",
@@ -817,15 +801,15 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/english-speaking-psychiatrist/": {
     "published": "2026-07-08",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/erp-therapy-ocd/": {
     "published": "2026-08-05",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/expatriates-in-nepal/": {
     "published": "2026-07-08",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/faq/": {
     "published": "2026-07-08",
@@ -833,27 +817,27 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/female-counselor-kathmandu/": {
     "published": "2026-08-05",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/help-relative-abroad-see-psychiatrist/": {
     "published": "2026-08-28",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/home-visit-psychiatrist-nepal/": {
     "published": "2026-08-02",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/how-to-control-your-mind-nepal/": {
     "published": "2026-08-12",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/iq-psychological-testing/": {
     "published": "2026-08-05",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/knowledge/": {
     "published": "2026-07-06",
-    "modified": "2026-09-23"
+    "modified": "2026-09-27"
   },
   "/knowledge/aalash-ho-ki-manasik-samasya-nepal/": {
     "published": "2026-09-02",
@@ -1087,10 +1071,6 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-06",
     "modified": "2026-08-06"
   },
-  "/knowledge/sleep-and-mental-health/": {
-    "published": "2026-08-02",
-    "modified": "2026-08-02"
-  },
   "/knowledge/sleep-problems-which-doctor-kathmandu/": {
     "published": "2026-09-02",
     "modified": "2026-09-02"
@@ -1153,15 +1133,15 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/medical-disclaimer/": {
     "published": "2026-07-08",
-    "modified": "2026-09-16"
+    "modified": "2026-09-27"
   },
   "/medical-fitness-certificate/": {
     "published": "2026-08-05",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/medication-review-second-opinion-nepal/": {
     "published": "2026-08-14",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/medications/": {
     "published": "2026-08-12",
@@ -1185,191 +1165,43 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/mental-health-screening/": {
     "published": "2026-07-29",
-    "modified": "2026-07-29"
+    "modified": "2026-09-27"
   },
   "/nepalese-abroad/": {
     "published": "2026-07-08",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
-  "/nepalese-abroad/australia/": {
-    "published": "2026-07-06",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/bahrain/": {
-    "published": "2026-08-18",
-    "modified": "2026-08-18"
-  },
-  "/nepalese-abroad/bangladesh/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/belgium/": {
-    "published": "2026-07-06",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/brunei/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/canada/": {
-    "published": "2026-07-06",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/china/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/croatia/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/cyprus/": {
-    "published": "2026-08-14",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/denmark/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/dubai/": {
-    "published": "2026-07-06",
-    "modified": "2026-08-19"
+  "/nepalese-abroad/australia-new-zealand/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
   },
   "/nepalese-abroad/east-asia/": {
     "published": "2026-09-26",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/nepalese-abroad/europe/": {
     "published": "2026-09-26",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/fiji/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/finland/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/france/": {
-    "published": "2026-07-06",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/germany/": {
-    "published": "2026-08-06",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/nepalese-abroad/gulf/": {
     "published": "2026-09-26",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
-  "/nepalese-abroad/hong-kong/": {
-    "published": "2026-08-18",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/india/": {
-    "published": "2026-07-06",
-    "modified": "2026-08-05"
-  },
-  "/nepalese-abroad/ireland/": {
-    "published": "2026-08-18",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/israel/": {
-    "published": "2026-08-14",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/italy/": {
-    "published": "2026-08-18",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/japan/": {
-    "published": "2026-07-06",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/korea/": {
-    "published": "2026-07-06",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/kuwait/": {
-    "published": "2026-08-14",
-    "modified": "2026-08-14"
-  },
-  "/nepalese-abroad/malaysia/": {
-    "published": "2026-08-12",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/myanmar/": {
-    "published": "2026-08-19",
-    "modified": "2026-08-19"
-  },
-  "/nepalese-abroad/netherlands/": {
-    "published": "2026-07-06",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/new-zealand/": {
-    "published": "2026-08-18",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/norway/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/oman/": {
-    "published": "2026-08-18",
-    "modified": "2026-08-18"
-  },
-  "/nepalese-abroad/poland/": {
-    "published": "2026-08-18",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/portugal/": {
-    "published": "2026-08-14",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/qatar/": {
-    "published": "2026-07-06",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/romania/": {
-    "published": "2026-08-14",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/saudi-arabia/": {
-    "published": "2026-08-12",
-    "modified": "2026-08-12"
-  },
-  "/nepalese-abroad/singapore/": {
-    "published": "2026-08-18",
-    "modified": "2026-09-26"
+  "/nepalese-abroad/south-asia/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
   },
   "/nepalese-abroad/southeast-asia/": {
     "published": "2026-09-26",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
-  "/nepalese-abroad/spain/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
+  "/nepalese-abroad/uk-ireland/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
   },
-  "/nepalese-abroad/sri-lanka/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/sweden/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/thailand/": {
-    "published": "2026-08-19",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/uk/": {
-    "published": "2026-07-06",
-    "modified": "2026-09-26"
-  },
-  "/nepalese-abroad/usa/": {
-    "published": "2026-07-06",
-    "modified": "2026-08-19"
+  "/nepalese-abroad/usa-canada/": {
+    "published": "2026-09-27",
+    "modified": "2026-09-27"
   },
   "/ocd/": {
     "published": "2026-08-26",
@@ -1381,55 +1213,55 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/panic-attack-treatment-kathmandu/": {
     "published": "2026-08-21",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/patient-testimonials/": {
     "published": "2026-08-19",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/privacy-policy/": {
     "published": "2026-07-08",
-    "modified": "2026-09-16"
+    "modified": "2026-09-27"
   },
   "/psychiatric-care-for-family-in-nepal/": {
     "published": "2026-08-19",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/psychiatric-hospital-vs-clinic-kathmandu/": {
     "published": "2026-08-07",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/psychiatric-medication-side-effects/": {
     "published": "2026-08-14",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/psychiatrist-fee-nepal/": {
     "published": "2026-08-07",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/psychiatrist-for-nepalis-abroad/": {
     "published": "2026-07-29",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/psychiatry-clinic-kathmandu/": {
     "published": "2026-08-12",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/psychology-internship-nepal/": {
     "published": "2026-08-06",
-    "modified": "2026-09-16"
+    "modified": "2026-09-27"
   },
   "/psychosis-treatment-kathmandu/": {
     "published": "2026-08-21",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/relationship-counselling-kathmandu/": {
     "published": "2026-08-12",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/": {
     "published": "2026-07-09",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/resources/adhd-leaflet/": {
     "published": "2026-07-09",
@@ -1521,11 +1353,11 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/returning-to-nepal-after-abroad/": {
     "published": "2026-08-14",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/schizophrenia-treatment-kathmandu/": {
     "published": "2026-08-21",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/schizophrenia/": {
     "published": "2026-08-26",
@@ -1533,7 +1365,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/screening/": {
     "published": "2026-07-06",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/screening/adult-adhd/": {
     "published": "2026-07-09",
@@ -1589,15 +1421,15 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/sleep-problems-treatment-nepal/": {
     "published": "2026-09-24",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/stress-anger-management-kathmandu/": {
     "published": "2026-08-12",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   },
   "/tourists-in-nepal/": {
     "published": "2026-07-08",
-    "modified": "2026-09-26"
+    "modified": "2026-09-27"
   }
 };
 

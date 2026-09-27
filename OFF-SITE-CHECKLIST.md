@@ -49,16 +49,23 @@ near me".
 
 - [ ] **Search Console** (search.google.com/search-console): add the property as a **Domain** property
       (drkushalkharel.com.np). Verify with a DNS record in Cloudflare.
-- [ ] **Submit the sitemap:** `https://drkushalkharel.com.np/sitemap.xml`. It now has 379 URLs with real
+- [ ] **Submit the sitemap:** `https://drkushalkharel.com.np/sitemap.xml`. It now has 337 URLs with real
       last-modified dates and hreflang for the Nepali pages.
 - [ ] **Request indexing** (URL Inspection, then "Request indexing") for the pages that changed most: the
       homepage, `/faq/`, `/about/`, `/psychiatrist-fee-nepal/`, `/adhd-treatment-kathmandu/`,
-      `/depression-treatment-kathmandu/`, `/psychiatry-clinic-kathmandu/`. Google limits how many you can request
-      per day, so start with these.
+      `/depression-treatment-kathmandu/`, `/psychiatry-clinic-kathmandu/`, `/panic-attack-treatment-kathmandu/`
+      and the four new region pages `/nepalese-abroad/uk-ireland/`, `/nepalese-abroad/usa-canada/`,
+      `/nepalese-abroad/australia-new-zealand/` and `/nepalese-abroad/south-asia/`. Google limits how many you can
+      request per day, so start with these.
 - [ ] **Bing Webmaster Tools** (bing.com/webmasters): use "Import from Google Search Console" (fastest), then
       submit the same sitemap. (Your deploy already notifies Bing and others through IndexNow.)
-- [ ] **Export data for me.** Two exports would let me finish the merge decisions in
-      `seo-proposals/`: *Performance, Pages* for the last 6 to 12 months, and *Performance, Queries*.
+- [ ] **Export data for me.** Two exports would let me decide the three merges still on hold (the depression,
+      anxiety and "which doctor for sleep problems" knowledge pages, M2 to M4 in `seo-proposals/`):
+      *Performance, Pages* for the last 6 to 12 months, and *Performance, Queries*.
+- [ ] **After the country pages merge:** in *Performance, Pages*, watch the eight `/nepalese-abroad/` region pages
+      for the next 4 to 8 weeks. Clicks that used to go to a country page (for example `/nepalese-abroad/dubai/`)
+      should move to its region page. If a big market such as UAE loses clicks and does not recover, tell me and we
+      can bring that country back as its own page.
 - [ ] **Two weeks after deploying:** open *Pages* (indexing) and look for new errors. Also check *Enhancements*
       for FAQ and breadcrumb problems, and *International Targeting* or the hreflang report for the Nepali pages.
 - [ ] Check *Manual actions* and *Security issues* are both empty.
@@ -141,7 +148,9 @@ For reference, these support the steps above and need nothing from you:
 - Every page now has the correct language tag; Nepali pages are marked as Nepali.
 - No review-rating markup remains (it risked a manual action); doctor and clinic details appear once, on the
   homepage and About page, and other pages point to them.
-- Titles and descriptions are in range and unique on all 379 pages.
+- Titles and descriptions are in range and unique on all 337 pages.
 - The sitemap has real dates and Nepali alternates.
-- Legacy addresses redirect once you upload `redirects/cloudflare-redirects.csv` (steps in
+- The 41 country pages are merged into 8 regional pages (each country is a section on its region's page), two
+  overlapping articles are merged into the pages that cover them, and three thin city pages are retired.
+- Legacy addresses redirect once you upload `redirects/cloudflare-redirects.csv` (66 redirects; steps in
   `redirects/UPLOAD-STEPS.md`).

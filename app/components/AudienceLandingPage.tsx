@@ -2,6 +2,7 @@ import Image from "./OptimizedImage";
 import Link from "next/link";
 import { MessageCircle, Phone, type LucideIcon } from "lucide-react";
 import type { AudiencePage } from "../data/audiences";
+import { screeningTools } from "../data/screening";
 import RelatedContent from "./RelatedContent";
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -14,6 +15,7 @@ export default function AudienceLandingPage({
   icon: LucideIcon;
 }) {
   const pageUrl = `${siteUrl}/${page.slug}`;
+  const screeningTool = page.screeningId ? screeningTools.find((tool) => tool.id === page.screeningId) : undefined;
 
   const webPageJsonLd = {
     "@context": "https://schema.org",
@@ -151,6 +153,33 @@ export default function AudienceLandingPage({
           </div>
         </div>
       </section>
+
+      {(screeningTool || (page.guideSections && page.guideSections.length > 0)) && (
+        <section className="bg-white">
+          <div className="mx-auto max-w-4xl px-6 py-14 lg:px-8">
+            {screeningTool && (
+              <div className="flex flex-col items-start gap-4 rounded-lg border border-green-200 bg-green-50 p-6 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="font-bold text-green-950">{screeningTool.searchQuestion}</p>
+                  <p className="mt-1 text-green-900">Take a free, confidential self-rated screening related to this topic.</p>
+                </div>
+                <Link
+                  href={`/screening/${screeningTool.id}`}
+                  className="shrink-0 rounded-lg bg-green-700 px-5 py-3 font-semibold text-white transition hover:bg-green-800"
+                >
+                  Take the screening
+                </Link>
+              </div>
+            )}
+            {page.guideSections?.map((section) => (
+              <div key={section.heading} className="mt-10 first:mt-0">
+                <h2 className="text-3xl font-bold text-stone-950">{section.heading}</h2>
+                <p className="mt-4 leading-8 text-stone-700">{section.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">

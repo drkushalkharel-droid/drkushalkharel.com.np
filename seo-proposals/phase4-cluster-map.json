@@ -1,5 +1,5 @@
 {
-  "status": "PROPOSED - nothing here has been applied. Merges await owner approval (Phase 4).",
+  "status": "M1 and M5 APPROVED 2026-09-27 and applied. M2, M3 and M4 are HELD until Search Console data shows whether the page to be removed currently outranks the page to be kept.",
   "clusterCount": 8,
   "pagesCovered": 124,
   "clusters": [
@@ -1004,7 +1004,8 @@
       "code": 301,
       "fromInlinks": 3,
       "fromWords": 1670,
-      "intoWords": 781
+      "intoWords": 781,
+      "approved": true
     },
     {
       "id": "M2",
@@ -1016,7 +1017,8 @@
       "code": 301,
       "fromInlinks": 3,
       "fromWords": 1723,
-      "intoWords": 805
+      "intoWords": 805,
+      "approved": false
     },
     {
       "id": "M3",
@@ -1028,7 +1030,8 @@
       "code": 301,
       "fromInlinks": 5,
       "fromWords": 1912,
-      "intoWords": 2441
+      "intoWords": 2441,
+      "approved": false
     },
     {
       "id": "M4",
@@ -1040,7 +1043,8 @@
       "code": 301,
       "fromInlinks": 4,
       "fromWords": 1335,
-      "intoWords": 823
+      "intoWords": 823,
+      "approved": false
     },
     {
       "id": "M5",
@@ -1051,7 +1055,8 @@
       "code": 301,
       "fromInlinks": 4,
       "fromWords": 395,
-      "intoWords": 1317
+      "intoWords": 1317,
+      "approved": true
     }
   ]
 }

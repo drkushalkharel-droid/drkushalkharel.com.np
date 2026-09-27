@@ -12,14 +12,16 @@ is what makes this possible.
 
 | File | What it is | Upload it? |
 |---|---|---|
-| `cloudflare-redirects.csv` | 20 redirects: the old pillar pages (`/depression/`, `/adhd/`, `/ocd/`, `/schizophrenia/`, `/bipolar-disorder/`), the 9 retired city pages, 5 retired `/knowledge/` pages, and `/mental-health-screening/` to `/screening/` | **Yes, now** |
-| `cloudflare-redirects.pending-approval.csv` | 49 redirects for the country-page consolidation (Phase 3), article merges (Phase 4) and the three thin city pages (Phase 7) | **No. Wait for your approval and the matching site update** |
+| `cloudflare-redirects.csv` | **66 redirects**: the 41 country pages to their regional pages, the 12 retired city pages, the old pillar pages (`/depression/`, `/adhd/`, `/ocd/`, `/schizophrenia/`, `/bipolar-disorder/`), 5 retired `/knowledge/` pages, the two merged articles (`/blog/panic-attack-treatment-kathmandu/` and `/knowledge/sleep-and-mental-health/`), and `/mental-health-screening/` to `/screening/` | **Yes** |
+| `cloudflare-redirects.pending-approval.csv` | 3 redirects for merges that are still on hold (the depression, anxiety and "which doctor for sleep problems" knowledge pages) | **No. Not approved yet.** |
 
 Each redirect appears twice in the file, with and without the trailing `/`, because Cloudflare's
 documentation does not say whether it treats them as the same address. The extra lines are harmless.
+The file has 132 lines for the 66 redirects.
 
-When you approve Phases 3 and 4, I will produce one combined `cloudflare-redirects.csv`
-(`node scripts/generate-cloudflare-redirects.mjs --include-pending`) and you will upload that instead.
+**If you already uploaded the earlier 20-redirect file:** the new file contains all 20 of those plus the
+new ones, so replace that list with this one (or create a new list from this file, point the rule at it,
+and delete the old list). Do not keep both lists active with the same addresses.
 
 ## Step by step (about 5 minutes)
 
@@ -30,15 +32,14 @@ When you approve Phases 3 and 4, I will produce one combined `cloudflare-redirec
 4. Give it a name such as `legacy-urls-2026` and a short description, then click **Next**.
 5. Choose the option to **import a CSV file**, then drag `cloudflare-redirects.csv` onto the box (or click
    **browse** and choose it).
-6. Cloudflare shows the redirects it read. Check that the count looks right (40 lines) and click **Next**.
+6. Cloudflare shows the redirects it read. Check that the count looks right (132 lines) and click **Next**.
 7. Review once more, click **Next**, then **Continue to Redirect Rules**.
 8. **This step is easy to miss:** a list does nothing until a rule turns it on. On the next screen:
    - **Rule name:** `Apply legacy URL redirects`
    - **Select the list** you just created.
    - Click **Save and Deploy**.
 
-Cloudflare's free plan allows 10,000 bulk redirects, so 40 (or the 138 in the later combined file) is
-well within the limit.
+Cloudflare's free plan allows 10,000 bulk redirects, so 132 lines is well within the limit.
 
 ## Check that it worked
 
@@ -51,6 +52,10 @@ bar should change:
 | `drkushalkharel.com.np/adhd/` | `/conditions/adhd/` |
 | `drkushalkharel.com.np/mental-health-screening/` | `/screening/` |
 | `drkushalkharel.com.np/cities/biratnagar/` | `/online-psychiatrist-nepal/` |
+| `drkushalkharel.com.np/cities/kathmandu/` | `/psychiatry-clinic-kathmandu/` |
+| `drkushalkharel.com.np/nepalese-abroad/dubai/` | `/nepalese-abroad/gulf/` |
+| `drkushalkharel.com.np/nepalese-abroad/usa/` | `/nepalese-abroad/usa-canada/` |
+| `drkushalkharel.com.np/blog/panic-attack-treatment-kathmandu/` | `/panic-attack-treatment-kathmandu/` |
 
 If you (or I) use a terminal: `curl -I https://drkushalkharel.com.np/depression/` should show
 `HTTP/2 301` and a `location:` line. Today it shows `HTTP/2 200`.
@@ -60,16 +65,17 @@ If you (or I) use a terminal: `curl -I https://drkushalkharel.com.np/depression/
 Open **Bulk redirects**, find the rule `Apply legacy URL redirects`, and turn it off (or delete it). The
 site immediately goes back to how it behaves today. Nothing on the website itself is changed by this.
 
-## When the country-page and article merges are approved (Phases 3 and 4)
+## Order: Cloudflare first, then the website
 
-Order matters. Cloudflare redirects happen before the site is asked, so:
+The country-page, article and city merges are ready on the branch `seo/consolidation-merges` but are
+**not on the live site yet**. Do it in this order:
 
-1. **First** upload the combined CSV (a new list plus rule, or add to the existing list).
-2. **Then** deploy the updated website.
+1. **First** upload this CSV (steps above).
+2. **Then** tell me, and I publish the website update.
 
-That way there is never a moment when an old address returns "page not found". The pending file's
-new regional pages (UK & Ireland, USA & Canada, Australia & New Zealand, South Asia) do not exist yet, so
-**do not upload the pending file on its own**: it would send visitors to pages that are not there.
+Cloudflare redirects happen before the site is asked, so this way there is never a moment when an old
+address returns "page not found". Even if the order slips, the old addresses still load a small "This page
+has moved" page that forwards visitors to the right place (and is hidden from Google), so nothing breaks.
 
 ## Not needed any more
 

@@ -1,5 +1,5 @@
 {
-  "status": "PROPOSED - nothing here has been applied. Awaiting owner approval (Phase 3).",
+  "status": "APPROVED 2026-09-27 by the owner: merge all 41 country pages into the 8 regional pages (Dubai, USA, Australia and UK included). Applied on branch seo/consolidation-merges.",
   "summary": {
     "before": "41 country pages + 4 region hubs + index",
     "after": "8 regional pages + index",
@@ -542,18 +542,19 @@
       "anchor": "israel",
       "code": 301,
       "country": "Israel",
-      "decision": "OWNER DECISION NEEDED — Not Gulf and not Europe; Nepali care-worker patterns and conflict-related stress are distinct. Alternatives: keep /nepalese-abroad/israel/ as its own page, or fold into the Gulf page.",
+      "decision": "DECIDED 2026-09-27: Israel goes in the Europe page, in an 'Eastern Mediterranean' section next to Cyprus.",
       "carries": [],
       "internalInlinks": 2
     }
   ],
   "standaloneCandidates": {
-    "note": "Recommended to keep as their own URLs UNLESS Search Console shows they earn little. Decide with per-URL clicks/impressions.",
+    "note": "The owner chose on 2026-09-27 NOT to keep these standalone: they are merged like every other country. Kept here for the record.",
     "urls": [
       "/nepalese-abroad/dubai/",
       "/nepalese-abroad/usa/",
       "/nepalese-abroad/australia/",
       "/nepalese-abroad/uk/"
     ]
-  }
+  },
+  "approved": true
 }

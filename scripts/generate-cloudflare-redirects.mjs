@@ -8,9 +8,11 @@
  *
  * Where the mappings come from (so nothing is retyped by hand):
  *   - Legacy stubs: the `destination` of every RedirectNotice page in app/.
- *   - Proposals: seo-proposals/phase3-redirect-map.json, phase4-cluster-map.json (merges)
- *     and phase7-cities-redirect-map.json. These are PENDING owner approval and are
- *     only written with --include-pending.
+ *   - Decisions: seo-proposals/phase3-redirect-map.json (country pages),
+ *     phase4-cluster-map.json (merges) and phase7-cities-redirect-map.json (cities).
+ *     A map (or, for phase 4, a single merge) with "approved": true is treated like a
+ *     legacy stub and goes in the main CSV. Anything not approved is PENDING and is only
+ *     written to the pending file (or to the main CSV with --include-pending).
  *
  * Output (redirects/):
  *   cloudflare-redirects.csv                  what is safe to upload today
@@ -48,6 +50,9 @@ const ready = []; // { from, to, why }
 for (const file of walk(path.join(ROOT, "app"))) {
   const src = fs.readFileSync(file, "utf8");
   if (!src.includes("RedirectNotice")) continue;
+  // A dynamic stub (app/nepalese-abroad/[slug]) serves many URLs and has no single
+  // destination; its rows come from seo-proposals/phase3-redirect-map.json instead.
+  if (file.includes("[")) continue;
   const to = src.match(/destination\s*=\s*"([^"]+)"/)?.[1] ?? src.match(/<RedirectNotice\s+to="([^"]+)"/)?.[1];
   const from = "/" + path.relative(path.join(ROOT, "app"), path.dirname(file)).split(path.sep).join("/") + "/";
   if (!to) throw new Error(`No destination found in ${file}`);
@@ -58,21 +63,23 @@ for (const file of walk(path.join(ROOT, "app"))) {
 const pending = [];
 const p3 = path.join(ROOT, "seo-proposals/phase3-redirect-map.json");
 if (fs.existsSync(p3)) {
-  for (const r of JSON.parse(fs.readFileSync(p3, "utf8")).redirects) {
-    pending.push({ from: r.from, to: r.to, why: `Phase 3: ${r.country} folded into a regional page${r.decision ? " (owner decision needed)" : ""}` });
+  const map = JSON.parse(fs.readFileSync(p3, "utf8"));
+  for (const r of map.redirects) {
+    (map.approved ? ready : pending).push({ from: r.from, to: r.to, why: `Phase 3: ${r.country} folded into a regional page` });
   }
 }
 const p4 = path.join(ROOT, "seo-proposals/phase4-cluster-map.json");
 if (fs.existsSync(p4)) {
   for (const m of JSON.parse(fs.readFileSync(p4, "utf8")).merges) {
-    pending.push({ from: m.from, to: m.into, why: `Phase 4 merge ${m.id}` });
+    (m.approved ? ready : pending).push({ from: m.from, to: m.into, why: `Phase 4 merge ${m.id}` });
   }
 }
 
 const p7 = path.join(ROOT, "seo-proposals/phase7-cities-redirect-map.json");
 if (fs.existsSync(p7)) {
-  for (const r of JSON.parse(fs.readFileSync(p7, "utf8")).redirects) {
-    pending.push({ from: r.from, to: r.to, why: "Phase 7: thin city page" });
+  const map = JSON.parse(fs.readFileSync(p7, "utf8"));
+  for (const r of map.redirects) {
+    (map.approved ? ready : pending).push({ from: r.from, to: r.to, why: "Phase 7: thin city page" });
   }
 }
 
@@ -105,7 +112,7 @@ const readyRows = build(ready);
 const pendingRows = build(pending);
 const combined = build([...ready, ...pending]);
 
-// A target must exist in the current build, except for pages Phase 3 will create.
+// A target must exist in the current build, except for pages a pending proposal would create.
 const outDir = path.join(ROOT, "out");
 function checkTargets(rows, label, allowMissing = false) {
   if (!fs.existsSync(outDir)) return [];
@@ -142,7 +149,7 @@ if (!includePending) {
 
 console.log(`cloudflare-redirects.csv: ${mainRows.length} redirects (${mainRows.length * 2} CSV rows: with and without trailing slash)${includePending ? " [includes pending]" : " [safe to upload today]"}`);
 if (!includePending) {
-  console.log(`cloudflare-redirects.pending-approval.csv: ${pendingRows.length} redirects (Phase 3/4, do not upload until approved)`);
+  console.log(`cloudflare-redirects.pending-approval.csv: ${pendingRows.length} redirects (not yet approved, do not upload)`);
   if (willBeCreated.length) console.log(`  ${new Set(willBeCreated.map((m) => m.to)).size} target pages do not exist yet (new regional pages)`);
 }
 const flat = combined.filter((r) => r.flattened);

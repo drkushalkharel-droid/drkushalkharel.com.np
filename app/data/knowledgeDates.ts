@@ -60,7 +60,6 @@ export const knowledgeDates: Record<string, { published: string; modified: strin
   "schizophrenia": { published: "2026-07-06", modified: "2026-07-06" },
   "self-care-caregivers": { published: "2026-08-02", modified: "2026-08-02" },
   "sexual-health-performance-anxiety-intimacy-nepal": { published: "2026-08-06", modified: "2026-08-06" },
-  "sleep-and-mental-health": { published: "2026-08-02", modified: "2026-08-02" },
   "sleep-problems-which-doctor-kathmandu": { published: "2026-09-02", modified: "2026-09-02" },
   "social-media-mental-health": { published: "2026-08-02", modified: "2026-08-02" },
   "substance-use-disorder": { published: "2026-08-05", modified: "2026-08-05" },

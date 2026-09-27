@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Mail, MessageCircle, Phone, Quote } from "lucide-react";
 import { abroadGuides } from "../data/abroad";
-import { regions } from "../data/abroadRegions";
+import { countryHref, getRegionForCountry, regions } from "../data/abroadRegions";
 import { abroadFaqs, googleMeetStatement, treatedSummary } from "../data/onlineCare";
 import {
   buildFaqPageJsonLd,
@@ -141,7 +141,7 @@ export default function NepaleseAbroadHubPage() {
     author: { "@id": `${siteUrl}#psychiatrist` },
     reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
     speakable: buildSpeakableSpec(["#abroad-hub-quick-answer"]),
-    relatedLink: abroadGuides.map((guide) => `${siteUrl}/nepalese-abroad/${guide.slug}`),
+    relatedLink: regions.map((region) => `${siteUrl}/nepalese-abroad/${region.slug}`),
   };
 
   const serviceJsonLd = buildOnlineServiceJsonLd({
@@ -313,8 +313,8 @@ export default function NepaleseAbroadHubPage() {
       <section id="regions" className="mx-auto max-w-7xl px-6 pt-14 lg:px-8">
         <h2 className="text-3xl font-bold text-stone-950">Browse by region</h2>
         <p className="mt-4 max-w-3xl leading-8 text-stone-600">
-          Not sure which country page to open? Start with your region for the concerns, session times and emergency
-          numbers that apply across it.
+          Each region has one page with a section for every country in it: the concerns, prescription notes, session
+          times and emergency numbers that apply there. Start with your region.
         </p>
         <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {regions.map((region) => (
@@ -336,19 +336,21 @@ export default function NepaleseAbroadHubPage() {
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
         <h2 className="text-3xl font-bold text-stone-950">Nepali psychiatrist online: find your country</h2>
         <p className="mt-4 max-w-3xl leading-8 text-stone-600">
-          Each guide covers the mental health concerns Nepalis commonly face in
-          that country, time-zone tips, local emergency guidance and how to get
-          in touch, from the USA, UK, Australia and Canada to Dubai, Qatar,
-          Japan and South Korea.
+          Each country has its own section covering the mental health concerns
+          Nepalis commonly face there, time-zone tips, local emergency guidance
+          and how to get in touch, from the USA, UK, Australia and Canada to
+          Dubai, Qatar, Japan and South Korea. Choose yours to open it.
         </p>
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {abroadGuides.map((guide) => (
             <Link
               key={guide.slug}
-              href={`/nepalese-abroad/${guide.slug}`}
+              href={countryHref(guide.slug)}
               className="block rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
             >
-              <p className="text-sm font-semibold uppercase tracking-[2px] text-sage-700">{guide.region}</p>
+              <p className="text-sm font-semibold uppercase tracking-[2px] text-sage-700">
+                {getRegionForCountry(guide.slug)?.shortName ?? guide.region}
+              </p>
               <h3 className="mt-4 text-2xl font-bold text-stone-950">{guide.country}</h3>
               <p className="mt-3 leading-7 text-stone-600">{guide.headline}</p>
             </Link>

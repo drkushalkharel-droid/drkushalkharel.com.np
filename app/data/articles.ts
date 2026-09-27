@@ -52,13 +52,6 @@ export const publishedArticles: ArticleLink[] = [
     language: "Bilingual",
   },
   {
-    title: "Sleep and Mental Health: Improve Your Mood with Better Sleep",
-    description: "Discover how improving sleep can boost mood and practical steps to sleep better starting tonight.",
-    href: "/knowledge/sleep-and-mental-health",
-    category: "Sleep",
-    language: "Bilingual",
-  },
-  {
     title: "Mindfulness & Meditation for Beginners: A Simple Guide",
     description: "Easy mindfulness practices for beginners to reduce stress and improve focus—no experience required.",
     href: "/knowledge/mindfulness-for-beginners",

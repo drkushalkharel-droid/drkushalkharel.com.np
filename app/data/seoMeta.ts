@@ -114,9 +114,9 @@ export const seoMeta: Record<string, SeoEntry> = {
       "Psychiatric assessment and treatment fully in English for expatriates, tourists, international students and Nepalis. Book in-person or online.",
   },
   "/erp-therapy-ocd/": {
-    title: "ERP Therapy for OCD in Kathmandu, Nepal",
+    title: "OCD Treatment in Kathmandu: ERP and Medication",
     description:
-      "Structured, clinician-guided exposure and response prevention (ERP) therapy for OCD, offered gradually and collaboratively. Book in-person or online.",
+      "OCD treatment in Kathmandu: clinician-guided exposure and response prevention (ERP) therapy, with medication where needed. Book in-person or online.",
   },
   "/expatriates-in-nepal/": {
     title: "Psychiatrist for Expatriates in Nepal",

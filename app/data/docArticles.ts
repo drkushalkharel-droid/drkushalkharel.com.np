@@ -1199,21 +1199,6 @@ export const docArticles = [
     ]
   },
   {
-    "slug": "sleep-and-mental-health",
-    "title": "Sleep and Mental Health: Improve Your Mood with Better Sleep",
-    "category": "Sleep",
-    "language": "Bilingual",
-    "sourceFile": "generated",
-    "description": "Discover how improving sleep can boost mood and practical steps to sleep better starting tonight.",
-    "sections": [
-      { "heading": "Why sleep matters for mental health", "body": "Poor sleep worsens mood, anxiety, concentration and emotional regulation. Sleep and mental health influence each other bidirectionally." },
-      { "heading": "How Dr. Kharel approaches this", "body": "When poor sleep and low mood arrive together, I don't assume one simply caused the other -- I ask in detail about sleep timing, what happens during night-time waking, and mood and anxiety symptoms, since treating only one side often leaves the other unresolved. For most patients, sleep-focused behavioural strategies come before I consider medication, and I look for signs of a specific sleep disorder, like breathing pauses, that would need referral rather than a psychiatric approach alone. I review sleep and mood together at follow-up, since improvement in one often signals improvement in the other." },
-      { "heading": "Sleep hygiene basics", "body": "Regular sleep schedule, limiting screens before bed, a cool dark bedroom, avoiding late caffeine and a relaxing pre-sleep routine improve sleep quality." },
-      { "heading": "Techniques for insomnia", "body": "Stimulus control (bed for sleep only), sleep restriction therapy and cognitive strategies for worry at night are effective. Seek specialist help if insomnia is severe or chronic." },
-      { "heading": "When to seek clinical help", "body": "If sleep problems last months, cause daytime impairment, or there are symptoms like breathing pauses (possible sleep apnea), seek assessment from a clinician." }
-    ]
-  },
-  {
     "slug": "mindfulness-for-beginners",
     "title": "Mindfulness & Meditation for Beginners: A Simple Guide",
     "category": "Wellness",

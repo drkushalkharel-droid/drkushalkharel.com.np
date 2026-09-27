@@ -1,7 +1,5 @@
 import { MetadataRoute } from "next";
-import { abroadGuides } from "./data/abroad";
 import { regions } from "./data/abroadRegions";
-import { cityGuides } from "./data/cities";
 import { conditions } from "./data/conditions";
 import { docArticles } from "./data/docArticles";
 import { knowledgeDates } from "./data/knowledgeDates";
@@ -209,20 +207,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  const cityRoutes: MetadataRoute.Sitemap = cityGuides.filter((guide) => guide.clinicLocation || guide.published).map((guide) => ({
-    url: `${siteUrl}/cities/${guide.slug}`,
-    lastModified,
-    changeFrequency: "monthly",
-    priority: guide.slug === "kathmandu" ? 0.9 : 0.8,
-  }));
-
-  const abroadRoutes: MetadataRoute.Sitemap = abroadGuides.map((guide) => ({
-    url: `${siteUrl}/nepalese-abroad/${guide.slug}`,
-    lastModified: new Date("2026-09-24"),
-    changeFrequency: "monthly",
-    priority: 0.75,
-  }));
-
   const regionRoutes: MetadataRoute.Sitemap = regions.map((region) => ({
     url: `${siteUrl}/nepalese-abroad/${region.slug}`,
     lastModified: new Date("2026-09-24"),
@@ -268,9 +252,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const allRoutes: MetadataRoute.Sitemap = [
     ...staticRoutes,
     ...articleRoutes,
-    ...cityRoutes,
     ...regionRoutes,
-    ...abroadRoutes,
     ...conditionRoutes,
     ...screeningRoutes,
     ...resourceRoutes,

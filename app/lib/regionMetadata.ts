@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { getAbroadGuide } from "../data/abroad";
 import { getRegion, type Region } from "../data/abroadRegions";
 import { metaFor } from "./seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
-// Shared metadata for the four region hub pages under /nepalese-abroad/.
+// Shared metadata for the eight regional pages under /nepalese-abroad/.
 export function regionMetadata(slug: Region["slug"]): Metadata {
   const region = getRegion(slug);
   const url = `${siteUrl}/nepalese-abroad/${region.slug}`;
@@ -16,6 +17,7 @@ export function regionMetadata(slug: Region["slug"]): Metadata {
     alternates: { canonical: `/nepalese-abroad/${region.slug}/` },
     keywords: [
       ...region.keywords,
+      ...region.countrySlugs.flatMap((slug) => getAbroadGuide(slug)?.searchTerms ?? []),
       "Consultant psychiatrist for Nepalis abroad",
       "online therapy for Nepalis abroad",
       "constant worry and intrusive thoughts online therapy",

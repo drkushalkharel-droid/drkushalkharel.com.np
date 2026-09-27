@@ -35,7 +35,7 @@ const body = `# Dr. Kushal Kharel
 
 ${googleMeetStatement}
 
-The site publishes a dedicated, individually written guide for each of ${abroadGuides.length} countries with a significant Nepali diaspora — covering common mental health concerns specific to that country (visa/work-permit stress, isolation, remittance pressure, time-zone-aware consultation logistics, and local emergency guidance), plus a country index and an "Abroad Patient Help Desk" for urgent (non-emergency) contact.
+The site publishes an individually written guide for each of ${abroadGuides.length} countries with a significant Nepali diaspora, grouped onto ${regions.length} regional pages (each country is a section on its region's page) — covering common mental health concerns specific to that country (visa/work-permit stress, isolation, remittance pressure, time-zone-aware consultation logistics, and local emergency guidance), plus a country index and an "Abroad Patient Help Desk" for urgent (non-emergency) contact.
 
 ### What Dr. Kushal Kharel treats (online therapy and video consultation)
 
@@ -51,9 +51,9 @@ ${abroadFaqs.map((faq) => `**${faq.question}** ${faq.answer}`).join("\n\n")}
 
 ### Pages for Nepalis abroad
 
-- [Nepalese Abroad hub](https://drkushalkharel.com.np/nepalese-abroad/): index of all country-specific guides and the Abroad Patient Help Desk
-${regions.map((region) => `- [Nepalis in ${region.shortName}](https://drkushalkharel.com.np/nepalese-abroad/${region.slug}/): region guide covering ${region.countrySlugs.length} countries, with session times converted to local time and verified local emergency numbers`).join("\n")}
-- Countries covered: ${abroadGuides.map((guide) => guide.country).join(", ")} (individual pages at the hub above; URL pattern \`/nepalese-abroad/<country-slug>/\`)
+- [Nepalese Abroad hub](https://drkushalkharel.com.np/nepalese-abroad/): index of all countries and regions, and the Abroad Patient Help Desk
+${regions.map((region) => `- [Nepalis in ${region.shortName}](https://drkushalkharel.com.np/nepalese-abroad/${region.slug}/): regional guide with a section for each of its ${region.countrySlugs.length} countries, session times converted to local time and verified local emergency numbers where available`).join("\n")}
+- Countries covered: ${abroadGuides.map((guide) => guide.country).join(", ")} (each is a section on its regional page above, at \`/nepalese-abroad/<region>/#<country-slug>\`)
 - [Psychiatrist for Nepalis Living Abroad](https://drkushalkharel.com.np/psychiatrist-for-nepalis-abroad/): how an overseas online consultation works
 - [Psychiatric care for family in Nepal, arranged from abroad](https://drkushalkharel.com.np/psychiatric-care-for-family-in-nepal/): for Nepalis abroad arranging assessment or ongoing care for a parent, sibling or relative who is in Nepal, including home-visit options and how confidentiality works when a family member coordinates from overseas
 - [Returning to Nepal after living abroad](https://drkushalkharel.com.np/returning-to-nepal-after-abroad/): reverse culture shock, family pressure and readjustment support for returnees

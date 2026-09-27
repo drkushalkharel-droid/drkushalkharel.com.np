@@ -127,11 +127,27 @@ export default function OnlinePsychiatristNepalPage() {
         <h2 className="text-2xl font-bold text-stone-950">Online care for patients in your city</h2>
         <p className="mt-3 max-w-3xl leading-8 text-stone-600">
           The clinic is in Kalanki, Kathmandu. Patients in other cities can use online consultation when it is clinically
-          appropriate. City guides:{" "}
-          <Link href="/cities/kathmandu/" className="font-semibold text-sage-800 underline">Kathmandu</Link>,{" "}
-          <Link href="/cities/pokhara/" className="font-semibold text-sage-800 underline">Pokhara</Link> and{" "}
-          <Link href="/cities/chitwan/" className="font-semibold text-sage-800 underline">Chitwan</Link>.
+          appropriate. There is no clinic in Pokhara or Chitwan, so care there is online only.
         </p>
+        <ul className="mt-4 max-w-3xl list-disc space-y-3 pl-5 leading-8 text-stone-600">
+          <li>
+            <strong className="text-stone-800">Kathmandu:</strong> in-person consultation at the clinic in Kalanki. See{" "}
+            <Link href="/psychiatry-clinic-kathmandu/" className="font-semibold text-sage-800 underline">
+              the psychiatry clinic in Kalanki, Kathmandu
+            </Link>{" "}
+            for the address, hours and directions.
+          </li>
+          <li>
+            <strong className="text-stone-800">Pokhara:</strong> tourism work, education, migration, family expectations
+            and substance use can contribute to anxiety, depression, sleep difficulties and stress. Online consultation
+            is available.
+          </li>
+          <li>
+            <strong className="text-stone-800">Chitwan:</strong> students, working adults, business owners and families
+            may face stress from education, employment, caregiving, alcohol use and chronic health concerns. Online
+            consultation is available.
+          </li>
+        </ul>
       </section>
       <div className="mx-auto max-w-5xl px-6 pb-16 lg:px-8">
         <RelatedContent path="/online-psychiatrist-nepal/" heading="Related services" showCallout={false} />

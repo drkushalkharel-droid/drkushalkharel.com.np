@@ -1,6 +1,6 @@
 # Phase 7 proposal: the three remaining `/cities/` pages
 
-**Status: PROPOSAL ONLY. Nothing has been deleted, merged or redirected.**
+**Status: APPROVED 2026-09-27 (all three redirects) and built on branch `seo/consolidation-merges`.**
 Machine-readable map: [phase7-cities-redirect-map.json](phase7-cities-redirect-map.json)
 
 ## What I found

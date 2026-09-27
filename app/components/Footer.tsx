@@ -295,6 +295,22 @@ export default function Footer() {
               Nepalis in Malaysia &amp; Singapore
             </Link>
 
+            <Link href="/nepalese-abroad/uk-ireland" className="block hover:text-white transition">
+              Nepalis in the UK &amp; Ireland
+            </Link>
+
+            <Link href="/nepalese-abroad/usa-canada" className="block hover:text-white transition">
+              Nepalis in the USA &amp; Canada
+            </Link>
+
+            <Link href="/nepalese-abroad/australia-new-zealand" className="block hover:text-white transition">
+              Nepalis in Australia &amp; New Zealand
+            </Link>
+
+            <Link href="/nepalese-abroad/south-asia" className="block hover:text-white transition">
+              Nepalis in India, Bangladesh &amp; Sri Lanka
+            </Link>
+
             <Link href="/psychiatric-care-for-family-in-nepal" className="block hover:text-white transition">
               Family Care in Nepal from Abroad
             </Link>

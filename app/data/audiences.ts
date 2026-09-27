@@ -17,6 +17,11 @@ export type AudiencePage = {
   // sections. Only set where a genuine, informative diagram exists — not
   // used as generic decoration.
   diagram?: { src: string; alt: string; caption: string };
+  // Longer clinical sections shown between "Common concerns" and the FAQ. Used where a
+  // separate article on the same topic was merged into this page.
+  guideSections?: { heading: string; body: string }[];
+  // A screening tool id from app/data/screening.ts to offer on this page.
+  screeningId?: string;
 };
 
 export const audiencePages: AudiencePage[] = [
@@ -680,8 +685,8 @@ export const audiencePages: AudiencePage[] = [
     slug: "erp-therapy-ocd",
     doctorsApproach:
       "ERP only works if it's paced right, so I build the hierarchy of triggers together with the patient, starting with something genuinely manageable rather than the worst fear on the list — going too fast just teaches someone to avoid the process. I check in on what happened between sessions in detail, because the between-session practice matters as much as anything we do together in the room.",
-    title: "Exposure and Response Prevention (ERP) Therapy in Nepal",
-    headline: "Exposure and Response Prevention (ERP) therapy in Nepal",
+    title: "OCD Treatment in Kathmandu: ERP Therapy and Medication",
+    headline: "OCD treatment in Kathmandu, Nepal: ERP therapy and medication",
     shortDescription:
       "Structured, clinician-guided Exposure and Response Prevention (ERP) therapy for OCD and related conditions, offered gradually and collaboratively in Kathmandu or online.",
     intro:
@@ -1621,6 +1626,34 @@ export const audiencePages: AudiencePage[] = [
   },
   {
     slug: "panic-attack-treatment-kathmandu",
+    screeningId: "panic-disorder",
+    guideSections: [
+      {
+        heading: "What are the symptoms of a panic attack?",
+        body:
+          "During an attack the body’s alarm system fires as though facing real danger, producing a racing or pounding heart, chest tightness or pain, shortness of breath, sweating, trembling, and a sense of choking or smothering. Many people also describe dizziness, lightheadedness, nausea, hot flushes or chills, tingling in the hands and lips, and a strange sense of unreality about themselves or their surroundings known as derealisation or depersonalisation. The psychological symptoms can be as distressing as the physical ones: a sudden conviction that something catastrophic is happening, such as a heart attack, stroke or loss of control, along with an overwhelming urge to escape. Attacks can occur unexpectedly, in specific situations, or occasionally during deep sleep, waking the person in a state of fear. Because the physical symptoms genuinely overlap with cardiac and respiratory emergencies, new chest pain, fainting, one-sided weakness or severe unexplained breathlessness should always be assessed medically rather than assumed to be panic, particularly for a first episode.",
+      },
+      {
+        heading: "What causes panic attacks, and what are the risk factors?",
+        body:
+          "Panic reflects a false alarm in the body’s threat-detection system rather than any real danger, and it typically involves a self-reinforcing loop between physical sensations and catastrophic interpretation. A normal bodily sensation, such as a slightly faster heartbeat after climbing stairs or jitteriness after caffeine, is misread by the brain as a sign of imminent danger, which triggers a genuine stress response and produces more of the very sensations that felt alarming in the first place. Biological vulnerability, family history, heightened sensitivity to internal bodily sensations, chronic stress, poor sleep, excess caffeine, nicotine, alcohol withdrawal, and certain physical illnesses can all lower the threshold for an attack. Once a person starts avoiding places associated with past attacks, or relies on safety behaviours such as always carrying medication, the disorder is usually reinforced rather than resolved, because avoidance prevents the person from ever learning that the feared catastrophe does not occur.",
+      },
+      {
+        heading: "How are panic attacks assessed?",
+        body:
+          "A psychiatric assessment for panic maps the pattern of attacks in detail: their frequency, typical triggers or lack thereof, physical symptoms, catastrophic thoughts during an episode, anticipatory anxiety between attacks, and any places or activities that have come to be avoided. It also reviews caffeine, nicotine, alcohol and other substance use, current medicines, and any physical symptoms that warrant medical investigation, since conditions such as thyroid disease, arrhythmias, asthma and vestibular disorders can produce genuinely similar sensations. Because panic frequently overlaps with other conditions, the assessment also screens for generalised anxiety, social anxiety, health anxiety, depression and trauma-related symptoms, all of which change the treatment plan. A basic physical examination or targeted investigations, arranged with a physician when indicated, are often a reasonable part of a first assessment, particularly when symptoms began later in life.",
+      },
+      {
+        heading: "How are panic attacks and panic disorder treated?",
+        body:
+          "Cognitive behavioural therapy (CBT) tailored to panic disorder is the best-established psychological treatment and usually runs over a structured course of weekly sessions. Early sessions focus on psychoeducation about the panic cycle and breathing retraining; the central technique is interoceptive exposure, in which the person deliberately and safely brings on the physical sensations they fear, such as brief spinning to trigger dizziness or breathing through a straw to trigger breathlessness, so the brain gradually relearns that these sensations are uncomfortable but not dangerous. Where avoidance has developed, situational exposure to avoided places is added in a graded, collaborative way. Cognitive work targets catastrophic misinterpretations, such as ‘this means I am dying’, and replaces them with more accurate appraisals built from the person’s own experience during exposure. Medication, typically an SSRI, may be considered after individual psychiatric assessment for more severe or persistent presentations, usually alongside therapy; benzodiazepines are used cautiously and briefly, if at all, given dependence risk.",
+      },
+      {
+        heading: "Getting support for panic attacks in Nepal",
+        body:
+          "For a first severe panic attack, or whenever new or unexplained physical symptoms are involved, an in-person assessment in Kathmandu, Lalitpur or Bhaktapur allows a proper physical check alongside the psychiatric one, which matters most when the presentation is unfamiliar or alarming. Once serious medical causes have been reasonably excluded and a treatment plan is underway, regular CBT and medication follow-up can often continue through online consultation, which suits people balancing work, study or travel across Nepal. Patients from Pokhara, Biratnagar, Dharan and further afield frequently combine an initial in-person visit with ongoing video follow-up for convenience. Many workplaces and educational institutions in Kathmandu are increasingly willing to accommodate medical leave for mental health reasons, which can make it easier to attend an initial appointment without extended disruption to studies or employment.",
+      },
+    ],
     doctorsApproach:
       "For a first severe panic attack I'd rather rule out a physical cause properly before we call it panic, especially if the chest symptoms were new. Once that's settled, most people do well with CBT built around the specific triggers and bodily sensations they fear — I only bring in medication when attacks are frequent or severe enough that therapy alone is a slow start.",
     title: "Panic Attack Treatment in Kathmandu, Nepal",
@@ -1695,6 +1728,26 @@ export const audiencePages: AudiencePage[] = [
         question: "How long does treatment for panic attacks usually take?",
         answer:
           "This varies by individual, but many people see meaningful improvement within weeks of starting structured treatment, with the exact course depending on frequency of attacks, degree of avoidance, and response to initial treatment.",
+      },
+      {
+        question: "Can panic attacks happen during sleep?",
+        answer:
+          "Yes. Nocturnal panic attacks can wake a person from sleep in a state of sudden fear with a racing heart and breathlessness, without any dream or nightmare preceding it. They are treated the same way as daytime panic attacks, though they can feel more disorienting because there is no obvious trigger.",
+      },
+      {
+        question: "Does having panic attacks mean I have an anxiety disorder?",
+        answer:
+          "Not necessarily. A single panic attack, especially during unusual stress, illness or sleep deprivation, is common and does not by itself mean someone has panic disorder. The diagnosis is generally considered when attacks recur and are followed by persistent worry about future attacks or noticeable changes in behaviour to avoid them.",
+      },
+      {
+        question: "What should I do if I feel a panic attack starting?",
+        answer:
+          "Slowing the breath, especially lengthening the out-breath, naming what is happening (‘this is panic, it will pass, it is not dangerous’), and staying in the situation where it is safe to do so all help over time. These skills are useful for short-term relief but work best alongside structured therapy.",
+      },
+      {
+        question: "Can panic disorder be cured completely?",
+        answer:
+          "Many people who complete a course of CBT for panic disorder become free of attacks or have only occasional, much milder episodes. Others have a good response with some residual vulnerability during high-stress periods. Outcomes vary, which is why ongoing follow-up and relapse-prevention skills are part of a complete treatment plan.",
       },
     ],
   },

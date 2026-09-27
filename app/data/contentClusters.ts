@@ -137,11 +137,9 @@ export const clusters: Cluster[] = [
 // they stay live but nothing new links to them; each shows a callout to the page
 // it would merge into.
 export const pendingMerges: Record<string, string> = {
-  "/blog/panic-attack-treatment-kathmandu/": "/panic-attack-treatment-kathmandu/",
   "/knowledge/depression-treatment-nepal/": "/depression-treatment-kathmandu/",
   "/knowledge/anxiety-treatment-nepal/": "/anxiety/",
   "/knowledge/sleep-problems-which-doctor-kathmandu/": "/sleep-problems-treatment-nepal/",
-  "/knowledge/sleep-and-mental-health/": "/blog/sleep-problems-and-mental-health/",
 };
 
 // Natural-language link text for service and hub pages (used as anchor text).

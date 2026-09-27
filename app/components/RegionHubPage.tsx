@@ -2,8 +2,9 @@ import Link from "next/link";
 import { MessageCircle, Phone, Quote } from "lucide-react";
 import { abroadGuides, getAbroadGuide } from "../data/abroad";
 import { abroadMeta } from "../data/abroadMeta";
-import { buildAbroadFaqs, googleMeetStatement, treatedSummary } from "../data/onlineCare";
+import { buildAbroadFaqs, googleMeetStatement, prescriptionAbroadStatement, treatedSummary, withArticle } from "../data/onlineCare";
 import { regions, type Region } from "../data/abroadRegions";
+import { getPageDates } from "../data/pageDates";
 import {
   buildFaqPageJsonLd,
   buildOnlineServiceJsonLd,
@@ -12,9 +13,22 @@ import {
 } from "../lib/schema";
 import { buildZoneGuide } from "../lib/timeGuide";
 import { FaqList, NameLine, OnlineFactsRow, OnlineTreatmentCards, TreatedList } from "./OnlineCareSections";
-import { NepaliBlock } from "./AbroadPracticalSections";
+import { EmergencyBox, NepaliBlock } from "./AbroadPracticalSections";
 
 const siteUrl = "https://drkushalkharel.com.np";
+
+// The guides every country page used to link to. Kept on the regional pages so those
+// guides do not lose their links when the country pages are merged.
+const relatedReading = [
+  { href: "/psychiatrist-for-nepalis-abroad", label: "How online psychiatry for Nepalis abroad works" },
+  { href: "/sleep-problems-treatment-nepal", label: "Sleep problems and insomnia treatment" },
+  { href: "/blog/mental-health-nepali-migrant-workers", label: "Mental health support for Nepali migrant workers abroad" },
+  { href: "/blog/mental-health-nepali-students-abroad", label: "Mental health support for Nepali students abroad" },
+  { href: "/blog/first-psychiatric-appointment-what-to-expect-nepal", label: "What to expect at your first psychiatric appointment" },
+  { href: "/blog/sending-psychiatric-medications-abroad-nepal", label: "Sending psychiatric medications abroad from Nepal" },
+  { href: "/psychiatric-care-for-family-in-nepal", label: "Arranging psychiatric care for family still in Nepal" },
+  { href: "/returning-to-nepal-after-abroad", label: "Returning to Nepal after living abroad" },
+];
 
 export default function RegionHubPage({ region }: { region: Region }) {
   const pageUrl = `${siteUrl}/nepalese-abroad/${region.slug}`;
@@ -22,9 +36,19 @@ export default function RegionHubPage({ region }: { region: Region }) {
     .map((slug) => getAbroadGuide(slug))
     .filter((guide): guide is NonNullable<typeof guide> => Boolean(guide));
   const faqs = [...buildAbroadFaqs(), ...region.faqs];
-  const testimonials = guides.filter((guide) => guide.testimonial);
-  const emergencyRows = guides.filter((guide) => abroadMeta[guide.slug]?.emergency);
   const otherRegions = regions.filter((r) => r.slug !== region.slug);
+  const dates = getPageDates(`/nepalese-abroad/${region.slug}/`);
+  // Group headings (Europe only) are shown above the first country of each group.
+  const groupStartingAt = new Map((region.groups ?? []).map((group) => [group.countrySlugs[0], group.heading]));
+  // One row per time zone: the USA, Canada and Australia span several.
+  const timeRows = guides.flatMap((guide) => {
+    const zones = abroadMeta[guide.slug].zones;
+    return zones.map((zone) => ({
+      slug: guide.slug,
+      label: zones.length > 1 ? `${guide.country} (${zone.label})` : guide.country,
+      guide: buildZoneGuide(zone),
+    }));
+  });
 
   const webPageJsonLd = {
     "@context": "https://schema.org",
@@ -33,14 +57,13 @@ export default function RegionHubPage({ region }: { region: Region }) {
     description: region.description,
     url: pageUrl,
     inLanguage: "en",
-    dateModified: "2026-09-24",
+    ...(dates ? { datePublished: dates.published, dateModified: dates.modified } : {}),
     audience: { "@type": "PeopleAudience", name: `Nepalis living in ${region.shortName}` },
     about: { "@id": `${siteUrl}#clinic` },
     mainEntity: { "@id": `${pageUrl}#service` },
     author: { "@id": `${siteUrl}#psychiatrist` },
     reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
     speakable: buildSpeakableSpec(["#region-quick-answer"]),
-    relatedLink: guides.map((guide) => `${siteUrl}/nepalese-abroad/${guide.slug}`),
   };
 
   const serviceJsonLd = buildOnlineServiceJsonLd({
@@ -70,7 +93,7 @@ export default function RegionHubPage({ region }: { region: Region }) {
       "@type": "ListItem",
       position: index + 1,
       name: `Nepali psychiatrist in ${guide.country}`,
-      url: `${siteUrl}/nepalese-abroad/${guide.slug}`,
+      url: `${pageUrl}#${guide.slug}`,
     })),
   };
 
@@ -125,17 +148,19 @@ export default function RegionHubPage({ region }: { region: Region }) {
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
         <h2 className="text-3xl font-bold text-stone-950">Nepali psychiatrist online: choose your country</h2>
-        <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <p className="mt-4 max-w-3xl leading-8 text-stone-600">
+          Each country has its own section further down this page, with its own concerns, prescription notes and
+          emergency numbers. Choose yours to jump straight to it.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-2">
           {guides.map((guide) => (
-            <Link
+            <a
               key={guide.slug}
-              href={`/nepalese-abroad/${guide.slug}`}
-              className="block rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+              href={`#${guide.slug}`}
+              className="rounded-full border border-sage-200 bg-white px-4 py-2 text-sm font-semibold text-sage-900 transition hover:border-sage-400 hover:bg-sage-100"
             >
-              <h3 className="text-2xl font-bold text-stone-950">{guide.country}</h3>
-              <p className="mt-3 leading-7 text-stone-600">{guide.headline}</p>
-              <p className="mt-3 font-semibold text-sage-700 underline">Nepali psychiatrist in {guide.country}</p>
-            </Link>
+              Nepali psychiatrist in {guide.country}
+            </a>
           ))}
         </div>
       </section>
@@ -161,7 +186,8 @@ export default function RegionHubPage({ region }: { region: Region }) {
         <p className="mt-4 max-w-3xl leading-8 text-stone-600">
           Sessions are booked at a time that suits your time zone. The table shows each country&apos;s time
           difference and which of your everyday windows fit the clinic&apos;s published hours (Sunday to Friday
-          8 AM to 10 PM, Saturday 10 AM to 4 PM, Nepal time). Open your country page for the full hour-by-hour table.
+          8 AM to 10 PM, Saturday 10 AM to 4 PM, Nepal time). If none of the easy windows suits you, message anyway:
+          what can be arranged is worked out with you directly.
         </p>
         <div className="mt-8 overflow-x-auto rounded-lg border border-stone-200 bg-white shadow-sm">
           <table className="w-full min-w-[640px] text-left text-base">
@@ -173,27 +199,26 @@ export default function RegionHubPage({ region }: { region: Region }) {
               </tr>
             </thead>
             <tbody>
-              {guides.map((guide) => {
-                const meta = abroadMeta[guide.slug];
-                const zoneGuide = buildZoneGuide(meta.zones[0]);
-                return (
-                  <tr key={guide.slug} className="border-t border-stone-200 align-top odd:bg-white even:bg-stone-50">
-                    <td className="px-4 py-3 font-semibold text-sage-950">
-                      <Link href={`/nepalese-abroad/${guide.slug}`} className="underline">
-                        {guide.country}
-                      </Link>
-                    </td>
-                    <td className="px-4 py-3 text-stone-700">{zoneGuide.difference}</td>
-                    <td className="px-4 py-3 text-stone-700">
-                      {zoneGuide.bestFit.length > 0
-                        ? zoneGuide.bestFit.join(", ")
-                        : "Message to ask about a time"}
-                    </td>
-                  </tr>
-                );
-              })}
+              {timeRows.map((row) => (
+                <tr key={`${row.slug}-${row.label}`} className="border-t border-stone-200 align-top odd:bg-white even:bg-stone-50">
+                  <td className="px-4 py-3 font-semibold text-sage-950">
+                    <a href={`#${row.slug}`} className="underline">
+                      {row.label}
+                    </a>
+                  </td>
+                  <td className="px-4 py-3 text-stone-700">{row.guide.difference}</td>
+                  <td className="px-4 py-3 text-stone-700">
+                    {row.guide.bestFit.length > 0 ? row.guide.bestFit.join(", ") : "Message to ask about a time"}
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
+        </div>
+        <div className="mt-8 rounded-lg border border-amber-200 bg-amber-50 p-5 leading-7 text-amber-950">
+          <h3 className="font-bold">Prescriptions for Nepalis in {region.shortName}</h3>
+          <p className="mt-2">{prescriptionAbroadStatement}</p>
+          <p className="mt-2">Each country&apos;s section below adds the local details.</p>
         </div>
       </section>
 
@@ -202,55 +227,79 @@ export default function RegionHubPage({ region }: { region: Region }) {
         intro="Therapy and medication are planned together, all through Google Meet or WhatsApp video call."
       />
 
-      {testimonials.length > 0 && (
-        <section className="bg-white">
-          <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
-            <h2 className="text-3xl font-bold text-stone-950">What Nepalis in {region.shortName} say</h2>
-            <p className="mt-4 max-w-3xl leading-8 text-stone-600">
-              Real, anonymised patient testimonials. Names and identifying details are withheld, with each
-              patient&apos;s permission.
-            </p>
-            <div className="mt-8 grid gap-6 md:grid-cols-2">
-              {testimonials.map((guide) => (
-                <figure
-                  key={guide.slug}
-                  className="flex h-full flex-col rounded-lg border border-stone-200 bg-stone-50 p-7 shadow-sm"
-                >
-                  <Quote size={28} className="text-clay-300" aria-hidden="true" />
-                  <blockquote className="mt-4 flex-1 leading-7 text-stone-700">
-                    &ldquo;{guide.testimonial!.quote}&rdquo;
-                  </blockquote>
-                  <figcaption className="mt-5 font-semibold text-sage-800">
-                    &mdash; {guide.testimonial!.attribution}
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+      <section className="bg-white">
+        <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
+          <h2 className="text-3xl font-bold text-stone-950">
+            Country by country: Nepali psychiatrist online in {region.shortName}
+          </h2>
+          <p className="mt-4 max-w-3xl leading-8 text-stone-600">
+            An online appointment is not an emergency service. If there is immediate danger, call the local
+            emergency number first.
+          </p>
 
-      {emergencyRows.length > 0 && (
-        <section className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
-          <div className="rounded-lg border border-red-200 bg-red-50 p-6 leading-7 text-red-950">
-            <h2 className="text-2xl font-bold">Emergency and crisis numbers</h2>
-            <ul className="mt-4 space-y-2">
-              {emergencyRows.map((guide) => (
-                <li key={guide.slug}>{abroadMeta[guide.slug].emergency}</li>
-              ))}
-              {region.slug === "east-asia" && abroadMeta.japan.helpline && (
-                <li>
-                  <strong>{abroadMeta.japan.helpline.name} (Japan):</strong> {abroadMeta.japan.helpline.detail}
-                </li>
-              )}
-            </ul>
-            <p className="mt-4 text-sm">
-              An online appointment is not an emergency service. If there is immediate danger, call the local
-              emergency number first.
-            </p>
-          </div>
-        </section>
-      )}
+          {guides.map((guide) => {
+            const place = withArticle(guide.country);
+            const meta = abroadMeta[guide.slug];
+            const groupHeading = groupStartingAt.get(guide.slug);
+            return (
+              <div key={guide.slug}>
+                {groupHeading && (
+                  <p className="mt-14 border-b border-stone-200 pb-2 text-sm font-semibold uppercase tracking-[2px] text-sage-700">
+                    {groupHeading}
+                  </p>
+                )}
+                <section id={guide.slug} className="mt-10 scroll-mt-24">
+                  <h3 className="text-2xl font-bold text-stone-950 md:text-3xl">
+                    Nepali psychiatrist for Nepalis in {place}
+                  </h3>
+                  <p className="mt-4 leading-8 text-stone-600">{guide.intro}</p>
+
+                  <h4 className="mt-6 text-lg font-bold text-stone-950">
+                    Common concerns among Nepalis in {place}
+                  </h4>
+                  <ul className="mt-3 grid gap-3 md:grid-cols-2">
+                    {guide.commonConcerns.map((concern) => (
+                      <li
+                        key={concern}
+                        className="rounded-lg border border-stone-200 bg-stone-50 p-4 leading-7 text-stone-800"
+                      >
+                        {concern}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-5 leading-7 text-amber-950">
+                    <h4 className="font-bold">Prescriptions and practical notes for {place}</h4>
+                    <p className="mt-2">{guide.practicalNote}</p>
+                  </div>
+
+                  <EmergencyBox place={place} meta={meta} />
+
+                  {guide.testimonial && (
+                    <figure className="mt-6 rounded-lg border border-sage-200 bg-sage-50 p-6">
+                      <Quote size={24} className="text-clay-300" aria-hidden="true" />
+                      <blockquote className="mt-3 leading-8 text-stone-800">
+                        &ldquo;{guide.testimonial.quote}&rdquo;
+                      </blockquote>
+                      <figcaption className="mt-4 font-semibold text-sage-800">
+                        &mdash; {guide.testimonial.attribution}
+                      </figcaption>
+                      <p className="mt-3 text-sm text-stone-500">
+                        Shared with permission. Names and identifying details are withheld to protect patient
+                        privacy.{" "}
+                        <Link href="/patient-testimonials" className="underline hover:text-sage-700">
+                          Read more patient experiences
+                        </Link>
+                      </p>
+                    </figure>
+                  )}
+
+                </section>
+              </div>
+            );
+          })}
+        </div>
+      </section>
 
       <NepaliBlock heading={region.nepaliHeading} text={region.nepaliText} />
 
@@ -258,6 +307,23 @@ export default function RegionHubPage({ region }: { region: Region }) {
         <div className="mx-auto max-w-5xl px-6 py-14 lg:px-8">
           <h2 className="text-3xl font-bold text-stone-950">Questions from Nepalis in {region.shortName}</h2>
           <FaqList faqs={faqs} />
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-7xl px-6 pb-14 lg:px-8">
+          <h2 className="text-2xl font-bold text-stone-950">Related reading</h2>
+          <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {relatedReading.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-lg border border-stone-200 bg-stone-50 p-5 font-semibold text-stone-800 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

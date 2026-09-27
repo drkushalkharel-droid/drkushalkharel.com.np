@@ -1,6 +1,9 @@
 # Phase 4 proposal: pages competing for the same condition
 
-**Status: PROPOSAL ONLY for the 5 merges below. Nothing has been deleted, merged or redirected.**
+**Status: M1 and M5 APPROVED 2026-09-27 and built on branch `seo/consolidation-merges`. M2, M3 and M4 are ON HOLD
+until Search Console data shows whether the page to be removed currently outranks the one to be kept.** The
+psychosis and schizophrenia pages stay separate, the OCD page is widened to "OCD treatment in Kathmandu: ERP and
+medication", and the Nepali guides are titled Nepali-first (title and heading only, never the URL).
 The non-destructive parts (internal links, "Related" boxes, sharper titles and H1s) do not need
 approval and I will do them in Phases 5 and 7. They leave every URL alive.
 
