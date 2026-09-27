@@ -3,7 +3,9 @@
 // checkout is shallow (no git history available at CI build time) — do not try
 // to regenerate this via git log in a build script. Regenerate locally when
 // articles are added or substantively edited.
-export const articleDates: Record<string, { published: string; modified: string }> = {
+// `reviewed` is optional: set it only if the doctor reviews an article without
+// editing it; otherwise the last-reviewed date is taken to be `modified`.
+export const articleDates: Record<string, { published: string; modified: string; reviewed?: string }> = {
   "adult-adhd-nepal": { published: "2026-07-29", modified: "2026-07-29" },
   "adult-autism-late-diagnosis-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "alcohol-addiction-treatment-nepal": { published: "2026-07-29", modified: "2026-09-23" },
@@ -75,6 +77,7 @@ export const articleDates: Record<string, { published: string; modified: string 
   "psychiatric-doctor-kathmandu": { published: "2026-08-03", modified: "2026-08-03" },
   "psychiatric-hospitalization-inpatient-referral-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "psychiatric-medications-myths-facts": { published: "2026-07-29", modified: "2026-07-29" },
+  "ptsd-treatment-nepal": { published: "2026-08-07", modified: "2026-08-07" },
   "relationship-counselling-nepal": { published: "2026-08-03", modified: "2026-08-03" },
   "relaxation-breathing-exercises-anxiety-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "schizophrenia-early-warning-signs": { published: "2026-07-29", modified: "2026-07-29" },

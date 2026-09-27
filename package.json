@@ -7,6 +7,8 @@
     "build": "next build && node scripts/stamp-html-lang.mjs",
     "audit": "node scripts/seo-audit.mjs",
     "audit:strict": "node scripts/seo-audit.mjs --strict",
+    "validate:jsonld": "node scripts/validate-jsonld.mjs --all",
+    "dates": "node scripts/generate-page-dates.mjs",
     "start": "next start",
     "lint": "eslint"
   },

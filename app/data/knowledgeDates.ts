@@ -3,7 +3,9 @@
 // checkout is shallow (no git history available at CI build time) — do not try
 // to regenerate this via git log in a build script. Regenerate locally when
 // articles are added or substantively edited.
-export const knowledgeDates: Record<string, { published: string; modified: string }> = {
+// `reviewed` is optional: set it only if the doctor reviews an article without
+// editing it; otherwise the last-reviewed date is taken to be `modified`.
+export const knowledgeDates: Record<string, { published: string; modified: string; reviewed?: string }> = {
   "panic-attack-nepali-guide": { published: "2026-09-02", modified: "2026-09-02" },
   "aithan-sleep-paralysis-nepal": { published: "2026-09-02", modified: "2026-09-02" },
   "alcohol-effects-body-brain-nepal": { published: "2026-09-02", modified: "2026-09-02" },

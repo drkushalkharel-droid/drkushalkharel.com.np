@@ -87,7 +87,7 @@ export default function ScreeningPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", ...howToJsonLd }) }}
       />
 
       <section className="bg-white">

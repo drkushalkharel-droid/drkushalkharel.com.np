@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MessageCircle, Phone, Video } from "lucide-react";
 import { buildSpeakableSpec } from "../lib/schema";
 import { OnlineTreatmentCards } from "../components/OnlineCareSections";
+import { getPageDates } from "../data/pageDates";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/online-psychiatrist-nepal`;
@@ -62,6 +63,7 @@ const faqs = [
 ];
 
 export default function OnlinePsychiatristNepalPage() {
+  const dates = getPageDates("/online-psychiatrist-nepal/");
   const medicalWebPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
@@ -81,12 +83,12 @@ export default function OnlinePsychiatristNepalPage() {
     mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })),
   };
   // Note: this graph intentionally only *references* the #clinic/#psychiatrist
-  // entities (defined once, fully, in app/layout.tsx) rather than redefining
+  // entities (defined in full on the homepage and /about/) rather than redefining
   // them — an earlier version redeclared both with different field values
   // (e.g. a different clinic `name`), which put two conflicting definitions
   // of the same @id on this page at once.
   const practiceJsonLd = { "@context": "https://schema.org", "@graph": [
-    { "@type": "Article", headline: title, author: { "@id": `${siteUrl}#psychiatrist` }, mainEntityOfPage: pageUrl },
+    { "@type": "Article", headline: title, author: { "@id": `${siteUrl}#psychiatrist` }, mainEntityOfPage: pageUrl, ...(dates ? { datePublished: dates.published, dateModified: dates.modified } : {}) },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: siteUrl }, { "@type": "ListItem", position: 2, name: "Online Psychiatrist Nepal", item: pageUrl }] }
   ] };
 

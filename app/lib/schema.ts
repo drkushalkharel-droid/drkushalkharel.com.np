@@ -81,7 +81,7 @@ export function buildFaqPageJsonLd(faqs: { question: string; answer: string }[])
 }
 
 // Describes the online consultation as a Service delivered over Google Meet.
-// It only *references* the Physician entity defined once in app/layout.tsx
+// It only *references* the Physician entity defined on the homepage and /about/
 // (`#psychiatrist`) rather than redefining it, so there is never a second,
 // conflicting definition of the doctor on the same page.
 export function buildOnlineServiceJsonLd(params: {

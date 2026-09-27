@@ -4,8 +4,10 @@ import Link from "next/link";
 import { Fragment } from "react";
 import { notFound } from "next/navigation";
 import { docArticles } from "../../data/docArticles";
+import ArticleReviewCard from "../../components/ArticleReviewCard";
 import { knowledgeDates } from "../../data/knowledgeDates";
 import { hreflangAlternates } from "../../data/translationPairs";
+import { buildArticleProvenance, doctorRef } from "../../lib/siteSchema";
 import { detectLanguage, languageMetadata, ogLocaleFor, paragraphLanguage } from "../../lib/language";
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -187,6 +189,7 @@ export default async function KnowledgeArticlePage({
   }
 
   const pageLang = articleLanguage(article);
+  const dates = knowledgeDates[article.slug];
 
   const relatedArticles = docArticles.filter(
     (item) => item.category === article.category && item.slug !== article.slug,
@@ -225,10 +228,8 @@ export default async function KnowledgeArticlePage({
           name: article.title,
         },
         medicalAudience: ["Patient", "Caregiver"],
-        reviewedBy: { "@id": `${siteUrl}#psychiatrist` },
-        ...(knowledgeDates[article.slug]
-          ? { datePublished: knowledgeDates[article.slug].published, dateModified: knowledgeDates[article.slug].modified }
-          : {}),
+        // author + reviewedBy (Person @id), datePublished, dateModified, lastReviewed
+        ...(dates ? buildArticleProvenance(dates) : { reviewedBy: doctorRef }),
       },
       {
         "@type": "FAQPage",
@@ -335,16 +336,13 @@ export default async function KnowledgeArticlePage({
             </div>
           )}
 
-          <div className="rounded-lg border border-sage-200 bg-sage-50 p-5 text-sm leading-7 text-sage-950">
-            <p className="font-bold">Medically reviewed by Dr. Kushal Kharel, MD Psychiatry</p>
-            <p className="mt-1">
-              Consultant Psychiatrist · Nepal Medical Council registered
-              {knowledgeDates[article.slug]
-                ? ` · Last reviewed ${new Date(knowledgeDates[article.slug].modified).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`
-                : ""}
-            </p>
-            <Link href="/medical-disclaimer" className="mt-2 inline-block font-semibold text-sage-800 underline">Read the medical information disclaimer</Link>
-          </div>
+          {dates ? (
+            <ArticleReviewCard dates={dates} lang={pageLang} />
+          ) : (
+            <div className="rounded-lg border border-sage-200 bg-sage-50 p-5 text-sm leading-7 text-sage-950">
+              <p className="font-bold">Medically reviewed by Dr. Kushal Kharel, MD Psychiatry</p>
+            </div>
+          )}
 
           {article.sections.map((section, index) => (
             <Fragment key={section.heading}>

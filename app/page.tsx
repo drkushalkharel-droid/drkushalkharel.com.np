@@ -17,6 +17,7 @@ import AppointmentGuide from "./components/AppointmentGuide";
 import CounsellingSeoSection from "./components/CounsellingSeoSection";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import SiteEntitySchema from "./components/SiteEntitySchema";
 import { buildSpeakableSpec } from "./lib/schema";
 
 export const metadata: Metadata = {
@@ -83,9 +84,9 @@ export const metadata: Metadata = {
 const siteUrl = "https://drkushalkharel.com.np";
 
 export default function Home() {
-  // The canonical MedicalBusiness/Physician entities (with @id) live in
-  // layout.tsx and apply site-wide. This page only adds a WebPage entity
-  // that references them, rather than redeclaring competing duplicates.
+  // The full MedicalBusiness/Physician/WebSite entities (with @id) are emitted
+  // here and on /about/ only (SiteEntitySchema); every other page references
+  // them by @id. This page adds a WebPage entity that references them too.
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -104,6 +105,7 @@ export default function Home() {
 
   return (
     <>
+      <SiteEntitySchema includeWebSite />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}

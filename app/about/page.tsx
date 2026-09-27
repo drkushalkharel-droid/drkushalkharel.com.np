@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink, Phone } from "lucide-react";
+import SiteEntitySchema from "../components/SiteEntitySchema";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const title = "About Dr. Kushal Kharel — Consultant Psychiatrist, Kathmandu";
@@ -52,11 +53,10 @@ const authoredContent = [
 ];
 
 export default function AboutPage() {
-  // References the single canonical Physician entity defined in
-  // app/layout.tsx (#psychiatrist) instead of minting a second, separate
-  // "/about#psychiatrist" node for the same real person — a previous version
-  // duplicated the same name/credentials under a different @id, which
-  // fragments the entity across two identities instead of reinforcing one.
+  // The full Physician entity (#psychiatrist) is emitted on this page and the
+  // homepage by SiteEntitySchema. This ProfilePage points at it rather than
+  // minting a second "/about#psychiatrist" node for the same person — a
+  // previous version did, which fragments the entity across two identities.
   const personJsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
@@ -79,6 +79,7 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen bg-stone-50 text-stone-900">
+      <SiteEntitySchema />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
