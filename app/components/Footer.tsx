@@ -64,7 +64,7 @@ export default function Footer() {
           </p>
 
           <p className="mt-6 text-gray-400 leading-8">
-            Center of Excellence in Neuropsychiatry & De-addiction.
+            Psychiatry clinic in Kalanki, Kathmandu.
             Providing compassionate, confidential and evidence-based
             psychiatric care for children, adolescents and adults.
           </p>

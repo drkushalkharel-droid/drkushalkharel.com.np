@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Dr. Kushal Kharel is a Consultant Psychiatrist in Kalanki, Kathmandu specializing in Neuropsychiatry & Addiction Medicine. NMC-licensed, offering evidence-based in-person and online psychiatric care for anxiety, depression, mood and psychotic disorders, and addiction.",
+    "Dr. Kushal Kharel is a Consultant Psychiatrist in Kalanki, Kathmandu. NMC-licensed, offering evidence-based in-person and online psychiatric care for anxiety, depression, mood and psychotic disorders, and addiction.",
 
   keywords: [
     "Best Psychiatrist in Nepal",
@@ -35,8 +35,6 @@ export const metadata: Metadata = {
     "Psychiatrist Nepal",
     "Mental Health Doctor Nepal",
     "Mental Health Doctor Kathmandu",
-    "Neuropsychiatrist Kathmandu",
-    "Neuropsychiatrist",
     "Consultant Psychiatrist Nepal",
     "Consultant Psychiatrist Kathmandu",
     "Depression Treatment",
@@ -59,7 +57,6 @@ export const metadata: Metadata = {
     "Mental Health Counseling",
     "Mental Health Nepal",
     "Dr Kushal Kharel",
-    "Neuropsychiatry Nepal",
     "Psychotherapy Nepal",
     "Corporate Mental Health Screening Nepal",
     "Workplace Stress Management Nepal",
@@ -76,7 +73,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dr. Kushal Kharel | Best Psychiatrist in Kathmandu, Nepal",
     description:
-      "Consultant Psychiatrist in Kalanki, Kathmandu specializing in Neuropsychiatry & Addiction Medicine. NMC-licensed, offering in-person and online psychiatric consultation. Call +977 9861800547",
+      "Consultant Psychiatrist in Kalanki, Kathmandu. NMC-licensed, offering in-person and online psychiatric consultation. Call +977 9861800547",
     url: siteUrl,
     siteName: "Dr. Kushal Kharel - Consultant Psychiatrist",
     images: [
@@ -95,7 +92,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dr. Kushal Kharel | Psychiatrist in Kathmandu, Nepal",
     description:
-      "Consultant Psychiatrist in Kalanki, Kathmandu specializing in Neuropsychiatry & Addiction Medicine. NMC-licensed, in-person and online consultation.",
+      "Consultant Psychiatrist in Kalanki, Kathmandu. NMC-licensed, in-person and online consultation.",
     images: [doctorImage],
     creator: "@Drkushalpsych",
   },

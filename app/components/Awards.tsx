@@ -81,7 +81,7 @@ export default function Awards() {
               </div>
               <p className="mt-3 leading-7 text-stone-300">
                 Public education and professional speaking on psychiatry,
-                addiction, neuropsychiatry and mental wellbeing.
+                addiction and mental wellbeing.
               </p>
             </figcaption>
           </figure>

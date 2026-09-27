@@ -37,7 +37,6 @@ export const metadata: Metadata = {
     "Psychiatrist for Depression",
     "Psychiatric Consultation Nepal",
     "Online Psychiatrist Nepal",
-    "Neuropsychiatrist Nepal",
     "Highly Recommended Psychiatrist Nepal",
     "Top Rated Psychiatrist Kathmandu",
     "Compassionate Psychiatrist Kathmandu",

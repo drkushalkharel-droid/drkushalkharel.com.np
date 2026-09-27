@@ -92,11 +92,6 @@ export const faqs: Faq[] = [
       "Yes. All psychiatric consultations, whether in-person or online, are confidential and handled with professional discretion in line with standard medical ethics. Your records are accessed only by those directly involved in your care, with narrow, clearly explained exceptions where there is a serious safety risk to you or someone else.",
   },
   {
-    question: "What is neuropsychiatry?",
-    answer:
-      "Neuropsychiatry is the branch of psychiatry focused on mental health conditions that involve the brain's structure and function, such as dementia, delirium, and psychiatric symptoms arising from neurological conditions, bridging psychiatry and neurology.",
-  },
-  {
     question: "When should someone see a psychiatrist?",
     answer:
       "See a psychiatrist when emotional, behavioral, or cognitive symptoms — low mood, excessive worry, sleep problems, concentration difficulties, or unusual thoughts or perceptions — persist for more than a few weeks and affect your daily life, work, or relationships.",

@@ -92,10 +92,8 @@ more than almost anything else off-site.
       has been changed**; the two sites need to say the same thing. Also make sure it links to your own site.
 - [ ] **Existing profiles** (already in your website's `sameAs` list): TherapyMantra, UpchaarNepal, about.me,
       Yandex Maps, Quora, Nagarik News author page. Check each for the same name, phone, address and website link.
-- [ ] **Wording check:** your site's default meta text, the doctor's schema description and the homepage banner
-      still say you specialise in "Neuropsychiatry & Addiction Medicine". If that is not how you want to be
-      described (given the "MD Psychiatry" resolution), tell me and I will change it on the site; then use the same
-      wording on every profile above.
+- [x] **Wording:** the website now describes you simply as a Consultant Psychiatrist (MD Psychiatry). The old
+      "Neuropsychiatry" wording was removed everywhere on the site. Use the same plain wording on every profile above.
 
 ## 5. Social and "sameAs" profiles
 

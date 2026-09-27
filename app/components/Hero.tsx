@@ -30,9 +30,9 @@ export default function Hero() {
 
               Evidence-Based Psychiatry,
               <br />
-              Neuropsychiatry &
+              Addiction Treatment &
               <br />
-              De-addiction Care
+              Online Consultation
 
             </h2>
 

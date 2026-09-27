@@ -58,7 +58,7 @@ export default function About() {
 
             <p className="mt-8 text-lg text-gray-600 leading-9">
               Dr. Kushal Kharel is a Consultant Psychiatrist based in Kalanki,
-              Kathmandu, specializing in Neuropsychiatry &amp; Addiction Medicine.
+              Kathmandu.
               He provides evidence-based psychiatric assessment, diagnosis and
               treatment for children, adolescents, adults and older adults,
               including care for anxiety disorders, depression, mood
@@ -170,7 +170,6 @@ export default function About() {
 
                 <p>✓ MD Psychiatry</p>
                 <p>✓ Consultant Psychiatrist</p>
-                <p>✓ Neuropsychiatry</p>
                 <p>✓ Addiction Medicine</p>
                 <p>✓ Telepsychiatry</p>
                 <p>✓ CBT-Trained</p>
