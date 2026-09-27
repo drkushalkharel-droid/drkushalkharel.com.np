@@ -10,6 +10,7 @@ import { resources } from "./data/resources";
 import { supportingArticles } from "./data/supportingArticles";
 import { articleDates } from "./data/articleDates";
 import { medications } from "./data/medications";
+import { hreflangAlternatesAbsolute } from "./data/translationPairs";
 
 export const dynamic = "force-static";
 
@@ -78,12 +79,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.95,
-      alternates: {
-        languages: {
-          en: withSlash(`${siteUrl}/anxiety`),
-          ne: withSlash(`${siteUrl}/anxiety/np`),
-        },
-      },
     },
 
     {
@@ -91,12 +86,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
-      alternates: {
-        languages: {
-          en: withSlash(`${siteUrl}/anxiety`),
-          ne: withSlash(`${siteUrl}/anxiety/np`),
-        },
-      },
     },
 
     {
@@ -286,8 +275,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Normalize every entry to the canonical trailing-slash form so crawlers
   // never spend a redirect hop resolving a sitemap URL.
-  return allRoutes.map((route) => ({
-    ...route,
-    url: withSlash(route.url),
-  }));
+  // hreflang alternates (xhtml:link) for every English/Nepali pair come from
+  // app/data/translationPairs.ts, the same registry the page <head> tags use.
+  return allRoutes.map((route) => {
+    const url = withSlash(route.url);
+    const languages = hreflangAlternatesAbsolute(url.replace(siteUrl, ""));
+    return { ...route, url, ...(languages ? { alternates: { languages } } : {}) };
+  });
 }

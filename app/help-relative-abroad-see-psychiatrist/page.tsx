@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Mail, MessageCircle, Phone } from "lucide-react";
+import { hreflangAlternates } from "../data/translationPairs";
 import { buildHowToJsonLd } from "../lib/schema";
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: "/help-relative-abroad-see-psychiatrist/",
+    languages: hreflangAlternates("/help-relative-abroad-see-psychiatrist/"),
   },
   keywords: [
     "Help relative abroad mental health",

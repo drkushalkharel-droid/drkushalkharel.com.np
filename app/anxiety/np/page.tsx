@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import AnxietyGuide from "../AnxietyGuide";
+import { hreflangAlternates } from "../../data/translationPairs";
+import { languageMetadata } from "../../lib/language";
 
 const pageUrl = "https://drkushalkharel.com.np/anxiety/np";
 const title = "चिन्ता विकार उपचार काठमाडौं | लक्षण, कारण र समाधान";
@@ -11,11 +13,9 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: "/anxiety/np/",
-    languages: {
-      en: "/anxiety",
-      ne: "/anxiety/np",
-    },
+    languages: hreflangAlternates("/anxiety/np/"),
   },
+  ...languageMetadata("ne"),
   keywords: [
     "चिन्ता रोग उपचार",
     "मनोचिकित्सक काठमाडौं",

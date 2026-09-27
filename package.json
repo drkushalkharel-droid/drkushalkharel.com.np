@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/stamp-html-lang.mjs",
+    "audit": "node scripts/seo-audit.mjs",
+    "audit:strict": "node scripts/seo-audit.mjs --strict",
     "start": "next start",
     "lint": "eslint"
   },

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import ConversionDock from "./components/ConversionDock";
 import ConversionTracking from "./components/ConversionTracking";
+import LangSync from "./components/LangSync";
+import { languageMetadata } from "./lib/language";
 import { reviewStats } from "./data/reviewStats";
 import "./globals.css";
 
@@ -125,9 +127,9 @@ export const metadata: Metadata = {
 
   manifest: "/manifest.webmanifest",
 
-  other: {
-    "format-detection": "telephone=yes",
-  },
+  // Pages in another language override this via languageMetadata() in
+  // app/lib/language.ts; scripts/stamp-html-lang.mjs copies it onto <html lang>.
+  ...languageMetadata("en"),
 };
 
 export default function RootLayout({
@@ -358,6 +360,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        <LangSync />
         <ConversionDock />
         <ConversionTracking />
         <Script

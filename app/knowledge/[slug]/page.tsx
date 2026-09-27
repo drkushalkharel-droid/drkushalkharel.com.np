@@ -5,11 +5,20 @@ import { Fragment } from "react";
 import { notFound } from "next/navigation";
 import { docArticles } from "../../data/docArticles";
 import { knowledgeDates } from "../../data/knowledgeDates";
+import { hreflangAlternates } from "../../data/translationPairs";
+import { detectLanguage, languageMetadata, ogLocaleFor, paragraphLanguage } from "../../lib/language";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
 function getArticle(slug: string) {
   return docArticles.find((article) => article.slug === slug);
+}
+
+// Auto-detected from the article text, so a newly added Nepali article gets
+// lang="ne" and og:locale ne_NP without any extra flag. English-with-Nepali
+// "Bilingual" articles stay "en" (their Nepali paragraphs are marked inline).
+function articleLanguage(article: NonNullable<ReturnType<typeof getArticle>>) {
+  return detectLanguage(article.sections.map((section) => `${section.heading} ${section.body}`).join(" "));
 }
 
 // Generic clinical labels rewritten to how patients actually phrase these
@@ -86,7 +95,9 @@ export async function generateMetadata({
     description: article.description,
     alternates: {
       canonical: `/knowledge/${article.slug}/`,
+      languages: hreflangAlternates(`/knowledge/${article.slug}/`),
     },
+    ...languageMetadata(articleLanguage(article)),
     keywords: [
       keywordTitle,
       `${keywordTitle} Nepal`,
@@ -150,7 +161,7 @@ export async function generateMetadata({
           alt: "Dr. Kushal Kharel - Consultant Psychiatrist",
         },
       ],
-      locale: isBilingual ? "en_NP" : "ne_NP",
+      locale: ogLocaleFor[articleLanguage(article)],
       type: "article",
     },
     twitter: {
@@ -174,6 +185,8 @@ export default async function KnowledgeArticlePage({
   if (!article) {
     notFound();
   }
+
+  const pageLang = articleLanguage(article);
 
   const relatedArticles = docArticles.filter(
     (item) => item.category === article.category && item.slug !== article.slug,
@@ -206,7 +219,7 @@ export default async function KnowledgeArticlePage({
         name: article.title,
         description: article.description,
         url: `${siteUrl}/knowledge/${article.slug}`,
-        inLanguage: article.language === "Bilingual" ? ["en", "ne"] : "ne",
+        inLanguage: article.language === "Bilingual" ? ["en", "ne"] : pageLang,
         about: {
           "@type": "MedicalCondition",
           name: article.title,
@@ -343,9 +356,15 @@ export default async function KnowledgeArticlePage({
                   {displayHeading(section.heading, article.topic)}
                 </h2>
                 <div className="mt-5 space-y-4 text-lg leading-9 text-stone-700">
-                  {section.body.split("\n").map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                  ))}
+                  {section.body.split("\n").map((paragraph) => {
+                    // Mark paragraphs written in the other language (WCAG 3.1.2).
+                    const paragraphLang = paragraph.trim() ? paragraphLanguage(paragraph) : pageLang;
+                    return (
+                      <p key={paragraph} lang={paragraphLang !== pageLang ? paragraphLang : undefined}>
+                        {paragraph}
+                      </p>
+                    );
+                  })}
                 </div>
               </section>
               {index === 1 && article.diagram && (

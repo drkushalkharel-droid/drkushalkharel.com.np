@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PillarArticle from "../components/PillarArticle";
 import { getPillar } from "../data/pillars";
+import { hreflangAlternates } from "../data/translationPairs";
 
 const pageUrl = "https://drkushalkharel.com.np/anxiety";
 const title = "Anxiety Treatment in Kathmandu | Symptoms, Causes & Help";
@@ -12,10 +13,7 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: "/anxiety/",
-    languages: {
-      en: "/anxiety",
-      ne: "/anxiety/np",
-    },
+    languages: hreflangAlternates("/anxiety/"),
   },
   keywords: [
     "Best Psychiatrist in Nepal for Anxiety",
