@@ -105,4 +105,5 @@ export const articleDates: Record<string, { published: string; modified: string;
   "specific-learning-disorder-dyslexia-children-nepal": { published: "2026-08-18", modified: "2026-08-18" },
   "anxiety-vs-depression-difference-nepal": { published: "2026-08-31", modified: "2026-08-31" },
   "whatsapp-support-between-sessions-nepal": { published: "2026-08-31", modified: "2026-08-31" },
+  "nepali-online-psychiatrist-anxiety-depression-abroad": { published: "2026-10-03", modified: "2026-10-03" },
 };
