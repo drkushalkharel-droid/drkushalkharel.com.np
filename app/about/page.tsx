@@ -114,7 +114,7 @@ export default function AboutPage() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-[3px] text-sage-700">About the author</p>
             <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-5xl">Dr. Kushal Kharel</h1>
-            <p className="mt-2 text-xl font-semibold text-sage-800">Consultant Psychiatrist</p>
+            <p className="mt-2 text-xl font-semibold text-sage-800">Consultant Psychiatrist · Certified CBT Therapist</p>
             <p className="mt-6 max-w-xl text-lg leading-8 text-stone-600">
               Dr. Kushal Kharel is a Consultant Psychiatrist based in Kalanki, Kathmandu, providing evidence-based
               psychiatric assessment, diagnosis and treatment for children, adolescents, adults and older adults —
@@ -126,6 +126,10 @@ export default function AboutPage() {
               consultation for patients across Nepal and Nepali communities abroad. He is a Nepal Medical Council
               registered psychiatrist (registration #27199) and reviews and authors the clinical content on this
               site.
+            </p>
+            <p className="mt-4 max-w-xl leading-8 text-stone-600">
+              Counselling is included in every case. Structured psychotherapy, including CBT-based therapy, and
+              medication are considered according to each patient&apos;s needs and clinical assessment.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href="tel:+9779861800547" className="inline-flex items-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800">

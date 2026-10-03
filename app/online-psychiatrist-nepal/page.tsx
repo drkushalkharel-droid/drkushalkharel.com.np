@@ -2,16 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MessageCircle, Phone, Video } from "lucide-react";
 import { buildSpeakableSpec } from "../lib/schema";
-import { OnlineTreatmentCards } from "../components/OnlineCareSections";
+import { OnlinePatientStat, OnlineTreatmentCards } from "../components/OnlineCareSections";
+import AbroadSessionTimes from "../components/AbroadSessionTimes";
 import { getPageDates } from "../data/pageDates";
 import RelatedContent from "../components/RelatedContent";
 import { seoDescription, seoTitle } from "../lib/seoText";
+import { onlinePatientReachStatement, timeZoneBookingStatement } from "../data/onlineCare";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/online-psychiatrist-nepal`;
 const title = seoTitle("/online-psychiatrist-nepal/", "Online Psychiatrist in Nepal | Psychiatric Consultation from Home");
 const description =
-  seoDescription("/online-psychiatrist-nepal/", "Online psychiatric consultation in Nepal for anxiety, depression, OCD, sleep problems, addiction and follow-up care. Learn when online care is suitable and how to book.");
+  seoDescription("/online-psychiatrist-nepal/", "Online psychiatric consultation in Nepal and for Nepalis abroad, with time differences from Kathmandu and appointment planning around your local time zone, work or study schedule.");
 
 export const metadata: Metadata = {
   title,
@@ -42,8 +44,20 @@ const faqs = [
     answer: "Online psychiatric consultation can be suitable for many follow-up visits, medication reviews, psychoeducation, counselling-informed care and selected initial assessments. The appropriate format depends on your symptoms, safety and clinical needs.",
   },
   {
+    question: "Does Dr. Kushal Kharel provide CBT and counselling?",
+    answer: "Yes. Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; structured CBT or other psychotherapy and medication are incorporated when clinically appropriate to the individual treatment plan.",
+  },
+  {
+    question: "How many patients have received online video consultations?",
+    answer: onlinePatientReachStatement,
+  },
+  {
     question: "Which video platform is used for online consultations?",
     answer: "Consultations are held by Google Meet video call, in Nepali or English, at a time arranged around your time zone. It works on a phone, tablet or computer.",
+  },
+  {
+    question: "How do I arrange an online appointment from my time zone?",
+    answer: timeZoneBookingStatement,
   },
   {
     question: "What should I prepare for an online psychiatric appointment?",
@@ -106,12 +120,15 @@ export default function OnlinePsychiatristNepalPage() {
           <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">Online Psychiatrist in Nepal: confidential psychiatric consultation from home</h1>
           <p id="online-consultation-answer" className="mt-6 max-w-4xl text-lg leading-8 text-stone-600">If you live outside Kathmandu, travel is difficult, or you need a follow-up that fits around work or caregiving, online psychiatric consultation may be a practical way to access care. Dr. Kushal Kharel provides online video consultation through Google Meet, in Nepali or English, for many anxiety, depression, OCD, sleep, addiction and medication-review concerns when it is clinically appropriate.</p>
           <div className="mt-8 flex flex-wrap gap-4"><a href="tel:+9779861800547" className="inline-flex items-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800"><Phone size={20} aria-hidden="true" />Call +977 9861800547</a><a href="https://wa.me/9779861800547" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 rounded-lg border border-green-600 px-6 py-3 font-bold text-green-700 transition hover:bg-green-600 hover:text-white"><MessageCircle size={20} aria-hidden="true" />WhatsApp to request a slot</a></div>
+          <OnlinePatientStat />
         </div>
       </section>
       <OnlineTreatmentCards
+        id="video-consultations"
         heading="Depression, anxiety, OCD and sleep problems by Google Meet"
-        intro="Therapy and medication are planned together, so you do not have to choose between them."
+        intro="Counselling is included in every case; structured psychotherapy and medication are tailored to clinical need."
       />
+      <AbroadSessionTimes />
       <article className="mx-auto max-w-5xl space-y-6 px-6 pb-14 lg:px-8">
         <Section title="Who can benefit from an online psychiatric consultation?"><p>Online care can help adults, young people and families throughout Nepal who need a psychiatric opinion but cannot easily visit the Kalanki clinic in Kathmandu. It is often useful for follow-up appointments, medication reviews, discussing side effects, counselling-informed support, psychoeducation and selected first assessments. A video or phone visit can also help a family member join with consent when that support is useful.</p><p>Common reasons to book include persistent worry, panic attacks, low mood, loss of interest, OCD symptoms, disturbed sleep, attention concerns, alcohol or substance-use concerns, stress and burnout. An online appointment does not mean care is less personal: the psychiatrist still takes a history, considers physical health and safety, explains options and makes a shared treatment plan.</p></Section>
         <Section title="Psychiatric care for Nepalis abroad and international patients"><p>Many people contact the clinic from Australia, the United Kingdom, the United States, Canada and New Zealand, often because they prefer to speak in Nepali or English with a psychiatrist who understands the family, migration and study pressures that can shape mental health. Patients also request care from Japan, South Korea, Qatar, the UAE, Saudi Arabia, Germany, Ireland and elsewhere in Europe.</p><p>Being abroad does not automatically make an appointment appropriate. Before booking, the clinic confirms where you are, whether a video consultation is clinically suitable, how emergency care would work locally, and whether any medicine recommendation would require a clinician in your country. This is an ethical safeguard, not an obstacle to care.</p></Section>

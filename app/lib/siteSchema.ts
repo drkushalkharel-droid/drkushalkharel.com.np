@@ -52,7 +52,7 @@ const geo = {
 const hasMap = "https://maps.app.goo.gl/2t5B2EqgDKYMRLE48";
 
 const doctorDescription =
-  "Dr. Kushal Kharel is a Consultant Psychiatrist based in Kalanki, Kathmandu. He provides evidence-based psychiatric assessment, diagnosis, and treatment for children, adolescents, adults, and older adults, including care for anxiety disorders, depression, mood disorders, psychotic disorders, and substance addiction. In addition to in-person consultations at the Kalanki clinic, Dr. Kharel offers telepsychiatry and online psychiatric consultation for patients across Nepal and Nepalese communities abroad. As an NMC-licensed Specialist Psychiatrist, he is committed to confidential, compassionate, and evidence-based mental health care.";
+  "Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist based in Kalanki, Kathmandu. He provides evidence-based psychiatric assessment, diagnosis, and treatment for children, adolescents, adults, and older adults, including care for anxiety disorders, depression, mood disorders, psychotic disorders, and substance addiction. Counselling is included in every case; medication and structured psychotherapy, including CBT-based approaches, are incorporated when clinically appropriate. In addition to in-person consultations at the Kalanki clinic, Dr. Kharel offers telepsychiatry and online psychiatric consultation for patients across Nepal and Nepali communities abroad. As an NMC-licensed Specialist Psychiatrist, he is committed to confidential, compassionate, and evidence-based mental health care.";
 
 export function buildClinicJsonLd() {
   return {
@@ -84,6 +84,9 @@ export function buildClinicJsonLd() {
     areaServed: ["Kathmandu", "Nepal"],
     availableService: [
       "Psychiatric Consultation",
+      "Counselling for psychiatric patients",
+      "Structured Psychotherapy, including CBT-based therapy when clinically appropriate",
+      "Psychiatric Medication Management when clinically appropriate",
       "Depression Treatment",
       "Anxiety Treatment",
       "OCD Treatment",
@@ -103,6 +106,9 @@ export function buildClinicJsonLd() {
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "ADHD Management" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Addiction Treatment" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Online Telepsychiatry" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Counselling included in psychiatric care" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Structured psychotherapy, including CBT when clinically appropriate" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Psychiatric medication management when clinically appropriate" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Corporate Mental Health Screening & Stress Management Workshops" } },
       ],
     },
@@ -140,7 +146,7 @@ export function buildPhysicianJsonLd() {
     "@type": ["Physician", "Person"],
     "@id": ids.psychiatrist,
     name: "Dr. Kushal Kharel",
-    jobTitle: "Consultant Psychiatrist",
+    jobTitle: "Consultant Psychiatrist and Certified CBT Therapist",
     description: doctorDescription,
     url: siteUrl,
     image: `${siteUrl}${doctorImage}`,
@@ -167,6 +173,11 @@ export function buildPhysicianJsonLd() {
         "@type": "EducationalOccupationalCredential",
         credentialCategory: "degree",
         name: "MD Psychiatry",
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "professional certificate",
+        name: "Certified CBT Therapist",
       },
     ],
     memberOf: [

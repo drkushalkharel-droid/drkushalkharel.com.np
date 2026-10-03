@@ -141,7 +141,7 @@ const faqs = [
   {
     question: "Can psychiatrists provide counselling?",
     answer:
-      "Yes. Psychiatrists like Dr. Kushal Kharel can provide counselling and psychotherapy directly, and can also prescribe medication when a diagnosed condition needs it — offering both services in one consultation.",
+      "Yes. Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; structured psychotherapy, including CBT-based therapy, and medication are considered when clinically appropriate to the individual treatment plan.",
   },
   {
     question: "Where can I receive counselling in Kathmandu?",

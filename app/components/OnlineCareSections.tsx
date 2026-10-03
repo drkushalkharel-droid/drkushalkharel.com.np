@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Check, Clock3, CreditCard, Languages, ShieldCheck, Video, Zap } from "lucide-react";
-import { conditionsTreated, consultantTitle, onlineTreatments, type OnlineFaq } from "../data/onlineCare";
+import { Check, Clock3, CreditCard, Languages, ShieldCheck, Users, Video, Zap } from "lucide-react";
+import { conditionsTreated, consultantTitle, onlinePatientReachStatement, onlineTreatmentStatement, onlineTreatments, type OnlineFaq } from "../data/onlineCare";
 
 // Name line shown above the H1 on every abroad page, so the role and the
 // service are attached to the doctor's name.
@@ -19,6 +19,7 @@ export function TreatedList() {
       <h2 className="text-lg font-bold text-stone-950">
         What Dr. Kushal Kharel treats for Nepalis abroad
       </h2>
+      <p className="mt-3 leading-7 text-stone-700">{onlineTreatmentStatement}</p>
       <ul className="mt-3 grid gap-x-6 gap-y-2 sm:grid-cols-2">
         {conditionsTreated.map((item) => (
           <li key={item} className="flex items-start gap-2 leading-7 text-stone-700">
@@ -43,17 +44,36 @@ export function OnlineFactsRow() {
   ];
 
   return (
-    <ul className="mt-8 flex flex-wrap gap-3">
-      {facts.map(({ icon: Icon, label }) => (
-        <li
-          key={label}
-          className="inline-flex items-center gap-2 rounded-full border border-sage-200 bg-sage-50 px-4 py-2 text-sm font-semibold text-sage-900"
-        >
-          <Icon size={16} aria-hidden="true" />
-          {label}
-        </li>
-      ))}
-    </ul>
+    <>
+      <ul className="mt-8 flex flex-wrap gap-3">
+        {facts.map(({ icon: Icon, label }) => (
+          <li
+            key={label}
+            className="inline-flex items-center gap-2 rounded-full border border-sage-200 bg-sage-50 px-4 py-2 text-sm font-semibold text-sage-900"
+          >
+            <Icon size={16} aria-hidden="true" />
+            {label}
+          </li>
+        ))}
+      </ul>
+      <OnlinePatientStat />
+    </>
+  );
+}
+
+export function OnlinePatientStat() {
+  return (
+    <div className="mt-5 rounded-lg border border-sage-200 bg-sage-50 p-4 text-sage-950">
+      <p className="flex items-start gap-3 leading-7">
+        <Users size={20} className="mt-1 shrink-0 text-sage-700" aria-hidden="true" />
+        <span>
+          <strong>{onlinePatientReachStatement}</strong>{" "}
+          <Link href="/online-psychiatrist-nepal/#video-consultations" className="font-semibold text-sage-800 underline">
+            See how video consultations work.
+          </Link>
+        </span>
+      </p>
+    </div>
   );
 }
 
@@ -71,6 +91,7 @@ export function OnlineTreatmentCards({
     <section id={id} className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
       <h2 className="text-3xl font-bold text-stone-950">{heading}</h2>
       {intro && <p className="mt-4 max-w-3xl leading-8 text-stone-600">{intro}</p>}
+      <p className="mt-4 max-w-3xl leading-8 text-stone-600">{onlineTreatmentStatement}</p>
       <div className="mt-8 grid gap-6 md:grid-cols-2">
         {onlineTreatments.map((item) => (
           <div

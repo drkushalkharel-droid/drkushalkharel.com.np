@@ -100,7 +100,7 @@ export default function AnxietyPage() {
         name: "Can I consult online?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Dr. Kushal Kharel treats anxiety with medication and CBT together through Google Meet video consultation, in Nepali or English, including for Nepalis living abroad.",
+          text: "Yes. Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; structured CBT and medication for anxiety are considered when clinically appropriate. Online consultations are available through Google Meet in Nepali or English, including for Nepalis living abroad.",
         },
       },
       {

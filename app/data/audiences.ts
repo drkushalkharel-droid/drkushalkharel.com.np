@@ -1716,7 +1716,7 @@ export const audiencePages: AudiencePage[] = [
       "Thoughts of self-harm or that life isn't worth living",
     ],
     practicalNote:
-      "Dr. Kushal provides CBT and medication together, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad. Treatment is individualised: mild depression often responds well to structured therapy alone, moderate-to-severe depression generally needs a combination of antidepressant medication and therapy, and response to medication is reviewed and adjusted over the following weeks rather than assumed to be right the first time. If depression includes any thoughts of self-harm or suicide, or is accompanied by hallucinations or delusions, seek an urgent assessment or go to the nearest emergency department rather than waiting for a scheduled appointment.",
+      "Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; structured CBT and medication are considered according to clinical assessment and individual need. Treatment is individualised: mild depression often responds well to structured therapy alone, while moderate-to-severe depression may benefit from combining antidepressant medication with therapy. Medication response is reviewed over time rather than assumed to be right the first time. If depression includes thoughts of self-harm or suicide, or is accompanied by hallucinations or delusions, seek an urgent assessment or go to the nearest emergency department rather than waiting for a scheduled appointment.",
     searchTerms: [
       "Depression treatment Kathmandu",
       "Depression treatment Nepal",
@@ -1749,7 +1749,7 @@ export const audiencePages: AudiencePage[] = [
       {
         question: "Is depression treatment available online?",
         answer:
-          "Yes. Dr. Kushal Kharel provides CBT and medication together through Google Meet video consultation, for assessment and follow-up, alongside in-person consultation at the Kalanki clinic in Kathmandu. Nepalis living abroad can use it too; a prescription written in Nepal may not be valid abroad, so medication is planned individually.",
+          "Yes. Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; structured CBT and medication are considered when clinically appropriate. Online consultations are available through Google Meet, alongside in-person visits at the Kalanki clinic in Kathmandu. Nepalis living abroad can also request an appointment; prescriptions are planned individually because a Nepal-issued prescription may not be valid abroad.",
       },
       {
         question: "What if I've tried an antidepressant before and it didn't help?",
@@ -1866,7 +1866,7 @@ export const audiencePages: AudiencePage[] = [
       {
         question: "Is panic attack treatment available online?",
         answer:
-          "Yes. Dr. Kushal Kharel treats panic and anxiety with medication and CBT together through Google Meet video consultation, for assessment and ongoing treatment, alongside in-person consultation at the Kalanki clinic in Kathmandu, including for Nepalis living abroad.",
+          "Yes. Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; structured CBT and medication for panic and anxiety are considered when clinically appropriate. Consultation is available through Google Meet or in person at the Kalanki clinic in Kathmandu, including for Nepalis living abroad where clinically suitable.",
       },
       {
         question: "How long does treatment for panic attacks usually take?",

@@ -101,7 +101,7 @@ export default function DiasporaPage() {
   const serviceJsonLd = buildOnlineServiceJsonLd({
     id: `${url}#service`,
     name: "Online psychiatrist for Nepalis living abroad",
-    description: `${googleMeetStatement} Treats ${treatedSummary}, with therapy and medication together where appropriate.`,
+    description: `${googleMeetStatement} Treats ${treatedSummary}.`,
     url,
     audienceType: "Nepalis living abroad",
     areaServed: abroadGuides.map((guide) => guide.country),
@@ -144,7 +144,7 @@ export default function DiasporaPage() {
 
       <OnlineTreatmentCards
         heading="What Dr. Kushal treats by Google Meet or WhatsApp video call"
-        intro="Therapy and medication are planned together, so you do not have to choose between them."
+        intro="Treatment is tailored to each person and their clinical needs."
       />
 
       <article className="mx-auto max-w-5xl space-y-6 px-6 pb-14">

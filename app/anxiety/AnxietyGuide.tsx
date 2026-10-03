@@ -286,8 +286,8 @@ export default function AnxietyGuide({ lang, extraSections }: { lang: "en" | "np
               [
                 isEnglish ? "Can I consult online?" : "अनलाइन परामर्श लिन मिल्छ?",
                 isEnglish
-                  ? "Yes. Dr. Kushal Kharel treats anxiety with medication and CBT together through Google Meet video consultation, in Nepali or English, including for Nepalis living abroad."
-                  : "मिल्छ। डा. कुशल खरेलले Google Meet भिडियो परामर्शमार्फत नेपाली वा अंग्रेजीमा चिन्ताको उपचारमा औषधि र CBT सँगै दिनुहुन्छ, विदेशमा बस्ने नेपालीहरूका लागि पनि।",
+                  ? "Yes. Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; structured CBT and medication for anxiety are considered when clinically appropriate. Online consultations are available through Google Meet in Nepali or English, including for Nepalis living abroad."
+                  : "मिल्छ। डा. कुशल खरेल कन्सल्टेन्ट साइकाइट्रिस्ट तथा प्रमाणित CBT थेरापिस्ट हुनुहुन्छ। हरेक केसमा काउन्सेलिङ गरिन्छ; आवश्यकताअनुसार संरचित CBT र औषधि उपचार योजनामा समावेश हुन्छ। विदेशमा बस्ने नेपालीले Google Meet बाट नेपाली वा अंग्रेजीमा अनलाइन परामर्श लिन सक्छन्।",
               ],
               [
                 isEnglish ? "Who treats anxiety in Kathmandu?" : "काठमाडौंमा चिन्ता रोगको उपचार कसले गर्छ?",

@@ -12,6 +12,7 @@ import {
   serializeJsonLd,
 } from "../lib/schema";
 import { FaqList, NameLine, OnlineFactsRow, OnlineTreatmentCards, TreatedList } from "../components/OnlineCareSections";
+import AbroadSessionTimes from "../components/AbroadSessionTimes";
 import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -147,7 +148,7 @@ export default function NepaleseAbroadHubPage() {
   const serviceJsonLd = buildOnlineServiceJsonLd({
     id: `${pageUrl}#service`,
     name: "Online psychiatric consultation for Nepalis living abroad",
-    description: `${googleMeetStatement} Treats ${treatedSummary}, with therapy and medication together where appropriate.`,
+    description: `${googleMeetStatement} Treats ${treatedSummary}.`,
     url: pageUrl,
     audienceType: "Nepalis living abroad",
     areaServed: abroadGuides.map((guide) => guide.country),
@@ -223,6 +224,8 @@ export default function NepaleseAbroadHubPage() {
         </div>
       </section>
 
+      <AbroadSessionTimes />
+
       <section className="border-y border-amber-200 bg-amber-50">
         <div className="mx-auto max-w-7xl px-6 py-10 lg:px-8">
           <div className="flex flex-col gap-6 rounded-lg border border-amber-300 bg-white p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between lg:p-8">
@@ -274,7 +277,7 @@ export default function NepaleseAbroadHubPage() {
       <OnlineTreatmentCards
         id="what-we-treat-online"
         heading="What Dr. Kushal treats by Google Meet video call"
-        intro="Therapy and medication are planned together, so you do not have to choose between them. Nepalis abroad most often ask for help with these four concerns."
+        intro="Nepalis abroad most often ask for help with these four concerns."
       />
 
       <section id="how-it-works" className="bg-white">

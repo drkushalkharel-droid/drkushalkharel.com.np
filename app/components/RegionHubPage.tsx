@@ -69,7 +69,7 @@ export default function RegionHubPage({ region }: { region: Region }) {
   const serviceJsonLd = buildOnlineServiceJsonLd({
     id: `${pageUrl}#service`,
     name: `Online psychiatric consultation for Nepalis in ${region.shortName}`,
-    description: `${googleMeetStatement} Treats ${treatedSummary}, with therapy and medication together where appropriate.`,
+    description: `${googleMeetStatement} Treats ${treatedSummary}.`,
     url: pageUrl,
     audienceType: `Nepalis living in ${region.shortName}`,
     areaServed: guides.map((guide) => guide.country),
@@ -224,7 +224,7 @@ export default function RegionHubPage({ region }: { region: Region }) {
 
       <OnlineTreatmentCards
         heading={`How Dr. Kushal treats constant worry, intrusive thoughts and sleep problems for Nepalis in ${region.shortName}`}
-        intro="Therapy and medication are planned together, all through Google Meet or WhatsApp video call."
+        intro="Online care is available through Google Meet or WhatsApp video call."
       />
 
       <section className="bg-white">

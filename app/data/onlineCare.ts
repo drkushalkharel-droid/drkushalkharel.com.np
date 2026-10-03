@@ -12,9 +12,16 @@ export const videoPlatform = "Google Meet";
 
 export const consultantTitle = "Consultant Psychiatrist";
 
+// Shared, answer-first treatment statement used on all diaspora and country pages.
+export const onlineTreatmentStatement =
+  "Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; medication and structured psychotherapy, including CBT-based therapy, are added when clinically appropriate and planned with the patient.";
+
+export const onlinePatientReachStatement =
+  "200+ patients have already received care through online video consultations, and the number continues to grow.";
+
 // One-line statement reused as the lead sentence wherever the service is described.
 export const googleMeetStatement =
-  "Dr. Kushal Kharel, Consultant Psychiatrist, offers online therapy and video consultation through Google Meet or WhatsApp video call, in Nepali or English, for Nepalis abroad and for patients across Nepal, at a time arranged around your time zone and work shift — including urgent requests.";
+  `${onlineTreatmentStatement} He offers online psychiatric assessment and follow-up through Google Meet or WhatsApp video call, in Nepali or English, for Nepalis abroad and patients across Nepal, at a time arranged around your time zone and work shift. ${onlinePatientReachStatement}`;
 
 // Plain-language list of what is treated, worded the way people search for it
 // (constant worry, repetitive thoughts, sleep problems). Shown in the intro of
@@ -42,6 +49,12 @@ export const treatedSummary =
 // here and every abroad page, FAQ and llms.txt follows.
 export const paymentStatement =
   "By card, bank transfer, or by having a family member in Nepal pay locally on your behalf — whichever is easiest from your country. The clinic confirms the fee and the payment options when you book.";
+
+export const publishedClinicHours =
+  "Sunday–Friday, 8:00 AM–10:00 PM; Saturday, 10:00 AM–4:00 PM Nepal time";
+
+export const timeZoneBookingStatement =
+  `To arrange an online session, send the clinic your country or city, time zone, rotating-shift details if relevant, and two or three preferred times in your own local time. The clinic converts those times to Nepal time and confirms a mutually workable available slot. Published hours are ${publishedClinicHours}; an appointment outside those hours must be confirmed individually and is not guaranteed.`;
 
 // The general mechanism for prescriptions abroad: a letter of recommendation
 // / clinical summary the patient can take to a local clinic, hospital or
@@ -87,7 +100,7 @@ export function buildAbroadFaqs(country?: string): OnlineFaq[] {
       question: country
         ? `What time are the sessions for Nepalis ${where}?`
         : "What time are the sessions?",
-      answer: `At a time arranged around your time zone${country ? ` in ${withArticle(country)}` : ""} and your work shift — including night-shift or rotating schedules. Message with the times that actually work for you and a slot is arranged around it, not a fixed menu of hours.`,
+      answer: `${timeZoneBookingStatement} This also applies to patients ${where}.`,
     },
     {
       question: "What if my situation is urgent?",
@@ -119,6 +132,15 @@ export function buildAbroadFaqs(country?: string): OnlineFaq[] {
         "Dr. Kushal Kharel, a Consultant Psychiatrist, treats constant worry (chinta), anxiety and panic, repetitive intrusive thoughts (OCD), sleep problems, depression and low mood, stress and burnout, alcohol and substance use, and relationship and family problems, by online therapy and video consultation.",
     },
     {
+      question: "Is Dr. Kushal Kharel a CBT therapist, and does every patient receive counselling?",
+      answer:
+        "Yes. Dr. Kushal Kharel is a certified CBT therapist and Consultant Psychiatrist. Counselling is included in every case; structured CBT or other psychotherapy and medication are considered and added when clinically appropriate to the individual treatment plan.",
+    },
+    {
+      question: "How many patients have received online video consultations?",
+      answer: onlinePatientReachStatement,
+    },
+    {
       question: "How do I pay from abroad?",
       answer: paymentStatement,
     },
@@ -130,7 +152,7 @@ export const abroadFaqs: OnlineFaq[] = buildAbroadFaqs();
 export type OnlineTreatment = {
   id: "depression" | "anxiety" | "ocd" | "sleep";
   condition: string;
-  // The short "what is offered" line, e.g. "CBT and medication together".
+  // The short, patient-facing summary of options considered for this condition.
   approach: string;
   detail: string;
   href: string;
@@ -141,36 +163,36 @@ export const onlineTreatments: OnlineTreatment[] = [
   {
     id: "depression",
     condition: "Depression and low mood",
-    approach: "CBT and medication together",
+    approach: "Counselling for every case; CBT and medication when appropriate",
     detail:
-      "Dr. Kushal provides both CBT and medication together, through Google Meet video consultation, planned around how severe your depression is.",
+      "Counselling is part of every treatment plan. Structured CBT and medication are considered according to your symptoms, preferences and clinical assessment, through Google Meet video consultation.",
     href: "/conditions/major-depressive-disorder",
     linkLabel: "Depression treatment",
   },
   {
     id: "anxiety",
     condition: "Anxiety and constant worry",
-    approach: "Medication and CBT together",
+    approach: "Counselling for every case; CBT and medication when appropriate",
     detail:
-      "Constant worry (chinta), anxiety and panic are treated with medication and CBT together, through Google Meet video consultation.",
+      "Counselling is part of every treatment plan. Structured CBT and medication are considered according to your symptoms, preferences and clinical assessment, through Google Meet video consultation.",
     href: "/anxiety",
     linkLabel: "Anxiety treatment",
   },
   {
     id: "ocd",
     condition: "OCD and intrusive thoughts",
-    approach: "ERP and medication together",
+    approach: "Counselling for every case; ERP and medication when appropriate",
     detail:
-      "Repetitive, intrusive thoughts and rituals (OCD) are treated with ERP (exposure and response prevention) and medication together, through Google Meet video consultation.",
+      "Counselling is part of every treatment plan. Exposure and response prevention (ERP), a structured psychotherapy for OCD, and medication are considered according to clinical need.",
     href: "/erp-therapy-ocd",
     linkLabel: "ERP therapy for OCD",
   },
   {
     id: "sleep",
     condition: "Sleep problems",
-    approach: "Sleep assessment, CBT-I and medication when needed",
+    approach: "Counselling for every case; CBT-I and medication when appropriate",
     detail:
-      "Sleep difficulty is assessed for its cause and treated with CBT for insomnia (CBT-I) and, when appropriate, medication, through Google Meet video consultation.",
+      "Sleep difficulty is assessed for its cause. Counselling is included, with CBT for insomnia (CBT-I) and medication considered when appropriate.",
     href: "/sleep-problems-treatment-nepal",
     linkLabel: "Sleep problems and insomnia",
   },
@@ -181,26 +203,26 @@ export const onlineTreatments: OnlineTreatment[] = [
 export const conditionOnlineApproach: Record<string, { heading: string; text: string }> = {
   "major-depressive-disorder": {
     heading: "Depression treatment with Dr. Kushal Kharel",
-    text: "Dr. Kushal provides both CBT and medication together for depression, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
+    text: "Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; structured CBT and medication are considered for depression when clinically appropriate, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
   },
   "generalized-anxiety-disorder": {
     heading: "Anxiety treatment with Dr. Kushal Kharel",
-    text: "Dr. Kushal treats constant worry and anxiety with medication and CBT together, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
+    text: "Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; structured CBT and medication for constant worry and anxiety are considered when clinically appropriate, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
   },
   "panic-disorder": {
     heading: "Anxiety treatment with Dr. Kushal Kharel",
-    text: "Dr. Kushal treats panic and anxiety with medication and CBT together, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
+    text: "Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; structured CBT and medication for panic and anxiety are considered when clinically appropriate, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
   },
   "social-anxiety-disorder": {
     heading: "Anxiety treatment with Dr. Kushal Kharel",
-    text: "Dr. Kushal treats social anxiety with medication and CBT together, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
+    text: "Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; structured CBT and medication for social anxiety are considered when clinically appropriate, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
   },
   ocd: {
     heading: "OCD treatment with Dr. Kushal Kharel",
-    text: "Dr. Kushal treats OCD and repetitive, intrusive thoughts with ERP (exposure and response prevention) and medication together, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
+    text: "Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; exposure and response prevention (ERP), a structured psychotherapy for OCD, and medication are considered when clinically appropriate, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
   },
   insomnia: {
     heading: "Sleep problems treatment with Dr. Kushal Kharel",
-    text: "Dr. Kushal assesses sleep difficulty and treats it with CBT for insomnia (CBT-I) and, when appropriate, medication, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
+    text: "Dr. Kushal Kharel is a Consultant Psychiatrist and certified CBT therapist. Counselling is included in every case; CBT for insomnia (CBT-I) and medication for sleep difficulty are considered when clinically appropriate, in person at the Kalanki clinic or through Google Meet video consultation, including for Nepalis living abroad.",
   },
 };
