@@ -5972,6 +5972,33 @@ export const conditions: Condition[] = [
       "Substance Abuse and Mental Health Services Administration (SAMHSA).",
       "Centers for Disease Control and Prevention (CDC). Opioid overdose prevention resources.",
     ],
+    howTo: {
+      name: "What to Do If You Suspect an Opioid Overdose",
+      description:
+        "Immediate steps if someone may be overdosing on opioids, while waiting for emergency help.",
+      steps: [
+        {
+          name: "Check responsiveness and breathing",
+          text: "Try to wake the person. Look for very slow or shallow breathing, blue-tinged lips or fingertips, and pinpoint pupils — all signs of a possible opioid overdose.",
+        },
+        {
+          name: "Call for emergency medical help immediately",
+          text: "Don't wait to see if symptoms improve on their own — an opioid overdose can be fatal within minutes without treatment.",
+        },
+        {
+          name: "Give naloxone if you have it",
+          text: "Naloxone can temporarily reverse an opioid overdose and is safe to give even if you aren't certain opioids are involved.",
+        },
+        {
+          name: "Place them in the recovery position",
+          text: "Lay them on their side to help prevent choking if they vomit, especially if you need to leave them briefly to get help.",
+        },
+        {
+          name: "Stay with them and keep monitoring",
+          text: "Watch their breathing continuously until help arrives. Naloxone's effect can wear off before the opioid does, so be ready to give another dose if available, or begin rescue breathing or CPR if you're trained to do so.",
+        },
+      ],
+    },
   },
   {
     slug: "internet-addiction",
@@ -7577,6 +7604,33 @@ export const conditions: Condition[] = [
       "American Delirium Society.",
       "National Institute for Health and Care Excellence (NICE). Delirium: prevention, diagnosis and management.",
     ],
+    howTo: {
+      name: "What to Do if a Hospitalised Relative Shows Signs of Delirium",
+      description:
+        "Practical steps for family members who notice sudden confusion or behaviour change in a hospitalised relative.",
+      steps: [
+        {
+          name: "Alert the medical team right away",
+          text: "Tell the nurses or doctors immediately about any sudden confusion, drowsiness, or change in alertness — this needs prompt evaluation for an underlying cause, not a wait-and-see approach.",
+        },
+        {
+          name: "Help reorient them",
+          text: "Calmly remind them where they are, the day and time, and who you are. Keep familiar objects nearby, such as glasses, hearing aids, or a family photo.",
+        },
+        {
+          name: "Keep the environment calm and consistent",
+          text: "Minimise room and staff changes where possible, reduce excess noise, and support a clear day-night rhythm with good daytime light and a dark, quiet night.",
+        },
+        {
+          name: "Stay present if you're able to",
+          text: "A familiar, calm family member nearby can meaningfully reduce fear and agitation during episodes of confusion.",
+        },
+        {
+          name: "Don't assume it's just old age or existing dementia",
+          text: "Delirium has an identifiable, usually treatable cause, so insist on medical evaluation rather than accepting sudden confusion as an inevitable part of hospitalisation or ageing.",
+        },
+      ],
+    },
   },
   {
     slug: "serotonin-syndrome",
@@ -8019,6 +8073,33 @@ export const conditions: Condition[] = [
       "American Association for Emergency Psychiatry. BETA de-escalation guidelines.",
       "National Institute for Health and Care Excellence (NICE). Violence and aggression: short-term management.",
     ],
+    howTo: {
+      name: "How to Respond Safely to Someone in Acute Agitation",
+      description:
+        "Practical de-escalation steps for family members or bystanders before medical help arrives.",
+      steps: [
+        {
+          name: "Put your own safety first",
+          text: "Keep a clear path to an exit, maintain some physical distance, and move away anything that could be used to cause harm.",
+        },
+        {
+          name: "Lower the stimulation around them",
+          text: "Reduce noise and bright light where possible, and ask bystanders to give space rather than crowding around.",
+        },
+        {
+          name: "Speak calmly and simply",
+          text: "Use a low, steady voice and short, clear sentences. Avoid sudden movements, and don't stand directly in front of or over the person.",
+        },
+        {
+          name: "Don't argue, threaten, or issue ultimatums",
+          text: "Acknowledge their distress rather than trying to reason intensely in the moment — confrontation tends to escalate agitation rather than resolve it.",
+        },
+        {
+          name: "Get medical help if there is danger or it isn't settling",
+          text: "Call for emergency medical help or get to the nearest hospital emergency department if the person or anyone nearby is at risk, or if calm de-escalation isn't working.",
+        },
+      ],
+    },
   },
   {
     slug: "erectile-dysfunction",
