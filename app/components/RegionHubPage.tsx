@@ -14,6 +14,7 @@ import {
 import { buildZoneGuide } from "../lib/timeGuide";
 import { FaqList, NameLine, OnlineFactsRow, OnlineTreatmentCards, TreatedList } from "./OnlineCareSections";
 import { EmergencyBox, NepaliBlock } from "./AbroadPracticalSections";
+import AbroadFocusPanel from "./AbroadFocusPanel";
 
 const siteUrl = "https://drkushalkharel.com.np";
 
@@ -272,6 +273,8 @@ export default function RegionHubPage({ region }: { region: Region }) {
                     <h4 className="font-bold">Prescriptions and practical notes for {place}</h4>
                     <p className="mt-2">{guide.practicalNote}</p>
                   </div>
+
+                  <AbroadFocusPanel slug={guide.slug} place={place} />
 
                   <EmergencyBox place={place} meta={meta} />
 
