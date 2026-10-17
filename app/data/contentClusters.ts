@@ -150,6 +150,7 @@ export const pageLabels: Record<string, string> = {
   "/couple-relationship-counseling/": "couple counselling in Kathmandu",
   "/female-counselor-kathmandu/": "female counsellor in Kathmandu",
   "/cbt-therapist-kathmandu/": "CBT therapist in Kathmandu",
+  "/psychiatrist-and-therapist-kathmandu/": "psychiatrist and therapist in Kathmandu",
   "/erp-therapy-ocd/": "OCD treatment (ERP therapy) in Kathmandu",
   "/stress-anger-management-kathmandu/": "stress and anger management in Kathmandu",
   "/how-to-control-your-mind-nepal/": "how to control your mind",

@@ -88,6 +88,7 @@ ${regions.map((region) => `- [Nepalis in ${region.shortName}](https://drkushalkh
 
 ## Key pages
 
+- [Psychiatrist and therapist in Kathmandu](https://drkushalkharel.com.np/psychiatrist-and-therapist-kathmandu/): medication plus psychotherapy from one clinician: CBT, DBT-based skills, ERP, supportive therapy, grief and bereavement, family therapy and relationship counselling
 - [Home](https://drkushalkharel.com.np/): overview of the practice and services
 - [About Dr. Kushal Kharel](https://drkushalkharel.com.np/about/): full credentials, registration, memberships and career history
 - [Best Psychiatrist in Kathmandu, Nepal](https://drkushalkharel.com.np/best-psychiatrist-nepal/): how to evaluate psychiatrists in Kathmandu, and Dr. Kharel's credentials

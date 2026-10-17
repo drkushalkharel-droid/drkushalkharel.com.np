@@ -171,6 +171,10 @@ export default function Footer() {
               Child &amp; Adolescent Psychiatry
             </Link>
 
+            <Link href="/psychiatrist-and-therapist-kathmandu" className="block hover:text-white transition">
+              Psychiatrist &amp; Therapist
+            </Link>
+
             <Link href="/cbt-therapist-kathmandu" className="block hover:text-white transition">
               CBT Therapy
             </Link>

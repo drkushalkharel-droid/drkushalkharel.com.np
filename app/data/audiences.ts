@@ -2398,6 +2398,126 @@ export const audiencePages: AudiencePage[] = [
       },
     ],
   },
+  {
+    slug: "psychiatrist-and-therapist-kathmandu",
+    doctorsApproach:
+      "I am a psychiatrist, so I can look at the whole picture: your history, your physical health, whether medication would help, and which kind of therapy fits you. I would rather you see one clinician who can do both than be passed between a doctor for tablets and a separate person for talking. Many people need only therapy, some need only medication, and many do best with both. I tell you plainly which of these I think you need, and why, and we agree the plan together.",
+    title: "Psychiatrist and Therapist in Kathmandu, Nepal",
+    headline: "Psychiatrist and therapist in Kathmandu: medication and psychotherapy in one clinic",
+    shortDescription:
+      "Dr. Kushal Kharel, a Kathmandu consultant psychiatrist, provides medication and psychotherapy: CBT, DBT-based skills, ERP, supportive therapy, grief, family and relationship counselling.",
+    intro:
+      "Dr. Kushal Kharel is a consultant psychiatrist (MD Psychiatry) and certified CBT therapist who provides both medical treatment and talk therapy at his clinic in Kalanki, Kathmandu, and online for Nepalis anywhere in the world. Counselling is part of every consultation. Beyond that, treatment can include medication when it is clinically appropriate and structured psychotherapy: cognitive behavioural therapy (CBT), DBT-based skills for intense emotions, exposure and response prevention (ERP) for OCD, supportive psychotherapy, grief and bereavement support, family therapy and relationship counselling. Having both under one clinician means your medication and your therapy are planned together, not separately.",
+    whoThisIsFor: [
+      "People with anxiety, depression, panic or OCD who want both medical care and therapy",
+      "People who are unsure whether they need medication, therapy or both",
+      "People with intense emotions, self-harm urges or unstable relationships",
+      "People with OCD who need ERP",
+      "People coping with bereavement or loss",
+      "Families affected by a relative's mental illness or addiction",
+      "Couples facing conflict, mistrust or distance",
+      "Nepalis abroad who want treatment in Nepali or English by video",
+    ],
+    commonConcerns: [
+      "Which is better for me: medication, therapy or both?",
+      "Anxiety, panic, constant worry and sleep problems",
+      "Depression, low mood and loss of interest",
+      "OCD: intrusive thoughts and compulsions",
+      "Intense emotions, anger and self-harm urges",
+      "Grief after the death of a family member or a major loss",
+      "Conflict, blame and communication breakdown in the family",
+      "Relationship problems, including during long separations abroad",
+    ],
+    practicalNote:
+      "The first consultation is an assessment and an agreed plan. Therapy is usually weekly or fortnightly over a number of weeks, and the length depends on the problem and your response. Sessions are available in person at the Kalanki clinic or online by Google Meet or WhatsApp video, in Nepali or English. Book by phone or WhatsApp on +977 9861800547. This is not an emergency service: for immediate danger, go to the nearest emergency department.",
+    searchTerms: [
+      "Psychiatrist and therapist Kathmandu",
+      "Psychotherapy Kathmandu",
+      "Therapy and medication Nepal",
+      "Psychiatrist who does therapy Nepal",
+      "DBT Nepal",
+      "Family therapy Kathmandu",
+    ],
+    guideSections: [
+      {
+        heading: "Medication and psychotherapy together: when you need which",
+        body: "Medication works on the biology of conditions such as depression, anxiety, bipolar disorder, psychosis and ADHD, and is often needed when symptoms are severe or have lasted a long time. Psychotherapy teaches skills and changes patterns that medicine cannot, and is the main treatment for many milder or situational problems. As a psychiatrist, Dr. Kharel can offer either or both. Medication is prescribed only when it is clinically appropriate, with the benefits, side effects and expected duration explained, and therapy is chosen to fit the problem. The plan is reviewed as you improve, so you do not stay on treatment you no longer need.",
+        link: { href: "/medications", label: "Read about psychiatric medications" },
+      },
+      {
+        heading: "CBT: cognitive behavioural therapy",
+        body: "CBT is a structured, goal-focused therapy that links thoughts, feelings and behaviour. You learn to spot unhelpful thinking patterns, test them against reality and change the habits that keep anxiety, low mood, anger or insomnia going. It includes practice between sessions. Dr. Kharel is a certified CBT therapist and uses CBT for anxiety, depression, panic, health anxiety, anger, insomnia and relationship problems.",
+        link: { href: "/cbt-therapist-kathmandu", label: "CBT therapy in Kathmandu" },
+      },
+      {
+        heading: "DBT-based skills for intense emotions and self-harm urges",
+        body: "Dialectical behaviour therapy (DBT) was developed for people whose emotions feel overwhelming, who act on strong urges, or who have repeated crises in relationships. Dr. Kharel uses DBT-based skills across its four areas: mindfulness, distress tolerance, emotion regulation and interpersonal effectiveness. This approach is used alongside assessment for conditions such as borderline personality disorder, self-harm, and severe mood swings. It is individual skills-based work, not a full group DBT programme.",
+        link: { href: "/conditions/borderline-personality-disorder", label: "Borderline personality disorder" },
+      },
+      {
+        heading: "ERP: exposure and response prevention for OCD",
+        body: "ERP is the first-line psychological treatment for obsessive-compulsive disorder. Step by step and at a pace you agree, you face the situations that trigger obsessions without performing the compulsion or ritual, so the anxiety falls on its own and the cycle weakens. ERP can be done alone or with medication, depending on severity.",
+        link: { href: "/erp-therapy-ocd", label: "ERP therapy for OCD" },
+      },
+      {
+        heading: "Supportive psychotherapy",
+        body: "Supportive psychotherapy offers a steady, non-judgemental space to talk, with practical guidance, encouragement and help to cope. It is often used during a crisis, a long illness, a life change, or alongside medication for conditions such as schizophrenia and bipolar disorder, where staying well over time matters. It helps people feel heard while building their own coping strengths.",
+        link: { href: "/counselling-in-nepal", label: "Counselling in Nepal" },
+      },
+      {
+        heading: "Grief and bereavement support",
+        body: "Grief after a death is natural and is not itself an illness. Support helps when it feels stuck: constant longing, guilt, numbness, inability to function, or a loss that came through suicide, an accident or a death abroad that you could not attend. Counselling gives space to mourn and make sense of the loss. If grief has become severe and lasting, or has led to depression, the assessment also looks at whether further treatment would help.",
+        link: { href: "/blog/grief-bereavement-counseling-nepal", label: "Grief and bereavement counselling in Nepal" },
+      },
+      {
+        heading: "Family therapy and family support",
+        body: "Mental illness and addiction affect the whole family. Family sessions help relatives understand the illness, reduce blame and conflict, communicate more calmly, and support recovery without burning out. Involving the family has strong evidence for reducing relapse in conditions such as schizophrenia and bipolar disorder. Family sessions can include relatives in Nepal and abroad in the same video call.",
+        link: { href: "/psychiatric-care-for-family-in-nepal", label: "Psychiatric care for family in Nepal" },
+      },
+      {
+        heading: "Relationship and couple counselling",
+        body: "Couple counselling helps partners communicate, rebuild trust and manage conflict, including strain from migration, in-laws, money, gambling, alcohol or a partner's mental illness. Dr. Kharel sees both partners together and, when useful, each separately, using practical CBT-based skills. Sessions work for long-distance couples, with partners joining from different countries.",
+        link: { href: "/couple-relationship-counseling", label: "Couple and relationship counselling" },
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Dr. Kushal Kharel a psychiatrist or a therapist?",
+        answer:
+          "Both. He is a consultant psychiatrist (MD Psychiatry) who can prescribe medication and a certified CBT therapist who provides psychotherapy and counselling. Treatment is planned as one process.",
+      },
+      {
+        question: "Which therapies are available?",
+        answer:
+          "CBT, DBT-based skills, exposure and response prevention (ERP) for OCD, supportive psychotherapy, grief and bereavement counselling, family therapy and relationship counselling, with medication added when it is clinically appropriate.",
+      },
+      {
+        question: "Do I need medication, therapy or both?",
+        answer:
+          "It depends on the condition, how severe it is and your preferences. Milder problems often respond to therapy alone, severe or long-lasting ones often need medication, and many people do best with both. This is decided after assessment.",
+      },
+      {
+        question: "Is counselling included with medication?",
+        answer:
+          "Yes. Counselling is part of every consultation. Longer structured psychotherapy is added when it is likely to help.",
+      },
+      {
+        question: "Can I have therapy online?",
+        answer:
+          "Yes. Sessions are available by Google Meet or WhatsApp video, in Nepali or English, for people in Nepal and abroad. Only in-person care can handle emergencies, and prescribing rules differ by country.",
+      },
+      {
+        question: "How many sessions will I need?",
+        answer:
+          "It varies. Many therapies are time-limited, with weekly or fortnightly sessions over a number of weeks, and the plan is reviewed as you improve.",
+      },
+      {
+        question: "Can family members or my partner join?",
+        answer:
+          "Yes, with your agreement. Family and couple sessions can include people from different locations in the same video call.",
+      },
+    ],
+  },
 ];
 
 export function getAudiencePage(slug: string) {

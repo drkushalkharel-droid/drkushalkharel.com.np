@@ -152,6 +152,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/iq-psychological-testing`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/medical-fitness-certificate`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/female-counselor-kathmandu`, lastModified: new Date("2026-08-05"), changeFrequency: "monthly", priority: 0.75 },
+    { url: `${siteUrl}/psychiatrist-and-therapist-kathmandu`, lastModified: new Date("2026-10-17"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/cbt-therapist-kathmandu`, lastModified: new Date("2026-09-24"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/erp-therapy-ocd`, lastModified: new Date("2026-09-24"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/addiction-treatment-kathmandu`, lastModified: new Date("2026-08-07"), changeFrequency: "monthly", priority: 0.85 },

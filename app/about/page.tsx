@@ -128,8 +128,12 @@ export default function AboutPage() {
               site.
             </p>
             <p className="mt-4 max-w-xl leading-8 text-stone-600">
-              Counselling is included in every case. Structured psychotherapy, including CBT-based therapy, and
-              medication are considered according to each patient&apos;s needs and clinical assessment.
+              Counselling is included in every case. Structured psychotherapy, including CBT, DBT-based skills, ERP for
+              OCD, supportive therapy, grief, family and relationship counselling, and medication are considered
+              according to each patient&apos;s needs and clinical assessment.{" "}
+              <Link href="/psychiatrist-and-therapist-kathmandu" className="font-semibold text-sage-700 underline">
+                See all treatments
+              </Link>
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href="tel:+9779861800547" className="inline-flex items-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800">

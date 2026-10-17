@@ -451,6 +451,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-06",
     "modified": "2026-08-06"
   },
+  "/psychiatrist-and-therapist-kathmandu/": {
+    "published": "2026-10-17",
+    "modified": "2026-10-17"
+  },
   "/cbt-therapist-kathmandu/": {
     "published": "2026-08-05",
     "modified": "2026-09-27"

@@ -63,6 +63,11 @@ export const seoMeta: Record<string, SeoEntry> = {
     description:
       "Mental health articles by topic: anxiety, depression, addiction, relationships, sleep and more, from a Kathmandu psychiatrist. Book in-person or online.",
   },
+  "/psychiatrist-and-therapist-kathmandu/": {
+    title: "Psychiatrist and Therapist in Kathmandu",
+    description:
+      "One Kathmandu psychiatrist for medication and therapy: CBT, DBT-based skills, ERP, supportive, grief, family and relationship counselling. In person or online.",
+  },
   "/cbt-therapist-kathmandu/": {
     title: "CBT Therapist in Kathmandu, Nepal",
     description:
