@@ -32,6 +32,12 @@ export type SupportingArticle = {
   // this" card. Only set where a genuine, informative diagram exists among
   // the site's existing clinical diagram set — not generic decoration.
   diagram?: { src: string; alt: string; caption: string };
+  // Optional at-a-glance table shown before the table of contents. Gives search
+  // and AI answer engines a compact, quotable summary of the page.
+  table?: { heading: string; caption: string; headers: string[]; rows: string[][] };
+  // Name of the condition for MedicalWebPage "about" in JSON-LD, when the h1 is
+  // not itself a condition name (e.g. "Gambling disorder").
+  aboutCondition?: string;
   related: string[];
   faqs: { question: string; answer: string }[];
   relatedScreeningId?: string;
@@ -1903,6 +1909,174 @@ export const supportingArticles: SupportingArticle[] = [
         question: "तत्काल मानसिक स्वास्थ्य संकट भए के गर्ने?",
         answer:
           "आफू वा अरूलाई सुरक्षित राख्न नसक्ने जोखिम, आत्महत्याको तत्काल योजना, ओभरडोज वा गम्भीर भ्रम भए स्थानीय आपत्कालीन सेवामा वा नजिकको अस्पतालमा तुरुन्त सम्पर्क गर्नुहोस्। अनलाइन अपोइन्टमेन्टको प्रतीक्षा नगर्नुहोस्।",
+      },
+    ],
+  },
+  {
+    slug: "gambling-addiction-nepalese-abroad",
+    category: "Addiction & Substance Use",
+    title: "Nepali Gambling Addiction Abroad: Country Guide",
+    description:
+      "Gambling addiction among Nepalis abroad: warning signs, why migrants are vulnerable, country-by-country laws and help services across the Gulf, Europe, Asia, UK, USA and Australia, and online treatment.",
+    keywords: [
+      "Gambling addiction Nepali abroad",
+      "Nepalese gambling problem abroad",
+      "Nepali gambling addiction Gulf",
+      "Nepali gambling Japan Korea Malaysia",
+      "Online betting addiction migrant workers Nepal",
+      "Online psychiatrist for Nepali gambling addiction",
+    ],
+    h1: "Gambling Addiction Among Nepalese Abroad: A Country-by-Country Guide",
+    topic: "gambling addiction among Nepalese abroad",
+    aboutCondition: "Gambling disorder",
+    headingOverrides: [
+      "What are the warning signs of gambling addiction when you live abroad?",
+      "Why are Nepalese abroad vulnerable to gambling addiction?",
+      "How is gambling addiction assessed online?",
+      "How is gambling addiction treated from abroad?",
+      "How can families in Nepal help, and how do money safeguards work?",
+    ],
+    overview:
+      "Yes, Nepalese living and working abroad can develop gambling addiction (gambling disorder), and it is often hidden for a long time. Distance from family, long shifts, loneliness, easy betting on a phone, and the pressure to keep sending money home all make it easier to start and harder to admit. Laws and help services differ sharply by country: gambling is prohibited in the Gulf states, tightly regulated in Europe, the UK and Australia, and widely available in forms such as pachinko in Japan or casinos in Singapore and Macau. Whatever the country, the pattern is the same: loss of control despite harm, chasing losses, secrecy and debt. This guide covers the warning signs, the country-specific picture, and how Dr. Kushal Kharel treats gambling disorder by online consultation in Nepali or English for Nepalese anywhere in the world.",
+    symptoms:
+      "Common warning signs are gambling with larger amounts to feel the same excitement, repeated failed attempts to cut down, irritability when trying to stop, gambling to escape loneliness or low mood, chasing losses, lying about where money went, and borrowing from friends, co-workers or lenders. Signs that are especially common abroad include sending less money home than before with changing explanations, skipping remittances, running out of money before the end of the month, taking extra shifts only to pay gambling debts, hiding bank or app activity, and staying awake at night to bet on matches in another time zone. Low mood, anxiety, poor sleep and thoughts of suicide often follow large losses. If a person talks about not wanting to live because of debts, treat it as urgent and seek emergency help in the country where they are.",
+    causes:
+      "Gambling activates the brain's reward system through unpredictable wins, and phone-based betting removes natural limits such as travel and opening hours. Migrants face extra risk factors: loneliness and boredom after work, little family oversight, the stress of visa and income uncertainty, debt taken to pay agents or fees, and the belief that one big win would clear everything and let them go home. Cultural factors play a part too. Card games during Tihar and other festivals are widely accepted in Nepali communities, which can blur the line between a social tradition and a daily habit once betting apps are on a phone. Cricket and football betting adds to this, as does advertising and bookmaker promotions in many countries. Shame and fear of disappointing family, or of losing a job or visa, make people hide the problem until debts are large.",
+    assessment:
+      "Assessment is done by video and covers gambling type (apps, casinos, pachinko, lotteries, card games, sports betting), amounts, frequency and the longest recent period without gambling. It also covers debts and who is owed money, effects on work, visa and family, sleep, alcohol use, and screening for depression, anxiety and suicide risk, which are common alongside gambling disorder. Where the person agrees, a trusted family member may join part of the session. The assessment is confidential; information is not shared with an employer, embassy or family without consent, except where there is a serious risk to life.",
+    treatment:
+      "Cognitive behavioural therapy is the best-established treatment. It works on beliefs such as being due for a win, builds urges-management and relapse-prevention plans, and plans how to handle triggers like payday, loneliness and late-night matches. Practical safeguards matter as much as therapy: self-exclusion from gambling sites where available, deleting betting apps and blocking them on the phone, asking a bank about gambling-transaction blocks, limiting cash, and arranging a fixed remittance with a trusted person. Medication is not a treatment for the gambling itself, but depression, anxiety or alcohol use that is present alongside it is treated in the usual way. Debt is handled with a realistic repayment plan rather than more gambling; legal or financial advice from a registered local service is better than informal lenders. Online sessions are scheduled around your time zone and shift pattern.",
+    local:
+      "Families in Nepal often notice changes before anyone abroad does: remittances shrinking or becoming irregular, new requests for money, or calls from lenders. A calm, non-accusing conversation works better than confrontation; offer to help set up safeguards such as sending money directly to bills or to a family account rather than handing over cash, and do not repay gambling debts without a plan, because a rescue can reinforce the cycle. Families should also look after their own stress; support is available for relatives too. Dr. Kharel's clinic in Kalanki, Kathmandu offers confidential online consultation to Nepalese in more than forty countries, and in-person care for people who return to Nepal.",
+    extraSections: [
+      {
+        heading: "Is gambling legal for Nepalese in the Gulf (UAE, Qatar, Saudi Arabia, Kuwait, Oman, Bahrain)?",
+        body:
+          "Gambling and betting are prohibited in all six Gulf states, and legal consequences can include fines, detention and loss of residence for expatriate workers, so you should never assume that a betting site or app is lawful. The UAE has created a gaming regulator and licensed its first casino resort in Ras Al Khaimah, expected to open in 2027, but this does not make casual betting by residents legal elsewhere in the country. Because it is illegal, gambling is hidden: informal bookmakers, WhatsApp-based betting groups, card games in labour accommodation, and foreign betting apps used on a phone. Debt to co-workers or lenders is a frequent result, and fear of legal trouble can stop people from asking for help. There are very few public gambling-specific services in the Gulf, which is why confidential online consultation with a Nepali-speaking psychiatrist can be useful. Treatment itself is a health matter and does not involve reporting you to an employer.",
+      },
+      {
+        heading: "What gambling help exists for Nepalese in Europe (Germany, Netherlands, France, Spain, Italy, Nordics, Poland, Cyprus, Israel and more)?",
+        body:
+          "Most European countries license gambling and run national self-exclusion systems that let you block yourself from licensed operators: examples are OASIS in Germany, CRUKS in the Netherlands, ROFUS in Denmark, Spelpaus in Sweden, RGIAJ in Spain, the EPIS list in Belgium and the ANJ prohibition register in France. Finland and Norway use state-controlled gambling operators with identification-based play. Casinos, betting shops and sports-betting apps are easy to reach, and many Nepalese in Europe work shifts in restaurants, warehouses and care work, which leaves late-evening hours alone with a phone. Israel restricts most gambling to state-run lotteries and sports betting, but offshore online sites are still accessible, and live-in caregivers can find isolation a risk. In every country, a licensed operator's self-exclusion is a useful first step, and a GP or national gambling helpline can point to local counselling. Look up your country's current register and helpline, since details change.",
+      },
+      {
+        heading: "What are the gambling risks for Nepalese in Japan, South Korea, Hong Kong and China?",
+        body:
+          "In Japan, pachinko and pachislot parlours near almost every station are legal for adults and are the main gambling risk for Nepalese students and workers, even though they are not described as gambling in law. Online casinos are illegal, and a first casino resort has been planned in Osaka. In South Korea, casinos are mostly open to foreigners only, which means Nepali workers on work visas can enter them, and legal sports betting exists alongside widespread illegal online betting. The Korea Center on Gambling Problems runs a helpline on 1336. In Hong Kong, betting is legal only through the Hong Kong Jockey Club (horse racing, football and Mark Six lottery), and the Ping Wo Fund funds gambling counselling. Mainland China prohibits most gambling, while casinos in Macau are legal for adults over 21. Language is a real barrier to local services in all four places, so a Nepali-speaking online consultation can fill the gap.",
+      },
+      {
+        heading: "What are the gambling rules for Nepalese in Malaysia, Singapore, Thailand, Brunei and Myanmar?",
+        body:
+          "Malaysia licenses lotteries, horse racing and a casino at Genting for non-Muslims, while illegal phone-based betting is common. Singapore has two casino resorts, Marina Bay Sands and Resorts World Sentosa, plus Singapore Pools and horse racing; foreigners enter the casinos without the S$150 daily entry levy that citizens and permanent residents must pay, and the National Problem Gambling Helpline is 1800-6-668-668. Thailand allows only the government lottery and horse racing, and other gambling is largely underground or online. Brunei prohibits gambling. In Myanmar, gambling is mostly illegal and informal, and unregulated sites offer no protection against fraud or unpaid winnings. Work-permit workers in Malaysia and Singapore may be tempted by easy casino or betting-shop access after work, and a gambling problem can threaten both the job and the work pass.",
+      },
+      {
+        heading: "Where can Nepalese in the UK and Ireland get help for gambling?",
+        body:
+          "Gambling is legal and regulated in the UK, where high-street betting shops, fixed-odds machines, online casinos and sports betting apps are heavily advertised. Free help includes the GamCare National Gambling Helpline on 0808 8020 133, the GAMSTOP service that blocks you from all UK-licensed online gambling sites, Gamblers Anonymous, and NHS specialist gambling clinics in England that you can ask your GP about. Many banks also let you block gambling transactions on a card. The Nepalese community includes long-settled Gurkha families as well as students and Skilled Worker visa holders, and worry about status, rent and the cost of living can feed gambling as an attempt to recover losses. In Ireland, gambling regulation is being reformed, so ask a GP or the HSE addiction services about current local support, and use a licensed operator's own self-exclusion tools in the meantime.",
+      },
+      {
+        heading: "Where can Nepalese in the USA and Canada get help for gambling?",
+        body:
+          "In the USA, gambling law is set by each state: lotteries and scratch cards are sold widely, many states now license online sports betting with heavy promotions, and casinos range from Las Vegas to tribal casinos. The National Problem Gambling Helpline is 1-800-GAMBLER (1-800-426-2537), and most states run their own self-exclusion programmes. Student visa holders can find that losses and debt put their finances and status at risk. In Canada, provinces regulate gambling; Ontario has a licensed online market, ConnexOntario offers a helpline on 1-866-531-2600 for Ontario, and Gambling Support BC is on 1-888-795-6111 in British Columbia. Insurance often covers little gambling treatment, which is another reason many choose a private online consultation with a Nepali-speaking psychiatrist.",
+      },
+      {
+        heading: "Where can Nepalese in Australia, New Zealand and Fiji get help for gambling?",
+        body:
+          "Australia has some of the highest gambling spending in the world, driven by poker machines (pokies) in pubs and clubs and by online sports betting. Free, confidential 24-hour help is available through Gambling Help Online on 1800 858 858, and BetStop is the national register that excludes you from all licensed online wagering. In New Zealand, pokies in pubs and clubs, casinos and online betting are the main risks, and the Gambling Helpline is on 0800 654 655. Nepali students and workers in both countries often work shifts in hospitality and care, and the sense of isolation can raise risk. In Fiji, dedicated gambling services are limited, so online consultation can fill the gap. Check local rules and current numbers before relying on any service.",
+      },
+      {
+        heading: "What are the gambling laws for Nepalese in India, Bangladesh and Sri Lanka?",
+        body:
+          "In India, gambling is regulated by individual states, with casinos in places such as Goa, Sikkim and Daman, and the Promotion and Regulation of Online Gaming Act 2025 prohibits real-money online games nationwide, including fantasy sports, rummy and poker apps, and bans related advertising and payments. Nepalese in India sometimes gamble in informal card games, lotteries and betting apps, and the open border with Nepal means money and debts move easily between the two countries. Bangladesh prohibits most gambling, so it takes place informally. Sri Lanka has casinos aimed largely at visitors. Support services specific to gambling are limited in these countries, and a Nepali-speaking online psychiatrist offers a confidential option without language barriers. Because Nepal shares time zones with South Asia closely, sessions are easy to arrange.",
+      },
+      {
+        heading: "How can I get treatment for gambling addiction without returning to Nepal?",
+        body:
+          "You do not need to return to Nepal. Book by WhatsApp or the contact page, tell us your country and the hours you can speak, and a video session in Nepali or English is arranged around the time difference. The first consultation covers your gambling pattern, finances, mood, sleep and safety, then a plan with therapy sessions, practical safeguards and follow-up. Treatment is confidential. If you are in immediate danger or thinking of ending your life, contact the emergency number of the country you are in straight away and tell someone near you; do not wait for an online appointment. Services, laws and helpline numbers change, so confirm current details with the service itself before relying on them.",
+      },
+    ],
+    doctorsApproach:
+      "Many Nepalese who gamble abroad contact me only after the debt has grown and they have hidden it from family for months, and shame is often a bigger barrier than the gambling itself. In the first conversation I want to understand the pattern without judging it, check for depression, anxiety, alcohol use and safety, and agree practical safeguards before anything else. CBT is my main treatment, working on beliefs like being due for a win and on a relapse-prevention plan built around your own shifts, time zone and triggers. Because laws and services differ so much between a Gulf country, Japan and Australia, I plan each person's safeguards around where they actually live. Consultations are online and confidential, in Nepali or English.",
+    table: {
+      heading: "Quick reference: gambling laws and free help for Nepalese abroad, by region",
+      caption: "Summary of the sections below. Laws and numbers change, so confirm with the service itself.",
+      headers: ["Region", "Legal position", "Free help or self-exclusion"],
+      rows: [
+        ["Gulf (UAE, Qatar, Saudi Arabia, Kuwait, Oman, Bahrain)", "Gambling prohibited; the UAE has licensed a first casino resort (Ras Al Khaimah, expected 2027)", "No gambling-specific public service; confidential online consultation"],
+        ["Europe", "Licensed and regulated; Finland and Norway use state operators", "National self-exclusion registers (OASIS, CRUKS, ROFUS, Spelpaus, RGIAJ, EPIS, ANJ); GP and national helplines"],
+        ["Japan, South Korea, Hong Kong, China", "Japan: pachinko legal. Korea: foreigner-only casinos and legal sports betting. Hong Kong: Jockey Club only. Mainland China: mostly banned; Macau casinos 21+", "Korea: 1336. Hong Kong: Ping Wo Fund hotline 1834 633"],
+        ["Malaysia, Singapore, Thailand, Brunei, Myanmar", "Malaysia: licensed for non-Muslims. Singapore: two casino resorts. Thailand: government lottery and horse racing only. Brunei: prohibited", "Singapore: 1800-6-668-668"],
+        ["UK and Ireland", "UK: legal and regulated", "UK: GamCare 0808 8020 133, GAMSTOP, NHS gambling clinics"],
+        ["USA and Canada", "Set by state (USA) and province (Canada)", "USA: 1-800-GAMBLER. Ontario: 1-866-531-2600. British Columbia: 1-888-795-6111"],
+        ["Australia, New Zealand, Fiji", "Legal and regulated; pokies in pubs and clubs", "Australia: 1800 858 858 and BetStop. New Zealand: 0800 654 655"],
+        ["India, Bangladesh, Sri Lanka", "India: online real-money games banned nationally (2025 Act); casinos in a few states. Bangladesh: mostly prohibited", "Few gambling-specific services; online consultation in Nepali"],
+      ],
+    },
+    related: [
+      "/blog/gambling-addiction-treatment-nepal",
+      "/conditions/gambling-disorder",
+      "/nepalese-abroad",
+      "/psychiatrist-for-nepalis-abroad",
+      "/online-psychiatrist-nepal",
+      "/addiction-treatment-kathmandu",
+      "/couple-relationship-counseling",
+      "/contact",
+    ],
+    faqs: [
+      {
+        question: "Can Nepalese abroad get treatment for gambling addiction without returning to Nepal?",
+        answer:
+          "Yes. Gambling disorder is treated mainly with cognitive behavioural therapy and practical safeguards, both of which work well by video. Dr. Kharel offers confidential online consultations in Nepali or English, scheduled around your country's time zone and work shifts.",
+      },
+      {
+        question: "Is gambling legal for Nepalese in the Gulf countries?",
+        answer:
+          "No. Gambling and betting are prohibited in the UAE, Qatar, Saudi Arabia, Kuwait, Oman and Bahrain, and legal consequences can be serious for expatriates. Because it is hidden, people often feel unable to ask for help, but seeking medical treatment is a health matter and is confidential.",
+      },
+      {
+        question: "Will my employer, embassy or family be told if I seek treatment?",
+        answer:
+          "No. Consultations are confidential. Information is shared with family only if you agree, and only where there is a serious risk to life would confidentiality be reconsidered.",
+      },
+      {
+        question: "What should I do if I owe money because of gambling?",
+        answer:
+          "Stop gambling, avoid borrowing more to win it back, and be honest with one trusted person. A realistic repayment plan and, where possible, advice from a registered local debt or financial counselling service work better than informal lenders. Treatment helps you stay in control while you repay.",
+      },
+      {
+        question: "How can my family in Nepal help if I have a gambling problem?",
+        answer:
+          "Calm, non-blaming support is the most helpful. Families can offer to receive money directly for bills rather than cash, avoid repeatedly paying off debts without a plan, and encourage a consultation. Family members can also seek support for their own stress.",
+      },
+      {
+        question: "Does medication cure gambling addiction?",
+        answer:
+          "No. Medication is not a treatment for gambling itself, but depression, anxiety or alcohol use that exist alongside it are treated in the usual way. CBT and practical safeguards are the core of treatment.",
+      },
+      {
+        question: "What relationship problems do Nepalese couples face when one or both partners live abroad?",
+        answer:
+          "Common problems are long separations, a spouse left behind in Nepal, loss of trust around money or secrecy, arguments over remittances and in-laws, emotional distance, loneliness, and strain after reunion when partners have changed. Gambling, alcohol use, depression and anxiety make these problems worse. Dr. Kharel provides couple and relationship counselling alongside psychiatric care, so the relationship and the underlying condition can be addressed together.",
+      },
+      {
+        question: "Does gambling damage a marriage or relationship, and can trust be rebuilt?",
+        answer:
+          "Yes, secrecy, lying and hidden debt often hurt a relationship more than the money itself. Trust can be rebuilt, but it takes time. It usually needs honest disclosure of the debts, an agreed plan for money, treatment for the gambling, and a partner who is heard as well as asked to forgive. Counselling gives both partners a structured place to do this.",
+      },
+      {
+        question: "What kind of therapy is used for relationship problems when partners live in different countries?",
+        answer:
+          "Sessions are held by video, with both partners joining from different locations in the same session, and sometimes with a separate individual session for each. The work is practical and skills-based, drawing on Dr. Kharel's cognitive behavioural training: improving how you talk about difficult subjects, breaking repeated argument cycles, agreeing clear rules about money, and a step-by-step plan for rebuilding trust. Where one partner has gambling disorder, depression, anxiety or alcohol use, that condition is treated at the same time.",
+      },
+      {
+        question: "Does Dr. Kharel provide CBT for relationship problems?",
+        answer:
+          "Yes. Dr. Kharel is a certified CBT therapist and uses cognitive behavioural therapy for relationship problems as well as for individual conditions. In relationship CBT, you look at the thoughts and assumptions that fuel arguments (for example, he does not care, or she is hiding something), practise calmer and clearer communication, change behaviour patterns that keep conflict going, and agree practical steps for money and trust. It can be done with both partners together, or with one partner alone, in person in Kathmandu or online from any country.",
+      },
+      {
+        question: "Can my spouse in Nepal join a session if I am abroad?",
+        answer:
+          "Yes. Your spouse can join by phone or video from Nepal, and the time is set to suit both countries. You can also have individual sessions, and what you say in one is not shared with your partner without your agreement. Read more on the couple and relationship counselling page.",
       },
     ],
   },

@@ -106,4 +106,5 @@ export const articleDates: Record<string, { published: string; modified: string;
   "anxiety-vs-depression-difference-nepal": { published: "2026-08-31", modified: "2026-08-31" },
   "whatsapp-support-between-sessions-nepal": { published: "2026-08-31", modified: "2026-08-31" },
   "nepali-online-psychiatrist-anxiety-depression-abroad": { published: "2026-10-03", modified: "2026-10-03" },
+  "gambling-addiction-nepalese-abroad": { published: "2026-10-17", modified: "2026-10-17" },
 };
