@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 import RedirectNotice from "../../components/RedirectNotice";
 
-// Consolidated into /depression/
-const destination = "/depression/";
+const destination = "/depression-treatment-kathmandu/";
 
 export const metadata: Metadata = {
-  title: "Managing depression — page moved",
+  title: "Understanding and Managing Depression — page moved",
   alternates: { canonical: destination },
   robots: { index: false, follow: true },
 };
 
 export default function Page() {
-  return <RedirectNotice to={destination} label="Depression management" />;
+  return <RedirectNotice to={destination} label="Depression Treatment in Nepal" />;
 }
