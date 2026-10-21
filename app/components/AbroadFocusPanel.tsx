@@ -10,11 +10,11 @@ export default function AbroadFocusPanel({ slug, place }: { slug: string; place:
   return (
     <div className="mt-6 rounded-lg border border-sage-200 bg-sage-50 p-6">
       <h4 className="text-lg font-bold text-sage-950">
-        Online psychiatric consultation from {place}: anxiety, depression, gambling, alcohol, opioids and anger
+        Video consultation with a psychiatrist from {place}: anxiety, depression, gambling, alcohol, opioids and anger
       </h4>
       <p className="mt-3 leading-8 text-stone-800">
         You do not need to travel to Nepal. Message or call Dr. Kushal Kharel, a Kathmandu consultant psychiatrist and
-        certified CBT therapist, and arrange a confidential video consultation from {place} in Nepali or English.
+        certified CBT therapist, and arrange a confidential online video consultation from {place} in Nepali or English.
       </p>
       <ul className="mt-4 grid gap-3 md:grid-cols-2">
         {focusConditions.map((condition) => (

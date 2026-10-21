@@ -111,6 +111,9 @@ export default function RegionHubPage({ region }: { region: Region }) {
           <Link href="/nepalese-abroad" className="font-semibold text-sage-700">
             &larr; All countries for Nepalis abroad
           </Link>
+          <Link href={`/ne/bideshma-nepali/${region.slug}/`} lang="ne" className="ml-5 font-semibold text-sage-700 underline">
+            नेपालीमा पढ्नुहोस्
+          </Link>
           <NameLine />
           <h1 className="mt-4 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">{region.h1}</h1>
           <p id="region-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">

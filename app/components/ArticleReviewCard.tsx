@@ -24,11 +24,12 @@ export default function ArticleReviewCard({
   className?: string;
 }) {
   const reviewed = latestReviewDate(dates.reviewed, dates.modified, SITE_LAST_REVIEWED);
+  const updated = latestReviewDate(dates.modified, dates.reviewed);
 
   return (
     <div className={`rounded-lg border border-sage-200 bg-sage-50 p-5 text-sm leading-7 text-sage-950 ${className}`}>
       <p className="font-bold">
-        Medically reviewed by{" "}
+        Written and medically reviewed by{" "}
         <Link href="/about/" className="underline underline-offset-2 hover:text-sage-800">
           Dr. Kushal Kharel
         </Link>
@@ -38,6 +39,9 @@ export default function ArticleReviewCard({
       <p className="mt-1">
         {lang === "ne" ? "प्रकाशित / Published: " : "Published: "}
         <time dateTime={dates.published}>{formatIsoDate(dates.published)}</time>
+        {" · "}
+        {lang === "ne" ? "पछिल्लो अद्यावधिक / Last updated: " : "Last updated: "}
+        <time dateTime={updated}>{formatIsoDate(updated)}</time>
         {" · "}
         {lang === "ne" ? "पछिल्लो चिकित्सकीय समीक्षा / Last medically reviewed: " : "Last medically reviewed: "}
         <time dateTime={reviewed}>{formatIsoDate(reviewed)}</time>

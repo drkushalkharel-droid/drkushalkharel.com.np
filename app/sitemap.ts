@@ -125,6 +125,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.85,
     },
+    {
+      url: `${siteUrl}/ne/bideshma-nepali`,
+      lastModified: new Date("2026-10-03"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
 
     {
       url: `${siteUrl}/expatriates-in-nepal`,
@@ -215,6 +221,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
+  const nepaliRegionRoutes: MetadataRoute.Sitemap = regions.map((region) => ({
+    url: `${siteUrl}/ne/bideshma-nepali/${region.slug}`,
+    lastModified: new Date("2026-10-03"),
+    changeFrequency: "monthly",
+    priority: 0.82,
+  }));
+
   const conditionRoutes: MetadataRoute.Sitemap = conditions.map((condition) => ({
     url: `${siteUrl}/conditions/${condition.slug}`,
     lastModified,
@@ -254,6 +267,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticRoutes,
     ...articleRoutes,
     ...regionRoutes,
+    ...nepaliRegionRoutes,
     ...conditionRoutes,
     ...screeningRoutes,
     ...resourceRoutes,

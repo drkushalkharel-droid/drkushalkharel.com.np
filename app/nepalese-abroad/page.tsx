@@ -14,6 +14,7 @@ import {
 import { FaqList, NameLine, OnlineFactsRow, OnlineTreatmentCards, TreatedList } from "../components/OnlineCareSections";
 import AbroadSessionTimes from "../components/AbroadSessionTimes";
 import { seoDescription, seoTitle } from "../lib/seoText";
+import { hreflangAlternates } from "../data/translationPairs";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/nepalese-abroad`;
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: "/nepalese-abroad/",
+    languages: hreflangAlternates("/nepalese-abroad/"),
   },
   keywords: [
     "Nepali psychiatrist online",
@@ -219,6 +221,13 @@ export default function NepaleseAbroadHubPage() {
             >
               WhatsApp
             </a>
+            <Link
+              href="/ne/bideshma-nepali/"
+              className="inline-flex items-center rounded-lg border border-stone-300 px-6 py-3 font-bold text-stone-700 transition hover:border-sage-700 hover:text-sage-800"
+              lang="ne"
+            >
+              नेपालीमा पढ्नुहोस्
+            </Link>
           </div>
           <OnlineFactsRow />
         </div>

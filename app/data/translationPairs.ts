@@ -16,6 +16,11 @@ const siteUrl = "https://drkushalkharel.com.np";
 export type TranslationPair = { en: string; ne: string };
 
 export const translationPairs: TranslationPair[] = [
+  { en: "/nepalese-abroad/", ne: "/ne/bideshma-nepali/" },
+  ...["gulf", "europe", "uk-ireland", "usa-canada", "australia-new-zealand", "east-asia", "southeast-asia", "south-asia"].map((slug) => ({
+    en: `/nepalese-abroad/${slug}/`,
+    ne: `/ne/bideshma-nepali/${slug}/`,
+  })),
   { en: "/anxiety/", ne: "/anxiety/np/" },
   { en: "/help-relative-abroad-see-psychiatrist/", ne: "/knowledge/help-relative-abroad-psychiatrist-nepal/" },
   { en: "/home-visit-psychiatrist-nepal/", ne: "/knowledge/home-visit-psychiatric-assessment-nepal/" },

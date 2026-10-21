@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getAbroadGuide } from "../data/abroad";
 import { getRegion, type Region } from "../data/abroadRegions";
+import { hreflangAlternates } from "../data/translationPairs";
 import { metaFor } from "./seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -14,7 +15,7 @@ export function regionMetadata(slug: Region["slug"]): Metadata {
   return {
     title: meta.title,
     description: meta.description,
-    alternates: { canonical: `/nepalese-abroad/${region.slug}/` },
+    alternates: { canonical: `/nepalese-abroad/${region.slug}/`, languages: hreflangAlternates(`/nepalese-abroad/${region.slug}/`) },
     keywords: [
       ...region.keywords,
       ...region.countrySlugs.flatMap((slug) => getAbroadGuide(slug)?.searchTerms ?? []),

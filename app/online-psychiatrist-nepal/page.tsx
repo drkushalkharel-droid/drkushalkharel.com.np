@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     "online anxiety doctor Nepal",
     "online depression consultation Nepal",
     "psychiatrist video consultation Nepal",
+    "video consultation psychiatrist Nepal",
+    "psychiatrist video call Nepal",
+    "video consultation psychiatrist for Nepalis abroad",
   ],
   openGraph: {
     title,
@@ -39,6 +42,18 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
+  {
+    question: "Is there a psychiatrist in Nepal who sees patients by video call?",
+    answer: "Yes. Dr. Kushal Kharel, a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) at his clinic in Kalanki, Kathmandu, sees patients by video call on Google Meet or WhatsApp, in Nepali or English. Patients can be anywhere in Nepal or abroad. Whether a video call suits you depends on your symptoms and safety, which is checked when you book.",
+  },
+  {
+    question: "How do I book a video call with a psychiatrist in Nepal?",
+    answer: "Send a WhatsApp message or call +977 9861800547 with your name, your country or city, and two or three times that suit you in your own time zone. The clinic converts them to Nepal time and confirms a slot, then sends the video link. The first consultation is an assessment and an agreed plan. Fees are confirmed at booking.",
+  },
+  {
+    question: "Can I see a Nepali psychiatrist by video call from abroad?",
+    answer: "Yes. Nepalis in more than forty countries, including the Gulf, Malaysia, Singapore, Japan, South Korea, Europe, the UK, the USA, Canada and Australia, consult Dr. Kharel by video call at times arranged around their time zone and shifts. Prescriptions written in Nepal usually cannot be filled abroad, so medication is discussed individually, and emergencies need local emergency services.",
+  },
   {
     question: "Can I consult a psychiatrist online in Nepal?",
     answer: "Online psychiatric consultation can be suitable for many follow-up visits, medication reviews, psychoeducation, counselling-informed care and selected initial assessments. The appropriate format depends on your symptoms, safety and clinical needs.",
@@ -117,8 +132,8 @@ export default function OnlinePsychiatristNepalPage() {
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
           <Link href="/" className="font-semibold text-sage-700">&larr; Back to home</Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">Telepsychiatry across Nepal</p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">Online Psychiatrist in Nepal: confidential psychiatric consultation from home</h1>
-          <p id="online-consultation-answer" className="mt-6 max-w-4xl text-lg leading-8 text-stone-600">If you live outside Kathmandu, travel is difficult, or you need a follow-up that fits around work or caregiving, online psychiatric consultation may be a practical way to access care. Dr. Kushal Kharel provides online video consultation through Google Meet, in Nepali or English, for many anxiety, depression, OCD, sleep, addiction and medication-review concerns when it is clinically appropriate.</p>
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">Online Psychiatrist in Nepal: confidential video consultation with a psychiatrist from home</h1>
+          <p id="online-consultation-answer" className="mt-6 max-w-4xl text-lg leading-8 text-stone-600">Yes, you can see a psychiatrist in Nepal by video call. Dr. Kushal Kharel, a Nepal Medical Council-registered Consultant Psychiatrist (MD Psychiatry, registration #27199) in Kathmandu, holds video-call consultations by Google Meet or WhatsApp, in Nepali or English, for patients anywhere in Nepal and for Nepalis abroad. It suits many anxiety, depression, OCD, sleep, addiction and medication-review concerns when it is clinically appropriate. Book by WhatsApp or call +977 9861800547.</p>
           <div className="mt-8 flex flex-wrap gap-4"><a href="tel:+9779861800547" className="inline-flex items-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800"><Phone size={20} aria-hidden="true" />Call +977 9861800547</a><a href="https://wa.me/9779861800547" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 rounded-lg border border-green-600 px-6 py-3 font-bold text-green-700 transition hover:bg-green-600 hover:text-white"><MessageCircle size={20} aria-hidden="true" />WhatsApp to request a slot</a></div>
           <OnlinePatientStat />
         </div>

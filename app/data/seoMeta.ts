@@ -66,7 +66,7 @@ export const seoMeta: Record<string, SeoEntry> = {
   "/psychiatrist-and-therapist-kathmandu/": {
     title: "Psychiatrist and Therapist in Kathmandu",
     description:
-      "One Kathmandu psychiatrist for medication and therapy: CBT, DBT-based skills, ERP, supportive, grief, family and relationship counselling. In person or online.",
+      "One Kathmandu psychiatrist for medication and therapy: CBT, DBT-based skills, ERP, supportive, grief, family and relationship counselling. In person or video.",
   },
   "/cbt-therapist-kathmandu/": {
     title: "CBT Therapist in Kathmandu, Nepal",
@@ -189,9 +189,9 @@ export const seoMeta: Record<string, SeoEntry> = {
       "Online therapy and psychiatric care for Nepalis abroad by video, with session times converted to your local time zone. Book online from anywhere.",
   },
   "/online-psychiatrist-nepal/": {
-    title: "Online Psychiatrist in Nepal",
+    title: "Online Psychiatrist: Video Consultation Nepal",
     description:
-      "Online psychiatric consultation from home for anxiety, depression, OCD, sleep and follow-up care. When it suits and how to book. Book online.",
+      "Video consultation with a Kathmandu psychiatrist, online from home or abroad, for anxiety, depression, OCD, sleep and follow-up. Book by WhatsApp or call.",
   },
   "/panic-attack-treatment-kathmandu/": {
     title: "Panic Attack Treatment in Kathmandu, Nepal",
@@ -231,7 +231,7 @@ export const seoMeta: Record<string, SeoEntry> = {
   "/psychiatrist-for-nepalis-abroad/": {
     title: "Psychiatrist for Nepalis Living Abroad",
     description:
-      "Online consultation with a Nepali consultant psychiatrist for constant worry, intrusive thoughts and sleep problems, by video. Book online from anywhere.",
+      "Video consultation with a Nepali consultant psychiatrist, online from anywhere, for constant worry, intrusive thoughts and sleep problems. Book by WhatsApp.",
   },
   "/psychiatry-clinic-kathmandu/": {
     title: "Psychiatry Clinic in Kalanki, Kathmandu",

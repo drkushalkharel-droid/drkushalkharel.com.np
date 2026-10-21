@@ -2433,6 +2433,7 @@ export const audiencePages: AudiencePage[] = [
     searchTerms: [
       "Psychiatrist and therapist Kathmandu",
       "Psychotherapy Kathmandu",
+      "Video consultation psychiatrist Nepal",
       "Therapy and medication Nepal",
       "Psychiatrist who does therapy Nepal",
       "DBT Nepal",
