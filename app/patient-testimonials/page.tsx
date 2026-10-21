@@ -98,7 +98,7 @@ export default function PatientTestimonialsPage() {
         </div>
 
         {/* Call to Action - Write a Review */}
-        <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-8 text-center mb-12">
+        <div className="bg-sage-50 border-2 border-sage-200 rounded-lg p-8 text-center mb-12">
           <h2 className="text-2xl font-bold text-slate-800 mb-4">Share Your Experience</h2>
           <p className="text-slate-600 mb-6">
             Have you had a consultation with Dr. Kushal Kharel? Your feedback helps other patients make informed decisions.
@@ -107,13 +107,10 @@ export default function PatientTestimonialsPage() {
             href="https://www.google.com/maps/place/Dr.+Kushal+Kharel+Psychiatrist+Clinic/@27.6914272,85.280723,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb193a5fc66e35:0x4e7103ea23778ac9!8m2!3d27.6914272!4d85.280723!16s%2Fg%2F11thgbq6yl"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors"
+            className="inline-block bg-sage-700 hover:bg-sage-800 text-white font-semibold py-3 px-8 rounded-lg transition-colors"
           >
             Write a Review on Google
           </a>
-          <p className="text-sm text-slate-500 mt-4">
-            * Update the link above with your Google Business Profile review link
-          </p>
         </div>
 
         {/* Contact Options */}
