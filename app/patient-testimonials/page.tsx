@@ -104,7 +104,7 @@ export default function PatientTestimonialsPage() {
             Have you had a consultation with Dr. Kushal Kharel? Your feedback helps other patients make informed decisions.
           </p>
           <a
-            href="https://www.google.com/maps/place/dr+kushal+kharel"
+            href="https://www.google.com/maps/place/Dr.+Kushal+Kharel+Psychiatrist+Clinic/@27.6914272,85.280723,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb193a5fc66e35:0x4e7103ea23778ac9!8m2!3d27.6914272!4d85.280723!16s%2Fg%2F11thgbq6yl"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors"
