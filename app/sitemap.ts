@@ -43,6 +43,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
 
+    {
+      url: `${siteUrl}/book`,
+      lastModified: new Date("2026-10-25"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+
     { url: `${siteUrl}/faq`, lastModified, changeFrequency: "monthly", priority: 0.8 },
 
     {
