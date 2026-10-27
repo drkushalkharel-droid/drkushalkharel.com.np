@@ -346,10 +346,10 @@ export default function CounsellingInNepalPage() {
         <section className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8">
           <h2 className="text-2xl font-bold text-sage-950">Explore related pages</h2>
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
-            <Link href="/conditions/major-depressive-disorder" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
+            <Link href="/conditions/major-depressive-disorder/" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               Depression treatment
             </Link>
-            <Link href="/anxiety" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
+            <Link href="/anxiety/" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               Anxiety treatment
             </Link>
             <Link href="/#appointment-guide" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
@@ -358,13 +358,13 @@ export default function CounsellingInNepalPage() {
             <Link href="/#about" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               About Dr. Kushal Kharel
             </Link>
-            <Link href="/expatriates-in-nepal" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
+            <Link href="/expatriates-in-nepal/" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               Counselling for expatriates in Nepal
             </Link>
-            <Link href="/english-speaking-psychiatrist" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
+            <Link href="/english-speaking-psychiatrist/" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               English-speaking counselling &amp; psychiatry
             </Link>
-            <Link href="/tourists-in-nepal" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
+            <Link href="/tourists-in-nepal/" className="rounded-lg border border-stone-200 p-4 font-semibold text-sage-800 transition hover:border-sage-300 hover:bg-sage-50">
               Support for tourists in Nepal
             </Link>
           </div>

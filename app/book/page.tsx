@@ -124,7 +124,7 @@ export default function BookPage() {
               </figure>
             ))}
           </div>
-          <p className="mt-6 text-sm"><Link href="/about" className="font-semibold text-sage-800 underline">Read Dr. Kharel&apos;s full profile</Link> · <Link href="/patient-testimonials" className="font-semibold text-sage-800 underline">Patient testimonials</Link> · <Link href="/psychiatrist-fee-nepal" className="font-semibold text-sage-800 underline">Fee guide</Link></p>
+          <p className="mt-6 text-sm"><Link href="/about/" className="font-semibold text-sage-800 underline">Read Dr. Kharel&apos;s full profile</Link> · <Link href="/patient-testimonials/" className="font-semibold text-sage-800 underline">Patient testimonials</Link> · <Link href="/psychiatrist-fee-nepal/" className="font-semibold text-sage-800 underline">Fee guide</Link></p>
         </div>
       </section>
 

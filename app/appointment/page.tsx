@@ -96,8 +96,8 @@ export default function AppointmentPage() {
             <p className="flex gap-3"><MapPin className="mt-1 shrink-0 text-sage-700" size={20} aria-hidden="true" /><span>Kalanki-14, near Malpot Road and Kalanki Bhatbhateni Supermarket, Kathmandu</span></p>
             <p className="flex gap-3"><Clock3 className="mt-1 shrink-0 text-sage-700" size={20} aria-hidden="true" /><span>Sunday–Friday: 8:00 AM–10:00 PM<br />Saturday: 10:00 AM–4:00 PM</span></p>
           </div>
-          <Link href="/online-psychiatrist-nepal" className="mt-8 inline-block font-semibold text-sage-700 underline">Learn about online consultation</Link>
-          <Link href="/psychiatrist-fee-nepal" className="mt-3 block font-semibold text-sage-700 underline">Consultation fees</Link>
+          <Link href="/online-psychiatrist-nepal/" className="mt-8 inline-block font-semibold text-sage-700 underline">Learn about online consultation</Link>
+          <Link href="/psychiatrist-fee-nepal/" className="mt-3 block font-semibold text-sage-700 underline">Consultation fees</Link>
         </aside>
       </section>
 
@@ -105,7 +105,7 @@ export default function AppointmentPage() {
         <div className="rounded-xl border-l-4 border-red-600 bg-red-50 p-6 text-stone-800">
           <h2 className="font-bold">Need urgent help?</h2>
           <p className="mt-2 leading-7">If there is immediate risk of self-harm or harm to someone else, overdose, severe confusion, severe withdrawal, or another medical emergency, go to the nearest emergency department. Do not wait for an appointment or online response.</p>
-          <Link href="/psychiatric-hospital-vs-clinic-kathmandu" className="mt-3 inline-block font-semibold text-red-800 underline">When do you need a hospital instead of a clinic?</Link>
+          <Link href="/psychiatric-hospital-vs-clinic-kathmandu/" className="mt-3 inline-block font-semibold text-red-800 underline">When do you need a hospital instead of a clinic?</Link>
         </div>
       </section>
 

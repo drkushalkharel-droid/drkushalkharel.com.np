@@ -51,7 +51,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-5 mt-10">
 
               <Link
-                href="/appointment"
+                href="/appointment/"
                 data-conversion="appointment"
                 className="inline-flex items-center gap-3 bg-sage-700 text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-sage-900/15 hover:scale-105 hover:bg-sage-800 transition"
               >

@@ -97,7 +97,7 @@ export default async function ResourceDetailPage({
 
       <section className="bg-white print:hidden">
         <div className="mx-auto max-w-3xl px-6 pb-8 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/resources" className="font-semibold text-sage-700">
+          <Link href="/resources/" className="font-semibold text-sage-700">
             &larr; All patient resources
           </Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">

@@ -294,7 +294,7 @@ export default function AudienceLandingPage({
               +977 9861800547
             </a>
             <Link
-              href="/conditions"
+              href="/conditions/"
               className="rounded-lg border border-white/50 px-8 py-4 font-semibold text-white"
             >
               Explore conditions treated

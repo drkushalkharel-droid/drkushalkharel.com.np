@@ -62,7 +62,7 @@ export default function AbroadSeoSection() {
           )}
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/nepalese-abroad"
+              href="/nepalese-abroad/"
               className="rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white transition hover:bg-sage-800"
             >
               Find your country

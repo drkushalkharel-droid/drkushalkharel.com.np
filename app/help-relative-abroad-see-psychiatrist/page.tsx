@@ -156,7 +156,7 @@ export default function HelpRelativeAbroadPage() {
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/nepalese-abroad" className="font-semibold text-sage-700">
+          <Link href="/nepalese-abroad/" className="font-semibold text-sage-700">
             &larr; Back to Nepalese abroad guides
           </Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
@@ -289,7 +289,7 @@ export default function HelpRelativeAbroadPage() {
             </h2>
             <p className="mt-4 leading-7 text-stone-700">
               An{" "}
-              <Link href="/psychiatrist-for-nepalis-abroad" className="font-semibold text-sage-700 underline">
+              <Link href="/psychiatrist-for-nepalis-abroad/" className="font-semibold text-sage-700 underline">
                 online consultation
               </Link>{" "}
               with Dr. Kharel, in Nepali or English, can be a genuinely
@@ -353,11 +353,11 @@ export default function HelpRelativeAbroadPage() {
             </a>
           </div>
           <p className="mt-8 text-sage-200">
-            <Link href="/nepalese-abroad" className="underline">Nepalese abroad guides</Link>
+            <Link href="/nepalese-abroad/" className="underline">Nepalese abroad guides</Link>
             {" · "}
-            <Link href="/psychiatrist-for-nepalis-abroad" className="underline">Online consultation for Nepalis abroad</Link>
+            <Link href="/psychiatrist-for-nepalis-abroad/" className="underline">Online consultation for Nepalis abroad</Link>
             {" · "}
-            <Link href="/psychiatric-care-for-family-in-nepal" className="underline">Family in Nepal, arranged from abroad</Link>
+            <Link href="/psychiatric-care-for-family-in-nepal/" className="underline">Family in Nepal, arranged from abroad</Link>
           </p>
         </div>
       </section>

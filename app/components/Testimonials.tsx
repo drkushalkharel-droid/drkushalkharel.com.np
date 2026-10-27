@@ -52,7 +52,7 @@ export default function Testimonials() {
         </div>
         <p className="mt-6 text-center text-sm text-stone-500">
           Names and identifying details are withheld to protect patient privacy.{" "}
-          <Link href="/patient-testimonials" className="underline hover:text-sage-700">
+          <Link href="/patient-testimonials/" className="underline hover:text-sage-700">
             Read more patient testimonials
           </Link>
         </p>

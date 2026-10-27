@@ -131,7 +131,7 @@ export default function AboutPage() {
               Counselling is included in every case. Structured psychotherapy, including CBT, DBT-based skills, ERP for
               OCD, supportive therapy, grief, family and relationship counselling, and medication are considered
               according to each patient&apos;s needs and clinical assessment.{" "}
-              <Link href="/psychiatrist-and-therapist-kathmandu" className="font-semibold text-sage-700 underline">
+              <Link href="/psychiatrist-and-therapist-kathmandu/" className="font-semibold text-sage-700 underline">
                 See all treatments
               </Link>
             </p>
@@ -140,7 +140,7 @@ export default function AboutPage() {
                 <Phone size={20} aria-hidden="true" />
                 Call +977 9861800547
               </a>
-              <Link href="/appointment" className="rounded-lg border border-sage-700 px-6 py-3 font-semibold text-sage-700 transition hover:bg-sage-700 hover:text-white">
+              <Link href="/appointment/" className="rounded-lg border border-sage-700 px-6 py-3 font-semibold text-sage-700 transition hover:bg-sage-700 hover:text-white">
                 Book an appointment
               </Link>
             </div>
@@ -332,7 +332,7 @@ export default function AboutPage() {
           <p className="mt-4 text-lg leading-8 text-sage-100">In-person at the Kalanki clinic in Kathmandu, or online from anywhere.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a href="tel:+9779861800547" className="rounded-lg bg-white px-8 py-4 font-semibold text-sage-950">+977 9861800547</a>
-            <Link href="/appointment" className="rounded-lg border border-white/50 px-8 py-4 font-semibold text-white">Book online</Link>
+            <Link href="/appointment/" className="rounded-lg border border-white/50 px-8 py-4 font-semibold text-white">Book online</Link>
           </div>
         </div>
       </section>

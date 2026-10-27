@@ -154,7 +154,7 @@ export default function PsychiatricCareForFamilyPage() {
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/nepalese-abroad" className="font-semibold text-sage-700">
+          <Link href="/nepalese-abroad/" className="font-semibold text-sage-700">
             &larr; Back to Nepalese abroad guides
           </Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
@@ -291,7 +291,7 @@ export default function PsychiatricCareForFamilyPage() {
             <p className="mt-4 leading-7 text-stone-700">
               For an elderly or immobile relative, or one who is unlikely to
               agree to travel to an unfamiliar clinic, a{" "}
-              <Link href="/home-visit-psychiatrist-nepal" className="font-semibold text-sage-700 underline">
+              <Link href="/home-visit-psychiatrist-nepal/" className="font-semibold text-sage-700 underline">
                 home psychiatric visit
               </Link>{" "}
               may be a more realistic starting point. Availability depends
@@ -355,13 +355,13 @@ export default function PsychiatricCareForFamilyPage() {
             </a>
           </div>
           <p className="mt-8 text-sage-200">
-            <Link href="/nepalese-abroad" className="underline">Nepalese abroad guides</Link>
+            <Link href="/nepalese-abroad/" className="underline">Nepalese abroad guides</Link>
             {" · "}
-            <Link href="/home-visit-psychiatrist-nepal" className="underline">Home visit psychiatrist</Link>
+            <Link href="/home-visit-psychiatrist-nepal/" className="underline">Home visit psychiatrist</Link>
             {" · "}
-            <Link href="/returning-to-nepal-after-abroad" className="underline">Returning to Nepal after abroad</Link>
+            <Link href="/returning-to-nepal-after-abroad/" className="underline">Returning to Nepal after abroad</Link>
             {" · "}
-            <Link href="/help-relative-abroad-see-psychiatrist" className="underline">Relative living abroad instead?</Link>
+            <Link href="/help-relative-abroad-see-psychiatrist/" className="underline">Relative living abroad instead?</Link>
           </p>
         </div>
       </section>

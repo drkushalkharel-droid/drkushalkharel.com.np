@@ -73,7 +73,7 @@ export default function AnxietyGuide({ lang, extraSections }: { lang: "en" | "np
           <div>
             <div className="mb-8 inline-flex rounded-full border border-white/15 bg-white/10 p-1">
               <Link
-                href="/anxiety"
+                href="/anxiety/"
                 className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
                   isEnglish ? "bg-white text-stone-950" : "text-white/80"
                 }`}
@@ -81,7 +81,7 @@ export default function AnxietyGuide({ lang, extraSections }: { lang: "en" | "np
                 English
               </Link>
               <Link
-                href="/anxiety/np"
+                href="/anxiety/np/"
                 className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
                   !isEnglish ? "bg-white text-stone-950" : "text-white/80"
                 }`}

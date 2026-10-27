@@ -56,7 +56,7 @@ export default function MedicationsIndexPage() {
             <a href="tel:+9779861800547" className="rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white transition hover:bg-sage-800">
               Book Appointment
             </a>
-            <Link href="/conditions" className="rounded-lg border border-sage-700 px-6 py-3 font-semibold text-sage-700 transition hover:bg-sage-700 hover:text-white">
+            <Link href="/conditions/" className="rounded-lg border border-sage-700 px-6 py-3 font-semibold text-sage-700 transition hover:bg-sage-700 hover:text-white">
               Conditions Library
             </Link>
           </div>
@@ -123,7 +123,7 @@ export default function MedicationsIndexPage() {
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           <Link
-            href="/psychiatric-medication-side-effects"
+            href="/psychiatric-medication-side-effects/"
             className="block rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
           >
             <p className="mt-0 text-sm font-semibold uppercase tracking-[2px] text-sage-700">Patient FAQ</p>
@@ -135,7 +135,7 @@ export default function MedicationsIndexPage() {
           </Link>
 
           <Link
-            href="/medication-review-second-opinion-nepal"
+            href="/medication-review-second-opinion-nepal/"
             className="block rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
           >
             <p className="mt-0 text-sm font-semibold uppercase tracking-[2px] text-sage-700">Second Opinion</p>

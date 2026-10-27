@@ -202,7 +202,7 @@ export default async function ConditionPage({
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-12 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/conditions" className="font-semibold text-sage-700">
+          <Link href="/conditions/" className="font-semibold text-sage-700">
             &larr; Conditions Library
           </Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
@@ -417,7 +417,7 @@ export default async function ConditionPage({
               <div className="rounded-lg border border-sage-200 bg-sage-50 p-5 text-base leading-7 text-sage-950">
                 <h3 className="text-xl font-bold">{onlineApproach.heading}</h3>
                 <p className="mt-2">{onlineApproach.text}</p>
-                <Link href="/nepalese-abroad" className="mt-3 inline-block font-semibold text-sage-700 underline">
+                <Link href="/nepalese-abroad/" className="mt-3 inline-block font-semibold text-sage-700 underline">
                   Online consultation for Nepalis living abroad
                 </Link>
               </div>
@@ -577,7 +577,7 @@ export default async function ConditionPage({
                 internet or gaming use together, see the addiction treatment overview page.
               </p>
               <Link
-                href="/addiction-treatment-kathmandu"
+                href="/addiction-treatment-kathmandu/"
                 className="mt-5 inline-block rounded-lg bg-sage-700 px-5 py-3 font-semibold text-white transition hover:bg-sage-800"
               >
                 Addiction treatment in Kathmandu
@@ -617,7 +617,7 @@ export default async function ConditionPage({
               <a href="tel:+9779861800547" className="rounded-lg bg-white px-6 py-3 font-semibold text-sage-950">
                 +977 9861800547
               </a>
-              <Link href="/conditions" className="rounded-lg border border-white/50 px-6 py-3 font-semibold text-white">
+              <Link href="/conditions/" className="rounded-lg border border-white/50 px-6 py-3 font-semibold text-white">
                 More conditions
               </Link>
             </div>

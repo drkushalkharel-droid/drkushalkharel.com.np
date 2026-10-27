@@ -212,7 +212,7 @@ export default function PsychologyInternshipPage() {
             <a href="tel:+9779861800547" className="rounded-lg bg-white px-8 py-4 font-semibold text-sage-950">
               +977 9861800547
             </a>
-            <Link href="/contact" className="rounded-lg border border-white/50 px-8 py-4 font-semibold text-white">
+            <Link href="/contact/" className="rounded-lg border border-white/50 px-8 py-4 font-semibold text-white">
               Contact page
             </Link>
           </div>

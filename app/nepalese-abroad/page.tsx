@@ -377,7 +377,7 @@ export default function NepaleseAbroadHubPage() {
             </p>
           </div>
           <Link
-            href="/returning-to-nepal-after-abroad"
+            href="/returning-to-nepal-after-abroad/"
             className="mt-4 inline-flex shrink-0 rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white transition hover:bg-sage-800 sm:mt-0"
           >
             Read the guide
@@ -410,7 +410,7 @@ export default function NepaleseAbroadHubPage() {
             ))}
           </div>
           <p className="mt-8 text-center">
-            <Link href="/patient-testimonials" className="font-semibold text-sage-700 underline">
+            <Link href="/patient-testimonials/" className="font-semibold text-sage-700 underline">
               Read more patient testimonials, including country-specific stories
             </Link>
           </p>

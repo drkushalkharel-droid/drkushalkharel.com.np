@@ -46,7 +46,7 @@ export default function ArticleReviewCard({
         {lang === "ne" ? "पछिल्लो चिकित्सकीय समीक्षा / Last medically reviewed: " : "Last medically reviewed: "}
         <time dateTime={reviewed}>{formatIsoDate(reviewed)}</time>
       </p>
-      <Link href="/medical-disclaimer" className="mt-2 inline-block font-semibold text-sage-800 underline">
+      <Link href="/medical-disclaimer/" className="mt-2 inline-block font-semibold text-sage-800 underline">
         Read the medical information disclaimer
       </Link>
     </div>

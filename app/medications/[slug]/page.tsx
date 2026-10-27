@@ -91,7 +91,7 @@ export default async function MedicationPage({
 
       <section className="bg-white">
         <div className="mx-auto max-w-4xl px-6 pb-12 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/medications" className="font-semibold text-sage-700">&larr; Medication Information</Link>
+          <Link href="/medications/" className="font-semibold text-sage-700">&larr; Medication Information</Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">{med.category}</p>
           <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">{med.name}</h1>
           <p id="med-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">{med.shortDescription}</p>
@@ -168,7 +168,7 @@ export default async function MedicationPage({
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <a href="tel:+9779861800547" className="rounded-lg bg-white px-6 py-3 font-semibold text-sage-950">+977 9861800547</a>
-            <Link href="/medications" className="rounded-lg border border-white/50 px-6 py-3 font-semibold text-white">More medications</Link>
+            <Link href="/medications/" className="rounded-lg border border-white/50 px-6 py-3 font-semibold text-white">More medications</Link>
           </div>
         </section>
       </article>

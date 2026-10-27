@@ -56,7 +56,7 @@ export default function ConditionsLibraryPage() {
             <a href="tel:+9779861800547" className="rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white transition hover:bg-sage-800">
               Book Appointment
             </a>
-            <Link href="/knowledge" className="rounded-lg border border-sage-700 px-6 py-3 font-semibold text-sage-700 transition hover:bg-sage-700 hover:text-white">
+            <Link href="/knowledge/" className="rounded-lg border border-sage-700 px-6 py-3 font-semibold text-sage-700 transition hover:bg-sage-700 hover:text-white">
               Nepali Patient Guides
             </Link>
           </div>

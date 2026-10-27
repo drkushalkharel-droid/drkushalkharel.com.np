@@ -25,7 +25,7 @@ export default function ScreeningTeaser() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/screening"
+              href="/screening/"
               className="rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800"
             >
               Start Screening

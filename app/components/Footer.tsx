@@ -105,7 +105,7 @@ export default function Footer() {
               Home
             </Link>
 
-            <Link href="/about" className="block hover:text-white transition">
+            <Link href="/about/" className="block hover:text-white transition">
               About
             </Link>
 
@@ -121,7 +121,7 @@ export default function Footer() {
               Awards & Certificates
             </Link>
 
-            <Link href="/appointment" className="block hover:text-white transition">
+            <Link href="/appointment/" className="block hover:text-white transition">
               Book an Appointment
             </Link>
 
@@ -151,71 +151,71 @@ export default function Footer() {
 
           <div className="space-y-4 text-gray-400">
 
-            <Link href="/online-psychiatrist-nepal" className="block hover:text-white transition">
+            <Link href="/online-psychiatrist-nepal/" className="block hover:text-white transition">
               Online Psychiatrist Consultation
             </Link>
 
-            <Link href="/home-visit-psychiatrist-nepal" className="block hover:text-white transition">
+            <Link href="/home-visit-psychiatrist-nepal/" className="block hover:text-white transition">
               Home Visit Psychiatrist
             </Link>
 
-            <Link href="/counselling-in-nepal" className="block hover:text-white transition">
+            <Link href="/counselling-in-nepal/" className="block hover:text-white transition">
               Counselling Services
             </Link>
 
-            <Link href="/couple-relationship-counseling" className="block hover:text-white transition">
+            <Link href="/couple-relationship-counseling/" className="block hover:text-white transition">
               Couple &amp; Relationship Counseling
             </Link>
 
-            <Link href="/child-adolescent-psychiatry" className="block hover:text-white transition">
+            <Link href="/child-adolescent-psychiatry/" className="block hover:text-white transition">
               Child &amp; Adolescent Psychiatry
             </Link>
 
-            <Link href="/psychiatrist-and-therapist-kathmandu" className="block hover:text-white transition">
+            <Link href="/psychiatrist-and-therapist-kathmandu/" className="block hover:text-white transition">
               Psychiatrist &amp; Therapist
             </Link>
 
-            <Link href="/cbt-therapist-kathmandu" className="block hover:text-white transition">
+            <Link href="/cbt-therapist-kathmandu/" className="block hover:text-white transition">
               CBT Therapy
             </Link>
 
-            <Link href="/erp-therapy-ocd" className="block hover:text-white transition">
+            <Link href="/erp-therapy-ocd/" className="block hover:text-white transition">
               ERP Therapy for OCD
             </Link>
 
-            <Link href="/depression-treatment-kathmandu" className="block hover:text-white transition">
+            <Link href="/depression-treatment-kathmandu/" className="block hover:text-white transition">
               Depression Treatment
             </Link>
 
-            <Link href="/panic-attack-treatment-kathmandu" className="block hover:text-white transition">
+            <Link href="/panic-attack-treatment-kathmandu/" className="block hover:text-white transition">
               Panic Attack Treatment
             </Link>
 
-            <Link href="/adhd-treatment-kathmandu" className="block hover:text-white transition">
+            <Link href="/adhd-treatment-kathmandu/" className="block hover:text-white transition">
               ADHD Assessment &amp; Treatment
             </Link>
 
-            <Link href="/bipolar-disorder-treatment-kathmandu" className="block hover:text-white transition">
+            <Link href="/bipolar-disorder-treatment-kathmandu/" className="block hover:text-white transition">
               Bipolar Disorder Treatment
             </Link>
 
-            <Link href="/schizophrenia-treatment-kathmandu" className="block hover:text-white transition">
+            <Link href="/schizophrenia-treatment-kathmandu/" className="block hover:text-white transition">
               Schizophrenia Treatment
             </Link>
 
-            <Link href="/psychosis-treatment-kathmandu" className="block hover:text-white transition">
+            <Link href="/psychosis-treatment-kathmandu/" className="block hover:text-white transition">
               Psychosis Treatment
             </Link>
 
-            <Link href="/iq-psychological-testing" className="block hover:text-white transition">
+            <Link href="/iq-psychological-testing/" className="block hover:text-white transition">
               IQ &amp; Psychological Testing
             </Link>
 
-            <Link href="/medical-fitness-certificate" className="block hover:text-white transition">
+            <Link href="/medical-fitness-certificate/" className="block hover:text-white transition">
               Medical &amp; Fitness Certificates
             </Link>
 
-            <Link href="/female-counselor-kathmandu" className="block hover:text-white transition">
+            <Link href="/female-counselor-kathmandu/" className="block hover:text-white transition">
               Female Counselor
             </Link>
 
@@ -233,35 +233,35 @@ export default function Footer() {
 
           <div className="space-y-4 text-gray-400">
 
-            <Link href="/knowledge" className="block hover:text-white transition">
+            <Link href="/knowledge/" className="block hover:text-white transition">
               Mental Health Articles
             </Link>
 
-            <Link href="/blog" className="block hover:text-white transition">
+            <Link href="/blog/" className="block hover:text-white transition">
               Blog
             </Link>
 
-            <Link href="/screening" className="block hover:text-white transition">
+            <Link href="/screening/" className="block hover:text-white transition">
               Mental Health Screening
             </Link>
 
-            <Link href="/medications" className="block hover:text-white transition">
+            <Link href="/medications/" className="block hover:text-white transition">
               Medication Information
             </Link>
 
-            <Link href="/resources" className="block hover:text-white transition">
+            <Link href="/resources/" className="block hover:text-white transition">
               Patient Resources & Leaflets
             </Link>
 
-            <Link href="/best-psychiatrist-nepal" className="block hover:text-white transition">
+            <Link href="/best-psychiatrist-nepal/" className="block hover:text-white transition">
               Best Psychiatrist in Kathmandu
             </Link>
 
-            <Link href="/community-mental-health-programs" className="block hover:text-white transition">
+            <Link href="/community-mental-health-programs/" className="block hover:text-white transition">
               Community Mental Health Programs
             </Link>
 
-            <Link href="/psychology-internship-nepal" className="block hover:text-white transition">
+            <Link href="/psychology-internship-nepal/" className="block hover:text-white transition">
               Student Internship
             </Link>
 
@@ -279,67 +279,67 @@ export default function Footer() {
 
           <div className="space-y-4 text-gray-400">
 
-            <Link href="/nepalese-abroad" className="block hover:text-white transition">
+            <Link href="/nepalese-abroad/" className="block hover:text-white transition">
               Nepalese Abroad
             </Link>
 
-            <Link href="/nepalese-abroad/gulf" className="block hover:text-white transition">
+            <Link href="/nepalese-abroad/gulf/" className="block hover:text-white transition">
               Nepalis in the Gulf
             </Link>
 
-            <Link href="/nepalese-abroad/europe" className="block hover:text-white transition">
+            <Link href="/nepalese-abroad/europe/" className="block hover:text-white transition">
               Nepalis in Europe
             </Link>
 
-            <Link href="/nepalese-abroad/east-asia" className="block hover:text-white transition">
+            <Link href="/nepalese-abroad/east-asia/" className="block hover:text-white transition">
               Nepalis in Japan &amp; South Korea
             </Link>
 
-            <Link href="/nepalese-abroad/southeast-asia" className="block hover:text-white transition">
+            <Link href="/nepalese-abroad/southeast-asia/" className="block hover:text-white transition">
               Nepalis in Malaysia &amp; Singapore
             </Link>
 
-            <Link href="/nepalese-abroad/uk-ireland" className="block hover:text-white transition">
+            <Link href="/nepalese-abroad/uk-ireland/" className="block hover:text-white transition">
               Nepalis in the UK &amp; Ireland
             </Link>
 
-            <Link href="/nepalese-abroad/usa-canada" className="block hover:text-white transition">
+            <Link href="/nepalese-abroad/usa-canada/" className="block hover:text-white transition">
               Nepalis in the USA &amp; Canada
             </Link>
 
-            <Link href="/nepalese-abroad/australia-new-zealand" className="block hover:text-white transition">
+            <Link href="/nepalese-abroad/australia-new-zealand/" className="block hover:text-white transition">
               Nepalis in Australia &amp; New Zealand
             </Link>
 
-            <Link href="/nepalese-abroad/south-asia" className="block hover:text-white transition">
+            <Link href="/nepalese-abroad/south-asia/" className="block hover:text-white transition">
               Nepalis in India, Bangladesh &amp; Sri Lanka
             </Link>
 
-            <Link href="/psychiatric-care-for-family-in-nepal" className="block hover:text-white transition">
+            <Link href="/psychiatric-care-for-family-in-nepal/" className="block hover:text-white transition">
               Family Care in Nepal from Abroad
             </Link>
 
-            <Link href="/help-relative-abroad-see-psychiatrist" className="block hover:text-white transition">
+            <Link href="/help-relative-abroad-see-psychiatrist/" className="block hover:text-white transition">
               Help a Relative Abroad See a Psychiatrist
             </Link>
 
-            <Link href="/patient-testimonials" className="block hover:text-white transition">
+            <Link href="/patient-testimonials/" className="block hover:text-white transition">
               Patient Testimonials
             </Link>
 
-            <Link href="/psychiatrist-for-nepalis-abroad" className="block hover:text-white transition">
+            <Link href="/psychiatrist-for-nepalis-abroad/" className="block hover:text-white transition">
               Psychiatrist for Nepalis Abroad
             </Link>
 
-            <Link href="/expatriates-in-nepal" className="block hover:text-white transition">
+            <Link href="/expatriates-in-nepal/" className="block hover:text-white transition">
               For Expatriates in Nepal
             </Link>
 
-            <Link href="/english-speaking-psychiatrist" className="block hover:text-white transition">
+            <Link href="/english-speaking-psychiatrist/" className="block hover:text-white transition">
               English Speaking Psychiatrist
             </Link>
 
-            <Link href="/tourists-in-nepal" className="block hover:text-white transition">
+            <Link href="/tourists-in-nepal/" className="block hover:text-white transition">
               For Tourists in Nepal
             </Link>
 
@@ -357,31 +357,31 @@ export default function Footer() {
 
           <div className="space-y-3 text-gray-400">
 
-            <Link href="/conditions/major-depressive-disorder" className="block hover:text-white transition">
+            <Link href="/conditions/major-depressive-disorder/" className="block hover:text-white transition">
               Depression
             </Link>
-            <Link href="/anxiety" className="block hover:text-white transition">
+            <Link href="/anxiety/" className="block hover:text-white transition">
               Anxiety Disorders
             </Link>
-            <Link href="/conditions/ocd" className="block hover:text-white transition">
+            <Link href="/conditions/ocd/" className="block hover:text-white transition">
               OCD
             </Link>
-            <Link href="/conditions/bipolar-i-disorder" className="block hover:text-white transition">
+            <Link href="/conditions/bipolar-i-disorder/" className="block hover:text-white transition">
               Bipolar Disorder
             </Link>
-            <Link href="/conditions/schizophrenia" className="block hover:text-white transition">
+            <Link href="/conditions/schizophrenia/" className="block hover:text-white transition">
               Schizophrenia
             </Link>
-            <Link href="/conditions/adhd" className="block hover:text-white transition">
+            <Link href="/conditions/adhd/" className="block hover:text-white transition">
               ADHD
             </Link>
-            <Link href="/conditions/autism-spectrum-disorder" className="block hover:text-white transition">
+            <Link href="/conditions/autism-spectrum-disorder/" className="block hover:text-white transition">
               Autism Spectrum Disorder
             </Link>
-            <Link href="/knowledge/substance-use-disorder" className="block hover:text-white transition">
+            <Link href="/knowledge/substance-use-disorder/" className="block hover:text-white transition">
               Addiction Treatment
             </Link>
-            <Link href="/conditions/suicide-prevention" className="block hover:text-white transition">
+            <Link href="/conditions/suicide-prevention/" className="block hover:text-white transition">
               Suicide Prevention &amp; Crisis Support
             </Link>
 
@@ -513,11 +513,11 @@ export default function Footer() {
 
           <div className="flex gap-8 text-gray-400 text-sm mt-4 md:mt-0">
 
-            <Link href="/privacy-policy" className="hover:text-white">
+            <Link href="/privacy-policy/" className="hover:text-white">
               Privacy Policy
             </Link>
 
-            <Link href="/medical-disclaimer" className="hover:text-white">
+            <Link href="/medical-disclaimer/" className="hover:text-white">
               Medical Disclaimer
             </Link>
 

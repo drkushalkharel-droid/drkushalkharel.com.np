@@ -158,7 +158,7 @@ export default function DiasporaPage() {
             Dr. Kushal Kharel provides evidence-based, patient-centred psychiatric assessment for Nepalis living in
             Australia, the UK, USA, Canada, New Zealand, Japan, South Korea, the Gulf and Europe, when online care is
             clinically and legally appropriate.{" "}
-            <Link className="text-sage-700 underline" href="/nepalese-abroad">
+            <Link className="text-sage-700 underline" href="/nepalese-abroad/">
               Find the guide for your country
             </Link>
             .
@@ -203,14 +203,14 @@ export default function DiasporaPage() {
             consultation is appropriate.
           </p>
           <p className="mt-4">
-            <Link className="underline" href="/nepalese-abroad">Nepalese abroad, by country</Link> ·{" "}
-            <Link className="underline" href="/online-psychiatrist-nepal">General online psychiatric consultation</Link> ·{" "}
-            <Link className="underline" href="/anxiety">Anxiety care</Link> ·{" "}
-            <Link className="underline" href="/conditions/major-depressive-disorder">Depression care</Link> ·{" "}
-            <Link className="underline" href="/erp-therapy-ocd">OCD and ERP</Link> ·{" "}
-            <Link className="underline" href="/sleep-problems-treatment-nepal">Sleep problems</Link> ·{" "}
-            <Link className="underline" href="/psychiatric-care-for-family-in-nepal">Care for family in Nepal</Link> ·{" "}
-            <Link className="underline" href="/contact">Contact</Link>
+            <Link className="underline" href="/nepalese-abroad/">Nepalese abroad, by country</Link> ·{" "}
+            <Link className="underline" href="/online-psychiatrist-nepal/">General online psychiatric consultation</Link> ·{" "}
+            <Link className="underline" href="/anxiety/">Anxiety care</Link> ·{" "}
+            <Link className="underline" href="/conditions/major-depressive-disorder/">Depression care</Link> ·{" "}
+            <Link className="underline" href="/erp-therapy-ocd/">OCD and ERP</Link> ·{" "}
+            <Link className="underline" href="/sleep-problems-treatment-nepal/">Sleep problems</Link> ·{" "}
+            <Link className="underline" href="/psychiatric-care-for-family-in-nepal/">Care for family in Nepal</Link> ·{" "}
+            <Link className="underline" href="/contact/">Contact</Link>
           </p>
         </section>
 

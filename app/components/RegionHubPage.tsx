@@ -108,7 +108,7 @@ export default function RegionHubPage({ region }: { region: Region }) {
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
-          <Link href="/nepalese-abroad" className="font-semibold text-sage-700">
+          <Link href="/nepalese-abroad/" className="font-semibold text-sage-700">
             &larr; All countries for Nepalis abroad
           </Link>
           <Link href={`/ne/bideshma-nepali/${region.slug}/`} lang="ne" className="ml-5 font-semibold text-sage-700 underline">
@@ -293,7 +293,7 @@ export default function RegionHubPage({ region }: { region: Region }) {
                       <p className="mt-3 text-sm text-stone-500">
                         Shared with permission. Names and identifying details are withheld to protect patient
                         privacy.{" "}
-                        <Link href="/patient-testimonials" className="underline hover:text-sage-700">
+                        <Link href="/patient-testimonials/" className="underline hover:text-sage-700">
                           Read more patient experiences
                         </Link>
                       </p>
@@ -347,7 +347,7 @@ export default function RegionHubPage({ region }: { region: Region }) {
               </Link>
             ))}
             <Link
-              href="/nepalese-abroad"
+              href="/nepalese-abroad/"
               className="rounded-full border border-sage-200 bg-white px-4 py-2 text-sm font-semibold text-sage-900 transition hover:border-sage-400 hover:bg-sage-100"
             >
               All {abroadGuides.length} countries

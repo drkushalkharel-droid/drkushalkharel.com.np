@@ -136,7 +136,7 @@ export default function KnowledgePage() {
               toward appropriate care.
             </p>
           </div>
-          <Link href="/anxiety" className="font-semibold text-sage-700">
+          <Link href="/anxiety/" className="font-semibold text-sage-700">
             View anxiety guide
           </Link>
         </div>

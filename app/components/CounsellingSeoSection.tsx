@@ -23,7 +23,7 @@ export default function CounsellingSeoSection() {
             </div>
           </div>
           <Link
-            href="/counselling-in-nepal"
+            href="/counselling-in-nepal/"
             className="shrink-0 rounded-lg bg-sage-700 px-6 py-3 font-semibold text-white transition hover:bg-sage-800"
           >
             Learn more

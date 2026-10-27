@@ -170,7 +170,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
 
             <Link
-              href="/appointment"
+              href="/appointment/"
               data-conversion="appointment"
               className="hidden md:inline-flex px-5 py-3 rounded-xl border border-green-500 text-green-600 font-semibold hover:bg-green-500 hover:text-white transition"
             >
