@@ -332,7 +332,7 @@ export default function NepaleseAbroadHubPage() {
           {regions.map((region) => (
             <Link
               key={region.slug}
-              href={`/nepalese-abroad/${region.slug}`}
+              href={`/nepalese-abroad/${region.slug}/`}
               className="block rounded-lg border border-sage-200 bg-sage-50 p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-400 hover:shadow-md"
             >
               <p className="text-sm font-semibold uppercase tracking-[2px] text-sage-700">

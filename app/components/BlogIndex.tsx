@@ -10,7 +10,7 @@ type Group = { category: string; items: SupportingArticle[] };
 function ArticleCard({ article }: { article: SupportingArticle }) {
   return (
     <Link
-      href={`/blog/${article.slug}`}
+      href={`/blog/${article.slug}/`}
       className="block h-full rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
     >
       <span className="text-xs font-semibold uppercase tracking-[2px] text-sage-700">

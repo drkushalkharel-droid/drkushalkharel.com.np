@@ -176,7 +176,7 @@ export default async function ScreeningToolPage({
                 </p>
               </div>
               <Link
-                href={`/conditions/${condition.slug}`}
+                href={`/conditions/${condition.slug}/`}
                 className="shrink-0 rounded-lg bg-sage-700 px-5 py-3 font-semibold text-white transition hover:bg-sage-800"
               >
                 Read the full guide

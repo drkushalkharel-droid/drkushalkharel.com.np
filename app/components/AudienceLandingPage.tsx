@@ -209,7 +209,7 @@ export default function AudienceLandingPage({
                   <p className="mt-1 text-green-900">Take a free, confidential self-rated screening related to this topic.</p>
                 </div>
                 <Link
-                  href={`/screening/${screeningTool.id}`}
+                  href={`/screening/${screeningTool.id}/`}
                   className="shrink-0 rounded-lg bg-green-700 px-5 py-3 font-semibold text-white transition hover:bg-green-800"
                 >
                   Take the screening

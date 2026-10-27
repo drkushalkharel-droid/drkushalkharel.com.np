@@ -65,7 +65,7 @@ export default function ResourcesPage() {
               {group.items.map((resource) => (
                 <Link
                   key={resource.slug}
-                  href={`/resources/${resource.slug}`}
+                  href={`/resources/${resource.slug}/`}
                   className="block h-full rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
                 >
                   <h3 className="text-xl font-bold leading-snug text-stone-950">

@@ -139,7 +139,7 @@ export default function SingleScreeningTool({ tool }: { tool: ScreeningTool }) {
         {tool.relatedConditionSlug && (
           <div className="mt-6 text-center">
             <Link
-              href={`/conditions/${tool.relatedConditionSlug}`}
+              href={`/conditions/${tool.relatedConditionSlug}/`}
               className="font-semibold text-sage-700 hover:underline"
             >
               Learn more about this condition &rarr;

@@ -44,7 +44,7 @@ export default function ScreeningTeaser() {
           {featured.map((tool) => (
             <Link
               key={tool.id}
-              href={`/screening/${tool.id}`}
+              href={`/screening/${tool.id}/`}
               className="block rounded-lg border border-stone-200 bg-stone-50 p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
             >
               <h3 className="text-xl font-bold text-sage-950">{tool.shortTitle}</h3>

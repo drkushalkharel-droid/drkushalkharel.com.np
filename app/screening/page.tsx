@@ -125,7 +125,7 @@ export default function ScreeningPage() {
           {screeningTools.map((tool) => (
             <Link
               key={tool.id}
-              href={`/screening/${tool.id}`}
+              href={`/screening/${tool.id}/`}
               className="block rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
             >
               <p className="text-sm font-semibold uppercase tracking-[2px] text-sage-700">

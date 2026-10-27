@@ -84,7 +84,7 @@ export default function ConditionsLibraryPage() {
                 {conditions.map((condition) => (
                   <tr key={condition.slug} className="border-t border-stone-200 odd:bg-white even:bg-stone-50">
                     <td className="px-4 py-3 font-semibold">
-                      <Link href={`/conditions/${condition.slug}`} className="text-sage-700 hover:underline">
+                      <Link href={`/conditions/${condition.slug}/`} className="text-sage-700 hover:underline">
                         {condition.title}
                       </Link>
                     </td>
@@ -109,7 +109,7 @@ export default function ConditionsLibraryPage() {
               {group.items.map((condition) => (
                 <Link
                   key={condition.slug}
-                  href={`/conditions/${condition.slug}`}
+                  href={`/conditions/${condition.slug}/`}
                   className="block h-full rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
                 >
                   <h3 className="text-2xl font-bold leading-snug text-stone-950">

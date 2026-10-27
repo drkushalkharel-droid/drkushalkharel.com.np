@@ -166,7 +166,7 @@ export default async function ResourceDetailPage({
 
         {condition && (
           <div className="mt-6 print:hidden">
-            <Link href={`/conditions/${condition.slug}`} className="font-semibold text-sage-700 hover:underline">
+            <Link href={`/conditions/${condition.slug}/`} className="font-semibold text-sage-700 hover:underline">
               Learn more about {condition.title} &rarr;
             </Link>
           </div>

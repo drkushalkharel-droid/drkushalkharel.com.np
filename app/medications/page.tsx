@@ -68,7 +68,7 @@ export default function MedicationsIndexPage() {
           {medications.map((med) => (
             <Link
               key={med.slug}
-              href={`/medications/${med.slug}`}
+              href={`/medications/${med.slug}/`}
               className="block rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
             >
               <span className="flex h-12 w-12 items-center justify-center rounded-lg bg-sage-100 text-sage-800">
