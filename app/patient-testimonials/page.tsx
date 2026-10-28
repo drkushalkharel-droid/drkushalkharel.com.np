@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Mail, MessageCircle, Phone, Quote, Star } from "lucide-react";
-import { abroadGuides } from "../data/abroad";
+import { googleReviews } from "../data/googleReviews";
 import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -60,98 +60,98 @@ const reviewCards = [
   },
 ];
 
+const googleUrl =
+  "https://www.google.com/maps/place/Dr.+Kushal+Kharel+Psychiatrist+Clinic/@27.6914272,85.280723,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb193a5fc66e35:0x4e7103ea23778ac9!8m2!3d27.6914272!4d85.280723!16s%2Fg%2F11thgbq6yl";
+
+const Stars = () => (
+  <div className="flex gap-1 text-clay-500" aria-label="5 out of 5 stars" role="img">
+    {[1, 2, 3, 4, 5].map((n) => (
+      <Star key={n} size={16} fill="currentColor" strokeWidth={0} aria-hidden="true" />
+    ))}
+  </div>
+);
+
 export default function PatientTestimonialsPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      {/* Header */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-12 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Patient Testimonials</h1>
-          <p className="text-lg text-blue-100">
-            Read what patients say about their experience with Dr. Kushal Kharel
+    <main id="main" className="min-h-screen bg-[#f5f4ef] pb-20 text-[#1f2927]">
+      <section className="bg-sage-800 px-6 pb-16 pt-28 text-white">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-[13px] font-bold uppercase tracking-[.12em] text-[#e6b579]">Patient testimonials</p>
+          <h1 className="mt-5 max-w-3xl text-4xl leading-[1.05] tracking-[-.03em] md:text-6xl">
+            In patients&apos; <em className="text-[#f6a995]">own words</em>
+          </h1>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-sage-100">
+            Ten of the clinic&apos;s 73 five-star Google reviews, copied exactly as patients posted them. Patient names are kept confidential.
           </p>
+          <div className="mt-8 flex flex-wrap items-center gap-6">
+            <a href={googleUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white px-6 py-4 text-sm font-semibold text-sage-900 transition hover:bg-clay-100">
+              Read all reviews on Google
+            </a>
+            <Link href="/book/" className="inline-flex items-center gap-2 bg-clay-700 px-6 py-4 text-sm font-semibold text-white transition hover:bg-clay-800">
+              Book an appointment
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="max-w-4xl mx-auto px-6 py-12">
-        {/* Review Cards Grid */}
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
-          {reviewCards.map((review, index) => (
-            <div
-              key={index}
-              className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <div className="flex gap-2 mb-4">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} size={16} className="fill-amber-400 text-amber-400" />
-                ))}
+      <section className="mx-auto max-w-6xl px-6 py-14">
+        <h2 className="text-3xl md:text-4xl">What patients say about Dr. Kharel</h2>
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
+          {googleReviews.map((r, i) => (
+            <figure key={i} className="flex flex-col border border-[#d6d8d2] bg-white p-7">
+              <div className="flex items-center justify-between">
+                <Stars />
+                <Quote size={26} className="text-clay-300" aria-hidden="true" />
               </div>
-              <blockquote className="text-slate-700 mb-4 italic">
-                "{review.quote}"
-              </blockquote>
-              <p className="text-sm text-slate-600 font-medium">
-                ~ {review.attribution}
-              </p>
+              <blockquote className="mt-4 flex-1 whitespace-pre-line leading-7 text-[#3d4743]">&ldquo;{r.text}&rdquo;</blockquote>
+              <figcaption className="mt-5 flex flex-wrap items-center gap-x-3 text-sm">
+                <strong className="text-sage-900">Anonymous patient</strong>
+                {r.topic && <span className="text-[#5a635e]">· {r.topic}</span>}
+                <span className="text-[#5a635e]">· Google review</span>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+        <p className="mt-6 text-sm text-[#5a635e]">
+          Reviews reflect individual experiences and are not a guarantee of results. Treatment is tailored to each person.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6">
+        <h2 className="text-2xl md:text-3xl">More messages from patients</h2>
+        <div className="mt-6 grid gap-5 md:grid-cols-2">
+          {reviewCards.map((review, index) => (
+            <div key={index} className="border border-[#d6d8d2] bg-white p-6">
+              <Stars />
+              <blockquote className="mt-3 italic text-[#3d4743]">&ldquo;{review.quote}&rdquo;</blockquote>
+              <p className="mt-3 text-sm font-medium text-[#5a635e]">~ {review.attribution}</p>
             </div>
           ))}
         </div>
+      </section>
 
-        {/* Call to Action - Write a Review */}
-        <div className="bg-sage-50 border-2 border-sage-200 rounded-lg p-8 text-center mb-12">
-          <h2 className="text-2xl font-bold text-slate-800 mb-4">Share Your Experience</h2>
-          <p className="text-slate-600 mb-6">
-            Have you had a consultation with Dr. Kushal Kharel? Your feedback helps other patients make informed decisions.
-          </p>
-          <a
-            href="https://www.google.com/maps/place/Dr.+Kushal+Kharel+Psychiatrist+Clinic/@27.6914272,85.280723,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb193a5fc66e35:0x4e7103ea23778ac9!8m2!3d27.6914272!4d85.280723!16s%2Fg%2F11thgbq6yl"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-sage-700 hover:bg-sage-800 text-white font-semibold py-3 px-8 rounded-lg transition-colors"
-          >
-            Write a Review on Google
+      <section className="mx-auto mt-14 max-w-6xl px-6">
+        <div className="bg-sage-100 p-8 text-center md:p-10">
+          <h2 className="text-2xl md:text-3xl">Share your experience</h2>
+          <p className="mx-auto mt-3 max-w-xl text-[#3d4743]">Have you had a consultation with Dr. Kushal Kharel? Your feedback helps other patients make informed decisions.</p>
+          <a href={googleUrl} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex bg-sage-800 px-8 py-4 text-sm font-semibold text-white transition hover:bg-sage-900">
+            Write a review on Google
           </a>
         </div>
 
-        {/* Contact Options */}
-        <div className="bg-slate-50 rounded-lg p-8">
-          <h3 className="text-xl font-bold text-slate-800 mb-6">Other Ways to Reach Out</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <a
-              href="tel:+97714545454"
-              className="flex items-center gap-3 p-4 bg-white rounded border border-slate-200 hover:shadow-md transition-shadow"
-            >
-              <Phone className="text-blue-600" size={24} />
-              <div>
-                <p className="font-semibold text-slate-800">Call</p>
-                <p className="text-sm text-slate-600">+977 1 4545454</p>
-              </div>
-            </a>
-
-            <a
-              href="mailto:contact@drkushalkharel.com.np"
-              className="flex items-center gap-3 p-4 bg-white rounded border border-slate-200 hover:shadow-md transition-shadow"
-            >
-              <Mail className="text-blue-600" size={24} />
-              <div>
-                <p className="font-semibold text-slate-800">Email</p>
-                <p className="text-sm text-slate-600">contact@drkushalkharel.com.np</p>
-              </div>
-            </a>
-
-            <a
-              href="https://wa.me/977"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 p-4 bg-white rounded border border-slate-200 hover:shadow-md transition-shadow"
-            >
-              <MessageCircle className="text-blue-600" size={24} />
-              <div>
-                <p className="font-semibold text-slate-800">WhatsApp</p>
-                <p className="text-sm text-slate-600">Message us</p>
-              </div>
-            </a>
-          </div>
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
+          <a href="tel:+9779861800547" className="flex items-center gap-3 border border-[#d6d8d2] bg-white p-5 hover:shadow-md">
+            <Phone className="text-sage-800" size={24} aria-hidden="true" />
+            <span><span className="block font-semibold">Call</span><span className="text-sm text-[#5a635e]">+977 9861800547</span></span>
+          </a>
+          <a href="mailto:drkushalkharel@gmail.com" className="flex items-center gap-3 border border-[#d6d8d2] bg-white p-5 hover:shadow-md">
+            <Mail className="text-sage-800" size={24} aria-hidden="true" />
+            <span><span className="block font-semibold">Email</span><span className="text-sm text-[#5a635e]">drkushalkharel@gmail.com</span></span>
+          </a>
+          <a href="https://wa.me/9779861800547" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 border border-[#d6d8d2] bg-white p-5 hover:shadow-md">
+            <MessageCircle className="text-sage-800" size={24} aria-hidden="true" />
+            <span><span className="block font-semibold">WhatsApp</span><span className="text-sm text-[#5a635e]">Message the clinic</span></span>
+          </a>
         </div>
       </section>
     </main>
