@@ -262,7 +262,9 @@ export default function AboutPage() {
                 ) : (
                   <span className="font-semibold">{item.title}</span>
                 )}
-                , {item.venue} ({item.year})
+                , {item.venue} ({item.year}).
+                {item.authors && <span className="block text-sm text-stone-600">Authors: {item.authors}.</span>}
+                {item.doi && <span className="block text-sm text-stone-600">DOI: {item.doi}</span>}
               </li>
             ))}
           </ul>

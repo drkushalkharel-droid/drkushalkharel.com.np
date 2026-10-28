@@ -9,7 +9,7 @@
 
 export type AboutEducation = { qualification: string; institution: string; years?: string };
 export type AboutAffiliation = { organisation: string; role: string; years?: string; url?: string };
-export type AboutPublication = { title: string; venue: string; year: string; url?: string };
+export type AboutPublication = { title: string; venue: string; year: string; url?: string; authors?: string; doi?: string };
 export type AboutMention = { outlet: string; title: string; year: string; url: string };
 
 export const aboutFacts = {
@@ -18,7 +18,16 @@ export const aboutFacts = {
   // TODO(Dr. Kharel): hospitals, clinics and programs where you practice, consult or teach, with your role.
   affiliations: [] as AboutAffiliation[],
   // TODO(Dr. Kharel): papers, conference presentations, posters, book chapters.
-  publications: [] as AboutPublication[],
+  publications: [
+    {
+      title: "Severe upper gastrointestinal corrosive injury following intentional muriatic acid (HCl) ingestion: a case report",
+      authors: "Acharya B, Yadhav AK, Tamrakar K, Kharel K, Karki S, Bogati S",
+      venue: "Annals of Medicine & Surgery, published ahead of print, 7 October 2026",
+      year: "2026",
+      doi: "10.1097/MS9.0000000000005673",
+      url: "https://www.ovid.com/jnls/annals-of-medicine-and-surgery/fulltext/10.1097/ms9.0000000000005673~severe-upper-gastrointestinal-corrosive-injury-following",
+    },
+  ] as AboutPublication[],
   // TODO(Dr. Kharel): interviews, op-eds, radio/TV or newspaper quotes (link to each).
   mediaMentions: [] as AboutMention[],
 };
