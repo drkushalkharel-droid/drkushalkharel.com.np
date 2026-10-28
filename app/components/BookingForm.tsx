@@ -125,14 +125,14 @@ export default function BookingForm() {
     }
   };
 
-  const field = "mt-2 w-full rounded-lg border border-stone-300 bg-white px-4 py-3 text-stone-900 outline-none focus:border-sage-600 focus:ring-2 focus:ring-sage-200";
+  const field = "mt-2 w-full border border-[#c3c8c0] bg-white px-4 py-3 text-[#1f2927] outline-none focus:border-[#314f49] focus:ring-2 focus:ring-[#c4d2c5]";
 
   return (
-    <div id="book" className="scroll-mt-28 overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-lg">
-      <ol className="grid grid-cols-4 border-b border-stone-200 bg-sage-50 text-center text-xs font-semibold sm:text-sm" aria-label="Booking progress">
+    <div id="book" className="scroll-mt-28 overflow-hidden bg-[#f5f4ef] shadow-xl">
+      <ol className="grid grid-cols-4 border-b border-[#d6d8d2] bg-[#ebe9e1] text-center text-xs font-semibold sm:text-sm" aria-label="Booking progress">
         {steps.map((s, i) => (
-          <li key={s} aria-current={i === step ? "step" : undefined} className={`px-2 py-4 ${i === step ? "bg-sage-800 text-white" : i < step ? "text-sage-800" : "text-stone-500"}`}>
-            <span className={`mr-1 inline-flex h-6 w-6 items-center justify-center rounded-full text-xs ${i === step ? "bg-white text-sage-900" : i < step ? "bg-sage-700 text-white" : "bg-stone-200 text-stone-600"}`}>
+          <li key={s} aria-current={i === step ? "step" : undefined} className={`px-2 py-4 ${i === step ? "bg-[#314f49] text-white" : i < step ? "text-[#314f49]" : "text-stone-500"}`}>
+            <span className={`mr-1 inline-flex h-6 w-6 items-center justify-center rounded-full text-xs ${i === step ? "bg-white text-[#314f49]" : i < step ? "bg-[#314f49] text-white" : "bg-stone-200 text-stone-600"}`}>
               {i < step ? <Check size={13} aria-hidden="true" /> : i + 1}
             </span>
             <span className="hidden sm:inline">{s}</span>
@@ -143,16 +143,16 @@ export default function BookingForm() {
       <div className="p-6 sm:p-9">
         {step === 0 && (
           <fieldset>
-            <legend className="text-2xl font-bold text-stone-900">How would you like to meet?</legend>
+            <legend className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-book-serif), Georgia, serif" }}>How would you like to meet?</legend>
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               {visitTypes.map((v) => (
-                <label key={v.id} className={`cursor-pointer overflow-hidden rounded-xl border-2 transition ${visit === v.id ? "border-sage-700 ring-4 ring-sage-200" : "border-stone-200 hover:border-sage-400"}`}>
+                <label key={v.id} className={`cursor-pointer overflow-hidden border-2 transition ${visit === v.id ? "border-[#ef765d] ring-4 ring-[#ef765d]/20" : "border-[#d6d8d2] hover:border-[#314f49]"}`}>
                   <input type="radio" name="visit" value={v.id} checked={visit === v.id} onChange={() => setVisit(v.id)} className="sr-only" />
                   <div className="relative h-48 bg-stone-100">
                     <Image src={v.image} alt={v.alt} fill sizes="(max-width: 640px) 100vw, 420px" className="object-cover" />
                   </div>
                   <div className="flex items-start gap-3 p-5">
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sage-100 text-sage-800"><v.Icon size={20} aria-hidden="true" /></span>
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#c4d2c5] text-[#314f49]"><v.Icon size={20} aria-hidden="true" /></span>
                     <span>
                       <span className="block font-bold text-stone-900">{v.title}</span>
                       <span className="block text-sm text-stone-600">{v.detail}</span>
@@ -166,14 +166,14 @@ export default function BookingForm() {
 
         {step === 1 && (
           <div>
-            <h2 className="text-2xl font-bold text-stone-900">Pick a day and time</h2>
+            <h2 className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-book-serif), Georgia, serif" }}>Pick a day and time</h2>
             <p className="mt-2 text-sm text-stone-600">Times are in Nepal time (NPT, UTC+5:45). Clinic hours: Sunday–Friday 8 AM–10 PM, Saturday 10 AM–4 PM. This is a request; the clinic confirms on WhatsApp.</p>
             <div className="mt-6 flex gap-3 overflow-x-auto pb-3" role="radiogroup" aria-label="Preferred date">
               {days.map((d, i) => {
                 const l = dayLabel(d);
                 const on = dateIdx === i;
                 return (
-                  <button key={d.toISOString()} type="button" role="radio" aria-checked={on} onClick={() => { setDateIdx(i); setSlot(""); }} className={`flex min-w-[74px] flex-col items-center rounded-xl border-2 px-3 py-3 transition ${on ? "border-sage-800 bg-sage-800 text-white" : "border-stone-200 bg-white hover:border-sage-400"}`}>
+                  <button key={d.toISOString()} type="button" role="radio" aria-checked={on} onClick={() => { setDateIdx(i); setSlot(""); }} className={`flex min-w-[74px] flex-col items-center border-2 px-3 py-3 transition ${on ? "border-[#314f49] bg-[#314f49] text-white" : "border-[#d6d8d2] bg-white hover:border-[#314f49]"}`}>
                     <span className="text-xs font-semibold uppercase">{l.weekday}</span>
                     <span className="text-2xl font-bold">{l.date}</span>
                     <span className="text-xs">{l.month}</span>
@@ -186,21 +186,21 @@ export default function BookingForm() {
                 <p className="flex items-center gap-2 font-semibold text-stone-800"><CalendarDays size={18} aria-hidden="true" /> Available times</p>
                 <div className="mt-3 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6" role="radiogroup" aria-label="Preferred time">
                   {slots.map((s) => (
-                    <button key={s} type="button" role="radio" aria-checked={slot === s} onClick={() => setSlot(s)} className={`rounded-lg border-2 px-2 py-2.5 text-sm font-semibold transition ${slot === s ? "border-clay-600 bg-clay-600 text-white" : "border-stone-200 hover:border-clay-400"}`}>
+                    <button key={s} type="button" role="radio" aria-checked={slot === s} onClick={() => setSlot(s)} className={`border-2 px-2 py-2.5 text-sm font-semibold transition ${slot === s ? "border-[#ef765d] bg-[#ef765d] text-white" : "border-[#d6d8d2] bg-white hover:border-[#ef765d]"}`}>
                       {label12(s)}
                     </button>
                   ))}
                 </div>
               </div>
             ) : (
-              <p className="mt-6 rounded-lg bg-stone-50 p-4 text-sm text-stone-600">Choose a day to see times.</p>
+              <p className="mt-6 bg-[#ebe9e1] p-4 text-sm text-stone-600">Choose a day to see times.</p>
             )}
           </div>
         )}
 
         {step === 2 && (
           <div>
-            <h2 className="text-2xl font-bold text-stone-900">A few details</h2>
+            <h2 className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-book-serif), Georgia, serif" }}>A few details</h2>
             <p className="mt-2 text-sm text-stone-600">Please keep this brief. Do not include sensitive medical details here; discuss those in the consultation.</p>
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               <label className="block text-sm font-semibold text-stone-800">Full name
@@ -229,14 +229,14 @@ export default function BookingForm() {
 
         {step === 3 && (
           <div>
-            <h2 className="text-2xl font-bold text-stone-900">Review and send</h2>
-            <dl className="mt-6 grid gap-3 rounded-xl bg-sage-50 p-5 text-sm sm:grid-cols-2">
-              <div><dt className="font-semibold text-sage-900">Visit</dt><dd>{visitInfo?.title}</dd></div>
-              <div><dt className="font-semibold text-sage-900">When (Nepal time)</dt><dd>{chosenDate?.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" })}, {slot && label12(slot)}</dd></div>
-              <div><dt className="font-semibold text-sage-900">Name</dt><dd>{name}</dd></div>
-              <div><dt className="font-semibold text-sage-900">WhatsApp</dt><dd>{phone}</dd></div>
-              <div><dt className="font-semibold text-sage-900">Concern</dt><dd>{concern}</dd></div>
-              <div><dt className="font-semibold text-sage-900">Language</dt><dd>{language}</dd></div>
+            <h2 className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-book-serif), Georgia, serif" }}>Review and send</h2>
+            <dl className="mt-6 grid gap-3 bg-[#ebe9e1] p-5 text-sm sm:grid-cols-2">
+              <div><dt className="font-semibold text-[#314f49]">Visit</dt><dd>{visitInfo?.title}</dd></div>
+              <div><dt className="font-semibold text-[#314f49]">When (Nepal time)</dt><dd>{chosenDate?.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" })}, {slot && label12(slot)}</dd></div>
+              <div><dt className="font-semibold text-[#314f49]">Name</dt><dd>{name}</dd></div>
+              <div><dt className="font-semibold text-[#314f49]">WhatsApp</dt><dd>{phone}</dd></div>
+              <div><dt className="font-semibold text-[#314f49]">Concern</dt><dd>{concern}</dd></div>
+              <div><dt className="font-semibold text-[#314f49]">Language</dt><dd>{language}</dd></div>
             </dl>
             <label className="mt-6 flex items-start gap-3 text-sm text-stone-700">
               <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} className="mt-1 h-5 w-5" />
@@ -244,10 +244,10 @@ export default function BookingForm() {
             </label>
             {consent && (
               <div className="mt-6 flex flex-wrap gap-3">
-                <a href={waHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3.5 font-bold text-white hover:bg-green-500">
+                <a href={waHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#0d8239] px-6 py-3.5 font-bold text-white hover:bg-[#0a6b2f]">
                   <MessageCircle size={20} aria-hidden="true" /> Send on WhatsApp
                 </a>
-                <button type="button" onClick={copy} className="inline-flex items-center gap-2 rounded-lg border border-stone-300 px-6 py-3.5 font-semibold text-stone-800 hover:bg-stone-50">
+                <button type="button" onClick={copy} className="inline-flex items-center gap-2 border border-[#aeb6b0] px-6 py-3.5 font-semibold text-[#1f2927] hover:bg-[#ebe9e1]">
                   <Copy size={18} aria-hidden="true" /> {copied ? "Copied" : "Copy details"}
                 </button>
               </div>
@@ -256,12 +256,12 @@ export default function BookingForm() {
           </div>
         )}
 
-        <div className="mt-9 flex items-center justify-between border-t border-stone-200 pt-6">
-          <button type="button" onClick={() => setStep(step - 1)} disabled={step === 0} className="inline-flex items-center gap-2 rounded-lg px-4 py-2.5 font-semibold text-stone-700 hover:bg-stone-100 disabled:invisible">
+        <div className="mt-9 flex items-center justify-between border-t border-[#d6d8d2] pt-6">
+          <button type="button" onClick={() => setStep(step - 1)} disabled={step === 0} className="inline-flex items-center gap-2 px-4 py-2.5 font-semibold text-[#53605a] hover:bg-[#ebe9e1] disabled:invisible">
             <ArrowLeft size={18} aria-hidden="true" /> Back
           </button>
           {step < 3 && (
-            <button type="button" onClick={() => setStep(step + 1)} disabled={!canNext} className="inline-flex items-center gap-2 rounded-lg bg-sage-800 px-7 py-3 font-bold text-white transition hover:bg-sage-700 disabled:cursor-not-allowed disabled:opacity-40">
+            <button type="button" onClick={() => setStep(step + 1)} disabled={!canNext} className="inline-flex items-center gap-2 bg-[#ef765d] px-7 py-3 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#c4462c] disabled:cursor-not-allowed disabled:opacity-40">
               Next <ArrowRight size={18} aria-hidden="true" />
             </button>
           )}

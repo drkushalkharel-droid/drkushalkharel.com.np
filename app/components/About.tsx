@@ -68,7 +68,9 @@ export default function About() {
             <p className="mt-6 text-lg text-gray-600 leading-9">
               In addition to in-person consultations at the Kalanki clinic, Dr.
               Kharel offers telepsychiatry and online psychiatric consultation
-              for patients across Nepal and Nepalese communities abroad. As an
+              for patients across Nepal and Nepalese communities abroad. Dr. Kushal
+              does online video consultation for mental health conditions, so
+              patients can be seen from home in Nepal or from overseas. As an
               NMC-licensed Specialist Psychiatrist, he is committed to
               confidential, compassionate and evidence-based mental health
               care. Book an appointment online or call to schedule a visit.
@@ -204,12 +206,12 @@ export default function About() {
                     <td className="px-5 py-3">Completed</td>
                   </tr>
                   <tr className="border-t border-gray-200">
-                    <td className="px-5 py-3 font-semibold">Lifetime Member</td>
+                    <td className="px-5 py-3 font-semibold">Permanent (Life) Member</td>
                     <td className="px-5 py-3">Nepal Medical Association</td>
                     <td className="px-5 py-3">Active</td>
                   </tr>
                   <tr className="border-t border-gray-200 bg-gray-50">
-                    <td className="px-5 py-3 font-semibold">Lifetime Member</td>
+                    <td className="px-5 py-3 font-semibold">Life Member</td>
                     <td className="px-5 py-3">Psychiatrists&apos; Association of Nepal (PAN)</td>
                     <td className="px-5 py-3">Active</td>
                   </tr>

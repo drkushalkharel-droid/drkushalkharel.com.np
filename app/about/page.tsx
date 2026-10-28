@@ -123,7 +123,8 @@ export default function AboutPage() {
             </p>
             <p className="mt-4 max-w-xl leading-8 text-stone-600">
               In addition to in-person consultations at the Kalanki clinic, he offers telepsychiatry and online
-              consultation for patients across Nepal and Nepali communities abroad. He is a Nepal Medical Council
+              consultation for patients across Nepal and Nepali communities abroad. Dr. Kushal does online video
+              consultation for mental health conditions, for patients in Nepal and abroad. He is a Nepal Medical Council
               registered psychiatrist (registration #27199) and reviews and authors the clinical content on this
               site.
             </p>

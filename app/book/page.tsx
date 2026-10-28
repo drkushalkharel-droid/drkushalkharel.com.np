@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CalendarCheck, Clock3, Globe2, Languages, MapPin, MessageCircle, Phone, ShieldCheck, Video } from "lucide-react";
+import { DM_Sans, Playfair_Display } from "next/font/google";
+import { ArrowUpRight, CalendarCheck, Clock3, Globe2, Languages, MapPin, MessageCircle, Phone, ShieldCheck, Video } from "lucide-react";
 import Image from "../components/OptimizedImage";
 import BookingForm from "../components/BookingForm";
+import { CalmArt, HeroArt, StepChooseArt, StepSendArt, StepTimeArt } from "../components/BookArt";
 import { metaFor } from "../lib/seoText";
+
+const serif = Playfair_Display({ subsets: ["latin"], variable: "--font-book-serif", display: "swap" });
+const sans = DM_Sans({ subsets: ["latin"], variable: "--font-book-sans", display: "swap" });
 
 const meta = metaFor("/book/", {
   title: "Book an Appointment Online",
@@ -19,28 +24,40 @@ export const metadata: Metadata = {
 const phone = "+977 9861800547";
 const whatsapp = "https://wa.me/9779861800547";
 
-const reasons = [
-  { Icon: ShieldCheck, title: "Private and confidential", text: "Your details are used only to arrange your appointment." },
-  { Icon: Video, title: "Online from anywhere", text: "Secure video sessions for people across Nepal and abroad." },
-  { Icon: Clock3, title: "Evening and weekend slots", text: "Sunday to Friday until 10 PM, and Saturday daytime." },
-  { Icon: Languages, title: "Your language", text: "Consultations in Nepali, English or Hindi." },
-  { Icon: Globe2, title: "Time-zone aware", text: "All times are shown in Nepal time so there is no confusion." },
-  { Icon: CalendarCheck, title: "Confirmed by the clinic", text: "You send a request; the clinic confirms the final time." },
+const headingFont = { fontFamily: "var(--font-book-serif), Georgia, serif" };
+
+const marquee = ["In-person in Kathmandu", "Online video worldwide", "Nepali · English · Hindi", "Confidential care", "Evening appointments"];
+
+const stats = [
+  { n: "2 min", l: "to send a request" },
+  { n: "14 days", l: "of times to choose" },
+  { n: "3", l: "languages" },
+  { n: "NMC", l: "registered #27199" },
 ];
 
 const steps = [
-  { n: 1, title: "Choose how to meet", text: "Clinic in Kalanki or an online video session.", image: "/images/diagrams/treatment-pathway.webp", alt: "Diagram of the treatment pathway from contact to follow-up" },
-  { n: 2, title: "Pick a day and time", text: "Select from the next two weeks of available times.", image: "/images/community/world-mental-health-day-2025.jpg", alt: "Dr. Kushal Kharel at a World Mental Health Day event" },
-  { n: 3, title: "Send on WhatsApp", text: "Your request opens ready-written. The clinic replies to confirm.", image: "/images/community/school-mental-health-awareness.jpg", alt: "Dr. Kushal Kharel speaking at a school mental health awareness programme" },
+  { Art: StepChooseArt, title: "Choose how to meet", text: "The Kalanki clinic, or a private video session from wherever you are.", alt: "Illustration of a clinic visit beside an online video call" },
+  { Art: StepTimeArt, title: "Pick a day and time", text: "Browse the next two weeks. All times are shown in Nepal time.", alt: "Illustration of a calendar with a chosen day and a clock" },
+  { Art: StepSendArt, title: "Send on WhatsApp", text: "Your request opens ready-written. The clinic replies to confirm.", alt: "Illustration of a chat message with a confirmation tick" },
+];
+
+const reasons = [
+  { Icon: ShieldCheck, title: "Private and confidential", text: "Your details are used only to arrange your appointment." },
+  { Icon: Video, title: "Online from anywhere", text: "Secure video sessions across Nepal and abroad." },
+  { Icon: Clock3, title: "Evening and weekend slots", text: "Sunday to Friday until 10 PM, and Saturday daytime." },
+  { Icon: Languages, title: "Your language", text: "Consultations in Nepali, English or Hindi." },
+  { Icon: Globe2, title: "Time-zone aware", text: "Times are in Nepal time, so there is no confusion." },
+  { Icon: CalendarCheck, title: "Confirmed by the clinic", text: "You send a request; the clinic confirms the final time." },
 ];
 
 const gallery = [
-  { src: "/images/opd-consultation-room.jpg", alt: "The consultation room at the Kalanki clinic", caption: "The consultation room" },
-  { src: "/images/speaker.jpg", alt: "Dr. Kushal Kharel speaking at a mental health event", caption: "Speaking on mental health" },
-  { src: "/images/award.jpg", alt: "Dr. Kushal Kharel receiving an award", caption: "Recognised for community work" },
-  { src: "/images/community/cbt-conference.jpg", alt: "Dr. Kushal Kharel at a CBT conference", caption: "CBT training and conferences" },
-  { src: "/images/community/community-health-camp.jpg", alt: "A community mental health camp", caption: "Community health camps" },
-  { src: "/images/community/nepal-health-corps-school-outreach.jpg", alt: "School outreach with Nepal Health Corps", caption: "School outreach" },
+  { src: "/images/opd-consultation-room.jpg", alt: "The consultation room at the Kalanki clinic", caption: "The consultation room", span: "md:row-span-2" },
+  { src: "/images/speaker.jpg", alt: "Dr. Kushal Kharel speaking at a mental health event", caption: "Speaking on mental health", span: "md:row-span-2" },
+  { src: "/images/community/cbt-conference.jpg", alt: "Dr. Kushal Kharel at a CBT conference", caption: "CBT training and conferences", span: "" },
+  { src: "/images/community/community-health-camp.jpg", alt: "A community mental health camp", caption: "Community health camps", span: "" },
+  { src: "/images/award.jpg", alt: "Dr. Kushal Kharel receiving an award", caption: "Recognised for community work", span: "md:row-span-2" },
+  { src: "/images/community/school-mental-health-awareness.jpg", alt: "School mental health awareness programme", caption: "School programmes", span: "" },
+  { src: "/images/community/world-mental-health-day-2025.jpg", alt: "World Mental Health Day 2025 event", caption: "World Mental Health Day", span: "" },
 ];
 
 const faqs = [
@@ -50,106 +67,213 @@ const faqs = [
   { q: "What if it is an emergency?", a: "Do not use this form. Go to the nearest hospital emergency department or call the Nepal Police on 100." },
 ];
 
+const btn = "inline-flex items-center justify-center gap-3 px-6 py-4 text-[13px] font-semibold transition hover:-translate-y-0.5";
+
 export default function BookPage() {
   return (
-    <main className="min-h-screen bg-stone-50 pb-20 pt-28 text-stone-900">
-      <section className="bg-sage-950 text-white">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-14 lg:grid-cols-[1.2fr_.8fr] lg:px-8">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[3px] text-clay-200">Book online</p>
-            <h1 className="mt-5 text-4xl font-bold leading-tight md:text-5xl">Book an appointment with Dr. Kushal Kharel</h1>
-            <p className="mt-6 text-lg leading-8 text-sage-100">Consultant psychiatrist in Kathmandu. Choose a clinic visit or an online video session, pick a time that suits you, and send your request in under two minutes.</p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a href="#book" className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-4 font-bold text-sage-950 hover:bg-clay-100">
-                <CalendarCheck size={20} aria-hidden="true" /> Start booking
-              </a>
-              <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-green-300 bg-green-600 px-6 py-4 font-bold text-white hover:bg-green-500">
-                <MessageCircle size={20} aria-hidden="true" /> WhatsApp us
-              </a>
+    <main className={`${serif.variable} ${sans.variable} min-h-screen bg-[#f5f4ef] text-[#1f2927]`} style={{ fontFamily: "var(--font-book-sans), system-ui, sans-serif" }}>
+      <header className="mx-auto flex max-w-[1240px] items-center justify-between px-6 py-6 lg:px-8">
+        <Link href="/" className="flex items-center gap-3">
+          <span className="flex h-6 rotate-[30deg] gap-0.5" aria-hidden="true">
+            <span className="h-[18px] w-[7px] rounded-[7px_7px_2px_7px] bg-[#ef765d]" />
+            <span className="h-[25px] w-[7px] rounded-[7px_7px_2px_7px] bg-[#314f49]" />
+            <span className="h-[14px] w-[7px] rounded-[7px_7px_2px_7px] bg-[#e2ad67]" />
+          </span>
+          <span className="leading-tight">
+            <strong className="block text-[15px]">Dr. Kushal Kharel</strong>
+            <em className="block text-[11px] uppercase not-italic tracking-[.08em] text-[#69736d]">Consultant Psychiatrist</em>
+          </span>
+        </Link>
+        <nav className="hidden items-center gap-9 text-[13px] text-[#53605a] md:flex" aria-label="Page sections">
+          <a href="#how">How it works</a>
+          <a href="#book">Book</a>
+          <a href="#doctor">Your doctor</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a href="tel:+9779861800547" className={`${btn} bg-[#1f2927] !px-4 !py-3 text-white`}>
+          <Phone size={15} aria-hidden="true" /> <span className="hidden sm:inline">{phone}</span><span className="sm:hidden">Call</span>
+        </a>
+      </header>
+
+      <section className="mx-auto grid max-w-[1240px] gap-10 px-6 pb-20 pt-10 lg:grid-cols-2 lg:px-8 lg:pb-24">
+        <div className="lg:pl-[8%] lg:pt-6">
+          <p className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[.12em] text-[#314f49]">
+            <span className="h-[7px] w-[7px] rounded-full bg-[#ef765d]" aria-hidden="true" /> Book online
+          </p>
+          <h1 className="my-7 text-[clamp(3.1rem,6vw,5.4rem)] font-medium leading-[.98] tracking-[-.05em]" style={headingFont}>
+            Book a quiet hour with <em className="text-[#ef765d]">Dr. Kharel</em>
+          </h1>
+          <p className="max-w-[420px] text-[17px] text-[#69736d]">
+            A consultant psychiatrist in Kathmandu. Meet at the clinic or on a private video call, choose a time that suits you, and send your request in two minutes.
+          </p>
+          <div className="mt-9 flex flex-wrap items-center gap-6">
+            <a href="#book" className={`${btn} bg-[#ef765d] text-white`}>Start booking <ArrowUpRight size={16} aria-hidden="true" /></a>
+            <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border-b border-[#aeb6b0] pb-1 text-[13px] text-[#314f49]">
+              <MessageCircle size={15} aria-hidden="true" /> or WhatsApp us
+            </a>
+          </div>
+          <p className="mt-14 flex items-center gap-3 text-[11px] tracking-[.03em] text-[#69736d]">
+            <MapPin size={20} className="text-[#ef765d]" aria-hidden="true" /> Kalanki-14, Near Malpot Road, Kathmandu
+          </p>
+        </div>
+        <div className="relative lg:ml-[10%]">
+          <HeroArt className="h-full min-h-[420px] w-full object-cover" label="Illustration of a patient on a video call with a doctor, beneath a golden sun" />
+          <div className="absolute bottom-5 left-5 flex items-center gap-4 text-[10px] text-white">
+            <span className="h-px w-11 bg-white/60" aria-hidden="true" /> Care that comes to you
+          </div>
+          <div className="absolute -bottom-6 right-4 hidden w-40 overflow-hidden border-4 border-[#f5f4ef] shadow-xl sm:block">
+            <div className="relative aspect-square">
+              <Image src="/images/dr-kushal-headshot.jpg" alt="Dr. Kushal Kharel, consultant psychiatrist in Kathmandu" fill priority sizes="160px" className="object-cover" />
             </div>
-            <p className="mt-5 flex items-center gap-2 text-sm text-sage-200"><MapPin size={16} aria-hidden="true" /> Kalanki-14, Near Malpot Road, Kathmandu</p>
-          </div>
-          <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl border-4 border-white/20 shadow-2xl">
-            <Image src="/images/dr-kushal-headshot.jpg" alt="Dr. Kushal Kharel, consultant psychiatrist in Kathmandu" fill priority sizes="(max-width: 1024px) 90vw, 384px" className="object-cover" />
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-14 lg:px-8">
-        <h2 className="text-3xl font-bold">How booking works</h2>
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
-          {steps.map((s) => (
-            <article key={s.n} className="overflow-hidden rounded-xl bg-white shadow-sm">
-              <div className="relative h-48">
-                <Image src={s.image} alt={s.alt} fill sizes="(max-width: 768px) 100vw, 360px" className="object-cover" />
-              </div>
-              <div className="p-6">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-clay-600 font-bold text-white">{s.n}</span>
-                <h3 className="mt-4 text-xl font-bold">{s.title}</h3>
-                <p className="mt-2 leading-7 text-stone-600">{s.text}</p>
-              </div>
+      <div className="flex items-center justify-center gap-6 overflow-hidden whitespace-nowrap bg-[#314f49] px-4 py-4 text-[11px] uppercase tracking-[.17em] text-[#e6ede7] sm:gap-9 sm:text-xs" aria-hidden="true">
+        {marquee.map((m, i) => (
+          <span key={m} className={`flex items-center gap-6 sm:gap-9 ${i > 2 ? "hidden md:flex" : ""}`}>
+            {i > 0 && <i className="not-italic text-[#e9b477]">✦</i>}
+            {m}
+          </span>
+        ))}
+      </div>
+
+      <section className="mx-auto max-w-[1240px] px-6 py-20 lg:px-8">
+        <dl className="grid grid-cols-2 gap-px bg-[#d6d8d2] md:grid-cols-4">
+          {stats.map((s) => (
+            <div key={s.l} className="bg-[#f5f4ef] px-6 py-8">
+              <dt className="text-4xl font-medium text-[#ef765d]" style={headingFont}>{s.n}</dt>
+              <dd className="mt-2 text-sm text-[#69736d]">{s.l}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <section id="how" className="mx-auto max-w-[1240px] scroll-mt-6 px-6 pb-24 lg:px-8">
+        <p className="text-[11px] font-bold uppercase tracking-[.12em] text-[#ef765d]">How it works</p>
+        <h2 className="mt-5 max-w-2xl text-[clamp(2.4rem,4.3vw,4rem)] font-medium leading-[1] tracking-[-.04em]" style={headingFont}>
+          Three small steps to <em className="text-[#ef765d]">feeling heard</em>
+        </h2>
+        <div className="mt-14 grid gap-8 md:grid-cols-3">
+          {steps.map(({ Art, title, text, alt }, i) => (
+            <article key={title}>
+              <Art className="aspect-[4/3] w-full" label={alt} />
+              <p className="mt-6 text-[11px] font-bold text-[#ef765d]">0{i + 1}</p>
+              <h3 className="mt-3 text-2xl font-medium" style={headingFont}>{title}</h3>
+              <p className="mt-2 max-w-[300px] text-sm text-[#69736d]">{text}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-6 lg:px-8">
-        <BookingForm />
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
-        <h2 className="text-3xl font-bold">Why book here</h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {reasons.map(({ Icon, title, text }) => (
-            <article key={title} className="rounded-xl bg-white p-7 shadow-sm">
-              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-sage-100 text-sage-800"><Icon size={23} aria-hidden="true" /></span>
-              <h3 className="mt-5 text-xl font-bold">{title}</h3>
-              <p className="mt-2 leading-7 text-stone-600">{text}</p>
-            </article>
-          ))}
+      <section className="bg-[#e8e4d8] px-6 py-20 lg:px-8">
+        <div className="mx-auto max-w-4xl">
+          <BookingForm />
         </div>
       </section>
 
-      <section className="bg-sage-50 py-16">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <h2 className="text-3xl font-bold">Meet your psychiatrist</h2>
-          <p className="mt-3 max-w-2xl text-stone-600">Dr. Kharel combines clinical practice with training, public talks and community work across Nepal.</p>
-          <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3">
-            {gallery.map((g) => (
-              <figure key={g.src} className="overflow-hidden rounded-xl bg-white shadow-sm">
-                <div className="relative aspect-[4/3]">
-                  <Image src={g.src} alt={g.alt} fill sizes="(max-width: 768px) 50vw, 360px" className="object-cover" />
+      <section className="bg-[#314f49] px-6 py-24 text-[#f1f3ed] lg:px-8">
+        <div className="mx-auto max-w-[1176px]">
+          <p className="text-[11px] font-bold uppercase tracking-[.12em] text-[#e6b579]">Why book here</p>
+          <div className="mt-8 mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <h2 className="text-[clamp(2.6rem,5vw,4.6rem)] font-medium leading-none tracking-[-.04em]" style={headingFont}>
+              Care, <em className="text-[#ef765d]">simplified</em>
+            </h2>
+            <p className="max-w-[270px] text-[15px] text-[#c1d0c6]">Everything you need to arrange a consultation, without phone tag.</p>
+          </div>
+          <div>
+            {reasons.map(({ Icon, title, text }) => (
+              <article key={title} className="grid grid-cols-[38px_1fr] items-center gap-5 border-t border-[#e6f3e7]/25 py-6 last:border-b md:grid-cols-[70px_1fr] md:gap-9">
+                <Icon size={30} className="text-[#e8b979]" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-medium md:text-2xl" style={headingFont}>{title}</h3>
+                  <p className="mt-1 max-w-xl text-sm text-[#c1d0c6]">{text}</p>
                 </div>
-                <figcaption className="px-4 py-3 text-sm font-semibold text-stone-700">{g.caption}</figcaption>
-              </figure>
+              </article>
             ))}
           </div>
-          <p className="mt-6 text-sm"><Link href="/about/" className="font-semibold text-sage-800 underline">Read Dr. Kharel&apos;s full profile</Link> · <Link href="/patient-testimonials/" className="font-semibold text-sage-800 underline">Patient testimonials</Link> · <Link href="/psychiatrist-fee-nepal/" className="font-semibold text-sage-800 underline">Fee guide</Link></p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-6 py-16 lg:px-8">
-        <h2 className="text-3xl font-bold">Booking questions</h2>
-        <div className="mt-6 space-y-3">
+      <section id="doctor" className="mx-auto max-w-[1240px] scroll-mt-6 px-6 py-24 lg:px-8">
+        <div className="grid items-end gap-6 md:grid-cols-[1.2fr_.8fr]">
+          <div>
+            <p className="text-[11px] font-bold uppercase tracking-[.12em] text-[#ef765d]">Your doctor</p>
+            <h2 className="mt-5 text-[clamp(2.4rem,4.3vw,4rem)] font-medium leading-[1] tracking-[-.04em]" style={headingFont}>
+              Clinic, classroom and <em className="text-[#ef765d]">community</em>
+            </h2>
+          </div>
+          <p className="text-[#69736d]">Dr. Kharel combines clinical practice with training, public talks and community work across Nepal.</p>
+        </div>
+        <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:auto-rows-[200px]">
+          {gallery.map((g) => (
+            <figure key={g.src} className={`group relative min-h-[180px] overflow-hidden bg-[#c4d2c5] ${g.span}`}>
+              <Image src={g.src} alt={g.alt} fill sizes="(max-width: 768px) 50vw, 300px" className="object-cover transition duration-500 group-hover:scale-105" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#1f2927]/85 to-transparent px-4 pb-3 pt-10 text-xs font-medium text-white">{g.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+        <p className="mt-8 text-sm">
+          <Link href="/about/" className="border-b border-[#bbc1bc] pb-1 text-[#314f49]">Full profile</Link>
+          <span className="mx-4 text-[#aeb6b0]">/</span>
+          <Link href="/patient-testimonials/" className="border-b border-[#bbc1bc] pb-1 text-[#314f49]">Patient testimonials</Link>
+          <span className="mx-4 text-[#aeb6b0]">/</span>
+          <Link href="/psychiatrist-fee-nepal/" className="border-b border-[#bbc1bc] pb-1 text-[#314f49]">Fee guide</Link>
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-[1240px] px-6 pb-24 lg:px-8">
+        <div className="relative overflow-hidden">
+          <CalmArt className="h-full min-h-[300px] w-full object-cover" label="Calm landscape illustration with a golden sun over rolling hills" />
+          <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-14">
+            <p className="max-w-lg text-[clamp(1.6rem,3vw,2.6rem)] font-medium leading-tight text-white" style={headingFont}>
+              You do not need to be <em className="text-[#eabf7d]">in crisis</em> to ask for help.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" className="mx-auto max-w-4xl scroll-mt-6 px-6 pb-24 lg:px-8">
+        <p className="text-[11px] font-bold uppercase tracking-[.12em] text-[#ef765d]">Booking questions</p>
+        <h2 className="mt-5 text-[clamp(2.2rem,4vw,3.4rem)] font-medium tracking-[-.04em]" style={headingFont}>
+          Before you <em className="text-[#ef765d]">send</em>
+        </h2>
+        <div className="mt-8 border-b border-[#d6d8d2]">
           {faqs.map((f) => (
-            <details key={f.q} className="group rounded-xl bg-white p-5 shadow-sm">
-              <summary className="cursor-pointer font-bold">{f.q}</summary>
-              <p className="mt-3 leading-7 text-stone-600">{f.a}</p>
+            <details key={f.q} className="group border-t border-[#d6d8d2] py-5">
+              <summary className="flex cursor-pointer list-none items-center justify-between text-xl font-medium" style={headingFont}>
+                {f.q}
+                <span className="text-2xl text-[#ef765d] transition group-open:rotate-45" aria-hidden="true">+</span>
+              </summary>
+              <p className="mt-3 max-w-2xl text-[15px] text-[#69736d]">{f.a}</p>
             </details>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-6 lg:px-8">
-        <div className="rounded-2xl bg-sage-900 p-9 text-center text-white">
-          <h2 className="text-3xl font-bold">Ready when you are</h2>
-          <p className="mt-3 text-sage-100">Prefer to talk? Call or message the clinic directly.</p>
-          <div className="mt-6 flex flex-wrap justify-center gap-4">
-            <a href="tel:+9779861800547" className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3.5 font-bold text-sage-950"><Phone size={19} aria-hidden="true" /> {phone}</a>
-            <a href="#book" className="inline-flex items-center gap-2 rounded-lg bg-clay-600 px-6 py-3.5 font-bold text-white">Back to booking form</a>
+      <section className="bg-[#ef765d] px-6 py-24 text-center text-white">
+        <div className="mx-auto max-w-[670px]">
+          <p className="flex items-center justify-center gap-2 text-[11px] font-bold uppercase tracking-[.12em]">
+            <span className="h-[7px] w-[7px] rounded-full bg-white" aria-hidden="true" /> Ready when you are
+          </p>
+          <h2 className="my-6 text-[clamp(3rem,6vw,5.4rem)] font-medium leading-none tracking-[-.05em]" style={headingFont}>
+            Take the <em className="text-[#fff1d5]">first step</em>
+          </h2>
+          <p className="mx-auto mb-8 max-w-md">Prefer to talk? Call or message the clinic directly.</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="#book" className={`${btn} bg-[#1f2927] text-white`}>Back to the form <ArrowUpRight size={16} aria-hidden="true" /></a>
+            <a href="tel:+9779861800547" className={`${btn} bg-[#ebe9e1] text-[#1f2927]`}><Phone size={15} aria-hidden="true" /> {phone}</a>
           </div>
+          <p className="mx-auto mt-10 max-w-[510px] text-[10px] text-[#ffe3d9]">
+            This page is for appointment requests only. In an emergency, go to the nearest hospital emergency department or call the Nepal Police on 100.
+          </p>
         </div>
       </section>
+
+      <footer className="flex flex-col gap-3 bg-[#1f2927] px-6 py-8 text-[11px] text-[#c9d2cb] md:flex-row md:items-center md:justify-between lg:px-12">
+        <p><strong className="text-white">Dr. Kushal Kharel</strong> · Consultant Psychiatrist · NMC #27199</p>
+        <p>Kalanki-14, Kathmandu · Sun–Fri 8 AM–10 PM · Sat 10 AM–4 PM</p>
+      </footer>
     </main>
   );
 }
