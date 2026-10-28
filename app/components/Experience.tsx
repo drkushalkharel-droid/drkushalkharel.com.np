@@ -1,6 +1,22 @@
-import { GraduationCap, Home } from "lucide-react";
+import { Building2, GraduationCap, Home } from "lucide-react";
 
-const timeline = [
+const timeline: {
+  year: string;
+  title: string;
+  place: string;
+  href?: string;
+  description: string;
+  icon: typeof Home;
+}[] = [
+  {
+    year: "2026",
+    title: "Founder, Kathmandu Mental Health Clinic",
+    place: "kathmandumentalhealth.com.np",
+    href: "https://kathmandumentalhealth.com.np/",
+    description:
+      "Founded Kathmandu Mental Health Clinic, which offers online video consultations with psychiatrists for patients across Nepal and for Nepalis living abroad.",
+    icon: Building2,
+  },
   {
     year: "Ongoing",
     title: "Home-Based Psychiatric Clinic",
@@ -55,7 +71,15 @@ export default function Experience() {
                   <h3 className="mt-1 text-xl font-bold text-white">
                     {item.title}
                   </h3>
-                  <p className="text-sage-100">{item.place}</p>
+                  <p className="text-sage-100">
+                    {item.href ? (
+                      <a href={item.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-white">
+                        {item.place}
+                      </a>
+                    ) : (
+                      item.place
+                    )}
+                  </p>
                   <p className="mt-2 leading-7 text-stone-300">
                     {item.description}
                   </p>

@@ -16,7 +16,14 @@ export const aboutFacts = {
   // TODO(Dr. Kharel): degrees, residency, fellowships and certifications not already in the credentials table (MBBS, training abroad, CBT/ERP/EMDR certificates, ...).
   education: [] as AboutEducation[],
   // TODO(Dr. Kharel): hospitals, clinics and programs where you practice, consult or teach, with your role.
-  affiliations: [] as AboutAffiliation[],
+  affiliations: [
+    {
+      organisation: "Kathmandu Mental Health Clinic",
+      role: "Founder",
+      years: "2026",
+      url: "https://kathmandumentalhealth.com.np/",
+    },
+  ] as AboutAffiliation[],
   // TODO(Dr. Kharel): papers, conference presentations, posters, book chapters.
   publications: [
     {

@@ -241,7 +241,12 @@ export default function AboutPage() {
           <ul className="mt-6 space-y-3 text-stone-700">
             {aboutFacts.affiliations.map((item) => (
               <li key={`${item.organisation}-${item.role}`}>
-                <span className="font-semibold">{item.organisation}</span>: {item.role}
+                {item.url ? (
+                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-sage-800 underline">{item.organisation}</a>
+                ) : (
+                  <span className="font-semibold">{item.organisation}</span>
+                )}
+                : {item.role}
                 {item.years ? ` (${item.years})` : ""}
               </li>
             ))}
