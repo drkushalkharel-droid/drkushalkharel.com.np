@@ -86,7 +86,7 @@ export default function AppointmentGuide() {
   };
 
   return (
-    <section id="appointment-guide" className="bg-white py-24">
+    <section id="appointment-guide" className="bg-[#f5f4ef] py-14 md:py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
@@ -101,7 +101,7 @@ export default function AppointmentGuide() {
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-2">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:gap-10">
           {guides.map((guide) => {
             const Icon = guide.icon;
             return (
@@ -113,7 +113,7 @@ export default function AppointmentGuide() {
                 <p className="mt-2 leading-7 text-stone-600">{guide.description}</p>
                 <ol className="mt-5 space-y-4">
                   {guide.steps.map((step, index) => (
-                    <li key={step.name} className="rounded-lg bg-stone-50 p-4">
+                    <li key={step.name} className="rounded-lg bg-[#ebe9e1]/60 p-4">
                       <p className="font-bold text-stone-900">
                         Step {index + 1}: {step.name}
                       </p>

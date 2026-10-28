@@ -6,7 +6,7 @@ export default function ScreeningTeaser() {
   const featured = screeningTools.slice(0, 6);
 
   return (
-    <section id="screening" className="bg-white py-24">
+    <section id="screening" className="bg-[#f5f4ef] py-14 md:py-16">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
         <div>
           <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[3px] text-sage-700">
@@ -40,12 +40,12 @@ export default function ScreeningTeaser() {
           </div>
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2">
           {featured.map((tool) => (
             <Link
               key={tool.id}
               href={`/screening/${tool.id}/`}
-              className="block rounded-lg border border-stone-200 bg-stone-50 p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
+              className="block rounded-lg border border-stone-200 bg-[#ebe9e1]/60 p-6 shadow-sm transition hover:-translate-y-1 hover:border-sage-300 hover:shadow-md"
             >
               <h3 className="text-xl font-bold text-sage-950">{tool.shortTitle}</h3>
               <p className="mt-3 leading-7 text-stone-600">{tool.description}</p>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin } from "lucide-react";
+import { Laptop, Mail, MapPin, Phone } from "lucide-react";
 import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaThreads, FaYoutube } from "react-icons/fa6";
 
 const googleMapsUrl = "https://maps.app.goo.gl/2t5B2EqgDKYMRLE48";
@@ -45,11 +45,11 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="contact" className="bg-stone-950 text-white">
+    <footer id="contact" className="bg-sage-950 text-white">
 
       {/* Main Footer */}
 
-      <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+      <div className="max-w-7xl mx-auto px-6 py-12 grid lg:grid-cols-4 md:grid-cols-2 gap-10">
 
         {/* Clinic */}
 
@@ -69,26 +69,6 @@ export default function Footer() {
             psychiatric care for children, adolescents and adults.
           </p>
 
-          {/* Social Media Links */}
-          <div className="flex gap-4 mt-6">
-            {socialLinks.map((social) => {
-              const Icon = social.icon;
-              return (
-                <a
-                  key={social.name}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Follow on ${social.name}`}
-                  title={`Follow on ${social.name}`}
-                  className={`text-gray-400 transition-colors ${social.color}`}
-                >
-                  <Icon size={24} aria-hidden="true" />
-                </a>
-              );
-            })}
-          </div>
-
         </div>
 
         {/* Quick Links */}
@@ -99,7 +79,7 @@ export default function Footer() {
             Quick Links
           </h3>
 
-          <div className="space-y-4 text-gray-400">
+          <div className="space-y-0 text-gray-300 [&>a]:py-2.5">
 
             <Link href="/" className="block hover:text-white transition">
               Home
@@ -149,7 +129,7 @@ export default function Footer() {
             Our Services
           </h3>
 
-          <div className="space-y-4 text-gray-400">
+          <div className="space-y-0 text-gray-300 [&>a]:py-2.5">
 
             <Link href="/online-psychiatrist-nepal/" className="block hover:text-white transition">
               Online Psychiatrist Consultation
@@ -231,7 +211,7 @@ export default function Footer() {
             Resources &amp; Articles
           </h3>
 
-          <div className="space-y-4 text-gray-400">
+          <div className="space-y-0 text-gray-300 [&>a]:py-2.5">
 
             <Link href="/knowledge/" className="block hover:text-white transition">
               Mental Health Articles
@@ -277,7 +257,7 @@ export default function Footer() {
             For International Patients
           </h3>
 
-          <div className="space-y-4 text-gray-400">
+          <div className="space-y-0 text-gray-300 [&>a]:py-2.5">
 
             <Link href="/nepalese-abroad/" className="block hover:text-white transition">
               Nepalese Abroad
@@ -401,13 +381,13 @@ export default function Footer() {
 
             <address className="not-italic">
               <p className="font-semibold text-white">
-                📍 Clinic
+                <MapPin size={16} className="mr-2 inline" aria-hidden="true" />Clinic
               </p>
 
               <p>Kalanki-14, Near Malpot Road</p>
               <p>Near Kalanki Bhatbhateni Supermarket</p>
               <p>Kathmandu 44600, Bagmati, Nepal</p>
-              <p className="mt-2 text-sm text-gray-500">
+              <p className="mt-2 text-sm text-gray-400">
                 Roadside parking available nearby
               </p>
 
@@ -424,7 +404,7 @@ export default function Footer() {
 
             <div>
               <p className="font-semibold text-white">
-                📞 Phone
+                <Phone size={16} className="mr-2 inline" aria-hidden="true" />Phone
               </p>
 
               <a href="tel:+9779861800547" className="hover:text-white transition">
@@ -434,7 +414,7 @@ export default function Footer() {
 
             <div>
               <p className="font-semibold text-white">
-                ✉ Email
+                <Mail size={16} className="mr-2 inline" aria-hidden="true" />Email
               </p>
 
               <a href="mailto:drkushalkharel@gmail.com" className="hover:text-white transition">
@@ -444,7 +424,7 @@ export default function Footer() {
 
             <div>
               <p className="font-semibold text-white">
-                💻 Consultation
+                <Laptop size={16} className="mr-2 inline" aria-hidden="true" />Consultation
               </p>
 
               <p>
@@ -468,14 +448,14 @@ export default function Footer() {
             Connect with us on social media for mental health tips and updates.
           </p>
 
-          <div className="space-y-3">
+          <div className="flex flex-col">
             {socialLinks.map((social) => (
               <a
                 key={social.name}
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 text-gray-400 hover:text-white transition group"
+                className="inline-flex items-center gap-3 py-2.5 text-gray-300 hover:text-white transition group"
               >
                 <social.icon size={18} className={social.color} aria-hidden="true" />
                 <span>{social.name}</span>
@@ -488,7 +468,7 @@ export default function Footer() {
               site as a source they'd like to see more of in Google
               Search, Top Stories and AI Overviews/AI Mode. */}
           <div className="mt-6 pt-6 border-t border-gray-800">
-            <p className="text-gray-500 text-xs mb-3">
+            <p className="text-gray-300 text-sm mb-3">
               See more from us on Google
             </p>
             <div
@@ -505,13 +485,13 @@ export default function Footer() {
 
       <div className="border-t border-gray-800">
 
-        <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="max-w-7xl mx-auto px-6 pt-8 pb-28 md:pb-8 flex flex-col md:flex-row justify-between items-center">
 
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-400 text-sm">
             © 2026 Dr. Kushal Kharel. All Rights Reserved.
           </p>
 
-          <div className="flex gap-8 text-gray-400 text-sm mt-4 md:mt-0">
+          <div className="flex flex-wrap gap-x-8 text-gray-300 text-sm mt-4 md:mt-0 md:pr-24 [&>a]:py-2.5">
 
             <Link href="/privacy-policy/" className="hover:text-white">
               Privacy Policy

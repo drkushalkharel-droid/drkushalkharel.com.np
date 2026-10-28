@@ -180,11 +180,12 @@ h3 {
   font-family: var(--font-serif-site), Georgia, serif;
   font-weight: 500;
   letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
 h1 em,
 h2 em {
-  color: var(--color-clay-500);
+  color: var(--color-clay-700);
   font-style: italic;
 }
 
@@ -193,4 +194,33 @@ h2 em {
 [lang="ne"] h3 {
   font-family: var(--font-sans-site), system-ui, sans-serif;
   letter-spacing: 0;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-sage-800);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+footer :focus-visible,
+.on-dark :focus-visible {
+  outline-color: #f2c48d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }

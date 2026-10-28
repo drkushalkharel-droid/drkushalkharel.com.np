@@ -100,9 +100,9 @@ export default function AboutPage() {
 
       <section className="bg-white">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 pb-14 pt-28 lg:grid-cols-[0.9fr_1.1fr] lg:px-8 lg:pt-32">
-          <div className="overflow-hidden rounded-2xl shadow-xl">
+          <div className="self-start overflow-hidden rounded-2xl shadow-xl">
             <Image
-              src="/images/doctor.png"
+              src="/images/speaker.jpg"
               alt="Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu, Nepal"
               width={700}
               height={900}

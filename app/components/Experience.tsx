@@ -21,7 +21,7 @@ const timeline = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-stone-950 py-24 text-white">
+    <section id="experience" className="bg-sage-950 py-14 md:py-16 text-white">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <span className="text-sm font-semibold uppercase tracking-[4px] text-clay-200">

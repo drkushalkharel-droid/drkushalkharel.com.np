@@ -40,7 +40,7 @@ const concerns = [
   "Not sure yet",
 ];
 
-const languages = ["Nepali", "English", "Hindi"];
+const languages = ["Nepali", "English", "Hindi", "Bangla", "Singlish"];
 
 // Clinic hours (Nepal time): Sunday–Friday 8:00–22:00, Saturday 10:00–16:00.
 const hoursFor = (day: number) => (day === 6 ? { start: 10, end: 16 } : { start: 8, end: 22 });
@@ -146,7 +146,7 @@ export default function BookingForm() {
             <legend className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-serif-site), Georgia, serif" }}>How would you like to meet?</legend>
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               {visitTypes.map((v) => (
-                <label key={v.id} className={`cursor-pointer overflow-hidden border-2 transition ${visit === v.id ? "border-[#ef765d] ring-4 ring-[#ef765d]/20" : "border-[#d6d8d2] hover:border-[#314f49]"}`}>
+                <label key={v.id} className={`cursor-pointer overflow-hidden border-2 transition ${visit === v.id ? "border-[#c4462c] ring-4 ring-[#ef765d]/20" : "border-[#d6d8d2] hover:border-[#314f49]"}`}>
                   <input type="radio" name="visit" value={v.id} checked={visit === v.id} onChange={() => setVisit(v.id)} className="sr-only" />
                   <div className="relative h-48 bg-stone-100">
                     <Image src={v.image} alt={v.alt} fill sizes="(max-width: 640px) 100vw, 420px" className="object-cover" />
@@ -186,7 +186,7 @@ export default function BookingForm() {
                 <p className="flex items-center gap-2 font-semibold text-stone-800"><CalendarDays size={18} aria-hidden="true" /> Available times</p>
                 <div className="mt-3 grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6" role="radiogroup" aria-label="Preferred time">
                   {slots.map((s) => (
-                    <button key={s} type="button" role="radio" aria-checked={slot === s} onClick={() => setSlot(s)} className={`border-2 px-2 py-2.5 text-sm font-semibold transition ${slot === s ? "border-[#ef765d] bg-[#ef765d] text-white" : "border-[#d6d8d2] bg-white hover:border-[#ef765d]"}`}>
+                    <button key={s} type="button" role="radio" aria-checked={slot === s} onClick={() => setSlot(s)} className={`border-2 px-2 py-2.5 text-sm font-semibold transition ${slot === s ? "border-[#c4462c] bg-[#c4462c] text-white" : "border-[#d6d8d2] bg-white hover:border-[#c4462c]"}`}>
                       {label12(s)}
                     </button>
                   ))}
@@ -261,7 +261,7 @@ export default function BookingForm() {
             <ArrowLeft size={18} aria-hidden="true" /> Back
           </button>
           {step < 3 && (
-            <button type="button" onClick={() => setStep(step + 1)} disabled={!canNext} className="inline-flex items-center gap-2 bg-[#ef765d] px-7 py-3 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#c4462c] disabled:cursor-not-allowed disabled:opacity-40">
+            <button type="button" onClick={() => setStep(step + 1)} disabled={!canNext} className="inline-flex items-center gap-2 bg-[#c4462c] px-7 py-3 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#a63a23] disabled:cursor-not-allowed disabled:opacity-40">
               Next <ArrowRight size={18} aria-hidden="true" />
             </button>
           )}

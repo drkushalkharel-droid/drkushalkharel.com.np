@@ -201,7 +201,7 @@ export function buildPhysicianJsonLd() {
       name: "KIST Medical College Teaching Hospital",
     },
     areaServed: ["Kathmandu", "Nepal", "Online"],
-    knowsLanguage: ["English", "Nepali"],
+    knowsLanguage: ["English", "Nepali", "Hindi", "Bengali"],
     knowsAbout: [
       "Anxiety disorders",
       "Depression",

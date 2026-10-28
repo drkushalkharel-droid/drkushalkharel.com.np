@@ -1,63 +1,63 @@
-import { MessageCircle, Phone } from "lucide-react";
+import { Brain, Building2, ClipboardCheck, HeartHandshake, HeartPulse, Laptop, Leaf, MessageCircle, MessageSquareText, Phone, Pill, Users } from "lucide-react";
 
 export default function Services() {
   const services = [
     {
-      icon: "🧠",
+      icon: Brain,
       title: "General Adult Psychiatry",
       description:
         "Comprehensive psychiatric assessment, diagnosis and evidence-based treatment for adults experiencing mental health concerns.",
     },
     {
-      icon: "👨‍👩‍👧",
+      icon: Users,
       title: "Child & Adolescent Mental Health",
       description:
         "General psychiatric evaluation and treatment of ADHD, autism spectrum disorder, behavioural difficulties, emotional problems and developmental concerns.",
     },
     {
-      icon: "💊",
+      icon: Pill,
       title: "Medication Management",
       description:
         "Safe, individualized medication treatment with regular monitoring and long-term follow-up.",
     },
     {
-      icon: "💬",
+      icon: MessageSquareText,
       title: "Psychotherapy & Counselling",
       description:
         "Supportive counselling, cognitive behavioural therapy (CBT)-based interventions, psychoeducation and family counselling.",
     },
     {
-      icon: "🍃",
+      icon: Leaf,
       title: "De-addiction Services",
       description:
         "Assessment and treatment of alcohol, nicotine and substance use disorders with relapse prevention strategies.",
     },
     {
-      icon: "💻",
+      icon: Laptop,
       title: "Online Consultation",
       description:
         "Secure telepsychiatry consultations for patients throughout Nepal and internationally.",
     },
     {
-      icon: "🏥",
+      icon: ClipboardCheck,
       title: "Mental Health Screening",
       description:
         "Comprehensive psychiatric evaluations, psychological screening and early detection of mental health disorders.",
     },
     {
-      icon: "🧓",
+      icon: HeartPulse,
       title: "Geriatric Psychiatry",
       description:
         "Assessment and management of dementia, memory disorders, depression and anxiety in older adults.",
     },
     {
-      icon: "❤️",
+      icon: HeartHandshake,
       title: "Personalized Treatment Plans",
       description:
         "Every treatment plan is tailored to the patient's symptoms, lifestyle, family circumstances and recovery goals.",
     },
     {
-      icon: "🏢",
+      icon: Building2,
       title: "Corporate Mental Health Screening",
       description:
         "On-site mental health screening and stress management workshops for schools, offices, banks and corporate organizations to support employee and student wellbeing.",
@@ -65,7 +65,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-stone-50">
+    <section id="services" className="py-14 md:py-16 bg-[#ebe9e1]/60">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
@@ -91,28 +91,28 @@ export default function Services() {
 
         {/* Cards */}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
 
           {services.map((service) => (
 
             <div
               key={service.title}
-              className="bg-white rounded-3xl p-8 shadow-lg transition-all duration-300 border border-gray-100 hover-lift"
+              className="bg-white rounded-2xl p-6 shadow-md transition-all duration-300 border border-gray-100 hover-lift"
             >
 
-              <div className="w-16 h-16 rounded-2xl bg-sage-100 flex items-center justify-center text-4xl">
+              <div className="w-12 h-12 rounded-xl bg-sage-100 flex items-center justify-center text-sage-800">
 
-                {service.icon}
+                <service.icon size={24} aria-hidden="true" />
 
               </div>
 
-              <h3 className="mt-6 text-2xl font-bold text-sage-900">
+              <h3 className="mt-4 text-xl font-bold text-sage-900">
 
                 {service.title}
 
               </h3>
 
-              <p className="mt-4 text-gray-600 leading-8">
+              <p className="mt-3 text-stone-700 leading-7">
 
                 {service.description}
 
@@ -126,7 +126,7 @@ export default function Services() {
 
         {/* Bottom CTA */}
 
-        <div className="mt-20 bg-gradient-to-r from-sage-900 to-sage-700 rounded-3xl p-12 text-center text-white">
+        <div className="mt-12 bg-gradient-to-r from-sage-900 to-sage-700 rounded-2xl p-8 md:p-12 text-center text-white">
 
           <h3 className="text-4xl font-bold">
 

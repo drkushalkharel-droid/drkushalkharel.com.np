@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import Link from "next/link";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaThreads, FaYoutube } from "react-icons/fa6";
@@ -41,25 +41,57 @@ const mobileGroups: { label: string; links: NavLink[] }[] = [
   { label: "Conditions", links: conditionsLinks },
   { label: "Tools", links: toolsLinks },
   { label: "Find Care", links: findCareLinks },
-  { label: "", links: [{ href: "/appointment", label: "Book an appointment" }] },
+  { label: "", links: [{ href: "/book", label: "Book an appointment" }] },
 ];
 
 function NavDropdown({ label, links }: { label: string; links: NavLink[] }) {
+  const [open, setOpen] = useState(false);
+  const id = useId();
+  const root = useRef<HTMLDivElement>(null);
+  const button = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        button.current?.focus();
+      }
+    };
+    const onClick = (e: MouseEvent) => {
+      if (!root.current?.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onClick);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onClick);
+    };
+  }, [open]);
+
   return (
-    <div className="group relative">
+    <div ref={root} className="group relative">
       <button
+        ref={button}
         type="button"
-        className="inline-flex items-center gap-1 font-medium text-gray-700 transition hover:text-sage-700"
+        aria-expanded={open}
+        aria-controls={id}
+        onClick={() => setOpen((o) => !o)}
+        className="inline-flex items-center gap-1 py-2 font-medium text-gray-700 transition hover:text-sage-700"
       >
         {label}
         <ChevronDown size={16} aria-hidden="true" />
       </button>
-      <div className="invisible absolute left-0 top-full z-50 w-64 rounded-lg border border-gray-100 bg-white py-2 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100">
+      <div
+        id={id}
+        className={`absolute left-0 top-full z-50 w-64 rounded-lg border border-gray-100 bg-white py-2 shadow-lg transition group-hover:visible group-hover:opacity-100 ${open ? "visible opacity-100" : "invisible opacity-0"}`}
+      >
         {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="block px-4 py-2.5 text-sm font-medium text-gray-700 transition hover:bg-sage-50 hover:text-sage-700"
+            onClick={() => setOpen(false)}
+            className="block px-4 py-3 text-sm font-medium text-gray-700 transition hover:bg-sage-50 hover:text-sage-700"
           >
             {link.label}
           </Link>
@@ -120,7 +152,7 @@ export default function Navbar() {
               Dr. Kushal Kharel
             </span>
 
-            <span className="text-[11px] uppercase tracking-[.08em] text-[#69736d]">
+            <span className="text-xs uppercase tracking-[.08em] text-[#5a635e]">
               Consultant Psychiatrist
             </span>
 
@@ -172,25 +204,27 @@ export default function Navbar() {
             <Link
               href="/book/"
               data-conversion="appointment"
-              className="hidden md:inline-flex px-5 py-3 bg-clay-500 text-white text-[13px] font-semibold hover:bg-clay-700 transition"
+              className="hidden md:inline-flex px-5 py-3 bg-clay-700 text-white text-sm font-semibold hover:bg-clay-800 transition"
             >
               Book appointment
             </Link>
 
             <a
               href="tel:+9779861800547"
-              className="hidden md:inline-flex items-center gap-2 bg-[#1f2927] hover:bg-sage-800 text-white px-5 py-3 text-[13px] font-semibold transition"
+              className="hidden md:inline-flex items-center gap-2 bg-[#1f2927] hover:bg-sage-800 text-white px-5 py-3 text-sm font-semibold transition"
             >
               <Phone size={18} aria-hidden="true" />
               Call Now
             </a>
+
+            <Link href="/book/" data-conversion="appointment" className="inline-flex h-11 items-center bg-clay-700 px-4 text-sm font-semibold text-white md:hidden">Book</Link>
 
             <button
               type="button"
               onClick={() => setMobileOpen((open) => !open)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
-              className="inline-flex items-center justify-center rounded-xl p-2.5 text-gray-700 transition hover:bg-gray-100 xl:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-xl text-gray-700 transition hover:bg-gray-100 xl:hidden"
             >
               {mobileOpen ? <X size={26} aria-hidden="true" /> : <Menu size={26} aria-hidden="true" />}
             </button>

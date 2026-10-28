@@ -15,7 +15,7 @@ const guides = [
 
 export default function HomeGuides() {
   return (
-    <section id="guides" className="bg-white py-20">
+    <section id="guides" className="bg-[#f5f4ef] py-14 md:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-stone-950 md:text-4xl">Helpful guides before you book</h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

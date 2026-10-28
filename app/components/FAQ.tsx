@@ -27,7 +27,7 @@ export default function FAQ({
   };
 
   return (
-    <section id="faq" className="bg-stone-50 py-24">
+    <section id="faq" className="bg-[#ebe9e1]/60 py-14 md:py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqJsonLd) }}
@@ -43,15 +43,15 @@ export default function FAQ({
           </h2>
         </div>
 
-        <div className="mt-14 space-y-6">
+        <div className="mt-10 border-b border-stone-300">
           {items.map((faq) => (
-            <article
-              key={faq.question}
-              className="rounded-lg border border-stone-200 bg-white p-6 shadow-sm md:p-8"
-            >
-              <h3 className="text-xl font-bold text-sage-950">{faq.question}</h3>
-              <p className="mt-3 leading-8 text-stone-600">{faq.answer}</p>
-            </article>
+            <details key={faq.question} className="group border-t border-stone-300 py-5">
+              <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-sage-950 md:text-xl">
+                <h3 className="font-semibold">{faq.question}</h3>
+                <span className="text-2xl text-clay-700 transition group-open:rotate-45" aria-hidden="true">+</span>
+              </summary>
+              <p className="mt-3 max-w-3xl leading-8 text-stone-700">{faq.answer}</p>
+            </details>
           ))}
         </div>
 

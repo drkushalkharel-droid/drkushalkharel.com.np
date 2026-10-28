@@ -95,13 +95,13 @@ export function StepSendArt({ className, label }: Props) {
 
 export function CalmArt({ className, label }: Props) {
   return (
-    <svg viewBox="0 0 640 360" role="img" aria-label={label} className={className}>
+    <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label={label} className={className}>
       <rect width="640" height="360" fill={DEEP} />
       <circle cx="500" cy="120" r="70" fill={GOLD} />
       <path d="M0 360V250c120-70 240-70 360 0s200 40 280-20v130z" fill="#3d5f58" />
       <path d="M0 360V290c140-50 260-30 380 10s190 10 260-10v70z" fill={SAGE} opacity=".9" />
-      <path d="M120 300c-10-50-6-90 14-130 24 38 24 86 2 130z" fill={CORAL} />
-      <path d="M160 300c10-40 24-72 52-96-6 40-22 74-52 96z" fill={LEAF} />
+      <path transform="translate(260 0)" d="M120 300c-10-50-6-90 14-130 24 38 24 86 2 130z" fill={CORAL} />
+      <path transform="translate(260 0)" d="M160 300c10-40 24-72 52-96-6 40-22 74-52 96z" fill={LEAF} />
     </svg>
   );
 }

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Statistics from "./components/Statistics";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Awards from "./components/Awards";
@@ -111,10 +110,10 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
       />
       <Navbar />
+      <main id="main">
       <Hero />
       <ScreeningTeaser />
       <AbroadSeoSection />
-      <Statistics />
       <About />
       <Experience />
       <Awards />
@@ -125,6 +124,7 @@ export default function Home() {
       <GoogleReviewsMap />
       <HomeGuides />
       <FAQ />
+      </main>
       <Footer />
     </>
   );

@@ -12,9 +12,9 @@ const uncoveredCountries = abroadGuides.filter(
 
 export default function AbroadSeoSection() {
   return (
-    <section id="nepalese-abroad" className="bg-white py-20">
+    <section id="nepalese-abroad" className="bg-[#f5f4ef] py-14 md:py-16">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
-        <div className="rounded-lg border border-stone-200 bg-stone-50 p-8 shadow-sm">
+        <div className="rounded-lg border border-stone-200 bg-[#ebe9e1]/60 p-8 shadow-sm">
           <div className="flex items-start gap-4">
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sage-100 text-sage-800">
               <Globe2 size={22} aria-hidden="true" />

@@ -6,7 +6,7 @@ const embedUrl =
 
 export default function GoogleReviewsMap() {
   return (
-    <section id="google-reviews" className="bg-white py-24">
+    <section id="google-reviews" className="bg-[#f5f4ef] py-14 md:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
@@ -39,7 +39,7 @@ export default function GoogleReviewsMap() {
             <div className="mt-6 flex flex-wrap gap-4">
               <a
                 href="tel:+9779861800547"
-                className="inline-flex items-center gap-3 rounded-lg bg-stone-950 px-5 py-3 font-bold text-white transition hover:bg-stone-800"
+                className="inline-flex items-center gap-3 rounded-lg bg-sage-950 px-5 py-3 font-bold text-white transition hover:bg-stone-800"
               >
                 <Phone size={18} aria-hidden="true" />
                 +977 9861800547
@@ -56,7 +56,7 @@ export default function GoogleReviewsMap() {
             </div>
           </div>
 
-          <div className="rounded-lg border border-stone-200 bg-stone-50 p-6 shadow-sm">
+          <div className="rounded-lg border border-stone-200 bg-[#ebe9e1]/60 p-6 shadow-sm">
             <div className="grid gap-4 md:grid-cols-3">
               {[
                 ["Verified source", "Reviews open on the official Google Maps profile."],

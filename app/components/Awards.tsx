@@ -13,7 +13,7 @@ const certificates = [
 
 export default function Awards() {
   return (
-    <section id="awards" className="bg-stone-950 py-24 text-white">
+    <section id="awards" className="bg-sage-950 py-14 md:py-16 text-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center animate-fade-up">
           <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[3px] text-clay-200">
@@ -29,9 +29,9 @@ export default function Awards() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
-          <figure className="overflow-hidden rounded-lg border border-white/10 bg-white/5 shadow-2xl hover-lift">
-            <div className="relative aspect-[4/3] bg-stone-800">
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <figure className="overflow-hidden border border-white/10 bg-white/5 shadow-2xl hover-lift">
+            <div className="relative mx-auto aspect-[3/4] w-full bg-sage-900">
               <Image
                 src="/images/award-1600.jpg"
                 alt="Dr. Kushal Kharel receiving professional recognition"
@@ -58,8 +58,8 @@ export default function Awards() {
             </figcaption>
           </figure>
 
-          <figure className="overflow-hidden rounded-lg border border-white/10 bg-white/5 shadow-2xl hover-lift">
-            <div className="relative aspect-[4/3] bg-stone-800">
+          <figure className="overflow-hidden border border-white/10 bg-white/5 shadow-2xl hover-lift">
+            <div className="relative mx-auto aspect-[3/4] w-full bg-sage-900">
               <Image
                 src="/images/speaker-1600.jpg"
                 alt="Dr. Kushal Kharel speaking at a professional program"
@@ -87,7 +87,7 @@ export default function Awards() {
           </figure>
         </div>
 
-        <div className="mt-6 rounded-lg border border-white/10 bg-white/5 p-6 md:p-8">
+        <div className="mt-6 border border-white/10 bg-white/5 p-6 md:p-8">
           <div className="flex flex-col justify-between gap-5 md:flex-row md:items-center">
             <div className="flex items-start gap-4">
               <Newspaper size={28} className="mt-1 shrink-0 text-clay-200" aria-hidden="true" />
@@ -111,7 +111,7 @@ export default function Awards() {
           </div>
         </div>
 
-        <div className="mt-6 rounded-lg border border-white/10 bg-white/5 p-6 md:p-8">
+        <div className="mt-6 border border-white/10 bg-white/5 p-6 md:p-8">
           <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
             <div>
               <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[3px] text-clay-200">
@@ -141,7 +141,7 @@ export default function Awards() {
               {certificates.map((certificate, index) => (
                 <div
                   key={certificate}
-                  className="group/cert overflow-hidden rounded-lg border border-white/10 bg-stone-800 shadow-lg"
+                  className="group/cert overflow-hidden border border-white/10 bg-stone-800 shadow-lg"
                 >
                   <div className="relative aspect-[1.42/1]">
                     <Image
