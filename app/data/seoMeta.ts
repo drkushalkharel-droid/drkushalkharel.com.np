@@ -241,7 +241,7 @@ export const seoMeta: Record<string, SeoEntry> = {
   "/psychology-internship-nepal/": {
     title: "Psychology Internship in Kathmandu, Nepal",
     description:
-      "A free internship for psychology and social work students at a psychiatric clinic in Kalanki, Kathmandu. See what it involves and how to apply.",
+      "A supervised, paid internship for psychology and social work students at a psychiatric clinic in Kalanki, Kathmandu. See what it involves and the fee.",
   },
   "/psychosis-treatment-kathmandu/": {
     title: "Psychosis Treatment in Kathmandu, Nepal",

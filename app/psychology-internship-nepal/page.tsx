@@ -6,9 +6,9 @@ import { seoDescription, seoTitle } from "../lib/seoText";
 
 const siteUrl = "https://drkushalkharel.com.np";
 const pageUrl = `${siteUrl}/psychology-internship-nepal`;
-const title = seoTitle("/psychology-internship-nepal/", "Free Psychology & Social Work Internship in Kathmandu, Nepal");
+const title = seoTitle("/psychology-internship-nepal/", "Psychology & Social Work Internship in Kathmandu, Nepal");
 const description =
-  seoDescription("/psychology-internship-nepal/", "Dr. Kushal Kharel offers a free internship for psychology and social work students at his psychiatric clinic in Kalanki, Kathmandu. Learn what it involves and how to apply.");
+  seoDescription("/psychology-internship-nepal/", "Dr. Kushal Kharel offers a supervised internship for psychology and social work students at his psychiatric clinic in Kalanki, Kathmandu. Learn what it involves, the fee and how to apply.");
 
 export const metadata: Metadata = {
   title,
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   keywords: [
     "Psychology internship Nepal",
     "Social work internship Kathmandu",
-    "Free psychiatry internship Nepal",
+    "Psychiatry internship Nepal",
     "Psychology student internship Kathmandu",
     "Clinical internship psychiatry Nepal",
   ],
@@ -49,9 +49,9 @@ const whatItInvolves = [
 
 const faqs = [
   {
-    question: "Is the internship really free?",
+    question: "Is the internship free? What does it cost?",
     answer:
-      "Yes. Dr. Kushal Kharel offers this internship free of cost to psychology and social work students; there is no fee to apply or to participate.",
+      "No, this is a paid internship programme. The fee depends on the duration and your institution's requirements, and it is shared when you enquire. In return, interns receive supervised clinical exposure, case discussion and feedback from Dr. Kushal Kharel throughout the placement.",
   },
   {
     question: "Who is eligible to apply?",
@@ -128,10 +128,10 @@ export default function PsychologyInternshipPage() {
             <GraduationCap size={26} aria-hidden="true" />
           </span>
           <h1 className="mt-6 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
-            Free Psychology &amp; Social Work Internship in Kathmandu
+            Psychology &amp; Social Work Internship in Kathmandu
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
-            Dr. Kushal Kharel offers a free clinical internship at his psychiatric clinic in Kalanki, Kathmandu, for psychology and social work students who need clinical exposure or a field-work placement. There is no fee to apply or participate.
+            Dr. Kushal Kharel offers a supervised clinical internship at his psychiatric clinic in Kalanki, Kathmandu, for psychology and social work students who need clinical exposure or a field-work placement. This is a paid programme; the fee is shared when you enquire.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a href="tel:+9779861800547" className="inline-flex items-center gap-3 rounded-lg bg-sage-700 px-6 py-3 font-bold text-white transition hover:bg-sage-800">
@@ -162,7 +162,7 @@ export default function PsychologyInternshipPage() {
               ))}
             </ul>
             <div className="mt-8 rounded-lg border border-amber-200 bg-amber-50 p-5 leading-7 text-amber-950">
-              This internship is free of cost. There is no application fee, and no payment is required at any stage.
+              This is a paid internship. Contact the clinic for the current fee for your required duration. Interns receive supervised clinical exposure, case discussion and feedback from Dr. Kushal Kharel.
             </div>
           </div>
 
