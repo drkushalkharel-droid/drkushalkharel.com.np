@@ -27,6 +27,12 @@ export const aboutFacts = {
       doi: "10.1097/MS9.0000000000005673",
       url: "https://www.ovid.com/jnls/annals-of-medicine-and-surgery/fulltext/10.1097/ms9.0000000000005673~severe-upper-gastrointestinal-corrosive-injury-following",
     },
+    {
+      title: "NepMedJPBench: A Physician-Authored Benchmark and Meta-Evaluation of Cross-Lingual Medical Summarization from Japanese to Nepali",
+      authors: "Kushal Kharel and co-authors",
+      venue: "Under review, ACL Rolling Review (October 2026 cycle)",
+      year: "2026",
+    },
   ] as AboutPublication[],
   // TODO(Dr. Kharel): interviews, op-eds, radio/TV or newspaper quotes (link to each).
   mediaMentions: [] as AboutMention[],
