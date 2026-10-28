@@ -1,4 +1,4 @@
-import { Building2, GraduationCap, Home } from "lucide-react";
+import { Building2, GraduationCap, HeartHandshake, Home } from "lucide-react";
 
 const timeline: {
   year: string;
@@ -16,6 +16,33 @@ const timeline: {
     description:
       "Founded Kathmandu Mental Health Clinic, which offers online video consultations with psychiatrists for patients across Nepal and for Nepalis living abroad.",
     icon: Building2,
+  },
+  {
+    year: "2022 – 2023",
+    title: "District Chairperson, Lions District 325 K",
+    place: "Lions Clubs International",
+    href: "/community-mental-health-programs/",
+    description:
+      "Served at district level, supporting community service and mental-health awareness work across Lions clubs.",
+    icon: HeartHandshake,
+  },
+  {
+    year: "2021 – 2022",
+    title: "President, Lions Club of Kathmandu Saya",
+    place: "Lions Clubs International",
+    href: "/community-mental-health-programs/",
+    description:
+      "Led the club as a mental-health advocate, including awareness programmes, school outreach, health camps and blood donation drives.",
+    icon: HeartHandshake,
+  },
+  {
+    year: "2019 – 2020",
+    title: "Vice President, Lions Club of Kathmandu Saya",
+    place: "Lions Clubs International",
+    href: "/community-mental-health-programs/",
+    description:
+      "Supported the club's community health and mental-health awareness activities as vice president.",
+    icon: HeartHandshake,
   },
   {
     year: "Ongoing",
@@ -73,7 +100,7 @@ export default function Experience() {
                   </h3>
                   <p className="text-sage-100">
                     {item.href ? (
-                      <a href={item.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-white">
+                      <a href={item.href} {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="underline underline-offset-4 hover:text-white">
                         {item.place}
                       </a>
                     ) : (

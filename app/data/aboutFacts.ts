@@ -23,6 +23,9 @@ export const aboutFacts = {
       years: "2026",
       url: "https://kathmandumentalhealth.com.np/",
     },
+    { organisation: "Lions District 325 K", role: "District Chairperson", years: "2022–2023" },
+    { organisation: "Lions Club of Kathmandu Saya", role: "President", years: "2021–2022" },
+    { organisation: "Lions Club of Kathmandu Saya", role: "Vice President", years: "2019–2020" },
   ] as AboutAffiliation[],
   // TODO(Dr. Kharel): papers, conference presentations, posters, book chapters.
   publications: [
