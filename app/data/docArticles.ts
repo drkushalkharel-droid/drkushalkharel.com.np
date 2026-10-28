@@ -27,7 +27,9 @@ export type DocArticle = {
   diagram?: { src: string; alt: string; caption: string };
 };
 
-export const docArticles = [
+import { aiNepaliArticles } from "./aiNepaliArticles";
+
+const baseDocArticles = [
   {
     "slug": "boost-mental-health",
     "title": "How to Boost Mental Health: Practical Daily Habits | मानसिक स्वास्थ्य कसरी सुधार्ने",
@@ -1808,3 +1810,5 @@ export const docArticles = [
     ]
   }
 ] as DocArticle[];
+
+export const docArticles: DocArticle[] = [...baseDocArticles, ...aiNepaliArticles];

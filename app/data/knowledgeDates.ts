@@ -6,6 +6,16 @@
 // `reviewed` is optional: set it only if the doctor reviews an article without
 // editing it; otherwise the last-reviewed date is taken to be `modified`.
 export const knowledgeDates: Record<string, { published: string; modified: string; reviewed?: string }> = {
+  "chinta-rog-anxiety-lakshan-upchar-nepal": { published: "2026-10-28", modified: "2026-10-28" },
+  "chinta-sadharan-ki-rog-kasari-chinne-nepal": { published: "2026-10-28", modified: "2026-10-28" },
+  "ocd-lakshan-upchar-nepali-guide": { published: "2026-10-28", modified: "2026-10-28" },
+  "erp-therapy-ocd-kasari-kam-garcha-nepali": { published: "2026-10-28", modified: "2026-10-28" },
+  "depression-lakshan-upchar-nepali-guide": { published: "2026-10-28", modified: "2026-10-28" },
+  "udasi-ra-depression-ko-pharak-nepal": { published: "2026-10-28", modified: "2026-10-28" },
+  "overthinking-chinta-rog-ocd-depression-sambandha-nepal": { published: "2026-10-28", modified: "2026-10-28" },
+  "chatgpt-ma-mansik-samasya-sodhnu-psychiatrist-kahile-nepal": { published: "2026-10-28", modified: "2026-10-28" },
+  "online-psychiatrist-nepal-video-consultation-kasari": { published: "2026-10-28", modified: "2026-10-28" },
+  "chinta-ra-depression-ek-sath-hunu-nepal": { published: "2026-10-28", modified: "2026-10-28" },
   "panic-attack-nepali-guide": { published: "2026-09-02", modified: "2026-09-02" },
   "aithan-sleep-paralysis-nepal": { published: "2026-09-02", modified: "2026-09-02" },
   "alcohol-effects-body-brain-nepal": { published: "2026-09-02", modified: "2026-09-02" },
