@@ -143,7 +143,7 @@ export default function BookingForm() {
       <div className="p-6 sm:p-9">
         {step === 0 && (
           <fieldset>
-            <legend className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-book-serif), Georgia, serif" }}>How would you like to meet?</legend>
+            <legend className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-serif-site), Georgia, serif" }}>How would you like to meet?</legend>
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               {visitTypes.map((v) => (
                 <label key={v.id} className={`cursor-pointer overflow-hidden border-2 transition ${visit === v.id ? "border-[#ef765d] ring-4 ring-[#ef765d]/20" : "border-[#d6d8d2] hover:border-[#314f49]"}`}>
@@ -166,7 +166,7 @@ export default function BookingForm() {
 
         {step === 1 && (
           <div>
-            <h2 className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-book-serif), Georgia, serif" }}>Pick a day and time</h2>
+            <h2 className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-serif-site), Georgia, serif" }}>Pick a day and time</h2>
             <p className="mt-2 text-sm text-stone-600">Times are in Nepal time (NPT, UTC+5:45). Clinic hours: Sunday–Friday 8 AM–10 PM, Saturday 10 AM–4 PM. This is a request; the clinic confirms on WhatsApp.</p>
             <div className="mt-6 flex gap-3 overflow-x-auto pb-3" role="radiogroup" aria-label="Preferred date">
               {days.map((d, i) => {
@@ -200,7 +200,7 @@ export default function BookingForm() {
 
         {step === 2 && (
           <div>
-            <h2 className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-book-serif), Georgia, serif" }}>A few details</h2>
+            <h2 className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-serif-site), Georgia, serif" }}>A few details</h2>
             <p className="mt-2 text-sm text-stone-600">Please keep this brief. Do not include sensitive medical details here; discuss those in the consultation.</p>
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               <label className="block text-sm font-semibold text-stone-800">Full name
@@ -229,7 +229,7 @@ export default function BookingForm() {
 
         {step === 3 && (
           <div>
-            <h2 className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-book-serif), Georgia, serif" }}>Review and send</h2>
+            <h2 className="text-3xl font-medium text-[#1f2927]" style={{ fontFamily: "var(--font-serif-site), Georgia, serif" }}>Review and send</h2>
             <dl className="mt-6 grid gap-3 bg-[#ebe9e1] p-5 text-sm sm:grid-cols-2">
               <div><dt className="font-semibold text-[#314f49]">Visit</dt><dd>{visitInfo?.title}</dd></div>
               <div><dt className="font-semibold text-[#314f49]">When (Nepal time)</dt><dd>{chosenDate?.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" })}, {slot && label12(slot)}</dd></div>

@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { DM_Sans, Playfair_Display } from "next/font/google";
 import ConversionDock from "./components/ConversionDock";
 import ConversionTracking from "./components/ConversionTracking";
 import LangSync from "./components/LangSync";
 import { languageMetadata } from "./lib/language";
 import "./globals.css";
+
+const sans = DM_Sans({ subsets: ["latin"], variable: "--font-sans-site", display: "swap" });
+const serif = Playfair_Display({ subsets: ["latin"], variable: "--font-serif-site", display: "swap" });
 
 const siteUrl = "https://drkushalkharel.com.np";
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-ZJ7RMBFRYL";
@@ -136,7 +140,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${sans.variable} ${serif.variable}`}>
         {children}
         <LangSync />
         <ConversionDock />

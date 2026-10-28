@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { DM_Sans, Playfair_Display } from "next/font/google";
 import { ArrowUpRight, CalendarCheck, Clock3, Globe2, Languages, MapPin, MessageCircle, Phone, ShieldCheck, Video } from "lucide-react";
 import Image from "../components/OptimizedImage";
 import BookingForm from "../components/BookingForm";
 import { CalmArt, HeroArt, StepChooseArt, StepSendArt, StepTimeArt } from "../components/BookArt";
 import { metaFor } from "../lib/seoText";
 
-const serif = Playfair_Display({ subsets: ["latin"], variable: "--font-book-serif", display: "swap" });
-const sans = DM_Sans({ subsets: ["latin"], variable: "--font-book-sans", display: "swap" });
 
 const meta = metaFor("/book/", {
   title: "Book an Appointment Online",
@@ -24,7 +21,7 @@ export const metadata: Metadata = {
 const phone = "+977 9861800547";
 const whatsapp = "https://wa.me/9779861800547";
 
-const headingFont = { fontFamily: "var(--font-book-serif), Georgia, serif" };
+const headingFont = { fontFamily: "var(--font-serif-site), Georgia, serif" };
 
 const marquee = ["In-person in Kathmandu", "Online video worldwide", "Nepali · English · Hindi", "Confidential care", "Evening appointments"];
 
@@ -71,7 +68,7 @@ const btn = "inline-flex items-center justify-center gap-3 px-6 py-4 text-[13px]
 
 export default function BookPage() {
   return (
-    <main className={`${serif.variable} ${sans.variable} min-h-screen bg-[#f5f4ef] text-[#1f2927]`} style={{ fontFamily: "var(--font-book-sans), system-ui, sans-serif" }}>
+    <main className={`min-h-screen bg-[#f5f4ef] text-[#1f2927]`} style={{ fontFamily: "var(--font-sans-site), system-ui, sans-serif" }}>
       <header className="mx-auto flex max-w-[1240px] items-center justify-between px-6 py-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
           <span className="flex h-6 rotate-[30deg] gap-0.5" aria-hidden="true">

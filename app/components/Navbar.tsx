@@ -106,7 +106,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-lg shadow-md">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#f5f4ef]/95 backdrop-blur-lg border-b border-[#d6d8d2]">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
@@ -116,11 +116,11 @@ export default function Navbar() {
 
           <Link href="/" className="flex flex-col">
 
-            <span className="text-2xl font-extrabold text-sage-900">
+            <span className="font-serif text-2xl font-medium tracking-tight text-sage-900">
               Dr. Kushal Kharel
             </span>
 
-            <span className="text-sm text-gray-500">
+            <span className="text-[11px] uppercase tracking-[.08em] text-[#69736d]">
               Consultant Psychiatrist
             </span>
 
@@ -170,16 +170,16 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
 
             <Link
-              href="/appointment/"
+              href="/book/"
               data-conversion="appointment"
-              className="hidden md:inline-flex px-5 py-3 rounded-xl border border-green-500 text-green-600 font-semibold hover:bg-green-500 hover:text-white transition"
+              className="hidden md:inline-flex px-5 py-3 bg-clay-500 text-white text-[13px] font-semibold hover:bg-clay-700 transition"
             >
               Book appointment
             </Link>
 
             <a
               href="tel:+9779861800547"
-              className="hidden md:inline-flex items-center gap-2 bg-sage-700 hover:bg-sage-800 text-white px-6 py-3 rounded-xl font-semibold transition"
+              className="hidden md:inline-flex items-center gap-2 bg-[#1f2927] hover:bg-sage-800 text-white px-5 py-3 text-[13px] font-semibold transition"
             >
               <Phone size={18} aria-hidden="true" />
               Call Now

@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f4ef;
+  --foreground: #1f2927;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-sans-site), system-ui, sans-serif;
+  --font-serif: var(--font-serif-site), Georgia, serif;
   --font-mono: var(--font-geist-mono);
 }
 
@@ -18,42 +19,36 @@
    950 for headings, 50/100 for tints) keeps working without re-auditing
    every class. Amber is left as-is; it's a semantic warning color, not brand. */
 @theme {
-  --color-sage-50: oklch(98.2% 0.008 125);
-  --color-sage-100: oklch(96% 0.014 125);
-  --color-sage-200: oklch(91% 0.028 125);
-  --color-sage-300: oklch(84% 0.045 125);
-  --color-sage-400: oklch(74% 0.062 125);
-  --color-sage-500: oklch(64% 0.072 125);
-  --color-sage-600: oklch(54% 0.068 125);
-  --color-sage-700: oklch(45% 0.06 125);
-  --color-sage-800: oklch(37% 0.05 125);
-  --color-sage-900: oklch(30% 0.04 125);
-  --color-sage-950: oklch(18% 0.028 125);
+  --color-sage-50: #f3f5ef;
+  --color-sage-100: #e6ebe1;
+  --color-sage-200: #d3ddd0;
+  --color-sage-300: #c4d2c5;
+  --color-sage-400: #a3b9a6;
+  --color-sage-500: #88a48b;
+  --color-sage-600: #4f7469;
+  --color-sage-700: #3a5e57;
+  --color-sage-800: #314f49;
+  --color-sage-900: #233c37;
+  --color-sage-950: #172a26;
 
-  --color-clay-50: oklch(97.5% 0.014 45);
-  --color-clay-100: oklch(94% 0.032 45);
-  --color-clay-200: oklch(87% 0.06 42);
-  --color-clay-300: oklch(79% 0.09 40);
-  --color-clay-400: oklch(70% 0.12 38);
-  --color-clay-500: oklch(62% 0.135 35);
-  --color-clay-600: oklch(54% 0.135 32);
-  --color-clay-700: oklch(46% 0.12 30);
-  --color-clay-800: oklch(39% 0.1 28);
-  --color-clay-900: oklch(33% 0.085 27);
-  --color-clay-950: oklch(20% 0.055 25);
+  --color-clay-50: #fef5f1;
+  --color-clay-100: #fde7df;
+  --color-clay-200: #fbcdbf;
+  --color-clay-300: #f7ac98;
+  --color-clay-400: #f3917a;
+  --color-clay-500: #ef765d;
+  --color-clay-600: #d95b41;
+  --color-clay-700: #c4462c;
+  --color-clay-800: #9d3822;
+  --color-clay-900: #7a2d1d;
+  --color-clay-950: #44180f;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans-site), system-ui, sans-serif;
 }
 
 html {
@@ -176,4 +171,26 @@ body {
     scroll-behavior: auto !important;
     transition-duration: 1ms !important;
   }
+}
+
+/* Editorial headings: serif, tight tracking. Devanagari falls back to the system font. */
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif-site), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+h1 em,
+h2 em {
+  color: var(--color-clay-500);
+  font-style: italic;
+}
+
+[lang="ne"] h1,
+[lang="ne"] h2,
+[lang="ne"] h3 {
+  font-family: var(--font-sans-site), system-ui, sans-serif;
+  letter-spacing: 0;
 }
