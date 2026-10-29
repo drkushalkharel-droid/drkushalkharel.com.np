@@ -464,11 +464,10 @@ export function getRegionForCountry(countrySlug: string): Region | undefined {
   return regions.find((r) => r.countrySlugs.includes(countrySlug));
 }
 
-// Link to a country's section on its regional page. Country pages no longer exist as
-// URLs of their own, so every internal link to "Germany" etc. goes through this.
+// Every country has its own page: Japan has the hand-written guide, the rest use
+// /nepali-psychiatrist/<country>/. Internal links to "Germany" etc. go through this.
 export function countryHref(countrySlug: string): string {
-  const region = getRegionForCountry(countrySlug);
-  return region ? `/nepalese-abroad/${region.slug}/#${countrySlug}` : "/nepalese-abroad/";
+  return countrySlug === "japan" ? "/nepali-psychiatrist-japan/" : `/nepali-psychiatrist/${countrySlug}/`;
 }
 
 // Build-time guard: every country in abroad.ts belongs to exactly one region, and every

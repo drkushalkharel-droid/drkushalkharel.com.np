@@ -4,11 +4,10 @@ import RedirectNotice from "../../components/RedirectNotice";
 import { abroadGuides, getAbroadGuide } from "../../data/abroad";
 import { countryHref, getRegionForCountry } from "../../data/abroadRegions";
 
-// Legacy per-country URLs (/nepalese-abroad/<country>/). Each country is now a section on
-// its regional page, and Cloudflare sends a 301 to that page (see cloudflare-redirects.csv).
+// Legacy per-country URLs (/nepalese-abroad/<country>/). Each country now has its own page
+// (see countryHref) and Cloudflare sends a 301 to it (see cloudflare-redirects.csv).
 // This is the fallback where that redirect is not deployed. It is noindex so the old URL
-// does not compete with the regional page; its canonical points at the regional page
-// (the redirect itself carries the #country anchor).
+// does not compete with the country page, which is its canonical.
 export function generateStaticParams() {
   return abroadGuides.map((guide) => ({ slug: guide.slug }));
 }
@@ -25,7 +24,7 @@ export async function generateMetadata({
 
   return {
     title: `${guide.country} — page moved`,
-    alternates: { canonical: `/nepalese-abroad/${region.slug}/` },
+    alternates: { canonical: countryHref(slug) },
     robots: { index: false, follow: true },
   };
 }
