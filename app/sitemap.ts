@@ -2,6 +2,8 @@ import { MetadataRoute } from "next";
 import { regions } from "./data/abroadRegions";
 import { conditions } from "./data/conditions";
 import { docArticles } from "./data/docArticles";
+import { abroadGuides } from "./data/abroad";
+import { countryExtras } from "./data/countryPages";
 import { knowledgeDates } from "./data/knowledgeDates";
 import { screeningTools } from "./data/screening";
 import { resources } from "./data/resources";
@@ -221,6 +223,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  const countryRoutes: MetadataRoute.Sitemap = abroadGuides
+    .filter((guide) => guide.slug !== "japan" && countryExtras[guide.slug])
+    .map((guide) => ({
+      url: `${siteUrl}/nepali-psychiatrist/${guide.slug}`,
+      lastModified: new Date("2026-10-29"),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }));
+
   const articleRoutes: MetadataRoute.Sitemap = docArticles.map((article) => ({
     url: `${siteUrl}/knowledge/${article.slug}`,
     lastModified: knowledgeDates[article.slug]?.modified ?? lastModified,
@@ -279,6 +290,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const allRoutes: MetadataRoute.Sitemap = [
     ...staticRoutes,
+    ...countryRoutes,
     ...articleRoutes,
     ...regionRoutes,
     ...nepaliRegionRoutes,

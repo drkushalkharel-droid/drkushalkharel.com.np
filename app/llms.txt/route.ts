@@ -89,6 +89,7 @@ ${regions.map((region) => `- [Nepalis in ${region.shortName}](https://drkushalkh
 
 ## Key pages
 
+- [Nepali psychiatrist by country](https://drkushalkharel.com.np/nepalese-abroad/): a dedicated page for each of 41 countries (https://drkushalkharel.com.np/nepali-psychiatrist/<country>/) with local-time booking windows, local emergency and crisis numbers, medication rules and FAQ for Nepalis abroad
 - [Nepali psychiatrist for Nepalis in Japan](https://drkushalkharel.com.np/nepali-psychiatrist-japan/): online consultation in Nepali or English for students, workers and families in Japan, Japan-time booking windows, local helplines, medication rules and FAQ (English, Nepali and Japanese sections)
 - [Psychiatrist and therapist in Kathmandu](https://drkushalkharel.com.np/psychiatrist-and-therapist-kathmandu/): medication plus psychotherapy from one clinician: CBT, DBT-based skills, ERP, supportive therapy, grief and bereavement, family therapy and relationship counselling
 - [Home](https://drkushalkharel.com.np/): overview of the practice and services

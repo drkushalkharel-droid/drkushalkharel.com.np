@@ -262,6 +262,14 @@ export default function RegionHubPage({ region }: { region: Region }) {
                     Nepali psychiatrist for Nepalis in {place}
                   </h3>
                   <p className="mt-4 leading-8 text-stone-600">{guide.intro}</p>
+                  <p className="mt-3">
+                    <Link
+                      href={guide.slug === "japan" ? "/nepali-psychiatrist-japan/" : `/nepali-psychiatrist/${guide.slug}/`}
+                      className="font-semibold text-sage-800 underline"
+                    >
+                      Read the full guide: Nepali psychiatrist in {place} &rarr;
+                    </Link>
+                  </p>
 
                   <h4 className="mt-6 text-lg font-bold text-stone-950">
                     Common concerns among Nepalis in {place}
