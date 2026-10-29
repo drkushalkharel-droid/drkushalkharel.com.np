@@ -271,6 +271,10 @@ export default function Footer() {
               Nepalis in Europe
             </Link>
 
+            <Link href="/nepali-psychiatrist-japan/" className="block hover:text-white transition">
+              Nepali Psychiatrist in Japan
+            </Link>
+
             <Link href="/nepalese-abroad/east-asia/" className="block hover:text-white transition">
               Nepalis in Japan &amp; South Korea
             </Link>

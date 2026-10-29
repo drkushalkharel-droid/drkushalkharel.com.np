@@ -50,6 +50,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
 
+    {
+      url: `${siteUrl}/nepali-psychiatrist-japan`,
+      lastModified: new Date("2026-10-29"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+
     { url: `${siteUrl}/faq`, lastModified, changeFrequency: "monthly", priority: 0.8 },
 
     {

@@ -119,6 +119,11 @@ export default function RegionHubPage({ region }: { region: Region }) {
           <p id="region-quick-answer" className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             {region.quickAnswer}
           </p>
+          {region.slug === "east-asia" && (
+            <p className="mt-6 max-w-3xl border-l-4 border-sage-700 bg-sage-50 p-4 leading-7 text-stone-700">
+              Living in Japan? Read the full guide: <Link href="/nepali-psychiatrist-japan/" className="font-semibold text-sage-800 underline">Nepali psychiatrist for Nepalis in Japan</Link>, with Japan-time booking windows, local helplines and medication in Japan explained.
+            </p>
+          )}
           <TreatedList />
           <div className="mt-8 flex flex-wrap gap-4">
             <a
