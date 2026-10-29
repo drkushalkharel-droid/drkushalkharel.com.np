@@ -20,7 +20,7 @@ export const focusConditions: FocusCondition[] = [
   {
     id: "depression",
     label: "Depression",
-    href: "/depression",
+    href: "/conditions/major-depressive-disorder/",
     summary: "low mood, loss of interest, exhaustion, hopelessness and homesickness that does not lift",
   },
   {

@@ -247,6 +247,7 @@ export function getRelatedLinks(path: string, options: { max?: number; curated?:
     // A. Commercial page: fan out to its supporting content.
     push(member.role === "primary" ? cluster!.secondaryPrimary?.href : cluster!.primary.href);
     cluster!.reference.slice(0, 2).forEach(push);
+    if (cluster!.reference.length > 2) push(cluster!.reference[cluster!.reference.length - 1]);
     cluster!.nepali.slice(0, 1).forEach(push);
     cluster!.subtopics.slice(0, 3).forEach(push);
     cluster!.aids.slice(0, 2).forEach(push);

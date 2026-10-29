@@ -41,9 +41,9 @@ export const clusters: Cluster[] = [
     id: "adhd",
     name: "ADHD",
     primary: { href: "/adhd-treatment-kathmandu/", anchor: "ADHD treatment in Kathmandu" },
-    reference: c("adhd"),
+    reference: c("adhd", "intellectual-disability"),
     nepali: k("adhd"),
-    subtopics: b("adult-adhd-nepal"),
+    subtopics: b("adult-adhd-nepal", "specific-learning-disorder-dyslexia-children-nepal"),
     aids: [...s("adult-adhd"), ...r("adhd-leaflet", "adhd-stimulant-medications-guide")],
   },
   {
@@ -75,7 +75,7 @@ export const clusters: Cluster[] = [
     primary: { href: "/schizophrenia-treatment-kathmandu/", anchor: "schizophrenia treatment in Kathmandu" },
     secondaryPrimary: { href: "/psychosis-treatment-kathmandu/", anchor: "psychosis treatment in Kathmandu" },
     secondaryFor: [...c("brief-psychotic-disorder", "postpartum-psychosis", "delusional-disorder"), ...b("cannabis-substance-induced-psychosis-nepal", "postpartum-psychosis-nepal")],
-    reference: c("schizophrenia", "schizoaffective-disorder", "brief-psychotic-disorder", "postpartum-psychosis", "delusional-disorder"),
+    reference: c("schizophrenia", "schizoaffective-disorder", "brief-psychotic-disorder", "postpartum-psychosis", "delusional-disorder", "acute-agitation-behavioral-emergency"),
     nepali: k("schizophrenia"),
     subtopics: b("schizophrenia-early-warning-signs", "cannabis-substance-induced-psychosis-nepal", "postpartum-psychosis-nepal"),
     aids: [...r("schizophrenia-leaflet", "schizophrenia-family-guide", "antipsychotics-guide"), ...m("antipsychotic-medications-explained")],
@@ -126,9 +126,9 @@ export const clusters: Cluster[] = [
     id: "addiction",
     name: "addiction",
     primary: { href: "/addiction-treatment-kathmandu/", anchor: "addiction treatment in Kathmandu" },
-    reference: c("alcohol-use-disorder", "opioid-use-disorder", "cannabis-use-disorder", "nicotine-dependence"),
+    reference: c("alcohol-use-disorder", "opioid-use-disorder", "cannabis-use-disorder", "nicotine-dependence", "gambling-disorder"),
     nepali: k("alcohol-dependence-syndrome", "alcohol-effects-body-brain-nepal", "morning-drinking-alcohol-nepal"),
-    subtopics: b("alcohol-addiction-treatment-nepal", "alcohol-drug-rehab-referral-collaboration-nepal"),
+    subtopics: b("alcohol-addiction-treatment-nepal", "alcohol-drug-rehab-referral-collaboration-nepal", "gambling-addiction-treatment-nepal", "gambling-addiction-nepalese-abroad"),
     aids: [...s("alcohol-use"), ...r("alcohol-use-disorder-leaflet", "alcohol-use-disorder-family-guide")],
   },
 ];
@@ -214,8 +214,8 @@ export const serviceRelations: Record<string, string[]> = {
   "/cbt-therapist-kathmandu/": ["/erp-therapy-ocd/", "/anxiety/", "/depression-treatment-kathmandu/", "/counselling-in-nepal/", "/how-to-control-your-mind-nepal/", "/psychology-internship-nepal/"],
   "/stress-anger-management-kathmandu/": ["/counselling-in-nepal/", "/cbt-therapist-kathmandu/", "/corporate-mental-health-partner-nepal/", "/how-to-control-your-mind-nepal/"],
   "/how-to-control-your-mind-nepal/": ["/anxiety/", "/cbt-therapist-kathmandu/", "/stress-anger-management-kathmandu/", "/sleep-problems-treatment-nepal/"],
-  "/child-adolescent-psychiatry/": ["/adhd-treatment-kathmandu/", "/iq-psychological-testing/", "/anxiety/", "/depression-treatment-kathmandu/"],
-  "/iq-psychological-testing/": ["/child-adolescent-psychiatry/", "/adhd-treatment-kathmandu/", "/medical-fitness-certificate/", "/psychology-internship-nepal/"],
+  "/child-adolescent-psychiatry/": ["/adhd-treatment-kathmandu/", "/iq-psychological-testing/", "/conditions/intellectual-disability/", "/anxiety/", "/depression-treatment-kathmandu/"],
+  "/iq-psychological-testing/": ["/child-adolescent-psychiatry/", "/conditions/intellectual-disability/", "/adhd-treatment-kathmandu/", "/medical-fitness-certificate/", "/psychology-internship-nepal/"],
   "/medical-fitness-certificate/": ["/iq-psychological-testing/", "/psychiatry-clinic-kathmandu/", "/psychiatrist-fee-nepal/", "/appointment/"],
   "/psychology-internship-nepal/": ["/counselling-in-nepal/", "/cbt-therapist-kathmandu/", "/community-mental-health-programs/", "/iq-psychological-testing/"],
   "/corporate-mental-health-partner-nepal/": ["/stress-anger-management-kathmandu/", "/community-mental-health-programs/", "/counselling-in-nepal/", "/screening/"],
@@ -230,7 +230,7 @@ export const serviceRelations: Record<string, string[]> = {
   "/psychiatric-care-for-family-in-nepal/": ["/help-relative-abroad-see-psychiatrist/", "/home-visit-psychiatrist-nepal/", "/psychiatrist-for-nepalis-abroad/", "/nepalese-abroad/", "/psychiatric-medication-side-effects/", "/resources/caregiver-support-resource/"],
   "/returning-to-nepal-after-abroad/": ["/psychiatrist-for-nepalis-abroad/", "/help-relative-abroad-see-psychiatrist/", "/expatriates-in-nepal/", "/nepalese-abroad/"],
   "/psychiatrist-for-nepalis-abroad/": ["/nepalese-abroad/", "/online-psychiatrist-nepal/", "/help-relative-abroad-see-psychiatrist/", "/returning-to-nepal-after-abroad/"],
-  "/addiction-treatment-kathmandu/": ["/psychiatric-hospital-vs-clinic-kathmandu/", "/home-visit-psychiatrist-nepal/", "/counselling-in-nepal/", "/screening/alcohol-use/"],
+  "/addiction-treatment-kathmandu/": ["/conditions/gambling-disorder/", "/psychiatric-hospital-vs-clinic-kathmandu/", "/home-visit-psychiatrist-nepal/", "/counselling-in-nepal/", "/screening/alcohol-use/"],
 };
 
 // Article category -> the service page a reader of that category should be offered.

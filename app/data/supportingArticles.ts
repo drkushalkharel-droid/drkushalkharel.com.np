@@ -1883,7 +1883,7 @@ export const supportingArticles: SupportingArticle[] = [
     ],
     doctorsApproach:
       "विदेशमा हुनुहुन्छ भन्दैमा तपाईंले मानसिक स्वास्थ्य समस्या एक्लै सहनुपर्छ भन्ने होइन। म कन्सल्टेन्ट साइकाइट्रिस्ट र प्रमाणित CBT थेरापिस्टका रूपमा हरेक केसमा काउन्सेलिङ गर्छु। तपाईंका लक्षण र आवश्यकताअनुसार CBT वा अर्को संरचित मनोचिकित्सा, औषधि, वा दुवै उपयुक्त छन् कि छैनन् भन्नेबारे हामी मिलेर उपचार योजना बनाउँछौं। औषधिका लागि स्थानीय नियम र उपलब्धताबारे स्पष्ट कुरा गर्छु; नेपालबाट औषधि पठाउन मिल्छ भनेर पहिल्यै वाचा गर्दिनँ।",
-    related: ["/psychiatrist-for-nepalis-abroad", "/nepalese-abroad", "/anxiety", "/depression", "/contact"],
+    related: ["/psychiatrist-for-nepalis-abroad", "/nepalese-abroad", "/anxiety", "/conditions/major-depressive-disorder", "/contact"],
     faqs: [
       {
         question: "म विदेशमा छु। एन्जाइटी वा डिप्रेसनको उपचारका लागि नेपाल फर्किनुपर्छ?",
