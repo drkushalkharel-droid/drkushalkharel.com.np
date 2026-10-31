@@ -8,6 +8,9 @@ export const calmTools = [
   { href: "/calm-now/stop-technique/", title: "STOP technique", ne: "रोक्नुहोस् (STOP)", note: "Before you react or act on an urge" },
   { href: "/calm-now/tipp-technique/", title: "TIPP technique", ne: "TIPP प्रविधि", note: "For very intense emotion, fast" },
   { href: "/calm-now/feelings-wheel/", title: "Feelings wheel", ne: "भावनाको चक्र", note: "When you cannot name what you feel" },
+  { href: "/calm-now/muscle-relaxation/", title: "Muscle relaxation", ne: "मांसपेशी खुकुलो पार्ने", note: "For tension, stress and bedtime" },
+  { href: "/calm-now/thought-record/", title: "Thought record", ne: "विचार लेखा", note: "For worry and low mood, once calmer" },
+  { href: "/calm-now/safety-plan/", title: "Safety plan builder", ne: "सुरक्षा योजना", note: "Make one now, while you feel able" },
 ];
 
 export default function CalmShell({

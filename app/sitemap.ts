@@ -97,6 +97,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/calm-now/stop-technique`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${siteUrl}/calm-now/tipp-technique`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${siteUrl}/calm-now/feelings-wheel`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteUrl}/calm-now/safety-plan`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteUrl}/calm-now/thought-record`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteUrl}/calm-now/muscle-relaxation`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${siteUrl}/patient-testimonials`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
 
     {

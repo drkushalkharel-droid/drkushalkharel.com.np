@@ -20,6 +20,9 @@ const picks = [
   { q: "My thoughts are spiralling or nothing feels real", ne: "विचार रोकिँदैनन्, सबै अवास्तविक लाग्छ", href: "/calm-now/grounding-5-4-3-2-1/", go: "5-4-3-2-1 grounding" },
   { q: "I am about to explode or do something I will regret", ne: "रिसले फुट्न लागेको, पछुताउने काम गर्लाजस्तो", href: "/calm-now/stop-technique/", go: "STOP technique" },
   { q: "The emotion is too big to think through", ne: "भावना यति ठूलो कि सोच्नै सकिँदैन", href: "/calm-now/tipp-technique/", go: "TIPP skill" },
+  { q: "My body is tense and I cannot unwind", ne: "शरीर तनावमा छ, आराम गर्न सक्दिनँ", href: "/calm-now/muscle-relaxation/", go: "Muscle relaxation" },
+  { q: "A worry or a harsh thought will not leave me alone", ne: "चिन्ता वा कठोर विचारले छोडेको छैन", href: "/calm-now/thought-record/", go: "Thought record" },
+  { q: "I want a plan ready in case thoughts of self-harm return", ne: "आफूलाई हानि गर्ने सोच फर्किए भनेर योजना", href: "/calm-now/safety-plan/", go: "Safety plan" },
   { q: "I feel awful but cannot say what it is", ne: "नराम्रो लागिरहेको छ तर के हो भन्न सक्दिनँ", href: "/calm-now/feelings-wheel/", go: "Feelings wheel" },
 ];
 
