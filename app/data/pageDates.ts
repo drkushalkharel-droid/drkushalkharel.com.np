@@ -479,7 +479,19 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-10-31",
     "modified": "2026-10-31"
   },
+  "/calm-now/muscle-relaxation/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
+  },
+  "/calm-now/safety-plan/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
+  },
   "/calm-now/stop-technique/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
+  },
+  "/calm-now/thought-record/": {
     "published": "2026-10-31",
     "modified": "2026-10-31"
   },
