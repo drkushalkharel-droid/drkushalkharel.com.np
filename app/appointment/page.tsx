@@ -23,8 +23,9 @@ export default function AppointmentPage() {
         <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-[3px] text-clay-200">Appointments</p>
           <h1 className="mt-5 max-w-3xl text-4xl font-bold leading-tight md:text-6xl">
-            Start with a confidential conversation
+            Book a Psychiatrist Appointment in Kathmandu or Online
           </h1>
+          <p className="mt-4 text-xl font-semibold text-clay-200">Start with a confidential conversation</p>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-sage-100">
             Call or send a WhatsApp message to request an in-person consultation in Kathmandu or discuss whether online consultation is appropriate.
           </p>

@@ -19,7 +19,7 @@ export const seoMeta: Record<string, SeoEntry> = {
       "Dr. Kushal Kharel, consultant psychiatrist in Kalanki, Kathmandu: care for anxiety, depression, OCD, ADHD and sleep problems. Book in-person or online.",
   },
   "/about/": {
-    title: "About Dr. Kushal Kharel, Psychiatrist",
+    title: "About Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu",
     description:
       "Dr. Kushal Kharel's background: MD Psychiatry, Nepal Medical Council registration #27199, clinical experience and areas of focus. Book in-person or online.",
   },
@@ -49,7 +49,7 @@ export const seoMeta: Record<string, SeoEntry> = {
       "Book a confidential psychiatric consultation with Dr. Kushal Kharel at the Kalanki clinic in Kathmandu, or online from anywhere. Call or WhatsApp to book.",
   },
   "/best-psychiatrist-nepal/": {
-    title: "How to Choose a Psychiatrist in Kathmandu",
+    title: "How to Choose the Best Psychiatrist in Kathmandu, Nepal",
     description:
       "There is no official 'best psychiatrist' ranking. Check credentials, NMC registration, communication style and fit. Book in-person or online.",
   },

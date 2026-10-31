@@ -203,10 +203,6 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-06",
     "modified": "2026-08-06"
   },
-  "/blog/how-to-choose-best-psychiatrist-nepal/": {
-    "published": "2026-07-29",
-    "modified": "2026-07-29"
-  },
   "/blog/infertility-mental-health-emotional-toll-nepal/": {
     "published": "2026-08-06",
     "modified": "2026-08-06"

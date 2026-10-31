@@ -234,7 +234,7 @@ export default function Footer() {
             </Link>
 
             <Link href="/best-psychiatrist-nepal/" className="block hover:text-white transition">
-              Best Psychiatrist in Kathmandu
+              How to Choose a Psychiatrist
             </Link>
 
             <Link href="/community-mental-health-programs/" className="block hover:text-white transition">

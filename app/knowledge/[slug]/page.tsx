@@ -10,6 +10,8 @@ import { knowledgeDates } from "../../data/knowledgeDates";
 import { hreflangAlternates } from "../../data/translationPairs";
 import { buildArticleProvenance, doctorRef } from "../../lib/siteSchema";
 import { metaFor, seoTitle as seoTitleFor } from "../../lib/seoText";
+import MeaningInNepali from "../../components/MeaningInNepali";
+import { meaningDescription, meaningHeading, meaningTitle, nepaliMeanings } from "../../data/nepaliMeanings";
 import { detectLanguage, languageMetadata, ogLocaleFor, paragraphLanguage } from "../../lib/language";
 
 const siteUrl = "https://drkushalkharel.com.np";
@@ -88,10 +90,14 @@ export async function generateMetadata({
     ? `${article.title} (${article.nepaliMeaning.term}) — Meaning, Symptoms and Treatment`
     : title;
   const keywordTitle = article.title.split(" | ")[0];
-  const meta = metaFor(`/knowledge/${article.slug}/`, { title: seoTitle, description: article.description });
+  const meaning = nepaliMeanings[article.slug];
+  const meta = meaning
+    ? { title: meaningTitle(meaning), description: meaningDescription(meaning) }
+    : metaFor(`/knowledge/${article.slug}/`, { title: seoTitle, description: article.description });
 
   return {
-    title: meta.title,
+    // A "Meaning in Nepali" title is already a full title, so it skips the brand suffix.
+    title: meaning ? { absolute: meta.title } : meta.title,
     description: meta.description,
     alternates: {
       canonical: `/knowledge/${article.slug}/`,
@@ -173,8 +179,10 @@ export default async function KnowledgeArticlePage({
   // A Nepali guide whose title is only an English term ("Schizophrenia") would compete
   // with the English /conditions/ page for the same query, so its H1 is the Nepali-first
   // title from seoMetaCollections (e.g. "स्किजोफ्रेनिया: लक्षण, कारण र उपचार").
-  const heading =
-    pageLang === "ne" && !/[\u0900-\u097F]/.test(article.title)
+  const meaning = nepaliMeanings[article.slug];
+  const heading = meaning
+    ? meaningHeading(meaning)
+    : pageLang === "ne" && !/[\u0900-\u097F]/.test(article.title)
       ? seoTitleFor(`/knowledge/${article.slug}/`, article.title)
       : article.title;
 
@@ -260,6 +268,7 @@ export default async function KnowledgeArticlePage({
           <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">
             {heading}
           </h1>
+          {meaning && <MeaningInNepali definition={meaning.definition} />}
           <p className="mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             {article.description}
           </p>
@@ -306,18 +315,6 @@ export default async function KnowledgeArticlePage({
             a personal diagnosis or treatment plan. व्यक्तिगत निदान वा औषधि निर्णयका
             लागि मनोचिकित्सकसँग प्रत्यक्ष परामर्श गर्नुहोस्।
           </div>
-
-          {article.nepaliMeaning && (
-            <div className="rounded-lg border border-stone-200 bg-white p-5 leading-7">
-              <p className="text-sm font-semibold uppercase tracking-[2px] text-sage-700">
-                Meaning in Nepali
-              </p>
-              <p className="mt-2 text-lg font-bold text-stone-950">
-                {article.title} ({article.nepaliMeaning.term})
-              </p>
-              <p className="mt-1 text-stone-700">{article.nepaliMeaning.meaning}</p>
-            </div>
-          )}
 
           {dates ? (
             <ArticleReviewCard dates={dates} lang={pageLang} />

@@ -41,7 +41,6 @@ export const articleDates: Record<string, { published: string; modified: string;
   "gutkha-tobacco-addiction-treatment-nepal": { published: "2026-08-05", modified: "2026-08-05" },
   "health-anxiety-treatment-nepal": { published: "2026-08-03", modified: "2026-08-03" },
   "help-family-member-with-depression-nepal": { published: "2026-08-06", modified: "2026-08-06" },
-  "how-to-choose-best-psychiatrist-nepal": { published: "2026-07-29", modified: "2026-07-29" },
   "infertility-mental-health-emotional-toll-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "insomnia-cbt-treatment-without-medication-nepal": { published: "2026-08-06", modified: "2026-08-06" },
   "internet-gaming-addiction-nepal": { published: "2026-07-29", modified: "2026-07-29" },

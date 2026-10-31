@@ -12,7 +12,8 @@ const description =
   seoDescription("/best-psychiatrist-nepal/", "There's no official ranking for 'best psychiatrist' — here's what to actually check: credentials, NMC registration, communication style and fit. Dr. Kushal Kharel, MD, treats anxiety, depression, OCD & more. Book today.");
 
 export const metadata: Metadata = {
-  title,
+  // Full title with no brand suffix, so it stays close to 60 characters.
+  title: { absolute: title },
   description,
   alternates: { canonical: "/best-psychiatrist-nepal/" },
   keywords: [
@@ -143,7 +144,7 @@ export default function BestPsychiatristNepalPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
-      { "@type": "ListItem", position: 2, name: "Best & Top Psychiatrist in Kathmandu", item: pageUrl },
+      { "@type": "ListItem", position: 2, name: "How to Choose the Best Psychiatrist in Kathmandu", item: pageUrl },
     ],
   };
 
@@ -157,7 +158,7 @@ export default function BestPsychiatristNepalPage() {
         <div className="mx-auto max-w-5xl px-6 pb-14 pt-28 lg:px-8 lg:pt-32">
           <Link href="/" className="font-semibold text-sage-700">&larr; Back to home</Link>
           <p className="mt-8 text-sm font-semibold uppercase tracking-[3px] text-sage-700">Psychiatric care in Kathmandu &amp; online</p>
-          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">Best &amp; Top Psychiatrist in Kathmandu, Nepal for Anxiety, Depression, OCD &amp; Schizophrenia</h1>
+          <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-6xl">How to Choose the Best Psychiatrist in Kathmandu</h1>
           <p id="psychiatrist-nepal-answer" className="mt-6 max-w-4xl text-lg leading-8 text-stone-600">
             Searching for the best or top psychiatrist — or psychiatrist doctor — in Kathmandu or Nepal often means looking for clear answers, respectful care and a practical next step for your mental health. There is no official ranking and no single doctor who is right for every person. The most helpful choice is a qualified, registered psychiatrist who listens carefully, explains options clearly and creates a treatment plan around your symptoms, health, circumstances and goals. I'm Dr. Kushal Kharel, a Consultant Psychiatrist based in Kalanki, Kathmandu — I see patients in person at the clinic and by Google Meet video call for anxiety, depression, OCD, bipolar disorder, schizophrenia, addiction and more, and I explain what follows below the way I'd explain it to you in the room.
           </p>
@@ -183,6 +184,17 @@ export default function BestPsychiatristNepalPage() {
             <Fact title="Communication" text="You should never feel rushed. A good consultation lets you ask what a diagnosis means, why a treatment is suggested, what alternatives exist and when progress will be reviewed." />
             <Fact title="Continuity" text="Mental health care often works best with follow-up. Choose a service where review, adjustment and referral are possible when your needs change." />
           </div>
+        </Section>
+
+        <Section title="Questions to Ask Before You Book">
+          <p>Before booking, it is reasonable to ask about a psychiatrist&apos;s specialist qualifications and registration, their experience with your specific concern, how confidentiality is protected, what happens in a genuine emergency, the likely cost and structure of follow-up, and whether a trusted family member can be involved with your consent.</p>
+          <p>A transparent clinician answers these questions directly and explains in the first session what assessment they plan to do and why. It is also fair to ask how they communicate between appointments, for instance whether urgent questions can be raised by phone or message, since this varies between practices.</p>
+        </Section>
+
+        <Section title="Signs of Good Care, and Red Flags">
+          <p>Good psychiatric care combines the elements you need: psychotherapy such as CBT, practical sleep and lifestyle guidance, family education, and medication only when the diagnosis and severity call for it. The plan should be explained clearly enough that you understand what is being tried, why, and how progress will be reviewed.</p>
+          <p>Be cautious of any provider who promises a guaranteed cure, prescribes medication without a proper assessment, or dismisses your questions about diagnosis, side effects or alternatives. A clinician who welcomes a second opinion rather than treating it as a challenge is generally showing respect for your autonomy.</p>
+          <p>Many people delay seeking care because of stigma, cost, travel, family disapproval or not knowing what a consultation involves. You do not need to be in crisis before your concern is taken seriously, and early assessment often makes treatment simpler.</p>
         </Section>
 
         <Section title="When Should You See a Psychiatrist?">

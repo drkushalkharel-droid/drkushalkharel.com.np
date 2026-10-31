@@ -21,7 +21,7 @@ export default function Hero() {
           </p>
 
           <h1 className="my-6 text-[clamp(2.4rem,4.6vw,4.1rem)] leading-[1.02] tracking-[-.04em] text-[#1f2927]">
-            <span className="block">Psychiatrist in Kathmandu,</span>
+            <span className="block">Psychiatrist in Kathmandu, Nepal:</span>{" "}
             <em className="block">Dr. Kushal Kharel</em>
           </h1>
 

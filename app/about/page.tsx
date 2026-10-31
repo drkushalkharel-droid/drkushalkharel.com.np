@@ -13,7 +13,8 @@ const description =
   seoDescription("/about/", "Dr. Kushal Kharel's professional background: MD Psychiatry, Nepal Medical Council registration #27199, clinical experience, credentials and areas of clinical focus.");
 
 export const metadata: Metadata = {
-  title,
+  // Full title with no brand suffix, so it stays close to 60 characters.
+  title: { absolute: title },
   description,
   alternates: { canonical: "/about/" },
   openGraph: {
@@ -113,7 +114,7 @@ export default function AboutPage() {
           </div>
           <div>
             <p className="text-sm font-semibold uppercase tracking-[3px] text-sage-700">About the author</p>
-            <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-5xl">Dr. Kushal Kharel</h1>
+            <h1 className="mt-5 text-4xl font-bold leading-tight text-stone-950 md:text-5xl">Dr. Kushal Kharel, Consultant Psychiatrist in Kathmandu</h1>
             <p className="mt-2 text-xl font-semibold text-sage-800">Consultant Psychiatrist · Certified CBT Therapist</p>
             <p className="mt-6 max-w-xl text-lg leading-8 text-stone-600">
               Dr. Kushal Kharel is a Consultant Psychiatrist based in Kalanki, Kathmandu, providing evidence-based
