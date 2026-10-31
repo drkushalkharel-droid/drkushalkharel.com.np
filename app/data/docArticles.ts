@@ -28,6 +28,7 @@ export type DocArticle = {
 };
 
 import { aiNepaliArticles } from "./aiNepaliArticles";
+import { sexualHealthArticles } from "./sexualHealthArticles";
 
 const baseDocArticles = [
   {
@@ -1811,4 +1812,4 @@ const baseDocArticles = [
   }
 ] as DocArticle[];
 
-export const docArticles: DocArticle[] = [...baseDocArticles, ...aiNepaliArticles];
+export const docArticles: DocArticle[] = [...baseDocArticles, ...aiNepaliArticles, ...sexualHealthArticles];

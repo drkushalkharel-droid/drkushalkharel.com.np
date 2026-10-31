@@ -81,4 +81,8 @@ export const knowledgeDates: Record<string, { published: string; modified: strin
   "when-do-you-need-counselling": { published: "2026-09-02", modified: "2026-09-02" },
   "yati-sano-kurama": { published: "2026-07-14", modified: "2026-07-14" },
   "youth-suicide-prevention-gatekeeper-guide-parents-teachers-nepal": { published: "2026-08-06", modified: "2026-08-06" },
+  "sexual-performance-anxiety-treatment-nepal": { published: "2026-10-31", modified: "2026-10-31" },
+  "erectile-dysfunction-psychological-causes-nepal-guide": { published: "2026-10-31", modified: "2026-10-31" },
+  "premature-ejaculation-shighra-skhalan-treatment-nepal": { published: "2026-10-31", modified: "2026-10-31" },
+  "low-sexual-desire-arousal-problems-men-women-nepal": { published: "2026-10-31", modified: "2026-10-31" },
 };
