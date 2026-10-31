@@ -33,11 +33,11 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/appointment/": {
     "published": "2026-08-03",
-    "modified": "2026-09-27"
+    "modified": "2026-10-31"
   },
   "/best-psychiatrist-nepal/": {
     "published": "2026-07-20",
-    "modified": "2026-09-27"
+    "modified": "2026-10-31"
   },
   "/bipolar-disorder-treatment-kathmandu/": {
     "published": "2026-08-21",
@@ -49,7 +49,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/blog/": {
     "published": "2026-07-29",
-    "modified": "2026-09-27"
+    "modified": "2026-10-31"
   },
   "/blog/adult-adhd-nepal/": {
     "published": "2026-07-29",
@@ -179,6 +179,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-06",
     "modified": "2026-08-06"
   },
+  "/blog/gambling-addiction-nepalese-abroad/": {
+    "published": "2026-10-17",
+    "modified": "2026-10-17"
+  },
   "/blog/gambling-addiction-treatment-nepal/": {
     "published": "2026-08-07",
     "modified": "2026-08-07"
@@ -202,6 +206,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   "/blog/help-family-member-with-depression-nepal/": {
     "published": "2026-08-06",
     "modified": "2026-08-06"
+  },
+  "/blog/how-to-choose-best-psychiatrist-nepal/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
   },
   "/blog/infertility-mental-health-emotional-toll-nepal/": {
     "published": "2026-08-06",
@@ -271,6 +279,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-18",
     "modified": "2026-08-18"
   },
+  "/blog/nepali-online-psychiatrist-anxiety-depression-abroad/": {
+    "published": "2026-10-03",
+    "modified": "2026-10-03"
+  },
   "/blog/nightmares-sleep-paralysis-when-to-worry-nepal/": {
     "published": "2026-08-06",
     "modified": "2026-08-06"
@@ -305,7 +317,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/blog/panic-disorder-vs-generalized-anxiety-nepal/": {
     "published": "2026-08-06",
-    "modified": "2026-08-06"
+    "modified": "2026-10-16"
   },
   "/blog/perfectionism-ocpd-high-standards-nepal/": {
     "published": "2026-08-07",
@@ -353,7 +365,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/blog/ptsd-treatment-nepal/": {
     "published": "2026-08-07",
-    "modified": "2026-08-07"
+    "modified": "2026-10-16"
   },
   "/blog/relationship-counselling-nepal/": {
     "published": "2026-08-03",
@@ -437,19 +449,43 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/blog/suicide-warning-signs-how-to-help-nepal/": {
     "published": "2026-08-05",
-    "modified": "2026-08-06"
+    "modified": "2026-10-16"
   },
   "/blog/whatsapp-support-between-sessions-nepal/": {
     "published": "2026-08-31",
-    "modified": "2026-08-31"
+    "modified": "2026-10-03"
   },
   "/blog/workaholism-overwork-burnout-nepal/": {
     "published": "2026-08-06",
     "modified": "2026-08-06"
   },
-  "/psychiatrist-and-therapist-kathmandu/": {
-    "published": "2026-10-17",
-    "modified": "2026-10-17"
+  "/book/": {
+    "published": "2026-10-25",
+    "modified": "2026-10-28"
+  },
+  "/calm-now/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
+  },
+  "/calm-now/breathing-exercise/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
+  },
+  "/calm-now/feelings-wheel/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
+  },
+  "/calm-now/grounding-5-4-3-2-1/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
+  },
+  "/calm-now/stop-technique/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
+  },
+  "/calm-now/tipp-technique/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
   },
   "/cbt-therapist-kathmandu/": {
     "published": "2026-08-05",
@@ -509,15 +545,15 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/community-mental-health-programs/": {
     "published": "2026-07-29",
-    "modified": "2026-09-27"
+    "modified": "2026-10-27"
   },
   "/conditions/": {
     "published": "2026-07-07",
-    "modified": "2026-09-27"
+    "modified": "2026-10-27"
   },
   "/conditions/acute-agitation-behavioral-emergency/": {
     "published": "2026-07-08",
-    "modified": "2026-09-26"
+    "modified": "2026-10-16"
   },
   "/conditions/acute-stress-disorder/": {
     "published": "2026-07-07",
@@ -609,7 +645,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/conditions/delirium/": {
     "published": "2026-07-08",
-    "modified": "2026-09-26"
+    "modified": "2026-10-16"
   },
   "/conditions/delusional-disorder/": {
     "published": "2026-07-07",
@@ -705,7 +741,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/conditions/opioid-use-disorder/": {
     "published": "2026-07-07",
-    "modified": "2026-09-26"
+    "modified": "2026-10-16"
   },
   "/conditions/oppositional-defiant-disorder/": {
     "published": "2026-08-07",
@@ -801,7 +837,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/counselling-in-nepal/": {
     "published": "2026-07-08",
-    "modified": "2026-09-27"
+    "modified": "2026-10-27"
   },
   "/couple-relationship-counseling/": {
     "published": "2026-08-05",
@@ -837,11 +873,11 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/help-relative-abroad-see-psychiatrist/": {
     "published": "2026-08-28",
-    "modified": "2026-09-27"
+    "modified": "2026-10-27"
   },
   "/home-visit-psychiatrist-nepal/": {
     "published": "2026-08-02",
-    "modified": "2026-09-27"
+    "modified": "2026-10-27"
   },
   "/how-to-control-your-mind-nepal/": {
     "published": "2026-08-12",
@@ -893,7 +929,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/knowledge/anxiety-depression-treatment-options-nepal/": {
     "published": "2026-09-23",
-    "modified": "2026-09-27"
+    "modified": "2026-10-21"
   },
   "/knowledge/anxiety-treatment-nepal/": {
     "published": "2026-09-27",
@@ -909,7 +945,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/knowledge/best-therapy-for-anxiety/": {
     "published": "2026-09-23",
-    "modified": "2026-09-27"
+    "modified": "2026-10-21"
   },
   "/knowledge/bipolar-disorder/": {
     "published": "2026-08-05",
@@ -927,9 +963,25 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-02",
     "modified": "2026-08-02"
   },
+  "/knowledge/chatgpt-ma-mansik-samasya-sodhnu-psychiatrist-kahile-nepal/": {
+    "published": "2026-10-28",
+    "modified": "2026-10-28"
+  },
   "/knowledge/child-counselling-nepal/": {
     "published": "2026-08-24",
     "modified": "2026-08-24"
+  },
+  "/knowledge/chinta-ra-depression-ek-sath-hunu-nepal/": {
+    "published": "2026-10-28",
+    "modified": "2026-10-28"
+  },
+  "/knowledge/chinta-rog-anxiety-lakshan-upchar-nepal/": {
+    "published": "2026-10-28",
+    "modified": "2026-10-28"
+  },
+  "/knowledge/chinta-sadharan-ki-rog-kasari-chinne-nepal/": {
+    "published": "2026-10-28",
+    "modified": "2026-10-28"
   },
   "/knowledge/coping-with-anxiety/": {
     "published": "2026-08-02",
@@ -947,9 +999,13 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-07-06",
     "modified": "2026-07-06"
   },
+  "/knowledge/depression-lakshan-upchar-nepali-guide/": {
+    "published": "2026-10-28",
+    "modified": "2026-10-28"
+  },
   "/knowledge/depression-treatment-nepal/": {
     "published": "2026-09-27",
-    "modified": "2026-09-27"
+    "modified": "2026-10-21"
   },
   "/knowledge/eating-disorder/": {
     "published": "2026-07-06",
@@ -958,6 +1014,14 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   "/knowledge/elimination-disorder/": {
     "published": "2026-07-06",
     "modified": "2026-07-06"
+  },
+  "/knowledge/erectile-dysfunction-psychological-causes-nepal-guide/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
+  },
+  "/knowledge/erp-therapy-ocd-kasari-kam-garcha-nepali/": {
+    "published": "2026-10-28",
+    "modified": "2026-10-28"
   },
   "/knowledge/gender-dysphoria/": {
     "published": "2026-07-06",
@@ -991,9 +1055,13 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-09-02",
     "modified": "2026-09-02"
   },
+  "/knowledge/low-sexual-desire-arousal-problems-men-women-nepal/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
+  },
   "/knowledge/managing-depression/": {
     "published": "2026-09-23",
-    "modified": "2026-09-27"
+    "modified": "2026-10-21"
   },
   "/knowledge/mania/": {
     "published": "2026-07-06",
@@ -1043,6 +1111,18 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-05",
     "modified": "2026-08-05"
   },
+  "/knowledge/ocd-lakshan-upchar-nepali-guide/": {
+    "published": "2026-10-28",
+    "modified": "2026-10-28"
+  },
+  "/knowledge/online-psychiatrist-nepal-video-consultation-kasari/": {
+    "published": "2026-10-28",
+    "modified": "2026-10-28"
+  },
+  "/knowledge/overthinking-chinta-rog-ocd-depression-sambandha-nepal/": {
+    "published": "2026-10-28",
+    "modified": "2026-10-28"
+  },
   "/knowledge/overthinking-kasari-niko-parne-nepal/": {
     "published": "2026-09-02",
     "modified": "2026-09-02"
@@ -1058,6 +1138,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   "/knowledge/pesticide-self-poisoning-prevention-nepal/": {
     "published": "2026-08-06",
     "modified": "2026-08-06"
+  },
+  "/knowledge/premature-ejaculation-shighra-skhalan-treatment-nepal/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
   },
   "/knowledge/psychiatric-medication-right-or-wrong-nepal/": {
     "published": "2026-09-02",
@@ -1086,6 +1170,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   "/knowledge/sexual-health-performance-anxiety-intimacy-nepal/": {
     "published": "2026-08-06",
     "modified": "2026-08-06"
+  },
+  "/knowledge/sexual-performance-anxiety-treatment-nepal/": {
+    "published": "2026-10-31",
+    "modified": "2026-10-31"
   },
   "/knowledge/sleep-and-mental-health/": {
     "published": "2026-09-27",
@@ -1139,6 +1227,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-06",
     "modified": "2026-08-06"
   },
+  "/knowledge/udasi-ra-depression-ko-pharak-nepal/": {
+    "published": "2026-10-28",
+    "modified": "2026-10-28"
+  },
   "/knowledge/when-do-you-need-counselling/": {
     "published": "2026-09-02",
     "modified": "2026-09-02"
@@ -1187,6 +1279,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-07-29",
     "modified": "2026-09-27"
   },
+  "/ne/bideshma-nepali/": {
+    "published": "2026-10-21",
+    "modified": "2026-10-21"
+  },
   "/nepalese-abroad/": {
     "published": "2026-07-08",
     "modified": "2026-09-27"
@@ -1223,6 +1319,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-09-27",
     "modified": "2026-09-27"
   },
+  "/nepali-psychiatrist-japan/": {
+    "published": "2026-10-29",
+    "modified": "2026-10-29"
+  },
   "/ocd/": {
     "published": "2026-08-26",
     "modified": "2026-09-16"
@@ -1237,7 +1337,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/patient-testimonials/": {
     "published": "2026-08-19",
-    "modified": "2026-09-27"
+    "modified": "2026-10-28"
   },
   "/privacy-policy/": {
     "published": "2026-07-08",
@@ -1245,7 +1345,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/psychiatric-care-for-family-in-nepal/": {
     "published": "2026-08-19",
-    "modified": "2026-09-27"
+    "modified": "2026-10-27"
   },
   "/psychiatric-hospital-vs-clinic-kathmandu/": {
     "published": "2026-08-07",
@@ -1255,13 +1355,17 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-14",
     "modified": "2026-09-27"
   },
+  "/psychiatrist-and-therapist-kathmandu/": {
+    "published": "2026-10-17",
+    "modified": "2026-10-17"
+  },
   "/psychiatrist-fee-nepal/": {
     "published": "2026-08-07",
     "modified": "2026-09-27"
   },
   "/psychiatrist-for-nepalis-abroad/": {
     "published": "2026-07-29",
-    "modified": "2026-09-27"
+    "modified": "2026-10-27"
   },
   "/psychiatry-clinic-kathmandu/": {
     "published": "2026-08-12",
@@ -1269,7 +1373,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/psychology-internship-nepal/": {
     "published": "2026-08-06",
-    "modified": "2026-09-27"
+    "modified": "2026-10-28"
   },
   "/psychosis-treatment-kathmandu/": {
     "published": "2026-08-21",
@@ -1281,7 +1385,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/resources/": {
     "published": "2026-07-09",
-    "modified": "2026-09-27"
+    "modified": "2026-10-27"
   },
   "/resources/adhd-leaflet/": {
     "published": "2026-07-09",
@@ -1375,6 +1479,10 @@ export const pageDates: Record<string, { published: string; modified: string }> 
     "published": "2026-08-14",
     "modified": "2026-09-27"
   },
+  "/reviews/": {
+    "published": "2026-10-21",
+    "modified": "2026-10-21"
+  },
   "/schizophrenia-treatment-kathmandu/": {
     "published": "2026-08-21",
     "modified": "2026-09-27"
@@ -1385,7 +1493,7 @@ export const pageDates: Record<string, { published: string; modified: string }> 
   },
   "/screening/": {
     "published": "2026-07-06",
-    "modified": "2026-09-27"
+    "modified": "2026-10-27"
   },
   "/screening/adult-adhd/": {
     "published": "2026-07-09",
