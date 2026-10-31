@@ -221,6 +221,10 @@ export default function Footer() {
               Blog
             </Link>
 
+            <Link href="/calm-now/" className="block hover:text-white transition">
+              Calm Now: Breathing &amp; Grounding Tools
+            </Link>
+
             <Link href="/screening/" className="block hover:text-white transition">
               Mental Health Screening
             </Link>

@@ -91,6 +91,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/psychiatrist-for-nepalis-abroad`, lastModified: new Date("2026-09-24"), changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/psychiatric-care-for-family-in-nepal`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/help-relative-abroad-see-psychiatrist`, lastModified: new Date("2026-08-27"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${siteUrl}/calm-now`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/calm-now/breathing-exercise`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteUrl}/calm-now/grounding-5-4-3-2-1`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteUrl}/calm-now/stop-technique`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteUrl}/calm-now/tipp-technique`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteUrl}/calm-now/feelings-wheel`, lastModified: new Date("2026-10-31"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${siteUrl}/patient-testimonials`, lastModified: new Date("2026-08-19"), changeFrequency: "monthly", priority: 0.8 },
 
     {

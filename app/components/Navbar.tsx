@@ -20,6 +20,7 @@ const conditionsLinks: NavLink[] = [
 ];
 
 const toolsLinks: NavLink[] = [
+  { href: "/calm-now", label: "Calm Now: Breathing & Grounding" },
   { href: "/screening", label: "Mental Health Screening" },
   { href: "/resources", label: "Patient Resources & Leaflets" },
 ];
