@@ -5,6 +5,7 @@ import { abroadGuides } from "../data/abroad";
 import { buildFaqPageJsonLd, buildOnlineServiceJsonLd, buildSpeakableSpec, serializeJsonLd } from "../lib/schema";
 import { buildZoneGuide } from "../lib/timeGuide";
 import RelatedContent from "../components/RelatedContent";
+import JapanTimeFinder from "../components/JapanTimeFinder";
 import { metaFor } from "../lib/seoText";
 
 const site = "https://drkushalkharel.com.np";
@@ -131,7 +132,7 @@ export default function NepaliPsychiatristJapanPage() {
         url,
         description: meta.description,
         inLanguage: ["en", "ne", "ja"],
-        dateModified: "2026-10-29",
+        dateModified: "2026-11-04",
         medicalAudience: ["Patient", "Caregiver"],
         about: { "@id": `${site}#clinic` },
         mainEntity: { "@id": `${url}#service` },
@@ -192,7 +193,11 @@ export default function NepaliPsychiatristJapanPage() {
               <MessageCircle size={18} aria-hidden="true" /> WhatsApp from Japan
             </a>
           </div>
-          <ul className="mt-10 grid gap-3 text-sm sm:grid-cols-2 lg:grid-cols-4">
+          <p className="mt-6 text-sm text-sage-200">
+            <span lang="ne">जापानमा बस्ने नेपालीका लागि, नेपाली भाषामा</span> · <span lang="ja">日本在住ネパール人のためのオンライン精神科相談</span> ·{" "}
+            <a href="#crisis" className="font-semibold text-white underline">In danger now? Call 119 or 110</a>
+          </p>
+          <ul className="mt-8 grid gap-3 text-sm sm:grid-cols-2 lg:grid-cols-4">
             {[
               [Video, "Google Meet or WhatsApp video"],
               [Languages, "Nepali, English, Hindi, Bangla"],
@@ -209,6 +214,22 @@ export default function NepaliPsychiatristJapanPage() {
             })}
           </ul>
         </div>
+      </section>
+
+      <nav aria-label="On this page" className="border-b border-[#d6d8d2] bg-white">
+        <ul className="mx-auto flex max-w-5xl gap-2 overflow-x-auto px-6 py-3 text-sm font-semibold">
+          {[["#time", "Find a time"], ["#how", "How it works"], ["#prepare", "Prepare"], ["#medicine", "Medicine in Japan"], ["#free-tools", "Free tools"], ["#crisis", "Crisis help"], ["#faq", "FAQ"]].map(([h, t]) => (
+            <li key={h} className="shrink-0"><a href={h} className="inline-flex min-h-11 items-center border border-[#d6d8d2] px-4 hover:bg-[#f5f4ef]">{t}</a></li>
+          ))}
+        </ul>
+      </nav>
+
+      <section className="mx-auto max-w-5xl px-6 pt-10">
+        <ul className="grid gap-3 text-sm sm:grid-cols-3">
+          <li className="border border-[#d6d8d2] bg-white p-4"><strong className="block">Nepal Medical Council #27199</strong>Registered Consultant Psychiatrist</li>
+          <li className="border border-[#d6d8d2] bg-white p-4"><strong className="block">MD Psychiatry</strong>Specialist training at KIST Medical College, Kathmandu</li>
+          <li className="border border-[#d6d8d2] bg-white p-4"><strong className="block">Your language, your pace</strong>Explain how you feel in Nepali, without a translator</li>
+        </ul>
       </section>
 
       {/* Scale of the community */}
@@ -264,8 +285,17 @@ export default function NepaliPsychiatristJapanPage() {
         </p>
       </section>
 
+      {/* Time finder */}
+      <section id="time" className="mx-auto max-w-5xl scroll-mt-24 px-6 py-14">
+        <h2 className="text-3xl md:text-4xl">Find a time that works in Japan</h2>
+        <p className="mt-4 max-w-3xl leading-8 text-[#3d4743]">
+          Pick a day and time in Japan. You will see the matching Nepal time and whether it falls inside the published clinic hours, then send it to the clinic in one tap.
+        </p>
+        <JapanTimeFinder />
+      </section>
+
       {/* How it works + times */}
-      <section className="bg-sage-100 py-14">
+      <section id="how" className="scroll-mt-24 bg-sage-100 py-14">
         <div className="mx-auto max-w-5xl px-6">
           <h2 className="text-3xl md:text-4xl">How an online session works from Japan</h2>
           <ol className="mt-8 grid gap-5 md:grid-cols-4">
@@ -321,8 +351,57 @@ export default function NepaliPsychiatristJapanPage() {
         </div>
       </section>
 
+      {/* Prepare */}
+      <section id="prepare" className="mx-auto max-w-5xl scroll-mt-24 px-6 py-14">
+        <h2 className="text-3xl md:text-4xl">Before your first session</h2>
+        <div className="mt-6 grid gap-5 md:grid-cols-2">
+          <article className="border border-[#d6d8d2] bg-white p-6">
+            <h3 className="text-xl">What to have ready</h3>
+            <ul className="mt-3 list-disc space-y-2 pl-5 leading-7 text-[#3d4743]">
+              <li>A phone or laptop with a working camera, and earphones.</li>
+              <li>A quiet, private spot. A booked study room or a parked bench also works.</li>
+              <li>A list of any medicines you take, and your Japanese medicine notebook (お薬手帳) if you have one.</li>
+              <li>Notes on what has changed: sleep, appetite, mood, work or study, and when it started.</li>
+            </ul>
+          </article>
+          <article className="border border-[#d6d8d2] bg-white p-6">
+            <h3 className="text-xl">What the first session is for</h3>
+            <p className="mt-3 leading-7 text-[#3d4743]">
+              To listen, understand what is happening and explain it in plain Nepali or English. You will leave with a clear picture of what may be going on, options for
+              what could help, and an idea of what local care in Japan to arrange, if any. You never have to share more than you want to.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="free-tools" className="scroll-mt-24 bg-white py-14">
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="text-3xl md:text-4xl">Free tools you can use right now</h2>
+          <p className="mt-4 max-w-3xl leading-8 text-[#3d4743]">
+            Not ready to book? These work on your phone, in English and Nepali, with nothing saved on the site.
+          </p>
+          <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              ["/calm-now/breathing-exercise/", "Breathing exercise", "For panic and a racing heart"],
+              ["/calm-now/grounding-5-4-3-2-1/", "5-4-3-2-1 grounding", "When thoughts will not stop"],
+              ["/calm-now/muscle-relaxation/", "Muscle relaxation", "For tension and sleepless nights"],
+              ["/calm-now/safety-plan/", "Safety plan builder", "Make a plan while you feel able"],
+              ["/screening/", "Mental health screening", "Short self-check for low mood, anxiety and sleep"],
+              ["/calm-now/", "All Calm Now tools", "STOP, TIPP, feelings wheel and more"],
+            ].map(([href, t, note]) => (
+              <li key={href}>
+                <Link href={href} className="block h-full border border-[#d6d8d2] bg-[#f5f4ef] p-5 hover:border-sage-700">
+                  <strong className="block text-lg">{t}</strong>
+                  <span className="text-sm text-[#3d4743]">{note}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* Medication & local care */}
-      <section className="mx-auto max-w-5xl px-6 py-14">
+      <section id="medicine" className="mx-auto max-w-5xl scroll-mt-24 px-6 py-14">
         <h2 className="text-3xl md:text-4xl">Medication and local care in Japan: the honest version</h2>
         <div className="mt-6 grid gap-5 md:grid-cols-2">
           <article className="border border-[#d6d8d2] bg-white p-6">
@@ -347,7 +426,7 @@ export default function NepaliPsychiatristJapanPage() {
       </section>
 
       {/* Helplines */}
-      <section className="bg-white py-14">
+      <section id="crisis" className="scroll-mt-24 bg-white py-14">
         <div className="mx-auto max-w-5xl px-6">
           <h2 className="text-3xl md:text-4xl">If you are in crisis in Japan</h2>
           <p className="mt-4 max-w-3xl leading-8 text-[#3d4743]">
@@ -446,7 +525,7 @@ export default function NepaliPsychiatristJapanPage() {
       </section>
 
       {/* FAQ */}
-      <section className="mx-auto max-w-4xl px-6 py-14">
+      <section id="faq" className="mx-auto max-w-4xl scroll-mt-24 px-6 py-14">
         <h2 className="text-3xl md:text-4xl">Questions from Nepalis in Japan</h2>
         <div className="mt-6 border-b border-[#d6d8d2]">
           {faqs.map((f) => (
