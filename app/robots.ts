@@ -18,26 +18,26 @@ const aiCrawlers = [
   "CCBot",
 ];
 
+// /_next/ must stay crawlable: it holds the CSS and JavaScript Google needs to render pages.
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/_next/", "/404/", "/_not-found/"],
+        disallow: ["/404/", "/_not-found/"],
       },
       {
         userAgent: "Googlebot",
         allow: "/",
-        disallow: ["/_next/", "/404/", "/_not-found/"],
+        disallow: ["/404/", "/_not-found/"],
       },
       {
         userAgent: aiCrawlers,
         allow: ["/", "/llms.txt"],
-        disallow: ["/_next/", "/404/", "/_not-found/"],
+        disallow: ["/404/", "/_not-found/"],
       },
     ],
     sitemap: "https://drkushalkharel.com.np/sitemap.xml",
-    host: "https://drkushalkharel.com.np",
   };
 }

@@ -90,7 +90,7 @@ function build(rows) {
     if (map.has(r.from) && map.get(r.from).to !== r.to) {
       throw new Error(`Conflicting redirects for ${r.from}: ${map.get(r.from).to} vs ${r.to}`);
     }
-    map.set(r.from, r);
+    map.set(r.from, { ...r, to: slash(r.to) });
   }
   const final = [];
   for (const r of map.values()) {
